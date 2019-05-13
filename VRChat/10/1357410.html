@@ -65,7 +65,7 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <link rel="stylesheet" media="all" href=
-    "https://asset.booth.pm/assets/main/application-5c6fd216af0550fac29a5fc1ac9ed3e0f51c11c4d039628af596e65146274663.css">
+    "https://asset.booth.pm/assets/main/application-1e47ba4509f14b1897bdfe35ad3160524904c6e3204865e42b007dc24924d52d.css">
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -315,6 +315,8 @@
                             ・セットアップ済prefabファイル 　※シーンに置くだけで動きます
                             ・スキニング済の体の3Dモデル 　※胸のサイズ調整用モーフ入り
                             ・cloth使用想定のスカート部分の3Dモデル
+                            ・スカートリセット用アニメーション
+                            ※使っても直らない時がありますのでご了承ください。
                             ・テクスチャ（スカートのカラーバリエーション5種） ・改変用PSDファイル
                             　※gimpで作成したものなのでPhotoshopでの動作未確認です ■使い方
                             頭部のみのFBXを用意し、Unity上で組み合わせて使ってください。
@@ -328,6 +330,14 @@
                             ・clothコンポーネントは他のプレイヤーと同期しません
                             ・自分から見た時と鏡やCameraから見たときの動きが違うのはVRchatの仕様です
                             ・ヒエラルキー入っているコライダーやスカートのclothの数値等を後から調整したものはサポート外となります
+                            ■スカートリセット用アニメーションの使い方
+                            Unityでプロジェクトを作り、ダウンロードした中身（unityPackage）とVRchatSDKをインポートし、Unity中の以下のフォルダにアクセスしてください。
+                            asset/VRCSDK/Examples/Sample
+                            Assets/Animation
+                            Animationフォルダの中のCustomOverrideEmptyのEMOTEの項目に、skirtResetというアニメーションを入れて下さい
+                            そのあとにVRC_Avatar
+                            Descriptor　の　CustomStanding Anims
+                            に先ほど設定したCustomOverrideEmptyを指定しアップロードでスカートのリセットアニメーションが使えるようになります。
                             ■禁則事項 政治的利用 特定の信条や宗教のための使用 公序良俗に反する行為
                             再配布（改造・未改造問わず） ※アバターペデスタルへの使用も再配布にあたります
                             その他製作者が不適切と判断したもの
