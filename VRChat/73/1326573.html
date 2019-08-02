@@ -6,7 +6,7 @@
       VRCHierarchyHighlighter - アズライト技研 - BOOTH
     </title>
     <meta name="description" content=
-    "ヒエラルキの階層表示をハイライトで強調表示するのと、 VRCで扱う重要コンポーネントをアイコンで表示するやつです。 対応コンポーネントは、 * VRC_AvaterDescriptor * SkinnedMeshRenderer * DynamicBone です。 （今後Rigidbody, Joint, Clothなどに対応するかもしれません） このエディタ拡張を導入することによって、 間違った階層にオブジェクトを突っ込むリスクを下げたり、オブジェクトにちゃんとDynamicBoneが適用されているのか、">
+    "ヒエラルキの階層表示をハイライトで強調表示するのと、 VRCで扱う重要コンポーネントをアイコンで表示するやつです。 対応コンポーネントは、 * VRC_AvaterDescriptor * VRC_MirrorReflection * MeshRenderer * SkinnedMeshRenderer * DynamicBone * AudioSource * Light * LightProbeGroup * ReflectionProbe です。 （今後Rigidbody, Joint, Clothなどに対応するかもしれません） このエディタ拡張を導入することによって、">
     <meta name="keywords" content=
     "booth, ブース, pixiv, ピクシブ, イラスト, マンガ, 創作, オンラインストア, オンラインショップ, ネットショップ, ec, ネット通販">
     <link rel="canonical" href="https://booth.pm/ja/items/1326573">
@@ -15,14 +15,14 @@
     <meta name="twitter:title" content=
     "VRCHierarchyHighlighter - アズライト技研 - BOOTH">
     <meta name="twitter:description" content=
-    "ヒエラルキの階層表示をハイライトで強調表示するのと、 VRCで扱う重要コンポーネントをアイコンで表示するやつです。 対応コンポーネントは、 * VRC_AvaterDescriptor * SkinnedMeshRenderer * DynamicBone です。 （今後Rigidbody, Joint, Clothなどに対応するかもしれません） このエディタ拡張を導入することによって、 間違った階層にオブジェクトを突っ込むリスクを下げたり、オブジェクトにちゃんとDynamicBoneが適用されているのか、">
+    "ヒエラルキの階層表示をハイライトで強調表示するのと、 VRCで扱う重要コンポーネントをアイコンで表示するやつです。 対応コンポーネントは、 * VRC_AvaterDescriptor * VRC_MirrorReflection * MeshRenderer * SkinnedMeshRenderer * DynamicBone * AudioSource * Light * LightProbeGroup * ReflectionProbe です。 （今後Rigidbody, Joint, Clothなどに対応するかもしれません） このエディタ拡張を導入することによって、">
     <meta name="twitter:image" content=
     "https://booth.pximg.net/c/620x620/6bdf2df7-47d0-4756-8dfe-1337da79c2a3/i/1326573/70e86809-d057-47d8-b9c0-dc93bda53d99_base_resized.jpg">
     <meta property="og:type" content="product">
     <meta property="og:title" content=
     "VRCHierarchyHighlighter - アズライト技研 - BOOTH">
     <meta property="og:description" content=
-    "ヒエラルキの階層表示をハイライトで強調表示するのと、 VRCで扱う重要コンポーネントをアイコンで表示するやつです。 対応コンポーネントは、 * VRC_AvaterDescriptor * SkinnedMeshRenderer * DynamicBone です。 （今後Rigidbody, Joint, Clothなどに対応するかもしれません） このエディタ拡張を導入することによって、 間違った階層にオブジェクトを突っ込むリスクを下げたり、オブジェクトにちゃんとDynamicBoneが適用されているのか、">
+    "ヒエラルキの階層表示をハイライトで強調表示するのと、 VRCで扱う重要コンポーネントをアイコンで表示するやつです。 対応コンポーネントは、 * VRC_AvaterDescriptor * VRC_MirrorReflection * MeshRenderer * SkinnedMeshRenderer * DynamicBone * AudioSource * Light * LightProbeGroup * ReflectionProbe です。 （今後Rigidbody, Joint, Clothなどに対応するかもしれません） このエディタ拡張を導入することによって、">
     <meta property="og:image" content=
     "https://booth.pximg.net/c/620x620/6bdf2df7-47d0-4756-8dfe-1337da79c2a3/i/1326573/70e86809-d057-47d8-b9c0-dc93bda53d99_base_resized.jpg">
     <meta property="og:url" content=
@@ -178,9 +178,9 @@
                                     <a class=
                                     "btn add-cart full-length"
                                     title=
-                                    "VRCHierarchyHighlighter_v2019.05.19.0.zip"
+                                    "VRCHierarchyHighlighter_20190802.unitypackage.zip"
                                     href=
-                                    "https://booth.pm/downloadables/598010">
+                                    "https://booth.pm/downloadables/665699">
                                     <div class="u-d-block">
                                       <span class=
                                       "cmd-label">無料ダウンロード</span>
@@ -189,13 +189,13 @@
                                     "u-d-flex u-flex-wrap u-justify-content-center u-tpg-caption1 u-fw-normal">
                                       <div class=
                                       "u-text-ellipsis u-max-w-50">
-                                        VRCHierarchyHighlighter_v2019.05.19.0
+                                        VRCHierarchyHighlighter_20190802.unitypackage
                                       </div>
                                       <div>
                                         .zip
                                       </div>
                                       <div>
-                                        &nbsp;(18.9 KB)
+                                        &nbsp;(56.6 KB)
                                       </div>
                                     </div></a>
                                   </div>
@@ -318,9 +318,11 @@
                             ヒエラルキの階層表示をハイライトで強調表示するのと、
                             VRCで扱う重要コンポーネントをアイコンで表示するやつです。
                             対応コンポーネントは、 * VRC_AvaterDescriptor *
-                            SkinnedMeshRenderer * DynamicBone です。
-                            （今後Rigidbody, Joint,
-                            Clothなどに対応するかもしれません）
+                            VRC_MirrorReflection * MeshRenderer *
+                            SkinnedMeshRenderer * DynamicBone *
+                            AudioSource * Light * LightProbeGroup *
+                            ReflectionProbe です。 （今後Rigidbody,
+                            Joint, Clothなどに対応するかもしれません）
                             このエディタ拡張を導入することによって、
                             間違った階層にオブジェクトを突っ込むリスクを下げたり、オブジェクトにちゃんとDynamicBoneが適用されているのか、
                             どのオブジェクトがVRCのアバターコンポーネントを持っているのか、メッシュ構造を持っているのかを可視化することが出来ます。
