@@ -6,7 +6,7 @@
       VRchat world作成向けのPrefab集(初学者向け) - 熊サンクチュアリ - BOOTH
     </title>
     <meta name="description" content=
-    "VRchatのworld作成向けの簡単な機能(機構)をまとめました。 初学者向けです。 VRCSDKをimport後にPrefabを使用してください。 standardAssetは一部で必要です。必要に応じて導入してください。 ※解説が雑なので順次整備していきます。 内容は以下の通り。 000_world作成前の必須作業(layer作成) 001_触れたらワープするやつ 002_Objectのオンオフスイッチ 003_pickupの説明 004_jumpとかの設定 005_BGMとか音を流す 006_監視カメラ(RenderTexture) 007_worldに人が入ってきたら音がなるやつ">
+    "VRchatのworld作成向けの簡単な機能(機構)をまとめました。 初学者向けです。 VRCSDKをimport後にPrefabを使用してください。 standardAssetは一部で必要です。必要に応じて導入してください。 ※解説が雑です ※※2019/08/23 音源を扱うComponentの仕様が大きく変わったので、005と007みたいな音を扱う物は役に立たないかもしれません※※ 内容は以下の通り。 000_world作成前の必須作業(layer作成) 001_触れたらワープするやつ 002_Objectのオンオフスイッチ 003_pickupの説明 004_jumpとかの設定">
     <meta name="keywords" content=
     "booth, ブース, pixiv, ピクシブ, イラスト, マンガ, 創作, オンラインストア, オンラインショップ, ネットショップ, ec, ネット通販">
     <link rel="canonical" href="https://booth.pm/ja/items/1305361">
@@ -15,14 +15,14 @@
     <meta name="twitter:title" content=
     "VRchat world作成向けのPrefab集(初学者向け) - 熊サンクチュアリ - BOOTH">
     <meta name="twitter:description" content=
-    "VRchatのworld作成向けの簡単な機能(機構)をまとめました。 初学者向けです。 VRCSDKをimport後にPrefabを使用してください。 standardAssetは一部で必要です。必要に応じて導入してください。 ※解説が雑なので順次整備していきます。 内容は以下の通り。 000_world作成前の必須作業(layer作成) 001_触れたらワープするやつ 002_Objectのオンオフスイッチ 003_pickupの説明 004_jumpとかの設定 005_BGMとか音を流す 006_監視カメラ(RenderTexture) 007_worldに人が入ってきたら音がなるやつ">
+    "VRchatのworld作成向けの簡単な機能(機構)をまとめました。 初学者向けです。 VRCSDKをimport後にPrefabを使用してください。 standardAssetは一部で必要です。必要に応じて導入してください。 ※解説が雑です ※※2019/08/23 音源を扱うComponentの仕様が大きく変わったので、005と007みたいな音を扱う物は役に立たないかもしれません※※ 内容は以下の通り。 000_world作成前の必須作業(layer作成) 001_触れたらワープするやつ 002_Objectのオンオフスイッチ 003_pickupの説明 004_jumpとかの設定">
     <meta name="twitter:image" content=
     "https://booth.pximg.net/c/620x620/4565f4b0-d57c-4f73-baee-555f603d275c/i/1305361/364d180a-26aa-4d95-926b-ea646585c4bd_base_resized.jpg">
     <meta property="og:type" content="product">
     <meta property="og:title" content=
     "VRchat world作成向けのPrefab集(初学者向け) - 熊サンクチュアリ - BOOTH">
     <meta property="og:description" content=
-    "VRchatのworld作成向けの簡単な機能(機構)をまとめました。 初学者向けです。 VRCSDKをimport後にPrefabを使用してください。 standardAssetは一部で必要です。必要に応じて導入してください。 ※解説が雑なので順次整備していきます。 内容は以下の通り。 000_world作成前の必須作業(layer作成) 001_触れたらワープするやつ 002_Objectのオンオフスイッチ 003_pickupの説明 004_jumpとかの設定 005_BGMとか音を流す 006_監視カメラ(RenderTexture) 007_worldに人が入ってきたら音がなるやつ">
+    "VRchatのworld作成向けの簡単な機能(機構)をまとめました。 初学者向けです。 VRCSDKをimport後にPrefabを使用してください。 standardAssetは一部で必要です。必要に応じて導入してください。 ※解説が雑です ※※2019/08/23 音源を扱うComponentの仕様が大きく変わったので、005と007みたいな音を扱う物は役に立たないかもしれません※※ 内容は以下の通り。 000_world作成前の必須作業(layer作成) 001_触れたらワープするやつ 002_Objectのオンオフスイッチ 003_pickupの説明 004_jumpとかの設定">
     <meta property="og:image" content=
     "https://booth.pximg.net/c/620x620/4565f4b0-d57c-4f73-baee-555f603d275c/i/1305361/364d180a-26aa-4d95-926b-ea646585c4bd_base_resized.jpg">
     <meta property="og:url" content=
@@ -255,8 +255,9 @@
                             初学者向けです。
                             VRCSDKをimport後にPrefabを使用してください。
                             standardAssetは一部で必要です。必要に応じて導入してください。
-                            ※解説が雑なので順次整備していきます。 内容は以下の通り。
-                            000_world作成前の必須作業(layer作成)
+                            ※解説が雑です ※※2019/08/23
+                            音源を扱うComponentの仕様が大きく変わったので、005と007みたいな音を扱う物は役に立たないかもしれません※※
+                            内容は以下の通り。 000_world作成前の必須作業(layer作成)
                             001_触れたらワープするやつ 002_Objectのオンオフスイッチ
                             003_pickupの説明 004_jumpとかの設定
                             005_BGMとか音を流す 006_監視カメラ(RenderTexture)
