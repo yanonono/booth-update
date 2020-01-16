@@ -77,9 +77,9 @@
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <div class="page-wrap">
       <main role="main">
-        <div class="market-item-detail" data-product-brand=
-        "vrcustom" data-product-category="187" data-product-id=
-        "1014374" data-product-list="market_show"
+        <div class="market-item-detail u-bg-white"
+        data-product-brand="vrcustom" data-product-category="187"
+        data-product-id="1014374" data-product-list="market_show"
         data-product-price="2000" data-tracking="detail_item">
           <nav>
             <div class="breadcrumbs u-border-b u-border-100">
@@ -104,14 +104,15 @@
             </div>
           </nav>
           <article>
-            <div class="market-item-detail-article">
+            <div class=
+            "market-item-detail-article u-d-flex u-flex-column u-align-items-center u-pb-600 u-bg-white">
               <div class=
               "market-item-detail__exhibition-banner container">
               </div>
-              <div class="market-item-detail-article__body">
+              <div class="u-bg-white u-pt-600 u-px-700">
                 <div class="container">
-                  <div class="lo-grid">
-                    <div class="flex-order-summary">
+                  <div class="u-d-flex">
+                    <div class="u-order-1 l-col-2of5 u-pl-600">
                       <header>
                         <div class="u-mb-200">
                           <div class="eventname-flag">
@@ -125,8 +126,7 @@
                             </div></a>
                           </div>
                         </div>
-                        <div class=
-                        "flex-order-summary-shop_name-field">
+                        <div class="u-my-200 u-tpg-title3">
                           <a class="nav" target="_blank"
                           data-product-list=
                           "from market_show via market_item_detail to shop_index"
@@ -137,13 +137,13 @@
                             <img alt="VRCustom" class=
                             "user-avatar at-item-summary" src=
                             "https://booth.pximg.net/c/48x48/users/785088/icon_image/9a8314a8-585b-462e-90ff-7118f2572b16_base_resized.jpg">
-                            <div class=
-                            "flex-order-summary-shop_name">
+                            <div class="u-text-ellipsis">
                               VRCustom
                             </div>
                           </div></a>
                         </div>
-                        <h2 class="item-summary__item-name">
+                        <h2 class=
+                        "u-text-wrap u-tpg-title1 u-mt-0 u-mb-400">
                           【HTC VIVE トラッカー用】 素足固定マウント
                         </h2>
                         <div class="item-summary__caption">
@@ -183,9 +183,6 @@
                                       発送までの日数：4日以内
                                     </div>
                                     <div class="variation-caption">
-                                      在庫なし
-                                    </div>
-                                    <div class="variation-caption">
                                       あんしんBOOTHパックで配送予定
                                     </div>
                                     <div class=
@@ -200,26 +197,43 @@
                                 </div>
                                 <div class="variation-cart">
                                   <div class="cart-button-wrap">
-                                    <div class=
-                                    "restock-request-links"
-                                    data-sign-in-path=
-                                    "/users/sign_in">
-                                      <a data-url=
-                                      "/variations/1557860/restock_request"
-                                      data-method="post" class=
-                                      "add-request js-add-restock-request btn submit full-length"
-                                      href="#">
+                                    <form class="button_to" method=
+                                    "post" action=
+                                    "https://vrcustom.booth.pm/cart?added_to_cart=true&amp;via=market">
+                                      <input type="hidden" name=
+                                      "_method" value=
+                                      "patch"><button class=
+                                      "btn add-cart full-length"
+                                      data-product-id="1014374"
+                                      data-product-price="2000"
+                                      data-product-brand="vrcustom"
+                                      data-product-category="187"
+                                      data-product-variant=
+                                      "1557860" data-tracking=
+                                      "add_item" data-product-list=
+                                      "from market_show via market to add_item"
+                                      type="submit"><input type=
+                                      "hidden" name=
+                                      "cart_item[variation_id]" id=
+                                      "cart_item_variation_id"
+                                      value="1557860"></button>
                                       <div class="cmd-label">
-                                        入荷お知らせメールを受け取る
-                                      </div></a><a data-url=
-                                      "/variations/1557860/restock_request"
-                                      data-method="delete" class=
-                                      "remove-request js-remove-restock-request btn full-length delete ex-padding"
-                                      href="#">
-                                      <div class="cmd-label">
-                                        入荷お知らせメールを解除する
-                                      </div></a>
-                                    </div>
+                                        <button class=
+                                        "btn add-cart full-length"
+                                        data-product-id="1014374"
+                                        data-product-price="2000"
+                                        data-product-brand=
+                                        "vrcustom"
+                                        data-product-category="187"
+                                        data-product-variant=
+                                        "1557860" data-tracking=
+                                        "add_item"
+                                        data-product-list=
+                                        "from market_show via market to add_item"
+                                        type=
+                                        "submit">カートに入れる</button>
+                                      </div>
+                                    </form>
                                   </div>
                                 </div>
                               </div>
@@ -228,18 +242,17 @@
                         </ul>
                       </section>
                       <section>
-                        <div class="share-btns">
-                          <div class="social-btn twitter">
-                            <a data-url=
-                            "https://booth.pm/ja/items/1014374"
-                            data-lang="ja" data-hashtags="booth_pm"
-                            data-text=
-                            "【HTC VIVE トラッカー用】 素足固定マウント | VRCustom"
-                            data-count="none" class=
-                            "twitter-share-button" href=
-                            "https://twitter.com/share">ツイート</a>
-                          </div>
-                          <div class="social-btn facebook">
+                        <div class=
+                        "share-btns u-d-flex u-flex-1 u-align-items-center u-justify-content-start u-px-200 u-py-400">
+                          <a data-url=
+                          "https://booth.pm/ja/items/1014374"
+                          data-lang="ja" data-hashtags="booth_pm"
+                          data-text=
+                          "【HTC VIVE トラッカー用】 素足固定マウント | VRCustom"
+                          data-count="none" class=
+                          "twitter-share-button" href=
+                          "https://twitter.com/share">ツイート</a>
+                          <div class="u-ml-300">
                             <div class="fb-like" data-action="like"
                             data-href=
                             "https://booth.pm/ja/items/1014374"
@@ -249,7 +262,7 @@
                         </div>
                       </section>
                     </div>
-                    <div class="flex-order-body">
+                    <div class="u-order-0 l-col-3of5 u-pr-500">
                       <div class="primary-image-area">
                         <div>
                           <div class=
@@ -348,8 +361,8 @@
                       </div>
                       <section>
                         <div class=
-                        "market-item-detail-description">
-                          <p class="autolink">
+                        "js-market-item-detail-description">
+                          <p class="autolink u-text-wrap">
                             VIVEトラッカーを素足に直接固定できるアタッチメントです。
                             スリッパを履かない事により、フローリング等でも軽快にステップやターンを行えるように設計しております。
                             素足と書いてありますが、厚手の靴下を履いた上に装着することをオススメします。
@@ -371,8 +384,7 @@
                         </div>
                       </section>
                       <section>
-                        <div class=
-                        "market-item-detail-module page_design" id=
+                        <div class="u-text-wrap page_design" id=
                         "modules"></div>
                       </section>
                     </div>
