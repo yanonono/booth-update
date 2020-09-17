@@ -36,6 +36,7 @@
     "js_const_base_domain">
     <meta content="false" name="js_const_user_signed_in">
     <meta content="&quot;ja&quot;" name="js_const_user_locale">
+    <meta content="false" name="js_const_user_adult">
     <meta content=
     "&quot;https://accounts.booth.pm/wish_lists.json&quot;" name=
     "js_const_wish_lists_url">
@@ -332,6 +333,10 @@
             </div>
           </article>
         </div>
+        <aside>
+          <div class="shoplist-with-items" v-if=
+          "shops &amp;&amp; shops.length &gt; 0"></div>
+        </aside>
       </main>
     </div>
     <div class="booth-overlay"></div>
