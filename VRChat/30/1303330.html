@@ -6,7 +6,7 @@
       Oculus Touch 仮想トラッカー化ツール - のっそり猫 - BOOTH
     </title>
     <meta name="description" content=
-    "2020年3月22日現在のSteamVRで、仮想トラッカーが コントローラーとして認識されてしまい、 片手のTouchが使えなくなる現象を確認しました。 この現象が発生する場合、SteamVRで両手コントローラーが 認識されているのを確認してから仮想トラッカーを 起動してみてください。 前ver1.2では、Oculusと(実際の)HTCトラッカーを 併用するときに SpaceCaliblatorで空間補正した場合、 仮想トラッカーも影響を受けてしまっていた問題が修正されています。 ※トラッカーが下にでてしまう問題の 　オフセット補正が不要になった訳ではありません。(別問題) [ツール概要]">
+    "*直近の更新内容* 2021 3/02 V1.4 アバターキャリブレーション後向けの仰俯角補正 「追加補正」キーを追加。 [ツール概要] 3個めのOculus Touchを仮想のトラッカーとして SteamVRで利用するツールです。 主な用途は腰トラッキングとか。 仮想トラッカー単体、及び 仮想トラッカー(腰)＋KinectToVR(両足)の組み合わせで、 VRChatとVirtualMotionCaptureでの動作を確認しています。 (2019-04/04現在) LIVも併用可。 他ツールではLIVのコンポジターを開くと 仮想トラッカーが消滅して併用できないため作成しました。">
     <meta name="keywords" content=
     "booth, ブース, pixiv, ピクシブ, イラスト, マンガ, 創作, オンラインストア, オンラインショップ, ネットショップ, ec, ネット通販">
     <link rel="canonical" href="https://booth.pm/ja/items/1303330">
@@ -15,14 +15,14 @@
     <meta name="twitter:title" content=
     "Oculus Touch 仮想トラッカー化ツール - のっそり猫 - BOOTH">
     <meta name="twitter:description" content=
-    "2020年3月22日現在のSteamVRで、仮想トラッカーが コントローラーとして認識されてしまい、 片手のTouchが使えなくなる現象を確認しました。 この現象が発生する場合、SteamVRで両手コントローラーが 認識されているのを確認してから仮想トラッカーを 起動してみてください。 前ver1.2では、Oculusと(実際の)HTCトラッカーを 併用するときに SpaceCaliblatorで空間補正した場合、 仮想トラッカーも影響を受けてしまっていた問題が修正されています。 ※トラッカーが下にでてしまう問題の 　オフセット補正が不要になった訳ではありません。(別問題) [ツール概要]">
+    "*直近の更新内容* 2021 3/02 V1.4 アバターキャリブレーション後向けの仰俯角補正 「追加補正」キーを追加。 [ツール概要] 3個めのOculus Touchを仮想のトラッカーとして SteamVRで利用するツールです。 主な用途は腰トラッキングとか。 仮想トラッカー単体、及び 仮想トラッカー(腰)＋KinectToVR(両足)の組み合わせで、 VRChatとVirtualMotionCaptureでの動作を確認しています。 (2019-04/04現在) LIVも併用可。 他ツールではLIVのコンポジターを開くと 仮想トラッカーが消滅して併用できないため作成しました。">
     <meta name="twitter:image" content=
     "https://asset.booth.pm/assets/og_image-0c48d775edd33430ac54dd64cfc63ac699ca30e50873bfde4d77a971ee66ffa0.png">
     <meta property="og:type" content="product">
     <meta property="og:title" content=
     "Oculus Touch 仮想トラッカー化ツール - のっそり猫 - BOOTH">
     <meta property="og:description" content=
-    "2020年3月22日現在のSteamVRで、仮想トラッカーが コントローラーとして認識されてしまい、 片手のTouchが使えなくなる現象を確認しました。 この現象が発生する場合、SteamVRで両手コントローラーが 認識されているのを確認してから仮想トラッカーを 起動してみてください。 前ver1.2では、Oculusと(実際の)HTCトラッカーを 併用するときに SpaceCaliblatorで空間補正した場合、 仮想トラッカーも影響を受けてしまっていた問題が修正されています。 ※トラッカーが下にでてしまう問題の 　オフセット補正が不要になった訳ではありません。(別問題) [ツール概要]">
+    "*直近の更新内容* 2021 3/02 V1.4 アバターキャリブレーション後向けの仰俯角補正 「追加補正」キーを追加。 [ツール概要] 3個めのOculus Touchを仮想のトラッカーとして SteamVRで利用するツールです。 主な用途は腰トラッキングとか。 仮想トラッカー単体、及び 仮想トラッカー(腰)＋KinectToVR(両足)の組み合わせで、 VRChatとVirtualMotionCaptureでの動作を確認しています。 (2019-04/04現在) LIVも併用可。 他ツールではLIVのコンポジターを開くと 仮想トラッカーが消滅して併用できないため作成しました。">
     <meta property="og:image" content=
     "https://asset.booth.pm/assets/og_image-0c48d775edd33430ac54dd64cfc63ac699ca30e50873bfde4d77a971ee66ffa0.png">
     <meta property="og:url" content=
@@ -58,6 +58,31 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
@@ -65,11 +90,8 @@
     "https://asset.booth.pm/favicon.ico">
     <link href=
     "https://asset.booth.pm/assets/apple-touch-icon-precomposed-f7358b936e9404f3e499e1bf3c9f0967366212144a16374ebc7558b391eeafe1.png"
-    rel="apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <div class="service-informations">
       <div class="promotion-banner"></div>
@@ -184,9 +206,9 @@
                                       <a class=
                                       "btn add-cart full-length"
                                       title=
-                                      "OculusVirtualTracker130.zip"
+                                      "OculusVirtualTracker140.zip"
                                       href=
-                                      "https://booth.pm/downloadables/882708">
+                                      "https://booth.pm/downloadables/1663910">
                                       <div class="u-d-block">
                                         <span class=
                                         "cmd-label">無料ダウンロード</span>
@@ -195,13 +217,13 @@
                                       "u-d-flex u-flex-wrap u-justify-content-center u-tpg-caption1 u-fw-normal">
                                         <div class=
                                         "u-text-ellipsis u-max-w-50">
-                                          OculusVirtualTracker130
+                                          OculusVirtualTracker140
                                         </div>
                                         <div>
                                           .zip
                                         </div>
                                         <div>
-                                          &nbsp;(375 KB)
+                                          &nbsp;(377 KB)
                                         </div>
                                       </div></a>
                                     </div>
@@ -374,6 +396,28 @@
                                         <div>
                                           &nbsp;(66.9 KB)
                                         </div>
+                                      </div></a><a class=
+                                      "btn add-cart full-length"
+                                      title=
+                                      "OculusVirtualTracker130.zip"
+                                      href=
+                                      "https://booth.pm/downloadables/882708">
+                                      <div class="u-d-block">
+                                        <span class=
+                                        "cmd-label">無料ダウンロード</span>
+                                      </div>
+                                      <div class=
+                                      "u-d-flex u-flex-wrap u-justify-content-center u-tpg-caption1 u-fw-normal">
+                                        <div class=
+                                        "u-text-ellipsis u-max-w-50">
+                                          OculusVirtualTracker130
+                                        </div>
+                                        <div>
+                                          .zip
+                                        </div>
+                                        <div>
+                                          &nbsp;(375 KB)
+                                        </div>
                                       </div></a>
                                     </div>
                                   </div>
@@ -422,17 +466,9 @@
                         <div class=
                         "js-market-item-detail-description">
                           <p class="autolink u-text-wrap">
-                            2020年3月22日現在のSteamVRで、仮想トラッカーが
-                            コントローラーとして認識されてしまい、
-                            片手のTouchが使えなくなる現象を確認しました。
-                            この現象が発生する場合、SteamVRで両手コントローラーが
-                            認識されているのを確認してから仮想トラッカーを 起動してみてください。
-                            前ver1.2では、Oculusと(実際の)HTCトラッカーを 併用するときに
-                            SpaceCaliblatorで空間補正した場合、
-                            仮想トラッカーも影響を受けてしまっていた問題が修正されています。
-                            ※トラッカーが下にでてしまう問題の
-                            　オフセット補正が不要になった訳ではありません。(別問題) [ツール概要]
-                            3個めのOculus Touchを仮想のトラッカーとして
+                            *直近の更新内容* 2021 3/02 V1.4
+                            アバターキャリブレーション後向けの仰俯角補正 「追加補正」キーを追加。
+                            [ツール概要] 3個めのOculus Touchを仮想のトラッカーとして
                             SteamVRで利用するツールです。 主な用途は腰トラッキングとか。
                             仮想トラッカー単体、及び
                             仮想トラッカー(腰)＋KinectToVR(両足)の組み合わせで、
@@ -452,10 +488,12 @@
                             　下記URLからダウンロード。
                             (OpenVR-InputEmulator-v???.exe というリンク)
                             https://github.com/matzman666/OpenVR-InputEmulator/releases
-                            [利用方法] 1) STEAM VRを起動しておきます(重要) 2) VR
-                            objectにしたTouchコントローラに電池を入れます。 3)
+                            [利用方法] 1) STEAM VRを起動しておきます(重要) 2)
+                            両手のTouchコントローラーが既に有効なことを確認。 3) VR
+                            objectにしたTouchコントローラに電池を入れます。 4)
                             OculusVirtualTracker(このアプリ)を実行
-                            ※2～3は順不同で大丈夫なはず
+                            2を忘れると、VRchat等で仮想トラッカーがコントローラー扱いに
+                            なってしまうことがあるようです。 3～4は順不同で大丈夫なはず。
                             以上で仮想トラッカーがOculus画面上に現れているはずです。
                             …だったのですが、Steamのアップデートの仕様変更で
                             主に下方向にズレるという現象が起きています。 対処方法は、次項 [位置補正]
@@ -492,17 +530,27 @@
                             一旦クリアして修正を行ってください。 (CTRL+Sによる再保存も忘れずに)
                             自動読み込みを無効にするには、「OculusVirtualTracker.exe」と
                             同じフォルダに生成された「offset.dat」を削除してください。
-                            [起動オプション] -h オプションの表示 -mt トラッカーモデルを
-                            [汎用トラッカー] に設定(デフォルト) -mv トラッカーモデルを
-                            [VIVEコントローラー] に設定 -ml トラッカーモデルを [Oculus
-                            Touch(左手)] に設定 -mr トラッカーモデルを [Oculus
-                            Touch(右手)] に設定
+                            [オフセットの追加補正]
+                            PageUp/Downキーで仰俯角の追加補正が出来ます。
+                            追加補正は、CTRL+Oキーで保存されない一時的な補正です。
+                            主にVRChat等でキャリブレーション後の
+                            強制補正を想定したものですが、追加補正後にアバター変更等で
+                            再キャリブレーションをするとVRChat側で追加補正が吸収されてしまうので、
+                            再キャリブレーション後追加補正が必要になります。
+                            念の為、再キャリブレーション直前にHomeキーで追加補正のリセットを
+                            しておくことをおすすめします。 [起動オプション] -h オプションの表示
+                            -mt トラッカーモデルを [汎用トラッカー] に設定(デフォルト) -mv
+                            トラッカーモデルを [VIVEコントローラー] に設定 -ml
+                            トラッカーモデルを [Oculus Touch(左手)] に設定 -mr
+                            トラッカーモデルを [Oculus Touch(右手)] に設定
                             トラッカーモデルとはHMD上のトラッカー位置に表示される3Dモデルです。
                             （変更時は先にSteamVRの再起動が必要） [仕様上の制限]
                             コントローラーと違い、仮想トラッカーは
                             トラッキングを失うと姿勢(角度)情報も更新されなくなります。
                             これはOculusSDKの問題で、改善の要望を出してはいますが
-                            現在のところは仕様です。 [更新履歴] 2020 1/29 V1.3
+                            現在のところは仕様です。 [更新履歴] 2021 3/02 V1.4
+                            アバターキャリブレーション後向けの仰俯角補正 「追加補正」キーを追加。
+                            2020 1/29 V1.3
                             仮想トラッカーにInputEmulatorで設定した
                             オフセット値を自前で保存・自動再適用できるようにした。
                             仮想トラッカーを追加する際、他のアプリケーションが
