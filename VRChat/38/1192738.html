@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "SbHIrDi6dOFk3ucqLbgkWhrHjfVrxMS0iyDvm8dRfbk="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "SbHIrDi6dOFk3ucqLbgkWhrHjfVrxMS0iyDvm8dRfbk="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"VRアバター用オリジナルモデル「ティアナ 」[VRM対応]Version3.0","description":"■このモデルは？■\nVRchatやバーチャルキャスト等で使えるオリジナルアバターモデルです。\nVRChatはセットアップ済みなのでアップロードするだけで揺れものもリップシンクも機能します、またBlenderでの簡単操作でベース表情を変更可能です。\nその他softのアバターとしての使用フォーマットは用意はしていませんがご自分でコンバートできるのであれば使用可能です。\n\n\n■ティアナとは？■\n身長129cm(耳をを伸ばすと180cm)　体重27kg\n現在作成中のゲーム内に出てくる学園内の封印されし図書館を支配するウサ耳司書です。\n礼儀正しく丁寧な対応をするが知識への探求が強く知らない事があると目を輝かせながら調べる娘。\nシノアちゃんクーシアちゃんと同い年だが落ち着いた感じがお姉さんポイが実は超寂しがり屋で図書館内に喫茶店（次のキャラはバトルバリスタで決まり！）コーナーを作りケモ耳娘達のたまり場としている。\n趣味は読書（Kinbleがメインで口には出さにが紙の本は嵩張るし無駄だなと思ってる）\n戦闘時は紙で対象の首をはねる、祖父はVorpalBunnyだと言うが真相は定かではない。\n\n■この服は？■\n防刃防弾性に優れたクラーレ社のナノメッシュ防刃繊維で作られた近接戦闘用司書服です。\n●特殊効果\nY染色体ヒューマノイドに対し常に＋30%のクリティカル率上昇。\nウサ耳耐性50以下の生物に対し装甲及び防御系、確率防御系スキルを無視して首はね攻撃（※非クリティカル）を発動可能。\nコルセットスカート部パージした場合バニースーツ耐性50以下生物を35%の確率で使役出来る、効果は対象のHPが1/10まで持続する。\n●特殊機能\n標準装備のデキルカリバーは「参考書を買っただけで技能を習得した」気になってる生物に対し初段まで対空投げ打撃に無敵付与の効果がある。\n耳のカフスはネオジム磁石で止めているため穴が空いている訳ではない、エレキバン風に血行が良くなるとかならないとか。\nコルセットスカートをキャストオフ時は跳躍力５m指圧120kgまで能力が開放される。\nスカート部2段目はヒュージスリケンに変形可能、特殊合金メッシュで補強されており乗用車程度なら両断できる。\n\n●デメリット\nカワイイうさちゃんと思って近づくと円卓の騎士と言えど首が飛ぶ。\nVRChat内では全ての機能効果はOFFになる\n\n\n■心優しき坊主とは？■\n作者です。\nツイッターでこの作品も含めたローポリ講座を不定期で開いてます、ぜひフォローしてくださいね。\nhttps://twitter.com/KoKoRoBoUZu","url":"https://booth.pm/ja/items/1192738","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"2000","highPrice":"5000"},"image":"https://booth.pximg.net/c/620x620/e3df372d-7b3e-4861-9106-df71df45ccc4/i/1192738/471e2d8f-5b18-45b6-bf42-904fdbe1c80c_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "SbHIrDi6dOFk3ucqLbgkWhrHjfVrxMS0iyDvm8dRfbk="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -652,6 +673,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"VRMモデルについて","content":"各種揺れもの、表情が予め設定されております。\n\n※VRMはシームレスに着替えができないため、バニーガールとパレオ付きと別れたモデルになっています。\n\nBattle Librarian Tiana標準セット[VRM付き]\nTiana_BattleLibrarianr_VRM.zip\nに同梱されています、カスタマイズするのでなければコレ一つで大丈夫です。"},{"type":"text","title":"Battle Librarian Tiana標準セット[VRM付き]","content":"概要\n対架空知識外生物用書庫司書兵装[♀]Battle Librarian Suitを装備した改造兎人ティアナちゃん標準装備セットです。\n\n仕様\n総ポリゴン数：Polygon数38830\nTexture種類：デフューズ、グロス、ノーマル、スペキュラ、ラフネス、ハイトマップ）\nTextureSize：1024X1024\nMaterial数：8\nFBX：1\nUnityアセット：1\n　　本体\n　　サムネイル用パネル\n\n容量：12MB\n\n●シェイプ一覧\nVRchat専用リップシンク、ブリンクシェイプ\n●専用表情\n「笑顔」「＞＜」「＝＝」「▽」「企み」「猫口」「怒り」「キス」「舐める」「咥える」「嫌がる」「泣き」\n●専用動作\n胸の大きさ変更可能\n漫符「怒り」「汗」「涙」\n\n※\n追加表情及び漫符、アイトラッキングを作動させるには購入者自身での設定が必要です\n\n※注意点※\nVRCHat内でのアバター評価はVERYPoor判定です。\nその殆どがCollider、BonesなどDynamicBonesに由来するものが多いのでマシンスペック等厳しい方はDynamicBonesを切れば快適に動作すると思います。\n"},{"type":"text","title":"高解像度Textureのみ","content":"4096X4096非圧縮Textureセットです。\nUV付きPSDも付属します。\n\n容量：120MB\n\n■使用方法■\n高解像度同名ファイルですのでBattle Librarian Tiana標準セットを展開後のTextureフォルダに上書きするだけで高解像度に変更できます。\n\n※\n高解像度をそのまま使うと読み込みが長くなります。"},{"type":"text","title":"Unityアセットでの注意事項","content":"■■必要アセット■■\nDynamicBone\nUnlit_WF_Shader\n\n\n●揺れもの■DynamicBone※有料\nUnity内のアセットストアから購入してください\n\nhttps://assetstore.unity.com/packages/tools/animation/dynamic-bone-16743?locale=ja-JP\n\n\n●シェーダー■Unlit_WF_Shader\nシェーダーにはUnlitWFを使っています。\n下記URLから\nUnlit_WF_ShaderSuite_20210703_Core.unitypackage\nをダウンロードしてimportしてください。\n\nhttps://github.com/whiteflare/Unlit_WF_ShaderSuite/releases\n\n■■セットアップ方法■■\n本assetはSDK3.0で作られているため対応Unity、SDKを使ってアップロードしてください。\n\n■■サムネイル■■\n附属の「　Thumbnail　」をHierarchyに置けばThumbnailが附属のイラストになります。\n"},{"type":"text","title":"禁止事項　免責事項","content":"■このモデルで許可される事\n　・購入者がご自身のアバターとしての使用する改変は自由です。\n　・アバターモデルとした動画等への使用は自由です。\n　・非営利アイコンや壁紙の使用は自由です。\n\n\n■禁止事項\n\n　・改変非改変にかかわらず再配布は禁止します。\n\n　・改変非改変にかかわらずゲームでの使用は禁止します。\n　　　※当方作成中ゲーム内出場予定なので。\n\n　・エロ、グロ等18禁への公共の場での使用は禁止。\n　　　※プライベートで非公開な使用は当てはまりません、存分にご使用ください。\n\n　・商用利用禁止\n　　　※商用利用可能なmodelはAssetStore等で販売しますのでそちらをご使用ください。\n　　　※YouTubeなどでアバターとして動画による収入は許可します。\n　　　　┗多大なキャラ付けをしたストーリー仕立ての使用は禁止します。\n　　　　\n\n■免責事項\n当モデルを使用することで使用者側に不利な問題が生じた場合、\nそれがいかなるものであっても配布元は一切責任を負いません。"},{"type":"text","title":"バージョン履歴","content":"3.00 SDK3.0正式対応\n　着替え機能、2Pカラー追加！\n\n\n1.40VRMモデル追加\n\n1.40　2019/5/20 細かいBugFix、白スク水追加、シームレスで水着やパレオの脱着可能、表情変更機能追加。\n　　　\n1.32　2019/1/28 ＞＜＝＝眼がクチパクで歪む両目修正。\n\n1.31　2019/1/25 ＞＜＝＝眼がクチパクで歪む修正。\n\n1.3　2019/1/25 髪メッシュ欠け修正、追加表情　cheek「頬染め」、Weight修正。\n\n1.1　2019/1/24 メッシュ修正、追加表情修正、ボーン修正。\n\n1.0　2019/1/23 リリースバージョン\n"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
