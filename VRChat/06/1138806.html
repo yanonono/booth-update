@@ -58,6 +58,16 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "A8Pf7cFoQJgJ8P6uujT3jd+jleQrTG5hHzrA34Yqh8w="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
   </head>
   <body>
     <div class="mini-player-controller" style="display: none;">
@@ -86,6 +96,13 @@
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "A8Pf7cFoQJgJ8P6uujT3jd+jleQrTG5hHzrA34Yqh8w="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"ヘッドセット+メディス子向け機械化パーツ","description":"ヘッドセットと機械式羽のセットです。\n主に　https://armadillon.booth.pm/items/1130532　のアルマジロン制作メディカルセンタースタッフさん向けに仕上げたものとなっておりますが、おそらく他アバターにも運用が可能です。\n\n\n同梱したアニメーターをChest部に追加したAnimetorコンポーネントに導入したうえで翼を非常にする。またはエモートスイッチを実装することで全表示運用が可能です。","url":"https://booth.pm/ja/items/1138806","offers":{"priceCurrency":"JPY","@type":"Offer","price":"100"},"image":"https://booth.pximg.net/c/620x620/64446b0b-9225-4dba-a979-4708b93cc2ef/i/1138806/ee81ca35-ac66-43c0-a17e-fd7d1a3ab9df_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -93,6 +110,10 @@
     rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "A8Pf7cFoQJgJ8P6uujT3jd+jleQrTG5hHzrA34Yqh8w="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -415,6 +436,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"仕様","content":"ポリゴン数　合計　8076\n\n翼ポリゴン数　7852\n\nヘッドセットポリゴン数　234"},{"type":"text","title":"内容物","content":"・FBX\n・Texture(ベースカラー)\n・上記を含んだPSD\n・UnityPackage\n\nUnityPackage同梱物：UTS　2.0.5\n"},{"type":"text","title":"■利用規約","content":"Zipファイル内に同梱。\n基本的に自作発言、転売、二次配布禁止。\n\n利用規約(9/14付)\n\n・禁止事項\n二次配布の禁止：このPack(以後配布ファイル群)が含まれるものを他人に譲渡、販売することを禁止します。\nVRChatにおいては購入者以外がアバターを利用すること、またペデスタルの設置も禁止事項に含まれます。\n私に不利益が生じる、またはこのモデルの販売に著しく悪影響を及ぼす行為、改造を禁止します。\n制作者を書き換えることを禁止します。\n\n以上の内容の内の違反が見つかった場合当事者に対し法的措置を検討します。\n\n加えて特定個人や団体への中傷を目的とした利用を禁止します。\n\n\n\n・認可事項\nこの配布ファイル群を用いた商用活動、Vtuber活動を認めます。(気になるので一報ください)　\n素体、パーツ、Meshをテクスチャ含め他のアバターに移植することを全般的に認めます。ただしその場合その利用先のモデルを配布することを禁止します。VRChatなどでアバターとして利用する際に購入者以外の他者にそのアバターを使わせることも禁止します。\n\nこの配布ファイル群をゲーム、アニメーション、動画に利用することを認めます。\nこのモデルをR18要素の含まれるものに利用することを認めます、しかしながら他の購入者に迷惑をかけないように気を付けてください。\n\n\n\n・著作権\n配布ファイル群のデータの改造および個人的利用範囲での流用は自由とします。\nただし、配布ファイル群とその改変したデータが持つ著作権は大元の製作者である 超蔟 に帰属するものとします。\n\n\n・トラブルについて\n\n超蔟 は、配布ファイル群を使用したことによる金銭・機器・機会的トラブルの損失を一切負わないものとします。\n\n\nここに記されていない内容、質問があれば@999tyousokuまで必ずダイレクトメールを送ってください。自己の判断で勝手に決定することは一番危険です。\n\n※この規約は予告なく加筆、変更される場合があります。\n"},{"type":"text","title":"■連絡先","content":"\n\n◆不明な点や質問などありましたらこちらに連絡ください\n\nTwitter : @999tyousoku\nメール : tyousokudouga@yahoo.co.jp"},{"type":"text","title":"■更新履歴","content":"12/15　販売開始"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
