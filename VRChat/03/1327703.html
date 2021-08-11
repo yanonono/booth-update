@@ -59,9 +59,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "BCxafvyP5uJVJnM7SM0rrXPaxSpOL/XYwaeGZWeboyQ="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "BCxafvyP5uJVJnM7SM0rrXPaxSpOL/XYwaeGZWeboyQ="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"【VRChatアバター連続自動アップロード＆設定ツール】MyAvatarBuildSetting","description":"VRChatで複数の異なる設定のアバターを連続自動アップロード出来るエディタ拡張です。\n\n手作業で設定を変えて1つずつアップロードする手間がなくなります。\n\nVRCSDK2（従来）およびVRCSDK3（Avatars3.0）両環境で動作します。","url":"https://booth.pm/ja/items/1327703","offers":{"priceCurrency":"JPY","@type":"Offer","price":"300"},"image":"https://booth.pximg.net/c/620x620/f395cbdc-1e1f-4507-a60f-e85a50f576a0/i/1327703/f65eb63a-20f0-4c91-80bb-654f7095b330_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -72,6 +89,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "BCxafvyP5uJVJnM7SM0rrXPaxSpOL/XYwaeGZWeboyQ="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -532,6 +553,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"特徴","content":"・アバター名、説明、publicかどうかなどの情報を統合的に管理（アップロード時手入力を省きます）\n・シェーダー一括変更\n・オブジェクトの表示オンオフ管理\n・シェイプキー値管理\n・マテリアルの一括切り替え\n・複数アバター連続自動アップロード\n"},{"type":"text","title":"想定するユースケース","content":"あるモデルに対して\n\n・衣装や装備パーツを変える\n・シェイプキーを変える\n・シェーダーを使い分ける\n\n等により複数のアバターとしてアップロードするユースケースを想定しています。\n\nMyAvatarBuildSettingは、これらを設定で管理して適用するツールと、それら設定を適用しつつ順番に複数のアバターを一括アップロードするツールを提供します"},{"type":"text","title":"機能の詳細（ドキュメント）","content":"詳細はこちら\n\nhttps://narazaka.github.io/MyAvatarBuildSetting-doc/\n\n要望やバグ報告がある場合はツイッター@narazakaへ https://twitter.com/narazaka\n\n※注意\n\nメジャーバージョンアップでは非互換の変更があります。\nドキュメントの変更履歴をご覧下さい。"},{"type":"text","title":"注意事項","content":"・シーンやマテリアルが変更されます\n\nMyAvatarBuildSettingは設定に従ってアバターに関連するシーン内のオブジェクトやマテリアルを動的に変更します。\n\n基本的に冪等な操作になるような設計ですが、設定を誤ると予期せぬ変更（例えばカスタム非表示制御を全階層にしている場合に深い階層のオブジェクトの表示が切り替わるなど）がありえます。\n\nできればgit等のバージョン管理ツールを導入してプロジェクトのファイルを管理することをおすすめします。\n\n・パッチについて\n\n本ツールはVRChat SDK本体のアップロード完了部分にパッチを当てることで一括アップロードを実現しています。\n\nこのパッチによって、VRChat SDKのアップロード完了時に通常の完了ダイアログボックスが出なくなります。\n\n（このパッチはアバターを連続してアップロードする目的で、1つのアバターのアップロード完了時に次のアバターをビルドするトリガーを追加するものです。それ以外のSDKの機能は変更されません。）"},{"type":"text","title":"利用規約","content":"・本ツールの改変および改変方法の共有は自由です。\n・本ツールの再配布、販売は改変の有無を問わず禁止します。\n・本ツールを利用することで発生したトラブルや損失、損害に対して、製作者は一切責任を負いません。本ツールを使用する際は利用者の責任において行ってください。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
