@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "zEJCA+DJ5KM1OVBbBD0xEyHRFLHs7TtAeNDPhtL0/E4="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "zEJCA+DJ5KM1OVBbBD0xEyHRFLHs7TtAeNDPhtL0/E4="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"禁忌事務ノ魔導書 / Grimoir Kinkijim【3Dモデル】","description":"⚠Unitypackageインポート前に⚠\n事前に以下のAssetsをプロジェクト内にインポートしておいてください。\n・ユニティちゃんトゥーンシェーダー2.0 / UTS2\n\n\n【魔法陣シェーダーについて】\nGithubでも公開中です。同梱物より最新になる可能性があります。\nhttps://github.com/NamaeWatashino/MagicCircleShader\n\n - - -\n\n⚠Required asset⚠\nYou need these assets.\n・Unity-chan Toon Shader 2.0\n\n【About Magic Circle Shader】\nIt is also available on Github. It may be more recent than the package.\nhttps://github.com/NamaeWatashino/MagicCircleShader\n","url":"https://booth.pm/ja/items/1011023","offers":{"priceCurrency":"JPY","@type":"Offer","price":"500"},"image":"https://booth.pximg.net/c/620x620/1154c32c-e4a4-4167-b688-5231756d79b1/i/1011023/04a21ce5-9763-4efb-b449-4b8aba9a2976_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "zEJCA+DJ5KM1OVBbBD0xEyHRFLHs7TtAeNDPhtL0/E4="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -523,6 +544,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/EXjCHwcpiq8\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"☑ 更新履歴 (Change log)","content":"- 2019/9/9 v1.1.1\n　・利用規約を一部改定しました。\n\n- 2019/05/30 v1.1.0\n　『魔導書っぽい表紙』\n　　テクスチャ・設定済みマテリアル・Prefabを新たに追加しました。\n　フォルダ構成を一部変更しました。\n　MagicCircleの不要なMeshColliderを削除しました。\n\n- 2018/09/11 v1.0.0\n　販売開始"},{"type":"text","title":"☑ 3Dモデル情報 (3D model info)","content":"[KinkiJim.fbx]（禁忌事務ノ魔導書）\n・Polygons: △228\n・Materials: 2 (File, Pages)\n・Textures: 1\n・Shape keys: 3 (File: 2, Pages: 1)"},{"type":"text","title":"☑ 利用規約・免責事項 (License / Disclaimer)","content":"著作権の譲渡・破棄は行っておりません。\nCopyrights are not transferred or abandoned.\n\nこのアバター・3Dモデルの使用により使用者側に不利な出来事（損害・事故）が生じた場合、それがいかなるものであっても制作者および配布元は一切責任を負いません。\nIf an adverse event (damage or accident) occurs on the user side due to the use of this avatar or 3D model, the producer and distributor will not be liable for any matter.\n\n　【許可】\n　・改変\n　・商用利用\n　・暴力・性的表現\n　・VRChat以外の媒体への使用\n　　（VirtualCast配信、動画・配信による撮影、ゲーム内組み込み等）\n　・二次創作物の作成、販売および譲渡\n　 　（グッズ・フィギュアなどの立体物には個別に許諾が必要です）\n　\n　【禁止】\n　・第三者がモデルデータを用意に読み込める形式での二次配布\n　　（無改変・改変済問わず）\n　・アバターペデスタルによる配布\n　　（無改変・改変済問わず）\n　・本モデルを使用した特定個人や団体への誹謗中傷、名誉毀損、脅迫行為\n\n　[Permission]\n　・Modification\n　・Commercial use\n　・Violent, Sexuality acts\n　・Use for media other than VRChat\n　　(Use for VirtualCast, Video production, In-game integration, etc..)\n　・Creation, sale and transfer of secondary creations\n　　(A separate permission is required for 3D object such as goods and figures)\n　\n　[Prohibition]\n　・Secondary distribution in a form that third party can easily read model data\n　　(Whether unmodified or modified)\n　・Distribution by avatar pedestal\n　　(Whether unmodified or modified)\n　・Act that slander, libel, or threaten to specific individuals and organizations using this model\n\nその他不明点がございましたら下記連絡先までお問い合わせください。\nPlease contact me if you have any other questions."},{"type":"text","title":"☑ 連絡先 (Contact)","content":"Website: https://watashino.me\nTwitter: https://twitter.com/NamaeWatashino\n\nYouTube: https://youtube.com/c/NamaeWatashino\n\nFANBOX: https://pixiv.net/fanbox/creator/17346029\nBOOTH: https://namaewatashino.booth.pm"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
