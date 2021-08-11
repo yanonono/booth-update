@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "e1I06jMdjra1YP4fjz1xiPkCaInEzC4OKGqtD0FCkEI="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "e1I06jMdjra1YP4fjz1xiPkCaInEzC4OKGqtD0FCkEI="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"オリジナル3Dモデル『AF-002 BrandAngriff（ブランダングリフ）』","description":"AFシリーズ第2段　火力制圧型 AF-002 BrandAngriff（ブランダングリフ）\n\n--全身に装着した火力兵装により拠点制圧を目的として開発された機体。\n各部に実装されたハードポイントにより、多数の戦況に対応可能となり結果的に汎用性が増している。--","url":"https://booth.pm/ja/items/1339390","offers":{"priceCurrency":"JPY","@type":"Offer","price":"3500"},"image":"https://booth.pximg.net/c/620x620/d3d523d1-e84d-4b41-911c-4b8144839726/i/1339390/55324a64-00b2-4361-8eb1-2d47bbcfd7f1_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "e1I06jMdjra1YP4fjz1xiPkCaInEzC4OKGqtD0FCkEI="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -482,6 +503,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"利用条件","content":"◆禁止事項 \n・本モデル内容物の再配布および第三者が本モデル内容物を利用可能な状態にする行為。 \n・本モデル内容物を公序良俗に反する行為や目的、反社会的な行為や目的、特定の信条や宗教、政治的発言のために利用、改変すること。 \n・本モデル内容物を購入者自身が全て作成したと取れるような発言および発信行動。 \n\n◆利用可能 上記禁止事項に当てはまらない全て \n・データ改変 \n・商用利用 \n・VRC・バーチャルキャスト等での利用 \n・その他ゲーム・動画等での利用......等"},{"type":"text","title":"モデル説明","content":"◆同梱物\n\n・AF-002_BrandAngriff.unitypackage\n\t-Prefab\n\t ・AF-002_Full\n\t　　…各種武装・アニメーション設定済み。Hierarchyにドラッグアンドドロップするだけでアップロード可能な状態になります。\n\n\t ・AF-002_Rifle_R\n\t　　…ライフルにバレル展開のアニメーションを設定しています。\n\n\t ・AF-002_BOX\n\t　　…箱にパッケージングされた状態で設定しています。ワールドのインテリアなどにどうぞ。\n\n・FBXファイル（19種）\n\t・AF-002_Full.fbx\n\t　　…本体と武装を一つにまとめたFBXです。ただし、一部ボーンは別れているのでアーマチュア内に設定する必要があります。\n\t\tAF-002_Full.Prefabはこちらを使用し設定しています。\n\n\t・AF-002_Base.fbx\n\t　　…武装のない本体のみです。シェイプキーでナックルを可動させることができます。。\n\n\t・AF-002_Armor.fbx\n\t　　…各部位ごとにオブジェクトが分割されているアーマー部分のみのモデルデータです。\n\n\t・AF-002_Weapon.fbx\n\t　　…ミサイルポッドを一纏めにしたモデルデータです。使用するにはボーンへの設定が必要となります。シェイプキーでミサイルのハッチを開閉可能です。\n\n\t・AF-002_vertical.fbx\n\t　　…垂直式ミサイルのモデルデータです。ボーンでアームの可動、シェイプキーでハッチの開閉が可能です\n\n\t・AF-002_ExtBoost.fbx\n\t　　…増加スラスターのモデルデータです。ボーンで角度の調整が可能です。\n\n\t・AF-002_canon.fbx\n\t　　…折りたたみ式キャノンのモデルデータです。ボーンでアームの可動、キャノンの折りが可能です。\n\n\t・AF-002_Rifle_L(R).fbx\n\t　　…ライフルのモデルデータです。シェイプキーでバレルの展開が可能です。\n\n\t・AF-002_BOX.fbx\n\n\t・その他FBXファイル\n\t　　…ミサイルポッドを各部位毎に分割したものになります。シェイプキーでハッチの開閉が可能です。\n\n・PSDデータ（3種）\n\n・PNGファイル（11種）\n\t　　…設定済みのカラーと合わせて、計3パターンの配色パターンのテクスチャを同梱しています。\n\n・利用規約.txt\n\n・Read me.txt\n\n・モデル説明.txt\n\n・アーマーFBX取扱説明書.pdf\n\n◆モデル説明\n\n・ポリゴン数\n　・AF-002(フレーム＋アーマー)\t△19958\n　・フレーム\t\t\t△4138\n　・アーマー　　\t\t△15820\n　・Weapon（ミサイルポッド）\t△26488\n　・Canon(L.R)\t\t\t△5496\n　・ExtBoost\t\t\t△4320\n　・vertical\t\t\t△5160\n　・ライフル(L.R)\t　　　　△4768\n　・箱\t\t\t\t△804\n\n\n◆マテリアル設定\nStandardで設定しています。\n底箱のマテリアルに裏面も表示するシェーダーを使用することでよりそれっぽくすることができます。\n\n◆VRChatフルトラッキングについて\nフルトラッキング対応しています。\nただし、フルトラッキングにて動作確認はしておりますが、すべての動作を保証するものではありません。\n\n"},{"type":"text","title":"利用規約","content":"・第1条（定義）\n\n　本規約で使用する用語の定義は次に掲げる通りとします。\n\n（１）本モデル：3Dモデル「AF-002 BrandAngriff」内容物である3Dモデル本体\n（２）購入者：3Dモデル「AF-002 BrandAngriff」を購入した者\n（３）作者：Astraia Fille\n（４）本モデル内容物：3Dモデル「AF-002 BrandAngriff」を購入した際、購入物に含まれていた全てのデータ\n\n\n\n・第2条（同意の成立）\n\n購入者は本モデルを利用することによって、本規約の内容に全て同意したものとみなします。\n\n\n\n・第3条（著作権法その他適用法との関係）\n\n第1項　本モデル内容物は、著作権法その他適用法によって保護されています。\n\n第2項　本モデル内容物の加工の有無、または加工の多少で著作権の譲渡や移動はありません。\n\n\n\n・第4条（利用の許諾）\n\n作者は本モデル内容物について、購入者による以下の行為を非独占的に許諾します。\nなお、法人様の使用についてはこれに当てはまりません。別途コーポレートライセンス等の法人様向け契約が必要となります。\n\n１　商業非商業問わず、本モデル内容物を本規約第5条で禁止する事例以外の全ての用法で利用すること。\n\n２　商業非商業問わず、本モデル内容物を本規約第5条で禁止する事例以外で自由に改変、編集すること。\n\n３　作者へ許諾を申請せずに、本規約第4条１および２の行為を行うこと。\n\n４　作者からVRMファイルの定義する「明確に許可された人」の権利を付与され、その権利を行使すること。\n\n\n\n・第5条（禁止行為）\n\n以下の例に該当する行動、本モデル内容物の利用および改変は禁止いたします。\n\n１　本モデル内容物の再配布および第三者が本モデル内容物を利用可能な状態にする行為。\n\n２　本モデル内容物を公序良俗に反する行為や目的、反社会的な行為や目的、特定の信条や宗教、政治的発言のために利用、改変すること。\n\n３　本モデル内容物を購入者自身が全て作成したと取れるような発言および発信行動。\n\n４　その他、作者が不適切であると判断した本モデルの利用および改変。\n\n\n\n・第6条（規約の違反）\n\n第1項　本規約に違反した本モデルの利用および改変が判明した場合、作者はいつでも本モデルの利用および改変を中止、削除させることが出来ます。\n\n第2項　作者は前項に基づいた本モデルの利用および改変の中止、削除によって本モデル利用者に発生したいかなる損害についても一切責任を負いません。\n\n\n\n・第7項（規約の変更）\n\n第1項　作者は購入者の承諾を得ることなく、いつでも本規約の内容を改定することができるものとし、購入者はこれを異議なく承諾するものとします。\n\n第2項　作者は、本規約を改定するときは、その内容について作者所定の方法により購入者に通知します。\n\n第3項　前本規約の改定の効力は、作者が前項により通知を行った時点から生じるものとします。\n\n第4項　購入者は、本規約変更後、本モデルを利用した時点で、変更後の本利用規約に異議なく同意したものとみなされます。\n\n\n\n・第8条（免責）\n\n第1項　作者は、本モデルの内容変更、中断、終了によって生じたいかなる損害についても、一切責任を負いません。\n\n第2項　作者は、購入者の本モデルの利用環境について一切関与せず、また一切の責任を負いません。\n"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
