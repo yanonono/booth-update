@@ -56,9 +56,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "fkb5MPL3cHUuvHW52YEbjafcQ6Mcoy4miQseREwR25w="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "fkb5MPL3cHUuvHW52YEbjafcQ6Mcoy4miQseREwR25w="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"錠前 4色","description":"VRChat向け3Dモデル\n\n△1010ポリゴン\n\n錠前です。ワールドやアバターのアクセサリーなどにどうぞ！\n\nシェイプキーが2種入っており、開錠、回転が可能です。\n\nマテリアルが金、銀、銅、サビ鉄の4種類同梱されているので好きな色を選ぶことができます。\n\nまた、マテリアルは1つにまとめています。\n\nVRChat向けではありますが、他の目的にもお使いいただくことが可能です。","url":"https://booth.pm/ja/items/1203863","offers":{"priceCurrency":"JPY","@type":"Offer","price":"200"},"image":"https://booth.pximg.net/c/620x620/fd12f873-ecbb-4fe4-973b-3208cf7ebc52/i/1203863/c23ed6ff-739c-4004-aee9-dd56573aa9cd_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -69,6 +86,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "fkb5MPL3cHUuvHW52YEbjafcQ6Mcoy4miQseREwR25w="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -483,6 +504,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"利用規約","content":"『錠前 4種』\n\n◆利用規約\n\n　本モデルを購入した時点で本利用規約に同意したものとします。\n　利用規約の内容は変更する場合があり、最新のものが適用されます。\n-------------------------------------------------------------------------------------\n\n◆商業利用について\n\n　◇この3Dモデル『錠前 4種』は主にVRchatでの利用を想定した物です。\n　　またゲーム制作、動画配信など利益の発生する活動を許可します。\n\n\n◆著作権\n\n　◇『錠前 4種』とそれに関連したデータの改造および個人的利用範囲での\n　　流用は自由ですが、この配布データ『錠前 4種』及び改変したデータが\n　　持つ著作権は大元の製作者であるmarupopに帰属するものとします。\n\n\n◆許可事項\n\n　◇『錠前 4種』とそれに関連したデータの改変を許可します。\n\n\n　◇VRChatのペデスタルへの使用を許可します。\n\n\n　◇R-18・R-18Gへの利用を許可します。\n\n\n◆禁止事項\n\n　◇『錠前 4種』とその付属のデータの再配付・販売は\n　　改変の有無を問わず禁止します。\n\n　◇アップロード者本人のみが使える場合に限り\n　　VRChatへのアップロードに関しては再配布にあたらないものとします。\n\n　◇特定個人や団体への中傷を目的とした利用を禁止します。 \n\n\n◆トラブルについて\n\n　◇marupopは、本モデル『錠前 4種』を使用したことによる\n　　全てのトラブルの損失を一切負わないものとします。\n\n-------------------------------------------------------------------------------------\n\n制定日：2019/1/29\n\n製作者：marupop\n\nTwitter:@marupop_pop"},{"type":"text","title":"更新履歴","content":"2019/1/29 23:05\n上部が細く感じたので太めの錠前Lock2.fbxをzipファイル追加しました。\nUnityPackageには追加していないのでLockフォルダに追加しシーンにドラッグアンドドロップした後、マテリアルを適用してください。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
