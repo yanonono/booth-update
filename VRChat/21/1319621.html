@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "qQC580rcs+Ay6dh5S+2Xrc7ceAySbzfUY3vLRW//7o4="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "qQC580rcs+Ay6dh5S+2Xrc7ceAySbzfUY3vLRW//7o4="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"オリジナル３Dモデル「Zero」","description":"オリジナル3Dモデル『Zero』\n制作者：ちゅばき\n\n本モデルはVRchatでの利用を想定したunityのHumanoid形式に対応した\n3Dモデルデータです。商用利用や改変が可能で、ゲームや配信等にも\n使うことができます。","url":"https://booth.pm/ja/items/1319621","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"3500","highPrice":"5000"},"image":"https://booth.pximg.net/c/620x620/8691a6f9-9d2a-4225-8f87-0460ab5c5187/i/1319621/12406e47-b622-4de6-856b-483d16502dfa_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "qQC580rcs+Ay6dh5S+2Xrc7ceAySbzfUY3vLRW//7o4="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -492,6 +513,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"○簡易概要","content":"・ポリゴン数 　　　　40464\n・VRchat用Lip-sync 　対応\n・Eye-tracking 　　　対応\n・フルトラッキング 　対応\n・Dynamicbone　　　　設定済み\n・使用シェーダー 　　Arktoon-shaders-1.0.2.6\n・Unity 2018.4.20f1にて動作確認済み\n\n・Light-Editionはヘッドセットやバックパックがありませんが、安めとなっています"},{"type":"text","title":"○内容物","content":"【モデルデータ】\n\n・全身が一つのオブジェクトになっているfbxデータ\n・体のパーツごとに別のオブジェクトになっている改変用fbxデータ\n・上記2種に対応したblendファイル\n・素体のfbx、blendファイル\n\n【テクスチャ】\n\n・pngテクスチャファイル\n・服以外のpsd改変用テクスチャファイル\n・服のEmissiveFreak用のテクスチャファイル\n・腰や足、髪飾りのEmissiveFreak用のテクスチャファイル\n・髪にEmissiveFreakを適用するためのマスクテクスチャファイル\n・UVガイドファイル\n・素体用のbodyテクスチャファイル\n\n【アニメーションファイル】\n\n・デフォルトアニメーションファイル7種\n・まばたきのアニメーションファイル\n\n【パッケージ】\nDynamicboneやshaderの設定を行い、即アップロード可能なunitypackageです\n(Arktoon-Shadersは自動でインポートされます)\n\n・Zero通常バージョンのunitypackageファイル\n・Zeroエラーバージョンのunitypackageファイル\n\n【Readme】\n\n・モデル説明や利用規約の記載されたテキストファイル"},{"type":"text","title":"○導入方法","content":"①unityにて新規プロジェクトを作成しVRCSDKとDynamicboneを\n　インポートしてください(Dynamicboneはなくても問題ありません)\n②DLしたフォルダ内のunitypackageを実行しすべてインポートしてください\n③Asset内のprefabデータをHierarchieにD\u0026Dしてください\n④そのままアップロードすれば使用できる状態になります"},{"type":"text","title":"○利用規約","content":"・モデルやテクスチャの改造、改変は自由です\n\n・本モデルを商用利用することができます\n\n・VRchat含む、ゲームや配信(Vtuberも可能)などへの利用ができます\n\n・R18表現への利用を許可します\n\n・本モデル、改造モデル著作権はちゅばきに帰属します\n\n・購入者以外がこのモデルを使用可能な状態(アバターペデスタル、\n　publicでのアップロード含む)にすることを禁止します\n\n・他人を不快にするようなコンテンツ(宗教や政治含む)への利用はできません\n\n・このモデルを使用したことによって発生したトラブルや\n　損失に対しちゅばきは一切責任を負わないものとします\n\n・利用規約は常に最新のものを適用します"},{"type":"text","title":"○更新情報","content":"2019/4/20 素体のfbxファイルとblendファイルを追加\n　　　　　(モデルに変更はないためverの更新はありません)\n\n2020/08/07 ver1.01 内股になりすぎる問題を解消。シェーダーを最新のものに差し替え、streaming mipmapsなどをデフォルトでチェック。ファイルが一つのフォルダで展開されるように変更\n"},{"type":"text","title":"○連絡先","content":"以下のツイッターアカウントに対してリプまたはDMを送っていただければ\n対応を行います\n\ntwitterID:@yukisteavr\nhttps://twitter.com/yukisteavr"},{"type":"text","title":"","content":"このモデルを製作する際、Arktoon-shaders-1.0.2.6をお借りさせていただきました。\nありがとうございます。\n\nCopyright (c) 2020 synqark\nReleased under the MIT license\nhttps://opensource.org/licenses/mit-license.php"},{"type":"text","title":"","content":"booth画像にて使用している武器はシキランス様製作のノイズセイバーを\n使用しています。お求めはこちらから↓\n\nhttps://kazehokora.booth.pm/"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
