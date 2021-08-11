@@ -59,9 +59,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "YCRLgp63r6kbyhhHE0G/aeAkHtbsdK15A+orzjagU3I="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "YCRLgp63r6kbyhhHE0G/aeAkHtbsdK15A+orzjagU3I="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"VRChat想定3Dモデル「Curare (クラーレ)」（衣装2種 / VRM・.vroidデータ付き）","description":"VRChat想定3Dモデル「Curare (クラーレ)」紹介文\n\n許可を得てVirtual Collection VRoid Stage出演時の動画をサンプルとして埋め込んであります。\n元動画はこちら⇒ https://youtu.be/phOSFnjWp9U\n\n2020.4.9 バージョン2にアップデートしました！\n - SDK2(Unity2018)対応\n - スカートがClothになりました\n - 新衣装『クラーレ -casual-』 追加\n - 新アニメーションオーバーライド【ニヤ】 追加\n - オリジナル表情ブレンドシェイプ 追加\n - その他顔メッシュ修正、パニエメッシュの追加、データ整理 等\n\nバージョン2はVRChatのアップデートに伴い、SDK2(Unity2018)に対応しています。以前のバージョンも引き続きダウンロード可能ですが、動作の保証はできかねます。\nまた、同じプロジェクトに新旧バージョンをインポートすることは推奨しません。\n\nシェーダにUTS2を使用している為Auto Fixが表示されていますが、行わないでください。(そのままアップロードできます)\n\nこの商品は主にVRoidで作成した後、微調整して作られています。\n対応するVRoid向けのテクスチャを読み込むことが可能です。\n\n---------------------------------\nバリエーションの詳細を以下よりよく確認してご購入ください。\n\nThis agreement is written in Japanese. Please use only those who understand correctly after translating this agreement. When you download and use this data, you agree to these agreement.","url":"https://booth.pm/ja/items/1284693","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"1000","highPrice":"3000"},"image":"https://booth.pximg.net/c/620x620/00c1d410-366a-4589-b9a0-07e59640e177/i/1284693/a7b5f7c4-897f-4dd8-8496-b7a2b9f92f94_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -72,6 +89,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "YCRLgp63r6kbyhhHE0G/aeAkHtbsdK15A+orzjagU3I="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -810,6 +831,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/O_Awd99Q-2E\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"【VRChat向けアバター「Curare (クラーレ)」ver2.0】詳細","content":"△先にインポートするもの\n- VRChat SDK2\n- （あれば）ダイナミックボーン\n※ver.2以降はシェーダを同梱しているので、先にインポートする必要はありません。\n\n△内容物\n- VRC向けにセットアップ済みのprefab2種入りunitypackage\n- 服のバリエーション・素体用肌テクスチャ素材\n- .vroidデータ2種(VRoidモデルデータ) ※注意\n- VRMデータ2種(おまけのため、完全データではありません)\n\n\n.vroidデータ、およびVRMデータは調整前のデータとなり、【VRChat向けアバター「Curare (クラーレ)」ver2.0】の完全データとは多少異なります。"},{"type":"text","title":"【VRoid向けテクスチャ】詳細","content":"△内容物\n- 服のバリエーション・素体用肌テクスチャ素材(PNG)\n\n詳細は商品画像よりご確認いただけます。\n\n---------------------------------\n\n※当BOOTHの商品【VRoid向けテクスチャ「クラーレ様コーデセット」】( https://projectabyss.booth.pm/items/2244383 )と内容が同じため、重複して購入されないようご注意ください。\nVRoid用テクスチャのタグを増やしたかったのですが、紛らわしくなると思い別商品にしました。\n"},{"type":"text","title":"規約詳細","content":"本モデルを購入された時点で以下の項目に同意したものとさせていただきます。\n項目の内容は変更される場合があり、変更された場合は最新のものが適応されます。\n\n▲許諾事項\n- 改変の許可\n- R-18、R-18Gへの利用\n- 別モデルへのパーツの流用(例：VRoidのテクスチャ、.vroidデータのヘアープリセットとしての使用)\n\n▲禁止事項\n- バーチャルYoutuber等、「クラーレ」に新たにオリジナルのキャラクター性を付与して活動する行為を禁止します。（VRChatにおけるロールプレイはこれに含まれません）\n- 商用利用の禁止\n- 改変したものを含む再配布及び転売の禁止\n- 有料無料に関わらずパーツの一部を含んだ再配布の禁止\n- 製作者を騙る行為の禁止\n- 特定個人や団体への誹謗中傷、政治・宗教活動を目的とした利用の禁止\n\n▲免責事項\n- モデルデータを使用して発生したいかなる損害・損失・その他不利益等には一切の責任を負いません。\n\n▲返品について\n- ダウンロード販売である都合上返品が行えないため、購入後の返金対応は行うことができません。\n\nunitypackageに同梱のシェーダー(UTS2 ver2.0.7.5)は、ユニティちゃんライセンスにて提供されております© UTJ/UCL\n\n三毛猫(Twitter: @neko_area)作\nうきは(Twitter: @ukiha_vrc)キャラクター原案\n\nテクスチャはClipStudioを使用して制作されています。\n編集データがご入用の場合は、 ご購入の上、注文詳細画面「オーナーに問い合わせ」よりご連絡ください。\n\nその他お問い合わせや不明点等につきましては、 作者twitter(TwitterID: @neko_area)までご連絡ください。"},{"type":"text","title":"更新履歴","content":"2019/03/31 ver1.00公開\n2019/03/31 ver1.01 画面外でもメッシュを描画、カリングされないように修正\n2020/04/09 新衣装追加などの大型アップデートを行ったver2.0 公開\n2020/04/11 Readme、マテリアルエラーを修正したver2.1 公開\n2020/04/16 prefabに後光シェーダを追加したver2.2 公開"},{"type":"media","content":"\u003ciframe width=\"500\" height=\"500\" src=\"https://hub.vroid.com/characters/2017296311753540635/models/5266618277893867966/embed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\" allow=\"xr-spatial-tracking\"\u003e\u003c/iframe\u003e"},{"type":"media","content":"\u003ciframe width=\"500\" height=\"500\" src=\"https://hub.vroid.com/characters/2017296311753540635/models/2793727789824308747/embed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\" allow=\"xr-spatial-tracking\"\u003e\u003c/iframe\u003e"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
