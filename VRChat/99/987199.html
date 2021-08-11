@@ -59,19 +59,62 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "MnH2akB8l88Uw0rCXmOiRdpLfgstTJ7xTgRl855GVRA="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "MnH2akB8l88Uw0rCXmOiRdpLfgstTJ7xTgRl855GVRA="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"Energy Bullpup Rifle（エネルギー弾式ブルパップライフル）","description":"[9/4 ver.2 リリース]\n当工房初のサイバー系銃火器のエネルギーブルパップライフルです。\nSketchfabで3Dモデルの閲覧ができます。\n\nポリゴン数　△2225\nテクスチャ数　2048*2048 4枚","url":"https://booth.pm/ja/items/987199","offers":{"priceCurrency":"JPY","@type":"Offer","price":"300"},"image":"https://booth.pximg.net/c/620x620/719c3d6d-7dd0-4162-aa85-2ed21e39cf9a/i/987199/d1ad9183-a26c-4a2c-94f8-0cc425f63532_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
     "https://asset.booth.pm/assets/apple-touch-icon-precomposed-f7358b936e9404f3e499e1bf3c9f0967366212144a16374ebc7558b391eeafe1.png"
-    rel="apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "MnH2akB8l88Uw0rCXmOiRdpLfgstTJ7xTgRl855GVRA="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -341,6 +384,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"media","content":"\u003ciframe width=\"640\" height=\"480\" src=\"https://sketchfab.com/models/797aa6e46ca141e69cafb0de4c358853/embed\" frameborder=\"0\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"更新履歴","content":"Ver.1 リリース\n\nVer.2\n・Emissionマップを実装　ライフルの一部が光るようになりました\n・上に合わせて、Unitypakage上のデフォルト設定のシェーダーにEmissionを追加"},{"type":"text","title":"説明","content":"近年開発されたエネルギー弾を撃ち出す個人携行武器の思想を取り入れたブルパップライフル。\nグリップ周辺の円形状のカバーはエネルギーチャンバーを兼ねており、ここで加速させたエネルギーを撃ち出す。\n円形の加速器を採用することで、ライフルクラスの威力を維持したまま、SMGクラスのサイズまでに小型化することに成功した。\n\nシングルチャージショットとフルオートモードの2種を搭載\nこれによりマガジン弾数は可変となるため、側面のインジケータによりバッテリーマガジン内のエネルギー残量を確認できるようになっている。"},{"type":"text","title":"規約全文","content":"禁止事項\n１．自分以外の誰かがデータそのものをダウンロードし、購入者と同じ様に使えるようにする（横流しと転売）\n２．宗教、政治関係に使う\n３．特定の個人や団体への誹謗中傷をするのに使う\n\n※１の例外：誰かにカスタムテクスチャを依頼するのにデータを渡したい…時は相談して下さい\n\n許可事項\n・禁止事項に引っかからない全てのこと\n例：\n・キャラクターの装備品に\n・ワールドの装飾、ワールド配置の装備品に\n・データを活用して動画投稿、写真投稿（収益化も当然ok）\n・自分で改造して自分で使う\n・これを装備して、もしくはこれそのものになってVtuber的活動\n・その他色々…\n（当然ですが、R-18(G)的用途に関してはゾーニングをしっかりと）\n\n要するに\nデータの横流しと、良からぬ事に使わぬ限りどのように使っても自由、ということです！　分からなかったら聞いてね\n\n免責\n・本データを使用したことによる利用者の損害、被害に関し、作者は一切補償をしません\n・本データを使用した結果、利用者が他社に損害、被害を与えた場合、その責任は当該利用者にあるものとします\n\n最後に、強制ではないですが…\n動画を撮るときとか、作品を作るときとか、クレジットを残してくれると非常に嬉しい\n\nクレジット例\nモデルデータ：\"The garden of Ashen\"（作者：Ash）"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
