@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "iH6de0DC/razbF3IcNJ8GFTHwbi6RQsH61CsfKBuAWs="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "iH6de0DC/razbF3IcNJ8GFTHwbi6RQsH61CsfKBuAWs="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"オリジナル3Dモデル『みらくる』","description":"VRchatでの利用を想定したアバターモデルです。\n比較的ポリゴン数が少ないのでアクセサリーの追加等の改変がしやすいかと思います。\n\n以下にモデルについての説明、利用規約が記載されておりますので、\nご購入の前に必ずお読みいただき、ご了承された上でのご購入をお願いいたします。\n\nVRChat向けの設定をしておりますが、MMD等他ソフトでのご利用は規約違反がない限り自由です。","url":"https://booth.pm/ja/items/1132889","offers":{"priceCurrency":"JPY","@type":"Offer","price":"1500"},"image":"https://booth.pximg.net/c/620x620/882fdeef-0e51-49f5-a5e3-f5b466159a8a/i/1132889/bfebc71c-6d89-4dbd-94b1-8aadb8226e5f_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "iH6de0DC/razbF3IcNJ8GFTHwbi6RQsH61CsfKBuAWs="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -409,6 +430,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"♢◆概要◆♢","content":"・ポリゴン数\n△17364\n\n・リップシンク\n「あいうえお」＋VRchatでの基本モーフ15種が設定されています。\n\n・表情シェイプキー\n15個の表情(ハンドサイン入り)が設定されています。\n眉、目、口で独立しており、組み合わせや数値の設定でオリジナルの表情を作ることができます。\n\n・DynamicBone\n髪とスカートに設定されています。\n（※DynamicBoneはUnityAssetStoreで販売されている有料Assetです）\n\n\n★内容物★\n\n・3Dモデルfbxデータ\n・素体付き改変用blendデータ\n・テクスチャpsdデータ\n・テクスチャpngデータ\n・UnityPackageデータ\n・README.txt"},{"type":"text","title":"♢◆VRCHATにアバターを導入する方法◆♢","content":"1.UnityにVRChat_SDKをインポートする。\n\n2.DynamicBoneを使用する方はDynamicBoneをインポートする。(任意)\n\n3.mirakuru_ver1.1.unitypackageをインポートする。\n\n4.UnityPackageをWクリックする。\n\n5.Animationフォルダ内のhyouzyou_CustumOverrideEmptyにお好きな表情を設定する。\n\n6.UnityのメニューバーのVRChat_SDK→Show Build Control Panelを開きVRChatウィンドウのBuild\u0026Publishを押す。\n\n7.名前など各種設定をしてUploadを押す。\n\n8.お疲れさまです。Uploadが完了したらVRChatにログインして確認してください。"},{"type":"text","title":"♢◆利用規約◆♢","content":"【本モデルおよび同梱された全てのデジタルデータを購入、または利用された時点で本利用規約に同意したものとします。】\n\n\n・オリジナル3Dモデル『みらくる』に同梱された全てのデジタルデータ(以下、本モデル)の著作権は、本モデル制作者であるもろくろに帰属するものとします。\n\n・本モデルは自由に改変することができます。\n\n・本モデル購入者が、VRChat等のモデルデータをアップロードし、アバター等に利用するサービスへの使用を許可します。\n\n・VRChatのアバターペデスタル等、購入者以外が自由に本モデルを使用することができるような行為を禁止します。\n※2019年1月19日追記:public(他者がゲーム内でコピー可能な状態)でアバターをアップロードする行為も当てはまります。\n\n・本モデル、および本モデルを改変したものを再配布する等、購入者以外が自由に改変可能な状態でモデルを保持できるような状態にする行為を禁止します。\n\n・本モデルを用いてのyoutuber活動等、動画サイトでの活動は未改変、改変ともに許可いたします。収益化等も制限いたしません。\n\n・本データをゲーム、アニメーション、アプリに使用することを許可します。収益化等は制限いたしません。モデルデータとして再度使用できる状態のデータが含まれる場合は使用を禁止します。\n(収益化する場合、クレジット表記をお願い致します。作者名:もろくろ Twitter:@moromoro96)\n\n・R-18、R-18Gへの利用は制限いたしません。インターネット上にアップロードする際、目にする方が不快な思いをしないよう配慮をお願い致します。\n\n・本モデルを利用しての、他者を誹謗中傷する表現、政治、宗教活動を禁止します。\n\n\n◆免責事項◆\n\n・本データを使用することによって生じた何らかのトラブル、損失に対しもろくろは一切責任を負わないものとします。\n\n・本データに関しては、その性質上お客様の不手際によって購入を行った場合であっても、返金及び交換などは一切行わないものとします。\n\nこの利用規約は予告なく変更・改定されることがあります。ご了承ください。\n\n---------------------------------------------------------------------------------\n\n制定日2018年12月11日\n\n\n不明な点や問題点、改善点等ありましたらTwitterのDMまでご連絡ください。\n\n【https://twitter.com/moromoro96】"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
