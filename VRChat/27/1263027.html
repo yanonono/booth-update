@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "rT5PetPCskT+qNd0PQToDvq7kOZW0lLvqbof0biU/Tc="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "rT5PetPCskT+qNd0PQToDvq7kOZW0lLvqbof0biU/Tc="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"CRL-16 Hortensis","description":"専用フレームを内蔵し、高機動力と中距離射撃戦を想定した機体です。\nバックパックのサブアーム、ビームカノンにはボーンが入っているので動かす事が可能です。","url":"https://booth.pm/ja/items/1263027","offers":{"priceCurrency":"JPY","@type":"Offer","price":"3000"},"image":"https://booth.pximg.net/c/620x620/ea95dbd8-fd5b-43a0-9a82-ee7157567ac9/i/1263027/1f259594-ecff-4739-8d78-405433172b65_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "rT5PetPCskT+qNd0PQToDvq7kOZW0lLvqbof0biU/Tc="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -405,6 +426,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"VRChat想定3Dモデル「CRL-16Hortensis」Ver1.0","content":"「CRL-16Hortensis」はVRchatでの使用を想定したモデルです。\n\nその他外装バリエーションについては近日追加予定です。どんな形での配布かは未定。\n\nデスクトップ、トラッカー無しの場合は動きに問題なし\nフルトラッキング時は足の緑のセンサーあたりに足のトラッキングを合わせてください。（視点がやや上に上がりますがロボなので問題ありません。多分）\n\n\n※本モデルをVRchatで利用する場合はVRCSDKを事前にご用意ください\n※「arktoon-shaders-1.0.1.1」の使用を想定しています。こちらも先に導入をお願いします"},{"type":"text","title":"仕様","content":"・ポリゴン数29457\n・内容物\n「FBXファイル」\n「テクスチャ５枚」\n「Unityパッケージファイル」\n「Read me」"},{"type":"text","title":"利用規約","content":"◆以下の行為は禁止です\n・このモデルデータおよびこのデータを基にした改変物を取り出せる状態での再配布\n\n・各種サービスにおいて第三者が使える状態にすること（VRchatのペデスタル機能は第三者が使えるようになるのでご遠慮ください）\n\n・製作者を騙る事\n\n・公序良俗に反する行為\n\n・政治的、宗教主張に関する利用\n\n\n◆以下の行為を許可します\n・VRchat内でのアバターとしてのアップロード、ワールドの飾り\n\n・モデルデータ、テクスチャ改変\n\n・動画への映り込みなど問題なし　クレジット記載不要です\n\n・バーチャルマーケットにおいてのペデスタル化を許可\n\n・VRCでの使用を想定したモデルですが、その他サービスでの利用も可能です\n\n・アバターを利用しての商用利用。営利放送での使用や、ゲームや映像作品での利用を許可します。ご一報いただくと作者が喜びます。\n\n◆改変について\n・改造、改変後のモデルの著作権もJefclaxが保持するものとします\n\n・改変に他の方のモデルを利用する場合は他の方のモデルの利用規約も厳守してください\n\n\n本データ使用時に発生したトラブルに関して製作者は一切責任をもちません　自己責任にてお使いください"},{"type":"text","title":"更新履歴","content":"2019/03/07 ver1.0\n配布開始"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
