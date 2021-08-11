@@ -55,9 +55,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "/Ym1xvrZ1VFwS9ybZNq6N0emQFKb4DReXkzx39aQiYY="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "/Ym1xvrZ1VFwS9ybZNq6N0emQFKb4DReXkzx39aQiYY="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"VRChat向け3Dモデル『リサ』","description":"VRChat向け3Dモデル『リサ』","url":"https://booth.pm/ja/items/1123775","offers":{"priceCurrency":"JPY","@type":"Offer","price":"3500"},"image":"https://booth.pximg.net/c/620x620/c5f5c24d-2662-43bc-98be-454d8623bccb/i/1123775/67b128df-2092-4aa5-ab9b-128255efcf85_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -68,6 +85,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "/Ym1xvrZ1VFwS9ybZNq6N0emQFKb4DReXkzx39aQiYY="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -393,6 +414,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"VRChat向け　オリジナル3Dキャラモデル 『リサ』","content":"Humanoid対応、VRchat等でご利用いただけます。\n\n★仕様★\n\n◆ポリゴン数\n　　△18201\n　　△11147(素体のみ)\n◆フルトラッキング対応\n◆アイトラッキング対応\n◆DynamicBone設定済み\n◆Reflex Shader 2.0設定済み\n◆初期表情7種類\n◆VRC用RipSync 15種\n◆BlendShape 55種\n\nセットアップが完了してあるUnityPackageを同梱してあります。\n\nUnityにUnityPackageをインポートしたあとプレハブデータをヒエラルキーにD\u0026Dするだけで導入することができます。\n※UnityにインポートするときにVRCSDKをあらかじめインポートしておいてください。\nまた、有料アセットであるDynamicBoneをインポートしておけば髪と胸を揺らすことができます。\n\n★内容物★\n・オブジェクトが分割されている3Dモデルfbxデータ\n・テクスチャpsdデータ\n・テクスチャpngデータ\n・UnityPackageデータ\n・おまけ\n\n以下の利用規約をご確認頂き、ご同意頂いた上でご利用ください。"},{"type":"text","title":"更新履歴","content":"2018/12/03 Ver.1.00\n・初期バージョン\n\n2020/04/12 Ver1.10\n・UNITY2018に対応\n・フルトラ時のIK変更による膝の捻じれを解消\n・足の指のメッシュを追加\n・ダイナミックボーンのコンポーネント数の削減\n・オブジェクトを部位ごとに分割\n\n"},{"type":"text","title":"利用規約","content":"◆利用規約\n\nVRChat向けオリジナル3Dモデル『リサ』\n-----------------------------------------------------------------\n\n本モデルはアバターとしての利用・配信などいずれかの形で使用した時点で、\n本利用規約に同意したものとします。\n\n-----------------------------------------------------------------\n\n●商業利用\n3Dモデル『リサ』はVRChatでの利用を想定したものです。\nなお、このアバターは動画配信などの営利活動を行うことも可能です。\nゲーム制作、アニメーション制作などでの利用も可能です。\n\n●改変\n3Dモデル『リサ』とそれに関連したデータの改変は自由です。\n\n●R-18・R-18Gの利用\n特に問題ありませんので、最低限の節度を守ってご利用ください。\n\n●著作権\n3Dモデル『リサ』とそれに関連したデータの改造および個人的利用範囲での流用は自由ですが、\n『リサ』及び改変したデータが持つ著作権は大元の制作者である火村ユウヤに帰属するものとします。\n\n●禁止事項\n『リサ』とそれに関連したデータの再配布・販売は改変の有無を問わず禁止です。\nまた、公序良俗に反する行為や目的、政治、宗教活動、他者に対する誹謗中傷目的での使用を禁止します。\nVRChat上で本モデル、改造モデルのアバターペデスタルの設置・利用を禁止します。\n\n●免責事項\nモデルデータを使用して発生したいかなる損害・損失・その他不利益等には、当方は一切の責任を負いません。\n\nこの利用規約は予告なく変更・改定されることがあります。ご了承ください。\n\n●制定日\n2018年12月3日\n--------------------------------------------------------------------\n"},{"type":"text","title":"","content":"その他お問い合わせや不明点、不具合報告に関しては、ツイッターのDMまでご連絡ください。\n\n【Twitter】\nhttps://twitter.com/Virtual_Himura\n"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
