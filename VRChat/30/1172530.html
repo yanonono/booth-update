@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "HykAt/kpXOdeytxrRdPMqbvRdrDPpRnOFiK9Q5pa8wk="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "HykAt/kpXOdeytxrRdPMqbvRdrDPpRnOFiK9Q5pa8wk="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"VRChat向け3Dアバター 【天王寺 えいる】オリジナルモデル","description":"VRChat向け オリジナル3Dアバター【天王寺えいる】v1.20\n","url":"https://booth.pm/ja/items/1172530","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"1000"},"image":"https://booth.pximg.net/c/620x620/7bb5bc5a-a1f5-4ff7-80fe-8049fab00a8e/i/1172530/7c693cde-86fc-47a8-b902-dadda6896fe4_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "HykAt/kpXOdeytxrRdPMqbvRdrDPpRnOFiK9Q5pa8wk="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -578,6 +599,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"値下げしました","content":"型が古くなってきたため、4月24日より価格の改正を行いました。\n\n(改正前) 3000円 → (改正後) 1000円"},{"type":"text","title":"アップロードできない場合（バージョン由来）","content":"【原因その1】\n2020年4月2日現在、VRChatのバージョンアップにより使用するUnityのバージョンが2018.4.20f1となりました。\nアバターをアップロードする際、以下の２点を注意してください。（サムネイルにも参照画像を貼っています）\n\n・VRChatSDKは、現在\"２\"を使用する\n・SDKウィンドウに［This avatar has mipmapped textuers ...］のエラーが出ていてアップロードできませんが、その横にある［Auto Fix］を押すとアップロードできるようになります。\n\n－－－－－\n【原因その２】\nUnity2018から、DynamicBoneを入れないままでは、そのままアップロードすることができなくなりました。\nもし、DynamicBoneを入れないままアップロードしたい場合は、下記URLの[ケース３]を参照してScript(Missing)コンポーネントを削除してください。\n\nhttps://note.com/minuet_doll/n/ne16c3ea79548\n\n－－－－－\n【原因その３】\n最新のVRChatSDK2.0では、LegacyBlendShapeのチェックではアップロードされない様になりました。その場合は、[Model]フォルダ内にある［AosaParka2018］を選択して、Inspector - Modelタブ内の\nGeometry - ［LegacyBlendShape］のチェックを外した後、［BlendShapeNormals］を［None］に変更した後\nApplyを押してください。場所の画像はこちらのツイートを参照してください。\n\nhttps://twitter.com/whiteflare_vrc/status/1289232298294968323?s=20\n\n\n"},{"type":"text","title":"紹介文","content":"製作者：かんな久@ねここや\n\n●ポンポン他いろいろな部分が揺れる、ダンスするのに重点を置いたVRChat向けのチアガールアバター【天王寺 えいる】です。\n\n●Humanoid形式のモデルで、ダイナミックボーン設定済み、ユニティちゃんトゥーンシェーダー2.0（UTS2.0）同梱・設定済みですので、Unityに読み込ませたらすぐにアップロードすることができます。\n\n●彼女用に作成した オリジナルのチアガール系Emote８種類と、無料配布している［Emote詰め合わせ1・2］の”表情付き”版も同梱しています。デスクトップ勢の方もポンポンできますので、ご安心ください。\n\n●ポンポン単体も同梱しています。設置方法も載っていますので、お気に入りアバターにポンポンを持たせて踊ることもできます。\n\n●別添えで画像つき説明書も無料で配布しています。購入前に設置方法を確認できますので、右項目からダウンロードしてご活用ください。モデル説明や注意事項の詳細もそちらを参照してください。\n\n　"},{"type":"text","title":"アバター動画","content":"●こちらのモーメントにTwitterで投稿した試着会の動画をまとめていますので、よろしければ参照してください。\n\nhttps://twitter.com/i/moments/1077804851025702912\n\n\n－－－－－\n【本アバターオリジナル チアガール系Emote8種類 紹介動画】\n\n収録Emote\n\n・ポンポン ［01_PonPon］\n・スイング [02_Swing]\n・YEAR!! [03_Year]\n・スタージャンプ [04_StarJump]\n・ラインダンス [05_LineDance]\n・I wants U [06_I-wants-U]\n・L ＆ J [07_L-and-J]\n・←結論 [08_Ketsuron]\n"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/rUPIyPTbO6E\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"アバタースペック・内容物","content":"［］内はポンポン無し\n\n使用SDK：SDK２\nポリゴン数 ： △16331　[△15547]\nマテリアル数 ： ４個　[３個]\nテクスチャ数 ： ４枚 （内 マスク１枚）\nHumanoid Rig対応\nダイナミックボーン ： 設定済み\nVRChatリップシンク ： 対応\n自動瞬き ： 対応（要作業・非推奨）\nアイトラッキング：非対応\nフルトラッキング：対応 （要調整）\nシェーダー：ユニティちゃんトゥーンシェーダー2.0 （UTS2.0） 同梱・設定済み\nアバターランク：Poor （ダイナミックボーンを外すとMedium）\n\n表情プリセット：10種類\nEmote：本アバターオリジナル 8種類・表情付き無料配布分 42種類\nアバター身長：158cm\n\nテクスチャ・FBX・Blenderファイル：収録されています\n\n\n他、詳細は説明書に記しています。\n\n"},{"type":"text","title":"バージョンアップ情報","content":"●2019/02/24 Ver'1.20にバージョンアップしました!\n\n・自分のおっぱいに触ることができるVeryPoorVersionを追加\n・カスタムオーバーライド設定セットを VR用とDesktop用の2つを用意\n・ポンポンを出し入れすることができるオーバーライド（表情）用アニメーションファイルを追加（Emoteスイッチではありません）\n・左ポンポンのボーンが捻ったままになっていたのを修正\n\n\n●Ver'1.10にバージョンアップしました!\n\nモデルのカラーを変更できるカスタムカラーテクスチャを追加しました。"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/4dw4HafUIUc\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"注意事項・利用規約","content":"詳細は説明書に記していますので、ここでは簡単に。\n\n・本モデルの著作権は「かんな久・ねここや」に帰属するものとします。\n\n◯営利目的・VRChat以外での利用は自由です。\n\n◯本モデルの改造・改変・他モデルへ移植は自由です。\n\n◯R-18・R-18G・同人誌などの二次創作は制限しません。（というか作ってください）　ただし、ゾーニングはしっかり行ってください。\n\n\n×本モデルデータ・テクスチャデータ・Emoteデータを第三者へ販売 及び 再配布は禁止します。\n\n×VRChatでpublic状態でのアップロードは禁止します。（例外あり）\n\n×製作者を偽る行為は禁止します。\n\n×政治的・宗教的活動、他者に対しての誹謗中傷目的（たとえその人にどんな非があっても）での使用は禁止します。\n\n"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
