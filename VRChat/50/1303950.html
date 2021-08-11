@@ -56,9 +56,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "a0ObvZs9J9e1LuLBjakB+cKVfc7kkeLMcrSamVc8NUM="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "a0ObvZs9J9e1LuLBjakB+cKVfc7kkeLMcrSamVc8NUM="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"MoffPen","description":"＝＝＝＝おしらせ＝＝＝＝\n2018での同期悪化は、アップデートで多少改善したようです\n（色及び太さの設定が同期されない場合があるようです）\n購入前に、すでに設置されているワールドで動作を確認していただければと思います\n\nなお、SDK3では動作しません（VRChatのギミック周りが一新されるため）\n\n2018で使用する場合、\n・vrcsdk\n・StandardAssetsのVehicles\n・StandardAssetsのCameras\nがインポートされた状態で、unitypackageからインポートする必要があります\n\nまた、新規でインストールする場合、2018ではStandardAssetsが標準でなくなっているため、下記手順で使用してください：\n----\nhttps://unity3d.com/get-unity/download/archive\n1.上記ページの「Unity 2018.1.9」の項目のDownloadsから、StandardAssetsを選択し、ファイルをダウンロードします\n2.ダウンロードした「UnityStandardAssetsSetup-2018.1.9f2.exe」を実行します\n3.ダイアログをすすめると、「Choose Install Location」の画面が出るので、その「Destination Folder」にアセットを保存したいフォルダを設定します（解凍先）\n4.指定したフォルダの中にあるVehiclesとCamerasをインポートします\n---\n＝＝＝＝＝＝＝＝＝＝＝＝\n\n\nVRChatのワールドに液タブ様のペンシステムを追加する、Unity用のPrefabです。\n\nv1.2(2019/04/22)\n※v1.1まではメニューの同期にバグ（プルプル）があったため、v1.2を使用してください。\n\nなお、商品画像1～5はv1.0のものです。","url":"https://booth.pm/ja/items/1303950","offers":{"priceCurrency":"JPY","@type":"Offer","price":"2500"},"image":"https://booth.pximg.net/c/620x620/351d26ed-c53c-492e-88d7-5f23e5fd285b/i/1303950/b99cdf4c-7934-49d0-bad7-86ef64a19630_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -69,6 +86,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "a0ObvZs9J9e1LuLBjakB+cKVfc7kkeLMcrSamVc8NUM="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -435,6 +456,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"機能","content":"■ペンの基本機能\n・ペン先をキャンバスに当てると線が描ける\n・線が途中で途切れない\n・ワールド内の同期※1※2\n・ペン/消しゴムの切り替え\n・ペン/消しゴムの太さ調整\n・ペンの色調整\n\n■その他機能\n・ポインタ表示（キャンバス内での表示）\n・キャンバス明度の調整（２段階）\n・キャンバスのクリア【NEW!】"},{"type":"text","title":"内容物","content":"■モデル\n・MoffPen本体△738\n・MoffPenペン△684\n　マテリアル用テクスチャ付\n\n■Prefab\n・MoffPen\n　├本体\n　├ペン\n　└データ保持用オブジェクト\n\n■その他\n・Shader(DrawSys)一式"},{"type":"text","title":"使用方法","content":"[MoffPenの導入]\n1.下記SDK・Assetのインポート\n・VRChatSDK\n・StandardAssets\n(https://assetstore.unity.com/packages/essentials/asset-packs/standard-assets-32351)\n\n2.MoffPen_v1.1.unitypackageをインポート\n\n3.Assets、\"MoffPen\"内のPrefabをScene内に配置※2※4\n\n4.MoffPen_Dataオブジェクトを邪魔にならない位置に移動\n\n5.VRChat上で動作確認\n\n6.完成！！\n\n[MoffPenの使用]\n・描き方\n1.ペン先でキャンバスに触れます\n2.描きます\n3.ペン先をキャンバスから離します\n\n・サイズ/色の調整\n1.ペン先をスライダーに触れます\n2.調整します\n3.ペン先をスライダーから離します\n\n・ペン/消しゴムの切り替え\n1.ペンを持った状態でUseします。\n\n・キャンバス明度の調整\n1.ペンを持たず、本体の左側の○ボタンをUseします\n\n・キャンバスのクリア【NEW!】\n1.ペンを持たず、本体の左側の\"×\"をUseします\n2.ペンを持ち、本体の右側のClearAllを2秒間タッチします※6"},{"type":"text","title":"注意事項等","content":"※1 絵の同期は描いた時点でワールド内にいる人に限ります。\n　補足：ワールドに入る前の絵は同期されません、また入り直した場合も同様です\n※2 描画内容の同期はペン位置の同期によるため、人により多少差があります。また重いワールドでは正しく動作しない可能性があります。\n※3 World原点から離れた位置に配置した場合、正しく動作しない可能性があります。\n※4 レイヤー28番を使用しています。\n　　他に同じレイヤーを使用している場合、正しく動作しない場合があります。\n※5 1つのWorldに2つ以上は基本的に配置できません\n※6 2秒以内でも人により画面がクリアされます（同期のため2秒間タッチが必要です）\n\nワールドや環境により正しく動作しない可能性があります。\n不具合に対する修正、使用方法への保証はありません。\n上記納得の上、ご購入をお願いいたします。\n＃できる限りは対応するので、何かあればメッセージやTwitterで連絡いただければと思います。"},{"type":"text","title":"ライセンス","content":"対象コンテンツの利用権利の販売となります。コンテンツを改変および任意メディアで利用することができます。\n\nただし下記を禁止します。\n\n・他人が利用できるようにし、著作者の販売を阻害すること。\n・コンテンツ自体に政治的または宗教的もしくは反社会的なメッセージを持たせること。\n\n\nその他\n\n・コンテンツあるいは発生した不利益に対して著作者はなんら責任を負いません。\n・利用権利は他人に譲渡することができません。\n\nこのライセンスにおける解説情報は下記になります。\n\nhttps://gitlab.com/towelfunnelvrc/towel-license/wikis/\n\n（タオルライセンス 販売用 version0.9）"},{"type":"text","title":"更新履歴","content":"v1.2(2019/04/22)\n・メニューが正しく同期されない（ぷるぷる）を修正\n\nv1.1(2019/04/16)\n・キャンバスのクリア機能を追加\n・キャンバス明度の調整機能を正しく動作するように修正\n・その他細かな修正\n\nv1.0(2019/04/04)\n・初版"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
