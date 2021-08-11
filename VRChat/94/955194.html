@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "6kDyzyxoxS6NXIv+fh7+1J0nH6bR6Z6nni/b91g1gvc="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "6kDyzyxoxS6NXIv+fh7+1J0nH6bR6Z6nni/b91g1gvc="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"アルケミスト・アリサ / VRChat対応3Dモデル","description":"オリジナルスチームパンク系キャラクターモデルです。\n営利非営利を問わずVRChatの他各種コンテンツ制作にご利用いただけます。\nVRChat向けに設定済みのPrefabを同梱していますので購入後すぐにアバターとして使用することができます。\n装備品としてステッキ2種が付属します。ステッキは他のモデルの装備としても利用できます。\n本モデルはマテリアルにユニティちゃんトゥーンシェーダー2.0.5を使用しています。\n・ユニティちゃんトゥーンシェーダー\nhttps://github.com/unity3d-jp/UnityChanToonShaderVer2_Project\n\nポリゴン数:19585ポリゴン\nマテリアル数:3～5\nテクスチャ数:2～8","url":"https://booth.pm/ja/items/955194","offers":{"priceCurrency":"JPY","@type":"Offer","price":"2000"},"image":"https://booth.pximg.net/c/620x620/aa7414fb-c4aa-4710-9c36-eb78e1f7edbb/i/955194/96d7368d-967f-40c6-a4a8-633cb74b5886_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "6kDyzyxoxS6NXIv+fh7+1J0nH6bR6Z6nni/b91g1gvc="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -478,6 +499,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"更新履歴","content":"2018/08/07\n・リリース\n\n2018/08/17\n・Unlit版のマテリアルを変更しました。UnlitでもUTS同様に眉と目が前髪を透過するようになります。\n・上記マテリアル用のシェーダーを同梱しました。\n・パーツごとにレイヤー分けしたPSDファイルを同梱しました。色改変などにお使いください。\n\n2018/09/12\n・ユニティちゃんトゥーンシェーダー2.0.4.3p1に対応しました。\n新マテリアルを使用した場合のVRChat内での見栄えはこちらのツイートを参考にしてください\nhttps://twitter.com/tsutsuji815/status/1039567197012557824\n・UTS版に2影色、リムライト、ハイカラーを追加しました。\n・UTSのUnlit_Intensityを使用するようになりました。デフォルト値は3です。\n・Mobile版UTS用のマテリアルとPrefabを同梱しました。ポイントライトによる色飛びなどが発生する場合に使用してください。\n・影色作成用のPSDファイルを同梱しました。色調補正が2つ入っていますのでそれらのオンオフで1影2影のテクスチャを作成できます。Photoshop以外での動作は確認していません。\n\n2018/09/28\n・顔メッシュにカスタム法線データを追加しました。陰影の付き方がスムーズになりました。\n・同梱データ内容の誤りを修正しました\n・各Prefabの内容を修正しました\n\n2018/12/16\n・Unity2017.4.15f1に対応しました\n・UTS2.0.5に対応しました\n・IDLEモーションを修正しました\n・humanoid設定を修正しました\n・シェーダーの不具合を修正しました"},{"type":"text","title":" 同梱ファイルについて","content":"通常用及びフルボディトラッキング用のモデルデータ、テクスチャ、VRChat用のunitypackageを同梱しています。\nunitypackage内にはモデル、テクスチャ以外に下記のものが含まれます。\n・各種Prefab\n    DynamicBone有･無、UTS使用、Mobile版UTS使用、カスタムUnlit用、フルボディトラッキング用\n    ステッキ2種\n・マテリアル\n    UTS使用、Unlit用、ステッキ用(Standard)\n・アニメーション\n    カスタムIDLE(脚が少し内股になります)\n    各種表情\n    自動まばたき\n    ハンドサイン(サンプル)\n・オーバーライドコントローラ\n    Standing用、Sitting用、フルボディトラッキング用に表情、IDLEを割り当てたものです\n    そのまま使うことができますが、表情すべては入っていませんので、好みに合わせてカスタムしてください"},{"type":"text","title":"利用規約","content":"・本商品を購入した時点で下記に示す利用規約に同意したものとみなします\n・商用非商用を問わず、VRChatでの利用及びゲーム、動画、静止画等のコンテンツ制作における素材として本データ(3Dモデル及びテクスチャ)を使用することを許諾します\n・本データ及びキャラクターの著作権は満天星躑躅に帰属します\n・使用に際しクレジット等の著作権表記は不要とします\n・本データを改変し使用することを許諾します\n・本データを許可なく再配布することを禁止します(VRChat内におけるペデスタルによるものを含む)\n・本データを政治的パフォーマンス、宗教活動、ヘイトスピーチ、他者への嫌がらせ行為、その他公序良俗に反する目的で使用することを禁止します\n・本データを使用したことにより発生した問題、損失について満天星躑躅は一切の責任を負いません"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
