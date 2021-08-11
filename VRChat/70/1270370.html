@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "UKfh0dhOfoeYA9ftwqxMexcaKFJ/zDAKUP7+Lgga3E8="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "UKfh0dhOfoeYA9ftwqxMexcaKFJ/zDAKUP7+Lgga3E8="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"【無料版あり】【スキニング済】ヘッドリボン","description":"ご覧いただきありがとうございます。\n\nこの商品はヘッドアクセサリの3Dモデルです。\n\nLite/Standard/クリエイター向けFullがあります。\n\n※Full版にはStd版が同梱されているので、重複購入にはご注意ください。\n\n下記に利用規約を記載していますので、ご覧の上ご購入お願いいたします。","url":"https://booth.pm/ja/items/1270370","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"300"},"image":"https://booth.pximg.net/c/620x620/d54bcd73-6bf7-4c09-97af-cfc13a25592a/i/1270370/9e19a65a-42ca-4eb7-ad23-cbc8055798c2_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "UKfh0dhOfoeYA9ftwqxMexcaKFJ/zDAKUP7+Lgga3E8="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -497,6 +518,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"特徴","content":"・一般的なリボンカチューシャと違い、頭の後ろまで布地が存在します。ぐるっと回せます。（全バージョン）\n\n・ボーンが入っているので、DynamycBoneで揺らせます。(Std版、Full版)\n\n・パーツごとにスキニング済なので、フィッティング、各パーツの大きさの変更をUnity上で完結できます。(Std版、Full版)\n　(band,knot,ribon.L/R.01~004)\n　(ribon.L/R-004はリーフボーンで、ウェイトが乗っていません。)\n\n・UVMAPを添付しているので、テクスチャの書き換えが容易です。（全バージョン）\n\n・.blendが入っているので、いろいろできます。（Full版のみ）\n"},{"type":"text","title":"内容物","content":"Lite版：headribon-Lite.fbx texture.png(1024*) UVMAP(1024*)\n\nStd版：Lite版 + headribon.fbx(skinned)\n\nFull版：Std版 + headribon.blend\n"},{"type":"text","title":"README（全文）","content":"この度は　ヘッドリボン　をご購入いただきありがとうございます。\n\n【特徴\n・一般的なリボンカチューシャと違い、頭の後ろまで布地が存在します。ぐるっと回せます。（全バージョン）\n・ボーンが入っているので、DynamycBoneで揺らせます。(Std版、Full版)\n・パーツごとにスキニング済なので、フィッティング、各パーツの大きさの変更をUnity上で完結できます。(Std版、Full版)\n　(band,knot,ribon.L/R.01~004)\n　(ribon.L/R-004はリーフボーンで、ウェイトが乗っていません。)\n・UVMAPを添付しているので、テクスチャの書き換えが容易です。（全バージョン）\n・.blendが入っているので、いろいろできます。（Full版のみ）\n\n【内容物\nLite版：headribon-Lite.fbx texture.png(1024*) UVMAP(1024*)\nStd版：Lite版 + headribon.fbx(skinned)\nFull版：Std版 + headribon.blend\n\n【利用規約\nヘッドリボン（Lite/Std/Fullを問わない）（以下：本モデル）は改変の有無を問わず、本モデルと同様に（アクセサリモデルとして）販売、配布することを禁じます。\nSale or redistribution this 3D model are forbidden as an Accessories model or a part of Accessories models set,  regardless of whether it is modified or not.\n【例\nNG：本モデルを単品アクセサリとして販売、配布\nNG：本モデルをアクセサリセットの一部として販売、配布\nNG：本モデルの一部を使用し、別のアクセサリとして販売\nOK：アバターモデル（humanoid）の一部として本モデルを使用して販売、配布\n\nギリOK：メッシュは本モデルのみを使用し、humanoidボーンを追加し、「ヘッドリボンちゃん」という名前のhumanoidモデルを販売、配布\nOK：上記「ヘッドリボンちゃん」をVRChat等でパブリック（誰でも使用できる）アバターとして公開\n\nギリNG：メッシュは本モデルのみを使用し、VRC Avatar Discripterを設定し、「ジェネリックヘッドリボン」という名前のGenericアバターをUnityPackageで販売、配布する\nギリOK：上記「ジェネリックヘッドリボン」をVRChat等でパブリック（誰でも使用できる）アバターとして公開\n\n【お問い合わせ先\n【access\nhttps://twitter.com/tamayura510\nhttps://tamanokoshi.booth.pm\n\n【変更履歴\n2019/03/12 ver1.0.0 作成しました。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
