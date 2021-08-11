@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "SKp0TQiMlOWdQyBS+Mz8FrBga5PxOFHPIly3Iv4QTaM="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "SKp0TQiMlOWdQyBS+Mz8FrBga5PxOFHPIly3Iv4QTaM="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"オリジナル3Dモデル『ももち』","description":"この商品はVRChat向けのHumanoidアバターとして作成した3Dモデルです。\nもちろん、VRChat以外でも3D素材として使用もできます。\n\n異界と異界の狭間にあるお店「白竹屋妖具店」。\nそのお店の店員としてアルバイトをしているのが、野狐の「ももち」です。\nサボりがちな店長の代わりに毎日あくせく働く、ちょっと不憫な女の子。\nどうやら次のバイト先を探しているようなので、是非とも貴方の元へお迎えしてあげて下さい。","url":"https://booth.pm/ja/items/1217581","offers":{"priceCurrency":"JPY","@type":"Offer","price":"3000"},"image":"https://booth.pximg.net/c/620x620/ecbe906e-dd0a-4826-9b04-0f8a857c3ac0/i/1217581/85dc58f0-caed-4645-8653-e10b4011bd67_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "SKp0TQiMlOWdQyBS+Mz8FrBga5PxOFHPIly3Iv4QTaM="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -421,6 +442,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"商品内容","content":"下記のファイルが梱包されたzipファイルとなります。\n\n・Readme.txt（必ずお読みください）\n・unitypackageファイル（momochi.unitypackage）\n・FBXファイル（momochi.fbx）\n・テクスチャ用PNGファイル（body.png \u0026 cloth.png）\n・テクスチャ改変用psdファイル（body.psd \u0026 cloth.psd）"},{"type":"text","title":"スペック","content":"・ポリゴン数：23849（ポリゴン数はベース用ボディも含む）\n・リップシンク：VRChat用にunitypackageの方で設定済み\n・表情アニメーション：各種設定済み\n・VR \u0026 フルトラッキング対応済み\n・Refrex Shader2設定済み\n・DynamicBone設定済み"},{"type":"text","title":"使用方法","content":"・unitypackageをunityにインポートしてご利用ください。\n\n■VRChatにアバターとしてアップロードする場合（この方法は2019/02/24時のものとなります）\n・unityのプロジェクトに最新版のVRCSDKをインポートします\n・DynamicBoneを購入している場合、そちらもインポートします\n・momochi.unitypackageをunityにインポートします\n・Asset内の「momochi」ディレクトリの中のシーンファイル「momochi」を開いて、ゲームウィンドウにアバターモデルが出現した状態にしてください。\n・その状態のままVRChatにアバターをアップロードと同じ手順で「Show Build Control Panel」を選択し、「Build \u0026 Publish」を選択してください。\n・アップロード画面が出たら、Sharingのチェックが「Private」になってることを確認し、アップロードを行ってください。\n\n・上記以外の使用方法は自己責任でお願いいたします。"},{"type":"text","title":"利用規約","content":"各種サービスで使う場合は、本規約に加え、そのサービスの規約も遵守してください。\n\n■利用可能なもの\n・各種サービスのアバターとして\n\t（一部禁止事項がありますので、禁止事項の確認は必ずお願いいたします）\n・ゲーム作品、映像作品\n\t（一部禁止事項がありますので、禁止事項の確認は必ずお願いいたします）\n・暴力描写や性的描写のある成人向け作品も可能です\n\t（その作品を公開したことによる損害は、作者は一切責任を負わないものとします）\n\n■商用利用について\n・・各メディアへ（動画、記事の画像など）に写りこんでも問題ありません。\n・ゲーム作品や映像作品に利用できます\n・スクリーンショットなどで撮影した画像を画像素材として利用できます。（画像素材自体の配布はできません）\n・上記以外の商用利用に関しては、制作者ウツロちゃんに必ず許諾をとってください。\n\n■改変について\n・改変は自己責任で行ってください\n・改変後のモデルの著作権もウツロちゃんが所有します\n・改変に他のモデルを利用する場合は、該当モデルの利用規約も遵守してください\n\n■禁止事項\n・再配布（改変モデルも含む）\n・各種サービスで購入者以外が自由に本モデル及び改変モデルを利用可能な状態にすること\n・本モデル及び改変モデルを使用したゲームやアニメーションにおいて、再度使用できる状態の本モデルを含むデータの配布\n・本商品に含まれるデータを元にして、3Dモデルあるいはそれを撮影した画像自体に商品性が依存するもの（例：素材集など）の製造、配布、販売\n・特定個人や団体への中傷を目的とした利用\n・制作者であるウツロちゃん、アバター名の「ももち」、サークル名の「白竹屋妖具店」などの名称や世界観を用いた商用利用\n・本アバター「ももち」のキャラクターイメージをメインとした商用利用\n・その他、制作者が不適切と判断したもの\n\n■免責事項\n・本モデルを利用することで発生したトラブルや損失、損害について、制作者ウツロちゃんは一切責任を負いません。\n・本モデルのご利用は利用者の責任において行ってください。\n・本モデルは予告なくアップデート、販売の停止をする場合があります。\n・本規約は予告なく、変更される場合があります。その場合は、最新の規約が適用されます。\n・当利用規約において翻訳の都合上、他言語との差異が生じた場合、日本語の利用規約を適用するものといたします。"},{"type":"text","title":"その他","content":"何か重大なエラーや不具合、バグがあった場合は下記よりご連絡をお願いいたします。\n連絡先：uturochan@gmail.com"},{"type":"text","title":"更新履歴","content":"2019/02/24　Ver1.0.0　商品公開"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
