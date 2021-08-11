@@ -58,6 +58,16 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "RzmyXlUu0W58WsXhR5uvn8cZ0lgZmsWLSGAGMttBQMQ="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
   </head>
   <body>
     <div class="mini-player-controller" style="display: none;">
@@ -86,6 +96,13 @@
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "RzmyXlUu0W58WsXhR5uvn8cZ0lgZmsWLSGAGMttBQMQ="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"【3Dモデル】オルタナティブぴぼ 【VRC fbx VRM】","description":"memexのギター、「ぴぼ」と同型の3Dモデルです。\nポリゴン数：5504\nアバターの特性上、足ボーンにウェイトが設定されていません。ご了承ください。\n\n.vrm、.fbx、.blendに加えVRChat用設定済みの.unitypackageが含まれています。\nベースカラー(黒色の部分)とエミッション(ピンク色の部分)をUnity内で簡単に変更できます。\n\nオリジナルとの違いは\n・フード内が宇宙になっていない\n・チャックの金具の素材\n・目の色が一色になっている\n・模様のグラデーションがない\nです。\n\n※Arktoon-Shadersを同梱しています。","url":"https://booth.pm/ja/items/1264059","offers":{"priceCurrency":"JPY","@type":"Offer","price":"1500"},"image":"https://booth.pximg.net/c/620x620/d0f38e59-fab5-4e19-a0d4-19759df07943/i/1264059/a7aaaf80-80b2-4aad-a5f0-d2960dd03fc8_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -93,6 +110,10 @@
     rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "RzmyXlUu0W58WsXhR5uvn8cZ0lgZmsWLSGAGMttBQMQ="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -496,6 +517,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"キャラクターとして利用したゲームを販売することができます。","content":""},{"type":"text","title":"利用規約","content":"オルタナティブぴぼ\n作成者：ぴぼ\nTwitter: @memex_pibo\nMail: pibomusic@gmail.com\n\n\n利用規約\n\n【利用許諾】\n・本データの改変を許可する。\n・改変の有無にかかわらず、同フォルダ以下に存在するデータ(以下本データ)を再利用不可かつ、アップロード者本人にのみ操作可能な状態で、Web上のサーバーにアップロードすることを許可する。\n・本データをアバターとして用いた映像を配信することによる収益の受け取りを許可する。\n・改変の有無や、商用であるか非商用であるかにかかわらず、本データを再利用不可な状態で組み込んだゲーム、ソフトウェア、アプリケーションを配布することを許可する。\n\n【禁止事項】\n・本データ及びその改変物を公序良俗に反する行為や目的、反社会的な行為や目的に使用することを禁止する。\n・利用許諾で明示されている場合を除き、本データを再利用可能な形での再配布を禁止する。\n・本データをアバターとして利用し「ぴぼ」を騙る行為を禁止する。\n・利用許諾で明示されている場合を除き、本データをコンテンツの主体とした画像データ、3Dモデルデータ、印刷物、立体物をダウンロード者以外へ有償で提供することを禁止する。\n\n【利用条件】\n・同梱シェーダについては同梱シェーダのライセンスに同意すること。\n・アバターとして利用しているダウンロード者に対し、作成者が不適切な利用と見做した場合、利用を停止するように要求する。この場合即刻利用を停止する義務を負うことに同意する。\n\n【免責】\n・本データを利用することにより利用者が被るいかなる不利益について、作成者は一切の責任を負わないものとする。\n"},{"type":"text","title":"利用規約Q\u0026A","content":"利用規約Q\u0026A\nQ1. 「・改変の有無にかかわらず、同フォルダ以下に存在するデータ(以下本データ)を再利用不可かつ、アップロード者本人にのみ操作可能な状態で、Web上のサーバーにアップロードすることを許可する。」って？\n\nA1. VRChatのprivateアバターなど、自分にしか使えない状態でアップロードしてもいいということ。\nVRChatにpublicアバターとして公開したり、VRoidHubなどに購入者本人以外が利用可能な状態でアップロードすることはできません。\n\nQ2.ゲームのキャラクターとして組み込んだゲームを販売してもいいの？\n\nA2. 大丈夫です。\n\nQ3.「・利用許諾で明示されている場合を除き、本データをコンテンツの主体とした画像データ、印刷物、立体物をダウンロード者以外へ有償で提供することを禁止する。」って？\n\nA3. LINEスタンプとかシールとかアクキーとかフィギュアとか勝手に作って売らないでね、ということです。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
