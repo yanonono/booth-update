@@ -55,9 +55,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "gvcv2c4t3TtgCFoyApCs/K3M0Ewpy09qjdb4ZqMX7Lg="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "gvcv2c4t3TtgCFoyApCs/K3M0Ewpy09qjdb4ZqMX7Lg="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"M8A2","description":"M8A2 BattleRifle v1.1","url":"https://booth.pm/ja/items/1145642","offers":{"priceCurrency":"JPY","@type":"Offer","price":"500"},"image":"https://booth.pximg.net/c/620x620/3713aef5-42d6-43d4-b456-e2fe144cfcc8/i/1145642/eed7a2bd-e489-4f45-bc11-0ef751223016_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -68,6 +85,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "gvcv2c4t3TtgCFoyApCs/K3M0Ewpy09qjdb4ZqMX7Lg="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -424,6 +445,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"","content":"XM8がトライアルを勝ち抜き様々な改良、バリエーションが増えたうちの7.62mm、セミオートのバトルライフル仕様モデル。\n左右対称でボルト、コッキングレバーの向きを自在に変えられるため射手の利き手を選ばず、レールシステムも多いため高い汎用性を確保。\n威力、射程、命中精度は勿論高水準！\n\nフルスクラッチモデルのアサルトライフルです。\n主にVRChatでの利用を想定していますが他で使っていただいても構いません。\nご購入頂いた時点で利用規約に同意したものとします。\n\nメッシュ：本体(6870△)、(マガジン3696△)(総ポリゴン数10574△)\n空マガジン(288△)穴無しマガジン(3656△)(穴無し空マガジン216△)\n\nテクスチャ：本体 4096(アルベド、メタリック、ノーマル)\n穴無しマガジン用テクスチャ(上同)計6枚\n\nシェイプキー：FrontSight ON、RearSight OFF、Safety semi、Safety full、Stock、Trigger、LeverR,L、BoltBackR,L、Cheekpad、MagazinRelease、FrontSight Width、FrontSight Hight、RearSight size\n\n画像3枚目：FrontSight ON,Safety,Stock\n画像4枚目：FrontSight ON,Safety,Stock,BoltBack L,Lever L,Cheekpad,MagazinRelease\n画像5枚目：RearSignt OFF,BoltBack R,Lever R\n\nマテリアル:2つ(1つは穴無しマガジン用のため使用する際は通常１つです)\n\n禁止事項：再配布、自作発言\n\n・更新履歴\nv1.0　販売を開始しました。\nv1.1　シェイプキー：Safety semi、Safety full、FrontSight Width、FrontSight Hight、RearSight size\nfbxファイル：magazin、magazin empty、magazin fill、magazin fill empty\nテクスチャ：magazin fill(empty)用テクスチャ\nマテリアル：magazin fill(empty)用マテリアル\n上記を追加しました。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
