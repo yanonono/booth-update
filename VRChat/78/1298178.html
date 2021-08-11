@@ -56,9 +56,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "C5c8X210XohhFdBkmK/Oa9kLQrTv/27cZ/LVPwELJlk="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "C5c8X210XohhFdBkmK/Oa9kLQrTv/27cZ/LVPwELJlk="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"VR用メガネフレーム","description":"[2020/01/31]\n全ての商品はDMM.makeにて出品しましたので、こちらをしばらくご利用ください。\nhttps://make.dmm.com/shop/235713/\n\n[2020/01/15]\nOculus Quest用もDMM.makeで注文できるようになりました！\nhttps://make.dmm.com/item/1138298/\n\n[2019/12/27] Indexの希望者が多いのでDMM.makeで作れるようにしました。以下のリンクからご注文ください。\nhttps://make.dmm.com/item/1137420/\n\nおそらく現在世界で最も安く、VRゴーグルにマウント可能なメガネの作成方法を提供します。なんとそのお値段はレンズ込みで最安2000円程度(レンズはペアで1300～1600円)！\n現在、VIVE、Oculus Rift、Oculus Quest、Valve Indexに対応しています。\n\nVIVEではメガネユーザはディスプレイ間距離を離せば既存のメガネが入るのですが、視野角がスマホVR並みになります。\nしかし、このフレームを使えばディスプレイ間距離は最小にできるので、視野角を裸眼使用時と同等まで広げることができます。\n\nOculus RiftとQuestも対応しました。\nゴーグルのカバーに取り付けるタイプです。\nQuestにはメガネ取り付け用のスペーサがありますが、当モデルでは不要なので、視野角を最大限に活かせます。\n\nさて、メガネを作るにあたって手順が大きく3つあります。\n0. 自分の度数がわからない人は、眼科かメガネ屋さんで矯正するための視力を測る(度数と瞳孔間距離が最低限、乱視の矯正も必要な方は円柱度数と円柱軸の情報も必要です。)\n1. Aliexpressでメガネ用レンズを注文する\n2. STLデータでメガネフレームを印刷もしくは3Dプリントを頼む\n\n1がよくわからないと思うので解説します。","url":"https://booth.pm/ja/items/1298178","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"700"},"image":"https://booth.pximg.net/c/620x620/d6025b1a-065f-421b-b27c-b58fab3f570e/i/1298178/2b0284b9-2575-4d56-9db4-78a444bf0467_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -69,6 +86,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "C5c8X210XohhFdBkmK/Oa9kLQrTv/27cZ/LVPwELJlk="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -874,6 +895,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"FONEX(Aliexpress)でレンズのみ発注方法","content":"中国通販の安さが最近半端ではありません。\nなんと非球面プラレンズ(ペア)を最安1300円ほどで作れます。\n見たところ度数-2前後以下の人はこちらのほうが安いです。\n最安を追求する方はこちらから。\nお手軽でおすすめなのは後述のメガネ一式(フレーム付き)を注文する方法です。\n\n商品ページ\nhttps://ja.aliexpress.com/item/32845757045.html\n\n写真2枚目のように遠視の方はHyperopiaを選択し、屈折率を選択してください。近視の補正であればMyopiaです。\n屈折率はレンズの薄さを決めますが、薄ければ薄いほど良いわけではなく、透過性が悪化したり、無駄に高くなります。\nおそらくVRでは近視の矯正がほとんどなので、それ前提で書きますが、度数(Sphere)-2前後までは1.56で十分です。\n-3を超えたあたりから1.61ぐらいが欲しくなります。\n-5以上は1.67や1.74が良いでしょう。\n\n商品をカートに入れて注文ページに行きます。\n写真3枚目に出品者に対してメッセージかけるので、そこで矯正値とレンズ形状を伝えます。\n私の場合だと乱視が少しありますが、度数の矯正だけでほぼ見えるので0を入力しています(お医者さんや眼鏡屋さんと相談してね！)。\nメッセージは\nOD: S(-2.0) C(0) A(0), OS: S(-2.25) C(0) A(0), PD: 59. Could you cut it to insert into your glasses frame 8821? If some extra fee is required, I pay it.\nのように書きました。\n私の場合は追加費用無しで発送されましたが、もし加工費くれ～と言われたら支払ってあげてください。\nそのあたりのやり取りが面倒なら後述のメガネ一式の注文が楽かもです。"},{"type":"text","title":"FONEX(Alidexpress)でメガネ一式を頼む (現在売り切れ？)","content":"度数が-3あたりを越した人や、英語でのメッセージのやり取りが億劫な人はこちらからしたほうが良いかも。\nなぜか屈折率1.61や1.67はフレームの値段が300円程度しかない(なんかお得感)。\n\nhttps://ja.aliexpress.com/item/8821/32873123354.html\n\nこちらは処方タイプというところでシングルバージョンというボタンがカート追加前にあり、GUIで度数や乱視矯正の数値が入力できます。らくちん\n\n発注前にメッセージで色を伝えるとフレームカラーが選べます(伝えなければランダム)。\nフレームは使わないので、ダテメガネ用なり、上の方法でもう一組レンズを注文するなりしてエンジョイしてください。ちなみにこのフレームのかけ心地は良くもなく悪くもなく…\nフォトクロミックレンズも安いのでそのあたりは良い選択肢かも。"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/Peb-vJHQX70\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/i6k1f_5CfCo\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/fqlZ_ZOF540\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/xteyShZHhmc\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"利用規約(STLデータ)","content":"ダウンロードにあたり、以下の利用規約に同意したものとします。\n\n・本モデルの改変自由\n・改変後のモデルの著作権もてんてーに帰属する\n・本モデルの改変有無に関わらず再配布と商用不可\n・本モデルを印刷し、装着しての配信などでの収益化は自由\n・本モデルで万が一怪我をしても制作者は責任は負わない\n・本モデルをR-18なコンテンツに使っても構わない\n\n2019年3月6日制定\n制定/制作者: てんてー\n\n不明な点があれば以下の連絡先に質問ください。\nTwitter: @tenteeeee_vrc\nDiscord: TenteEEEE#8378"},{"type":"text","title":"3Dプリンタと出力品質","content":"プリンターはFlashforgeのAdventurer3。\nフィラメントは三菱ケミカルのVerbatimのPLAブラックです。\nなるべくきれいになるようにしますが、熱溶解積層方式の都合上、どうしても小さなバリやヒゲ状のものが残ります。\nご注文の際はご理解をお願いします。\n"},{"type":"text","title":"更新履歴","content":"2019/04/01 公開\n2019/04/07 取り付け動画公開\n2019/11/09 Valve Index対応\n2019/11/21 Oculus Quest対応\n2019/12/09 DMM.makeにIndex用を追加"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
