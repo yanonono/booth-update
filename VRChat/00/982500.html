@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "q6LJCTvBvRImvvu/phsGjMgvkuEzP5ge6W9oFf9D/mg="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "q6LJCTvBvRImvvu/phsGjMgvkuEzP5ge6W9oFf9D/mg="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"七支刀【VRChat対応】","description":"フルスクラッチの七支刀です\n片手で持つのにちょうどいいサイズです\nマテリアルをいじることで色を変えられます\n\nポリゴン数：854△\nVRChatでの使用を想定しています","url":"https://booth.pm/ja/items/982500","offers":{"priceCurrency":"JPY","@type":"Offer","price":"0"},"image":"https://booth.pximg.net/c/620x620/b3455261-78a7-4395-ad3c-ee3028c2242e/i/982500/c6c24102-3beb-4e74-bcad-9f0254f2ba31_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "q6LJCTvBvRImvvu/phsGjMgvkuEzP5ge6W9oFf9D/mg="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -366,6 +387,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"───内容物───","content":"・readme(コレ)\n・メッシュ（fbx)2種(マテリアルが違うのみ)ポリゴン数　854△\n・2048x2048テクスチャ1枚(Shitishi_Texture_White)\n・unitypackageファイル\n・スクリーンショット(BOOTHページに掲載しているものと同じです)\n・色変えの方法.png"},{"type":"text","title":"───作者───","content":"Dblue\n(以下、作者はDblueを指すものとします)\ntwitterアカウント(@Dblue_LisaLisa)"},{"type":"text","title":"───利用方法───","content":"Unity内にunitypackageファイルをドラッグ\u0026ドロップして、インポートしてください\nShitishiTouOnは暗所で発光します。～Offは発光しません\n\n色変え対応してます。詳しくは同封の「色変えの方法」を参照してください\n"},{"type":"text","title":"───利用規約───","content":"○当モデルデータの利用を開始した時点で、記載された利用規約に同意したものとします。\n\n○禁止行為\n・当データ、また改変モデルの二次配布、及び販売\n・当データを用いた、公序良俗に反する行為。及び政治的、宗教的活動\n・自作発言\n\n○許可行為\n・上記の禁止行為にあたらない利用\n例えばVRChatのアバターに持たせたり、ワールドの背景に置いてみたり、\nVRChatを想定してはいますが、それ以外、例えば自作ゲームに使用するなど\n当データを持たせたアバターを、ペデスタルに登録して配布は許可します\n\n・商用・収益化コンテンツでの使用も許可します(有料コンテンツの背景や、Vtuber活動など)\n・R-18、R-18Gコンテンツでの使用も許可します\n\n○著作権について\n・当モデルデータの著作権は全て作者が保有しています。宣言しない限り著作権を放棄はしません\n・改変された当モデルデータの著作権は、改変部分は改変者。それ以外の部分は作者が保有します\n\n○その他\n利用規約は変更される場合があります。その場合、変更された利用規約が優先されます\n当モデルデータの配信・使用停止の措置を、作者はいつでも行えるものとします\n当モデルデータを使用したことによって発生したあらゆる問題に関して、作者は一切責任を負いません\n\n質問等は連絡してください"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
