@@ -59,6 +59,16 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "8DyjkzXCREX6onEhUMrCHYf/B26g9lPPxrLcUL6HIgI="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
   </head>
   <body>
     <div class="mini-player-controller" style="display: none;">
@@ -87,6 +97,13 @@
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "8DyjkzXCREX6onEhUMrCHYf/B26g9lPPxrLcUL6HIgI="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"VRChat用自動車「Sanobant」※ワールドに置くと運転できるよ！","description":"注意：この商品は「VRCSDK2」向けです。3では動作しませんのでご留意ください。\n\n・自作のVRChatワールドにプレハブを設置するだけで、誰でも乗り込んで運転ができる4人乗り乗用車（オプションでラジオつき）です。\n\n・VR、デスクトップ両方で動きます。\n\n・本データをダウンロードした段階で、利用規約（下記参照）に同意したものとみなしますので、必ず目を通してからご購入＆ご利用ください。\n\n・車のデザインは某東側諸国の国産車をイメージしています。\n\n・エンジン音、ブレーキ音は問題が多発するため外しています。\n\n・unitypackageとReadme(text)が入ったzipです。\n\n・試乗はこちらのワールドで可能です。\n→https://vrchat.com/home/launch?worldId=wrld_5b56858b-4cd9-4776-9eb3-2d5795f94dbb","url":"https://booth.pm/ja/items/1285848","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"1500","highPrice":"3000"},"image":"https://booth.pximg.net/c/620x620/1a4e0889-d4a0-4259-9d32-ed14de1b80f3/i/1285848/536e53bd-612a-43e9-80ae-5b78b09f3da0_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -94,6 +111,10 @@
     rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "8DyjkzXCREX6onEhUMrCHYf/B26g9lPPxrLcUL6HIgI="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -453,6 +474,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"-更新情報-","content":"・2020年4月21日\nUnity2018でラジオ機能が正常に機能しないバグを修正。\n\n・2019年7月10日\n最高時速と駆動系を変更。\n後ろに走ったままになるバグを修正。\n\n・2019年6月20日\nライトの同期に関する問題をほぼ解決。\n\n・2019年6月15日\nライト点灯が同期しない問題をある程度改善。\n\n・2019年5月21日\n同期関係およびインターフェースの微調整。\nラジオシステムの改善。\nマテリアルの見直し。\n"},{"type":"text","title":"-使い方-","content":"１．「Unity Standard Assets」「VRCSDK」「VRChat Home kit」の3つをUnityのプロジェクトにインポートします。\n\n２．本データに同梱されているUnitypackageをインポートします。\n\n３．フォルダ内にある「Sanobant normal P50」または「Sanobant radio P50」のprefabを適当な自作ワールド内に設置します。\n\n４．あとはそのままワールドをアップロードすれば、ワールド内を乗り回せます。"},{"type":"text","title":"-操縦方法-","content":"※2019年5月21日更新\n１．運転席に座るとライトが点灯。\n\n２．ハンドルを押すと操作系が起動します。（見た目の変化はなし）\n\n３．歩行移動時と同じキー操作で、前後左右に運転できます。\n※デスクトップとVRで挙動が違います。詳細は下記。\n\n４．降りるときはハンドル右側の「Exit」を使ってください。\n\n\n↓以前の操縦法\n１．運転席に座る。\n\n２．座ったまま「Start(after sit)」を押すとライトが点灯。\n\n３．歩行移動時と同じキー操作で、前後左右に運転できます。\n※デスクトップモードでの場合です。VRモードでの動作は未確認。\n\n４．降りるときはハンドル右側の「Exit」を使ってください。"},{"type":"text","title":"-VRモードでの挙動-","content":"HTC VIVEにて動作確認を行ったところ、左手の移動ボタンに指が触れただけで動くことが分かりました。\n\nそのため、通常の歩行移動とは異なり、移動したい方向に指を軽く触れることで走行します。\n\n停止させたい場合は指を後退方向にもっていって減速し、ある程度減速したところでボタン中央に指を持っていくとでほぼ停止します。\n\nOculusやWin MRでは挙動が異なるかもしれません。試乗時にご確認ください。"},{"type":"text","title":"-ラジオの使い方（optional のみ）-","content":"※2019年5月21日更新\n１．「Start」で1曲目が再生されます。放置すると登録された曲が順番に流れます。\n\n２．「Next」で次の曲の頭にスキップできます。\n\n３．「Stop」で音が止まります。続きから再生はできません。\n\n４．「Next」を押しただけでも曲は始まるみたいです。\n\n５．曲を差し替えたい人は、prefab内の「Body」についている「Audio Bank」のClip欄に任意のファイルを指定してください。\n\n\n↓以前の操作法\n１．「Radio Start」で1曲目が再生されます。\n\n２．「Play Next」で次の曲が再生されます。\n(押さないと曲が終了した後無音になります)\n\n３．「Radio Stop」で音が止まります。続きから再生はできません。\n\n４．「Play Next」を押しただけでも曲は始まるみたいです。\n\n５．曲を差し替えたい人は、prefab内の「Body」についている「Audio Bank」のClip欄に任意のファイルを指定してください。"},{"type":"text","title":"-使用上の注意点-","content":"１．VRモードでの動作は激しい車酔いが予想されます。\n\n２．2台以上設置して同時に動かすと、操縦権限にバグが起きることがあります。\n\n※2019年5月21日追記\n同期関係の見直しでおそらく改善されています。ただ、負荷がかかるのでたくさん置いてレースをするのは危ないかも。\n\n３．運転中に車の外に出ると操縦不能になります。\n\n４．運転中に奈落に落下すると操縦権を持ったまま車から降ろされ、実質リモートコントロール状態になります。\n\n５．ワールド内でのラジオの音量調整はできません。事前に適切なボリュームにしておくか、何らかのインターフェースをつけてください。"},{"type":"text","title":"-利用規約-","content":"１．モデルのメッシュについて\n\n・商用利用：不可\n\n・二次配布：不可\n\n・改変：可（改変後の二次配布は不可）\n\n・VRChat以外での利用（ゲームに組み込むなど）：不可\n\n・収益を伴う動画・画像への映り込み：可\n\n※例えば、運転している動画をYouTubeに上げて収益化するのはOKです。\n\n・当モデルの作者を騙る行為：不可\n\n\n２．自動車のシステムについて\n\n・システム自体はUnity Standard AssetsにVRCSDKを組み込んでいるだけなので、特に規約はありません。\n\n・Unity触って3～4か月の初心者なので、変なところがあれば改造して使ってください。\n\n・当モデルのシステムを参考に、オリジナル自動車を作って（有償・無償問わず）配布するのもOKです。\n\n\n３．楽曲データについて（optionalのみ）\n\n・著作権は渚乃奏、およびk.TAMAYAN（玉谷研太）に帰属します。\n\n・当モデルおよびVRChat以外での利用（ゲームや動画のBGMとして直接組み込むなど）：不可\n\n・商用利用：不可\n\n・二次配布：不可\n\n・改変：不可\n\n・VRChat上で車のラジオから楽曲が流れている場面を撮影した動画の利用：可\n※この場合、動画が収益化されていても大丈夫です。\n\n・クレジット表記\n\nA．ワールドに組み込んだ場合は\n\nCar Radio Music by Kanade,Nagisano and k.TAMAYAN\n\nと表記をお願いします。\n\nB．楽曲データが組み込まれたワールドで撮影された動画へのクレジット：不要です。\n※クレジット出来る場合は上記に準じてください。\n\n・各楽曲データの詳細については規約の後に記載しております。\n\n\n４．データ全体について\n\n・自作のVRChatワールドに組み込んで使用してください。\n\n・クレジットは不要ですが、クレジットする場合は\n\nSanobant P50 model by Kanade,Nagisano\n\nとワールド説明欄などに記載してください。\n\n\n５．免責事項\n\n本データの利用によって発生したあらゆる損害等について、作者は責任を負いません。\nまた、規約は予告なく更新される場合があります。\n\n2019年3月23日：渚乃奏"},{"type":"text","title":"-楽曲情報-","content":"１．恋と貧困と幸福を～Radio Edit～\n作詞・作曲：渚乃奏＆k.TAMAYAN\n\n２．別離～Radio Edit～\n作詞・作曲：玉谷研太(k.TAMAYAN)\n\n３．僕は本当に阿呆だ～Radio Edit～\n作詞・作曲：k.TAMAYAN\n\n４．明後日を歌って 2019～Radio Edit～\n作詞・作曲：渚乃奏＆k.TAMAYAN\n\n５．世界はここだけ～Radio Edit～\n作詞・作曲：玉谷研太(k.TAMAYAN)\n\n６．この願いがいつか～Radio Edit～\n作詞・作曲：k.TAMAYAN"},{"type":"text","title":"-連絡先-","content":"不具合等は下記リンクか、BOOTHの機能でご連絡ください。\n\nTwitter：https://twitter.com/nagisano_kanade\n\n公式サイトお問い合わせフォーム：https://nagisano-kanade.webnode.jp/contact/"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/9iEAnWWBhfQ\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
