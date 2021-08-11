@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "bw4imXF82+sOxDPtjiKTaZJoKidUvCfSGsaDGQCtj0M="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "bw4imXF82+sOxDPtjiKTaZJoKidUvCfSGsaDGQCtj0M="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"ノマキューブ / Noma cube【3Dモデル/モーション】","description":"無限に立方体が展開し続ける不思議なキューブ、通称 \"ノマキューブ\" (パタパタ立方体、カレイドキューブとも) の3DCGモデルです。\nパタパタ動き続けるアニメーション付き、改変しやすいテクスチャPSDファイルを同梱していますので自由なカスタマイズが可能です。\nまた、動くたびに全体が軽く揺れるアニメーションファイルも付属しています。\n\nℹFANBOX支援者向けに同ファイルを配布しています。そちらもご確認ください。\nhttps://www.pixiv.net/fanbox/creator/17346029/post/315773\n\n - - -\n\nIt is a 3DCG model of a mysterious cube called \"Noma cube\" (Pattera cube, Kaleido cube, etc.), which is continues to expand in infinity.\nIt is possible to customize it freely because it is bundled with an animation that keeps moving and an easily modifiable texture PSD file.\nIn addition, animation file that the whole lightly shakes with each movement is attached.\n\nℹThe file is distributed to FANBOX supporters. Please check that also.\nhttps://www.pixiv.net/fanbox/creator/17346029/post/315773","url":"https://booth.pm/ja/items/1268317","offers":{"priceCurrency":"JPY","@type":"Offer","price":"100"},"image":"https://booth.pximg.net/c/620x620/1154c32c-e4a4-4167-b688-5231756d79b1/i/1268317/5d2e0ef1-9dc0-4d16-809f-ae41a9dfc236_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "bw4imXF82+sOxDPtjiKTaZJoKidUvCfSGsaDGQCtj0M="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -434,6 +455,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/CJrcQotv0RA\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"☑ 更新履歴 (Change log)","content":"- 2019/9/9 v1.0.1\n　・利用規約を一部改定しました。\n\n- 2019/03/12 v1.0.0\n　・販売開始"},{"type":"text","title":"☑ 3Dモデル情報 (3D model info)","content":"[NomaCube.fbx]\n・Polygons: △96\n・Materials: 1\n・Shape kyes: 0\n・Animation：1～1081フレーム\n\n[NomaCube.anim]\n・NomaCube.fbxに内包しているアニメーションを.animに複製したアニメーションファイルです。\n・An animation file that duplicates the animation included in NomaCube.fbx to .anim.\n\n[NomaCubeShaking.anim]\n・NomaCube.animに変形時の振動を加えたアニメーションファイルです。\n　Root Motion Curves 生成済、Apply Root Motion 有効化推奨。\n・ It is an animation file which added vibration at the time of deformation to NomaCube.anim.\n　Root Motion Curves generated, Apply Root Motion activation recommended."},{"type":"text","title":"☑ 利用規約・免責事項 (License / Disclaimer)","content":"著作権の譲渡・破棄は行っておりません。\nCopyrights are not transferred or abandoned.\n\nこのアバター・3Dモデルの使用により使用者側に不利な出来事（損害・事故）が生じた場合、それがいかなるものであっても制作者および配布元は一切責任を負いません。\nIf an adverse event (damage or accident) occurs on the user side due to the use of this avatar or 3D model, the producer and distributor will not be liable for any matter.\n\n　【許可】\n　・改変\n　・商用利用\n　・暴力・性的表現\n　・VRChat以外の媒体への使用\n　　（VirtualCast配信、動画・配信による撮影、ゲーム内組み込み等）\n　・二次創作物の作成、販売および譲渡\n　 　（グッズ・フィギュアなどの立体物には個別に許諾が必要です）\n　\n　【禁止】\n　・第三者がモデルデータを用意に読み込める形式での二次配布\n　　（無改変・改変済問わず）\n　・アバターペデスタルによる配布\n　　（無改変・改変済問わず）\n　・本モデルを使用した特定個人や団体への誹謗中傷、名誉毀損、脅迫行為\n\n　[Permission]\n　・Modification\n　・Commercial use\n　・Violent, Sexuality acts\n　・Use for media other than VRChat\n　　(Use for VirtualCast, Video production, In-game integration, etc..)\n　・Creation, sale and transfer of secondary creations\n　　(A separate permission is required for 3D object such as goods and figures)\n　\n　[Prohibition]\n　・Secondary distribution in a form that third party can easily read model data\n　　(Whether unmodified or modified)\n　・Distribution by avatar pedestal\n　　(Whether unmodified or modified)\n　・Act that slander, libel, or threaten to specific individuals and organizations using this model\n\nその他不明点がございましたら下記連絡先までお問い合わせください。\nPlease contact me if you have any other questions."},{"type":"text","title":"☑ 連絡先 (Contact)","content":"Website: https://watashino.me\nTwitter: https://twitter.com/NamaeWatashino\n\nYouTube: https://youtube.com/c/NamaeWatashino\n\nFANBOX: https://pixiv.net/fanbox/creator/17346029\nBOOTH: https://namaewatashino.booth.pm"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
