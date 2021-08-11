@@ -58,6 +58,16 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "48TZFM5Onjk/NKCbK8Z797OLUrb1TFaUC8ngUtUTCYk="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
   </head>
   <body>
     <div class="mini-player-controller" style="display: none;">
@@ -86,6 +96,13 @@
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "48TZFM5Onjk/NKCbK8Z797OLUrb1TFaUC8ngUtUTCYk="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"BB1-09　～VRChatアバター向け素体モデル～","description":"[Base Body \"BB1-09\"]\nポリゴン数6684のアニメライクな女性のボディ素体です。\nVRChatでよく見かけるアニメ系モデルに近しい身体つきをしています。\nUnity Humanoid規格、及びVRChatフルボディ・トラッキングに対応しています。\n\n8/14 …　Saikin Hutottaを同梱　配布・販売時の条件を更新\n8/12 …　販売開始\n\n\n※現在確認されている不具合\n・Saikin Hutottaを操作した状態でボーンが曲がると縮尺がおかしくなる（次回アップデートで修正予定）\n体型はシェイプキーでも変更可能ですので、修正版のアップデートまではそちらをご利用下さい。なお利用規約に変更はありません。","url":"https://booth.pm/ja/items/963251","offers":{"priceCurrency":"JPY","@type":"Offer","price":"500"},"image":"https://booth.pximg.net/c/620x620/e6170a80-5060-4a22-8c22-c10792111eba/i/963251/75f7eaa6-cf4b-4936-b5df-27181e72b2c3_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -93,6 +110,10 @@
     rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "48TZFM5Onjk/NKCbK8Z797OLUrb1TFaUC8ngUtUTCYk="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -458,6 +479,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"●内容物","content":"Readme.txt\nBB1-09.blend\nBB1-09(Parts).blend\nBB1-09(Naked).fbx\nBB1-09(underWear).fbx\nBB1-09(FullWear).fbx\nBB1-09.unitypackage\nTex-Body.png\nTex-Body(No Top).png\nTex-Shitagi.png\nUV-Body.png\nUV-Shitagi.png\nUV-Uwagi.png"},{"type":"text","title":"●使用用途","content":"ご自身で用意したヘッド、衣装等を好きなように組み合わせて利用して下さい。\nあるいは、服を作る際のマネキン代わりとして。\nあるいは、販売用のアバターのボディパーツとして。\nあるいは、改造して新たな素体として。\nあなたの思いつく限り、自由にご利用下さい。"},{"type":"text","title":"●ライセンスについて","content":"想定内、想定外に関わらず、あらゆる方法での利用を許可します。ただし配布・販売に関しては条件がありますのでご注意ください。\nあらゆる利用において、一切のクレジット表記は不要です。\nただ、特に販売・配布に際して利用報告をいただけると宣伝等に協力できる場合があります。\n\nSaikin Hutotta ComponentはSentz-A（https://twitter.com/sentz_a）様により製作されたスクリプトです。\n製品ページ：https://sentz-a.booth.pm/items/967423"},{"type":"text","title":"●配布・販売に際する条件","content":"この製品を用いた作品を配布・販売する際は、以下の条件を満たして下さい。\n条件を満たさない場合の配布・販売は禁止します。\n\n・該当物からSaikin Hutotta Componentをリムーブして下さい。\n・Assetフォルダ内から「Saikin Hutotta」フォルダを削除して下さい。\n\n※\nここでいう「配布・販売」は、特殊な手順を踏む事なく誰でもモデルファイルを自由に購入または入手できる状態におく事を言い、ゲームキャッシュにデータが置かれる事等は該当しません。\nまた、VRChatにおけるアバターペデスタルへの利用は、この製品を用いた作品の場合は配布・販売に該当しません。ただし、他者が配布・販売しているモデルと組み合わせて使用している場合は、それらの規約を遵守して下さい。"},{"type":"text","title":"●使用時の注意","content":"BB1-09.blendに含まれるBra、Pants、Onepieceの服飾メッシュは、改造を前提としているため、シェイプキーが含まれておりません。\n同様に、BB1-09(underWear).fbx、BB1-09(FullWear).fbx及びBB1-09.unitypackageに含まれる同ファイルに付属している服飾メッシュはボディのBlendShapesに追従しません。\nご利用の際はご注意下さい。\n\nVRChatでの利用時、デスクトップモード及び3点トラッキング（通常VR）モードで大きく腕を上げた際、首の付け根が一部少し凹みますが、これはフルボディ・トラッキングモードとそれ以外でShoulderボーンの挙動が異なるものを、1つの素体でできる限り両モードでの破綻を減らした結果で、製品上の仕様です。\n\nVRChatでの利用時、フルボディ・トラッキングモードで腕をひねった際、角度によって肩や肘が強くねじれる事がありますが、VRChatのIK上の仕様です。ねじれが発生する条件をできる限り緩和してはあります。\n\nVRChatでの利用時、両足先を90度ずつ外に向けるような極端なガニ股姿勢を取った際、太ももの付け根が不自然な形にねじれる事がありますが、VRChatのIK上の仕様です。\n\nVRChatにはスクリプトを持ち込む事ができませんので、アップロード時にはSaikin Hutotta Componentをリムーブして下さい（リムーブしても体型は維持されます）"},{"type":"text","title":"●その他","content":"この製品はVRChatでのアバターへの利用を想定しています。それ以外の用途に利用する場合、一切の保証はありません。MMD等への利用やコンバート方法等、想定外の利用方法に関する問合せには対応できません。\n\nこの製品はフルスクラッチ製作されており、安全ですが、万が一リッピングやパーツ流用といった難癖をつけられるトラブルが発生した場合は、経緯がよくわかるよう情報をまとめた上でご相談下さい。対応できる場合があります。\nそれ以外の、この製品を利用して発生したトラブルに関しては、一切の責任を負いません。\n\n\n何か質問があればTwitterID「nukomiya09」までご連絡をお願いします。\nSaikin Hutottaに関する質問はTwitterID「sentz_a」までご連絡をお願いします。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
