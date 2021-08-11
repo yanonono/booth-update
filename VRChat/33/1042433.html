@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "2nDGgJdo+SNtjVHnKrt2wd8Y9Vattwd5AZxODUdgV8g="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "2nDGgJdo+SNtjVHnKrt2wd8Y9Vattwd5AZxODUdgV8g="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"電気ショック棒【VRChat で使える】","description":"VRChat で利用できる電撃棒の Prefab とパーティクルがセットになった Unity パッケージです。\n※注意事項をよくお読みになってからダウンロードしてください。","url":"https://booth.pm/ja/items/1042433","offers":{"priceCurrency":"JPY","@type":"Offer","price":"0"},"image":"https://booth.pximg.net/c/620x620/1923aa83-c3b9-459f-a239-94c25ca49fb5/i/1042433/c3e09bc0-8119-44bb-bf95-2ac37c28be1d_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "2nDGgJdo+SNtjVHnKrt2wd8Y9Vattwd5AZxODUdgV8g="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -383,6 +404,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"VRChat で使える電気ショック棒","content":"VRChat にて利用できる電撃棒の Prefab と、電撃棒に利用されているパーティクルがセットになった Unity パッケージです。\n※ご自身で Unity を使用しての VRChat ワールド作成ができる方を対象とした パッケージです。\n※本パッケージに含まれる Prefab はワールドに配置する小道具型の Prefab であり、アバターにアタッチするものではありませんので、ご注意ください。\n※サウンドエフェクトは入っていないのでご注意ください。"},{"type":"text","title":"セット内容","content":"・ElectricShockBar.unitypackage\n→VRChat にて利用できる電撃棒の Prefab と電撃棒に利用されているパーティクルなどをインポートできる Unity パッケージです。\n\n・Readme.txt\n→説明書です。"},{"type":"text","title":"ご利用方法","content":"本パッケージのご利用には、ゲームエンジン Unity と VRChat 公式のアバター／ワールド作成用 Unity パッケージが必要です。\nUnity の基本的な使い方や、Unity を利用した VRChat のワールド作成方法については、本ドキュメントでは説明しません。\nそれぞれ公式のドキュメントをご参照ください。\n\nElectricShockBar.unitypackage を Unity にインポートする前に、VRChat 公式 Unity Package のインポートと必要な設定をおこないます。\n・VRChat の公式 WEB ページより、アバター／ワールド作成用の Unity パッケージをダウンロードし、Unity にインポートします。\n・インポート後、Unity のメニューに追加された「VRChat SDK」を選択→「Show Build Control Panel」をクリックし、「Build Control パネル」を表示します。\n・「Build Control パネル」から「Setup Collision Layer Matrix」ボタンを押し、現れたウィンドウの「Do it!」ボタンを押します。\n・ElectricShockBar.unitypackage を Unity にインポートします。\n・インポートしたパッケージから、「ElectricBarHandle.prefab」をワールド作成用のシーンに配置することにより、利用可能になります。\n"},{"type":"text","title":"サウンドエフェクトの追加について","content":"・ElectricShockParticleSystem.prefab にアタッチされている AudioSource コンポーネントの「Audio Clip」の項目に、任意の Audio Clip を設定することにより、電撃棒がオブジェクトと接した際に、その Audio Clip が再生されるようになります。"},{"type":"text","title":"ご利用条件","content":"そのまま、改変問わず、商用目的での本パッケージの再配布はご遠慮ください。\n個人利用での改変や、再配布以外の方法による商用利用は問題ございません。\n\nご利用可能例\n・VRChat の自作ワールドへの組み込み、及びそのワールドでの使用（他者をそのワールドへ招待して、利用させることも可）。\n・VRChat のワールド内での使用を目的としたエフェクトの改変、エフェクトの改変などをしたパッケージの商用を目的としない再配布。\n・広告付き動画での使用（他者の動画への映り込みも可）など。\n\nまた、使用する際のクレジット表記は不要です。\nただし、著作権の放棄はしておりません。\nエフェクトの改変などをしたパッケージを再配布する場合は、引用元として紹介していただけると嬉しいです。\n\nご利用条件について、不明な点、ご心配な点がございましたら、後述の連絡先までご連絡ください。\n\n■免責事項\n・Xin Games は、利用者が本パッケージを使用し、または第三者に提供することによって生じるいかなる損害に対しても一切責任を負いません。\n・本パッケージは、そのサポート及び提供を予告なく中止することがございます。\n・ただし、本パッケージのサポートや提供が中止された場合も、すでに使用されている利用者は、本パッケージを継続して使用できます。\n・ご利用条件や免責事項などは予告なく変更する場合がございます。"},{"type":"text","title":"履歴","content":"2018/10/8 Ver1.00\n・アップロード"},{"type":"text","title":"連絡先","content":"Twitter\nhttps://twitter.com/Xin_Games"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
