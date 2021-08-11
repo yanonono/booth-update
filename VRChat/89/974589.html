@@ -59,6 +59,16 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "WwNskg0q9Me3sMWC7qDZJa46LN3nIlIzhgg3k2pi7us="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
   </head>
   <body>
     <div class="mini-player-controller" style="display: none;">
@@ -87,6 +97,13 @@
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "WwNskg0q9Me3sMWC7qDZJa46LN3nIlIzhgg3k2pi7us="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"みwなwぎwっwてwきwた（篠笛禁断症状L5)/しましまP - VR用 二次利用作品有償配布対応ライセンス","description":"■ライセンス内容\n\nこの商品を購入していただくことで、同梱の音声データ「みwなwぎwっwてwきwたwww（篠笛禁断症状L5）」を利用した作品制作について、以下のライセンスが付与されます。\n\n1. VRChat などの仮想空間上で用いられる3Dオブジェクト（アバター、その他オブジェクト、ワールド）に音声データを組み込んで発音させたり、BGMとして再生させる利用方法について許諾します。\n\n2. 音声データを組み込んだ 1. のような利用内容の作品（アバターなど）を、VRChat などのサービスや、Booth のような素材配布/販売サイトにアップロードして、無償/有償で配布することができます。\n\n■制約と注意事項\n・楽曲の著作権はしましまPに帰属します。\n・本ライセンス内容を他者に譲渡・再付与することはできません。\n・商用利用は購入者個人、あるいは個人で活動するサークルなどの名義で公開される作品への利用に限ります。法人での利用については別途ご相談下さい。\n・リピート編集など素材利用に必要な加工はOKですが、リミックスなど音声作品としての改変は本ライセンスでは許諾されません。\n・音声データの楽曲としての再配布は禁止。（利用作品の配布にあたり、作品を構成するファイル群の一部として扱われる場合は問題ありません）\n\n---------------------------------------------------\n楽曲名：「みwなwぎwっwてwきwたwww（篠笛禁断症状L5）」\n作曲者：しましまP\n演奏時間：00分57秒\nファイル形式：wav または mp3 (256kbps)\n---------------------------------------------------\n\n推奨：作品利用時・配布時に楽曲名や作曲者名などのクレジットを付記していただけますと嬉しいです=͟͟͞͞( *╹ω╹*)\n\n","url":"https://booth.pm/ja/items/974589","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"500","highPrice":"500"},"image":"https://booth.pximg.net/c/620x620/1ca2def6-097f-4cee-84ca-e5b58bd9f29c/i/974589/8a483ea5-44f2-46ea-ac9a-a7bdbd035f30_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -94,6 +111,10 @@
     rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "WwNskg0q9Me3sMWC7qDZJa46LN3nIlIzhgg3k2pi7us="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -554,6 +575,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/4_DyEhIvlEM\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"要点と経緯：","content":"本楽曲はもともと、インターネット上で公開される作品のBGM素材として非商用利用に限り無料でご使用いただけます。（ニコニコモンズで公開中）\n\nただし、素材の再配布やそれに準ずる利用は基本的に不許可ですので、音楽素材をそのまま再生・視聴させるような動画の投稿などは不許可としていました。\n\n一方で、最近、店舗でのBGM再生や演劇でのBGM使用など、「インターネット外で」、「楽曲を他者に視聴させることを主目的とした利用」のご相談も頂くようになってきましたので、シーン別に特定の利用方法に対応するガイドラインを示した上でライセンスを購入して頂く方法を模索しています。\n\n今回はその一環として、最近しましまPが個人的に入り浸っている VRChat での楽曲利用についての許諾を検討してこちらに提案させていただいた次第です。\n\n宜しくお願いいたします。\n\n\nしましまP\n"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
