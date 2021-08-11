@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "OIUcBGd0Eu05qNjRZlXfzYPDjI+vPSNfpT/PP0G4Ccs="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "OIUcBGd0Eu05qNjRZlXfzYPDjI+vPSNfpT/PP0G4Ccs="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"汎用ドローンv1.1","description":"［2019/04/08更新］\nPrefabに不具合があった為更新しました。\nまた、Prefab内容を変更しました。\n\nオニガワラ・インダストリの汎用ドローンです。\n白と黒緑の２パターンが入っています。まばたきアニメ付きです。\n\nSpringJointが入ったPrefabも付属されているので、アバターに遅れてついてこさせることが出来ます。\n※自分視点だとぴったりくっ付いて見えます。","url":"https://booth.pm/ja/items/1305687","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"320"},"image":"https://booth.pximg.net/c/620x620/ec467e09-9e3c-4fb6-8a6a-55f885c9820b/i/1305687/1b6db110-126b-45c8-9545-229afe2176ad_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "OIUcBGd0Eu05qNjRZlXfzYPDjI+vPSNfpT/PP0G4Ccs="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -407,6 +428,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"media","content":"\u003ciframe width=\"640\" height=\"480\" src=\"https://sketchfab.com/models/5d2ef8791c284fa39d348c16dcee94b4/embed\" frameborder=\"0\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"内容","content":"Fbxファイル、Texture、UnityPackageファイル"},{"type":"text","title":"Prefabせつめい","content":"Prefabとして、通常のドローンとJoint機構が付いたドローンの二種類があります。\nSpringJointDoroneのドローンの位置を調整する場合は、［JointTarget］と［Joint］を同時に動かしてください。（シーンを再生すると、JointがJointTargetの位置に引き寄せられます）\n\n［2019/04/08追記］\nインポートする前に、以下のAssetをプロジェクト内にインポートしてください。\n・VRCSDK\n・DynamicBone(揺れ物用なので必須ではありません)\n・ユニティちゃんトゥーンシェーダー 2.0 / UTS2 v.2.0.7（必須ではありません）\n\nPrefab別せつめい\n・Plane：ドローンのみです\n・Joint_Rotation：JointTargetに対し遅れて追従し、かつJointTargetを向いて移動します\n・Joint_NonRotation：JointTargetに対し遅れて追従します。回転しません\n\n【「Joint_Rotation」について】\n重心を指定するためのBoxColliderが入っています。\nこのBoxColliderの中心がSpringJointの中心になり、「JointTarget」を向こうとするような挙動になります。\nオブジェクトが回転しなくてもよい場合、このColliderは必要ありません。\n\nまた、アバターに仕込む場合、このColliderの存在によって(VRChat内で)SpringJointの挙動が不安定になります。\nなのでLayerを「UiMenu」に指定することで回避しています。Prefabを置く前に以下の手順を取ってください。\n\n１．アバターアップロード用とは異なるSceneを作成\n２．「VRC_World」Prefabをシーンに置く\n３．［VRChat SDK］タブ→［Show Build Control Panel］→［Setup Layers］ボタンを押す\n\n「Collider(CenterOfDesignation)」のLayerが「UiMenu」になっていればOKです。\n"},{"type":"text","title":"License","content":"このモデルは、VRSNSやその他アプリケーションででの使用を想定した「ONIGAWARA Industry Sardine License(O.I.S.License)」のもとで利用することができます。\n※再配布/再販売を想定した別ライセンス「ONIGAWARA Industry Oil Sardine License(O.I.O.S.License)」ではありません。\n\nアバターとして使用でき、改変も可能です。\n映像/ゲーム制作、動画配信などへの利用も可能です。商業的/非商業的問わずお使い頂けます。\nライセンス詳細は下記ライセンス一覧の「ONIGAWARA Industry Sardine License(O.I.S.License)」をご確認ください。\n\nONIGAWARA Industry License\nhttps://gitlab.com/mr.pumpkin247/license"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
