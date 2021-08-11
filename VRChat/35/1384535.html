@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "qVpmr5xN+x26N0n32Y34dEX4Aj29UF7VsL4S6tj0Gz8="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "qVpmr5xN+x26N0n32Y34dEX4Aj29UF7VsL4S6tj0Gz8="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"オリジナル3Dモデル(noah)","description":"-オリジナル3Dモデル (noah)\n\n-制作者 Yato\n\n-Humanoid形式用\n\n-VRChat向けの設定をしております\n\n-エラーがあった場合、すぐにメールにてお知らせください\n\nhsic1099@gmail.com\n\n\nhttps://twitter.com/hsic1099\n","url":"https://booth.pm/ja/items/1384535","offers":{"priceCurrency":"JPY","@type":"Offer","price":"2500"},"image":"https://booth.pximg.net/c/620x620/d93d6a06-5525-4897-b8cc-ee903dbe185a/i/1384535/7863ed29-a9aa-4086-ab3e-62376d0aa59c_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "qVpmr5xN+x26N0n32Y34dEX4Aj29UF7VsL4S6tj0Gz8="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -442,6 +463,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"使用法およびモデル情報","content":"-vrcsdkを準備してください\n\n\n-DynamicBone別途購入\n\n\n-DynamicBoneやVRC_AvatarDescriptorなどの設定は直接設定してください。\n\n\n\n-UnityChanToonShaderVer2_Project_v.2.0.6 使用中\n\n\n-内容\n\n(fbx,UnityPackage,Textures)\n\n\n-ファイルを頂きましたら、Unityパッケージとfbxファイルがあります。\nfbxファイルに新たに設定をも良しユニティパッケージを取り出していただき、すぐに適用をいただいてもかまいません\n\n-noahを分離させたfbxファイルを追加しました。 Eye trackingなどの作業をしていないファイルです。 必ず全てのMeshを合わせた後にeye trackingとvisemesをしてください。\n\n\n-full-body 用のファイルを追加しました。"},{"type":"text","title":"利用規約","content":"-購入された方のモデル改造は自由です\n\n-このモデル改造モデルVRChatなどモデルデータをアップロードしてアバターとして使用するサービス（例えば、VRChat。など）の使用を可能にします。\n\n-このモデルの配布、共有、商業利用 X\n\n-政治、宗教活動、他人への誹謗目的の使用 X"},{"type":"text","title":"FIX","content":"0.3\n\n-パンツの外へ飛び出す部分を修正しました。\n\n\n0.2\n\n-裏髪\"weight\"数値調整\n\n"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
