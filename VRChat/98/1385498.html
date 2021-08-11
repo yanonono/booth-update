@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "ZAhnGSZvuscxQuBwHiStq54dLZv7ZrDP8rP+JorelpM="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "ZAhnGSZvuscxQuBwHiStq54dLZv7ZrDP8rP+JorelpM="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"オリジナル3Dモデル『雛菊-HINAGIKU-』","description":"【標準セット】体素体を含まないセットです。\n\n【クリエイトセット】自作服の作成・改造などに使用できる体素体です。頭部・髪・服などは含まれていません。\n\n【フルセット】標準セット+クリエイトセットの両方が含まれています。個別に購入するより少しだけお得です。","url":"https://booth.pm/ja/items/1385498","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"2000","highPrice":"4500"},"image":"https://booth.pximg.net/c/620x620/01dc1112-4606-408e-8edd-553bdac9acd1/i/1385498/e1909eb8-4af1-41e7-94e9-451bf90cde9d_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "ZAhnGSZvuscxQuBwHiStq54dLZv7ZrDP8rP+JorelpM="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -491,6 +512,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"概要","content":"■ポリゴン数：△25,237\n\n■シェイプキー\n\n・瞬き用３種（右・左・両目）\n・瞳用７種（ハート・ジト目・＞＜目など）\n・口の形２２種（「あいうえお」・リップシンク用など）\n・頬用ハート１種\n・表情サンプル４種（笑顔・怒り顔・悲しみ顔・瞳キラキラ顔）\n・舌出し１種\n・眉３種（怒り眉・悲しみ眉・少し下に下がる眉）\n\n■ボーン構造\nUnityのHumanoidに沿った作りになっています。\n\n■DynamicBone\nスカートの一部にDynamicBoneが設定されています。\nスカートを揺らしたい方はUnityAssetStoreで販売されている有料AssetのDynamicBoneを購入する必要があります。\n\n■シェーダー\nCubedsParadox/Flat Lit Toonシェーダーを利用しています。\nダウンロードしてお使いください。\n詳細は下記のページを参考にしてください。\nhttps://vrchatjp.playing.wiki/d/Cubeds-Unity-Shaders"},{"type":"text","title":"内容物【標準セット】","content":"■Hinagiku.fbx\n　全てが結合され、１オブジェクトになっているモデルです。\n\n■Hinagiku_nj.fbx\n　髪・頭部・体部分に分かれているモデルです。\n　\n　※上記モデルは両ファイルとも服で隠れている体の部分は削除してあります。自作の服を着せたい、体の改造もしたいなど体の素体が必要な場合はクリエイトセットを購入して頂くか、フルセットを購入して頂きますと体の素体を手に入れることができます。\n\n■Hinagiku.unitypackage\n　１オブジェクトのモデルにダイナミックボーン・リップシンク・自動まばたき設定済みのファイルです。\n　スカートから足がはみ出しにくい専用のsitポーズも設定してありますが、不要なら外してください。\n\n VRSDK、ダイナミックボーン、CubedsParadoxシェーダーを先にインポートしてください。\n\n■textureフォルダ\n\n・body.jpg\n・cloth.jpg\n・face.jpg\n・hair.jpg\n・nail.jpg\n・pantskutu.png\n\n　pngファイルは透過pngです。\n　裸になることを想定していない為、体の書き込みは特にしておりません。\n\n■psdフォルダ\n\n・body.psd\n・cloth.psd\n・face.psd\n・hair.psd\n・nail.psd\n・pantskutu.psd\n\n　影などのレイヤーが含まれていないものがあります。\n\n■Readme.txt\n　規約等が書かれています。\n"},{"type":"text","title":"内容物【クリエイトセット】","content":"■Body.fbx\n　体素体のデータファイルです。髪・頭部・服などは付属していません。\n\n■body.jpg\n\n■body.psd\n\n■Readme.txt\n　体素体の利用規約はR-18・R-18Gへの取り扱い部分が標準セットと異なります。"},{"type":"text","title":"内容物【フルセット】","content":"【標準セット】+【クリエイトセット】両方のデータが含まれています。"},{"type":"text","title":"----利用規約----","content":"本モデルを購入した時点で本利用規約に同意したものとみなします。\n利用規約の内容は予告なく変更する場合があり、最新のものが適用されます。\n\n\n・本モデル、改造モデルの著作権はW-ZEROにあります。\n\n・本モデルの改造及び改変は自由です。\n\n・個人利用・商用利用可です。\n\n・本モデルデータや改造モデルデータが取り出せる状態でのゲームなどの配布は禁止致します。必ずパッケージ化などするなどしてください。\n\n・購入者本人以外が、アバターを使用できるようにする行為を禁止します。\n　例：VRChatのペデスタルへの使用は購入者以外が使用できるようになるので禁止です。\n\n・本モデルそのもの及び改変したものを譲渡・配布または販売することはいかなる形態であっても禁止致します。\n\n・本モデル、改造モデルを使用したバーチャルYoutuber等の活動を許可します。収益化等は制限いたしません。\n　ただし、自分以外の購入者も同じモデルを使用するということを念頭に置いてください。\n\n・モデルを使用する際のクレジット表記は不要です。\n\n・当モデル『雛菊-HINAGIKU－』は未成年を想定している為、公の場などでのR-18・R-18Gへの利用を禁止致します。ただし人目に触れない個人空間、本モデル・改造モデルが直接該当行為をしない場合の利用はその限りではありません。（例：R-18・R-18G行為を行わないNPCなどの利用）\n　モラルを守っての利用をお願いします。\n\n・政治、宗教、他者への誹謗中傷目的での使用は禁止します。\n\n・本モデルや改造モデルを利用して発生したトラブルや損失に対し、W-ZEROは一切責任を負わないものとします。\n\n・翻訳の都合上日本語の利用規約と英語の利用規約に差異が出た場合日本語が正しいものとします。\n\n\n\n何かありましたら下記のTwitterアカウントのＤＭにてご連絡ください。\n\nTwitter:\nhttps://twitter.com/W_ZERO_inSL\n"},{"type":"text","title":"更新履歴","content":"5/25…ver1.00販売開始"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
