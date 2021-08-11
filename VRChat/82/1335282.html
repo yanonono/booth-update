@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "75IY5ABv7OtlMXWhYqVBdGMOh9y4b0NAIUqBwp12SqE="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "75IY5ABv7OtlMXWhYqVBdGMOh9y4b0NAIUqBwp12SqE="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"オリジナル3Dモデル　ライカ -Laika","description":"VRChat向けオリジナル3Dモデル　ライカ -Laika-\n\n※English explanations are below Japanese.\n\n制作:ひばフレ \"Hibax_FRE\"\n","url":"https://booth.pm/ja/items/1335282","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"1000"},"image":"https://booth.pximg.net/c/620x620/e56a8ef4-8f34-4b71-9b03-b4f436803f81/i/1335282/157331f2-79a7-4cc6-9f5f-8bae24b244eb_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "75IY5ABv7OtlMXWhYqVBdGMOh9y4b0NAIUqBwp12SqE="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -426,6 +447,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"概要","content":"横耳犬っこです。\nVRChat、Unity等の用途でご利用いただけます\n素体を残してるので、アバター制作のベースにもどうぞ\n※Questでは拳銃は抜けません\n\n〇仕様\n・ 三角ポリゴン数: 4999\n・ Full tracking: 対応\n・ Eye tracking: 対応(まばたき無効)\n・ VRC用Lip Sync\n・ BlendShape: 21種+(片目閉じ)\n\n〇内容物\n・ モデルデータ(fbx形式)\n・ テクスチャpsd\n・ unitypackage\n\n※テクスチャ改変はClipstudio paint、photoshop推奨"},{"type":"text","title":"利用規約","content":"#使用上の注意\n本モデルデータの利用者はモデルデータの利用をもって本利用規約に同意したものとみなします。\n利用規約の内容は変更する場合があり、最新のものが適用されます。\n\n#免責事項\n当モデルを使用することで使用者側に不利な問題が生じた場合、\nそれがいかなるものであっても配布元は一切責任を負いません。\n\n#導入方法\nVRCSDKを導入したUnityプロジェクトにunitypackageファイルを読み込んで下さい。\nその後、フォルダ内にあるsceneをヒエラルキーにドラッグ\u0026ドロップしてください。\n\n##利用について##\n#改変\n　自由です。改変モデル使用時はゾーニングにご配慮ください。\n#商用利用\n　可能です\n#二次配布\n　本モデルデータを抽出できる形での転載・再配布は禁止です。\n　\n　以下は可　\n　例：・VRChatのアバターとしての利用（アバターペデスタルを除く）\n　　　・ゲームに組み込み、ビルドして配布\n　　　・動画、画像等で利用\n\n#VRChat以外での使用\n　OKです。\n#R-18,R-18Gコンテンツでの使用\n　OKです\n#VTuber活動での使用\n　何かしらの改変を加えてください\n　収益化等の制限はしません　"},{"type":"text","title":"English description","content":"##Data name## Original 3Dmodel  \"Laika\"\n#Author.Distributor ひばフレ (Hibax_FRE)\n#Contact Twitter: @ Hibax _ FRE\n　　　　　　Hibaxfre728@gmail.com\n\n#Precautions for use#\nUsers of this model data are considered as agreed to these terms of use.\n\n#Disclaimer#\nIn the event that a disadvantage arises on the user side by using this model,\nDistributor will not be responsible at all regardless of what it is.\n\n\n##About use##\n# Modification\n　It is free. Please consider zoning when using modified model.\n\n# Re-distribution\n　Re-distribution in a form that can extract this model data is prohibited.\n　\n　The following cases are allowed.\n　　Using of VRChat as an avatar (don't use this data for public avatar pedestal and redistribution.)\n　　Built in game, build and distribute\n　　Using for movies, images works etc.\n\n# Using outside of VRChat\n　Allowed\n\n# Using for adult,digital porno contents\n　OK. Within the law of your country.\n"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
