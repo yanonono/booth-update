@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "IyaNQJwLnIo58WBBvGHg1g8KzQCpMcfOMDkH3js/4zk="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "IyaNQJwLnIo58WBBvGHg1g8KzQCpMcfOMDkH3js/4zk="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"VRChat内書籍「二次元が好きな僕と高次元の存在な彼女」","description":"VRChatのワールドに設置するタイプの書籍「二次元が好きな僕と高次元の存在な彼女」です。\n\n自作ワールドにアクセントとして置いてみてはいかがでしょう。\n(本自体はVRChat内の私のワールド「twilight room」に置いてあるので、いつでも読めます)\n","url":"https://booth.pm/ja/items/1204771","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"100"},"image":"https://booth.pximg.net/c/620x620/31b323b1-bb3f-45cd-b5ec-28a802e69e09/i/1204771/69d8c5e7-a5d2-44d7-bda9-60e79766a529_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "IyaNQJwLnIo58WBBvGHg1g8KzQCpMcfOMDkH3js/4zk="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -427,6 +448,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"内容物","content":"・unitypackageデータ\n・設定手順(画像)\n"},{"type":"text","title":"利用規約","content":"　当データは「綯夜(asobiy3)」さんの製本システム(https://asobiy3.booth.pm/items/1029902)\n(https://asobiy3.booth.pm/items/1365930)と\n　「変化狐のひみこ(変化狐のひみこ)」さんの製本キット(https://booth.pm/ja/items/1035973)で製作されています。\n　(本自体はVRChat内の私のワールド「twilight room」に置いてあるので、内容が気になる方は読んでみてください)\n\n　当データを利用された方は下記利用規約すべての内容に同意したものとみなされます。\n　・製本システムの著作権は「綯夜(asobiy3)」が所有します\n　・製本キットの著作権は「変化狐のひみこ(変化狐のひみこ)」さんが所有します\n　・文書の画像・マテリアルデータの著作権は「宮野原宮乃」が所有します\n　・当モデルデータの使用時に著作権表示の必要はありません\n　・自作の本をデータ化する場合、製本システムと製本キットの購入をお願いします\n\n　禁止事項\n　・第三者が利用可能な状態での再配布、アップロード\n　・当データおよび文書の自作発言\n　　＊某文書サイトに私名義で載せています\n　・他人を不快にさせる目的での使用\n　・公序良俗に反する行為\n　・印刷して販売など営利目的での使用\n"},{"type":"text","title":"免責事項","content":"・作成者は、本データに関していかなる保証も行いません ・本データの使用および本規約の変更に際して発生したいかなる事故および障害について、作成者は一切の責任を負いません "},{"type":"text","title":"その他 ","content":"・作成者は本規約を変更できるものとします ・作成者は本規約を変更する場合、当ページにて規約の変更を通知します ・規約の変更通知後に本データを利用したことをもって変更後の規約に同意したとみなします ・本規約に定める条項の一部が無効とされた場合であっても他の条項の有効性に影響を与えないものとします。 2019/1/29 制定"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
