@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "F5FVK0ZhFa8ymr15pNLtpVA0wNuWtIUnsFbK1h85Lkg="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "F5FVK0ZhFa8ymr15pNLtpVA0wNuWtIUnsFbK1h85Lkg="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"【U10mk2】ver.4.1.1","description":"----------------------------------------\nver.4.0.1まではSDK2(Avatars2.0)、ver.4.1以降はSDK3(Avaters3.0)にてセットアップされています。お好みでご利用ください。\n----------------------------------------\n\n常なるこの世を維持する【常世界機構】が管理保有する\n汎用人型自立稼働システムU10のmk2です。\n対甲種想定の中・遠距離兵装となります。\n\nメカ娘プラモみたいな感じでいろいろ盛ったり交換したりして遊んでもらえたらなぁと思って作りました。\nぜひ好きな装備をつけたりして遊んであげてください。\n\nVRchat内のワールドにて試着が可能です。\n「U10's Avatar World」で検索してください。\n\nリップシンク・フルトラッキング・アイトラッキング対応／約50,000ポリゴン（+パーティクル）／Arktoon＆ユニティちゃんトゥーンシェーダー使用です。 \n\n VRchat用にセットアップ済みのモデル／QUEST用シェーダーに対応した1メッシュモデル／VRMモデル／cluster対応VRM／改変用PSDデータ／改変用blenderデータが同梱されています。\n\nVRChat内のワールドにて試着をすることが可能です。 https://www.vrchat.com/home/launch?worldId=wrld_12ca024e-3ae8-4966-bf2f-c0621f622568\n\nVRM版／clster対応版の挙動はVRoidHubにて確認できます。\nhttps://hub.vroid.com/characters/8418132338996756774","url":"https://booth.pm/ja/items/1215303","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"5000"},"image":"https://booth.pximg.net/c/620x620/332cfc35-d465-4aa3-b8f3-1233909528cc/i/1215303/45247170-2bb8-4158-b29b-013fa990b8af_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "F5FVK0ZhFa8ymr15pNLtpVA0wNuWtIUnsFbK1h85Lkg="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -570,6 +591,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"【更新履歴】","content":"//2020.11.26：ver.4.1.1：Unity package／VRM更新\ncluster対応版VRMを追加しました！\nあと髪の毛のテクスチャがちょっとだけ綺麗になった。\n\n//2020.10.06：ver.4.1：Unity package／Blenderファイル更新\nSDK3（Avatar3.0）に対応しました！\nSDK2時代のものとは共存できませんので、新規にプロジェクトを立ち上げてセットアップをお願いいたします。\nclusterの基準をクリアできる設定のデータを追加しました。VRMの設定と出力はしておりませんので各自でお願いいたします。\n\n-------以下Avataers2.0(SDK2)時代--------\n\n//2020.06.05：ver.4.0.1 Blenderファイル／Unity package更新。\nU10デフォルト頭部の髪の毛の挙動が気になったのでウェイトを更新。その他細かい部分をいくつか修正。カスタム済みのアバターのために髪の毛の更新のみ反映させたい場合は、インポート時に出てくるファイルの選択メニューの中で、U10mk2_ver.4.0.1→FBXのフォルダのみにチェックを入れた状態でインポートすれば更新を適応可能です。\n\n//2020.05.26　ver.4.0：全て更新\n最新のU10ちゃんに合わせて各種データを更新しました。主な変更点は、顔の造形とマテリアルの一新／早期特典として付属していた服(？)の復活／QUEST用に１メッシュ１マテリアル化したモデルの追加、です。商品画像の更新が間に合ってないです…後日更新します。以前制作したローポリQUEST版は今後の更新が難しいため無料化しました！（以前にご購入くださった方本当にありがとうございます）\n\n//2020.02.22　ver.3.2：マテリアル関係更新\n最新のU10素体ver.に合わせて肌と髪のマテリアルをUTSに変更しました。\n//2019.09.29　Quest版ver.3.0：モデルデータ更新\nFBXの出力時のスケールを変更したり最新IK用のボーンに変更したり。\n特に問題を感じていない場合更新する必要はありませんが\n顔のシェイプキーが綺麗に表示されるようになったので更新をお勧めします。\n//2019.09.27　PC版ver.3.1：モデルデータ更新\n一部のシェイプキーで意図した形にならない原因が\nFBX出力時のスケール設定だとわかったのでFBXの出力をやり直しました。\n特に問題を感じていない場合更新する必要はありません。\nついでにbitのUVを綺麗にしました。\n色変えされていた方はやり直していただくかver.3.0以前のものを移植してください。\n//2019.09.21　PC版更新（ver.3.0）\nVRChatの最新IKに合わせてボーン構造を変更。\nver.2.0系で問題のない方は更新しなくても問題ありません。\n//2019.09.11　Quest用に少し暗めのテクスチャを追加しました。\n//2019.09.01　PC版／Quest版更新（ver.2.0）\n頭と髪の毛がより綺麗になりました！\nQuest版は可愛さを優先させて今回からmiddleクラスの7000ポリゴン台になっています。\n\n//2019.02.23　ver.1.0：販売開始"},{"type":"text","title":"【利用規約】","content":"本利用規約の内容は変更される場合があり、その際は最新のものが適応されます。\n最新の規約についてはBOOTHをご確認ください。\n火事屋製モデルについてのライセンスのページ→　https://kindergarten21.booth.pm/items/1236486\n\n規約はあくまで困ったことが起こらないようにするためのものですので、\n「こういう使い方がしたい！」等ありましたらお気軽にお問い合わせください。\nよほどの内容でなければお断りすることはないと思います。\n\nこのアバターは有料ですので、有料版の規約が適応されます。\n\n\n【有料モデル利用規約の要約】\n・再配布：不可\n・法人利用：要相談\n・個人による営利目的でのアバター利用：許可\n・モデルデータの改変：許可\n・メッシュデータの流用：個人利用および専用アイテム販売用のみ可能（販売の場合要クレジット）\n・R18及びR18G：許可\n・アバターペデスタル/アバタークローンでの利用：不可\n・中傷、政治目的、宗教目的の使用：禁止\n\n・Redistribution Prohibited\n・Corporate use: Disallow\n・Personal use of avatars for commercial purposes: Allow\n・Modification of model datan: Allow\n・Using mesh data: \n      Private Use: Allow\n      Use by individuals for commercial purposes: This is only possible if you sell it as a limited edition item for this avatar.\n・R18/R18G: Allow\n・Avatar Pedestal/Avatar Clone : Disallow\n・Use for defamation, Use for political purposes, Use for religious purposes: Disallow"},{"type":"text","title":"【免責事項】","content":"当データを使用して発生したすべての問題や損害について、製作者(火事屋)は一切責任を負いません。\n"},{"type":"text","title":"【製作者】","content":"火事屋（かじや）\n\nTwitter：\nhttps://twitter.com/kaziya21\nhttps://twitter.com/kaziya21_VRC\nハッシュタグ「#U10ちゃん」で更新情報等見られます。\n\nBOOTH：https://kindergarten21.booth.pm\nVRChat：kaziya21\n制作環境：OS→Mac10.11.6／blender→2.8／Unity→2017.4.28f1\n\nミサイルコンテナのアニメーション制作：ヴァオラさん（ https://twitter.com/vaora0822 ）"},{"type":"text","title":"【利用させていただいた外部のツールなど】","content":"------------------------\nArktoon-Shaders\n------------------------\nメインで使用させていただいているシェーダーです。\nhttps://booth.pm/ja/items/1027997\n\n------------------------\nBehaviour-Enabled\n------------------------\nanimatorコンポーネントを停止／再生できるアニメーションキー。\nとってもべんり。\nhttps://booth.pm/ja/items/1034257\n\n------------------------\nユニティちゃんトゥーンシェーダー（UTS）\n------------------------\nhttp://unity-chan.com\n\n------------------------\nEmoteSwich\n------------------------\nEmoteを使ってものを出したり消したりするやつ。\nhttps://gend-vrchat.booth.pm/items/1242826\n"},{"type":"media","content":"\u003ciframe width=\"500\" height=\"500\" src=\"https://hub.vroid.com/characters/8418132338996756774/models/8796593725137799717/embed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\" allow=\"xr-spatial-tracking\"\u003e\u003c/iframe\u003e"},{"type":"media","content":"\u003ciframe width=\"500\" height=\"500\" src=\"https://hub.vroid.com/characters/8418132338996756774/models/5297107003963578086/embed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\" allow=\"xr-spatial-tracking\"\u003e\u003c/iframe\u003e"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
