@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "NlaISAPNVXxU5iV8a2tfBOpMKHLKgmH3lv16QJ+cRU8="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "NlaISAPNVXxU5iV8a2tfBOpMKHLKgmH3lv16QJ+cRU8="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"【VRChat想定】unity上で(だいたい)フィット可能なマスク","description":"・VRChatでの使用を想定した、11本のボーンによってお使いのアバターへ(だいたい)フィット可能なマスクです。\nアバターのサイズに合わせて各部を拡縮変形させてください。\n・マスクを引き上げる/下げる表現のシェイプキーを実装しております。\n・テクスチャ用のpngファイルと改変用PSDファイルが同梱されております。\n\n・△ポリゴン数：296\n・ボーン数：1\n・マテリアル数：1\n\n※画像に使用されている装着例のモデルは付属しません。\nモデル販売元 https://booth.pm/ja/items/970356","url":"https://booth.pm/ja/items/1290273","offers":{"priceCurrency":"JPY","@type":"Offer","price":"200"},"image":"https://booth.pximg.net/c/620x620/497a17f3-8b49-4d3f-b0de-666716ecfcf8/i/1290273/0a32a15e-d95a-4f89-8e38-c185dc88a86c_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "NlaISAPNVXxU5iV8a2tfBOpMKHLKgmH3lv16QJ+cRU8="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -496,6 +517,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"導入(主にVRChatアバターへの導入)","content":"・readme.txtを読み、fbxファイルをUnityプロジェクト内のお好きなフォルダへD\u0026Dしてください。\n・Hierarchy内へD\u0026Dした後、アバターのHeadボーン内へ移動させてください。\n・マスクの位置、サイズ、ボーンをアバターの頭部へ合うように調節してください。"},{"type":"text","title":"●モデル利用について","content":"・主にUnityへの導入及びVRChat内での使用を想定しております。それ以外の用途ではサポートを行えませんのでご了承ください。\n・ゾーニングが必要な表現の制限は設けておりません。利用するサービスの規約を守って利用してください。\n\n・本データ及び改変されたデータの著作権は製作者であるRYUに帰属するものとします。\n・当モデルデータのご利用により利用者への何らかの不都合や損害が発生した場合、当方が責任を負う事はありません。\n\n●商用利用について\n・事前に製作者Twitterアカウント又はBoothの販売ページからお問い合わせ下さい\n\n\n●禁止事項\n・内容物データを配布、販売する事\n・改変した内容物データを、配布及び販売する事\n・公序良俗に反する行為や目的、政治, 宗教活動、他者に対する誹謗中傷目的での利用\n\n\n製作：RYU\nTwitterアカウント：https://twitter.com/beam_trident"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
