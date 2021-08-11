@@ -56,6 +56,16 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "S8EuQDDF8Jdw/dTu2DIIP6oXaft3Y7K0pp1JxOsvpvE="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
   </head>
   <body>
     <div class="mini-player-controller" style="display: none;">
@@ -84,6 +94,13 @@
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "S8EuQDDF8Jdw/dTu2DIIP6oXaft3Y7K0pp1JxOsvpvE="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"JazzBass","description":"全力で作りました。ジャズベースです。\n△28159\n内容物\nJazzBass.fbx\n4つのprefab、及びそれぞれに対応したマテリアル\ntextureとBody、pickguardのUVmap\n\n利用規約\n・再配布、及び改変しての再配布は禁止です。(5/1変更)\n・使用用途は制限を設けません。\n\n","url":"https://booth.pm/ja/items/1263017","offers":{"priceCurrency":"JPY","@type":"Offer","price":"1000"},"image":"https://booth.pximg.net/c/620x620/3e5d3959-13e0-495e-b172-ec5a9e33d076/i/1263017/c74492d6-72d1-4187-9a86-bd18bd95a778_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -91,6 +108,10 @@
     rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "S8EuQDDF8Jdw/dTu2DIIP6oXaft3Y7K0pp1JxOsvpvE="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -471,6 +492,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"こだわったところ","content":"・構えた時脇の下に来るベースのボディの薄い部分。\n・各部ねじの頭--本当に溝にしたのでどの角度から見てもねじの頭です。\n・ペグやねじなどの回転するもの--全部角度が少しずつ違います。\n・弦　4 3 2 1と細くなってます。\n・ペグと噛むギア--歯の枚数は実物と同じです。\n・ブリッジ--実物を参考に弦ごとに高さを変えてあります。\n・テクスチャ　入ってるのものはすべて気合い入れて作りました。\n・フレットの位置--ほとんどずれてないと思います。\n・プラスチックのピックガードとコントロールノブ下のプレート間の段差--本物触って確認しました。"},{"type":"text","title":"こだわってないところ","content":"・ペグ側のねじ切り--やってないです。\n・ストラップをつけるところ--データが飛んだ時に消えました。\n・ブリッジ側の弦の先端についてる弦をひっかけるための丸い部品--データが飛んだ時に消えました。\n・ポリゴン数--多いです。\n3/24追記\n・ネックの反りを調整するネジ--存在を忘れていました。\n5/2追記\n・テクスチャベイクによるマテリアルの削減--簡単に色を変えて遊べるようにしたかったのと、金属パーツごとの艶の違いを出したかったので行っていません。\n"},{"type":"text","title":"サポート","content":"不備がございましたらtwitter @TonoShakeまでご連絡お願いいたします。\n導入方法やテクスチャの替え方などわかる範囲でよろしければサポートしますのでお気軽にどうぞ。\n新作の進捗はツイッターであげているのでフォローもどうぞ。"},{"type":"text","title":"変更履歴","content":"2019 5/1変更\n改元に伴って無料版を有料版と併合し、値段を100円→500円に変更しました。\n2020 5/20変更\n経済的な理由で500円→700円に変更しました。\n2020/10/30変更\n700円→1000円へ値上げしました。\n2020/11/27\nブラックフライデーなので半額にします\n2020/11/30\n元の価格に戻しました"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
