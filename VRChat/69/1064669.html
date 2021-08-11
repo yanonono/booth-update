@@ -58,6 +58,16 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "yCkcMOulBiRtMGQbZlAv4c89G0RDESbw/qDQxtBgD/0="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
   </head>
   <body>
     <div class="mini-player-controller" style="display: none;">
@@ -86,6 +96,13 @@
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "yCkcMOulBiRtMGQbZlAv4c89G0RDESbw/qDQxtBgD/0="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"【オリジナル3Dモデル】D-WIZハット","description":"オリジナル3Dモデルアクセサリー(帽子)\nD_Wiz_Hat\n\n◆はじめに\n\n　本モデルは、Unity等で使用可能な3Dモデルです。\n\n◆同梱ファイル\n　UnityPackage\n　fbxファイル1つ\n　テクスチャーファイル1つ\n　psdファイル1つ(uvを表示したレイヤー等が含まれています。色改変等にご利用下さい)\n　Textファイル(ReadMe.txt)\n\n◆その他\n　ポリゴン数は約862ポリゴンです。\n\n◆改変について\n\n　本モデルデータ、及びテクスチャデータの改変はご自由に行って頂いて問題ありません。\n\n◆商用利用について\n\n　非商用、商用問わず、VRChatやバーチャルキャスト等でのアバターとしての利用や、動画作成等にご使用頂けます。\n　VTuber等の商用動画への映り込みや、VTuberとしての活動につきましても、問題なくご利用頂けます。","url":"https://booth.pm/ja/items/1064669","offers":{"priceCurrency":"JPY","@type":"Offer","price":"800"},"image":"https://booth.pximg.net/c/620x620/630a45b3-a1a3-43d7-b76c-876437ca178e/i/1064669/f8aff48d-78c4-4eb8-9404-72c4eb90c095_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -93,6 +110,10 @@
     rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "yCkcMOulBiRtMGQbZlAv4c89G0RDESbw/qDQxtBgD/0="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -409,6 +430,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"付属ReadMe全文","content":"\nオリジナル3Dモデルアクセサリー\nD_Wiz_Hat\n取扱説明書・利用規約(2018/10/23作成)\n\n\n　本モデル、テクスチャデータをダウンロードし、何らかの方法で使用した時点で、本利用規約に同意したものとします。\n\n\n\n◆はじめに\n\n　本モデルは、Unity等で使用可能な3Dモデルです。\n\n　使用しているShaderとして、synqarkさんが作成された「arktoon-shaders-0.9.2」を同梱し、再配布という形で使用しております。\n　2018/10/23時点での該当のMITライセンスのガイドラインに則った状態で再配布、使用しております。\n　同梱ファイル内でMITライセンスが適用されるのは「arktoon-shaders-0.9.2」のみとなります。\n　\n　\n\n_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/\n\n\n◆同梱ファイル\n　UnityPackage\n　fbxファイル1つ\n　テクスチャーファイル1つ\n　psdファイル1つ(uvを表示したレイヤー等が含まれています。色改変等にご利用下さい)\n　Textファイル(この「ReadMe」.txtです)\n\n\n◆Packageに含まれるファイル\n　モデルのfbx\n　Textureファイル\n　Materialデータ\n　Shader\n\n\n◆その他\n　ポリゴン数は約862ポリゴンです。　\n\n_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/\n\n\n◆改変について\n\n　本モデルデータ、及びテクスチャデータの改変はご自由に行って頂いて問題ありません。\n\n\n_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/\n\n\n◆商用利用について\n\n　非商用、商用問わず、VRChatやバーチャルキャスト等でのアバターとしての利用や、動画作成等にご使用頂けます。\n　VTuber等の商用動画への映り込みや、VTuberとしての活動につきましても、問題なくご利用頂けます。\n　\n\n_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/\n\n\n◆禁止事項\n\n　商用、非商用、改変、非改変を問わず、大元の制作者である「ilili_barcode」の許可のない状態での下記の利用を禁止します。\n\n　1.モデルデータ、及びテクスチャデータの再配布、及び販売を禁止します。\n　　再配布は、本モデル、テクスチャデータの全部、または一部を、購入者以外が使用出来る形にする事を含みます。\n　　※VRChat等で購入者自身がアバターとして使用する目的でのアップロードは問題なくご利用頂けます。\n　2.VRChatのアバターペデスタルのような、他者に対してモデルを扱える状態にする方法での利用を禁止します。\n　3.他者の迷惑行為となる事や、反社会的行為を目的とした利用を禁止します。\n　4.自作と偽る行為を禁止します。(改変した旨を発言等する事は問題ありません)\n\n\n_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/\n\n\n◆注意点\n\n　両面を描画するシェーダーの使用を前提としたモデルです。シェーダーを変更する際には両面を描画出来るシェーダーを推奨します。(初期設定では両面描画されるシェーダーを使用しています)\n　MMD用の改変等は問題ありませんが、こちらの想定外の利用方法に関しては、自己責任でお願い致します。\n　R18利用に関しては禁止しませんが、完全に自己責任でお願い致します。トラブルや不利益が発生した際の責任は一切負いません。\n\n\n◆免責事項\n　本モデルに関連するファイルを使用して生じた不利益やトラブル等の一切の責任を負いません。\n　本利用規約は予告なく変更・改定される事があります。ご了承下さい。\n\n_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/\n\n\n◆著作権について\n　本モデル「D_Wiz_Hat」の個人的利用は自由ですが、本モデルに関するデータを改変した際のデータの著作権は、大元の制作者である「ilili_barcode」に帰属するものとします。\n\n\n_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/\n\n\n\n◆連絡先\n　ご不明な点がございましたら、ご連絡下さい。\n\nモデル、テクスチャデータ、ReadMe制作者：ilili_barcode\n\nTwitter : @ilili_barcode\nMail\t: clorlles@gmail.com\n\n\n_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
