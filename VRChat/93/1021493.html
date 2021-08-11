@@ -58,6 +58,16 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "cC5ffgqmMAstMeEltWtvXUuY9Vq8QQDR58sDpdtUcws="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
   </head>
   <body>
     <div class="mini-player-controller" style="display: none;">
@@ -86,6 +96,13 @@
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "cC5ffgqmMAstMeEltWtvXUuY9Vq8QQDR58sDpdtUcws="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"VRアバター用オリジナルモデル「シノア」[VRM対応]","description":"VRchat用オリジナルモデル「バトルメイド シノア 」BattleMaidSinar\n\n■シノアとは？■\n現在作成中のゲーム内に出てくるバトルフィールドと学園の間で実験体や労働者が学園内に侵入できないように日夜格闘する改造猫人バトルメイドです。\n性格はおとなしく礼儀正しい、口数は少ないがおしゃべりは好き、いつもニコニコ罪人を裁くとっても良い子です。\n趣味はわりとガチ目な狩りゴッコ。\n好きなものは■■■■■■■■■■■■■（検閲済み）\n基本的に害はないが敵にと認識するとヤバイ\nだがkawaiiから問題ない\n\n\n■この服は？■\n防刃防弾性に優れた帝神社のヌーベルケプラ繊維で作られた戦闘用メイド服です。\n●特殊効果\nY染色体ヒューマノイドに対し常に30%＋の防御力。\n猫耳耐性50以下の生物に対し装甲及び防御系、確率防御系スキルを無視して絶命攻撃を発動可能。\nネズミ系生物に対し100%攻撃力アップ。\n●特殊機能\nBit及びブーツ内臓のプラズマスラスターにより３段ジャンプが可能。\n拳に指向性電撃を放てる端子を装備しており一回の充電で10回までのスタン攻撃が可能。\nリスト部分に充電用のUSB3.4DPポート搭載、非常時にスマホへの給電も可能。\nスカート部に四菱ケミカル製単分子ワイヤーが内蔵されており高速回転することでコンクリートも切断可能\n格闘戦時に掴み対策としてフリル、スカート、リボン等にはギレット社製ソフトレイザー（柔らかいカミソリ）が埋め込まれている。\nタイトブーツは完全防水かつヒートパイプが内蔵されており蒸れずに快適。\nファスナー部分はクアッドアイが搭載されていてカチューシャ型HUDに立体解析画像をおくるため前後方の視野死角が無い。\n●デメリット\n普段の生活では気を付けないと非戦闘時猫大好きにkawaii攻撃されると相手は死ぬ。\nVRChat内では全ての機能効果はOFFになる\n\n\n■心優しき坊主とは？■\n作者です。\nツイッターでこの作品も含めたローポリ講座を不定期で開いてます、ぜひフォローしてくださいね。\nhttps://twitter.com/KoKoRoBoUZu\n\n\n以下に各バージョンの説明がありますのでよく読んでからご購入お願いします。\n","url":"https://booth.pm/ja/items/1021493","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"200","highPrice":"5500"},"image":"https://booth.pximg.net/c/620x620/e3df372d-7b3e-4861-9106-df71df45ccc4/i/1021493/f1eed8a5-f520-4e97-8a1b-528a5ea34a86_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -93,6 +110,10 @@
     rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "cC5ffgqmMAstMeEltWtvXUuY9Vq8QQDR58sDpdtUcws="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -865,6 +886,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"※※※※※　注意　※※※※※","content":"武器、装備、衣装、コンプリート版と別れています、お間違えの無いようにお願いします。\n\n衣装だけ武器だけは他のキャラでも使えるようにしてますがUnity上で設定しないと動きません。\n\nコンプリート版のBattleMaidSinar[通常版]、BattleMaidSinar[高解像度版]はUnityAssetを読み込めばアップロードするだけで使えます。\n\nすでに「Angelica」をお持ちの方で着せ替えだけさせたい方は衣装単体版をご購入下さいい。\n専用の頭部を以下からDownload可能です。\nhttps://kokorobouzu.booth.pm/items/932052"},{"type":"text","title":"VRMモデルについて","content":"各種揺れもの、表情が予め設定されております。\n\nSinar_BattleMaidSuitr_VRM.zip\n\nBattleMaidSinar　[通常版][VRM付き]\nBattleMaidSinar　[高解像度版][VRM付き]\nの2つに同梱されています。\nカスタマイズするのでなければ上記どちらか一つで大丈夫です。"},{"type":"text","title":"WeaponCareerBit　[単体]","content":"概要：武器を装着するBitと広告用のネオンです\n\n総ポリゴン数：166\n\nTexture種類：デフューズ、グロス、ノーマル、スペキュラ、ラフネス、ハイトマップ）\n\nTextureSize：2048X204\n\nMaterial数：２\n\nFBX：２\n\nオブジェクト：各1\n\nUnityアセット：０\n\n容量：7.66MB\n\nFBXのみとなります、ご自分のモデルのマテリアルに合わせてご使用下さい。\n広告ネオンは画像を書き換えるだけで書き換わりますので「初心者」「今話せない」とか書いて状況を伝えましょう"},{"type":"text","title":"CarvinFA-MAS　[単体]","content":"概要：架空突撃銃のカービンファマスです\n\n総ポリゴン数：1621\n\nTexture種類：デフューズ、ノーマル、スペキュラ、ラフネス、ハイトマップ）\n\nTextureSize：2048X2048\n\nMaterial数：1\n\nFBX：1\n\nオブジェクト：2　銃本体、マガジン\n\nUnityアセット：0\n\n容量：3.77MB\n\nFBXのみとなります、ご自分のモデルのマテリアルに合わせてご使用下さい。\nマガジンが別オブジェクトになっていますがモーションデータ等はありません。"},{"type":"text","title":"Electric lighting Raikiri　[単体]","content":"概要：架空刀電子雷切です\n\n総ポリゴン数：306\n\nTexture種類：デフューズ、グロス、ノーマル、スペキュラ、ラフネス、ハイトマップ）\n\nTextureSize：2048X2048\n\nMaterial数：1\n\nFBX：1\n\nオブジェクト：2\n\nUnityアセット：０\n\n容量：3.60MB\n\nFBXのみとなります、ご自分のモデルのマテリアルに合わせてご使用下さい。\nグロスマップをしていすれば発光します。\n鞘、刀と別れているので抜刀可能です。"},{"type":"text","title":"BattleMaid　[衣装のみ]","content":"概要：架空対地知識外生物用専守防衛女衆兵装　BattleMaidsuits　です\n\n総ポリゴン数：\n\nTexture種類：デフューズ、グロスノーマル、スペキュラ、ラフネス、ハイトマップ）\n\nTextureSize：1024X1024\n\nMaterial数：2\n\nFBX：2\n\nオブジェクト：4\n    ポニテ筒\n　　髪飾り\n　　獣耳\n　　服\n\nUnityアセット：１\n\n容量：4MB\n\nWeightは設定済みですので他の頭部を載せHeadのウエイトをのせればそのまま使えます。\nAngelicaシリーズと接合面に互換がありピタリと合うようになっています。\n\nその他の頭部も”Head”以下に設置してサイズ等変更すれば使えるようにはなります。"},{"type":"text","title":"BattleMaidSinar　[通常版]","content":"概要：架空対知識外生物用専守防衛女衆兵装BattleMaidSuitsを装備した改造猫人シノアたんフル装備バージョンです。\n\n総ポリゴン数：Polygon数18612\n\nTexture種類：デフューズ、グロス、ノーマル、スペキュラ、ラフネス、ハイトマップ）\n\nTextureSize：1024X1024\n\nMaterial数：10\n\nFBX：8\n\nUnityアセット：3\n　　本体\n　　アイコン用パネル\n　　着せ替え用ヘッド\n\n容量：14MB\n\n●シェイプ一覧\nVRchat専用リップシンク、ブリンクシェイプ\n●専用表情\n「笑顔」「＞＜」「＝＝」「▽」「企み」「猫口」「怒り」「キス」「舐める」「咥える」「嫌がる」「泣き」\n●専用動作\n胸の大きさ変更可能\n漫符「怒り」「汗」「涙」\n\n追加表情及び漫符を作動させるには購入者自身での設定が必要です\n\n広告ネオンは画像を書き換えるだけで書き換わりますので「初心者」「今話せない」とか書いて状況を伝えましょう\n\n※MMDなどのモーションで目が変な動きのある報告がありました、MMDの動きは想定していませんでしたが\nEye_L\nEye_R\nをHead直下に置き、別の名前に変更すると目が動かないようになります。\nアイトラッキングしている場合は新たに変えた名前の方を指定してください。\n\n"},{"type":"text","title":"BattleMaidSinar　[高解像度版]","content":"概要：架空対知識外生物用専守防衛女衆兵装BattleMaidSuitsを装備した改造猫人シノアたんフル装備バージョン高解像度テクスチャ版です。\n\n総ポリゴン数：Polygon数18612\n\nTexture種類：デフューズ、グロス、ノーマル、スペキュラ、ラフネス、ハイトマップ）\n\nTextureSize：4096X4096～1024X1024　※標準と高解像度設定済みの2体があります\n\nMaterial数：17 　\n\nFBX：8\n\nUnityアセット：４\n　　本体２\n　　アイコン用パネル\n　　着せ替え用ヘッド\n\n容量：135MB\n\n衣装PSD\n\n\n●同梱物\n設定済みキャラ2体\n衣装変え用のボディ、ヘッド\n色変え用にPSD付属\nアイコン用パネル\n\n●シェイプ一覧\nVRchat専用リップシンク、ブリンクシェイプ\n\n●専用表情\n「笑顔」「＞＜」「＝＝」「▽」「企み」「猫口」「怒り」「キス」「舐める」「咥える」「嫌がる」「泣き」\n\n●専用動作\n胸の大きさ変更可能\n漫符「怒り」「汗」「涙」\n\n追加表情及び漫符を作動させるには購入者自身での設定が必要です\n\n広告ネオンは画像を書き換えるだけで書き換わりますので「初心者」「今話せない」とか書いて状況を伝えましょう\n\n非圧縮のテクスチャーはなるべく編集用に使って下さい。\n\n※MMDなどのモーションで目が変な動きのある報告がありました、MMDの動きは想定していませんでしたが\nEye_L\nEye_R\nをHead直下に置き、別の名前に変更すると目が動かないようになります。\nアイトラッキングしている場合は新たに変えた名前の方を指定してください。"},{"type":"text","title":"Unityアセットでの注意事項","content":"●揺れもの\n髪、乳、スカートその他の揺れ物に有料のDynamicBoneを使っています、お持ちでない場合はMissingとなり揺れません。\nDynamicBoneが先にインポートされてる状態で本アセットのインポートをして下さい、逆だとはMissingとなり揺れません。\n\n\n●Shader\nShaderに無料のCubedParadoxを使っています下記よりダウンして使ってください、入れることができない人は全てのShaderを標準のUI/Textureにすれば大体似たイメージになります。\n\nhttps://github.com/cubedparadox/Cubeds-Unity-Shaders\n\n\n●”衣装単体版”の頭部との接続\nAngelicaシリーズをお持ちの方はDownloadページに専用Headが追加されていますのでDownloadお願いします。\n接合部は互換性があります。\n\nBlender作業できる方は頭部とBonesを本モデルに合わせた後Control＋Aで位置を固定して下さい。\n\nUnityだけでも簡単に移植することが可能です、説明は各ページから御覧ください。\n\nhttps://kokorobouzu.booth.pm/items/932052\nhttps://kokorobouzu.booth.pm/items/987774\n\nその他のAvatarとの接続はBlender上にて頭部Meshだけを読み込み位置調節の後”Head”Bonesのwaitを適応して下さい。\n"},{"type":"text","title":"禁止事項　免責事項","content":"■このモデルで許可される事\n　・購入者がVRchat内で使用する改変は自由です\n　・VRchatをメインとした動画等への使用は自由です\n　・非営利アイコンや壁紙の使用は自由です。\n\n\n■禁止事項\n\n　・再配布は禁止します\n\n　・改変非改変にかかわらずVRchat以外でのご使用はご相談ください。\n\n　・エロ、グロ等18禁への公共の場での使用は禁止\n　　　※プライベートで非公開な使用は当てはまりません、存分にご使用ください。\n\n　・商用利用禁止\n　　　※商用利用可能なmodelはAssetStore等で販売しますのでそちらをご使用ください。\n　　　※YouTubeなどでVRchat動画による収入は許可します\n\n■免責事項\n当モデルを使用することで使用者側に不利な問題が生じた場合、\nそれがいかなるものであっても配布元は一切責任を負いません。\n"},{"type":"text","title":"バージョン履歴","content":"1.0　2018/9/22 リリースバージョン\n1.1　2018/9/23 マガジンの揺れ修正\n1.2　2018/9/23 マガジンの揺れ修正\n1.3　2018/10/19 衣装PSDにUVMAP追加\n1.4　2018/10/19 追加表情のAnimeのみを追加しました\n\n3.0　2021/07/22"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
