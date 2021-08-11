@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "LEBLMErd7uOAgallj/N5moisaghqYXcWE4bzYV5ALro="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "LEBLMErd7uOAgallj/N5moisaghqYXcWE4bzYV5ALro="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"「ミーシェ｣用衣装モデル　『きょうえいみずぎ と ラッシュガード』","description":"本製品は、｢ポンデロニウム研究所 オリジナル３Dモデル「ミーシェ」 」用の服モデルです。\n本商品は、ver1.01にて制作しました。バージョンが異なる場合、動作は保証できません。\n\n本製品に、ミーシェ本体のモデルは含まれません。以下からご購入ください。\nオリジナル３Dモデル「ミーシェ」　https://booth.pm/ja/items/1256087\n\n服の導入自体はUnity上のみで行うことができます。\nDynamicBoneを正常に動作させるため、以下のUnityスクリプトを使用します。\n本商品に同梱しており、導入は非常に簡単です。\nスクリプト作者であるkurotori様より、同梱の許可を頂いています。\n●黒鳥ケモノ工房 AvatarTools (v2.0を同梱)\n　https://booth.pm/ja/items/1564788","url":"https://booth.pm/ja/items/1317068","offers":{"priceCurrency":"JPY","@type":"Offer","price":"1500"},"image":"https://booth.pximg.net/c/620x620/bb487ead-0245-44f1-9e26-22a99b59aed0/i/1317068/924c5805-dfea-49b2-8562-9db55da09503_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "LEBLMErd7uOAgallj/N5moisaghqYXcWE4bzYV5ALro="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -640,6 +661,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"利用規約","content":"本製品は、VN3ライセンス(Store*Snowlight製品一般利用規約)を採用しております。\n本製品を使用する前に、必ず以下からご確認ください。\nhttps://www.dropbox.com/sh/oggnwrgyad4hdm3/AAATB3bpkwCkSCjaHK9cAULNa?dl=0"},{"type":"text","title":"製品説明","content":"〇製品内容\n・Unitypackage\n・.fbxファイル\n・テクスチャpsdファイル\n・readme(利用規約・導入説明)\n\n〇本体説明\n・ポリゴン数：水着△3309 上着△7164\n・テクスチャパターン\n　編集用psdファイルを同梱"},{"type":"text","title":"その他","content":"〇お問い合わせ\nTwitter：@snowlight0102　までご連絡ください。\n\n〇バージョン\n2020/11/10 ver1.01 テクスチャ、利用規約等変更\n2019/04/14 ver1.0  発売"},{"type":"text","title":"Explanation","content":"It is a 3D clothing model for \"Mishe\".\nhttps://booth.pm/ja/items/1256087\n\nThe script Avatartools is in this package to use this clothing.\n https://booth.pm/ja/items/1564788"},{"type":"text","title":"Terms of product","content":" This product is licensed under the VN3 license (Store*Snowlight Product General Terms of Use).\n Before using this product, please check the following information.\n  https://www.dropbox.com/sh/oggnwrgyad4hdm3/AAATB3bpkwCkSCjaHK9cAULNa?dl=0\n\nSimple explanation (be sure to read the pdf above for details)\n-This license is made in Japanese.If a translation of these Terms of Use has been provided, it is for reference only and only the Japanese version of the Terms of Use shall be effective at all times.\n-Author Snowlight0102 has all copyrights.\n-For corporate use, please contact us.\n-Distributing or selling to others is prohibited.\n-Political or religious use of the site is prohibited.\n-Use to harm others is prohibited.\n-Prohibited from using it to violate the terms of the service you are using."},{"type":"text","title":"Model description","content":"No. of polygons: \n Swimsuit: Tris3309\n RashGuard: Tris7164\nTexture: psd file"},{"type":"text","title":"Contact/Version","content":"Contact:\n Please ask @snowlight0102 on Twitter\n\nVersion:\n10 Nov 2020: ver1.01 Revise tex, terms of product.\n14 APR 2019: ver1.0  Release.\n"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
