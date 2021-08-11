@@ -58,6 +58,16 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "1nMD1GuSOpwYX/V1Vs9VzOSWOhdyiAORZv3S1+Qhb3E="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
   </head>
   <body>
     <div class="mini-player-controller" style="display: none;">
@@ -86,6 +96,13 @@
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "1nMD1GuSOpwYX/V1Vs9VzOSWOhdyiAORZv3S1+Qhb3E="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"「Lua｣用衣装モデル　『ゆかた』","description":"本製品は、｢Ficsnade オリジナル3Dモデル『Lua』」用の服モデルです。\n\n本製品に、『Lua』本体のモデルは含まれません。以下からご購入ください。\nFicsnade　オリジナル3Dモデル『Lua』　https://booth.pm/ja/items/1255054\n本商品は、ver1.01『Lua FullSet』にて制作しました。バージョンが異なる場合、動作は保証できません。\n\n服の導入自体はUnity上のみで行うことができますが、『Lua』本体の内容物より、Unity上で服を非表示にできる『Lua』を用意して頂く必要があります。\n\n袖の挙動の為、Unity Asset\"Dynamic bone\"が必要となりますのでご用意ください。\n\n以下の導入補助スクリプトに対応しています。\n(Store*Snowlightの商品ではありません)\n●Auto Dresser | sentz-A生命維持機関\nhttps://sentz-a.booth.pm/items/1300847","url":"https://booth.pm/ja/items/1383067","offers":{"priceCurrency":"JPY","@type":"Offer","price":"1400"},"image":"https://booth.pximg.net/c/620x620/bb487ead-0245-44f1-9e26-22a99b59aed0/i/1383067/0b6dc036-b2e7-40e2-88e4-7640a4369afb_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -93,6 +110,10 @@
     rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "1nMD1GuSOpwYX/V1Vs9VzOSWOhdyiAORZv3S1+Qhb3E="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -667,6 +688,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"利用規約","content":"・著作権は作者であるSnowlight0102が保有しています。\n\n・以下のような使用を禁止致します。\n　×公序良俗に反する利用\n　×政治的・宗教的主張に関する利用\n　×本製品を取り出せる形での再配布・再販売\n　×自作発言等、製作者を騙る言動\n\n・テクスチャ改変、モデル改変を制限致しません。\n・商業利用はまずご連絡ください。許可の有無は別途判断します。\n・本モデルデータ、および改変したモデルを使用したことにより発生したトラブルや損失に関して、作者とその関係者、およびその所属するいかなる団体も、一切の責任を負わないものとします。\n・本利用規約は、のちに変更される場合があります。\n・英語版利用規約と齟齬がある場合、日本語の規約が優先されます。\n\n・「Lua」本体の扱いは当該モデルの利用規約に従います。"},{"type":"text","title":"商品説明","content":"〇本体説明\n・ポリゴン数：△16802\n\n・テクスチャパターン\n　柄4パターン/色変え含め合計14種類\n\n・コンポーネントについて\n　袖にダイナミックボーンを使用しています。\n　下半身にClothを使用しています。"},{"type":"text","title":"その他","content":"〇お問い合わせ\nTwitter：@snowlight0102　までご連絡ください。\n\n〇バージョン\n2019/05/23 ver1.0 発売"},{"type":"text","title":"English explanation.","content":"It is a 3D clothing model for \"Lua\".\n\nCaution:\"How to use\" is written by only Japanese. \nNeed \"Unity Asset : dynamic bone\" for use this clothing.\n\nTerms of product:\n - Author Snowlight0102 has all copyrights.\n \n - The following acts are prohibited:\n  1. Using against public order and morals.\n  2. Using for political or religious calm.\n  3. Redistribution and Resale.\n  4. Claim that you the creator of this product.\n  5. This terms may be changed later.\n  6. If there is a conflict between the Japanese Terms and the English Terms, the contents of the Japanese version shall prevail.\n  \n - We don't restrict of modifying model and texture.\n - Contact me if want to use this product for commercial use. I will judge.\n - Even if you get any troubles or losses by using the model data or modifyed model, author, our participants, and groups they belong to do not take any responsibility.\n \n \nModel description:\n No. of polygons:Tris16802\n\nContact:\n Please ask @snowlight0102 on Twitter\n\nVersion:\n23 May 2019: ver1.0  Release.\n"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
