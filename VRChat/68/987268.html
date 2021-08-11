@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "WB77p9Rbpi30VOp1Lu9M1AdDLBzbvvTtDcFNw/Mb7/k="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "WB77p9Rbpi30VOp1Lu9M1AdDLBzbvvTtDcFNw/Mb7/k="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"翼　詰め合わせ(アニメーション付)個人利用パッケージ","description":"【PC版VRChat向け】\n3種類30バリエーションの翼を詰め合わせたパッケージになります\n・両翼でも500ポリゴンに収まる　シンプル翼\n・小柄なアバターにも合わせやすい260ポリゴンの　ミニ翼\n・ふわっとした質感で1124ポリゴンの　ふわふわ翼\n\n片翼版もあり、背中接続の有無などで計15バリエーション\n更にテクスチャを各2しゅるい用意しているので、切り替えることで合計30バリエーションとなっております。\n\n15種類それぞれに、羽ばたくアニメーションが用意してあります。\nprefabを利用してアバターに組み込むことで、自動でアニメーションが設定されます。\n\nこちらは個人利用のライセンス形態となっておりますので、この翼を製作物に同梱して配布、販売したい場合は、もう片方の「同梱可能パッケージ」をご購入ください。\n\n2020/04/06　VRChatのUnity2018版にあわせて、テクスチャの設定を変更\nまんまるしぇーだーをバージョン3.2に差し替え\n2018/10/03  VRChatがLegacyアニメーションを廃止したことに伴い、Animator方式に変更しました\n2018/08/27　マニュアルにTips 4 翼が大きすぎる/小さすぎる/見つからない時の対処法を追加しました","url":"https://booth.pm/ja/items/987268","offers":{"priceCurrency":"JPY","@type":"Offer","price":"1000"},"image":"https://booth.pximg.net/c/620x620/d93c3674-a136-49a1-a2f3-9a8202a223cd/i/987268/264e004a-ea49-4e74-bb0f-80a63fddbd2c_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "WB77p9Rbpi30VOp1Lu9M1AdDLBzbvvTtDcFNw/Mb7/k="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -424,6 +445,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"利用規約","content":"オリジナル3Dモデル　「翼詰め合わせ」　個人利用ライセンス利用規約\n\n\n第1条（定義）\n\n　本規約で使用する用語の定義は次に掲げる通りとします。\n\n（１）本品：「翼詰め合わせ」内容物のうち、「まんまるしぇーだー導入必要な方向け」フォルダ内の物を除いた全ての物\n（２）購入者：3Dモデル「翼詰め合わせ」を購入した者\n（３）作者：飛鷹　twitterID @Hiyo_4tweetECO (ツイッター名は呟鷹のヒヨ)　blog:http://hiyouhiyori.blog.fc2.com/\n（４）本モデル内容物：3Dモデル「翼詰め合わせ」を購入した際、購入物に含まれていた全てのデータから「まんまるしぇーだー導入必要な方向け」フォルダ内の物を除いた物\n（５）まんまるしぇーだー：みに様（ twitter ID:@Mini_9321_VR ）の製作物であり、「まんまるしぇーだー導入必要な方向け」フォルダ内の物\n（６）まんまるしぇーだーのライセンス：「まんまるしぇーだー導入必要な方向け」フォルダ内のReadme.txt、LICENSE.txtに定められたライセンス\n（７）再配布：本品またはその一部を、作者の販売所以外で、購入者以外の第三者が入手できるようにすること。\n　　　VRChatなどのサービスにおいて、購入者だけが利用できる形式でデータをアップロードする事は、この定義に含みません。\n\n第2条（同意の成立）\n\n購入者は本モデルを利用することによって、本規約の内容に全て同意したものとみなします。\n\n\n\n第3条（著作権法その他適用法との関係）\n\n第1項　本モデル内容物は、著作権法その他適用法によって保護されています。\n\n第2項　本モデル内容物の加工の有無、または加工の多少で著作権の譲渡や移動はありません。\n\n第3項　まんまるしぇーだーは、まんまるしぇーだーのライセンスに従います。\n\n\n\n第4条（利用の許諾）\n\n作者は本品について、購入者による以下の行為を非独占的に許諾します。\nなお、法人様の使用についてはこれに当てはまりません。別途コーポレートライセンス等の法人様向け契約が必要となります。\n\n１　商業非商業問わず、本モデル内容物を本規約第5条で禁止する事例以外の全ての用法で利用すること。\n\n２　商業非商業問わず、本モデル内容物を本規約第5条で禁止する事例以外で自由に改変、編集すること。\n\n３　作者へ許諾を申請せずに、本規約第4条１および２の行為を行うこと。\n\n\n\n第5条（禁止行為）\n\n以下の例に該当する行動、本モデル内容物の利用および改変は禁止いたします。\n\n１　本モデル内容物の再配布および第三者が本モデル内容物そのものを利用可能な状態にする行為。\n\n２　本モデル内容物を公序良俗に反する行為や目的、反社会的な行為や目的、特定の信条や宗教、政治的発言のために利用、改変すること。\n\n３　本モデル内容物を購入者自身が全て作成したと取れるような発言および発信行動。\n\n４　本モデル内容物を3Dアバターなどのデータ、ゲームやツールといった物に同梱し、配布や販売する行為。\n　　但し、イラストや動画等において、不可逆的に本モデル内容物の取り出しが不可能な形態はこれに該当しません。\n\n５　その他、作者が不適切であると判断した本モデルの利用および改変。\n\n\n\n第6条（規約の違反）\n\n第1項　本規約に違反した本モデルの利用および改変が判明した場合、作者はいつでも本モデルの利用および改変を中止、削除させることが出来ます。\n\n第2項　作者は前項に基づいた本モデルの利用および改変の中止、削除によって本モデル利用者に発生したいかなる損害についても一切責任を負いません。\n\n\n\n第7条（規約の変更）\n\n第1項　作者は購入者の承諾を得ることなく、いつでも本規約の内容を改定することができるものとし、購入者はこれを異議なく承諾するものとします。\n\n第2項　作者は、本規約を改定するときは、その内容について作者所定の方法により購入者に通知します。\n\n第3項　前本規約の改定の効力は、作者が前項により通知を行った時点から生じるものとします。\n\n第4項　購入者は、本規約変更後、本モデルを利用した時点で、変更後の本利用規約に異議なく同意したものとみなされます。\n\n\n\n第8条（免責）\n\n第1項　作者は、本モデルの内容変更、中断、終了によって生じたいかなる損害についても、一切責任を負いません。\n\n第2項　作者は、購入者の本モデルの利用環境について一切関与せず、また一切の責任を負いません。\n\n\n\n\n\n\n\n変更履歴\n\nver1.0　リリース\n"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
