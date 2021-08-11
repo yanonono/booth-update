@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "R+YAWMKWeitqSJyGs2YPzZ2BoFCloec/q9NNTY2LGwY="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "R+YAWMKWeitqSJyGs2YPzZ2BoFCloec/q9NNTY2LGwY="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"Oldman Cornelius","description":"コーネリアスはVRChat用のアバターデータです。\nデータはunitypackage形式なので使用にはUnity2017.4.15f1が必要になります。\nアップデート情報や実際に使用したイメージ等はTwitterにてご確認下さい。\nhttps://twitter.com/nD_ntny\n\nOculus Questでは動作しません。\n現状対応予定もありません。(19.05.25)","url":"https://booth.pm/ja/items/1001515","offers":{"priceCurrency":"JPY","@type":"Offer","price":"2500"},"image":"https://booth.pximg.net/c/620x620/d39dae26-ac7c-4731-91c7-2278770e276e/i/1001515/733a73a0-3182-4cd0-b844-06f96e7b75af_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "R+YAWMKWeitqSJyGs2YPzZ2BoFCloec/q9NNTY2LGwY="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -380,6 +401,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"Release note","content":"1.4(データ上の更新は無し)\n- 一部規約を改訂しました\n\n1.4\n- SkinnedMeshを統合したミディアムステータスのデータを追加\n\n1.3\n- 2017.4.15f1 アップデート\n- UTS2.0.5 アップデート\n- ヒゲと髪と顔にUVとテクスチャが新しく追加されました\n- Blender用のデータを同梱 ※オマケ (非サポート)\n- サンタバージョンを同梱 ※オマケ (非サポート)\n\n1.2.1\n- メリークリスマス！オマケデータとしてサンタリアスを追加しました。\nDownloadページから別途入手可能です。\n(v1.3にて同梱されました)\n\n1.2.1\n- Blender用コーネリアスデータを追加(暫定)\nDownloadページから別途入手可能です。\n(v1.3にて同梱されました)\n\n1.2.1\n- Add Custom base for Substance Painter \n/OwlcoltIndustries/Avatars/AV02_Cornelius/FBX/AV02_Cornelius_Suite.FBX\n\n1.2\n- Shader Patch    : UTS2.0.4.3p1\n- Add new prefabs : Cornelius Steampunk\n- Add new goodies : Pipe, Goggle\n\n1.1\n- Release version."},{"type":"text","title":"Specifications","content":"ポリゴン数：18174 Tris\nアイトラッキング：サポート\nリップシンク：サポート\nフルトラッキング：サポート\nシェーダー：Standardとオリジナル及びUTS2.0.4.3\nダイナミックボーン：設定済み(要別途購入及び事前インストール)\n身長：約170cm"},{"type":"text","title":"Main Contents","content":"・AV02_Cornelius(標準的なスタイル)\n・AV02_Cornelius_UTS(トゥーンスタイル)\n・AV02_Cornelius_White(カラーバリエーション)\n・AV02_Cornelius_Steampunk(カラーバリエーション)\n・AV02_Cornelius_Santa(カラーバリエーション)\n・AV02_Cornelius_Medium(MediumStats)"},{"type":"text","title":"Extra Contents","content":"★PlagueDoctorGoodies(ペスト医師のマスク、ハット、ステッキのセット)\n\nこのオマケはScene内の各キャラクターに配置済みです。\nデフォルトでは表示をオフにしてあるので、装備させたい場合は以下の様に設定してください。\n\n●表示\n・PDR_Stick\n・PDR_Hat\n・PDR_Mask\n\n●非表示\n・AV02_Cornelius_Glaseses\n・hairFront\n\n\n★改変用にBlenderで開けるデータ(暫定版)を追加\n当方Blender使いでない為、こちらは基本的にBlender分かる人向けとし、サポート外となりますので、詳細及び使い方等のご質問はご容赦ください。\n\n★メリークリスマス！\nサンタバージョンのコーネリアスを追加しました！\n…が、正直突貫バージョンなのであくまでもオマケ程度にご利用下さい…！\n(v1.3にて同梱されました)\n\n★脱VeryPoor\nミディアムステータスのデータが追加されました。"},{"type":"text","title":"アバター導入方法","content":"本パッケージを使用するにはUnityを使用してVRChatへアバターをアップロードできる知識が必要になります。\n\n2018.09.06現在、VRChat上にカスタムアバターをアップロードするには一定以上のトラスト値が必要となります。\nVRChatをインストールして直ぐに本データを使用することはできませんのでご注意ください。\n\n①Unity5.6.3p1を起動し、新規プロジェクトを作ります。\n②VRChat公式サイトからSDKをダウンロードしてUnityにインポートします。\n③AssetStoreからDynamicBoneを購入(既に購入済みであればダウンロード)しインポートします。\n④BOOTHにて購入した本パッケージ(AV02_Cornelius.unitypackage)をインポートします。\n⑤OwlcoltIndustries/Avatars/AV02_Cornelius/ScenesフォルダにあるCornelius.sceneを開き、任意のデータをアップロードします。\n\n全てのデータはOwlcoltIndustries以下に格納されています。"},{"type":"text","title":"ガイドライン","content":"●免責\n・本データの購入者は本データをUnityにインポートした時点をもって以下の規約に同意したものとみなします。\n・本データを利用する事によって生じる如何なる障害、損失に対してもOwlcolt Industriesは一切の責任を負いません。\n・改変の有無に関わらず本データの著作権は制作者であるntnyに帰属します。\n・本データは予告なくアップデート、販売の停止をする場合があります。\n・販売停止された場合、購入者は購入した時点の規約をもって使用し続ける事が出来ます。\n・また、アップデート以前のデータを持っている場合、継続して使う権利を持ちますが、サポート対象ではなくなります。\n・本規約は予告なく変更される場合があります。\n・Owlcolt Industries社はneotenyDesignが運営する架空の企業です。\n\n●利用可\n・本データは2020.12.24時点で自己責任の元、自身のみがアバターまたはプレイヤーキャラクターとして使う場合に限り、VRChat以外の各サービス上で使用できます。\n　(Owlcolt IndustriesはVRChat以外での動作確認をしておりません。VRChat以外での動作に関しては原則自己責任となり、サポート対象外となります)\n・本データは購入者によりVRChatをはじめとする各サービスが発行するEULA、及び本規約文の範囲に於いて、各種DCCツールにて自由に改変する事が出来ます。\n・本データは全体または一部を非ペデスタルオブジェクトとしてワールドに配置することができます。\n・本データに含まれるキャラクター以外のアクセサリやシェーダーは、自作を含む他者製モデル(各EULAに準拠)に使用する事が出来ます。\n\n●利用不可\n・本データの制作者及び販売者を騙る事は出来ません。\n・本データは如何なる条件を持ってしても購入者による再配布及び再販売することはできません。\n・本データはアダルトコンテンツに使用することはできません。\n・本データは改変の有無に関わらず、またPublic、Private問わずアバターペデスタルとしてワールドに配置することはできません。\n・本データを無改変のままVtuberとして使用することはできません。\n　(Vtuberとして扱う場合はオリジナルと明確な差異が見て取れるレベルまで改変して頂く必要があります)\n・本データは各サービスに於いて購入者以外が使用可能になる形でのアップロードは出来ません。\n\n●収益\n・本データを用いて作られたコンテンツは個人利用に限り収益を得る事ができます。\n・法人及び購入者の前年度売上が2000万円を超える場合は別途ご相談ください。\n・尚、上記条件に該当する場合でも、Youtubeなど動画作品での短期的使用(紹介、関係者以外の使用など)の場合は通常収益化して頂いて構いません。\n\n●ロゴ\n・本データにはOwlcolt Industries社のブランドロゴが同梱されております。\n・このデータはOwlcolt Industries社のアバターまたはアクセサリのオーナーである証明となります。\n・このデータは自分専用アバターなど個人的な利用に限定され、配布・販売物に使用する事は出来ません。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
