@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "yB2blDQ6azWjCHi9q8yML165SbTiIfXWoTfQUXmPBHQ="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "yB2blDQ6azWjCHi9q8yML165SbTiIfXWoTfQUXmPBHQ="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"【VRC向けオリジナル3Dモデル】Sephir 〈セフィ〉.ver3.5.1","description":"スチームパンクな雰囲気のアバターです。\nHumanoidリグ、ダイナミックボーン、シェーダーが設定されています。フルトラにも対応している……はずです。\nVRChatでの使用を想定していますが、他の媒体で使用しても構いません。使用の際の連絡は不要ですが、あると製作者が喜びます。\n\n服だけが欲しい方はリンク先からどうぞ。\n\n略式制服\nhttps://sephir.booth.pm/items/2745835\n\n探索者の外出着\nhttps://sephir.booth.pm/items/2746386\n\n\n\nモデルの再配布は厳禁です。VRChatでパブリック化するのもお控えください。\n\n2021/02/16\nアプデしました。\nEFBodyに対応し、様々な変化がありました。ご確認ください。\n","url":"https://booth.pm/ja/items/1145899","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"2500","highPrice":"5000"},"image":"https://booth.pximg.net/c/620x620/0d2468c0-1ae0-44e4-9281-c6f1646d3f41/i/1145899/a61e8321-8a12-4e74-ab6a-cd36efde1051_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "yB2blDQ6azWjCHi9q8yML165SbTiIfXWoTfQUXmPBHQ="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -479,6 +500,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"内容物 - Contents","content":"・Sephir3.x.x.fbx\n\nセフィの3Dキャラモデルデータです。blenderで制作してあります。\n\n・Gun・Blade・Torch.fbx\nセフィに持たせるための武器のモデルデータです。\n\n・sephir3.3.0.unitypackage\nセフィのダイナミックボーン、シェーダー、アニメーションを設定しておいたデータです。Unityプロジェクトに入れればOK。\n\n・PSDデータ\n　テクスチャがレイヤー分けされているデータです。改変にどうぞ。\n\n・Sephir3.x.x.blend\nblendファイル。\n\n・Librarian\n　別衣装が入ってます。\n\n\n"},{"type":"text","title":"スペック - Spec","content":"・ボーン\nVRChat向けのHumanoidボーンで制作しています。ダイナミックボーン、アイトラッキングは設定済みです。\nダイナミックボーンはアセットから購入してください。\nフルトラッキングの適正は高くはありませんが、不具合がないことは確認済みです。\n未設定ではありますが、前髪やスカートにもボーンは入っています。今後調整したものを出すかもしれません。\n\n・表情\nアイトラッキング関連　4種類\nリップシンク用のもの　15種類\nサンプルの表情アニメーション　23種類\n表情シェイプキー　43種類\nそのほかのシェイプキー　8種類\nMMD用の表情　19種類\n※眉や目などは左右別に作ってありますが、それを一つとして数えています。\n\n・シェーダー\nユニティちゃんトゥーンシェーダー2.0.7を設定してあります。同梱はされていないので、githubや公式サイトからダウンロードをお願いします。\n"},{"type":"text","title":"導入 - Installation","content":"①ユニティちゃんトゥーンシェーダー2.0.7以上(以下UTS)を\nhttp://unity-chan.com/download/releaseNote.php?id=UTS2_0\nから、\n　一番新しいVRCSDKをVRChat公式ページからDLする\n　ダイナミックボーンをUnity Assetsから購入する\n\n②unity(バージョンはその時のVRC環境のものをご利用ください)を開き、作成したプロジェクトにUTS、VRCSDK、unitypackageを取り込む\nダイナミックボーンもここで導入する。\n購入していない場合、Missing Prefabが発生するためダイナミックボーンが入っている部分をすべて削除する。\n検索などをご利用ください。\n\n③Prefabフォルダに入っているデータの大きさを調整し、配布されているエディタなどを利用してして追従するようにしてください。Light版はオブジェクト数を減らしたバージョンであり、負荷の削減につながります。衣装を減らす方向での改変を予定していない場合、こちらをご利用ください。\n"},{"type":"text","title":"規約 - Regulations","content":"許可 - Allowed\n・改変・改造　モデルの一部の移植、素材としての流用\n・VRChat、およびVRChat以外でのVRSNSや、VRM化などによる多媒体での利用\n・R-18、R-18Gへの利用\n・動画・画像・ゲーム等での商用利用\n・psd、およびpngデータの二次配布、および改変したテクスチャの販売\n・完全な別物として販売、配布する予定の服や装飾品として利用する目的のみでの、メッシュへのシュリンクラップや複製、ウェイトの転送\n\n不許可 - Not Allowed\n・blendファイル、FBXファイル、unitypackageの再配布、および再配布と製作者が判断した行為\n・自作発言\n\n\n詳細 - Details\n・本モデル及び改造モデルの使用によって生じたトラブル、損失に対し、当方は一切責任を負いません。\n\n・本モデルの著作権は「セフィ(以下、作者)」に帰属するものとします。\n\n・利用規約は変更される可能性があります。\n基本的に最新のものが適用されるものとします。\n変更により規約違反となった場合、変更前の規約を利用しても問題はないものとします。\n\n・当利用規約において翻訳の都合上、他言語との差異が生じた場合日本語の利用規約\nを適用するものといたします。\n\n・本利用規約の成立、効力発生、解釈にあたっては日本法を準拠法とします。\n\n・利用者が作者の権利を侵害した場合、故意または過失の如何にかかわらず、作者は当該利用者に対して損害賠償請求を行うことができます。\n\nTwitter:@Sephir_tree\n2020/02/16 (C)セフィ]"},{"type":"text","title":"今後のアップデート予定","content":"細かなものから、実力の不足が原因で実装しなかったさまざまな機能があります。その辺りがなんとかなり次第、アップデートを予定しています。\n・瞬きを表情と干渉しないようにする\n・テクスチャの調整\n・ウェイト調整\n・異なる衣装\n\n大まかにはこのあたりです。\n他にも導入してほしい機能がありましたら、連絡いただければ検討します。\n\n絶対実装しないもの\n・肌の色を変更する\n・耳をとがらなくさせる\n・胸を増量するシェイプキー\n"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
