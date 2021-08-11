@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "MF7GUZ+gJxlds0niytWlkKwn4T4jYXYB/ZrPOyF0gvA="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "MF7GUZ+gJxlds0niytWlkKwn4T4jYXYB/ZrPOyF0gvA="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"オリジナル3Dモデル『リンツ』","description":"##モデル説明##\nオリジナル3Dモデル『リンツ』\n制作者：muta\n\n※モデル説明の下に利用規約が記載されていますので、ご了承の上での購入をお願いします。\n\n\n#内容物\n・Linz.fbx\n　体、上着、顔、髪、尻尾、帽子が合成されているモデルデータです。\n　そのままVRChatで使用するのであればこちらがオススメです。\n・Linz_make.fbx\n　各パーツがバラバラになっている改造用のモデルデータです。\n・Linz_nbody.fbx\n　素体のモデルデータです。\n\n・各種テクスチャ\n _spは光沢表現用、_maskはマスク用、psdは改造用のレイヤー付きデータです。\n\n・.animファイル\n　VRChat用の表情変化と指の挙動をあわせたアニメーションデータです。\n　overrideControllerに設定して使用してください。\n\n#ボーンについて\nUnityのHumanoidの規則に沿った作りになっています。\n\n#VRChatのフルトラッキングについて\nアップロード時に注意表記が出ますがフルトラッキングに対応しています。\n\n#VRChatのアイトラッキングについて\n対応しています。\n\n#マテリアル設定\nhttps://packetbird.booth.pm/items/1027997\n本モデルはArktoon-Shadersを推奨しています。\n付属Unitypackageで設定済みのものがありますので、予めArktoon-Shadersの導入をお願いします。\n\n#素体の用途について\n部分的に使用して服を着せたり、リンツ用の服を作る際のベースとして使用してください。\n他の服モデルと組み合わせる際は規約的に問題ないかを確認の上改造を行ってください。\nこの素体から改造したモデルは販売できませんが、ボーンやメッシュ等を参考にしたモデルの販売は問題ありません。","url":"https://booth.pm/ja/items/1255264","offers":{"priceCurrency":"JPY","@type":"Offer","price":"5000"},"image":"https://booth.pximg.net/c/620x620/10942f35-97bb-434d-9f5a-6083e00c7891/i/1255264/598f947e-d41c-492a-843d-9926e694ff67_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "MF7GUZ+gJxlds0niytWlkKwn4T4jYXYB/ZrPOyF0gvA="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -435,6 +456,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"##利用規約##","content":"オリジナル3Dモデル『リンツ』\n制作者：muta\n\n本モデルを購入した時点で本利用規約に同意したものとします。\n利用規約の内容は変更する場合があり、最新のものが適用されます。\n\n-----------------------------------------------------------------\n・モデル改造は自由です。\n\n・本モデル、改造モデル著作権はmutaに帰属するものとします。\n\n・本モデル、改造モデルのVRChat等モデルデータをアップロードし、アバターとして使用するサービスへの使用を許可します。\n\n・上記サービスで購入者本人以外が、アバターを使用できるようにする行為を禁止します。\n　※VRChatのペデスタルへの使用は購入者以外が使用できるようになるので禁止です。\n\n・本モデル、改造モデルの再配布、販売を禁じます。\n\n・本モデル、改造モデルを使用したバーチャルYoutuber等の活動を許可します。\n　収益化等は制限いたしません。\n　※バーチャルYoutuber等の活動には、グッツ作成、雑誌掲載も含まれます。\n　※無改造モデルでのグッツ展開は公式と誤認する可能性があるためご遠慮ください。\n\n・本モデル、改造モデルを制作物のサンプル等で使用して、バーチャルマーケット、\n　VEXPO等の第三者に制作物をアップロードするイベントに参加する場合はmutaまで一度ご連絡をお願いします。\n\n・本モデル、改造モデルをゲーム、アニメーション、アプリに使用することを許可します。\n　収益化等は制限いたしません。\n　モデルデータとして再度使用できる状態のデータが含まれる場合は使用を禁止します。\n\n・モデルを使用する際にクレジットを記載する必要はありません。\n\n・R-18・R-18Gへの利用は制限しませんが、住み分けはしっかり行ってください。\n\n・政治、宗教活動、他者に対する誹謗中傷目的での使用を禁止します。\n\n・本モデル、改造モデルを使用することによって生じた何らかのトラブル、損失に対しmutaは一切責任を負わないものとします。\n\n・翻訳の都合上日本語の利用規約と英語の利用規約に差異が出た場合日本語が正しいものとします。\n\n-----------------------------------------------------------------\n制定日：2019年03月08日\n\nその他不明点等がありましたら以下に連絡ください。\n\nTwitter：@muta_shinki\nEmail：mutashinki@gmail.com\nDiscord：muta#2767"},{"type":"text","title":"##Terms of service##","content":"Original 3D model \"Linz\"\nProducer: muta\n\nWe agree to these terms of service at the time of purchasing this model.\nThe contents of the terms of service may be changed, and the latest one will be applied.\n\n---------------------------------------------------------------------------------------\n\n・ Remodeling this model is free.\n\n・ Copyright of this model and the remodeled model shall be attributed to muta.\n\n・ We allow uploading model data of this model and the remodeled model to a service such as VRChat and using as an avatar.\n\n・ We prohibit using this model and the remodeled model except purchasers.\n   Example: Making this model and the remodeled model available as a public avatar such as making an avatar pedestal in VRChat is forbidden.\n\n・ Redistribution and sale this model and the remodeled model are prohibited.\n\n・ We allow using this model and the remodeled model to do activities such as virtual Youtuber.\n   It does not prohibit such as monetization too.\n\n・ If you participate to the event such as virtual market and VEXPO and exhibit this model and the remodeled model, please contact muta once.\n\n・ We allow using this model and the remodeled model for games, animation, and applications.\n   It does not prohibit such as monetization too.\n   If model data contain data that can be used again, it is prohibited to use it.\n\n・ It is not necessary to write credits when using this model and the remodeled model.\n\n・ It is not prohibited to use this model and the remodeled model with R18 or R18G, but please make sure to act appropriately for the circumstances.\n\n・ Prohibit using this model and the remodeled model to politics, religious activities and slander wounding against others.\n\n・ Muta is not responsible for any troubles and losses caused by using this model and the remodeled model.\n\n・ If there is a discrepancy between the terms of service of the Japanese and the terms of service of the English due to reasons of translation, Japanese will be correct.\n\n---------------------------------------------------------------------------------------\nDate of enactment: March 8, 2019\n\nIf there are other unknown points, please contact the following.\n\nTwitter: @muta_shinki\nEmail: mutashinki@gmail.com\nDiscord: muta # 2767"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
