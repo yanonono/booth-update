@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "sYSaMclHqL9Iakvl2KT5mQZkpyQl/tct9BGM9tvNyk4="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "sYSaMclHqL9Iakvl2KT5mQZkpyQl/tct9BGM9tvNyk4="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"ゴスロリ風 洋傘Vol.2","description":"[ゴスロリ風　洋傘Vol2]\n\n本モデルはゴスロリ風　洋傘の第二弾です(モデルはすべて新規作成)\n今回は3種類のモデルと4種類ののカラーバリエーションを収録、お好きなモデルをご使用、または改変していただければ幸いです。\n\nVRChatでの使用を想定していますが、MMDやVRMで使っていただいても構いません\nプレハブはUTS2の仕様に設定してあります。\n\nフリルを多用する都合上、小物としてはややハイポリですので基本は呼び出すか、又はanimationを使うことをお勧めします。\nシェーダーUTS2","url":"https://booth.pm/ja/items/1016682","offers":{"priceCurrency":"JPY","@type":"Offer","price":"300"},"image":"https://booth.pximg.net/c/620x620/b5c8e164-b000-4d32-9091-cb4b048af958/i/1016682/5bf6f750-2325-414b-8a92-823dd247f287_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "sYSaMclHqL9Iakvl2KT5mQZkpyQl/tct9BGM9tvNyk4="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -383,6 +404,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"☆内容物☆","content":"・シンプルフリル  (.fbx .blend)\n　フローレンフリル(.fbx .blend)\n　アクセントリボン(.fbx .blend)\n・テクスチャ\n\tシンプルフリル　  2×4(計8枚)\n\tフローレンフリル　3×4(計12枚)\n\tアクセントフリル　2×4(計8枚)\n・テクスチャ改変用\n\tシンプルフリル　  .png .clip(計4枚)\n\tフローレンフリル　.png .clip(計6枚)\n\tアクセントフリル　.png .clip(計4枚)\n・.unitypackage\t\n・readme\n・BOOTHの画像\t"},{"type":"text","title":" ☆利用規約☆","content":"\n・本モデルの改造を許可します。\n・本モデル、改造モデルの再配布,販売を禁止します。\n・本モデル、改造モデルを着用したアバターはyoutube等の動画配信においてゲスト \nとして映り込むことができます。\n　(配信者が収益化してる場合でも映り込みはOKです)\n・本モデル、改造モデルの著作権はA.Lapin らぱんに帰属する \nものとします。\n・ペデスタルへの使用は禁止します。\n・政治、宗教活動、反社会活動、他社に対する誹謗中傷等目的 \nでの使用は禁止します。\n・本モデル、改造モデルの使用により生じたトラブル、損失に \nA.Lapin らぱんは一切責任を負わないものとします。\n\n以上\n制定日　2018年9月18日\n\nご不明な点は以下にご連絡ください。\nTwitter：@genesisof1997\nEmail: matudaira0808@gmail.com\nDiscord: A.Lapinらぱん#4706"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
