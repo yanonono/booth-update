@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "gJjkSg/EpapND8fBCTlPQcF7R6lo8qiuOW/iQKgKkTU="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "gJjkSg/EpapND8fBCTlPQcF7R6lo8qiuOW/iQKgKkTU="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"VKラインストーン","description":"キラキラ輝くのが特徴の宝石（ラインストーン）の3Dモデルパッケージ（unitypackage）です。\n主にVRChatでの利用を想定しています。アバターやワールドの装飾に使って頂ければと思います。\n\n実物を展示しているVRChatワールド「VK Rhinestone demo」を作りましたので、見た目の確認をしたい場合は行ってみてください。\nhttps://www.vrchat.net/home/launch?worldId=wrld_221738a6-59f2-4de5-80f2-668f55731050\n","url":"https://booth.pm/ja/items/1329623","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"1000","highPrice":"1000"},"image":"https://booth.pximg.net/c/620x620/aadf057d-75a6-4934-a7d2-701141567595/i/1329623/97bbe8d7-5434-416b-b18f-4a2e7f137101_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "gJjkSg/EpapND8fBCTlPQcF7R6lo8qiuOW/iQKgKkTU="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -491,6 +512,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"内容物・ファイルの説明","content":"unitypackageの中に下記のデータが入っています。\n\n・Rhinestone-round.FBX（メッシュデータ、248ポリゴン）\n・Ring01.FBX（指輪のメッシュデータ、384ポリゴン）\n\n・VKRhinestone.shader（宝石用シェーダー）\n\n・RefractFake_HDR.exr（疑似屈折用マップ）\n\n・VKRhinestone.mat（クリスタルカラー用マテリアル）\n・VKRhinestone.prefab（クリスタルカラー適用済みプレハブ）\n\n・Ring01.prefab（サンプルの指輪プレハブ）\n\n・その他、アクアマリンやルビーなどのカラー設定済みマテリアルおよびプレハブ（10色分）\n\n"},{"type":"text","title":"使い方","content":"unitypackageインポート後、プレハブを任意のシーンに追加してください。\n\n仕組み上、ストーンを大きなサイズにすると正しく見えませんのでご注意ください。\n"},{"type":"text","title":"シェーダーの説明","content":"・2パスで描画しています。\n・Reflection Probeの影響を受けます。\n・GPUインスタンシング対応。\n\n・パラメータ\n「RefractFakeMap」あらかじめ用意した疑似屈折マップ\n「RefractBright」屈折の煌めきの強さ\n「RefractColor」ベースとなるストーンのカラー\n「ReflectColor」反射成分のカラー\n「Smoothness」ストーン表面の滑らかさ（StandardShaderと同様）\n「Metallic」反射成分のカラーとReflectionProbeから受けるカラーのバランス（StandardShaderと同様）\n\n・シーンによってストーンが眩しすぎるもしくは暗すぎるような場合は、「RefractBright」パラメータを調整してください。\n\n・好きな色に改変する場合は、「RefractColor」「ReflectColor」パラメータを調整してください。\n\n"},{"type":"text","title":"利用規約","content":"対象コンテンツの利用権利の販売となります。コンテンツを改変および任意メディアで利用することができます。\n\nただし下記を禁止します。\n\n他人が利用できるようにし、著作者の販売を阻害すること。\nコンテンツ自体に政治的または宗教的もしくは反社会的なメッセージを持たせること。\n法人利用をすること。\n\nその他\n\nコンテンツあるいは発生した不利益に対して著作者はなんら責任を負いません。\n利用権利は他人に譲渡することができません。\n\nこのライセンスにおける解説情報は下記になります。\nhttps://gitlab.com/towelfunnelvrc/towel-license/wikis/\n（タオルライセンス 販売用 version0.9）\n\n\n＜例外＞　VRChat内でプレゼントとして誰かに贈る（結婚指輪、婚約指輪、その他）目的での購入の場合、贈る相手にライセンス購入してというのも野暮なので、例外的に第三者への譲渡を認めたいと思います。\nその場合、使用する予定の人数分（結婚指輪として2人で使うなら2人分とか）をBoostしてくれると嬉しいなっ\n＜2021.6.8追記＞\n第三者へのプレゼント用のダウンロードバリエーションを作りましたので、そちらを購入＆ご利用ください。\nまた第三者へのプレゼントは3人までとさせて頂きます。\n＜2021.6.8追記ここまで＞"},{"type":"text","title":"2次配布について","content":"再配布・販売は改変の有無を問わず禁止しますが、VKラインストーンを組み込んだアクセサリー等を配布・販売したいというクリエイターの方はご連絡ください。\nhttps://twitter.com/VoxelKei\n\n将来的にいろんな方の作品を展示したアクセサリー専門店のようなワールドが作れたらいいななんて思っています。\n\n\n「VKラインストーン」およびパッケージに含まれているメッシュデータ、シェーダー、テクスチャの著作権はVoxelKeiに帰属します。\nCopyright © 2019 VoxelKei All rights reserved.\n"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/uaXpmiQ1SeM\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
