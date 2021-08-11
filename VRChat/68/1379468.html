@@ -59,9 +59,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "uikotexqCHMIl5QwxaSDKlm5/zhUF4pL25On1fQpGiE="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "uikotexqCHMIl5QwxaSDKlm5/zhUF4pL25On1fQpGiE="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"携帯型衛星大砲/satellitecannon　△6554","description":"3Dモデル 「satellitecannon」紹介文\n\nモデル情報\nポリゴン数△6554\nマテリアル数　32\n　\n人工衛星と大砲をイメージし携帯型にしました。\nライフリングの部分が私のお気に入り\n展開アニメーション「tenkai」も付属しております。\nUnitypackageをそのままimportしていただければ見本のような物が表れます。\nUnitypackage,\nsatellitecannonnonanimev1.blend\n\nのデータを内容します。\n\nまたUnitypackageの場合\nカメラモニターもついていますが自分にしか見えません。\n今後、分かり次第他人にも見える形にしたいなと思っています。\n\nfbx形式blend形式についてはテクスチャが貼られていない状態です。\n\n\n\n","url":"https://booth.pm/ja/items/1379468","offers":{"priceCurrency":"JPY","@type":"Offer","price":"500"},"image":"https://booth.pximg.net/c/620x620/b1f6fae7-7096-4172-a80e-49b0878d450a/i/1379468/8933a802-251a-4c07-bbd6-2aa98e7d0e32_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -72,6 +89,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "uikotexqCHMIl5QwxaSDKlm5/zhUF4pL25On1fQpGiE="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -502,6 +523,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"更新","content":"\n5月27日　\n更新の新規書き直し\n"},{"type":"text","title":"内容物","content":"satellitecannonv1.unitypackage\nsatellitecannonv1.fbx\n\nテクスチャ　7枚\nreadme.txt\n\nなおfbx,blendファイルはScenesフォルダに入っております。\n\n追加\n　satellitecannonnonanimev1.blend\n　satellitecannonnonanimev1.fbx"},{"type":"text","title":"注意事項","content":"　\nkitte007は本モデル及び改変データを使用したことによるいかなる損害に対しての責任を一切負わないものとします。\n　　\n 動画で使用されているアバターモデル「ミーシェ」は付属しません\n　　\n"},{"type":"text","title":"利用規約　制作日　2019/05/20","content":"利用規約\n　制作日　2019/05/20\n　\nこのモデルを利用した時点で、利用規約に同意したものとします。\n\n商業利用について\n　特に制限はありません。\n　ゲーム制作等で利用しても構いません。\n　またご利用の際、任意で構いませんが、商品ページをどこかに記載していただけると幸いです。\nR18 　R18Gについて\n　特に制限はありません\n改変について\n　自由です。特に制限はありません。\n著作権\n　配布データおよび改変データが持つ著作権は製作者であるkitte007に帰属します。\n禁止事項\n　「satellitecannon」とそこからの付属のモデルデータ及びテクスチャデータの再配布・販売は改変の有無を問わず禁止します。\n　　また製作者kitte007が不適切な使用と判断した場合には利用の停止を求める場合があります。"},{"type":"text","title":"感謝","content":"今回使用したテクスチャwater02.jpgはフリーテクスチャ素材館様（https://free-texture.net/seamless-pattern/water-background-pattern-set.html）より使用させていた来ました。ありがとうございます。\nその他3dソフトに付属のテクスチャ及びUNITYASEETのGem Shaderを使用させていただきました。\nありがとうございます。\n　　\n　また動画でアバターモデル『ミーシェ』を使用させていただきました。この場を借りてぽんでろ様に感謝を申し上げます。\n"},{"type":"text","title":" その他ご不明な点がございましたらこちらまで","content":"Twitter : @snkkKITTE007_\nmail : sankacukitte007@gmail.com"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/6gxhTQNwIQ0\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/4148SeTh-pg\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
