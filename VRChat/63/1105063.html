@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "rkoYA+SDjJSm/4L14AVo1lE0QhCC5RUTtC8KuPBAWpQ="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "rkoYA+SDjJSm/4L14AVo1lE0QhCC5RUTtC8KuPBAWpQ="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"オリジナル3Dモデル『マロン』ver.2.02","description":"オリジナル3Dモデル『マロン』 紹介文\n\nオリジナル3Dモデル『マロン』\n制作者：長兎路こより\n\n本モデルはUnityのHumanoid形式に対応したオリジナルモデルです。\nVRChatでの使用を想定して製作していますが、ゲームや動画配信等でもご利用いただけます。\n本モデルはVRMを同梱しています。\nモデル説明の下に利用規約が記載されていますので、ご了承の上での購入をお願いします。","url":"https://booth.pm/ja/items/1105063","offers":{"priceCurrency":"JPY","@type":"Offer","price":"5000"},"image":"https://booth.pximg.net/c/620x620/14387c17-7baa-40da-a7a0-96b004d72619/i/1105063/695d3cee-a5f6-4749-8336-a39c27a7cd77_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "rkoYA+SDjJSm/4L14AVo1lE0QhCC5RUTtC8KuPBAWpQ="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -415,6 +436,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"media","content":"\u003ciframe width=\"500\" height=\"500\" src=\"https://hub.vroid.com/characters/2073898922853208788/models/504563415304978042/embed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\" allow=\"xr-spatial-tracking\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"モデル説明","content":"【基本仕様】\n  △22352（Performance Rank：Poor～）\n　VRChatリップシンク，アイトラッキング対応\n　調整用ブレンドシェイプ 種49(内ダミー4)\nVRM\n　VRMデータ同梱（作成およびセットアップ　白河ゆかな様 @ShirakawaYukana）\n\n\n【内容物】\n\n［UnityPackage］\n・Marron.unitypackage\n→セットアップされたモデルデータが入っている.unitypackageファイルです。導入方法に沿って導入してください。\n→各主要パーツが分離された[Marron]プレハブと、オブジェクトを一つにまとめた[Marron_Lite]があります。\n\n［VRM］\n・Marron_X.XX.vrm\n→バーチャルモーションキャプチャーや検索バーチャルキャストなどで使用できるVRMデータです。\n\n［FBX］\n・Marron_make.fbx\n→改変用のFBXです。主要パーツが別れています。\n→画像のリンクは再設定してください。\n\n［Textures/PSD］\n・Marron_Texture_body.psd\n・Marron_Texture_clothe.psd\n・Marron_Texture_face.psd\n・Marron_Texture_faceoption.psd\n・Marron_Texture_hair.psd\n・Marron_Texture_hat.psd\n\n→テクスチャのPSDデータです。UVのグリッドやレイヤー構成がほぼそのままです。\n\n［Textures/PNG］\n・Marron_Texture_body.png\n・Marron_Texture_clothe.png\n・Marron_Texture_face(OM).png\n・Marron_Texture_face.png\n・Marron_Texture_faceoption.png\n・Marron_Texture_hair(HM).png\n・Marron_Texture_hair.png\n・Marron_Texture_hat.png\n\n→無圧縮のPNGデータです。\n\n［Readme］\n・モデル説明.txt\n・利用規約.txt\n・更新履歴.txt\n\n\n--------------------------------------------------\n\n\n【ボーンについて】\nUnityのHumanoidの規則に沿った作りになっています。\nHumanoid切り替え時に自動で設定されますが、Jawに不要なボーンがアサインされるので外してください。\n\n【マテリアルについて】\n本モデルは「arktoon-shaders-1.0.2.6」を同梱しています。\nhttps://packetbird.booth.pm/items/1027997\nすでにインポートしている場合はインポート時にチェックを外すか、\n予め削除した状態でインポートしてください。\n\n【DynamicBoneについて】\n付属Unitypackageで設定済みのものがありますので、予めDynamicBoneの導入をお願いします。\n\n【モーフについて】\nVRChat用のリップシンクが設定がされています。\n自動瞬きに関してはダミーデータが設定されています。\n「vrc.blink_left」「vrc.blink_right」「vrc.lowerlid_left」「vrc.lowerlid_right」の４つはダミーです。\n表情用に目、眉、口、オプションでそれぞれ分かれているので組み合わせて使用してください。\n\n\n【VRChatのフルトラッキングについて】\n対応しています。\n\n【VRChatのアイトラッキングについて】\n対応しています。\n\n【素体の用途について】\n部分的に使用して服を着せたり、専用の服を作る際のベースとして使用してください。\n他の服モデルと組み合わせる際は規約的に問題ないかを確認の上改造を行ってください。\n本素体からメッシュを切り出し制作したもの、テクスチャを流用したものは販売することはできません。\n\n【導入方法】\n1. Unity2018 4.20f1 で新規のプロジェクトを作成してください\n\n2. VRCSDKとDynamicBoneをを予めインポートしておいてください。\n※ DynamicBoneは任意です。\n\n3. Marron.unitypackageをインポートしてください。\n\n4.Assets/Avatar_Marron/Marron プレハブをヒエラルキー上にドラッグアンドドロップしてアップロードしてください。 [Marron_Lite]はオブジェクトが統合されたモデルです。"},{"type":"text","title":"利用規約","content":"本モデルを購入した時点で本利用規約に同意したとみなします。\n利用規約の内容は変更する場合があり、最新のものが適用されます。\n本モデルの使用によって生じた何らかのトラブル、損失について\n製作者である長兎路こよりは一切の責任を負わないものとします。\n＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n\n1.モデル改造は自由です。\n\n2.本モデル、改造モデル著作権は長兎路こよりに帰属するものとします。\n\n3.本モデル、改造モデルのVRChat等モデルデータをアップロードし、アバターとして使用するサービス(例:VRChat、cluster.など)への使用を許可します。\n\n4.上記サービスで購入者本人以外が利用可能な状態にすることを禁止します。\n　例:VRChatのペデスタル機能は購入者本人以外が利用可能な状態になるので禁止です。\n\n5.本モデル、改造モデルの再配布、販売を禁止します。\n\n6.本モデル、改造モデルを使用したバーチャルYoutuber等の活動を許可します。\n　収益化等は制限しませんが、一言あると見に行きます。\n\n7.本モデル、改造モデルをゲームやアニメーション製作などの使用、配信を許可します。\n　ただし、モデルデータとして再度使用できる状態のデータが含まれる場合は使用を禁止します。(5に相当するので禁止とします。)\n　収益化等は制限しませんが、一言あると見に行きます。\n\n8.モデルを使用する際のクレジット表記はあってもなくてもかまいません。あると喜びます。\n\n9.R18・R18Gへの利用は制限しませんが、住み分けはしっかり行ってください。\n\n10.政治、宗教活動、他者に対する誹謗中傷目的での使用を禁止します。\n\n＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n\n制定日：2018年11月24日\n\n利用規約, モデルの利用, 不具合等についてはBOOTH経由で問い合わせください。\n\nTwitter：@Nagatoro_Koyori"},{"type":"text","title":"更新履歴","content":"● 2018/11/25  \n-「Marron_make_ver1.0.fbx」 の瞳部分に髪のウェイト値が入るミスがあったため修正しました。\n- readmeに「更新履歴.txt」を追加しました。\n\n● 2019/09/30  【ver.2.00】\n・モデル説明.txtを更新しました。\n・テクスチャを一部修正しました。\n・FBXを更新しました。\n　-髪の一部のウェイトを修正しました。\n　-オープンβでのキャリブレーション後足が曲がる問題を解決しました。\n　-素足ありの素体と靴をわけ、UV,テクスチャーを更新しました。\n　-顔の法線をフラットにしました。\n　-スケールを「すべてFBX」にしました。\n　-服着用時素体が突き抜けるのを避けるため「貫通対策」シェイプを追加しました。\n\n・Unitypackageを更新しました。\n　-arktoon-shadersを1.0.2.5に更新しました。　\n　-パーツごとに分けた「Marron」とパーツが統合された「Marron_Lite」を同梱しました。\n　-DynamicBoneの設定を見直しました。\n　-マテリアルの設定を見直しました。\n　-フォルダの構成を変更しました。\n\n● 2020/04/10  【ver.2.01】\n・Unity2018 4.20f1に対応しました。\n・arktoon-shadersを「ver.1.0.2.6」に更新しました。\n・Unityパッケージ内のFBXをリネームしました。\n・VRMを同梱しました。\n\n● 2020/05/06  【ver.2.02】\n・右足のDynamicBoneColliderの値を修正しました。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
