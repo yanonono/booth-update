@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "/La5jJsbLQFSfqLU+WJ+PGVRjKub1vFuZtDqZ/q0vAE="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "/La5jJsbLQFSfqLU+WJ+PGVRjKub1vFuZtDqZ/q0vAE="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"【汎用小物】けもみみ付きミニリュック","description":"VRChatでの利用を想定した「けもみみを思わせる耳」が付いたミニリュックです。\nまた、テクスチャーデータを改造することで「リュックの背中部分など」にステッカーを貼り付けることも可能となっています。（psdファイルに配置用レイヤーがございます）\n\nなお、本製品をご利用の際は、下記にある「ネムタインの自作モデルに関する利用規約（キャラモデル以外）」をご確認の上、ご購入頂けますと幸いです。","url":"https://booth.pm/ja/items/1293226","offers":{"priceCurrency":"JPY","@type":"Offer","price":"300"},"image":"https://booth.pximg.net/c/620x620/c8f8ce29-be10-40e7-82c9-fcbcecf53a46/i/1293226/424be019-6b50-42a7-aec9-a5a05508dc02_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "/La5jJsbLQFSfqLU+WJ+PGVRjKub1vFuZtDqZ/q0vAE="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -500,6 +521,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"もくじ","content":"1：Unitypackageを同封しているため、VRChatですぐに使用できる\n2：6種類のカラーパターンを搭載\n3：Unity上でひも部分をいじって調整できる"},{"type":"text","title":"1：Unitypackageを同封しているため、VRChatですぐに使用できる","content":"モデルやテクスチャーなどのデータをまとめた「Unitypackage」。\nこのUnitypackageを展開することによって、素早くセットアップすることが可能です。\n\nなお、本製品にはsynqark様製の「Arktoon-Shaders」を使用しています。\nそのため、本製品を組み込む前にあらかじめインポートしておくことをオススメします。\n（使用しない場合は別のシェーダーを適用してください）\n\n・Arktoon-Shaders\nhttps://packetbird.booth.pm/items/1027997"},{"type":"text","title":"2：6種類のカラーパターンを搭載","content":"けもみみ付きミニリュックには、6種類のカラーパターンがあります。\nまた、psdファイルを同封していますので上記以外のカラーにも変更可能です。\n\n・レッド（デフォルトカラー）\n・ブルー\n・グリーン\n・イエロー\n・ラベンダー\n・ブラック\n\n（ミニリュックにステッカーを追加したりカラー変更したりするには、psdを開ける環境が必要です）"},{"type":"text","title":"3：Unity上でひも部分をいじって調整できる","content":"けもみみ付きミニリュックのひも部分は「Unity上でもいじること」ができます。\nそのため、アバターごとにひも部分の微調整が可能です。\n\n調整にあたっては、下記のマニュアルをご参照ください。\n\n・けもみみ付きミニリュックの実装方法\nhttps://www.pixiv.net/fanbox/creator/36080587/post/331175"},{"type":"text","title":"利用規約","content":"利用規約およびマニュアルにつきましては下記ページをご確認くださいませ。\n\n・ネムタインの自作モデルに関する利用規約（キャラモデル以外）\nhttps://www.pixiv.net/fanbox/creator/36080587/post/292870\n\n・けもみみ付きミニリュックの実装方法\nhttps://www.pixiv.net/fanbox/creator/36080587/post/331175"},{"type":"text","title":"内容構成","content":"・ポリゴン数：720\n・シェーダー：Arktoon-Shaders(1.0.2.2)\n（上記シェーダーを設定していますが、改めて使用するアバターのシェーダーなどを適用して頂けますと幸いです）"},{"type":"text","title":"フォルダ構成","content":"・kaban-100\n　・kaban-100.unitypackage（Unity展開用データ）\n　・texture（モデル改造用のテクスチャーフォルダ）\n　　・texture.psd（ミニリュックのテクスチャー改変用データ）\n　　・texture2.psd（ブラックのテクスチャー）\n　　・texture3.psd（ブルーのテクスチャー）\n　　・texture4.psd（グリーンのテクスチャー）\n　　・texture5.psd（イエローのテクスチャー）\n　　・texture6.psd（ラベンダーのテクスチャー）\n　・model（fbxやモデル用テクスチャーフォルダ）\n　　・kaban.fbx（ミニリュックのfbxデータ）\n　　・kaban-texture.png（ミニリュックのテクスチャー）\n　・Readme.txt（本製品の概要などを記載）\n　・利用規約.txt（本製品の利用規約））\n\n●kaban-100.unitypackageの内部構成\n・kaban.prefab（プレハブデータです。こちらをヒエラルキーに入れてください）\n・kaban.mat（ミニリュックのマテリアルデータです）\n・kaban.fbx（ミニリュックの3Dモデルデータです）\n・kaban-texture.png（ミニリュックのテクスチャーデータです）"},{"type":"text","title":"更新履歴","content":"2019/03/31 Ver1.00 販売開始"},{"type":"text","title":"制作","content":"・ネムタイン\nhttps://twitter.com/nemutain333"},{"type":"text","title":"スペシャルサンクス","content":"・synqark様（Arktoon-Shaders使用）\nhttps://packetbird.booth.pm/items/1027997\n\n・muta様（使用例にモナカちゃん使用）\nhttps://booth.pm/ja/items/1093504\n\n・あすかろ様（使用例にぼいちぇ学園アイコンを使用）\nhttps://twitter.com/ascaro001\n\n・VRChat Profile様（使用例にVRChat Profileの画像を使用）\nhttps://vrcprofile.com/\n\n・しのは様（使用例に人類フォースアイコンを使用）\nhttps://twitter.com/shinoha_yuzu\n\n・根木音子様（使用例に空想探偵事務所Pyxisアイコンを使用）\nhttps://www.youtube.com/channel/UCdV7s6uy1OzuXDYW520XbWg\n\n・たましこ様（使用例にボクセルファミリアのアイコンを使用）\nhttps://twitter.com/tamsco274"},{"type":"text","title":"注意事項","content":"商品画像はUnity上で製作したものとなります。そのため、VRChatなどでの見えかたや挙動が異なる可能性がございます。\n\nVRChatへのUnityを使った導入テストは、衣装販売時点のバージョンでおこなっています。\nもし衣装を導入する際に違和感やトラブルが発生した場合は、恐縮ですがメッセージよりご連絡くださいませ。\n（VRChatやUnityのアップデートによって、想定外の見え方になる場合がございます）\n\n●2021/08/05\n「Unity 2019 4.29f1」で導入に問題がないことを確認しました。\nもしトラブルが発生した場合は、恐縮ですがお問い合わせ頂けますと幸いです。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
