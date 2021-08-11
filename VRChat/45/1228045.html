@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "6bpwiutRjt2h+6wouiGsw07+F2weSm+Hp8JhX+pACLw="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "6bpwiutRjt2h+6wouiGsw07+F2weSm+Hp8JhX+pACLw="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"SV-98","description":"ロシアの狙撃銃、SV-98のフルスクラッチ3Dモデルです。\n\nそのままの状態、または改変してご利用頂けます。\n\nUnitypackageを同梱しているので、手軽にUnityにインポートしてご使用いただけます。\n\nオブジェクト数: 6(銃本体、マガジン、スコープ、スコープマウント、持ち運びハンドル、弾薬)\nマテリアル数: 2(銃・弾薬、スコープ)\nポリゴン数: 42,416三角面(通常版)、28,900三角面(軽量版)　ともにスコープ含む全オブジェクトの総和\nテクスチャ解像度: 4096x4096\n\nおまけとしてSubstancePainterでレンダリングする際に使えるPBRテクスチャを付けてあります。\n\n■注意事項\n・本モデルはVRChatにて使用できることを確認していますが、ポリゴン数が多い為そのままではアバターの上限ポリゴン数(7万三角面)を超過してしまう場合があります。\nその場合、アニメーションで取り出す等の設定をする必要が発生しますので予めご了承ください。","url":"https://booth.pm/ja/items/1228045","offers":{"priceCurrency":"JPY","@type":"Offer","price":"4900"},"image":"https://booth.pximg.net/c/620x620/39edc5c4-fd37-4865-94df-88cfbc8cbd88/i/1228045/3887eb78-0fe8-4acf-a419-f4c3edcbda10_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "6bpwiutRjt2h+6wouiGsw07+F2weSm+Hp8JhX+pACLw="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -461,6 +482,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"スキニング・シェイプキー設定済","content":"実銃同様に各種可動部を可動させることが可能で、アニメーション等を作成する際に便利です。\n\n下記のスキニング・シェイプキーが設定済です。\n\nスキニング:\n・トリガー\n・ボルト(前後移動用、回転用)\n・バイポッド(回転用)\n・リアサイト(リアサイト、調整つまみ)\n・安全装置\n\nシェイプキー:\n・バイポッドをたたむ\n・バイポッドを伸ばす\n・チークパッドを高くする\n・チークパッドを低くする\n・チークパッドを左に寄せる\n・チークパッドを右に寄せる\n・ストックを長くする\n・ストックを短くする\n・ストックを上に寄せる\n・ストックを下に寄せる\n・モノポッド展開"},{"type":"text","title":"注意事項","content":"・本モデルはVRChatにて使用できることを確認していますが、ポリゴン数が多い為そのままではアバターの上限ポリゴン数(7万三角面)を超過してしまう場合があります。\nその場合、アニメーションで取り出す等の設定をする必要が発生しますので予めご了承ください。\n\n・トップ画像の背景の撮影用セットは付属しません(要望があれば提供します)"},{"type":"text","title":"軽量版が選択可能","content":"ポリゴン数や処理性能に余裕が無い場合に役立つ、ポリゴン数を削減した軽量版が入っています。\n通常版の目立たない部分を中心に削減してあり、見た目のクオリティはなるべく維持したままでポリゴン数を7割ほどに節約できます。\nまたスコープやハンドルを取り外すことで、20,684三角面までポリゴン数を減らすことが可能です。"},{"type":"text","title":"利用規約","content":"・本モデルは改変可能です。購入者はモデル及びテクスチャを自由に改変し、又はそのまま使用することができます。\n\n・改変の有無に関わらず、また有償無償を問わずいかなる形態でも、本モデルを転売または再配布することを禁じます。\n\n・購入者は本モデルを、自身の無償作品(ゲームや動画等の制作物)に組み込み、またそれを頒布することができます。ただし、本モデルがそのコンテンツ主体となる(実質的に再配布にあたる)形態のものは不可とします。\n\n・購入者は本モデルを、必要なクレジット表記(制作者名、本モデルの商品URL)を行うことで、自身の有償作品に組み込み、またそれを頒布することができます。ただし、本モデルがそのコンテンツ主体となる(実質的に転売にあたる)形態のものは不可とします。\n\n・本モデルを使用して公共良俗に反する行為をすることを禁じます。\n\n・本モデルを使用して特定の個人や団体を誹謗中傷することを禁じます。\n\n・著作者人格権を侵害する行為を禁じます。\n\n・本モデルを使用することによって生じた、いかなる金銭的、機会的な損害や不利益に関して、茜しゅんは一切の責任を負いません。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
