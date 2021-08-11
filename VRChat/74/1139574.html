@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "T/x5+iei6/0QOdQgAOoNdFCEn2Usv75Z84ZaYw3fh1w="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "T/x5+iei6/0QOdQgAOoNdFCEn2Usv75Z84ZaYw3fh1w="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"GPUパーティクル 花火","description":"VRChat向けのGPUパーティクルで作成された花火です。\n\nVRChat以外にも、unity shaderが使える環境なら使用可能です。\n\nグラフィックボードが載っている環境なら、Unityのパーティクルシステムよりも低負荷で花火を上げることが出来ます。\n\nこれ一つを配置するだけで５個の花火が打ち上がり続けます。\n\n字幕等説明はありませんが詳しくは下の動画を御覧ください。\n\nhttps://twitter.com/suraimu752/status/1074241001890316288\n\n不具合、ご要望（機能追加等）ありましたら気軽にツイッター等で伝えてください！\n\n過去バージョンもダウンロード可能にしてありますが、基本的に最新バージョン（数字の大きなもの）を推奨します。","url":"https://booth.pm/ja/items/1139574","offers":{"priceCurrency":"JPY","@type":"Offer","price":"500"},"image":"https://booth.pximg.net/c/620x620/ab6abf2f-1e54-4c70-92b9-8e0aa2a0b4a6/i/1139574/07b56548-8289-4450-844c-65977e100017_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "T/x5+iei6/0QOdQgAOoNdFCEn2Usv75Z84ZaYw3fh1w="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -398,6 +419,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"内容物","content":"UnityPackage内に以下の物が入っているのでUnityで解凍して利用してください。\nfireworksフォルダ内に入っています。\n・200x200.fbx\n\t200*200頂点のblenderで作成したGridです。\n\t\n・Custom_Fireworks.mat\n\t同梱されているfireworks.shaderが適用されているマテリアルです。\n\t\n・fireworks.shader\n\tfireworksシェーダー本体です。\n\t\n・fireworks.prefab\n\tすぐに使用できる状態になっているプレハブです。\n\t基本的にはこれを任意の場所に配置すればOKです。\n\n・README.txt"},{"type":"text","title":"説明","content":"fireworks.shaderが本体です。\n基本的には同梱されているプレハブを任意の場所に配置すればOKです。\n\nもしも、負荷が大きいので頂点数を減らしたい、もっときれいに見せるために頂点数を増やしたいという場合は、\nblenderなどでGridを生成し任意の頂点数にした後、必ずUV展開を行い、なるべくUV上の頂点が均一に並ぶように調整してください。\n（基本的にはただ展開すれば大丈夫だと思います。）\nわからなければ気軽にTwitter等で質問してください。\n\nコードの改変は自由ですが、以下の利用規約にある通り再配布等は禁止します。\n"},{"type":"text","title":"プロパティの説明","content":"Size1\t\t: 花火が花開いているときの各パーティクルのサイズです。\nSize2\t\t: 花火が打ち上がっている途中の各パーティクルのサイズです。\nOffset1~5\t: それぞれの花火の位置をずらすことが可能です。 Wで花火のサイズを変えることが出来ます。"},{"type":"text","title":"利用規約","content":"本商品をご購入された場合、本利用規約に同意したものとみなされます。\n本利用規約は変更される可能性があり、変更された場合は変更後の最新のものが適用されます。\n\n・コードの改変等、内容物の改造は自由ですが、改造後の著作権はsuraimu752に帰属します。\n\n・本商品の再配布、販売、自作発言等はお控えください。\n\n・本商品をVRChat等にアップロードし、使用することを許可します。\n例：アバターへの埋め込み、ワールドへの配置。\n\n・本商品を購入者以外が使用できるようにしてはなりません。\n\n・VRChat等既存のサービスへのアップロード以外に、自作ゲームやアニメーション等に使用することを許可します。\n　なお、本商品が直接取得できる状態で配布、販売することは禁止です。\n\n・本商品を使用する際、クレジットを記載する必要はありません。\n\n・本商品、またそれに帰属する改造物によって生じた何らかのトラブル、被害、損失等が発生したとしても、\nsuraimu752は一切の責任を負いません。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
