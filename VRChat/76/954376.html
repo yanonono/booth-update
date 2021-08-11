@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "m7RHrJpGSXlTKvQcCaoe94xmUEsbPIIRWl/IIzMZVMY="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "m7RHrJpGSXlTKvQcCaoe94xmUEsbPIIRWl/IIzMZVMY="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"オリジナル3Dモデル『キッシュ』","description":"##モデル説明##\nオリジナル3Dモデル『キッシュ』\n制作者：muta\n\n※モデル説明の下に利用規約が記載されていますので、ご了承の上での購入をお願いします。\n\n#内容物\n・Quiche.fbx\n　体、顔、髪、帽子それぞれオブジェクトがバラバラになっているモデルデータです。\n・Quiche_m.fbx\n　体、顔、髪が合成されており、帽子のみ別オブジェクトになっているモデルデータです。\n　ポリゴン数は共に17706ポリゴンとなっています。\n・Quiche_summer.fbx\n　ノースリーブバージョンです。\n　オブジェクトはバラバラになっています。\n\n・quiche_cry.anim\n・quiche_handopen.anim\n・quiche_sleep.anim\n・quiche_thumbsup.anim\n・quiche_victory.anim\n・quiche_doubt.anim　⇐NEW\n　VRChat用の表情変化と指の挙動をあわせたアニメーションデータです。\n　overrideControllerに設定して使用してください。\n\n#ボーンについて\nUnityのHumanoidの規則に沿った作りになっています。\nHumanoid切り替え時に自動で設定されますが、Jawに不要なボーンがアサインされるので外してください。\n\n#バージョン3\n一周年記念として、サマーバージョン（ノースリーブ）を追加しました。\n以前から要望のあった＞＜（eye_hau）モーフやハート目、幼顔化モーフを追加しました。\n\n#リメイクフェイス（faceV2)\nOmakeフォルダ内にリメイク版フェイスのFBXを追加しました。\n顔のみのデータとなっていますのでUnity、blender等で合成する必要があります。\n\n様々なアバターが出てくるなか、長く使って下さり本当にありがとうございます。","url":"https://booth.pm/ja/items/954376","offers":{"priceCurrency":"JPY","@type":"Offer","price":"4000"},"image":"https://booth.pximg.net/c/620x620/10942f35-97bb-434d-9f5a-6083e00c7891/i/954376/11b37cae-c2b5-4c34-87cc-dca1524fac78_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "m7RHrJpGSXlTKvQcCaoe94xmUEsbPIIRWl/IIzMZVMY="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -478,6 +499,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"利用規約","content":"本モデルを購入した時点で本利用規約に同意したものとします。\n利用規約の内容は変更する場合があり、最新のものが適用されます。\n\n-----------------------------------------------------------------\n・モデル改造は自由です。\n\n・本モデル、改造モデル著作権はmutaに帰属するものとします。\n\n・本モデル、改造モデルのVRChat等モデルデータをアップロードし、アバターとして使用するサービスへの使用を許可します。\n\n・上記サービスで購入者本人以外が、アバターを使用できるようにする行為を禁止します。\n　※VRChatのペデスタルへの使用は購入者以外が使用できるようになるので禁止です。\n\n・本モデル、改造モデルの再配布、販売を禁じます。\n\n・本モデル、改造モデルを使用したバーチャルYoutuber等の活動を許可します。\n　収益化等は制限いたしません。\n　※バーチャルYoutuber等の活動には、グッツ作成、雑誌掲載も含まれます。\n　※無改造モデルでのグッツ展開は公式と誤認する可能性があるためご遠慮ください。\n\n・本モデル、改造モデルを制作物のサンプル等で使用して、バーチャルマーケット、\n　VEXPO等の第三者に制作物をアップロードするイベントに参加する場合はmutaまで一度ご連絡をお願いします。\n\n・本モデル、改造モデルをゲーム、アニメーション、アプリに使用することを許可します。\n　収益化等は制限いたしません。\n　モデルデータとして再度使用できる状態のデータが含まれる場合は使用を禁止します。\n\n・モデルを使用する際にクレジットを記載する必要はありません。\n\n・R-18・R-18Gへの利用は制限しませんが、住み分けはしっかり行ってください。\n\n・政治、宗教活動、他者に対する誹謗中傷目的での使用を禁止します。\n\n・本モデル、改造モデルを使用することによって生じた何らかのトラブル、損失に対しmutaは一切責任を負わないものとします。\n\n・翻訳の都合上日本語の利用規約と英語の利用規約に差異が出た場合日本語が正しいものとします。\n\n-----------------------------------------------------------------\n制定日：2019年08月03日\n\nその他不明点等がありましたら以下に連絡ください。\n\nTwitter：@muta_shinki\nEmail：mutashinki@gmail.com\nDiscord：muta#2767"},{"type":"text","title":"Terms of service","content":"We agree to these Terms of Use at the time of purchasing this model.\nThe contents of the terms of service may be changed, and the latest one will be applied.\n------------------------------------------------------------------------------------------\n\n・ Remodeling this model is free.\n\n・ Copyright of this model and the remodeled model shall be attributed to muta.\n\n・ We allow uploading model data of this model and the remodeled model to a service such as VRChat and using as an avatar.\n\n・ We prohibit using this model and the remodeled model except purchasers.\n   Example: Making this model and the remodeled model available as a public avatar such as making an avatar pedestal in VRChat is forbidden.\n\n・ Redistribution and sale this model and the remodeled model are prohibited.\n\n・ We allow using this model and the remodeled model to do activities such as virtual Youtuber.\n   It does not prohibit such as monetization too.\n\n・ If you participate to the event such as virtual market and VEXPO and exhibit this model and the remodeled model, please contact muta once.\n\n・ We allow using this model and the remodeled model for games, animation, and applications.\n   It does not prohibit such as monetization too.\n   If model data contain data that can be used again, it is prohibited to use it.\n\n・ It is not necessary to write credits when using this model and the remodeled model.\n\n・ It is not prohibited to use this model and the remodeled model with R18 or R18G, but please make sure to act appropriately for the circumstances.\n\n・ Prohibit using this model and the remodeled model to politics, religious activities and slander wounding against others.\n\n・ Muta is not responsible for any troubles and losses caused by using this model and the remodeled model.\n\n・ If there is a discrepancy between the terms of service of the Japanese and the terms of service of the English due to reasons of translation, Japanese will be correct.\n\n------------------------------------------------------------------------------------------\nDate of enactment: August 3, 2019\n\nIf there are other unknown points etc, please contact the following.\n\nTwitter: @muta_shinki\nEmail: mutashinki@gmail.com\nDiscord: muta # 2767"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
