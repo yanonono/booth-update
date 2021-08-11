@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "WgZpSVjpUNrb92n8qk8U24EIpTamakudjrEPEWkZX1A="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "WgZpSVjpUNrb92n8qk8U24EIpTamakudjrEPEWkZX1A="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"【Rabies】fbxモデル","description":"なんか悪そうな剣です。読み方は\"レイビーズ\"です\nunitypackageをインポートした後、Rabiesフォルダ内にあるprefabをHierarchyにドラッグ\u0026ドロップすると簡単にご使用できます。\n色変更用のマテリアルをColorフォルダ内に9色用意してあります。Emissionを適応すると画像二枚目のように暗闇でぼんやりと部分的に明るく表示されます。","url":"https://booth.pm/ja/items/1315061","offers":{"priceCurrency":"JPY","@type":"Offer","price":"300"},"image":"https://booth.pximg.net/c/620x620/d0287a31-78e9-429d-804d-e3582e9dc539/i/1315061/ac9fa439-aeb0-4db1-8689-fb10a16a139d_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "WgZpSVjpUNrb92n8qk8U24EIpTamakudjrEPEWkZX1A="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -383,6 +404,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"利用規約","content":"VRChat以外での利用\t：可\n再配布\t\t\t：禁止\nモデル改変\t\t：可\nデータ形式の変換\t：可\nアバターペデスタルへの配置　：禁止\n商用利用\t\t：可\n収益動画への出演\t：可\n性的な表現\t\t：可\nグロテスクな表現\t：可\n\n定義\nVRchat以外での利用\t：VRchat以外のゲーム、動画作成ソフト、動画配信ソフトなどへの使用のことです。データの編集に使用するソフトウェアは含みません。\n再配布\t\t\t：制作者以外の当モデルデータ所有者が、クラウドドライブやアップローダーに編集可能な状態の当モデルデータをアップロードし、第三者に提供できる状態にすることです。\nモデル改変\t\t：当モデルデータに何らかの変更・追加・削除を行うことです。（例：テクスチャの書き換え、アクセサリの追加、モデルの形状を変更）3Dモデル以外の内容物についても同様です。\n商用利用\t\t\t：当モデルデータを使用して有償のゲームを作成したり、収益化された動画や生放送配信に利用するなどのことです。\n収益動画への出演\t\t：収益化された動画や生放送配信に何らかの形で映ることです。\n性的な表現\t\t：陰部の露出や明らかに性的行為を思わせるような表現。日本国内で18禁に該当する表現全般のことです。\nグロテスクな表現\t\t：流血、臓器の露出、身体欠損などのことです。体に刃物が刺さっていたり、四肢があらぬ方向に曲がっているような状態もこれに含みます。\n\n◎当モデルデータの利用（圧縮ファイルの解凍・展開、Readmeの閲覧は除く）を開始した時点で、記載された規約に同意したものとみなします。\n\n◎当モデルデータの著作権は全て製作者が保有し、制作者が宣言しない限り著作権を放棄はしません。\n\n◎改変されたモデルについて、改変された部分以外の著作権は制作者が変わらず保有します。\n\n◎理由の如何を問わず、制作者は利用規約をいつでも任意に変更することができます。\n\n◎理由の如何を問わず、制作者はモデルデータの配信停止・使用停止の措置をいつでも任意に行えるものとします。\n\n◎当モデルデータを利用したことにより発生したあらゆる問題に関して、制作者は一切責任を負いません。\n\n\n利用規約に従わなかった場合500,000円の支払いに同意したと見なし、違約金を請求します。"},{"type":"text","title":"お問い合わせ","content":"twitter: https://twitter.com/ALERT_jp_555?lang=ja\nまでご連絡ください。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
