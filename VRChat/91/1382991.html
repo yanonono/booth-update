@@ -58,6 +58,16 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "wl252ZQhfa6YKCyFh/p6WfZ9+OT46Kgwh5dCJib3BrM="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
   </head>
   <body>
     <div class="mini-player-controller" style="display: none;">
@@ -86,6 +96,13 @@
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "wl252ZQhfa6YKCyFh/p6WfZ9+OT46Kgwh5dCJib3BrM="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"自律型集積回路/ME555N","description":"3Dモデル 「ME555N」紹介文\n集積回路をイメージしました。\n\ngenericアバターを想定しております。\n\nanimation『die』が私のお気に入り\nおまけアニメーションが四つ付属しております。\n『die』『kaihou』『kanasimi』『muscle』\nUnitypackageをそのままimportしていただければ見本のような物が表れます。\nUnitypackageのデータを内容します。\n\n\n\n申し訳ありませんanimationファイルの適用は各自お願いします。\nわからないんです。\n\n","url":"https://booth.pm/ja/items/1382991","offers":{"priceCurrency":"JPY","@type":"Offer","price":"200"},"image":"https://booth.pximg.net/c/620x620/b1f6fae7-7096-4172-a80e-49b0878d450a/i/1382991/e6529945-949a-4aa6-b2f8-6107b96dc6fa_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -93,6 +110,10 @@
     rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "wl252ZQhfa6YKCyFh/p6WfZ9+OT46Kgwh5dCJib3BrM="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -475,6 +496,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"更新","content":" 2019　5月22日\n発売開始         \n\n 2019 　5月23日\n申し訳ありません。\nunityアセット（dynamicbone）の同封をしてしまいました。\nよってこれを削除させていただきました。  "},{"type":"text","title":"内容物","content":"ME555Nv2.unitypackage\nreadme.txt\n"},{"type":"text","title":"利用規約 制作日　2019/05/22 ","content":"このモデルを利用した時点で、利用規約に同意したものとします。\n\n商業利用について\n　特に制限はありません。\n　ゲーム制作等で利用しても構いません。\n　またご利用の際、任意で構いませんが、商品ページをどこかに記載していただけると幸いです。\nR18 　R18Gについて\n　特に制限はありません\n改変について\n　自由です。特に制限はありません。\n著作権\n　配布データおよび改変データが持つ著作権は製作者であるkitte007に帰属します。\n禁止事項\n　「ME555N」とそこからの付属のモデルデータ及びテクスチャデータの再配布・販売は改変の有無を問わず禁止します。\n　　また製作者kitte007が不適切な使用と判断した場合には利用の停止を求める場合があります。\n\n"},{"type":"text","title":"注意事項　","content":"kitte007は本モデル及び改変データを使用したことによるいかなる損害に対しての責任を一切負わないものとします。\n       "},{"type":"text","title":"感謝","content":"　今回使用したテクスチャcarbo.jpgはdesignbeep.com様（http://designbeep.com/2012/01/06/collection-of-high-quality-yet-free-carbon-fiber-texturespatterns-for-designers/）より使用させていた来ました。ありがとうございます。\nまたmetal.jpgはフリーテクスチャ素材館様より使用させて頂きました。\nありがとうございました。\n\nその他UNITYASEETを使用させていただきました。\nありがとうございます。\n　　"},{"type":"text","title":"その他ご不明な点がございましたらこちらまで","content":"Twitter : @snkkKITTE007_\nmail : sankacukitte007@gmail.com\n"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/3wicvJRfd60\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/WOdMrokYKZo\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/HYswOMFRffE\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/Sgy3UwyduJI\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/jhJGUSoBnY4\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
