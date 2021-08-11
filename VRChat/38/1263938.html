@@ -58,6 +58,16 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "Gfo0DSBuU7BR+hjicTaRdI7Bh0Is0MbViI/RyQvxvRw="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
   </head>
   <body>
     <div class="mini-player-controller" style="display: none;">
@@ -86,6 +96,13 @@
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "Gfo0DSBuU7BR+hjicTaRdI7Bh0Is0MbViI/RyQvxvRw="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"お休みさんのドーナツセット　Ver1.1","description":"【3/12 チョコレート\u0026マシュマロなドーナツを追加しました！】\n\nお休みさんドーナツカフェのドーナツのセットです。\n全20種類+追加3種類のドーナツと、開閉可能なボックス・紙袋のほか、各ドーナツを単品用の紙包みに包んだバージョンを同梱しています。\n\nアバターのアクセサリやワールドの飾りとして使うことを想定しています。\n\nUnity及びVRChatでの使用を想定していますが、fbxファイルおよびテクスチャファイルを同梱していますので、他の3Dモデルやゲームソフト等に組み込んで使用することも可能です。","url":"https://booth.pm/ja/items/1263938","offers":{"priceCurrency":"JPY","@type":"Offer","price":"800"},"image":"https://booth.pximg.net/c/620x620/64255878-1532-4d6c-abdb-a9cf35ee4a39/i/1263938/ca88c106-5847-4e07-ba9e-bda3e3ae11d4_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -93,6 +110,10 @@
     rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "Gfo0DSBuU7BR+hjicTaRdI7Bh0Is0MbViI/RyQvxvRw="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -554,6 +575,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"内容","content":"◆ドーナツ単体：256～1372ポリゴン(単品用の紙包み付きは+336ポリゴン)\n◆ボックス：824ポリゴン\n◆紙袋：96ポリゴン\n◆マテリアル：各モデルとも1\n◆テクスチャ:2048x2048 ノーマルマップ、メタリックマップ、反射マスクマップ、陰影ベイク済みマップあり\n◆推奨シェーダ:Standard/Arctoon-Shaders1.0.1.1/ユニティちゃんトゥーンシェーダ2.0.6\n\n◆テクスチャはドーナツ10種類ごとにまとめてVol.01、Vol.02としており、マテリアルの使用数を抑えられます。\nボックス及び紙袋のテクスチャは、同じものがVol.01/Vol.02両方のテクスチャに含まれています。\nVer1.1で追加したホワイトデー版のテクスチャについては、ボックス及び紙袋のテクスチャは含まれていません。\n\n◆StandardシェーダーにてEmissionと光沢をセットアップしたPrefabが同梱されています。また、Emission無しのバージョン、Arctoon1.0.1.1、UTS2.0.6でセットアップしたマテリアルも同梱していますので、好みの質感を選んで使用してください。\nシェーダは同梱していませんので、それぞれのサイトより入手をお願いいたします。\n(以下のリンクの正確性を保証するものではありません。シェーダにバージョンアップがあった場合、リリース当初の意図とは異なる見た目になる可能性があります。)\nArctoon1.0.1.1\thttps://packetbird.booth.pm/items/1027997\nUTS2.0.6\thttp://unity-chan.com/download/\n\n◆ボックス及び紙袋のかわいいイラスト及びデザインはぴかお様によるものです。\nhttps://pica0.booth.pm/\n\n◆UnityPackage内のフォルダ構成\n■Items\n┗■Oyasumisan_Donuts\n　┣■Animations\tボックス、紙袋用のアニメーション\n　┣■Materials\t\tマテリアル\n　┣■Models\t\tFBXファイル\n　┣■Prefabs\t\tプレハブ\n　┃┣■Vol01\t\tテクスチャセットVol.01のセットされたプレハブ\n　┃┃┗■ToGo(Single)\t単品用の包み紙に包んだバージョンのプレハブ\n　┃┗■Vol02\t\tテクスチャセットVol.02のセットされたプレハブ\n　┃　┗■ToGo(Single)\t単品用の包み紙に包んだバージョンのプレハブ\n　┃┗■WhiteDay\tテクスチャセット(ホワイトデー)のセットされたプレハブ\n　┃　┗■ToGo(Single)\t単品用の包み紙に包んだバージョンのプレハブ\n　┗■Textures\t\tテクスチャ\n　　┣■Vol01\t\tテクスチャセットVol.01\n　　┃┣■2k\t\t2048x2048解像度(ボックス、紙袋テクスチャ付き)\n　　┃┗■4k\t\t4096x4096解像度(おまけ)\n　　┣■Vol02\t\tテクスチャセットVol.02\n　　┃┣■2k\t\t2048x2048解像度(ボックス、紙袋テクスチャ付き)\n　　┃┗■4k\t\t4096x4096解像度(おまけ)\n　　┗■WhiteDay\tテクスチャセット(ホワイトデー)\n　　　┣■2k\t\t2048x2048解像度\n　　　┗■4k\t\t4096x4096解像度(おまけ)\n\n＜インストール及び使い方＞\n1)まずUnityプロジェクトを開き、Oyasumisan_Donuts.unitypackageをインポートしてください。\n\n2)次に、Prefabsフォルダ以下にあるお好きなprefabファイルをヒエラルキーウインドウにドラッグ\u0026ドロップしてください。\nVol01、Vol02等は使用するマテリアルの違いから便宜上分けています。\nまた、ToGo（Single）フォルダ内に、単品用の紙包みに包んだバージョンが格納されています。\n\n3)必要に応じてMaterialsフォルダ内のマテリアルに差し替えることで、質感を変更することができます。\nさらに質感をカスタマイズする場合は、Texturesフォルダ内の画像を適宜使用してみてください。\nおまけで4k(4096x4096)のテクスチャ及びマテリアルを同梱しています。ただし、Box、Bag(紙袋)のテクスチャは2k版のみに含まれています。\n\n4)Box、Bag(紙袋)についてはボーン及びシェイプキーを含みます。\n開閉の状態を記録した簡易的なアニメーションをAnimationsフォルダ内に格納しています。\nまた、プレハブにはそれぞれの内容物として、扱いやすいようにドーナツ5個または3個をひとまとめにしたオブジェクトが付属しています。\n必要に応じて残すか削除してください。"},{"type":"text","title":"インストールおよび使い方","content":"1)まずUnityプロジェクトを開き、Oyasumisan_Donuts.unitypackageをインポートしてください。\n\n2)次に、Prefabsフォルダ以下にあるお好きなprefabファイルをヒエラルキーウインドウにドラッグ\u0026ドロップしてください。\nVol01、Vol02は使用するマテリアルの違いから便宜上分けています。\nまた、ToGo（Single）フォルダ内に、単品用の紙包みに包んだバージョンが格納されています。\n\n3)必要に応じてMaterialsフォルダ内のマテリアルに差し替えることで、質感を変更することができます。\nさらに質感をカスタマイズする場合は、Texturesフォルダ内の画像を適宜使用してみてください。\nおまけで4k(4096x4096)のテクスチャ及びマテリアルを同梱しています。ただし、Box、Bag(紙袋)のテクスチャは２k版のみに含まれています。\n\n4)Box、Bag(紙袋)についてはボーン及びシェイプキーを含みます。\n開閉の状態を記録した簡易的なアニメーションをAnimationsフォルダ内に格納しています。\nまた、プレハブにはそれぞれの内容物として、扱いやすいようにドーナツ5個または3個をひとまとめにしたオブジェクトが付属しています。\n必要に応じて残すか削除してください。"},{"type":"text","title":"ライセンスおよび規約","content":"本データの著作権は作者であるお休みさんに帰属します。\n\n可能なこと：\n◆VRChatその他で使用するアバターやワールドなど、3Dモデルの一部に組み込んでの個人的な利用\n◆モデル、テクスチャ等の改変\n◆このモデルが映る状態での収益化動画の撮影、公開\n\n制限のあること：\n◆VRChatにおけるアバターペデスタル、パブリックアバターへの使用\n◆ゲームソフト等の一部として、このパッケージのモデルデータを編集不可能な形態での再配布や販売\n　上記二点は、ボックス及び紙袋部分のテクスチャ全体を別の画像に差し替えた場合に限り可とします。\n　ドーナツ部分のテクスチャは改変有無にかかわらず使用可能です。\n◆本データは食品を模したものです。個々の判断基準で構いませんが、良識ある使用をお願いします。\n\n禁止すること：\n◆このパッケージのモデルデータを編集可能な状態での再配布\nただし、製作者まで連絡いただければ個別に可否を判断します。\n◆改変の有無にかかわらず作者を名乗る行為\n◆政治、宗教活動、他者に対する誹謗中傷目的での使用\n◆その他、製作者お休みさんが不適切な使用と判断した際には利用の停止を求める場合があります。\n\nその他不明点がありましたら私まで問い合わせをお願いします。\nCopyright (c) Oyasumisan(お休みさん)"},{"type":"text","title":"更新履歴","content":"Ver 1.1\nホワイトデー向きのチョコレートドーナツを3種追加\n\nVer 1.0\n初版"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
