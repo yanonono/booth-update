@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "s8W3OyFWv/XS20giOVEq6+aXQyQ/gMNeF4qsthOz8FQ="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "s8W3OyFWv/XS20giOVEq6+aXQyQ/gMNeF4qsthOz8FQ="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"VRChat想定　サイバーパンク風オリジナルアバター『レイ改』","description":"□サイバーパンク風VRChat想定オリジナルアバター　レイ改","url":"https://booth.pm/ja/items/1024547","offers":{"priceCurrency":"JPY","@type":"Offer","price":"2500"},"image":"https://booth.pximg.net/c/620x620/dd09d57d-ff0e-4d48-b34c-08c891168638/i/1024547/edf6cdc3-9800-4d63-9621-71c63e962ba5_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "s8W3OyFWv/XS20giOVEq6+aXQyQ/gMNeF4qsthOz8FQ="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -449,6 +470,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"","content":"主にVRchat等想定のサイバーパンク風アバターです。\n『3Dモデル　頭部装着用小型センサーユニット』同梱。\n19334△ポリゴン。"},{"type":"text","title":"□内容","content":"・mk4pac.unitypackage　本体\n\n・texフォルダ　テクスチャ単体(clippaint用編集ファイル同梱)\n\n・readme.txt\n\n・0x.png　サンプル画像"},{"type":"text","title":"□導入方法","content":"VRCSDK及びCubeds-Unity-Shadersを導入したunityプロジェクトにunitypackageファイルを読み込んで下さい。\nその後、model03フォルダ内部にある「mk4v7pac」をシーンにドラッグ＆ドロップして下さい。\n\n\nリップシンク、自動瞬きアニメーション設定済みとなっています。\n目を半分閉じたシェイプも同梱。\nまた、上着のオレンジ色の部分は時間で明滅するシェーダーとなっています。\n大雑把なサンプル↓\nhttps://twitter.com/mabo_to_fu/status/1041967313384169472\n\n\nフルボディトラッキング対応。\nダイナミックボーン導入済みの場合は一部のオブジェクトに自動で適用されます。\n\n\n\nVRCSDKの導入方法など\nhttp://vrchatjp.playing.wiki/d/%a5%a2%a5%d0%a5%bf%a1%bc%a4%ce%ba%ee%c0%ae\n\nCubeds-Unity-Shadersの導入方法\nhttp://vrchatjp.playing.wiki/d/Cubeds-Unity-Shaders\n"},{"type":"text","title":"□規約など","content":"VRChat用に調整してありますが、\n・モデルの改変\n・ゲームや動画等vrchat外での利用\n等は可能です。\n\n\n・再配布及び再販売\n・特定個人や団体への中傷等を目的とした利用\nは禁じます。\n\n不明点はTwitterの@mabo_to_fuまで。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
