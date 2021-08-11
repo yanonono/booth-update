@@ -58,6 +58,16 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "vknuujmE41KJyQEJnpCA2J59XCoLVplHJwdSs42ynwo="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
   </head>
   <body>
     <div class="mini-player-controller" style="display: none;">
@@ -86,6 +96,13 @@
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "vknuujmE41KJyQEJnpCA2J59XCoLVplHJwdSs42ynwo="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"【オリジナル3Dモデル】アインちゃん","description":"オリジナル3Dモデル『アインちゃん』(ver1.01)\n\n制作者：@Jo_taro13\n\nバーチャルマーケット２出展作品\n異世界マルシェA/A中央区14/スカイハイ商会/ジョー太郎\n\n本モデルはVRChatでの利用を想定したUnityのHumanoid形式に対応した\n3Dモデルデータです。商用利用や改変が可能で、ゲームや配信等にも\n使うことができます。\n\n\n※以下にモデルについての説明、利用規約が記載されておりますので、\nご購入の前に必ずお読みいただき、ご了承された上でのご購入をお願いいたします。\n","url":"https://booth.pm/ja/items/1376322","offers":{"priceCurrency":"JPY","@type":"Offer","price":"2000"},"image":"https://booth.pximg.net/c/620x620/1edf7fd7-177d-4ec3-b2c4-16fb3aa43da4/i/1376322/ef06eac6-2b5e-4655-8b03-5d617b64a8ea_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -93,6 +110,10 @@
     rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "vknuujmE41KJyQEJnpCA2J59XCoLVplHJwdSs42ynwo="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -402,6 +423,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"仕様","content":"仕様\n・ポリゴン数 28836\n・マテリアル2\n・テクスチャ4\n・UnityPackageおよびテクスチャ、FBX等を同梱しています\n・VRChat用リップシンク、アイトラッキングに対応\n・フルトラッキングに対応\n・ダイナミックボーンによる髪やスカートの揺れに対応\n・ユニティちゃんトゥーンシェーダーver.2.0.7を使用しています\n　ユニティちゃんトゥーンシェーダーを利用される場合は下記のライセンスに従うようにお願いします\n【http://unity-chan.com/contents/guideline/】\n\n\n"},{"type":"text","title":"VRChat向けの導入方法","content":"■導入方法\n※本モデルは「DynamicBone」をアセットストアよりご購入いただき、導入済みでなければ髪やスカート等の揺れが反映されませんのでご了承ください。\n\n1.unity 2017.4.15f1でプロジェクトを開く\n\n2.VRCSDKを公式からダウンロードしインポート \n\n3.DynamicBoneをインポート（任意）\n\n4.Eins_ver1.01.unitypackageをインポート\n\n5.Open Sceneでフォルダ内にあるEins_ver1.01.sceneを開いてください\n\n6.VRCSDKを用いてアップロードを行ってください\n"},{"type":"text","title":"利用規約","content":"\n【利用規約】\n\n\nどのような形であれ、本モデルを利用した時点で本利用規約に同意したものとさせていただきます。\n\n・本モデルとその関連データは改造の有無に関わらず著作権は製作者である「@jo_taro13」が保持し、改変済みやモデルの一部のみでも、本モデル制作者@jo_taro13に帰属するものとします。\n\n・本モデルとその関連データはVRChatでの利用を想定したものですが、YouTuber等動画サイトでの活動は未改変、改変ともに　許可いたします。\n　その際収益化については制限いたしません。\n\n・本モデルとその関連データの改変は自由に行って頂いて構いません。\n\n・改変の有無に関わらず本モデルとその関連データの再配布、販売は禁止します。(アバターペデスタルの設置、アバターコピーが可能な状態でのアップロードについても同様です。)\n\n・R18、R18Gへの利用制限は特にありません。公開する場合は個人の責任のもと、法律に基づきお願いいたします。\n\n\n・本モデルを利用しての、他者を誹謗中傷する表現、政治、宗教活動を禁止いたします。\n\n\n・本モデルとその関連データを使用するにあたり生じたいかなるトラブル、損失等について製作者は一切責任を負いません。\n\n・当利用規約において翻訳の都合上、他言語との差異が生じた場合日本語の利用規約を適用するものといたします。\n--------------------------------------------------------------------------------\n\n制定日：2019年 5月18日\n質問や不具合の報告等はお手数ですが製作者である「@jo_taro13」のTwitter( http://twitter.com/jo_taro13 )(@jo_taro13)までダイレクトメッセージを送っていただければと存じます。\nまた、製品に関する情報はTwitter　「#Eins_vrc」にてお知らせいたします。"},{"type":"text","title":"更新履歴","content":"2019/5/18 ver1.00\n・バージョン1.00公開\n\n2019/5/26 ver1.01\n・まぶたを閉じたとき目のメッシュがはみ出てしまうのを修正\n・後髪が胸のコライダーに引っ掛かるのを判定を無くして元の位置に戻るように変更\n・あごの法線を修正\n・髪及びスカートのメッシュ形状とウェイトを微調整\n・手と脚を顔と同じマテリアルに割り当て\t\n・アニメーションコントローラーのデフォルト名を「Eins_CustomOverrideEmpty」にリネーム\n・アニメーション「驚き」を修正（ｼｪｲﾌﾟｷｰ『ハイライト無し』が抜けていた）\n・人間の耳を追加。Bodyｼｪｲﾌﾟｷｰに「人耳あり」を追加しました。　（総ポリゴン数△28754→△28836)"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
