@@ -58,6 +58,16 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "aLY9QQbs97g7jOvWMuVfuG9j6sQ75pvMc314gM3Dbao="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
   </head>
   <body>
     <div class="mini-player-controller" style="display: none;">
@@ -86,6 +96,13 @@
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "aLY9QQbs97g7jOvWMuVfuG9j6sQ75pvMc314gM3Dbao="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"【別売版】オリジナル３Dモデル「ソーラス」Ver X'mas","description":"ソーラスちゃんが人間の仮装をクリスマスでもしてくれました\n\n\n\n\nVRChat想定で制作されていますが配信、ゲームコンテンツなどに収益化状態を問わず運用可能です。\n\nVRCでのフルトラッキング、加えてDynamic Bornに対応しました。まだ此方で項目の把握がしきれていないので今後とも更新予定あり。\n\nMMDモーションのスムーズなUnity移植に対応、搭載モーフにはMMDで一般的に用いられるものも多く含まれているため表情もしっかり対応します。\n\n改変及び商用利用も可能。\n素体、パーツを他のアバターへ使用することも許可しています。\n\nただしソーラスとその付属の\nモデル、テクスチャーの再配布、販売は改変の有無を問わず禁止です。\n特定個人や団体への中傷を目的とした利用も当然ながら禁止します。\n\n詳しくは後述の利用規約を参照。\n","url":"https://booth.pm/ja/items/1129618","offers":{"priceCurrency":"JPY","@type":"Offer","price":"2200"},"image":"https://booth.pximg.net/c/620x620/64446b0b-9225-4dba-a979-4708b93cc2ef/i/1129618/6b744a16-7444-49c3-a88e-e5771c62bfb1_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -93,6 +110,10 @@
     rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "aLY9QQbs97g7jOvWMuVfuG9j6sQ75pvMc314gM3Dbao="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -454,6 +475,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"■注意事項","content":"このモデルは　https://tyosokuhouse.booth.pm/items/992013\nに同梱された、オリジナル３Dモデル「ソーラス」のクリスマス仕様の別売版です。\nシェイプキーなどの仕様的には通常版Ver2.3と大差ありません。\n\n素体込みですが改造を考えられている方は通常版をお買い求めください。\n\n\nこの服はクリスマスという催事に間に合わせるため、現状すべてマテリアルとシェーダーのカラーで\n色を表現しています。後程テクスチャ版に更新されますのでお待ちください。\n\n"},{"type":"text","title":"■仕様","content":"\n\n△ポリゴン数　12504ポリゴン(耳なし)\n\n Lip Sync 15種　搭載、設定済み\n加えて「あ・い・う・え・お・ん」6種　\n\nEye tracking 対応済\n\n表情アニメーション　14種類同梱(UnityPackage内)\n\nシェイプキー搭載数74種(Lip Sync　瞬き含む。その内　眉、目、口のシェイプキー　50種類)\n表情マテリアル　３種\n目マテリアル　２種\n\nUnity編集によりオリジナルで追加表情を用意することが可能です。\n\n\n・使用シェーダー\n肌部分　Reflexシェーダー２\nメカ部分　Standardシェーダー\n"},{"type":"text","title":"■内容物","content":"・3Dモデルfbxデータ\n・テクスチャ+psdデータ\n・UnityPackageデータ\n・Readme(JP EN)2種txt\n・更新履歴txt\n\nUnityPackage内同梱物\n・Reflexシェーダー２"},{"type":"text","title":"■導入にあたって","content":"Unityにインポートするときはバージョン5.6.3p1にVRCSDKをあらかじめインポートしておいてください。\n\n当モデルはUnityPackageのPrehab内で事前にDynamic Bornを設定してあります。揺らしたい場合は各自でInportしてください。\n"},{"type":"text","title":"◆◇◆利用規約◆◇◆","content":"ソーラスちゃん利用規約(9/14付)\n\n・禁止事項\n二次配布の禁止：このThorax(以後配布ファイル群)が含まれるものを他人に譲渡、販売することを禁止します。\nVRChatにおいては購入者以外がアバターを利用すること、またペデスタルの設置も禁止事項に含まれます。\n私に不利益が生じる、またはこのモデルの販売に著しく悪影響を及ぼす行為、改造を禁止します。\n制作者名を書き換えることを禁止します。\n\n以上の内容の内の違反が見つかった場合当事者に対し法的措置を検討します。\n\n加えて特定個人や団体への中傷を目的とした利用を禁止します。\n\n\n・認可事項\nこの配布ファイル群を用いた商用活動、Vtuber活動を認めます。(気になるので一報ください)　\n素体、パーツ、Meshをテクスチャ含め他のアバターに移植することを全般的に認めます。ただしその場合その利用先のモデルを配布することを禁止します。VRChatなどでアバターとして利用する際に購入者以外の他者にそのアバターを使わせることも禁止します。\n\nこの配布ファイル群をゲーム、アニメーション、動画に利用することを認めます。\nこのモデルをR18要素の含まれるものに利用することを認めます、しかしながら他の購入者に迷惑をかけないように気を付けてください。\n\n\n\n・著作権\n配布ファイル群のデータの改造および個人的利用範囲での流用は自由とします。\nただし、配布ファイル群とその改変したデータが持つ著作権は大元の製作者である 超蔟 に帰属するものとします。\n\n\n・トラブルについて\n\n制作者である超蔟 は、配布ファイル群を使用したことによる金銭・機器・機会的トラブルの損失を一切負わないものとします。\n\n\n\n同梱物：まんまるシェーダー1.0\n        UTS2.0.4p3\n\n\nここに記されていない内容、質問があれば@999tyousokuまで必ずダイレクトメールを送ってください。自己の判断で勝手に決定することは一番危険です。\n\n※この規約は予告なく加筆、変更される場合があります\n英語版と日本語版で差異が存在した場合日本語版が優先されます。\n\n\n制作：超蔟\n"},{"type":"text","title":"■連絡先","content":"\n◆不明な点や質問などありましたらこちらに連絡ください\n\nTwitter : @999tyousoku\nメール : tyousokudouga@yahoo.co.jp"},{"type":"text","title":"■更新履歴","content":"12/7　販売、同梱開始"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
