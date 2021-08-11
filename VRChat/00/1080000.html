@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "8RAm7huz+2+W9Qfxup0WGZWe5E5o6BbIy4HnX8RKbJ4="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "8RAm7huz+2+W9Qfxup0WGZWe5E5o6BbIy4HnX8RKbJ4="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"カンバス\u0026イーゼル3Dモデル.fbx","description":"VRChatで使用されることを想定した、約250ポリゴンのカンバスとイーゼルです。\nマテリアルはカンバスとイーゼルの二つに分かれており、\nテクスチャの該当部分をペイントソフト等で編集することでお好きな絵を表示することも可能です。\nなおテクスチャ素材はこちらのサイトから利用させていただいております。\n【フリーテクスチャ素材館様】　\n（https://free-texture.net/about）\nアバターとして利用する際はヒューマノイドリグを親子関係で設定してあるため、Unityにてアニメーションオーバーライドを適用し絵の表示を切り替えることも出来ます。\n方法は以下に記します\n\n","url":"https://booth.pm/ja/items/1080000","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"100"},"image":"https://booth.pximg.net/c/620x620/ba7f3e00-a1bf-46d0-96b2-b333ec40ae45/i/1080000/c590d6ca-c1ba-47bc-8d5a-7bddeee83603_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "8RAm7huz+2+W9Qfxup0WGZWe5E5o6BbIy4HnX8RKbJ4="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -416,6 +437,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"【利用規約】","content":"テクスチャを変更する際には著作権などに十分ご注意ください。改変後に起きたいかなる問題においても、此方は責任を負いかねます。\n再配布は禁止とします。\n\nこのほかには特に制限いたしません。\n改変、商用利用（営利目的での利用）など問題ありません。"},{"type":"text","title":"【アニメーションによるマテリアルの切り替え】","content":"①表示したい絵の描かれたテクスチャそれぞれにマテリアルを設定、ヒエラルキー上のアバターとなる本体をCTRL+Dで複製\n③Windowメニューからanimationを開き、赤い丸ボタンを押したら、ヒエラルキー上のCanvasオブジェクトを選択。マテリアルから表示したい絵の描かれた任意のマテリアルを選択\n④作成したアニメーションをカスタムアニメーションオーバーライドの任意の場所に適応\nで完了です\n文だけではわかりにくいと思いますので、説明ファイルを入れておきます。\n"},{"type":"text","title":"【連絡先】","content":"その他何かありましたらこちらまで\ntwitter\nhttps://twitter.com/OTosan_108\n"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
