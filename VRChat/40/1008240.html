@@ -56,9 +56,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "dtkhD2GpTK9kyMvTJ/ncQTbmIICqcIVoICRCXG3k7jc="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "dtkhD2GpTK9kyMvTJ/ncQTbmIICqcIVoICRCXG3k7jc="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"つるはし","description":"pick\n・Unitypackage\n・テクスチャファイル(1枚)\n・FBXファイル(本体)\n・Blenderファイル\n・readme\n\nポリゴン数：160","url":"https://booth.pm/ja/items/1008240","offers":{"priceCurrency":"JPY","@type":"Offer","price":"0"},"image":"https://booth.pximg.net/c/620x620/49fd9aa9-40f7-4021-91dd-0b60603082ac/i/1008240/854c685b-5020-4368-aa23-8548b73bf096_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -69,6 +86,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "dtkhD2GpTK9kyMvTJ/ncQTbmIICqcIVoICRCXG3k7jc="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -362,6 +383,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"利用規約・免責事項","content":"利用規約\n　著作権は作者であるmazimadiが保有しています。\n\n　　以下の様な使用を禁止します。\n　　・本製品の再配布・再販売\n　\n　・テクスチャ及びモデル改変は制限いたしません。\n　・商業等の利用も制限いたしません。\n\n\n　・本製品及び、改変されたモデルを使用したことによって\n　発生したトラブル等は一切責任を負いません"},{"type":"text","title":"使用方法","content":"Unityにパッケージをインポート後、本体のInspector:Scaleからパラメータを変更し、使用する対処のモデルに合うように調整してください。\n\n調整が終了したら 使用したいボーンの子になる階層に本体を移動させればセットアップ終了です。\n"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
