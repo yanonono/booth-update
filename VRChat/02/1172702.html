@@ -57,9 +57,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "DsHBz/Ur5d2e49x5VntH0JfyE77te9c0VPmOcOuAX6s="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "DsHBz/Ur5d2e49x5VntH0JfyE77te9c0VPmOcOuAX6s="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"VRChat向け 小物モデル 【ポンポン】","description":"VRChat向け 小物モデル【ポンポン】v1.20\n","url":"https://booth.pm/ja/items/1172702","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"500"},"image":"https://booth.pximg.net/c/620x620/7bb5bc5a-a1f5-4ff7-80fe-8049fab00a8e/i/1172702/42128310-b1f7-4fe4-a1aa-063a2cd4f1eb_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -70,6 +87,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "DsHBz/Ur5d2e49x5VntH0JfyE77te9c0VPmOcOuAX6s="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -444,6 +465,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"バージョンアップ情報 ","content":"【2020/04/21】(Ver'1.20)\n・モデルをUnity2018仕様に再書き出し\n・MToonシェーダー仕様の本体モデルを追加。主に、VRM形式アバターの描き出し時に使用します\n・アーマチュアのスケールが100になっていたのを修正\n・ダイナミックボーンの揺れを再設定"},{"type":"text","title":"紹介文","content":"●こちらは、VRChat向けに作成した小物のモデル［ポンポン］となります。自作品のチアガールアバター［天王寺えいる］が持っているポンポンを、他のモデルでも使用できるように単体で販売したものです。ダイナミックボーンが設定済みなので、自分のお気に入りのアバターに持たせてフリフリ振りながら 思う存分踊ってください。\n\n●ポンポンに合う、 ［天王寺えいる］でも使用したチアダンス系のEmote8種類も同梱しています。デスクトップ勢でもポンポン踊らせることができますので、ぜひご活用を。\n\n●ワールドに設置して不特定多数のプレーヤーにポンポンを拾わせることも当然OKです。\n\n●ダイナミックボーン設定済み、ユニティちゃんトゥーンシェーダー2.0（UTS2.0）同梱・設定済みです。\n\n●別添えで画像つき説明書も無料で配布しています。購入前に設置方法を確認できますので、右項目からダウンロードしてご活用ください。モデル説明や注意事項の詳細もそちらを参照してください。\n\n●Ver'1.20より、MToonシェーダー仕様のポンポンを追加しました。MToonではUTS２の様にポンポンの羽をシェーダー側で増やすことができないので、影となる羽のポリゴンを増やし、フサフサになりました。（MToon自体は同梱していません）\n主に、VRM形式アバターの描き出し時に使用します。\n"},{"type":"text","title":"同梱のチアダンス系Emote紹介動画","content":"収録Emote\n\n・ポンポン ［01_PonPon］\n・スイング [02_Swing]\n・YEAR!! [03_Year]\n・スタージャンプ [04_StarJump]\n・ラインダンス [05_LineDance]\n・I wants U [06_I-wants-U]\n・L ＆ J [07_L-and-J]\n・←結論 [08_Ketsuron]"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/rUPIyPTbO6E\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"モデルスペック・内容物","content":"ポリゴン数 ： △392（単体）・△704（単体・MToonモデル）\nマテリアル数 ： 1個（通常）・2個（MToonモデル）\nテクスチャ数 ： 0枚 （自作テクスチャ用PSD 有り）\nダイナミックボーン ： 設定済み\nシェーダー：ユニティちゃんトゥーンシェーダー2.0 （UTS2.0） 同梱・設定済み \n\nEmote:チアダンス系8種類\n\nテクスチャ・FBX・Blenderファイルが収録されています。\n\nUnitypackageの中には、アバター設置に使用する二個一対のペアプレファブと、ワールド設置などに使う一個単体プレファブがあります。\n\n\n他、詳細は説明書を参照してください。"},{"type":"text","title":"注意事項・利用規約","content":"詳細は説明書に記していますので、ここでは簡単に。\n\n◯営利目的・VRChat以外での利用は自由です。\n\n◯本モデルの改造・改変は自由です。\n\n◯R-18・R-18Gへの利用は制限しません。ただしゾーニングはしっかり行ってください。\n\n\n×本モデルデータ・テクスチャデータ・Emoteデータを第三者へ販売 及び 再配布は禁止します。\n\n\n×製作者を偽る行為は禁止します。\n\n×政治的・宗教的活動、他者に対しての誹謗中傷目的（たとえその人にどんな非があっても）での使用は禁止します。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
