@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "Ldt++JXASTF4QlIx+ibLhXDSS6rTpbtiy2CBuBzY/HE="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "Ldt++JXASTF4QlIx+ibLhXDSS6rTpbtiy2CBuBzY/HE="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"【オリジナル3Dモデル】メディカルセンタースタッフさん","description":"【オリジナル3Dモデル】メディカルセンタースタッフさん\n制作者 アルマジロン\n\n※以下にモデルについての説明、利用規約が記載されておりますので、\nご購入の前に必ずお読みいただき、ご了承された上でのご購入をお願いいたします。\n\n※VRChat向けの設定をしておりますが、MMD等他ソフトでのご利用は規約に則っていただければ自由です。\n","url":"https://booth.pm/ja/items/1130532","offers":{"priceCurrency":"JPY","@type":"Offer","price":"4500"},"image":"https://booth.pximg.net/c/620x620/802c2f96-7b07-494b-bf9c-9361ff7eca6e/i/1130532/e0e6c9d8-ba0d-4c54-aac0-4c4f5198c02b_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "Ldt++JXASTF4QlIx+ibLhXDSS6rTpbtiy2CBuBzY/HE="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -385,6 +406,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"◆商品内容◆","content":"・model.fbx\n\nメディカルセンタースタッフさん（以下メディス子さん）の モデルデータです。\n\n　※3dsmaxで制作しておりますので、他ソフトで編集する際の完全な互換は保障いたしかねます。申し訳ございませんがご了承くださいませ。\n\n\n・tex1.psd\n・tex1.tga\n\nメディス子さんの服、および身体部分のテクスチャーデータになります。UVマップはpsdデータ内に含まれています。\n\n\n・tex2.psd\n・tex2.tga\n\nメディス子さんの顔と髪、ヘッドアクセサリーを含めた頭部のテクスチャーデータになります。UVマップはpsdデータ内に含まれています。\n※こちらのテクスチャーにはアルファチャンネルが含まれています。\n\n\n・tex2_outline.tga\n\n　\n顔のアウトラインの表示を調整するためのテクスチャーデータになります。\n\n\n・メディカルセンタースタッフさん.unitypackage\nモデル、テクスチャー、dynamicbone設定やシェーダーの設定が含まれるunityパッケージデータになります。\n\n＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n\n□ボーンにつきまして□\nUnityのHumanoidリグに則って設定されております。\n\nVRChat向けのボーンが設定されており、アイトラッキングに対応しております。\n\n\n\n□DynamicBoneにつきまして□\n同梱されております、unitypackageに設定済みですが、予めDynamicBoneを\nアセットストアよりご購入いただき、導入済みでなければ設定が反映されませんのでご了承くださいませ。\n導入されていない場合はスカート等が揺れません。\n\n\n\n□表情モーフにつきまして□\n以下のものが設定されております。\n\n・VRChat用のリップシンク　　15種\n・サンプルの表情　　6種\n・その他まばたきや表情作成用のもの　　20種\n\n\n\n□シェーダーつきまして□\n\nユニティちゃんトゥーンシェーダーver.2.0.5を使用しています。本モデルにはシェーダーのみ同梱しております。\nイラストテイストのモデルにはぴったりのシェーダーですので興味のある方は是非公式様にてご確認ください。\n\n\n\n□VRChat向けの導入につきまして□\n\n・Unity 2017.4.15f1で新規プロジェクトを作成\n\n・VRCSDKを公式よりダウンロードしていただき、\nAsetts → Import Package → Custom Package よりインポートしてください。\n\n※DynamicBoneも同様にインポートを推奨しますが、\nアセットストアにての別売りですのでご了承くださいませ。\n\n・上記と同様に、メディカルセンタースタッフさん_1.02c.unitypackageをインポートしてください。\n\n・File → Open SceneからAssets内のMedical center staff.unity_PNGを開いてください。\n\n・以上で導入は完了になります。VRChatにアップロードする手順等は各自ご確認いただければと存じます。\n\n＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n\n\n"},{"type":"text","title":"◆利用規約◆","content":"本モデルを購入された時点で本利用規約に同意したものとさせていただきます。\n本利用規約の内容は変更される場合があり、変更された場合は最新のものが適応されます。\n\n・メディカルセンタースタッフさん（以下、本モデル）の著作権は、制作者アルマジロンが保持し、改変済みやモデルの一部のみでも、本モデル制作者アルマジロンに帰属するものとします。\n\n　※著作権侵害は犯罪であり、被害者である著作権者が告訴することで侵害者を処罰することができます（親告罪）。 著作権、出版権、著作隣接権の侵害は、10年以下の懲役又は1000万円以下の罰金などが定めれれています。\n\n・本モデルは自由に改変することができます。\n\n\n・本モデル購入者が、VRChat等のモデルデータをアップロードし、アバター等に\n利用するサービスへの使用を許可いたします。\n\n\n・本モデルを用いてのyoutuber等動画サイトでの活動は未改変、改変ともに\n許可いたします。収益化等も制限いたしません。\n\n\n・R-18・R-18Gへの利用は制限いたしません。\n公開する場合は個人の責任のもと、法律に基づきお願いいたします。\n\n\n\n・全体、または一部分に関わらず本モデル、および本モデルを改変したものを再配布する等、\n第三者が自由に改変可能な状態でモデルを保持できるような状態にする行為を禁止いたします。\n\n・本モデルをアプリケーション等に使用する場合は事前に制作者に確認を取り、容易に抽出が行えない状態にしてください。抽出が容易な状態での配布は、\"第三者が自由に改変可能な状態でモデルを保持できるような状態にする行為に\"該当するものとみなします。\n　\n・VRChatのアバターペデスタル等、購入者以外が自由に本モデルを\n使用することができるような行為を禁止いたします。\n\n\n・本モデルを利用しての、他者を誹謗中傷する表現、政治、宗教活動を禁止いたします。\n\n\n・当利用規約において翻訳の都合上、他言語との差異が生じた場合日本語の利用規約\nを適用するものといたします。\n\n\n\n制定日：2018年12月8日\n＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n\n\n免責事項\n\n本モデルを利用することで発生したトラブルや損失、損害に対して、\n制作者アルマジロンは一切責任を負いません。\n本モデルのご使用は使用者の責任において行ってください。\n\n\n他、何か問題等ございましたらこちらのアカウントにダイレクトメッセージを送っていただければと存じます。\n\nhttps://twitter.com/gyoniso3\n"},{"type":"text","title":"◆更新履歴◆","content":"2018/12/09  ver1.01\n・制作者のBluePrint IDが入ったままでしたので削除いたしました。\n\n2018/12/09 ver1.02\n・テクスチャーファイルをtgaからpng形式に切り替えましたものを用意いたしました。\ntga形式のものも旧バージョンパッケージ内に格納しております。\n\n2018/12/10 ver1.02b\n・前回の不具合調整になります。\n\n2018/12/10 ver1.02c\n・不要なコンポーネント、Hierarchy内の未使用データを削除いたしました。VRChat上での読み込みが僅かに早くなっております。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
