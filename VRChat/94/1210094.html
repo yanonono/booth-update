@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "d3l9Wpz22a61abBpWNXPtt2zagEqzox+mSIx7F1CWjI="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "d3l9Wpz22a61abBpWNXPtt2zagEqzox+mSIx7F1CWjI="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"Freeスキニング済み3D衣装【中華風洋服「夜雲」】","description":"スキニング済み3D衣装【中華風洋服「夜雲」】\n\n●概要\nスキニング済みの３Dモデルデータの衣装です。\n\nこの衣装はアルマジロン様制作のメディカルセンタースタッフさんを基準に制作しているのでメディカルセンタースタッフさんへは調整不要で利用可。\n他アバターへも使用可能ですが調整が必要です。\n\n・3Dデータ形式：FBX\n・テクスチャー形式：PNG,PSD\n・ポリゴン数（服のみ）：7002\n・ポリゴン数（腕含め）：7612\n\n●更新履歴\n2019/02/03  v1.01：首と頭のボンのウェイトを修正しました。","url":"https://booth.pm/ja/items/1210094","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"100"},"image":"https://booth.pximg.net/c/620x620/8e4c6e25-746f-4ea7-b9a8-51d10ed80b3b/i/1210094/3388ade2-c58f-4320-a48d-2ce61ee00548_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "d3l9Wpz22a61abBpWNXPtt2zagEqzox+mSIx7F1CWjI="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -456,6 +477,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"利用規約","content":"本モデルを購入した時点で本利用規約に同意したものとします。\n利用規約の内容は変更する場合があり、最新のものが適用されます。\n\n\n・本モデルをアプリケーションで利用すること、ネットワーク上で利用すること、改変することを許可する。\n・本モデル及びに改造モデルが映る動画、放送を配信、放送することを有償・収益化・無償にかかわらず許可する。\n・本モデル及びに改造モデルの著作権はYueouに帰属します。\n・本モデル、改変モデルを許可なく配布、販売することを禁じる。\n・本モデルは政治、宗教活動、他者に対する誹謗中傷目的での使用を禁止します。\n・本モデルはR-18・R-18Gへの利用を許可する。\n・本モデル、改造モデルを使用することによって生じた何らかのトラブル、損失に対しYueouは一切責任を負わないものとします。\n\n-----------------------------------------------------\n制定 2019年2月1日\n\nもし問い合わせや質問などがありましたら\nE-mail：yueou.xu@gmail.com\nTwitter： @Yueou\nまで連絡をしてください。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
