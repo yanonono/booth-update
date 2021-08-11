@@ -58,6 +58,16 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "XcMoF4krDIUMdpmWcGyfOS0ZIGUPjBBuuT7DNnGVoLc="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
   </head>
   <body>
     <div class="mini-player-controller" style="display: none;">
@@ -86,6 +96,13 @@
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "XcMoF4krDIUMdpmWcGyfOS0ZIGUPjBBuuT7DNnGVoLc="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"オリジナル3Dモデル『グリ』(v4.0.3)","description":"オリジナル3Dモデル『グリ』\nUnityのHumanoidに対応しているモデルです。\n","url":"https://booth.pm/ja/items/1356563","offers":{"priceCurrency":"JPY","@type":"Offer","price":"500"},"image":"https://booth.pximg.net/c/620x620/8c71c490-ea94-492a-9ac9-6b5ecea92123/i/1356563/24ec5062-dfa7-434d-b56c-ab5a613b3b18_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -93,6 +110,10 @@
     rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "XcMoF4krDIUMdpmWcGyfOS0ZIGUPjBBuuT7DNnGVoLc="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -526,6 +547,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"───▼色々な説明───","content":"───▼ver.4.0.0について───\n・3Dモデルの大きさが以前のバージョンより一回り小さくなりました。\n・(.prefab)を作成しましたので、\n　オブジェクト【Hand_Pose】を非表示にする手間がなくなりました。\n・【Hand_Pose】を作り直したのでblenderで他のポーズ作成がしやすくなったかと思います。\n-------------------------------------------\n───▼シェーダーについて───\n【Arktoon-Shaders】を同梱しています。\n自分に合ったお好きなシェーダーをお使いいただいてもOKです。\n\n◆Arktoon-Shaders　制作者様：Synqark\n販売元： https://booth.pm/ja/items/1027997\n使い方： https://synqark.github.io/Arktoon-Shaders-Doc/\n-------------------------------------------\n───▼アップロード設定───\n■Unityに【VRChatSDK】【Guri】(.Unitypackage)をドラッグ＆ドロップで入れる。\n■Unity内の【Guri】ファイルをクリック。\n■お好きな(.prefab)を[Hierarchy]にドラッグ＆ドロップして入れてください。\n▷例：『P.Guri(.prefab)』など。\n\n▷【Hand_Pose】を使用する場合。\n・『Guri(.prefab)』は設定済みです。\n・『Guri(.FBX)』を[Hierarchy]に入れる場合。\n①〔▼Armature〕を開き→【Hand_Pose】を〔▼Chest〕にドラッグ＆ドロップで入れてる。\n②【Hand_Pose】を非表示してください。\n\n■あとは、各自お好きな設定をしてください。\n▷VRChatへのアップロード、\n アニメーションオーバーライド(表情作成、キー設定)などの方法は各自お調べください。"},{"type":"text","title":"───▼仕様───","content":"●ポリゴン数　　　：△3650[Guri]\n　　　　　　　　　：△2881[P.Guri]\n●FBX数　　　　　 ：(G:1　P:1)\n●オブジェクト数　：(G:5　P:1)\n●マテリアル数　　：1\n●テクスチャ数　　：7(1+別カラー：4　マスク：2)\n●フルボディトラッキング：×非確認\n●Oculus Quest　　：×非確認\n●リップシンク　　：×非対応\n●アイトラッキング：×非対応\n●Dynamic Bone 　 ：×未設定\n●同梱シェーダー　：Arktoon-Shaders(v1.0.2.6)\n\nGuri→G　P.Guri→P\n[P.Guri]はポリゴン削減、結合版です。"},{"type":"text","title":"───▼内容物───","content":"■【Guri(v4.0.3)】\n┣■【Blender】\n┃　　┗・.blender：2\n┣■【FBX】\n┃　　┗・.FBX：2\n┣■【Textures】\n┃　　┣・テクスチャ.png：7（通常:1　マスク:2　サンプルカラー:4）\n┃　　┗・テクスチャ改変用.psd(展開図入り)\n┣◆Guri.Unitypackage\n┗◇Readme_利用規約.txt\n\n-------------------------------------------\n──▽Unitypackage内モデルデータ──\n\n■Arktoon-Shaders(v1.0.2.6)\n\n■【Guri】\n┣■【Animation】\n┃　　┣[Guri]・アニメーション：22（表情:14　ポーズ:5　鞄:2　座り:1）\n┃　　┗[P.Guri]・アニメーション：10（表情:7　鞄:2　座り:1）\n┣■【FBX】\n┃　　┗・FBX:2\n┣■【Materials】\n┃　　┗・マテリアル：1\n┣■【Textures】\n┃　　┗・テクスチャ：7\n┃　　　・Guri_tex_Outline（目や顔の輪郭線を表示させないためのマスク）\n┃　　　・Guri_tex_Shadow（手以外影をつけないためのマスク）\n┣◆Guri.prefab\n┗◆P.Guri.prefab"},{"type":"text","title":"──▼利用規約──（※必ずお読みください）","content":"本モデルを購入した時点で本利用規約に同意したものとします。\n利用規約の内容は変更する場合があり、最新のものが適用されます。\n-------------------------------------------\n✅↓こちらに利用規約をまとめて記載しています。※必ずご覧ください。\nhttps://masumarokobo.booth.pm/items/2473622\n-------------------------------------------\n✅著作権\n・本モデル及び改変モデルの著作権は「マスマロ」に帰属するものとします。\n\n✅免責事項\n・本モデルを利用することで発生したトラブルや損失に対し、マスマロは一切責任を負わないものとします。"},{"type":"text","title":"───▽制作者───","content":"制作者：マスマロ(鱒麻呂)\ntwitter： https://twitter.com/masumaro__\nBOOTH： https://masumarokobo.booth.pm/\n\n●質問などございましたら［BOOTH内メッセージ］または［Twitter］にご連絡ください。"},{"type":"text","title":"───▽履歴───","content":"■ver.無印　2019/5/25\n・発売日\n\n■ver.1.1.0　2019/7/31\n・Arktoon-Shaders(v1.0.2.5) \n　同梱シェーダーのバージョンアップ。\n\n■ver.1.1.1　2019/8/10\n・商品説明修正。\n\n■ver.2.0.0　2019/12/25\n・ボーン名変更。\n・Unitypackage内テクスチャの容量削減しました。\n・Arktoon-Shaders(v1.0.2.6)\n　同梱シェーダーのバージョンアップ。\n・商品説明、利用規約修正。\n\n■ver.2.0.1　2020/2/29\n・.psd　修正。\n・商品説明、利用規約修正。\n\n■ver.3.0.0　2020/5/1\n・商品説明、利用規約修正。\n↓以下が新しく増えました。\n・Blenderファイル\n・FBXファイル\n・P.Guri.fbx（ポリゴン削減、結合版）\n\n■ver.4.0.0　2020/10/8\n・Unity2018対応\n・商品説明修正。\n・3Dモデルの大きさが一回り小さくなりました。\n・ポリゴン数削減。\n・[Hand_Pose]新しく作り直しました。\n・名前変更。アーマチュア→Armature\n・[Toes]のボーン消去。\n・[Bag]Chestウェイト塗りました。\n↓以下が新しく増えました。\n・Unity:FBXファイル\n・Unity:(.prefab)\n・Unity:[Hand_Pose]Animationファイル\n・地面に座るアニメーション\n\n■ver.4.0.1　2020/10/17\n・[Guri]ボーン長さ修正。\n・Armature：スケール差[0.9]→[1]修正。\n\n■ver.4.0.2　2020/10/21\n・[P.Guri]目のシェイプキー修正。\n・[Hand_Pose]修正。\n・シェーディングを良い感じにしました。\n\n■ver.4.0.3　2020/10/26\n・利用規約修正。"},{"type":"media","content":"\u003ciframe width=\"500\" height=\"500\" src=\"https://hub.vroid.com/characters/1414362449181855096/models/6293157989480530458/embed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\" allow=\"xr-spatial-tracking\"\u003e\u003c/iframe\u003e"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
