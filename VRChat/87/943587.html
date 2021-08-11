@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "yuJuGa1uB/2Y2dcX1OzYvTLTdy+vv3ZbRD6zRZFYEA8="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "yuJuGa1uB/2Y2dcX1OzYvTLTdy+vv3ZbRD6zRZFYEA8="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"Hand and a half（片手半剣）","description":"片手持ち、両手持ちの2形態を併用することを想定した片手半剣です\n\nSketchfabで3Dモデルの閲覧もできます\n\nポリゴン数　△3152\nテクスチャ　2048*2048 3枚\n\nunityパッケージを同封しているのですぐに使い始めることができます\n\n※２枚目、３枚目のモデル\nシンヤの模造武具 様 ブレイダーちゃん \nhttps://booth.pm/ja/items/954766","url":"https://booth.pm/ja/items/943587","offers":{"priceCurrency":"JPY","@type":"Offer","price":"300"},"image":"https://booth.pximg.net/c/620x620/719c3d6d-7dd0-4162-aa85-2ed21e39cf9a/i/943587/1e44ce7c-9f8a-4535-a0d3-f87d2c117e67_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "yuJuGa1uB/2Y2dcX1OzYvTLTdy+vv3ZbRD6zRZFYEA8="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -371,6 +392,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"media","content":"\u003ciframe width=\"640\" height=\"480\" src=\"https://sketchfab.com/models/c5493014439142a0a9d52623ded00ed6/embed\" frameborder=\"0\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"更新履歴","content":"Ver 1.0 リリース\n\nVer 2.0\n(追加)：大き過ぎた剣のサイズを調整　刀身長の違いで２つ収録（旧バージョンは old varsion として存続）\n(その他)：規約同意までの導線を確保　実ファイルデータへのアクセスに同意のパスワードを必須に\n\nVer 2.1\n(不具合修正)：同梱忘れのUnityPackageを同梱\n\nVer 3.0\n(追加)：Trail Rendererを実装\n(改善)：AlbedoテクスチャをシェーダーのEmissionに追加　ローライト環境下で真っ黒になることを防止\n\nVer 4.0\n(不具合修正)：刀身のエッジ部分にシャープを入れ忘れていた問題を修正\n\nVer 4.1\n（整理）：Trailが壊れたため削除\n（整理）：ファイルを一つに梱包、Assets内でバラけないように対策"},{"type":"text","title":"武器説明","content":"ハンド・アンド・ア・ハーフ（片手半剣）\nバスタードソードとも呼ばれる。\n\n片手持ち、両手持ちの2形態を想定した直剣。多様性は高いが、片手でやや長い剣を扱うことから重量バランスが独特であり、使用には独特の慣れが必要となる。"},{"type":"text","title":"規約全文","content":"禁止事項\n１．自分以外の誰かがデータそのものをダウンロードし、購入者と同じ様に使えるようにする（横流しと転売）\n２．宗教、政治関係に使う\n３．特定の個人や団体への誹謗中傷をするのに使う\n\n※１の例外：誰かにカスタムテクスチャを依頼するのにデータを渡したい…時は相談して下さい\n\n許可事項\n・禁止事項に引っかからない全てのこと\n例：\n・キャラクターの装備品に\n・ワールドの装飾、ワールド配置の装備品に\n・データを活用して動画投稿、写真投稿（収益化も当然ok）\n・自分で改造して自分で使う\n・これを装備して、もしくはこれそのものになってVtuber的活動\n・その他色々…\n（当然ですが、R-18(G)的用途に関してはゾーニングをしっかりと）\n\n要するに\nデータの横流しと、良からぬ事に使わぬ限りどのように使っても自由、ということです！　分からなかったら聞いてね\n\n免責\n・本データを使用したことによる利用者の損害、被害に関し、作者は一切補償をしません\n・本データを使用した結果、利用者が他社に損害、被害を与えた場合、その責任は当該利用者にあるものとします\n\n最後に、強制ではないですが…\n動画を撮るときとか、作品を作るときとか、クレジットを残してくれると非常に嬉しい\n\nクレジット例\nモデルデータ：\"The garden of Ashen\"（作者：Ash）"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
