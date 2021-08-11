@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "lL1LNbEG9ftltPKxmW1ucNMuezO4G37z7TLYIhCXsGA="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "lL1LNbEG9ftltPKxmW1ucNMuezO4G37z7TLYIhCXsGA="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"TypeA Model Nana","description":"VRChatでTypeA AnimeShaderを利用しての使用を想定して制作されているモデルで、Blender上でアニメ的な画像を得る為に作成していた、裸体でポリゴン4万越えのモデルを元に曲線部のポリゴン感を出さないように調整リメイクしたものを原型としています。\n\nシェーダーはTypeA AnimeShaderか同等機能のあるものを利用して下さい。\n\nMecanim humanoid対応なのでVRChat以外の用途にも利用可能です。\n\n各衣装パーツは、prefabの状態以外にも自由に組み替えが可能で、VRChat上でアバターの変更をせずに着替える仕組みを実装しやすい構造になっています。\n\n当モデルは以下の条件でセットアップしてあります。\n\n使用アセット\n・TypeA AnimeShader\n・Dynamic Bone\n\nプロジェクトセッティング\n\u003e Player \u003e Other Settings \u003e Color Space \u003e Linear\n\u003e Project Settings \u003e Quality \u003e Anti Aliasing \u003e 8x Multi Sampling\n\n対応アセットがインストールされていない場合エラー・警告となりますので、対応アセットをインストールするか、同等機能を利用して各自対応して下さい。","url":"https://booth.pm/ja/items/1049266","offers":{"priceCurrency":"JPY","@type":"Offer","price":"2500"},"image":"https://booth.pximg.net/c/620x620/03c05139-670a-492f-b51f-464655c06d15/i/1049266/5332f197-4643-465a-a410-ca1ba6956238_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "lL1LNbEG9ftltPKxmW1ucNMuezO4G37z7TLYIhCXsGA="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -538,6 +559,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/kiE3wQEQCcI\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"Version History","content":"2019/04/07\nv1.2.2_fix\n・パッケージ出力時に不具合が発生し正常に読み込めなかったのを修正。\n\n2019/04/06\nv1.2.2\n・RenderQueueによる透過物に発生していた不具合回避の為、対象マテリアルの設定を変更しました。\n　TypeAAnimeShader V1.0.4以降が必要になるので、先にシェーダーをアップデートする事をお勧めします。\n・TypeAAnimeShader V1.0.4に合わせて各素材の設定を調整しました。\n\n2019/01/24\nv1.2.1\n・VRChat Custom Overrideで使用可能なモーションを2個追加しました。\n・nana_lowerwear_mule_shadow_brownが壊れたファイルだった為差し替えました。\n・スカート用のDynamicBoneを調整しました。\n\n2018/12/08\nv1.2.0\n幾つかのマテリアルの設定が間違っていたので修正した物と差し替えました。\n\n2018/12/07\nv1.2.0のreadmeの更新が中途半端なままUPしてしまったので差し替えました。\nreadme以外の変更はありません。\n\n2018/12/06\nv1.2.0\n・衣装を追加しました。\n　下着 / 水着(4色) / パーカー(3色) / ショートパンツ(2Type) / サイハイソックス / ミュール(3色) / スニーカー(3色)\n・衣装追加に伴い、制服のデザインを一部変更しました。\n\n2018/11/04\nv1.1.2\n・髪をほどいた状態のnana_hair_R_NaturalLongを追加しました。\n・制服デザインを一部変更しました。\n・マテリアルの設定を調整しました。\n\n2018/10/31\nv1.1.1\n・シェイプキーを8個追加しました。\n・nana_hair_r_ponyを作り直しました。\n・一部崩れていたblendshapeを調整しました。\n・一部マテリアルの設定ミスを直しました。\n\n2018/10/25\nv1.1.0\n・シェイプキーを57個追加。\n・サンプルのフェイシャルアニメーションを19個添付。\n・構造を分割方式に変更。\n・DynamicBoneの設定をFBXのツリーから分離。\n・目（ハイライト含む）のテクスチャを変更。1枚で左右両方に適用していた物を分けました。\n・これに伴いアニメ風の目・頬の赤みの二つが別マテリアルになりました。\n・鼻の孔の線を消すシェイプキーを追加しました。\n\n2018/10/11\nv1.0.0\n　First release\n"},{"type":"text","title":"利用方法","content":"unitypackageをUnityにD\u0026Dしてください。\n\n追加衣装の組み合わせでポニーテール・ロングヘアーそれぞれ７種(計14)のprefabが作ってあります。\n\n付属のblendfile内に全てのパーツが含まれているのでお好みで組み合わせて下さい。\n詳細は付属のPDFで確認してください。\n\nv1.2.1にてフォルダ構成が一部変更になりました。\nすでにv1.2.0以前のものがインポートされていてv1.2.0以前のものからのアップデートの場合は、一旦削除してから新規インポートする事をお勧めします。\n\nそのままでも問題ありませんが、Readme記載の名称との食い違いなどが発生する可能性があります。\n"},{"type":"text","title":"Set内容","content":"TypeA Model Nana ×1　三角ポリゴン　18688~19426\n　nana_cos01.fbx / 16548\n　nana_cos02.fbx / 16614\n　nana_cos03.fbx / 16534\n　nana_cos04.fbx / 16483\n　nana_cos05.fbx / 16454\n　nana_cos06.fbx / 16262\n　nana_cos07.fbx / 15898\n　nana_hair_F.fbx / 1638\n　nana_hair_R_Pony.fbx / 1152\n　nana_hair_R_NaturalLong / 1174\n\nModel構成用のパーツ一式を収めたblendfileとその説明書(Zip file)\n\nBlendShape\n　VRC LipSync用 x15\n　VRCアイトラッキング対応自動瞬き用(打ち消し) x4\n　MMDの標準的な表情に対応(2バイト文字名) x36\n　その他(アルファベット表記名) x42\n　サンプルフェイシャルアニメーション(.anim) x19\n\nVRChat Custom Overrideで使用可能なモーション x10\n　Idle\n　Walk_Fwd / Walk_Back / Walk_RT45 / Walk_LT45 / Walk_RT135 / WalkLT135\n　Run_Fwd / Run_RT45 / Run_LT45\n　ProneIdle / PronFwd\n\nマテリアル・揺れ物はセットアップ済みですが対応アセットが無い場合各自対応してください。"},{"type":"text","title":"利用規約","content":"unitypakageに含まれているもの全てに適用されます。\n\n著作権は作者であるInsideThighs(=nonact)が保有しています。\n\nUnityAssetstore利用規約に従って下さい。\nAsset Store Terms of Service and EULA\nhttps://unity3d.com/jp/legal/as_terms\n\nUnityAssetstore利用規約参考ページ\nアセットストアが選ばれる5つの特徴\nhttp://assetstore.info/howto/howto-point/\n\n更に以下の件を追加します。\n\n1, VRChatのVRC_Avatar Pedestalなど、購入者以外の人が利用可能になる仕組みへの利用は禁止します。\n　オリジナルゲームのキャラクターとして利用する場合などはこれに含まれません。\n2, 当データ又は改変したものを使用したことにより発生したトラブルや損失に関して作者は一切の責任を負いません。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
