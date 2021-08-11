@@ -59,9 +59,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "O6pW4tAF1/hkmYucajGjINUfq2o7OxPkps84Oa+CRL8="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "O6pW4tAF1/hkmYucajGjINUfq2o7OxPkps84Oa+CRL8="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"VRChat用アバター　魔法剣士　紅乃瀬アキノVer3　Avatar3.0対応　VRM同梱","description":"◆魔法剣士　紅乃瀬アキノ\n・紅乃瀬アキノ（こうのせあきの）\n科学技術で魔力を制御するという\nコンセプトのキャラクター。\n機械でできたグリップ部分に魔力で刃を生成します。\n\n◆試着用VRChatワールドあります。\n起動用URLはこちら。\nhttps://vrchat.com/home/launch?worldId=wrld_95558c9f-d703-44f3-aca0-43ad03c2cec8\n\n\n2021年1月27日Avatar3.0対応しました。\nExpressionMenuで剣の装備や刃の切り替え、\n魔法陣の出し入れが可能になりました。\n\n購入して使用してくれた方がいましたら\nハッシュタグ#アノマロ工房　付きでツイートしてくれるとエゴサが捗ります。","url":"https://booth.pm/ja/items/1149621","offers":{"priceCurrency":"JPY","@type":"Offer","price":"3000"},"image":"https://booth.pximg.net/c/620x620/364e0ee1-5df5-4f4e-8b1b-4da26b79ab35/i/1149621/eb2976ab-a381-40b0-bc64-6a161cb30c01_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -72,6 +89,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "O6pW4tAF1/hkmYucajGjINUfq2o7OxPkps84Oa+CRL8="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -522,6 +543,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"■商品の内容","content":"・Unitypackage内に「魔法剣士　紅乃瀬アキノVer3」の\n設定済みシーンと各種モデル、テクスチャがセットで入っています。\n\nHumanoid、Dynamicboneの設定済み。\nDynamicboneのスクリプトは入ってませんので\n別途アセットストアで購入して下さい。\n\nユニティちゃんトゥーンシェーダー2.0.7\n（http://unity-chan.com/download/releaseNote.php?id=UTS2_0）\n\nこれらがインポートされていれば、即アップロードが可能な状態になります。\n\n\n\n◆内容の詳細\nReadMe.txt\n商品画像\n\n・設定済みシーン\nVRChat_02_Akino.Unity\n（全ての設定が完了しているシーンデータです。　ダブルクリックしてアバターをアップロードするだけです。）\n\n・モデルデータ\nAvatar_02_Akino_Ver3.fbx\nmahoujin.fbx\nWeapon_MaterialBlade.fbx\nWeapon_MB_Cartridge.fbx\n\n・マテリアルデータ\ncheek\nmahoujin\nVRChat_02_Akino_Body_V2\nVRChat_02_Akino_Body_Eye\nVRChat_02_Akino_Body_Eye_Hilight\nVRChat_02_Akino_fuku_V2\nVRChat_02_Akino_Hair\nVRChat_02_Akino_Hair_ste\nWeapon_MB\nWeapon_MB_Crystal\nWeapon_MB_Line\n\n・テクスチャデータ\ncheek\ncheek_N\ncheek_Shadow\nmahoujin\npatarn\nVRChat_02_Akino_Body_V2\nVRChat_02_Akino_Body_V2_Emi\nVRChat_02_Akino_Body_V2_Eye\nVRChat_02_Akino_Body_V2_Eye_Hilight\nVRChat_02_Akino_Body_V2_Eye_Shadow\nVRChat_02_Akino_Body_V2_Normal\nVRChat_02_Akino_Body_V2_OutLine\nVRChat_02_Akino_Body_V2_Shadow\nVRChat_02_Akino_Fuku_V2\nVRChat_02_Akino_Fuku_V2_Emi\nVRChat_02_Akino_Fuku_V2_HairMask\nVRChat_02_Akino_Fuku_V2_HairNoise\nVRChat_02_Akino_Fuku_V2_Mask\nVRChat_02_Akino_Fuku_V2_Matcap\nVRChat_02_Akino_Fuku_V2_Normal\nVRChat_02_Akino_Fuku_V2_Shadow\nVRChat_02_Akino_Hair_V2\nVRChat_02_Akino_Hair_V2_Shdow\nWeapon_MB\nWeapon_MB_Ao\nWeapon_MB_Crystal\nWeapon_MB_Normal\nWeapon_MB_Shadow\n"},{"type":"text","title":"■利用規約","content":"本モデルを購入された時点で本利用規約に同意したものとさせていただきます。\n\n・利用規約の内容は変更する事があります。　変更された場合は最新の規約に従って下さい。\n（規約の変更後は本モデルの利用をもって新規約に同意したものとみなします）\n\n「魔法剣士　紅乃瀬アキノVer3」（以下本モデル）の著作権はアノマロかりんとうに帰属するものとします。\n\n・本モデルは購入者がVRChatにアップロードして使用する事を許可します。\n\n・本モデルはVRChatのアバターペデスタル、クローンアバター機能、VRMフォーマットへの変換等で\n　購入者以外が自由に使用できる状態にして配布、販売する事を禁止します。\n（必ずPrivateでアップしてください。）\n\n・本モデルは自作ゲームのキャラクターとして使う事ができます。\n（無料、有料のゲームどちらも可）\n\n・本モデルはVtuber、バ美肉アバターとして使えます。\n（Youtubeチャンネルでの収益化も可能です）\n\n・本モデルは改変可能です。　改変した本モデルは購入者のみ使用でき、配布する事は禁止です。\n　モデルにパーツを追加したり差し替えたり、テクスチャの色変え等改変してもかまいません。\n（自作でないパーツを追加する場合は、そのパーツの利用規約を確認して守りましょう。）\n\n追記：キャラクター性を損なう頭部を別のアバターの頭部に挿げ替える改変は禁止します。\n\n・本モデルは3Dプリンターでの出力OKです。\n（個人で自分のためだけの出力のみ可能です。ワンダーフェスティバルやあらゆるサービスを利用した販売は禁止です。）\n\n・本モデルを使用しての他者を誹謗中傷する表現、政治、宗教活動を禁止します。\n\n・本モデルの18禁作品での使用可能です。（エロ・グロ含む）\n\n・本モデルの自作発言禁止\n\n・本モデルに関しては日本国内法が適用されます。"},{"type":"text","title":"◆免責事項","content":"このデータを利用して被ったあらゆる損害の責任を（アノマロかりんとう）は負わないものとします。\n使用者の責任の元ご利用ください。\n\n◆連絡先\nTwitterにリプライでお願いします。　DMは相互フォローのみです。\n（https://twitter.com/anomarokarintou）\n\nもしくはこちらのメールアドレスまで。\n anomarokarintou★yahoo.co.jp　★を@に変更してお送りください。\n\n\n利用規約制定日　2019年1月2日\n"},{"type":"text","title":"■更新履歴","content":"・2021年07月29\n頭部すげ替え改変に関する利用規約の更新をしました。\n\n・2021年1月27日\nAvatar3.0に対応。\nExpressionMenuで武器の切り替えや魔法陣の展開が自由にできるようになりました。\n\nマテリアルブレードの作り直しと専用シェーダーで\n表現したかった武器の見た目を実現しました。\n\n\n・2020年1月11日\n両目のウェイトを調整。\n剣のグリップ部分から目が貫通して見えるステンシルナンバーミスを修正。\n他マテリアルのパラメータをいくつか変更しました。\n\n・2019年3月26日\n首の根本付近の1頂点にウェイトが設定されてなくて飛び出る現象があったのを修正しました。\n\n\n・2019年3月12日\n以下マテリアル二つのパラメーターを調整しました。\nVRChat_02_Akino_Body\nVRChat_02_Akino_Body_Eye\n\n・2019年3月2日\nデータをVer2に変更。\nテクスチャを含め大幅に変更を加えました。\n\n・2019年1月21日\n肌と瞳のマテリアルがワールドによって明るく見えてしまうのを防ぐ設定を追加しました。\n\n・2019年1月8日\nPrefabの体のサイズとViewPositionを\n修正したバージョン1.1にファイルを差し替えました。\n\n既に購入して頂いた方はPrefabのTransformのScaleを\n全て0.43から0.3937に変更して、\nVRC_Avatar_DescripterのViewPositionを\nY=1.352　Z＝0.081に変更してください。\nそれで本来のサイズになります。\n\n\n・2019年1月5日\nバージョン1.0の発売開始。"},{"type":"media","content":"\u003ciframe width=\"500\" height=\"500\" src=\"https://hub.vroid.com/characters/5976934751408215506/models/1503512897722494944/embed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\" allow=\"xr-spatial-tracking\"\u003e\u003c/iframe\u003e"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
