@@ -55,9 +55,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "vSUHLArvG1v/O6hJDmtfu32O9PquhWGpP1E0fdY1IKE="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "vSUHLArvG1v/O6hJDmtfu32O9PquhWGpP1E0fdY1IKE="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"72caコスメティックス（VRCワールド版） ver1.0","description":".","url":"https://booth.pm/ja/items/1196250","offers":{"priceCurrency":"JPY","@type":"Offer","price":"1000"},"image":"https://booth.pximg.net/c/620x620/da3e4894-0b83-47ed-b0a9-5526bd9f9722/i/1196250/3990bf98-9cfd-4e06-abb5-f555a93237b3_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -68,6 +85,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "vSUHLArvG1v/O6hJDmtfu32O9PquhWGpP1E0fdY1IKE="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -378,6 +399,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"【重要なお知らせ】","content":"令和2年2月3日付でMinuet_Doll3Dモデル利用規約を改定いたしました。追加・削除箇所についてはSHOPのトップページにて記載しています。\nhttps://minuetdoll.booth.pm\nお買い上げいただいた皆様に個別のご連絡ができず大変申し訳御座いません。"},{"type":"text","title":"","content":"当モデルは、私Minuet_Dollが、過去になつか（現72ca）の名義でMikuMikuDance用に制作配布したモデルをVRChat（ワールド）での利用を想定して再調整したセッティング済のワールドデータです。元々はMikuMikuDance用のモデルの再利用であり、ワールドデータ化にあたり容量の削減までには手が回っておりませんことをあらかじめご了承ください。\n\nMikuMikuDance用モデルは現在も下記URL先で無料ダウンロードできます。\n\n【MMDアクセサリ配布】スフィアグロス\nhttp://seiga.nicovideo.jp/seiga/im5722071\n【MMDアクセサリ配布】ウェイトミスマスカラ＆ビューラー\nhttp://seiga.nicovideo.jp/seiga/im5730779\n【MMDアクセサリ配布】モーフチーク\nhttp://seiga.nicovideo.jp/seiga/im5739757\n【MMDアクセサリ配布】アンビエント111アイシャドウ\nhttp://seiga.nicovideo.jp/seiga/im5783134\n\n主な違いとしては、上記MikuMikuDance用モデルが商用利用不可であることに対し当モデル「72caコスメティックス（VRCワールド版）」は収益化等の商用利用が可能となっております。詳しくは利用規約をご確認ください。\n上記MikuMikuDance用モデルはunitypackage化に伴い規約改定予定ですため、ご了承ください。2019/03/07追記\n\n【アップロード方法】\n詳しくは同梱のインターネットショートカット、もしくは下記URLよりアップロードの手引きをご覧ください。\nhttp://minuetdoll.info/72ca_cosmetics_manual/\n\n【利用規約】\n同梱のインターネットショートカット、もしくは下記URLよりMinuet_Doll3Dモデル利用規約に従ってください。\nhttp://minuetdoll.info/3d/\n\n【追加・承諾事項】\n「72caコスメティックス（VRCワールド版）」を含むワールドデータ（改造、改変の有無、3Dモデルの一部であるか、全部であるかに関わらず）をサーバーにアップロードし、商品を購入していない第三者を招待したり、VRChatにPublic化の申請を行うことは、Minuet_Doll3Dモデル利用規約 第4条　第4項の以下禁止行為には抵触しないものとします。\n　＞(1) 商品である3Dモデル（改造、改変の有無、一部であるか全部であるかを問いません。）を配布、転載、その他商品を購入していない第三者が商品を使用できる状態にすること。\n\n【シェーダーについて】\n各ライセンスに基づき使用させて頂いております。詳しくは同梱の各テキストファイル（Readme）をご覧ください。\n\n・みに様の「まんまるしぇーだー_ver_1.3」\nhttps://www.dropbox.com/sh/dp8b6ltr8ifgsw2/AAAwe9qWmfNLUFpNmPSE0fIga?dl=0\n\n・Materialsフォルダ内の「ClearShader_Modified」は、Es様のブログ「しゅみぷろ」（http://esprog.hatenablog.com/）内の記事、\n「シンプルなMatcapシェーダーを書いてみる 」（http://esprog.hatenablog.com/entry/2017/01/28/231735）\nのコードを参考にさせて頂き、お休みさん、phi16様のご協力のもとに生成されたシェーダーです。\n「ClearShader_Modified」のみの使用、「ClearShader_Modified」の再配布は禁止とさせて頂きます。\n\n【内容】\n\n72ca_cosmetics_ver1.0\n├7C_beaura\n｜｜└Texture（ビューラーのテクスチャ　ファイル数13）\n｜｜  beaura_gold.fbx（ビューラーのfbxモデル　ポリゴン数△2606）\n├7C_cheek\n｜｜└Texture（チークのテクスチャ　ファイル数14）\n｜｜  cheek_pink.fbx（チークのfbxモデル　ポリゴン数△5676）\n├7C_eyeshadow\n｜｜└Texture（アイシャドウのテクスチャ　ファイル数17）\n｜｜  eyeshadow_pink.fbx（アイシャドウのfbxモデル　ポリゴン数△1617）\n├7C_gloss\n｜｜└Texture（グロスのテクスチャ　ファイル数14）\n｜｜  gloss_red.fbx（グロスのfbxモデル　ポリゴン数△1836）\n├7C_mascara\n｜｜└Texture（マスカラのテクスチャ　ファイル数12）\n｜｜  mascara_baw.fbx（マスカラのfbxモデル　ポリゴン数△1894）\n├7C_puff\n｜｜└Texture（チークパフのテクスチャ　ファイル数8）\n｜｜  puff_pink.fbx（チークパフのfbxモデル　ポリゴン数△1976）\n｜｜  puff_white.fbx（チークパフのfbxモデル）\n├7C_tip\n｜｜└Texture（アイシャドウチップのテクスチャ　ファイル数7）\n｜｜  tip_beige.fbx（アイシャドウチップのfbxモデル　ポリゴン数△284）\n｜｜  tip_black.fbx（アイシャドウチップのfbxモデル　ポリゴン数△284）\n｜｜  tip_pink.fbx（アイシャドウチップのfbxモデル　ポリゴン数△284）\n｜└  tip_white.fbx（アイシャドウチップのfbxモデル　ポリゴン数△284）\n｜  Minuet_Doll3Dモデル利用規約（オンライン規約）      （ご利用の際は最新の利用規約をご覧ください）\n｜  Minuet_Doll3Dモデル利用規約.txt（サーバーが通常通り機能しない場合はご確認ください）\n｜  Readme（まんまるしぇーだー_ver_1.3）.txt（同梱させていただいたシェーダーのReadmeです）\n｜  アップロードの手引き（モデルアップロードの際にはご活用ください）\n｜  はじめに.txt（このファイル）\n└  72caコスメティックス（VRCワールド版）.unitypackage  （本体）\n\n\n【更新履歴】\n2019/01/26　ver1.0　販売開始\n\n【制作】\nMinuet_Doll\nhttp://minuetdoll.info/\nhttps://twitter.com/Minuet_Doll"},{"type":"text","title":"","content":"※VRChatやUnityのアップデートの影響で従来通りアップロードできなくなった場合は、こちらの記事\nhttps://note.com/minuet_doll/n/ne16c3ea79548\nをご確認ください。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
