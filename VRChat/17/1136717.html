@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "+q2+xjvQyKl1NYhbDXFxHxwaZubdRVYNpYGVEi/IgmY="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "+q2+xjvQyKl1NYhbDXFxHxwaZubdRVYNpYGVEi/IgmY="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"【VRchat向け オリジナル３Dモデル】チェック","description":"VRchat向けのオリジナルモデルとなっております。\n身長140cmほどでチェス駒と猫がモチーフとなっています。\n\n\n体・服・小物などオブジェクト別けなど、\n少々ですがUnity上のみで完結できる改変方法も想定してあります。\n\n◆◆小さい方の『でふぉるめチェック』はこちらをご覧ください◆◆\nhttps://kara-no-atelier.booth.pm/items/1524584\n\n\nお手軽設定用にunity packageを同梱しています。\nシェーダは初期設定用にUnlit/Textureを使用していますが、\n裏面表示が可能なシェーダの方がおススメです。\n\n\n概ね設定済みのVRM形式ファイルも同梱していますのでVRM対応のコンテンツにもご利用いただけます。\n※eyeboneなど視線関係のみ未設定\n\n\n【unity2019環境での動作確認済み】\n※Mipmapエラーが出た場合は、AutoFixボタンを押せば大丈夫です\n※Dynamic bone（Unityストアの有料アセット）をお持ちでない場合は、アバターに設定済みのDynamic boneコンポーネントを外す必要があります\n\n【2021/8 VRCアップデート動作確認済み】\n※アバター2.0のSDK仕様となっています\n\n\nご購入前に説明及び利用規約が記載されておりますので、\n必ずお読みいただき内容ご確認の上、ご購入をお願いいたします。\n\n\n動作見たい方用に『VRoid Hub』に配置しました。\nhttps://hub.vroid.com/characters/52156203792523992/models/8769872602489318228\n\n\n\nver2.0では『ユニティちゃんトゥーンシェーダー2.0』を使用しています。\n\n\n不具合などはTwitter【https://twitter.com/Aw_ritsushitA】の方へフィードバックください。","url":"https://booth.pm/ja/items/1136717","offers":{"priceCurrency":"JPY","@type":"Offer","price":"3000"},"image":"https://booth.pximg.net/c/620x620/a12bdc4d-2b9f-4309-a04e-8e40fb63d9f6/i/1136717/ea30d6cc-9a77-4d07-8309-b3741486f30c_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "+q2+xjvQyKl1NYhbDXFxHxwaZubdRVYNpYGVEi/IgmY="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -463,6 +484,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"【内容ファイル】","content":"checkパッケージ.zip\n・テクスチャ(.png .psd)\n・モデルデータ(.fbx)\n・Unityパッケージ(Unity package file)\n・使用メモ(.txt)\n\n※UnityパッケージにVRChat_SDKは含まれていません。\n\nVRM_check.zip\n・VRM形式"},{"type":"text","title":" 【ライセンス（License）】","content":"著作権の譲渡・破棄は行っておりません。\n\n○このモデルは以下の用途に置いて利用することが出来ます。\n・VRChatでの利用\n・モデル改変\n・映像制作\n・商用利用\n　商用利用する場合、可能な限りクレジット表記をお願いします。\n\n○以下の行為は禁止しとしています。\n・第３者がモデルデータが容易に読み込める形式での二次配布（改変も含む）\n・アバターペデスタルによる配布\n・本モデルを使用した特定個人や団体への中傷を目的とした利用\n・過度な拡大解釈による禁止行為に該当する利用\n\n\n\nCopyrights are not transferred or abandoned.\n\n○ This model can be used in the following applications.\n・ Use in VRChat\n・ Model modification\n・Video production\n・ Commercial use\nIn case of commercial use, please give credit notation as much as possible.\n\n○ The following actions are prohibited.\n・ Secondary distribution in a form that third party can easily read model data (Including modification)\n・ Distribution by avatar pedestal\n・ Use for the purpose of slandering to specific individuals and organizations using this model\n・ Utilization corresponding to prohibited act by excessive expansion interpretation\n\n\n\n\nこの作品はユニティちゃんライセンス条項の元に提供されています。\nThis work is provided under unity-chan license terms.\n\n© Unity Technologies Japan/UCL"},{"type":"text","title":"【免責事項（Disclaimer）】","content":"・当モデルを使用にあたり、\n　使用者側に不利な問題及び第三者間でのトラブルが生じた場合、\n　それがいかなるものであっても配布元は一切責任を負いません。\n\n・本利用規約は予告なく変更される場合があります\n\n\n\n・ In using this model,\n　In the event of a disadvantageous problem on the user side and troubles between third parties,\n　Distribution source does not take responsibility at all regardless of what it is.\n\n・ These terms and conditions are subject to change without notice\n"},{"type":"text","title":"【仕様】","content":"・フルトラッキング対応済み\n・アニメーションによる自動まばたき\n・リップシンク\n・ダイナミックボーンによる揺れ物\n・素体あり\n\n・三角ポリゴン：16,722\n・マテリアル数：4\n・メッシュオブジェクト数：11\n・シェーダ：Unlit/Texture（配布用設定）\n・ボーン構造：unity Humanoid向け\n・表情用シェイプキー：複数　※商品画像の表情参考\n\n\n※unity package化はされていませんが、フルメッシュ版（素体の肌メッシュなど削減一切なし）fbxも同梱されています。"},{"type":"text","title":"\u003c更新情報\u003e","content":"2018/12/14　公開\n\n2019/2/17　ver1.0へ更新\n\n2019/3/7　 ver1.1へ更新\n　　　　　 ver1.1v【VM2期間中限定公開】\n\n2019/3/11　ver1.1【通常版へ更新】\n\n2019/5/2　 ver2.0　公開\n\n2019/5/29　ver2.1へ更新\n\n2020/1/3　VRM形式を追加\n\n\n【更新内容】\n・ver1.0ではPSDファイルでのテクスチャ改変をし易くするためレイヤーを調整しました。\n\n・ver1.1ではライセンスの二次配布に追記を行っています（微妙に緩和）\n\n・ver1.1vはバーチャルマーケット２開催中限定バージョンです。チェック（当モデルのVRM形式が同梱されています）\n\n・バーチャルマーケット２期間終了にともない通常版ver1.1へ修正\n\n・ver2.0では顔の法線調整、ユニティちゃんトゥーンシェーダー2.0の調整をしています。\n\n・ver2.1で後頭部の一部反転メッシュを修正\n\n\n【修正予定】\n\n・誤字脱字：そのうち修正予定\n\n\n【仕様】\n・しゃがんだ際に股関節部分の軽微な肌メッシュ突き抜け\n・脇周りの腕を上げた際の軽微な肌メッシュの突き抜け（フルメッシュ版のみ）"},{"type":"media","content":"\u003ciframe width=\"500\" height=\"500\" src=\"https://hub.vroid.com/characters/52156203792523992/models/8769872602489318228/embed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\" allow=\"xr-spatial-tracking\"\u003e\u003c/iframe\u003e"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
