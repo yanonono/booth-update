@@ -59,9 +59,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "H+TUQGfxcTnJhp9l+LxhtqskP+xLNMyTT/NUYDG0taY="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "H+TUQGfxcTnJhp9l+LxhtqskP+xLNMyTT/NUYDG0taY="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"VRCアルバムワールド作成キット album_world_kit_v1.0.0【VRChat向けUnityPackage】","description":"VRChat用アルバムワールド作成キット\nalbum_world_kit_v1.0.0","url":"https://booth.pm/ja/items/1139587","offers":{"priceCurrency":"JPY","@type":"Offer","price":"0"},"image":"https://booth.pximg.net/c/620x620/a33b7662-9a73-4f2e-b2bf-ce41a2923250/i/1139587/178bece8-9815-4d87-8d5c-11d7c3856b82_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -72,6 +89,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "H+TUQGfxcTnJhp9l+LxhtqskP+xLNMyTT/NUYDG0taY="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -378,6 +399,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"概要","content":"お手持ちの画像を並べて配置したワールドが作れます。\n画像をスクリプトで多量に貼れます。"},{"type":"text","title":"動作確認環境","content":"Unity 2017.4.15f1\nVRCSDK-2018.12.04.10.25_Public\nVRChat Build 670"},{"type":"text","title":"使い方","content":"1. サンプルをVRChatで読み込む\n・Unity 2017.4.15f1で新規プロジェクトを作成してください\n・VRChatSDKをインポートしてください\nhttps://www.vrchat.net/download/sdk\n・shuriken_album_world_kit_v1.0.0.unitypackageをインポートしてください\n・Assets\u003ealbum_world\u003ealbum_world_sample.unityを開いてください。\n・VRChatSDK\u003eShow Build Control PanelのTest\u003eNew BuildなどからVRChatで読み込んでください\n\n2. 画像を差し替える\n・画像をAssets以下の適当なフォルダに入れてください\n・画像をすべて選択し右クリック\u003e「Shuriken ChangeTexture」を開き「設定する」をクリックしてください、画像が軽量化されます\n・もう一度画像をすべて選択し右クリック\u003e「Shuriken SetSprite」を開いてください\n・対象オブジェクトにworld\u003epicturesに入っている「pictures_l」をD\u0026Dし、「スプライト変更」をクリックしてください、画像が差し変わります\n\n3. 画像の個数・サイズ・位置を変更する\n・world\u003epictures\u003epictures_lに入っている「frame」を選択しScaleを変更し画像表示サイズを変更してください\n・frame  ～ frame (3)の位置を調整し、 frame (4)以降は削除してください\n・frame  ～ frame (3)を選択した状態で、Window \u003e 「Shuriken Duplicate」を開いてください\n・「配置数」を配置したい画像の数にし、「オブジェクト作成」をクリックしてください、frameと同じものがframe  ～ frame (3)の並べ方で配置数分になるように複製されます\n・「2. 画像を差し替える」と同じ手順で画像を変更してください"},{"type":"text","title":"unitypackage内同梱物","content":"*サンプルScenes\n./Assets/album_world/album_world_kit.unity\n./Assets/album_world/album_world_sample.unity\n*Unityエディタ拡張スクリプト（入れているとメニューが増えます）\n./Assets/Editor/ShurikenDuplicateWindow.cs \n\thttps://github.com/vrshuriken/shuriken_duplicate_window\n./Assets/Editor/ShurikenChangeTexture.cs \n\thttps://github.com/vrshuriken/shuriken_change_texture\n./Assets/Editor/ShurikenSetSprite.cs  \n\thttps://github.com/vrshuriken/shuriken_set_sprite\n"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
