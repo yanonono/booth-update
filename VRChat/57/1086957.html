@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "/xiqTp0kO3qjCb/mlnEI4bNAXSoQuwbG8M2UjH/ERrI="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "/xiqTp0kO3qjCb/mlnEI4bNAXSoQuwbG8M2UjH/ERrI="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"C's Water Shader [BLOCK2]","description":"VR対応（VRで見たときに水表現が破綻しない）、VRChat向けの水シェーダーです。\n設定項目のDepthはShadowが有効なRealtime Lightの光が、\n水オブジェクトに当たっている場合に機能します。\nまた、LightのIntensityが低い場合は当シェーダーのColor Alpha値が高く設定されていても、色が薄くAlpha値が低いかの様に振る舞う結果となります。\n\n◆UPDATE\nC's Water Shader [BLOCK2]\n∟当シェーダーが適用されたメッシュの頂点を動かし、波が立つようになりました。（調整可）\n\n　・動作の様子\nhttps://www.youtube.com/watch?v=lkuisDKKCC8\n\n　・VRChat上での動作\nhttps://www.vrchat.net/home/launch?worldId=wrld_7cecc2c3-3c9e-4b9e-96a6-46ee0d80fdee\n\n\n◆改変可能\n◆Unity 2017想定\n◆商用利用の場合は、必ず著作権者を明示してください。","url":"https://booth.pm/ja/items/1086957","offers":{"priceCurrency":"JPY","@type":"Offer","price":"490"},"image":"https://booth.pximg.net/c/620x620/02658766-23c0-4747-bfaf-8658ada54514/i/1086957/e66ca3fb-7434-4422-a7bf-03c20bc4f507_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "/xiqTp0kO3qjCb/mlnEI4bNAXSoQuwbG8M2UjH/ERrI="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -411,6 +432,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/yTK9j9Iyi8s\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/lkuisDKKCC8\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"◆ライセンス License","content":"◆ライセンス License\nコンテンツは著作権で保護されています。\nコンテンツを使用することにより、以下の条件に同意するものとします。\n\n1.コンテンツをそのまま許可なく第三者へ販売、配布の禁止。\n　著作者の利益を損なう場合を除き、コンテンツが音声や動画、ソフトウェアや機械、あるいは演劇等の作品に組み込まれる場合はこの限りではない。\n\n2.商用利用では個人、法人を問わず、必ず解釈できるように著作者がClomaであることを明示すること。\n\n3.コンテンツを改変した物についても、当ライセンスを継承すること。\n\n規約は予告なしに変更されることがあります。\n\n\nContent is protected by copyright. By using the contents, you agree to the following conditions. \n\n1. Selling and distributing contents as they are without permission to third parties. This is not the case unless the content is incorporated into a work such as voice, movie, software, machine, or theater, except in the case of damaging the profit of the author. \n\n2. In commercial use, to clarify that the author is Cloma so that it can be interpreted without fail regardless of individuals or corporations.\n\n3. Also to inherit this license for things whose content has been modified.\n\nTerms and conditions are subject to change without prior notice."}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
