@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "uH/o6BBVfMY0P6WpdJlAQCk58pUs+AsaOtTlDbXNrj8="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "uH/o6BBVfMY0P6WpdJlAQCk58pUs+AsaOtTlDbXNrj8="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"[アバター3.0対応3Dモデル]セーラー服眼鏡っ娘[VRchat・VRM]","description":"セーラー服眼鏡っ娘のモデルデータです。\nVRchatのアバター向けとして制作してあります。\n\nアバター3.0対応にアップデートしました。\n・まばたき対応\n・表情モーフがメニューに登録済み\n\n・リップシンク対応\n・Dynamicbone対応(胸、髪、リボン)\n・表情変化対応\n・デフォルト設定ではArktoon-Shaders(1.0.1.1)使用\n・設定済みVRM形式ファイルも付属","url":"https://booth.pm/ja/items/1227673","offers":{"priceCurrency":"JPY","@type":"Offer","price":"3000"},"image":"https://booth.pximg.net/c/620x620/947f533c-bcb4-495a-bb89-6ca324208706/i/1227673/ff3b9243-b045-4e21-8472-797d24d3c3cc_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "uH/o6BBVfMY0P6WpdJlAQCk58pUs+AsaOtTlDbXNrj8="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -467,6 +488,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"□導入までの流れ□","content":"□導入までの流れ□\nUnityでVRchatにアバターをアップロードする詳細な説明はwebに多数ありますので、そちらをご確認ください。\n\n・Unity (バージョンは必ず2018.4.20f1をご利用ください)で新規プロジェクトを作成します。\n\n・VRCSDKのunitypackageをVRchat公式サイトよりダウンロードしてインポートします。(Asetts → Import Package → Custom Packageからインポートするファイルを選びます)\nアバター3.0のデータを利用する場合はSDK3、旧版のアバターを利用する場合はSDK2をインポートしてください。\nSDK2とSDK3に互換性はありませんので間違えないようにご注意ください。\n\n\n※オプション\n・Arktoon-Shaders 1.0.1.1\nhttps://booth.pm/ja/items/1027997\n\n・Dynamicbone(有償アセット)\nhttps://assetstore.unity.com/packages/tools/animation/dynamic-bone-16743\n\n上記2つをご用意の上、予めインポートすることをオススメします。\n\n無くてもアバターとして利用は出来ますが、\nDynamicboneがないと胸や髪の揺れものは動きません。\nArktoon-Shadersがないと見た目が変わります。\nArktoon-Shadersを使わず、Unity標準のシェーダーを使う場合は\nUnlit/Textureの使用をオススメします。\n\n\n・同様に本パッケージであるsailormegane.unitypackage(3.0の場合はsailormegane3.0.unitypackage)をインポート後、File → Open SceneからAssets内のSailorMegane.unityを開きます。\nその後VRChat SDKメニューのShow Build Contril Panelからビルドし、Privateに設定してアップロードすれば利用できると思います。\n\n(上記の説明は2020年8月現在のものです。VRchatの仕様変更等で変わる可能性があります。)"},{"type":"text","title":"□表情モーフについて□","content":"アバター3.0版には予め表情変化がメニューに組み込み済みです。\n\n旧バージョンの場合は\nパッケージ内のAnimeフォルダにサンプルの表情モーフ用Animationファイルがありますので、お好みでcustomoverrideに登録してご利用ください。\n\n・emo_angry\n怒った顔\n\n・emo_jitome\nジト目\n\n・emo_sad\n悲しそうな顔\n\n・emo_smile\n両目を閉じた笑顔\n\n・emo_warui\n悪そうな顔\n\n・emo_wink\nウインク\n\nまた各種シェイプキーもありますので、お好みで組み合わせてAnimationファイルを作成してください。"},{"type":"text","title":"□内容物□","content":"・sailormegane.unitypackage(旧版)\n・sailormegane3.0.unitypackage(アバター3.0版)\nモデル、テクスチャ、シェーダー、dynamicbone等の各種設定がされたパッケージです。通常はこちらを読み込んで利用します。\n\n\n以下は個別のデータです。ご自身で設定して利用される場合にお使いください。\n\n・sailormegane.fbx\n本モデルデータ本体\n\n・sailormegane01.png\n・sailormegane02.png\n・sailormegane03.png\nテクスチャです。末尾にrの付いているものは黒色セーラー服の差分ですのでお好みで選択して使用してください。\n\n・sailormegane_mask01.png\n・sailormegane_mask02.png\nマスク用画像です。シェーダーでアウトラインやリムを不要な部分に表示させない為に使います。\n\n・sailormegane.vrm\nVRM形式の設定済みデータです。VRM規格対応ソフトで利用できます。"},{"type":"text","title":"□利用規約□","content":"・本モデルの利用に当たり利用規約への同意が必要です。本モデルを利用した時点で利用規約に同意したものとします。必ず事前にご確認ください。\n\n利用規約の内容は下記ページにあります。\nhttp://ghostempire.sakura.ne.jp/3dmodel/sailormegane.html"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
