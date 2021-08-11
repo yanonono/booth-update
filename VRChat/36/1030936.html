@@ -58,6 +58,16 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "lWILqqBM/GCEinnPkF/38DaGBQMQX+QlckUmGdcg8Zw="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
   </head>
   <body>
     <div class="mini-player-controller" style="display: none;">
@@ -86,6 +96,13 @@
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "lWILqqBM/GCEinnPkF/38DaGBQMQX+QlckUmGdcg8Zw="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"ILZ-010+FANTOMO","description":"VRChatで利用することを想定した片手杖「ILZ-010」と帽子型デバイス「FANTOMO」のモデルです。UnityPackageを同梱しているので、インポートしてすぐに使えます。\nまた、blendファイルとfbxファイルも同梱しています。VRChat以外でも利用できます。\nThis is a 3D model of the cane \"ILZ-010\" and the hat shaped device \"FANTOMO\", designed to be used as a prop in games, video works, and within the Metaverse.\nIn addition to the fbx and blend formats, unitypackage is included so you can import and use it right away.\n\nポリゴン数/Polygon count：△1458(ILZ-010：1222 FANTOMO：236)","url":"https://booth.pm/ja/items/1030936","offers":{"priceCurrency":"JPY","@type":"Offer","price":"600"},"image":"https://booth.pximg.net/c/620x620/3f3e64e4-778d-4780-84bb-f6c25beab661/i/1030936/ae2ed088-03b3-45f2-aeac-dc39d1106cb7_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -93,6 +110,10 @@
     rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "lWILqqBM/GCEinnPkF/38DaGBQMQX+QlckUmGdcg8Zw="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -517,6 +538,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"更新履歴/Change log","content":"----------\n2020/08/28\n・利用規約を独自のものからUVライセンスに変更しました。\n・The terms of service have been changed from proprietary to a UV license."},{"type":"text","title":"内容/Contents","content":"・FANTOMO\n　・FANTOMO.blend\n　・FANTOMO.fbx\n　・FANTOMO.unitypackage\n　・Texture.psd\n・ILZ-010\n　・ILZ-010.blend\n　・ILZ-010.fbx\n　・ILZ-010.unitypackage\n　・Texture.psd\n・readme.txt"},{"type":"text","title":"利用規約","content":"ILZ-010+FANTOMOは以下のUVライセンスに基づいて配布されています。\nILZ-010+FANTOMO is distributed under the following UV license\n\n【利用規約】\n本モデルはUVライセンスで公開されています。\n本モデルでは基礎条項に加え、個別条項をもとに以下の行為を許可します。\n\n・個人の商用利用の許可\n・法人の利用の許可\n・二次的著作物の配布の許可\n・配布、販売時のデータ流用の許可\n・成人向け表現（性的表現）の許可\n・成人向け表現（暴力表現）の許可\n規約全文は下記URLを参照してください。\nhttps://uv-license.com/ja/license?utf8=%E2%9C%93\u0026pcu=true\u0026ccu=true\u0026ddw=true\u0026dmd=true\u0026seu=true\u0026veu=true\n\n【Terms of Use】\nThis model is released under UV license.\nThis model allows the following actions based on Individual terms in addition to the Basic Terms.\n\n・Personal Commercial Use\n・Corporate Commercial Use\n・Distribution of Derivative Works\n・Diversion of Model Data\n・For Adults, Sexual Expressions Use\n・For Adults, Violence Expressions Use\nFor the full text of the rules, please refer to the following URL.\nhttps://uv-license.com/en/license?utf8=%E2%9C%93\u0026pcu=true\u0026ccu=true\u0026ddw=true\u0026dmd=true\u0026seu=true\u0026veu=true\n\n備考：ゲームや映像作品などで使用する際はご一報くださるとありがたいです。\nNote: If you want to use this in a game or video work, please let me know."},{"type":"text","title":"","content":"制作者：ヒットマン赤\n　Twitter：@htmn_ff0000\n　VRChat：HTMN#FF0000\n\nCreator：HTMN#FF0000\n　Twitter：@htmn_ff0000\n　VRChat：HTMN#FF0000"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
