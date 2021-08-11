@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "VRLEhGAH2KgMkcIwoqc0Kih9Tes9iXgERNBuMq6cZt4="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "VRLEhGAH2KgMkcIwoqc0Kih9Tes9iXgERNBuMq6cZt4="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"Buckler（小型円盾）","description":"取り回しがよく、剣の使用を阻害しにくい小型の円盾です。\n\nSketchfabで3Dデータの閲覧ができます。\n\nポリゴン数 △680\nテクスチャ 2048*2048 3枚\n\nUnityパッケージを同梱しているので、直ぐに使い始めることができます\n\n※2枚目の使用例画像で併用したモデル\n剣：当工房製　Short Sword\nhttps://garden-of-ashen.booth.pm/items/1005619\n\nモデル：シンヤの模造武具 様 ブレイダーちゃん \nhttps://booth.pm/ja/items/954766","url":"https://booth.pm/ja/items/967079","offers":{"priceCurrency":"JPY","@type":"Offer","price":"300"},"image":"https://booth.pximg.net/c/620x620/719c3d6d-7dd0-4162-aa85-2ed21e39cf9a/i/967079/38f9d4f4-fcb5-4acb-acdb-2590c6e457c3_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "VRLEhGAH2KgMkcIwoqc0Kih9Tes9iXgERNBuMq6cZt4="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -371,6 +392,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"media","content":"\u003ciframe width=\"640\" height=\"480\" src=\"https://sketchfab.com/models/b060fb9205a746b081577a399d02045b/embed\" frameborder=\"0\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/RBH_16rHFhk\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"","content":"購入者のネ谷様から、レビュー動画を頂きました　ありがとうございます\n\n購入後にネ谷様自身による改造が行われております。\n\n以下、販売品との差異\n・盾の金属色が黒色（標準は一般的な鉄色）\n・盾の保持形式が手持ちに（標準は腕装着）"},{"type":"text","title":"武器説明","content":"バックラー（小型円盾）\n手で持つか、腕に装着して使う小型の盾。\n\n防御面積は小さいが、取り回しが良いので対個人の戦闘に有用。\n剣撃を受けたり、弾いたり、盾そのものを相手に押し付けるなど、多彩な使用方法がある。"},{"type":"text","title":"規約全文","content":"禁止事項\n１．自分以外の誰かがデータそのものをダウンロードし、購入者と同じ様に使えるようにする（横流しと転売）\n２．宗教、政治関係に使う\n３．特定の個人や団体への誹謗中傷をするのに使う\n\n※１の例外：誰かにカスタムテクスチャを依頼するのにデータを渡したい…時は相談して下さい\n\n許可事項\n・禁止事項に引っかからない全てのこと\n例：\n・キャラクターの装備品に\n・ワールドの装飾、ワールド配置の装備品に\n・データを活用して動画投稿、写真投稿（収益化も当然ok）\n・自分で改造して自分で使う\n・これを装備して、もしくはこれそのものになってVtuber的活動\n・その他色々…\n（当然ですが、R-18(G)的用途に関してはゾーニングをしっかりと）\n\n要するに\nデータの横流しと、良からぬ事に使わぬ限りどのように使っても自由、ということです！　分からなかったら聞いてね\n\n免責\n・本データを使用したことによる利用者の損害、被害に関し、作者は一切補償をしません\n・本データを使用した結果、利用者が他社に損害、被害を与えた場合、その責任は当該利用者にあるものとします\n\n最後に、強制ではないですが…\n動画を撮るときとか、作品を作るときとか、クレジットを残してくれると非常に嬉しい\n\nクレジット例\nモデルデータ：\"The garden of Ashen\"（作者：Ash）"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
