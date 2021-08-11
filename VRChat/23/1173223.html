@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "RiBrZIAJ+o7C79vANrCdhDTcUUDKkIZgf7B33w6+6Hc="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "RiBrZIAJ+o7C79vANrCdhDTcUUDKkIZgf7B33w6+6Hc="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"【VRChat向け】対人狙撃銃「ドレッドノート」","description":"ドレッドノート　紹介文\n\nVRChatでの使用を想定した、創作銃の「ドレッドノート」です。\n\nアバターに持たせるもヨシ、ワールドで使用するもヨシです。\n\n人に向けたりする際は相手を不快にさせないよう、確認を取ったうえでお願いします。\n\n※有料版と無料版で中身に違いはありません。\n\nポリゴン数：△5570","url":"https://booth.pm/ja/items/1173223","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"100"},"image":"https://booth.pximg.net/c/620x620/da4e30e9-04a4-47e9-a425-ac59c0d6a53d/i/1173223/01ab3b69-4995-4a9e-9ac0-d64659944ccc_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "RiBrZIAJ+o7C79vANrCdhDTcUUDKkIZgf7B33w6+6Hc="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -493,6 +514,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"ドレッドノート　紹介文","content":"VRChatでの使用を想定した、創作銃の「ドレッドノート」です。\n\nアバターに持たせるもヨシ、ワールドで使用するもヨシです。\n\n人に向けたりする際は相手を不快にさせないよう、確認を取ったうえでお願いします。\n\n※有料版と無料版で中身に違いはありません。\n\nポリゴン数：△5570"},{"type":"text","title":"内容物","content":"・UnityPackage\n　・FBXファイル(1個)\n　・テクスチャ(4枚)\n　・マテリアル(4個)+レンズ用の透明マテリアル\n　・UV配置画像(4枚)\n　・prefab(1個)\n　・改変参考画像(2枚)\n・readme(利用規約)\n"},{"type":"text","title":"利用規約","content":"〇\n・営利利用可\n・改変可\n・R-18,R-18G可\n・アバターペデスタル、アバタークローンでの配布可\n\n×\n・本データを無断で有料販売または配布(再配布)禁止\n・公序良俗に反する利用の禁止\n・政治的、宗教的な利用禁止\n・自作発言等禁止"},{"type":"text","title":"導入方法","content":"・zipファイルを解凍後、UnityPackageをUnity上にドラッグ＆ドロップ、もしくはImportPackageからUnityPackageを直接指定してください。\n・付属の「スコープレンズ(透明)」をスコープレンズのマテリアルに割り当てていただくと、スコープをのぞき込むことができるようになります。\n・その他、導入に質問等あればTwitterのほうに直接お問い合わせください。"},{"type":"text","title":"連絡先","content":"Twitter:DizumY(https://twitter.com/zuihocha)\nVRChatID:DizumY"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
