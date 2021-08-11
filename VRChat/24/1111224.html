@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "IV3qM1jhCgYba4IiwTkFGaJNWyXy1kydeRggROU3AQI="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "IV3qM1jhCgYba4IiwTkFGaJNWyXy1kydeRggROU3AQI="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"亜久涼子(アクリョーコ) / Ryoko Aku【3Dモデル】","description":"『霊生を謳歌する悪霊』がコンセプトのオリジナル3Dモデルです。\nVRMファイル付き！\n\nSNS推奨ハッシュタグ: #RyokoAku\n\n☑obakeムーブとは: https://twitter.com/NamaeWatashino/status/1092789099650404353\n\n⚠Unitypackageインポート前に⚠\n事前に以下のAssetsをプロジェクト内にインポートしておいてください。\n・ReflexShader2.0\n・DynamicBone\n\nℹVRChatへのアバターアップロード手順：\nhttps://www.pixiv.net/fanbox/creator/17346029/post/572964\n\n - - -\n\nIt is an original 3D model with the concept of \"Evil spirits who enjoy the ghost life\".\nWith VRM file!\n\nRecommended hashtag for SNS: #RyokoAku\n\n☑What is obakeMove: https://twitter.com/NamaeWatashino/status/1092789099650404353\n\n⚠Required asset⚠\nYou need these assets.\n・ReflexShader2.0\n・DynamicBone\n\nℹHow to upload an avatar to vrchat (Japanese):\nhttps://www.pixiv.net/fanbox/creator/17346029/post/572964","url":"https://booth.pm/ja/items/1111224","offers":{"priceCurrency":"JPY","@type":"Offer","price":"3000"},"image":"https://booth.pximg.net/c/620x620/1154c32c-e4a4-4167-b688-5231756d79b1/i/1111224/6f150615-939b-481b-a716-5b83fe1e9659_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "IV3qM1jhCgYba4IiwTkFGaJNWyXy1kydeRggROU3AQI="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -712,6 +733,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"media","content":"\u003ciframe width=\"500\" height=\"500\" src=\"https://hub.vroid.com/characters/3542906769256865654/models/7635061920011016960/embed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\" allow=\"xr-spatial-tracking\"\u003e\u003c/iframe\u003e"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/z6WTztle3w4\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"☑ 試着可能ワールド (Try-on worlds)","content":"VIRTUAL MUSEUM A\nHIMIKO AVATAR WORLD\nHIMIKO AVATAR WORLD ˸ QUEST\nVKET3 QUEST\nCROSSMARKET"},{"type":"text","title":"☑ 更新履歴 (Change log)","content":"- 2019/9/9 v2.1.1\n　・利用規約を一部改定しました。\n\n- 2019/04/11 v2.1.0\n　胸部の重複頂点が削除されていないミスを修正しました。\n　スキンウェイトの一部を修正しました。\n　Oculus Quest版を想定した5,000未満ポリゴンFBXファイルを同梱しました。\n\n- 2019/03/29 v2.0.2\n　スキンウェイトの一部を修正しました。\n\n- 2019/03/07 v2.0.1\n　・シェイプキー\"mouthTongue\"にて無関係な頂点が移動していたミスを修正しました。\n\n- 2019/02/12 v2.0.0\n　・Emote『obakeムーブ(obakeMove)』を追加しました。\n　・頭部の過剰なポリ割を修正し、ポリゴン数を削減しました。\n　・表情バリエーションに \"飾り目\" を追加しました。\n　・頭部の大きさを約97.7％に小さくしました。\n　・全てのメッシュを一つに統合しました。\n　・\"deredere\" を削除しました。\n　・星とハートを作り直しました。\n　・星とハート、渡篠式頬の有無はシェイプキーでの制御になりました。\n　・テクスチャ(UV)の一部を変更しました。\n　・テクスチャPSDファイルのガイドレイヤーを一部変更しました。\n　・目のボーン位置を修正し、視線移動をわかりやすくしました。\n　・Poor回避のため一部ボーンを削減しました。\n　・Poor回避済みのためPoor回避版モデルを削除しました。\n　・腕と袖の境目のトポロジーを一部変更しました。\n　・スキンウェイトを修正しました。\n　・アニメーションオーバーライドのバリエーションを一部変更しました。\n　・Dynamic Bone の構成を一部変更しました。\n\n- 2018/12/22 v1.1.0\n　・RyokoAku-nonPoor\n　　・Overall Performance がPoorになりにくいモデル・PrefabをPackageに同梱\n　　　（VRC_Avatar_DescriptorのDefault Animation Set が Male になっています）\n\n- 2018/12/01 v1.0.1\n　・RyokoAku\n　　・腰のスキンウェイト塗り忘れを修正\n　・Texture\n　　・ガイドレイヤーを一部修正\n\n- 2018/11/26 v1.0.0\n　・販売開始"},{"type":"text","title":"☑ 3Dモデル情報 (3D model info)","content":"Ver.2\n[RyokoAku.fbx]\n・Polygons: △6,611\n・Materials: 3 \n・Shape keys: 34 （Lipsync: 15, Blink/Eye tracking: 4, Facial: 15）\n\nVer.1\n[RyokoAku.fbx]\n・ポリゴン数: △11,702\n・マテリアル数: 3 \n・シェイプキー: 30 （リップシンク: 15, 瞬き・アイトラッキング: 4, 表情: 11）\n[RyokoAku-nonPoor.fbx]\n・上記ポリゴン数、マテリアル数、シェイプキー数は変わりませんが、ボーン数を減らしています。\n　（削除したボーン：両手の第2関節以降、両腕のリボン）"},{"type":"text","title":"☑ 利用規約・免責事項 (License / Disclaimer)","content":"著作権の譲渡・破棄は行っておりません。\nCopyrights are not transferred or abandoned.\n\nこのアバター・3Dモデルの使用により使用者側に不利な出来事（損害・事故）が生じた場合、それがいかなるものであっても制作者および配布元は一切責任を負いません。\nIf an adverse event (damage or accident) occurs on the user side due to the use of this avatar or 3D model, the producer and distributor will not be liable for any matter.\n\n　【許可】\n　・改変\n　・商用利用\n　・暴力・性的表現\n　・VRChat以外の媒体への使用\n　　（VirtualCast配信、動画・配信による撮影、ゲーム内組み込み等）\n　・二次創作物の作成、販売および譲渡\n　 　（グッズ・フィギュアなどの立体物には個別に許諾が必要です）\n　\n　【禁止】\n　・第三者がモデルデータを用意に読み込める形式での二次配布\n　　（無改変・改変済問わず）\n　・アバターペデスタルによる配布\n　　（無改変・改変済問わず）\n　・本モデルを使用した特定個人や団体への誹謗中傷、名誉毀損、脅迫行為\n\n　[Permission]\n　・Modification\n　・Commercial use\n　・Violent, Sexuality acts\n　・Use for media other than VRChat\n　　(Use for VirtualCast, Video production, In-game integration, etc..)\n　・Creation, sale and transfer of secondary creations\n　　(A separate permission is required for 3D object such as goods and figures)\n　\n　[Prohibition]\n　・Secondary distribution in a form that third party can easily read model data\n　　(Whether unmodified or modified)\n　・Distribution by avatar pedestal\n　　(Whether unmodified or modified)\n　・Act that slander, libel, or threaten to specific individuals and organizations using this model\n\nその他不明点がございましたら下記連絡先までお問い合わせください。\nPlease contact me if you have any other questions."},{"type":"text","title":"☑ 連絡先 (Contact)","content":"Website: https://watashino.me\nTwitter: https://twitter.com/NamaeWatashino\n\nYouTube: https://youtube.com/c/NamaeWatashino\n\nFANBOX: https://pixiv.net/fanbox/creator/17346029\nBOOTH: https://namaewatashino.booth.pm"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
