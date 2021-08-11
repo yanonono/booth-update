@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "KLdGdS1g9upZStj2P4R+4iefOp/U/EPbdqNVG9wsW/k="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "KLdGdS1g9upZStj2P4R+4iefOp/U/EPbdqNVG9wsW/k="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"Short Sword（小型片手剣）【無料版あり】","description":"累計売上５桁を記念して制作したオーソドックスな小型の片手剣です。\nSketchfabで3Dモデルの閲覧ができます。\n\n今回は記念品ということで無料版もご用意しております。是非一度、お試しください\n無料版でも制限はありません。有料版同様の規約に則ってご利用いただけます。\n\n※通常版と投げ銭版の内容は(規約含めて)完全に同一です　間違えましても、返金には応じられませんので、ご注意ください。\n\nNew!：VCI版も公開しました　主にvキャスで使用可能です\nhttps://seedonline.jp/products/6b45e4b07301f0a738ccfcd5d1d0eb7855539a50f8bf7cb23d79ac75485c0e87 ","url":"https://booth.pm/ja/items/1005619","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"100"},"image":"https://booth.pximg.net/c/620x620/719c3d6d-7dd0-4162-aa85-2ed21e39cf9a/i/1005619/ec1f118a-9c8c-4013-bb71-7613f9029fc3_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "KLdGdS1g9upZStj2P4R+4iefOp/U/EPbdqNVG9wsW/k="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -410,6 +431,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"導入前に","content":"・設定済みシェーダーはStandardのみです。\nトゥーンシェーダー使用時はMatcapや、質感を焼き込んだcolorマップなどを用いて設定するのがおすすめです。\n\n・利用規約をお読みの上、ご利用ください。簡易一覧はサムネイルの最後に載せている他、全文は下記URLに掲載しています。\nhttps://drive.google.com/file/d/1F12Wh3XFvpceoJhHEK12fEd0DbdwjIPs/view?usp=sharing"},{"type":"media","content":"\u003ciframe width=\"640\" height=\"480\" src=\"https://sketchfab.com/models/24be45efcaed4df3a58c67e65b0bc6b9/embed\" frameborder=\"0\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"更新履歴","content":"version 1.0\nリリース\n\nversion  1.1\n(不具合修正)：エクスポートしたUnity PakageにTrail Rendererの設定が入っていたなかったのを修正\n\nversion 1.2\n(改善)：Trail Renderer入りのデータをsceneデータからprefab化\n(追加)：トレイル入りデータの使用方法を記載\n\nversion 2.0（現行）\nリファイン\n・メッシュの形状、法線を改良\n・テクスチャをメッシュ形状に合わせて生成\n\nVersion2.0からVN3ライセンスを使用しています Version2.0の使用から当該規約が適用されます。"},{"type":"text","title":"武器説明","content":"訓練兵や、新兵に最初に送られるごく一般的な片手剣。\n\n「特長が無いことが特徴」を地で行く形状。だがこれは癖が無く扱いやすいということでもあり、熟練兵の中にも使う者は多い。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
