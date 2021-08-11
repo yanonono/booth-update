@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "UHtrVn5AixUo6/rNNi1TmIiDn9bCdnTuUDQbamiU8So="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "UHtrVn5AixUo6/rNNi1TmIiDn9bCdnTuUDQbamiU8So="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"VRC用　恋人（とか）と一緒だとハートが出るアクセサリ","description":"他人の迷惑にならない様に、時と場所を弁えて使ってください。\n参考動画（https://twitter.com/kazenainannna/status/1068838178633609216）\n\n画像付きの説明PDFを追加しました。","url":"https://booth.pm/ja/items/1126930","offers":{"priceCurrency":"JPY","@type":"Offer","price":"500"},"image":"https://booth.pximg.net/c/620x620/4367a840-2f6a-4ba3-b547-41699c7045cb/i/1126930/9b2440a3-4223-4711-a1c3-e61074fdf031_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "UHtrVn5AixUo6/rNNi1TmIiDn9bCdnTuUDQbamiU8So="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -447,6 +468,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"・概要","content":"\n特定の人物と一緒だとハートマークが出るアクセサリです。\nこのアクセサリの機構を二人とも導入し、特定のキーとパス番号を設定することで、正しいキーとパス番号を持っている人と同じワールドにいる場合、ハートマークが現れます。\n\nカメラを使用して人物の判定をしているためフレンドにしか変化は見えません。"},{"type":"text","title":"・内容","content":"\n（メイン）特定の人と一緒にいるとハートが現れるアクセサリのshader(GPUP_Hart)\n（おまけ）特定の人と一緒にいると見えるようになるUnlitShader(TwoManAliveObject)\n"},{"type":"text","title":"・注意事項","content":"前提：\n1.　（二人で使用する場合）お互いにこのパッケージをインストールしている事。\n2.　お互いに鍵、鍵穴、パス番号を相談して設定する事。\n\t　　が必要です。\n\nまた同じサイズの鍵、鍵穴が複数あるとうまく動作しません（パターンは2500種類あるので基本的には大丈夫だと思います）\n\nカメラを使用してるのでフレンド以外には変化が起こりません。\nワールドの設定等によっては上手く動作しない場合があります。\n機構を組み込んだ物なので普通のアクセサリと比べると重たいです。"},{"type":"text","title":"・機構説明","content":"この機構は、鍵(key)、鍵穴(keyhole)、アクセサリ本体(Hart)で構成されています。\nまた、鍵は要素として、鍵の大きさ(KeySizeX,KeySizeY)、出力パス番号(OutPassNumber1,2,3)を持ち、\n鍵穴は要素として鍵穴の大きさ(Size)を、アクセサリはパス番号(PassNumber1,2,3)\n\nあなたの持つ鍵は、（そのワールド内にある）あなたの鍵と同じサイズを持つ鍵穴（相手の鍵穴）に自動的に刺さり、\nあなたの鍵に設定された出力パス番号を入力します。\n\nこのパス番号が相手のアクセサリに設定されていたパス番号と一致している場合、相手の鍵が解除され、\n相手の持つアクセサリがハートになります。\n\n同様に、あなたの持つ鍵穴と同じサイズで、あなたのアクセサリに設定されたパス番号を入力する鍵がワールドに現れた場合、\nあなたの持つアクセサリがハートになります。\n"},{"type":"text","title":"　","content":"改造等は自由にしていただいて構いませんが、再配布等は不可とさせていただきます。\n\n他人の迷惑にならない様に使用してください。\nまた利用は自己責任とし、トラブルが発生した場合でも一切の責任は負いかねます。\nまたVRCの仕様変更により機能が使えなくなった場合、製作者は責任を負いません。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
