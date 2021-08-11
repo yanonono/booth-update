@@ -58,6 +58,16 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "TA0/8EIT1dQXpUkEFLzED75eur2UQ5ghjgNlsyX8A+o="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
   </head>
   <body>
     <div class="mini-player-controller" style="display: none;">
@@ -86,6 +96,13 @@
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "TA0/8EIT1dQXpUkEFLzED75eur2UQ5ghjgNlsyX8A+o="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"【VRC想定】抱き枕(北島デザイン・改変用デザイン)【アバター・アクセサリ両用】","description":"--2018/8/30更新しました。(Updated!)--\nReadMe!!!に、\n・ノーマルマップに関する記述\n・よくあるかもしれない質問\nを追加しました。\n！！！今までUnityパッケージとして配布していたものがUnityシーンファイルでした！！大変ご迷惑をおかけしました。！！！\n今回修正しました。ファイル名は同じですので、そちらからインポートしてください。\n----\n抱き枕(北島デザイン・改変用デザイン)\n\n北島(製作者のキャラクター)のデザインの抱き枕の3Dモデル(FBX)と、カスタムしやすいカバー用画像のセットです。\nまとめたものをUnityPackageにして同梱しています。\n3Dモデルは△480ポリゴンです。\n\n以下の文章はフォルダ内のRead Me!!!とほぼ同内容です。\n\nzipファイルとなっておりますので、ダウンロード後は各自で解凍をしてください。","url":"https://booth.pm/ja/items/933357","offers":{"priceCurrency":"JPY","@type":"Offer","price":"200"},"image":"https://booth.pximg.net/c/620x620/13868100-3507-4382-85a7-a21c6138b840/i/933357/8acfcc37-8a50-462b-be29-9fc78b3983c9_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -93,6 +110,10 @@
     rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "TA0/8EIT1dQXpUkEFLzED75eur2UQ5ghjgNlsyX8A+o="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -417,6 +438,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"規約　Terms","content":"このデータをご利用いただいた時点で、以下のことは禁止といたします。\n1. これらのファイルの再配布(ここでは「誰もがダウンロードできるようなサイトなどにこれらのファイルをアップロードすること」)\n(ただし、後述する「Flont・Back」の素材を利用して作った抱き枕デザインのみはお好きなように配布可能です。)\n\nそれ以外はOKです！\n例: これらのファイルの改変・収益化コンテンツでの利用(ただしデータそのものを再配布しない形で)　など…\n\nもし違反行為があった場合は私にご連絡ください(Twitter:@Nani_Kitaまたは@Nanigashi_vrc)。\n\nI prohibit the following thing:\n1. Distributing these files to websites etc. so that everyone can download them regardless of charge or free  of charge\n*But if you make your original dakimakura illustration by editing files named \"Flont/Back\"(described later), It is only distributable.\n\nThe other things are all OK!\nExample: Editting these files / Using these in the monetized contents(without violating avobe promise) etc... ok!;)\n\nIf you find someone's do a violation, contact me(Twitter:@Nani_Kita or @Nanigashi_vrc) and I'll take a fine from him."},{"type":"text","title":"内容物　Contents","content":"フォルダ内には製作者(Nanigashi Kitajima)の抱き枕のUnityパッケージが入っているほか、(DakimakuraKitajima) \u003c-Unity Package of my original dakimakura\n自分オリジナルの抱き枕を作れるように、抱き枕の表裏のテクスチャ用画像と、(Flont / Back) \u003c-texture images for your dakimakura (Make your character images fit within the frame of the texture images)\n改変可能な抱き枕の3Dモデル、(Dakimakura.fbx) \u003c-3D model of dakimakura\nそのテクスチャ用に作られたもう一つのUnityパッケージ、(YourOriginalDakimakura) \u003c-Unity Package for your dakimakura\nそして本文が入っています。(Read Me!!!) \u003c-this notice\n気が向けば今後のアップデートで抱き枕の新規デザインを作る可能性があります。なるべく頑張ります。"},{"type":"text","title":"留意点　Points to remember","content":"\"DakimakuraKitajima\"では、若干ゃ両面のテクスチャのスケールが異なります(最初に抱き枕を作った際に裏表でキャラクターのサイズを統一しなかったため)。デザイン可能な抱き枕では修正済みですので支障はありませんが、念のためご了承ください。\n\nThere are differences in scale between the texture images of my original dakimakura. But there is no hindrance in using it and editing YourOriginalDakimakura. Please don't mind!\n\nちなみに、この抱き枕の3DモデルはHumanoidボーン及び5種類のモーフ変形に対応しています。\nHumanoidを無効にする際は、Unityにて3Dモデルを選択し、rigのタブでAnimation typeをHumanoidからGenericに変更してください。\nモーフ変形については、リップシンク等に利用することができます。お好みの変形をお楽しみください。\n\nThe 3D model has Humanoid Bones and 5 types of morphing.\nIf you don't like living dakimakura, please change Animation type from Humanoid to Generic.\nThe morphings can be used for Lip Sync etc.\nHave a fun!\n\nあと、このモデルにはノーマルマップが適用されています。UnityPackage内の「siwa」がそれです。これはCC0 Texturesというサイトのもので(https://cc0textures.com/home)、自由に利用が可能です(siwaはUnityの自動加工でノーマルマップ用に加工済み)。\nこちらも布の質感を出すために使用していますが、無効にしたり、他のものに変えたりなど自由に行ってください。\n\nA normal mapping is applied to this 3D model beforehand. \"siwa\" in the UnityPackage is that. It is from CC0 Textures.\nYou can remove or change it too if you don't like it!"},{"type":"text","title":"FAQ","content":"Q.ほんとになにやってもいいの？\nA.いいです！再配布以外なら何をしてもいいです。\n例えばサイズ変更とか、シェーダーやテクスチャをいじったりしてOK。フォルダ内のすべての改変がOKです。\nまた、アバターとして使ってもヨシ(ヤベーやつオーラを出そう！)、すきなコのデザインにして身につけるもヨシ(スタンダード)！抱き枕をふんだんに使って抱き枕モンスターを作るもヨシです！\n具体的な使い方を明記していないので、せっかく買っていただいたからには再配布さえしなければかなり自由に使ってほしいです。\n\nQ.ダイナミックボーンって使える？\nA.Humanoidボーンが入っているため、理論上は使えるはずです。ただ、製作者がダイナミックボーンを所有していないので、設定の方法については各自で情報を集めていただきたいです。申し訳ありません。\nまた、この抱き枕の有用な活用方法、疑問点などは自由に情報発信、拡散していただいて構いません。\n\nQ.動画に使っていい？\nA.どうぞ！データそのものの再配布さえしなければ、自他・有償無償問わずあらゆるコンテンツに利用可能です。\n\n-----\n\nQ.Really I can do anything against these files?\nA.Yes! You can do anything other than DISTRIBUTING...\nFor exampke,ofcourse changing size of model, shader, textures, etc., and editing these files are ok too.\nOr, using as your avater, wearing on your avater, making your avater from these files.... are OK.\n\nQ.Can I use Dynamic bones?\nA.Because it contains Humanoid bones, it should be theoretically usable. However, since I don't own the Dynamic bone, I would like you to gather information on how to set it by yourself. I'm sorry.\nIn addition, you can freely disseminate information and spread it, as to how to use this dakimakura usefully, questionable point etc. freely.\n\nQ.Can I use the dakimakura for my videos?\nA.OK!!! Unless you distribute the data itself, you can use it for any content regardless of your own or other, free of charge or charge."},{"type":"text","title":"ご注意　Please notice","content":"最後に、製作者は、あなたがこのデータを利用して問題を起こした場合、いかなる責任も負うことはありません。\n\nI don't assume any responsibility if you cause problems by using these files."}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
