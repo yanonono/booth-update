@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "rOOmoYYg+ei1bEJRuQW3FXhRf3r/mhKQ8mRh19VZRG4="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "rOOmoYYg+ei1bEJRuQW3FXhRf3r/mhKQ8mRh19VZRG4="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"AMBLE（Ver.VR）","description":"*************更新情報************\n12/04/19\n・背骨のウェイトを塗り直しました\n・VRChat用パッケージにark toon shader \n　(https://packetbird.booth.pm/items/1027997)\n　を適用させました\n03/04/19\n・Unity Package内からVRChat SDKを削除しました\n*********************************\n\n※本製品はオリジナル3Dモデルです※\n\n連絡・ご要望等は下記まで\n\nいかにんじゃtwitter\n@Unc_leSquid\n\nいかにんじゃmail\nikaaki1988@gmail.com","url":"https://booth.pm/ja/items/1296196","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"100"},"image":"https://booth.pximg.net/c/620x620/5f802286-f731-4e78-a5a8-1a9b511da2da/i/1296196/31e74c80-6551-4bf1-9a0c-9d93f88ab100_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "rOOmoYYg+ei1bEJRuQW3FXhRf3r/mhKQ8mRh19VZRG4="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -437,6 +458,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"■A.M.B.L.E.について■","content":"「Advanced MoBile Life Expander （次世代の生活空間拡張用機動端末）」は、高齢者や傷病者等、自由に立ち歩くことが困難な方のために開発された、遠隔操作できる人型端末です。\n　頭部内蔵カメラ、マイクにより周囲の状況をリアルタイムで確認できるほか、VRデバイスを併用することで、まるで現地にいるかのような没入感を味わえます。\n　外装に抗菌プラスチックを使用していますので、丸洗いも可能です。\n"},{"type":"text","title":"■A.M.B.L.E.（Ver.VR）について■","content":"「A.M.B.L.E.（Ver.VR）」はVR空間における社会的・文化的活動を促進する目的で制作された人型アバターです。\n　個人様法人様どちらでもご利用いただけます。\n　性別・人種にとらわれずどなたでもご利用いただけるようプレーンなデザインとなっております。\n\n※ウェイトペイントの塗り直し等、製品の改善にご協力下さると助かります\n　\n\n※A.M.B.L.E.が技術上開発困難につき、3Dモデルを先行配布させていただきます。\n"},{"type":"text","title":"商品内容","content":"\n●「A.M.B.L.E.」(.fbx)\n\n・三角ポリゴン数　15234\n\n・リップシンク（カメラ明滅）搭載\n  「neck」オブジェクト内「eye」マテリアルに割り当ててありますので、改変の際はご注意下さい。\n\n・オブジェクト総覧\n　neck　   ：頭部パーツです(eyeのマテリアルはこの中に含まれます)\n　joint　  ：関節等、黒いパーツです\n　balljoint：関節のうち球体関節になっているパーツです\n　buttery　：胸部の箱状パーツです\n　others　 ：外装の白いパーツです\n\n\n\n●「A.M.B.L.E.forVRchat」(UnityPackage)\n\n・三角ポリゴン数　15234\n\n・リップシンク（カメラ明滅）搭載\n  「neck」オブジェクト内「eye」マテリアルに割り当ててありますので、改変の際はご注意下さい。\n\n・VRChatではこのままご利用いただけます\n\n・フルトラッキング対応済\n\n\n\n●テクスチャ（.png）\n\n・Png形式で収録されています\n\n・各部位につき1枚となっておりますので改変の際はご注意下さい"},{"type":"text","title":"利用規約","content":"ご利用の前に必ずお読みいただき、ご確認の上でのご購入をお願いいたします。\n\n\n□ 営利利用: 可能 　 \n\n□ 改変: 可能 \n　配布・販売も可能ですが、例外なくいかにんじゃの許諾が必要です。\n\n□二次創作：可能 \n\n□ R-18, R-18Gコンテンツでの利用: 可能 \n\n□ 当モデルデータそのものを再配布することを行為を禁止いたします。 \n\n□ 政治、宗教活動、他者に対する誹謗中傷目的での使用を禁止します。\n\n□利用者はこの規約で許諾した権利を第三者に再許諾することはできないものとします。 \n\n□ 本モデル、改造モデルを使用することによって生じた何らかのトラブル、損失に対しいかにんじゃは一切責任を負わないものとします。\n\n□配布物は明示、黙示の有無に関わらず、いかにんじゃが提供した時点において保有する状態で提供するものであること \n\n□配布物のエラーやバグ、不具合、その他瑕疵が無い事について、いかにんじゃは一切保証しません \n\n□利用者が予定している目的への適合性、有効性、セキュリティ、権限、非侵害性及び正確性等についていかにんじゃが一切保証しません \n\n□いかにんじゃは当規約を変更できるものとします。 また、規約を変更する場合変更内容をいかにんじゃが定める任意の媒体において掲載する方法により利用者に通知するものとします。当該変更通知後、利用者が規約を利用したことをもって変更後の利用条件に同意したものとみなします。 \n\n□規約違反者の対処 \n第一条：いかにんじゃは利用者が本規約に違反した場合もしくはその恐れのある場合、または利用者による本規約に該当する配布著作物の利用に関し第三者からクレーム・請求等がなされ、かついかにんじゃが必要と認めた場合にのみ、利用者に対しその調査の協力を求めることができ、利用者はこの調査への協力に同意するものとします。 　\nまた、その他の理由で必要と作者が判断した場合、当該利用者に対し、以下のいずれか、または複数項の措置を組み合わせて講ずることがあります。 　\n1.規約等に違反する行為またはそのおそれのある行為を止めること、および同様の行為を繰り返さないことを要求します。 　\n2.第三者との間で、クレーム・請求等の解消のための協議を行うことを要求します（裁判外紛争解決手続を含む）。 　\n3.利用者が発信または表示する情報の全部もしくは一部を削除及び削除要請を行います。 　\n4.その他、法令に基づき必要と判断する対応を行います。 \n第二条：いかにんじゃは第一条への協力に基づき、利用者自身による以下の行為を許諾します 　\n1.本規約に違反する個人や団体、またはそれに類するものを任意の環境で確認した場合、作者及び利用者本人の判断によってのみ、該当環境を管理または運営する組織並び個人へ、本規約に反する行為を行っている者が存在する旨を通知すること 　\n2.利用者が前項の行動を予定する場合、当規約の各条項および該当する法令にのみに従いそれを行うこと 　\n3.いかにんじゃは本条に定める措置を講ずることにつき何ら義務を負うものではなく、また当該措置に起因する結果に一切の責任を負いません。 "}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
