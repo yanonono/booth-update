@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "LAKc9PUe+yTlqpDNAlB49495w6kK+ADLHhj8x7wjgLY="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "LAKc9PUe+yTlqpDNAlB49495w6kK+ADLHhj8x7wjgLY="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"雲上シェーダー【Unity／VRChatで使える】","description":"VRChat でも使える、床面を変形して雲上を再現するシェーダーです。","url":"https://booth.pm/ja/items/1060708","offers":{"priceCurrency":"JPY","@type":"Offer","price":"0"},"image":"https://booth.pximg.net/c/620x620/1923aa83-c3b9-459f-a239-94c25ca49fb5/i/1060708/364a354f-a823-4377-a65c-a2408c8195ff_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "LAKc9PUe+yTlqpDNAlB49495w6kK+ADLHhj8x7wjgLY="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -377,6 +398,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"雲上シェーダー Unity パッケージ／Heaven Shader Unity Package","content":"床面を変形して雲上を再現するシェーダーとそれをアタッチした Plane プレファブがセットになった Unity パッケージです。\nC# スクリプトを使用せずに実装されているので、VRChat のワールドにも組み込み可能です。"},{"type":"text","title":"セット内容","content":"・HeavenShader.unitypackage\n→ 雲上シェーダーとそれをアタッチした Plane プレファブなどをインポートできる Unity パッケージです。\n\n・Readme.txt\n→説明書です。"},{"type":"text","title":"ご利用の前に","content":"本パッケージのご利用には、ゲームエンジンの Unity が必要です。\nまた、VRChat ワールドへと組み込む場合には、別途 VRChat 公式のアバター／ワールド作成用 Unity パッケージが必要です。\nUnity の基本的な使い方や、Unity を利用した VRChat のワールド作成方法については、本ドキュメントでは説明しません。\nそれぞれ公式のドキュメントをご参照ください。"},{"type":"text","title":"ご利用方法","content":"Unity から HeavenShader.unitypackage をインポートしてご利用ください。"},{"type":"text","title":"Shader プロパティ―（設定項目）について","content":"・Albedo (RGB)\n→ 基本のテクスチャーです。\n・Cloud Resolution\n→ 雲の細やかさです。\n・Cloud Height\n→ 雲の高さです。\n・X Speed\n→ 雲が X 軸方向に流れるスピードです。\n・Y Speed\n→ 雲が Y 軸方向に流れるスピードです。"},{"type":"text","title":"ご利用条件","content":"個人利用、商用利用問わず、特に制限はございません。\nパッケージの改変、および改変したパッケージの再配布もしていただいて構いません。\n\nただし、本パッケージをそのままの形で、ご自身が作成されたかのように偽って配布することだけはご遠慮ください。\n\nまた、ご利用される際のクレジット表記は不要です。\n改変したパッケージを再配布される場合などは、引用元として紹介していただけると嬉しいです。\n\n無償で提供しておりますが、著作権の放棄はしておりません。\nご利用条件について、不明な点、ご心配な点がございましたら、後述の連絡先までご連絡ください。"},{"type":"text","title":"免責事項","content":"・Xin Games は、利用者が本パッケージを使用し、または第三者に提供することによって生じるいかなる損害に対しても一切責任を負いません。\n・本パッケージは、そのサポート及び提供を予告なく中止することがございます。\n・ただし、本パッケージのサポートや提供が中止された場合も、すでに使用されている利用者は、本パッケージを継続して使用できます。\n・ご利用条件や免責事項などは予告なく変更する場合がございます。"},{"type":"text","title":"連絡先","content":"Twitter\nhttps://twitter.com/Xin_Games"},{"type":"text","title":"履歴","content":"2018/10/20 Ver1.00\n・アップロード"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
