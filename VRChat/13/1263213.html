@@ -59,9 +59,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "b1LsQDe9rAA1agTV1tvnK8k/7VeI/EwZNg0I1zPPbpU="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "b1LsQDe9rAA1agTV1tvnK8k/7VeI/EwZNg0I1zPPbpU="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"[VRChat] Engel Effect Pack (ワイヤーフレームシェーダー付)","description":"エフェクト3点（白い羽、パーティクル、天使の輪）の詰め合わせです。天使の輪はほぼおまけです。ブースで使用していたワイヤーフレームシェーダーをさらにおまけで入れています。\n\nunitypackege形式で配布しています。基本的にはVRChatでの使用を想定していますが、ほかの用途で使用してもかまいません。\n\n※(2019/3/10) 白い羽にColliderがついていたことにより意図しない挙動を引き起こすバグを修正しました。すでに購入された方には、ご迷惑をおかけして大変申し訳ありません。再度ダウンロードをお願いいたします。\n※(2019/3/13) 白い羽を細かくカスタマイズできるようにアップデートしました。また、一部のワールドで白い羽が光りすぎてしまう問題が報告されています。必要ならWingShaderのBrightnessの値を小さくしてみてください。","url":"https://booth.pm/ja/items/1263213","offers":{"priceCurrency":"JPY","@type":"Offer","price":"300"},"image":"https://booth.pximg.net/c/620x620/6bb945b6-60a3-4e57-9454-44e6bfd4032b/i/1263213/9052e7a2-e3bc-49ca-bb95-50b512bea679_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -72,6 +89,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "b1LsQDe9rAA1agTV1tvnK8k/7VeI/EwZNg0I1zPPbpU="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -390,6 +411,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"利用方法","content":"それぞれ大きさと位置を調節してお使いください。\n\n・白い羽\n羽は主にシェーダーで作られており、時間に応じて形状が変化します。WingShaderのパラメータを設定することでカスタマイズが可能です。\n  - Direction：羽の向きや形状を変化させられます。羽をクロスさせたりもできるのでいろいろと試してみてください。\n  - Width：羽の付け根の太さを変えられます。\n  - Brightness：羽の明るさの調整ができます。\n  - Blink：羽の点滅をOn/Offできます。\n  - Wingbeat：はばたきの動きをOn/Offできます。\n  - WingbeatOffset：はばたきにオフセットを加えます。WingbeatをOffにした際に、羽の形状をはばたきの途中の形状に固定したい場合に使うといいと思います。\n\n・パーティクル\nパーティクルシステムとトレイルを利用しています。変な方向に曲がるのが嫌な方はパーティクルシステムでNoiseのチェックを外してください。\n\n・天使の輪\nトレイルレンダラーを付けたオブジェクトをアニメーションでぐるぐる回しているだけのほぼおまけです。\n\n・ブース（ワイヤーフレームシェーダー使用）\nおまけその2。バーチャルマーケット出展時のブースです。自作のワイヤーフレームシェーダーを利用しています。シェーダーのWidthを変更するとワイヤーフレームを太くしたり細くしたりできます。\nこちらのシェーダーをアバターに使用したい場合は、WireframeMaterialをコピーして、お使いのアバターのマテリアルと入れ替えるなどしてください。"},{"type":"text","title":"注意点","content":"・天使の輪\nアバターにつけた場合、アバターに合わせて輪っかが動くと、トレイルが動くため、円形が崩れます。残念ながら仕様です。この点、ご納得された方のみ購入するようにお願いいたします。"},{"type":"text","title":"利用規約","content":"・商用利用可\n・改変可\n・シェーダーの解析など可\n・改変なしでの再配布禁止\n・改変したものの再配布可（ただし、利用した旨の記載を推奨）\n\n再配布のみ禁止ですが、それ以外は基本的にはお好きに行ってください。\n改変したものを再配布する場合は、利用した旨をどこかにご記載いただけると嬉しいです(が、どうしてもご面倒だと感じる場合は不要です)。\nなお、改変の有無に関わらず、利用するだけなら、記載や報告の必要はありません。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
