@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "MRb/1qz4fF+9+eonNAfISRr72L8ntFsKqVw8IvL4zG4="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "MRb/1qz4fF+9+eonNAfISRr72L8ntFsKqVw8IvL4zG4="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"【3Dモデル】AZインフィニティ　スターターパック","description":"架空自動拳銃　AZインフィニティ　の三種類のバリエーションを纏めたVRChat向け3Dデータになります。\n\nポリゴン数　 / マテリアル数：\n\nStandard ▽9776 / 14\nCarry  ▽9896 / 14\nTactical ▽12674 / 14\n\n*全パーツ搭載時の数値になります。\n\n\nバーション1.1へのアップデート：\n\n・スタンダードモデル、タクティカルモデル、角の変な歪み（最後の画像オレンジ丸を付けているところ）がついてしまう問題を修正しました。伴いポリゴン数をちょっとだけ増加しました。\n\n・キャリーモデルのプレハブ、イジェクターのアクティブ設定が左右逆になってしまう問題を修正しました。\n\nお手数ですが再ダウンロードお願いします。\n申し訳ございませんでした。","url":"https://booth.pm/ja/items/1236309","offers":{"priceCurrency":"JPY","@type":"Offer","price":"3000"},"image":"https://booth.pximg.net/c/620x620/5e441304-d175-4dfe-a078-a33651e7e74d/i/1236309/0a48aeb7-9dbb-49fa-a9f6-0f260887a9fd_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "MRb/1qz4fF+9+eonNAfISRr72L8ntFsKqVw8IvL4zG4="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -529,6 +550,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/6mkrruXM6F0\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"AZインフィニティとは","content":"AZ社によって開発された自動拳銃、数々のリアル名銃の良い所を取り、\nモジュラー式構造で射手のオーダーに応じて様々な組み合わせが可能で、\nカスタム性に富んでいる。社名を馴染んで「無限」の意味を持つ。\nスライドは後加工を施すことが前提のため、素でなにも施されない。\n各モデルのアイアンサイトに光反射対策、ゼロインなど最初から考慮されており、パーティクルを撃つ時の使いやすさや、狙いやすさをトップクラスまで高めている。\n\n\n想定性能（スタンダードモデル）\n\n口径\t9mm / .40\n銃身長\t115mm\nライフリング\tなし\n使用弾薬\t9x19mm / .40S\u0026W\n装弾数\t13 / 11 発（標準弾倉） 15 /13発（タクティカル）\n作動方式\tシングルアクション\nティルトバレル式ショートリコイル\n全長\t210mm\n重量\t720g（銃本体のみ）\n銃口初速\t*パーティクルによる\n有効射程\t*パーティクルによる"},{"type":"text","title":"AZとは","content":"読み方：あぜっと、あーず、えいぜっと\n\nバーチャル銃器モデルメーカー。\n主にバーチャル民向けの銃器を開発している。\n社名は、AからZまで最初から最後まで無限の可能性を秘める意味を込めて命名され、\n社長の名前から頭文字を取ったともいわれる。\n得意分野はレースガン（競技用銃）など。\n他メーカーの銃器モデル開発にも密やかに協力している。"},{"type":"text","title":"◆利用規約◆","content":"本モデルを購入された時点で本利用規約に同意したものとさせていただきます。\n本利用規約の内容は変更される場合があり、変更された場合は最新のものが適応されます。\n\n\n・AZインフィニティ（以下、本モデル）の著作権は、ムスファンが保持し、改変済みやモデルの一部のみでも、本モデル制作サークル　ムスファンに帰属するものとします。\n\n\n・本モデルは自由に改変することができます。\n\n\n・本モデル購入者が、VRChat等のモデルデータをアップロードし、オブジェクト等に\n利用するサービスへの使用、および自作ゲーム、動画製作などでの利用を許可いたします。\n\n\n・本モデルを用いてのyoutuber等動画サイトでの活動は未改変、改変ともに\n許可いたします。収益化等も制限いたしません。\n\n\n・R-18・R-18Gへの利用は制限いたしません。\n公開する場合は個人の責任のもと、法律に基づきお願いいたします。\n\n\n・本モデル、および本モデルを改変したものを再配布する等、\n第三者が自由に改変可能な状態でモデルを保持できるような状態にする行為を禁止いたします。\n\n\n・本モデル用の追加パーツの製作、およびそれを販売することはダイレクトメッセージによる問い合わせを通して条件付きて許可いたします。\nこの場合は追加パーツは二次創作物として扱いいただけます。一次著作権はムスファンに帰属するものとします。\nなお。追加パーツの販売は本モデル制作サークル　ムスファンは無条件で停止させていただける場合はございます。\n如何なる理由でも「Receiver(ロアフレーム)」に該当するパーツを公開販売することを禁止いたします。\n　\n\n・VRChatのアバターペデスタル等、購入者以外が自由に本モデルを\n使用することができるような行為を禁止いたします。\n\n\n・本モデルを利用しての、他者を誹謗中傷する表現、政治、宗教活動を禁止いたします。\n\n\n・本モデルは安全の理由でデータ上実弾を装填、撃発できる機構はございませんが、\n実弾を撃てるように改変、3Dプリンターから出力することは銃刀法に触れることとなり、如何なる理由でも禁止いたします。\n\n\n・当利用規約において翻訳の都合上、他言語との差異が生じた場合日本語の利用規約\nを適用するものといたします。\n\n\n制定日：2019年2月19日\n＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n\n\n免責事項\n\n本モデルを利用することで発生したトラブルや損失、損害に対して、\nムスファンは一切責任を負いません。\n本モデルのご使用は使用者の責任において行ってください。\n\nTwitter: @aoinanaya"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
