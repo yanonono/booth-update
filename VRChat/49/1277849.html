@@ -56,9 +56,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "8PLHHCR8Vw/rjQvx6GwQrhUSboa78lPWr9lkqMEtbUM="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "8PLHHCR8Vw/rjQvx6GwQrhUSboa78lPWr9lkqMEtbUM="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"かごのつえ","description":"かごのつえ　V1.0\n△3128\n\n----\n\nVケット2はお楽しみいただけましたか？\n積みアバターに悩んでいませんか？\n\nこの杖を使うとアバターを着替えなくても戦利品を自慢できちゃいます！\n\n----\n\n\nDynamicBoneの設定はしてありますので先にインポートしておいてください\n（DynamicBone本体は含まれておりません）\n\n\n揺れるかごの中身について、\nPrefabに行った設定を以下に書きましたので、\n導入の参考にしてください（このテキストは販売データの中にも入っています）\nまた、Prefabにはおとうふが入っていますので、\nモデルと交換で削除または非表示にしてください\n\n\n1.FBXをHierarchyにドロップする\n\n2.かごに入れたいモデルをHierarchyにドロップし、かごに入る大きさまで縮小して位置を合わせる\n\n3.かごに入れたいモデルをCage_endの子にする\n\n4.CageRod＞Armature＞Sasae＞CageにDynamicBoneをつける\n\n5.CageにつけたDynamicBoneのRootにCageを入れる\n\n6.CageにつけたDynamicBoneのExclusionsのSizeに1を入力し、Element 0にかごに入れたモデルを入れる\n\n7.Unityの再生ボタンを押して、揺れるか確認してください\n\n8.正しく揺れたら完成です！","url":"https://booth.pm/ja/items/1277849","offers":{"priceCurrency":"JPY","@type":"Offer","price":"300"},"image":"https://booth.pximg.net/c/620x620/60a161b7-c7bb-4fa2-8dc4-8ac298dd3e5f/i/1277849/c15e7209-e6c0-4e22-875a-60a84d046f79_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -69,6 +86,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "8PLHHCR8Vw/rjQvx6GwQrhUSboa78lPWr9lkqMEtbUM="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -464,6 +485,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"はじめに","content":"本データは藍華藍葉（以下製作者）の制作した3Dモデルデータです\nVRChatでアバターに持たせることを想定していますが、他の用途でもご利用いただけます"},{"type":"text","title":"内容物","content":"・説明書\n・アニメーションファイル（ジェネリック単眼猫向け）\n・テクスチャファイル\n・UV展開画像\n・IDマップ画像\n・blenderプロジェクトファイル\n・FBXファイル\n・Unityパッケージ"},{"type":"text","title":"シェイプキー","content":"短くする用のものと長くする用の2種類入っています"},{"type":"text","title":"揺れ物","content":"かごを揺らすことができます"},{"type":"text","title":"改変について","content":"自由です\nできたものはお知らせいただくと製作者が見て喜ぶと思います"},{"type":"text","title":"商用利用について","content":"禁止しません"},{"type":"text","title":"禁止事項","content":"・再配布すること（非改変/改変を問いません）\n・製作者を偽ること"},{"type":"text","title":"免責事項","content":"本モデルデータを使用したことにより発生したいかなるトラブルや損失について、\n製作者は一切の責任を負わないものとします"},{"type":"text","title":"制作に使用したソフトウェア","content":"・Blender 2.79b\n・Unity 2017.4.15.f1 Personal (64bit)\n・Substance Painter 2018 Fall"},{"type":"text","title":"更新履歴","content":"2019/03/18 初版"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/DV72Sw8zVgY\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
