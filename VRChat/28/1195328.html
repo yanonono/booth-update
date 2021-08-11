@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "VlG+FlhKoMv8Yl72bl1G0TimyyRMgAm3NE7qBGxf1v4="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "VlG+FlhKoMv8Yl72bl1G0TimyyRMgAm3NE7qBGxf1v4="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"オリジナル3Dモデル【蘭奈-Rana-】","description":"【概要】\nVRChatを想定して作成された\nHumanoid形式のオリジナル3Dモデルです。\n・オリジナル3Dモデル【蘭奈-Rana-】制作者:neonio(おにべい）\n・Eye tracking:対応\n・Lip Sync:15種\n・BlendShape:39種\n・アニメーション9種","url":"https://booth.pm/ja/items/1195328","offers":{"priceCurrency":"JPY","@type":"Offer","price":"4000"},"image":"https://booth.pximg.net/c/620x620/c4cbb2ea-162a-4b4f-8ba3-cd0b14f08e3e/i/1195328/d77d3ae4-0161-4b28-8568-3e65b3ed47a4_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "VlG+FlhKoMv8Yl72bl1G0TimyyRMgAm3NE7qBGxf1v4="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -421,6 +442,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"【利用規約】","content":"画像欄に簡易利用規約を掲載しております。\n規約全文は下記URLを参照してください。\nhttps://drive.google.com/file/d/1fFkNq5yxJ3PEP0hm0b43K5rZtanr2Phf/view?usp=sharing"},{"type":"text","title":"【フォルダ構成】","content":"・Rana_v.1.1.2.unitypakage\n セットアップされたモデルデータが入っている.unitypackageデータ\n・Textures\n 各種テクスチャ.PNG+PSD\n・KINAKODOUHUスプレットシート\nGoogleスプレットシートのリンク\n"},{"type":"text","title":"【導入方法】","content":"1.Unity 2018.4.20f1で新規Unityプロジェクトを作成してください\n\n2.VRCSDK,UTS2 v.2.0.7,DynamicBoneをインポートしてください\n\n3.ダウンロードしたフォルダからRana_v.1.1.2.unitypackageをダブルクリックしてインポートしてください\n\n4.インポート完了したらKINAKODOUHU/SPONZIDOUHU/Models/Rana/Rana シーンを開いてアップロードしてください"},{"type":"text","title":"【関連リンク】","content":"・ユニティちゃんトゥーンシェーダー Ver.2.0\nhttp://unity-chan.com/download/releaseNote.php?id=UTS2_0"},{"type":"text","title":"【更新履歴】","content":"・2020/04/05:v.1.1.2:\n Unity 2018.4.20f1に更新\n Streaming Mip Mapsを設定\n\n・2019/09/23:v.1.1.1:\n  FBX,Prefabの名称変更\n  Rana.FBX,Prefabアーマチュア修正\n\n・2019/08/12:v.1.1.0:\n　水着の追加\n\n・2019/04/18:v.1.0.0:\n　最初のバージョン\n"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
