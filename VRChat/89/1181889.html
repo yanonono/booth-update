@@ -58,6 +58,16 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "OPnXisQhNXylijaqoXR009VajSGHAZFYs7D8Q6YAU1o="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
   </head>
   <body>
     <div class="mini-player-controller" style="display: none;">
@@ -86,6 +96,13 @@
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "OPnXisQhNXylijaqoXR009VajSGHAZFYs7D8Q6YAU1o="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"「Easy-Tongue」VRChatアバター向け舌パーツ","description":"[後付タイプのお手軽ベロ \"Easy Tongue\"]\nポリゴン数672、ボーン数4本のアバターに後付できる舌パーツです。\nアニメ系モデルに違和感ない程度に簡略化された馴染みやすい仕上がりです。\n\n●更新履歴\n1/16 …　配布開始\n\n●プランに関して\nフリープラン、ブースト用プランで内容物に違いはありません。基本的にはフリープランをご利用下さい。\nブーストして下さる方はブースト用プランをご利用下さい。\n\n\n●使い方サンプル\nhttps://twitter.com/nek0_suke_vr/status/1085482048469364736","url":"https://booth.pm/ja/items/1181889","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"100"},"image":"https://booth.pximg.net/c/620x620/e6170a80-5060-4a22-8c22-c10792111eba/i/1181889/0fb949a7-c465-44ba-a23b-0c519b29bfd3_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -93,6 +110,10 @@
     rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "OPnXisQhNXylijaqoXR009VajSGHAZFYs7D8Q6YAU1o="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -509,6 +530,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"●内容物","content":"Readme.txt\n[Nukomiya09VMC]Easy-Tongue.blend\n[Nukomiya09VMC]Easy-Tongue.fbx\n[Nukomiya09VMC]Easy-Tongue.unitypackage\nTex-Tongue.png\nTex-Tongue.psd\nUV-Tongue.png"},{"type":"text","title":"●セットアップ手順","content":"1）Unityで該当アバターを含むProjectを開き、[Nukomiya09VMC]Easy-Tongue.unitypackageをImportします。\n2）Easy-Tongue.fbxをProjectタブからHierarchyタブにD\u0026Dします。\n3）Inspectorタブを確認し、TongueにAnimatorがついている場合は（不要であれば）Removeします。\n4）Sceneに配置されたEasy-Tongue（以下「Tongue」のPositionとScaleをちょうど良い具合に調整します。\n5）Hierarchy内の、該当アバターのHeadに該当するボーンの中にTongueを配置します（Headの子階層にする）\n6）Hierarchy内のTongueの子階層にある「Tongue-Armature」を開き、Tongue.001～Tongue.003のPositionとRotationを口の中に収まるよう調整します（調整の際、アバターの口を一時的に開けておくと良いです）\n7）（6）で口内に収まりきらない場合は、Tongueを非アクティブにしておきます。"},{"type":"text","title":"●アニメーションの作り方","content":"舌を出したい表情の時に、Tongue.001～003の3本のボーンのPositionとRotationを操作するキーフレームを追加してください。シェイプキーも同様です。\n舌そのものにアニメーションファイルを再生させたい場合は、Animatorを利用した自動瞬き等と同様の方法でアニメーションコントローラを作成し、舌のAnimatorにセットして下さい。"},{"type":"text","title":"●編集できる人向けワンポイント","content":"Tongueをモデリングソフトにインポートし、利用したいアバターに直接結合するとより違和感なく搭載できます。\nまた、UVを編集し、利用モデルの口内に該当するテクスチャを流用すると自然に馴染みます。"},{"type":"text","title":"●ライセンスについて","content":"この製品と全く同じ状態（一切の改造、改変、利用を行っていない全く同一のデータ）での配布・販売は禁止します。\nそれ以外の利用に関してはあらゆる方法での利用を許可します。販売用、商用利用モデルに搭載する事も可能です。\nあらゆる利用において、一切のクレジット表記は不要です。\nただ、特に販売・配布に際して利用報告をいただけると宣伝等に協力できる場合があります。\n\n※\nここでいう「配布・販売」は、特殊な手順を踏む事なく誰でもモデルファイルを自由に購入または入手できる状態におく事を言い、ゲームキャッシュにデータが置かれる事等は該当しません。\nまた、VRChatにおけるアバターペデスタルへの利用は、この製品を用いた作品の場合は配布・販売に該当しません。ただし、他者が配布・販売しているモデルと組み合わせて使用している場合は、それらの規約を遵守して下さい。"},{"type":"text","title":" ●その他","content":"この製品はVRChatでのアバターへの利用を想定しています。それ以外の用途に利用する場合、一切の保証はありません。MMD等への利用やコンバート方法等、想定外の利用方法に関する問合せには対応できません。\n\nこの製品はフルスクラッチ製作されており、安全ですが、万が一リッピングやパーツ流用といった難癖をつけられるトラブルが発生した場合は、経緯がよくわかるよう情報をまとめた上でご相談下さい。対応できる場合があります。\nそれ以外の、この製品を利用して発生したトラブルに関しては、一切の責任を負いません。\n\n\n何か質問があればTwitterID「nukomiya09」までご連絡をお願いします。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
