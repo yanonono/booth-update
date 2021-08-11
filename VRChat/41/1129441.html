@@ -58,6 +58,16 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "Fi22ALNE/gOefFtTwdpt9dI+FSFifrnQIvX/eHst9aE="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
   </head>
   <body>
     <div class="mini-player-controller" style="display: none;">
@@ -86,6 +96,13 @@
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "Fi22ALNE/gOefFtTwdpt9dI+FSFifrnQIvX/eHst9aE="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"無料配布！超フルスクラッチお好み焼き(どんどん亭完全監修)","description":"リアルワールドの九州を中心に48店舗（2018/10/10 現在）を展開するお好み焼きレストランどんどん亭さん完全監修の下、作成された超フルスクラッチお好み焼きです。\n写真撮影・画像加工などをどんどん亭【公式】広報部さんにお手伝いいただきました。\n\nお好み焼き代を払いたい方は是非、どんどん亭リアル店舗に足を運んでご支払いください。\nどうしてもリアル店舗に行けない方の代わりは私が行きます。\n\nどんどん亭公式HP\nhttps://www.dondontei.com/\nどんどん亭【公式】広報部\n@dondontei_PR\nどんどん亭研修生　雉玉かえしちゃんVRM\nhttps://3d.nicovideo.jp/works/td43978","url":"https://booth.pm/ja/items/1129441","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"500"},"image":"https://booth.pximg.net/c/620x620/398453f0-c317-488e-9f19-c38eb6274343/i/1129441/2083a82f-556f-4f60-a10e-68389b55328c_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -93,6 +110,10 @@
     rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "Fi22ALNE/gOefFtTwdpt9dI+FSFifrnQIvX/eHst9aE="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -530,6 +551,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"初めに:","content":"お好み焼きで人を苦しめたり悲しませたりするのはやめましょう。\n深夜に美味しそうなお好み焼きを見せることは他人を苦しめる行為に入りません。"},{"type":"text","title":"ライセンスなど:","content":"アバターに人格を与えることの許諾範囲(A person who can perform with this avatar)\n  全員に許可(Everyone)\n\nこのアバターを用いて暴力表現を演じることの許可(Violent acts using this avatar)\n  不許可(Disallow)\n\nこのアバターを用いて性的表現を演じることの許可(Sexuality acts using this avatar)\n  不許可(Disallow)\n\n商用利用の許可(For commercial use)\n  許可(Allow)\n\n再配布・改変に関する許諾範囲(Redistribution / Modifications License)\n  再配布禁止(Redistribution Prohibited)\n    ※ビルド済みデータなど、容易に再利用出来ない場合を除く\n  改変許可(Allow)\n\nお好み焼きの画像はどんどん亭さんに、商用利用の許可をいただいております。\n\nその他不明瞭な点がございましたらご気軽にお問い合わせください。\nTwitter：@Yuzuki_Tatikawa\n本モデルデータの使用による損失・損害等は一切責任を負いかねます。\n本ライセンスは変更する場合があります。\n変更があった場合、オンライン版の内容を優先します。"},{"type":"text","title":"内容物:","content":"chou_okonomiyaki.fbx\n-Okonomi_High Δ3008\n-Okonomi_Standard Δ1090\n-Okonomi_VeryLow Δ124\nokonomiyaki_01.png（ソース無し）\nokonomiyaki_02.png（ソース有り）\nokonomiyaki_03.png（マヨ有り）\nokonomiyaki_04.png（鰹節有り）\n\nノーマルマップ等は付属しておりません。"},{"type":"text","title":"VRChatのオススメ設定:","content":"完成されているテクスチャのため、光の影響を受けないUnlit系がオススメです。\n\nVRChatアップデートによるポリゴン数制限緩和に伴い、△3008のOkonomi_Highモデルが使いやすくなりました！"},{"type":"text","title":"ぱすわーど","content":"規約を読めない環境の方が意図せず違反利用することを防止するために、フォルダにはパスワードをかけさせていただいています。\nokonomiyakitabetai\n\n制定日:2018年12月07日"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
