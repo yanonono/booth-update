@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "Gnm/7nlt7TPheUt3eGgWAiBZQIkQS3O/AQI7WQo0hv0="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "Gnm/7nlt7TPheUt3eGgWAiBZQIkQS3O/AQI7WQo0hv0="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"たぬき【獣型3Dアバター】※Oculus Quest対応","description":"愛らしい表情とだらしないモーションを思う存分堪能してください。\nポリゴン数：6,584(アクセサリ類込み)\n \nYou can enjoy adorable expressions and sloppy motions.\nPolygon count:6,584(including accessories)","url":"https://booth.pm/ja/items/1263490","offers":{"priceCurrency":"JPY","@type":"Offer","price":"292"},"image":"https://booth.pximg.net/c/620x620/cf33cb75-8d81-4e28-a425-e7617a50d1e4/i/1263490/50498676-ec95-4dbe-b93f-6b4ece17964a_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "Gnm/7nlt7TPheUt3eGgWAiBZQIkQS3O/AQI7WQo0hv0="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -377,6 +398,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"特徴","content":"１．たぬき\n2足歩行していますが、だれが何と言おうと、たぬきです。\n※何かに憧れているうちに2足歩行できるようになりました。\n \n２．VRChatで使える\nVRChatでの利用を想定したモデルですので、簡単なセットアップで\nすぐにたぬきになれます。\n \n３．付属品がついてる\n酒瓶、傘、帳簿が付属しています。これらの取り外しはUnityで\n読み込むことで可能です。\n \n４．虚無表情\n愛らしい表情でチャット相手もイチコロです。"},{"type":"text","title":"Features","content":"1. Raccoon dog\nIt walks on two legs, but it is a japanese traditional raccoon dog.\n※It seems to be able to walk on two legs while longing for something.\n \n2. You can use it in VRChat\nThis model is designed for use in VRChat.\nSo, it’s easy to use it in VRChat.\n \n3. Accessories\nThis model includes a japanese sake bottle, a japanese straw hat, and a book.\nYou can attach and remove by loading them in Unity.\n \n4. Face of blank expression.\nThe adorable expression on your face will win over others."},{"type":"text","title":"想定する利用シーン","content":"・日本の伝統的なPotteryでワールドワイドなVRChatに挑む。\n・置き物プレイ。\n・マスコットキャラとして愛嬌をふりまく。"},{"type":"text","title":"Usage Scenario","content":"・You can enjoy the japanese traditional raccoon dog in VRChat.\n・You can play a role as pottery.\n・You can make yourself agreeable to everybody as a mascot."},{"type":"text","title":"利用規約","content":"・購入してからのデータ改変に制限はありません。\n・本モデル、改変モデルの著作権はiBに帰属するものとします。\n・個人利用、商用利用は可としますが、\n　政治／宗教／他者への誹謗中傷目的での利用は禁止です。\n　　(なお、iBへご一報いただけると、喜びます)\n・再配布は改変の有無に関わらず禁止とします。\n・付属品やモデルの一部などを取り込んだデータの配布は禁止とします。\n・本モデルや改変されたモデルを使用することによる生じたトラブルや\n　損失については、iBは一切の責任を負わないものとします。"},{"type":"text","title":"User Policy","content":"・There are no restrictions to modify this model after buying.\n・The copyright with this model and any modified model is owned by iB.\n・This model is permitted for personal and commercial use, but prohibited for political use, religional use, and the purpose of slandering others.\n（We would be pleased if you could let iB know when you use it.）\n・The redistribution is prohibited with or without modification.\n・The distribution of data that incorporates accessories or parts of this model is prohibited.\n・iB shall not be liable for any trouble or loss caused by the use of this model or any modified model."},{"type":"text","title":"更新履歴","content":"2019/03/08　販売開始 - バーチャルマーケット2に合わせ"},{"type":"text","title":"Change Log","content":"2019/03/08 Launch with Virtual Market 2"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
