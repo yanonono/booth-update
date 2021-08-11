@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "3AH1MUTVH2RWQVnte5++y+o9sx5sqv5ueNjXvdOsI7U="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "3AH1MUTVH2RWQVnte5++y+o9sx5sqv5ueNjXvdOsI7U="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"シャムシールHW【3Dモデル/オリジナルキャラクター】","description":"★☆★＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\nVRChat用の設定が同梱してありますが、「Avatar2.0のみ」となります。\nまた、同梱UnityPackageは「2018バージョンのみ」となります。\n\n★☆★＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n\nご利用の前に必ず【ショップご利用の前に】【利用規約】【仕様書】をお読みください。\n本ショップの商品を購入した時点で、その内容に同意したと見なします。","url":"https://booth.pm/ja/items/1051943","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"500"},"image":"https://booth.pximg.net/c/620x620/66e44db3-1e70-427e-ba0c-5d35f8af2b12/i/1051943/06295a62-42a8-4188-8f0f-d6815c91ce14_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "3AH1MUTVH2RWQVnte5++y+o9sx5sqv5ueNjXvdOsI7U="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -475,6 +496,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"🔳　ショップご利用の前に　🔳","content":"◇　キャンセル・返金について\n本データはダウンロード商品です。ご注文確定後のキャンセル・返品・返金には対応していません。\n\n◇　サポートについて\n本ショップは素人の同人活動の一環として運営しているため、サポートが行き届かない場合があります。\nまた本ショップ及び商品は、日本語圏での利用を想定しています。対応言語は日本語のみとなります。\n\n◇　変更について\n本データは、予告無く内容のアップデート・変更、販売・頒布の終了、値段の変動を行う場合があります。\n\n◇　データの利用について\n本データは「3Dモデルを任意の用途・環境で扱う技術を持つ方」の利用を想定して制作しています。\n本データの利用方法・改変方法等のお問い合わせに対し、個別のサポートは一切しておりません。\n\n◇　お支払方法・購入方法等について\nお支払方法等BOOTHのシステムに関する質問は、本ショップではなくBOOTH事務局にお問い合わせください。\nまた、本ショップ以外での商品の取引（個別に金銭を受け取り、データを渡す等）には一切応じません。\n\n◇　日本国外向けの代理購入サービスについて\n許可していません。\n\n必ず上記の点を確認し、予めご理解の上でご利用ください。"},{"type":"text","title":"🔳　利用規約　🔳","content":"https://docs.google.com/document/d/1QoaZKkLaNzW05KeVw-gADIxhhZQCRdJEiRMze-BEKRI/edit?usp=sharing\n◇　規約内容「個別条件」について\n許諾対象カテゴリー「3Dキャラクター」の内容が該当します"},{"type":"text","title":"🔳　仕様書　🔳","content":"https://docs.google.com/document/d/10n9Vu5Jn6J0tdMiIHKese-cyFshzBuOZkFVhMCDPX7s/edit?usp=sharing\n\n◇　VRChat用の設定が同梱してありますが、Avatar2.0のみとなります。Avatar3.0への対応は未定です。\n\n◇　Quest版VRChatでも使えますが、最適化していないため重いかもしれません。"},{"type":"text","title":"🔳　概要　🔳","content":"缶詰茶房オリジナルキャラクター「シャムシール」のフルスクラッチ3Dモデルです。\n\n\n📄　フレーバーテキストについて　📄\n本データのキャラクターは世界観や性格等の設定が存在し、フレーバーテキストが仕様書の中に記載されている場合があります。\n利用時はそれらのフレーバーテキストを全て無視しても、二次創作や改変のネタとして利用しても問題ありません。\n\n\n📄　サムネイルに使用したフォント　📄\nにしき的フォント\n- 休傾酸角形 - An Oxygon Naturally Reclined to Rest　http://hwm3.gyao.ne.jp/shiroi-niwatori/quispiam_est.htm\n"},{"type":"text","title":"🔳　更新情報　🔳","content":"更新履歴は【仕様書】内の【更新履歴】の項目に記載されます。\n\n更新情報・お知らせ等は【pixiv fanbox】の無料記事として随時掲載されます。\nfanboxをフォローしていると記事公開時にメールで通知されます。\nhttps://www.pixiv.net/fanbox/creator/26502466"},{"type":"text","title":"🔳　公認改変モデル　🔳","content":"こちらに記述しているのは、缶詰茶房が配布許可を出している改変モデル・衣装モデルです。\n＝＝＝＝＝＝\n\nシャムシールくん バニー服Ver\nhttps://booth.pm/ja/items/1449477\n\nシャムシール君専用クリスマス衣装\nhttps://mmk2.booth.pm/items/2548133"},{"type":"text","title":"🔳　二次創作モデル　🔳","content":"こちらに記述しているのは、シャムシールの二次創作モデルです。\n＝＝＝＝＝＝\n\nしゃむしーるまんじゅう\nhttps://booth.pm/ja/items/1314255"},{"type":"media","content":"\u003ciframe width=\"500\" height=\"500\" src=\"https://hub.vroid.com/characters/2994643213627099450/models/2294581391453815199/embed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\" allow=\"xr-spatial-tracking\"\u003e\u003c/iframe\u003e"},{"type":"media","content":"\u003ciframe width=\"500\" height=\"500\" src=\"https://hub.vroid.com/characters/2994643213627099450/models/3924138452766789506/embed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\" allow=\"xr-spatial-tracking\"\u003e\u003c/iframe\u003e"},{"type":"media","content":"\u003ciframe width=\"500\" height=\"500\" src=\"https://hub.vroid.com/characters/2994643213627099450/models/840249590218647601/embed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\" allow=\"xr-spatial-tracking\"\u003e\u003c/iframe\u003e"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
