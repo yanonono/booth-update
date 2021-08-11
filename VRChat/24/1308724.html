@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "1T0aeji393vtC4zOy5jKTvyYLm2wS32/bankOBb2KYM="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "1T0aeji393vtC4zOy5jKTvyYLm2wS32/bankOBb2KYM="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"VRChat向け3Dモデル「風香」","description":"VRChat向けオリジナル３Dモデル「風香」\n制作者：YUU_0w0（白星Vトリエ）\n\n本モデルはUnityのHumanoid形式に対応したオリジナルモデルです。\n下に利用規約が記載されていますので、ご了承の上での購入をお願いします。\n\n本モデルを使った写真など、もしよければ　#白星Vトリエ　を付けてツイートすると嬉しいです！","url":"https://booth.pm/ja/items/1308724","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"4000","highPrice":"5000"},"image":"https://booth.pximg.net/c/620x620/53a255d6-2b15-47c4-b89d-927a3c9564c4/i/1308724/b4bf4cec-1060-4e52-9da0-2b69eae26218_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "1T0aeji393vtC4zOy5jKTvyYLm2wS32/bankOBb2KYM="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -574,6 +595,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"✪ 概要","content":"● △ポリゴン数：45986\n● マテリアル数：4\n● メッシュ数：9\n● 素体あり\n● リップシンク：○対応\n● フルボディトラッキング：○対応\n● 自動瞬き：○対応\n● アイトラッキング：×非対応\n● Dynamic Bone：設定済み\n● 使用シェーダー：Arktoon-Shaders（https://booth.pm/ja/items/1027997）"},{"type":"text","title":"✪ 商品内容","content":"● Unityパッケージ\n（設定済みのモデルデータ）\n\n● FBXファイル\n※メタセコイアで制作した物なので、他ソフトでの互換は保障出来ません、ご了承ください。\n\n● PNGテクスチャ（4/5枚）\n\n● PSDファイル（4/5個）\n（レイヤー分けのテクスチャPSD）"},{"type":"text","title":"✪ 導入手順","content":"① VRChat現在対応しているバージョンのUnityで新規プロジェクトを作成（バージョンが重要です） 詳細: https://docs.vrchat.com/docs/setting-up-the-sdk\n②VRCSDK ( https://vrchat.com/home/download ) とDynamic Bone（任意）をAssetフォルダにインポート。\n➂ Unityパッケージ（Fuuka_v2.0.unitypackage）をAssetフォルダにインポート。\n④ ダブルクリックでUpload_Fuuka_v2.0.unityを開けて、アバターが既に設定済みの状態になります、そしてメニューのVRChat SDKでアップロードしてください。\n\n※Dynamic Boneは別途購入が必要で、無くてもアバターの使用は可能ですが、その場合揺れものは揺れません。https://assetstore.unity.com/packages/tools/animation/dynamic-bone-16743\n\n※表情作成する時にはVRCAvatarEditor betaを使用することがおすすめです: https://gatosyocora.booth.pm/items/1258744"},{"type":"text","title":"✪ 利用規約","content":"本モデルを購入した時点で本利用規約に同意したものとします。\n利用規約の内容は変更する場合があり、最新のものが適用されます。\n\n\n★利用可能範囲\n・購入者のみが使える前提としてあらゆるサービスへのアップロード(VRChat、バーチャルキャスト、cluster等々)\n・モデルを改変しての利用\n・モデルの一部だけ他のモデルと組み合わせること\n・データを別のフォーマットに変換して使用すること（VRM、MMD PMX等々）\n・間接的な個人範囲内での商用利用は可能です（配信やゲームの一部として）（法人の方は別途お問い合わせください）\n\n★禁止事項\n・本モデル（改変の有無を問わず）の再配布、販売を禁止します。\n・購入者本人以外がアバターを使用できるようにする行為を禁止します。\n・政治、宗教活動、他者に対する誹謗中傷目的での使用を禁止します。\n\n★著作権\n本モデルの著作権は改変の有無を問わずモデル制作者の「YUU_0w0」（白星Vトリエ）に帰属します\n\n★免責事項\n本モデルデータを使用して発生したいかなる損害・損失・その他不利益等には、当方は一切の責任を負いません。\n\n\n-----------------------------------------------------------------------------\nその他不明点、不具合、ご要望などがありましたら以下にご連絡ください。\n（不具合報告はとてもありがたいので、ご遠慮なくしてください）\n\nTwitter: https://twitter.com/YUU_0w0w0\nEmail: yuu0w0w0@gmail.com"},{"type":"text","title":"✪ 更新履歴","content":"2020/2/23 v2.1\n・【修正】少女版のフルトラの不具合\n\n2019/11/12 v2.00\n・【修正】最新のVRChatのIKにフルトラ対応\n・【修正】使用シェーダーをCubedからArktoonに変更（同梱）\n・【追加】輪郭線とリムライト設定済み\n・【追加】内股待機アニメーション\n・【修正】FbxをBlenderに対応しました、その説明も追加（実験中）\n・【修正】結合済みのバージョンを廃除しました\n・【修正】小さい不具合\n\n2019/4/13 v1.00"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
