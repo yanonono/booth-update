@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "6nk6MEXuumvcm7j5QICT3oi8RYRhMHidL5Di9vRRYDs="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "6nk6MEXuumvcm7j5QICT3oi8RYRhMHidL5Di9vRRYDs="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"20200531Quest仮対応分追加）[VRC向け]ジェネリック単眼猫（V2.5）","description":"[NEW！2020/09/21]\nVRoid Hubにて展示している\n・ローブ白\n・ローブ黒\n・メイド服（桃x紺）\n・セーラー服（黒）\n・冬服（桃x赤）\nの5種について、VRMファイル（暫定）をダウンロードできるようにしました。\n購入後のDLファイルが増えています。\n\nHumanoid対応3Dモデルデータです。\nVRChat上でアバターとしての使用を想定しています。\n2019/09/10時点でQuest非対応です。\n2020/05/30 こっそりQuest仮対応版アップしました。\nQuestでの動作は未検証です。。\n\nポリゴン数\n素体：△4720\nローブ＋素体：△10066\nメイド服＋素体：△7750（両面描画推奨）\nセーラー服＋素体：△7886\nコート＋素体：△11480（両面描画推奨）\nQuest仮対応版：△7312\n\n各モデル\nオブジェクト数：1\nマテリアル数：2\nQuest仮対応版：各1\n\nインポートの前提として、プロジェクトにVRCSDKとArktoon-Shadersをインポートしておいてください。\nまた、お持ちであればDynamic Boneもインポートしておいてください。\nArktoon-Shaders：https://booth.pm/ja/items/1027997\nDynamic Bone：https://assetstore.unity.com/packages/tools/animation/dynamic-bone-16743\n\n同梱のUnityPackageでGood～VeryPoor評価（VRCSDK-2019.08.23.13.45時点）\nフルボディトラッキングには対応していますが、VeryPoorになります。\n口がありませんのでリップシンクがありません。\nアイトラッキングは対応しています。\n別売りのまほうつかいのぼうしにはリップシンクがついているのでそちらもどうぞ！\nhttps://ayworks.booth.pm/items/936301\n\n★ご購入の前に★\n・Vroid Hubにて動いているところを見られます\n　https://hub.vroid.com/characters/8047012053833955668/\n\n　バーチャルマーケット3PPP-Vでローブ・メイド服・セーラー服（3種ともダイナミックボーンなし）の展示をしております。ぜひ体験してください！","url":"https://booth.pm/ja/items/1188207","offers":{"priceCurrency":"JPY","@type":"Offer","price":"2000"},"image":"https://booth.pximg.net/c/620x620/60a161b7-c7bb-4fa2-8dc4-8ac298dd3e5f/i/1188207/c2d9ee26-1d48-4b90-907b-3a882a145c50_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "6nk6MEXuumvcm7j5QICT3oi8RYRhMHidL5Di9vRRYDs="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -666,6 +687,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"内容物","content":"・説明書\n・アニメーションファイル（表情例/立ち・座りポーズ）\n・テクスチャファイル\n・テクスチャ作業用ファイル\n・blenderプロジェクトファイル\n・FBXファイル\n・Unityパッケージ\n\n\n■シェイプキー\nリップシンク非対応です。\n上瞼、下瞼、瞳孔がいろいろできます。\n\n\n■揺れ物について\n耳、頬毛、尻尾、服の各部分にDynamic Bone用のボーンが入っています。"},{"type":"text","title":"利用規約","content":"対象コンテンツの利用権利の販売となります。コンテンツを改変および任意メディアで利用することができます。\n\nただし下記を禁止します。\n・他人が利用できるようにし、著作者の販売を阻害すること。\n・コンテンツ自体に政治的または宗教的もしくは反社会的なメッセージを持たせること。\n・直接的に利益の発生する目的にコンテンツに利用すること。\n・法人利用をすること。\n\nその他\n・コンテンツあるいは発生した不利益に対して著作者はなんら責任を負いません。\n・利用権利は他人に譲渡することができません。\n\nこのライセンスにおける解説情報は下記になります。\nhttps://gitlab.com/towelfunnelvrc/towel-license/wikis/\n（タオルライセンス 販売用 version0.9）"},{"type":"text","title":"その他","content":"■制作に使用したソフトウェア\n・Blender 2.79b\n・Adobe Photoshop CS6\n・Unity 2017.4.28f1 Personal (64bit)\n・Substance Painter 2018 Fall\n・CLIP STUDIO PAINT EX\n\n■履歴\n2019/09/10　V2.5\n　・コート（冬服）を追加\n　・LipSync再対応（こんどこそ！）\n　・まばたきシェイプキーを1番目に移動しました\n　（背の高いアバターから覗き込んだときのアイトラの挙動がマシになります）\n2019/09/01　バージョンアップなし\n　・LipSyncのないアバターでトークバックする問題に暫定対応\n　（できてなかったので2.5で対応しました）\n2019/08/29　V2.1\n　・メイド服に余分なポリゴンがあったので削除（blend・FBX・UnityPackage更新）\n2019/07/06　V2.0\n　・セーラー服追加\n　・ローブ/メイド服にDynamic Bone用ボーン追加\n2019/04/07　V1.5\n　・メイド服追加\n2019/03/12　V1.2\n　・EyeTrackingまわりの挙動を修正。ギョロギョロするように。\n2019/02/03　V1.1\n　・フルトラ用調整済みPrefabを追加\n2019/01/20 初版\n\n■問い合わせ先\n製作者：藍華藍葉\nTwitter：@ay_c_\nPixiv：https://www.pixiv.net/member.php?id=146587\nDiscord：Carumba#2912　https://discord.gg/gSeUyet\nVRChat：Carumba"},{"type":"media","content":"\u003ciframe width=\"500\" height=\"500\" src=\"https://hub.vroid.com/characters/8047012053833955668/models/4869871572632183055/embed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\" allow=\"xr-spatial-tracking\"\u003e\u003c/iframe\u003e"},{"type":"media","content":"\u003ciframe width=\"500\" height=\"500\" src=\"https://hub.vroid.com/characters/8047012053833955668/models/1854343808006133393/embed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\" allow=\"xr-spatial-tracking\"\u003e\u003c/iframe\u003e"},{"type":"media","content":"\u003ciframe width=\"500\" height=\"500\" src=\"https://hub.vroid.com/characters/8047012053833955668/models/4323606064736358129/embed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\" allow=\"xr-spatial-tracking\"\u003e\u003c/iframe\u003e"},{"type":"media","content":"\u003ciframe width=\"500\" height=\"500\" src=\"https://hub.vroid.com/characters/8047012053833955668/models/8510937959472899907/embed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\" allow=\"xr-spatial-tracking\"\u003e\u003c/iframe\u003e"},{"type":"media","content":"\u003ciframe width=\"500\" height=\"500\" src=\"https://hub.vroid.com/characters/8047012053833955668/models/7031244395426249050/embed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\" allow=\"xr-spatial-tracking\"\u003e\u003c/iframe\u003e"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
