@@ -58,41 +58,40 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
-  </head>
-  <body>
-    <div class="mini-player-controller" style="display: none;">
-      <a class="scroller" data-smooth-scroll="true"><img class=
-      "mini-player-controller__image" src=
-      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
-      data-smooth-scroll="true">
-      <div class="mini-player-information__item-name"></div>
-      <div class="mini-player-information__shop-name"></div>
-      <div class="mini-player-information__navigation">
-        試聴中の商品へスクロール
-      </div></a>
-      <div class="mini-player-controls">
-        <div class="mini-player-mode-ui">
-          <div class="mini-player-mode-ui__knob"></div>
-          <div class="mini-player-mode-ui__short">
-            15秒
-          </div>
-          <div class="mini-player-mode-ui__full">
-            フル
-          </div>
-        </div>
-        <div class="mini-player-play-ui"></div>
-      </div>
-    </div>
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "XcHS2JakM5O259ek7wlA0KwSG++J4+G1AT0qj84Uu9k="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "XcHS2JakM5O259ek7wlA0KwSG++J4+G1AT0qj84Uu9k="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"NEKO FANTASY 白魔道士","description":"[VRM対応] [VRChat] アバター　「NEKO FANTASY 白魔道士」\n\n\nポリゴン数：6496\n\nunitypackageあり。\n\n6種類のねこ柄テクスチャ入り！好きな柄をセットできます！\n\nテクスチャの改変用PSDファイルも入れました。\n\nTHUMBSUP（SHIFT+F8）で杖を持ちます。\n\n\nデスクトップモード、VR、フルトラ　の動作確認済みですが、\nフルトラでは多少ゆがみや崩れる部分が出ることがあります。\n\nDynamicBone対応。耳、帽子の先、コートの裾と羽根、しっぽ、おなか　が揺れます！（DynamicBone無しでも問題ありません）\n\nシェーダーは「UnlitWF_ShaderShuite」を使っています。\n\n\n＜更新履歴＞\n2020.05.02　VRM改変用のunitypackageを追加しました。\n2020.04.29　VRChat用のunitypackageをUnity2018に対応。シェーダーをUnlitWFに変更しました。\n2019.03.02\n・VRMファイルを追加しました。\n\n\n","url":"https://booth.pm/ja/items/1206299","offers":{"priceCurrency":"JPY","@type":"Offer","price":"3000"},"image":"https://booth.pximg.net/c/620x620/1f163e5b-a0e4-46e7-be27-4850d72c7bc9/i/1206299/d5f4b171-cfb5-4239-9578-7a151bd8a164_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
     "https://asset.booth.pm/assets/apple-touch-icon-precomposed-f7358b936e9404f3e499e1bf3c9f0967366212144a16374ebc7558b391eeafe1.png"
-    rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
-    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    rel="apple-touch-icon-precomposed">
+  </head>
+  <body>
+    <noscript><iframe height="0" src=
+    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "XcHS2JakM5O259ek7wlA0KwSG++J4+G1AT0qj84Uu9k="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -512,6 +511,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/qnkIVc-Y9kg\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"media","content":"\u003ciframe width=\"500\" height=\"500\" src=\"https://hub.vroid.com/characters/972857348865529793/models/4849182578572434192/embed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\" allow=\"xr-spatial-tracking\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"＜ダウンロードファイルの説明＞","content":"■VRM_neko_whitem.zip　　VRMのファイル\n・VRM_neko_whitem.vrm\n・VRMnekowhm.unitypackage\n・VRM改変説明１ねこ柄変更.jpg\n・VRM改変説明２エクスポート.jpg\n\n■nekowhm.zip  　VRChatアップロード用\n・nekowhm.unitypackage\n・ねこ柄の変え方.jpg\n・フルトラの方の設定.jpg\n\n■改変用ファイル.zip\n\nFBXファイルと、各テクスチャのPNG、PSDファイル"},{"type":"text","title":"＜アバター導入について＞","content":"ダウンロードできるunitypackageには\n・VRChat用\n・VRM用\nの２つがあり、慣れていない方は混乱すると思います。\n\n初めてアバターをアップロードする、または\n初めてVRMファイルを作る方はこちらを参照してみてください。\n\nまた、DynamicBone無しだとエラーが出てVRChatへのアップロードができなくなりましたのでその対処方法もこちらを確認してください。\n\nアバターセッティング\nhttps://chimaya.booth.pm/items/2044426"},{"type":"text","title":"＜VRChatへの導入方法＞","content":"■ダウンロードしていただくUnitypackageは、以下の２つのものがUnityのプロジェクトに入れてある状態でインポートすると、自動設定されます。\n\n１．DynamicBone(無くてもアバターを使うことはできます）\n２．「UnlitWF_ShaderShuite」を入れていただくと自動でシェーダーのセッティングがされます。\n\nUnlit_WF_ShaderSuite wiki\nhttps://github.com/whiteflare/Unlit_WF_ShaderSuite/wiki\n\n\n■unitypackageをインポートする\nフォルダ「_CHIMAYA/nekowhm」内にprefab\nneko_whitem_DSK（デスクトップモード用設定）　\nneko_whitem　\nの２つが入っています。\n\nDSK(デスクトップモード用設定)はIDOL状態のポーズと、エモートのアニメーションがセットされています。\n\nどちらか環境に合うほうを使ってください。\n\nまた、フルトラの環境のかたは座った時のIDOLアニメーションを外しておく必要があります。\nフルトラの方の設定.jpgファイルを参照してください。\n\n\n■ねこ柄の変更方法は、JPGファイルを参照してください。"},{"type":"text","title":"＜使用に関して＞","content":"3Dモデルの使用について　のページをご確認ください。\nPlease check here\nhttps://chimaya.booth.pm/items/2105305\n\n\nDo not sell or redistribute\nAvatarPedestal Disallow"},{"type":"text","title":"＜連絡先＞","content":"twitter : https://twitter.com/ha_ru_u\n\n何かありましたら、BOOTHのメッセージ、ツイッターなどでご連絡ください。\nツイッターはDMも受け取れる設定になっています。\nその他、ご意見、ご要望などいただけたら嬉しいです！"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
