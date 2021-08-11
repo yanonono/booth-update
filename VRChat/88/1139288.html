@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "WtA4d26CD2GCLRmBN6D6PPJATWI0uFrCJ1tsvtz8J8A="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "WtA4d26CD2GCLRmBN6D6PPJATWI0uFrCJ1tsvtz8J8A="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"螺旋剣槍 \"The Spirale\"","description":"※規約全文は下にあります\nThere is terms of use under of the page.\n\nある時、見つけた２つの棒状のさびた塊…研磨し、復元された一振りを見て、我が身が震えるのを感じた。\nそれ以来、衝動に駆られるようにその武器を見て、再解釈して、自らの思いを込めて投影し―\n\n螺旋の鋭い刀身を持つ、刺突剣術に特化した細身の片手剣です。\nAlbedo, Speculer, NormalのPBRテクスチャと、1枚に質感をベイクしたColorテクスチャの2種類を用意しております\n\nSketchfabで3Dデータの閲覧をすることもできます。\n\nポリゴン数：△1636\n\n本体サイズ\n全長：1.1m(110cm)\n横幅：0.15m(10.5cm)","url":"https://booth.pm/ja/items/1139288","offers":{"priceCurrency":"JPY","@type":"Offer","price":"400"},"image":"https://booth.pximg.net/c/620x620/719c3d6d-7dd0-4162-aa85-2ed21e39cf9a/i/1139288/293bac92-4ee1-46f5-99fa-e0e603e8943d_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "WtA4d26CD2GCLRmBN6D6PPJATWI0uFrCJ1tsvtz8J8A="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -478,6 +499,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"media","content":"\u003ciframe width=\"640\" height=\"480\" src=\"https://sketchfab.com/models/9342a7bd2c864f8483b5101c260d53e7/embed\" frameborder=\"0\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"武器説明","content":"細身の螺旋刀身を持つ片手剣。旅のさなか見つけた錆びた剣を復元した物を再解釈、新たに作り上げた。\n\n細身のため、片手剣に相応しい重量ながら全長1.1mと、レイピアクラスの長めの剣になっている。\n\n切っ先は先端の1点のみだが、刀身の腹で「打撃」もできるので、刺突の比率が増えた片手剣に近いスタイルで運用できる。\n\nSpiraleとはドイツ語で「螺旋」を意味する。読み方は「スピラーレ」。"},{"type":"text","title":"利用規約","content":"注意：訳の解釈に違いが生じた場合、日本語の規約を優先します。\nCaution: If there are any translation errors of rules between language, I will prioritize the japanese rules.\n\n目次\n１．定義\n２．禁止事項\n３．許可事項\n４．免責\n５．さいごに\n\n\n１．定義\n　・製作者：Ash (Twitter ID: @ash_q563）のこと\n　・購入者：正規の販売サイト（18/10/21現在 https://garden-of-ashen.booth.pm/ のみ）でデータを購入した方\n　・販売データ：製品データのダウンロードにより得られるファイルの中身\n\n\n２．禁止事項\n　・いかなる形態を問わず購入者本人以外が販売データの全て、または一部（改変含む）の元データを取り出せる状態でアップロードすること\n　（アップローダにアップロード、吸い出しができる状態で公開するなど）\n　　※誰かにカスタムテクスチャを依頼するのにデータを渡したい時は相談して下さい\n\n　・宗教、政治関係に使う\n\n　・特定の個人や団体への誹謗中傷をするのに使う\n\n禁止事項に抵触した時点で、許可事項に基づくモデルの使用権は自動的に終了します。\n悪質な場合、損害賠償の請求を行う場合があります。\n\n\n３．許可事項\n　・禁止事項に抵触しない全てのこと\n　例：\n　　・営利利用\n　　・キャラクターの装備品に\n　　・ゲーム内データなど、パッケージをビルドし、容易に取り出せない形にしての再配布\n　　・ワールドの装飾、ワールド配置の装備品に\n　　・データを活用して動画投稿、写真投稿\n　　・自分で改造して自分で使う\n　　・これを装備して、もしくはこれそのものになって配信活動\n　　・その他色々…\n　　（当然ですが、R-18(G)的用途などに関してはゾーニングをしっかりと）\n\n　※用途が禁止事項に抵触するか分からない場合、お気軽にお問い合わせください。\n\n\n４．免責\n・本データを使用したことによる利用者の損害、被害に関し、作者は一切補償をしません\n・本データを使用した結果、購入者が他人、他社に損害、被害を与えた場合、その責任は当該購入者にあるものとします\n\n"},{"type":"text","title":"Terms of Use (English)","content":"Caution: If there are any translation errors of rules between language, I will prioritize the japanese rules.\n\nPages\n1. Definition\n2. Prohabited Action\n3. Allowed Action\n4. Disclaimer\n\n\n1. Definition\nMaker: Ash (Twitter ID: @Ash_q563).\n\nCustomer：The parson who bought products in Official Shop: \"https://garden-of-ashen.booth.pm/\" .\n\nProduct Data：All or some of data in the file you get through downloading.\n\nMaker has copyright of the contents data(including custmized data.)\n\n\n2. Prohabited Action\n ・Transfar or sale product data to third parson.\n ・Use to Poritical action or religious action.\n ・Use to attack parson or groups.\n\nIf you do prohabited action, your agreement of use is ended automatically.\n\n\n3. Allowed Action\n　Any use doesn't hit prohabited action.\n  If you can't Judge yourself to hit prohabited action or not, please contact to maker.\n\nexamples:\n Equipments of charactor\n Use in game data (to can't get original data easily)\n Use room interior\n Take photos, videos\n Customize and use yourself\n\n\n4. Disclaimer\nMaker don't have responsibe for any inconvenience, disadvantage, \nloss or trouble caused by using the contents of this file containing all or part of the contents.\n\n"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
