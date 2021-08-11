@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "3iCBVFRqI6Dym0+FetX75uyAGJ5CKcfvAp/l5LMCmGg="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "3iCBVFRqI6Dym0+FetX75uyAGJ5CKcfvAp/l5LMCmGg="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"【¥0】 VRM Converter for VRChat","description":"Unityのエディタ拡張です。次の3つのツールが含まれています。\n\n• VRMプレハブをVRChat用アバターへ変換\n• VRChat用アバターをVRMへ変換\n• メッシュ・サブメッシュの結合\n\nUnity 2018.4.20f1 のプロジェクトに、あらかじめ VRChat SDK2、または SDK3-Avatars をインポートしておいてください。揺れ物の変換を行う場合は、Dynamic Boneアセットを購入する必要があります。\n\nUnity 2018.4.20f1\nunityhub://2018.4.20f1/008688490035\nVRChat SDK2 / SDK3-Avatars\nhttps://vrchat.com/home/download/\nDynamic Boneアセット\nhttps://assetstore.unity.com/packages/tools/16743","url":"https://booth.pm/ja/items/1025226","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"1000"},"image":"https://booth.pximg.net/c/620x620/ba01b0da-9d0b-4dd8-a9ad-3f35270de1c8/i/1025226/c639ada2-329a-4f94-9545-9d3eb2ace96e_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "3iCBVFRqI6Dym0+FetX75uyAGJ5CKcfvAp/l5LMCmGg="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -523,6 +544,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"使い方","content":"VRMからVRChatへアップロードする流れ — Qiita\nhttps://qiita.com/100/items/7315fe3a7eb75732ae43\n\nVRChat用モデルを標準アバター形式「VRM」へ変換する - Qiita\nhttps://qiita.com/100/items/d948d0875b60c2dbbe13"},{"type":"text","title":"不具合報告など","content":"GitHubのissueページへご連絡ください。\nhttps://github.com/esperecyan/VRMConverterForVRChat/issues"},{"type":"text","title":"VRMプレハブ → VRChat用アバター","content":"Unity上のVRMプレハブを複製し、VRChat用に次の設定を行います。\n\n• 視点\n• リップシンク\n• バーチャルキャスト風の表情切り替え (喜怒哀楽)\n• メッシュ、マテリアルスロット (サブメッシュ) の結合\n• 揺れ物 (VRMSpringBone→Dynamic Bone)\n• 視線追従 (俗に言うアイトラッキング)\n• まばたき\n• VRChatの不具合対策\n　◦ モデルの足が床に沈む問題の解消\n　◦ モデルがなで肩、いかり肩になる問題の解消\n\n※Quest向けにポリゴン数を減らす機能はありません。\n※ボーン構造によってはアップロードできない場合があります。\n※正規化済みの正常なVRMファイルをインポートした直後のプレハブでない場合、エラーが発生する可能性があります。\n\n上部のVRMメニューから利用可能です。\n\nVRM\n　└ Dupuricate and Convert for VRChat"},{"type":"text","title":"VRChat用アバター → VRM","content":"Unity上のVRChatアバターオブジェクトを、VRMファイルとしてエクスポートします。\n\n※clusterなどのアップロード制限があるプラットフォーム向けに調整する機能はありません。\n\n上部のVRMメニューから利用可能です。\n\nVRM\n　└ Export VRM file from VRChat avatar"},{"type":"text","title":"メッシュ・サブメッシュ結合ツール","content":"VRM Converter for VRChatへ同梱ツールしているツールです。こちらのみを利用する場合は、VRChat SDKのインポートは不要です。\n\n選択したオブジェクト階下のメッシュを、指定したオブジェクト直下へ結合します。その際、マテリアルが同一であるサブメッシュ (マテリアルスロット) を結合します。\n\nヒエラルキー上のオブジェクトのコンテキストメニュー (右クリックメニュー) から利用可能です。\n\nGameObject\n　└ UnityEditorScripts\n　　　└ CombineMeshesAndSubMeshes.cs"},{"type":"text","title":"動作確認バージョン (VRM Converter for VRChat 最新版)","content":"• Unity 2018.4.20f1\n• VRChat SDK2 2021.07.12.18.52\n• VRChat SDK3-Avatars 2021.07.12.18.52\n• UniVRM 0.79.0\n• Dynamic Bone 1.2.2"},{"type":"text","title":"更新履歴","content":"https://github.com/esperecyan/VRMConverterForVRChat/releases\n\n旧バージョンは、「Source code (zip)」をダウンロード、展開し、UnityエディアのAssetsへ「VRMConverterForVRChat」というフォルダを作成して、展開したzipの中身をその直下に置くと利用できます。"},{"type":"text","title":"変換の詳細仕様","content":"https://github.com/esperecyan/VRMConverterForVRChat/wiki/%E5%A4%89%E6%8F%9B%E3%81%AE%E8%A9%B3%E7%B4%B0%E4%BB%95%E6%A7%98"},{"type":"text","title":"ライセンス","content":"Mozilla Public License Version 2.0 (MPL-2.0)\nhttps://spdx.org/licenses/MPL-2.0.html\n\n▚▚▚ Assets/VRMConverterForVRChat/animations/*.anim\n\n同梱のアニメーションクリップは、すべてCC0-1.0です。\nhttps://creativecommons.org/publicdomain/zero/1.0/deed.ja\n\n▚▚▚ Assets/VRMConverterForVRChat/Editor/Components/BlendShapeReplacer.cs\n\n当ファイルの BlendShapeReplacer.VisemeShapeKeyNamesAndValues は、Blenderアドオン『Cats Blender Plugin』のブレンド値を利用しており、該当コードはMITです。\n\nCopyright (c) 2017 GiveMeAllYourCats\nhttps://github.com/michaeldegroot/cats-blender-plugin/blob/0.13.3/tools/viseme.py\n\n▚▚▚ Assets/VRMConverterForVRChat/Editor/VRMUtility.cs\n\n当ファイルのメソッド VRMUtility.Bake() は、ライブラリ・エディタ拡張『UniVRM』の PreviewSceneManager.Bake() を改変したコードで、該当コードはMITです。\n\nCopyright (c) 2020 VRM Consortium\nCopyright (c) 2018 Masataka SUMI for MToon\nhttps://github.com/vrm-c/UniVRM/blob/v0.57.0/LICENSE.txt\n\n▚▚▚ Assets/VRMConverterForVRChat/Editor/Utilities/MeshUtility.cs\n\n当ファイルは、ライブラリ・エディタ拡張『UniVRM』の同名ファイルを改変したコードで、該当ファイルはMITです。\n\nCopyright (c) 2020 VRM Consortium\nhttps://github.com/vrm-c/UniVRM/blob/v0.62.0/Assets/MeshUtility/LICENSE.md\n\n▚▚▚ Assets/VRMConverterForVRChat/CombineMeshesAndSubMeshes/Editor/CombineMeshesAndSubMeshes.cs\n\n当ファイルのクラス MeshIntegrator は、ライブラリ・エディタ拡張『UniVRM』の同名クラスを改変したコードで、該当コードはMITです。\n\nCopyright (c) 2018 DWANGO Co., Ltd. for UniVRM\nCopyright (c) 2018 ousttrue for UniGLTF, UniHumanoid\nCopyright (c) 2018 Masataka SUMI for MToon\nhttps://github.com/dwango/UniVRM/blob/master/LICENSE.txt\n\n▚▚▚ Assets/VRMConverterForVRChat/Editor/Utilities/Deconstruction.cs\n\n当ファイルのクラス Deconstruction は、Apache-2.0で配布されています。\n\nCopyright Nobuyuki Iwanaga since 2000\nhttps://github.com/ufcpp/UfcppSample/blob/8f248a22157878ab496bfca83640cdc4bd1d00e8/LICENSE\n\n▚▚▚ Assets/VRM\n\n当フォルダ配下のライブラリ・エディタ拡張 UniVRM は、MITで配布されています。\nhttps://github.com/vrm-c/UniVRM\n\nCopyright (c) 2020 VRM Consortium\nCopyright (c) 2018 Masataka SUMI for MToon\nhttps://github.com/vrm-c/UniVRM/blob/v0.57.0/LICENSE.txt"},{"type":"text","title":"パブリックAPI","content":"アクセス修飾子が「public」であるクラスやメンバー"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
