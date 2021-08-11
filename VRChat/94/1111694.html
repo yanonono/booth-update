@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "FJ2sF7YPjxmktLqnc32RulliNqyN3F+LggZHtAvQHz0="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "FJ2sF7YPjxmktLqnc32RulliNqyN3F+LggZHtAvQHz0="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"オリジナル3Dモデル「NiKo〈ニコ〉」","description":"VRchat用を想定したモデルですが、ゲームなど他用途にも利用可能です。\n\n目、眉、口に分けたシェイプキーが入っていますので、組み合わせて表情の作成もできます。\n\n※VRC SDK2で設定しています。\n\n更新履歴\n2018.11.26　・NiKo1.00リリース\n12.19  　　 ・長袖デニムジャケット、ボアブーツ追加\n　　　　　　・追加に伴い価格改定\\3000→\\3500\n2019.02.27　・コートウェイト等調整、肩ボーン、UV調整\n03.07　・瞬き干渉防止を導入\n　　　 ・パーツ分けしたFBXファイル、unitypackageを追加\n09.05　・指アニメーションを修正など\n09.21　・指のメッシュ、ボーン変更\n2020.05.04　Dynamic boneがない場合アップロードできなかった点を修正\n08.08　・しゃがむと足が交差してしまう問題を修正\n09.10　・Readme編集（文字化け修正）\n09.14　\n・設定済みShaderをCubedsUnityShadersからSunaoShaderに変更\nVer1.1\n\n＠NoBlinkSetter\nhttps://gend-vrchat.booth.pm/items/1252741\n\n＠SunaoShader\nhttps://booth.pm/ja/items/1723985","url":"https://booth.pm/ja/items/1111694","offers":{"priceCurrency":"JPY","@type":"Offer","price":"3500"},"image":"https://booth.pximg.net/c/620x620/a5a208c6-bf51-4e00-b329-85b58f98dab8/i/1111694/4427e618-725c-432f-b22b-38f358c1b626_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "FJ2sF7YPjxmktLqnc32RulliNqyN3F+LggZHtAvQHz0="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -474,6 +495,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"概要","content":"・ 各ポリゴン数\n　 半袖△17000、\n   長袖△16500、\n   コートなし△14700\n・ リップシンク 15種類\n・表情アニメーションオーバーライド6種設定済み\n・瞬きアニメーション設定済み\n・その他表情モーフあり\n※素体なし\n・Dynamic bone 設定済\n・SunaoShader設定済\n・VRCSDK2 設定済\n\n「Dynamic bone」、「SunaoShader」、「VRCSDK2」は別途導入が必要です。\n\n※有償アセット「Dynamic bone」はインポートせずとも使用可能です。（揺れません）\n\n\n〇内容物\n\n・FBXフォルダ（3DモデルFBXデータ）\n ＠パーツ別FBXデータ\n\n・Textureフォルダ（テクスチャpsd、pngデータ）\n　\n・UnityPackageデータ（各種設定済みパッケージ）\n\n・Readme（導入方法、利用規約など説明書）\n　※必ずはじめにお読みください。\n\n\n"},{"type":"text","title":"利用規約","content":"VN3ライセンス（https://www.vn3.org/）を利用しています。\n規約内容の詳細は以下のURLをご参照ください。\nhttps://drive.google.com/file/d/18ex9cWrOQf7LsFfoWBTeXGV8yhBVp9iZ/view?usp=sharing\n\n購入した時点で本利用規約に同意したものとみなします。\n本モデルを使用したことによって生じるいかなる損害トラブルに対して当方は一切責任を負いません。\nダウンロード商品のため、返金対応はできません。\n本利用規約において翻訳で差異が生じた場合は、日本語の利用規約を適用するものとします。\n\nご不明な点がありましたら、お問い合わせください。\n\n\n〇要約\n\n・本モデル、改造モデル、パーツの再配布・販売の禁止\n・公序良俗に反する行為や目的、政治、宗教活動、他者に対する誹謗中傷目的での使用禁止\n・配信など、不特定多数に公開される場合の性的表現、暴力的表現の禁止\n・個人での配信にて使用可（収益化は要クレジット記載）\n・衣装販売する場合は要連絡\n・法人の場合は要連絡\n・本モデルの著作権は制作者ユドノに帰属します。\n\n\n\n〇Terms of Use\n\nVN3 license is used.（https://www.vn3.org/）\nFor details of the terms and conditions, please refer to the following URL.\nhttps://drive.google.com/file/d/1lkgvFEpvCK8Os3owNx4q_fJ5ewIOswUo/view?usp=sharing\nBy making a purchase, you are deemed to have agreed to these Terms of Use.\n\nWe are not responsible for any damage or trouble caused by the use of this model.\nAs this is a downloadable product, it is non-refundable.\nIn the event of any discrepancy in the translation of these Terms of Use,\nthe Japanese version of the Terms of Use shall apply.\nIf you have any questions, please contact us.\n\n\n〇Summary of Terms of Use\n\n・Redistribution or sale of this model, modified models, or parts is prohibited.\n・Prohibition of use for activities or purposes that are offensive to public order and morals, political or religious activities, or defamation of others.\n・Prohibit sexual and violent expressions in cases where they are disclosed to the general public, such as video distribution.\n・Can be used for personal video distribution (Monetization requires credit to be shown)\n・Contact us if you want to sell your costume.\n・Please contact us if you are a corporation.\n・The copyright of this model belongs to the creator Yudono(ユドノ).\n\n\n\n\nなにかご不明な点や不具合などがございましたら下記までご連絡ください。\nもしくは、BOOTHメッセージからお問い合わせください。\n\n〇連絡先\n\n　Twitter 　@ohurosk\n　mail　　　ohurosk@gmail.com"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
