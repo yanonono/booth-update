@@ -56,9 +56,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "d1F3y3QfjZPwXnN/GaJ65QNyvaGMC3qfisCIWeEZ1Es="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "d1F3y3QfjZPwXnN/GaJ65QNyvaGMC3qfisCIWeEZ1Es="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"塹壕シャベル","description":"◆　掘ってよし、斬ってよし、殴ってよし。\n　　お庭のお手入れから白兵戦まで大活躍！\n　　個人携行用の小型シャベルの3Dモデルです。\n\n　(2020/04/14アップデート)\n　　柄の長さ・刃先の形状をシェイプキーで変えられるようになりました。\n　　場面に合わせてお使いわけいただけます。\n　　\n　　三角面：△2948\n\n◆　prefab設定済みでUnityでの導入簡単です。\n　　VRChatのアクセサリー用途で制作していますが、\n　　その他の目的・サービスでの利用についても制限はありません。\n\n(使用してよいことの例)\n◎VRChatアバターへの利用、ワールド内オブジェクトやアバターペデスタルへの配置。コピー可能なアバターでも問題ありません。\n◎自作の動画/静止画/ゲームへの利用、ストリーミングサービス内での利用。個人及び団体、収益の有無に関係なくお使いいただけます。\n◎データの改変改造、R-18/R-18Gでの利用について制限はありません。","url":"https://booth.pm/ja/items/1336967","offers":{"priceCurrency":"JPY","@type":"Offer","price":"200"},"image":"https://booth.pximg.net/c/620x620/866dbe17-ef91-48b7-8c82-b92e350a81ed/i/1336967/dde9b9c6-118f-4faa-b3e6-219d9dd35860_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -69,6 +86,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "d1F3y3QfjZPwXnN/GaJ65QNyvaGMC3qfisCIWeEZ1Es="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -404,6 +425,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"内容物","content":"・Unity package\n・readme.txt　　…この文章です。\n・テクスチャが入っているフォルダ\n　standardなどPBRシェーダー向けの４枚組みのテクスチャ(AlbedoTransparency,Ambient Occulusion,MetallicSmoothness,Normal)と\n　反射をベイクした１枚だけのテクスチャ(Singletexture)を用意しているので、使用シェーダーやお好みに合わせてご利用ください。\n・FBXファイルが入っているフォルダ\n\n◆　Unityへの導入　◆　\nダウンロードしたファイルを解凍し、中にあるUnity packageをインポートしてください。\nインポートされたフォルダ内にあるPrefabをHierarchyの任意の場所にドラッグ＆ドロップしてください。"},{"type":"text","title":"[利用規約]","content":"(2019/4/29)\n\n本モデル・データのダウンロードをもって以下の利用規約に同意したものとみなします。\n\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n本モデルはHAYA-CHANが制作し著作権を有しています。\n以下に示す禁止項目に触れない範囲において、利用者は本モデル・データを使用することができます。\n使用にあたってクレジットの記載は必須ではありません。ただし、とくにクレジットを記載する場合には、禁止項目に触れる形にならないように注意してください。\n\n---------------------------(禁止していること)---------------------------------\n\n・本モデルの制作者ならびに権利保持者を偽ること\n\n・改変の有無を問わず、本モデル・データ本体を第三者が再利用可能な状態で再配布すること\n(制作者が特に許可した場合においてはこの限りではありません)\n(VRChatのワールドおよびアバターペデスタルへの配置は、通常の方法ではモデル・データをそのまま入手することはできないため、ここで禁止している再配布にはあたらないと解釈します)\n\n・第三者の名誉あるいは知的財産権を侵害すること\n\n・政治的思想あるいは宗教的信条の宣伝のために用いること\n\n・その他、公序良俗に反する行為ならびに日本国法に触れる形での利用\n-------------------------------------------------------------------------------\n\n上記禁止項目に違反する内容での使用、ならびに正規の配布場所によらない方法で入手された本モデル・データがみられた場合には、制作者は該当の利用者に本モデルの使用中止を求め、又は必要な法的処置を講じるものとします。\n\n(免責事項)\n本モデル・データの利用に伴って発生したいかなる損害についても、制作者はその責を負いません。\n\n本モデルならびに利用規約の内容は必要に応じて予告なく変更されることがあり、商品販売ページに記載されているものが常に適用されます。\n変更は制作者の定める任意のメディアによって通知されるものとします。\n\n＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\nお問い合わせ、フィードバックはいつでも大歓迎です！\n\nTwitter：@HAYACHAN_VR"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
