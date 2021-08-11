@@ -59,9 +59,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "A3N0kMtfVgFekc77vXNX9FqYBXCFXTwi94VpYdpmwHk="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "A3N0kMtfVgFekc77vXNX9FqYBXCFXTwi94VpYdpmwHk="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"【VRChat】Gear necklace ギア・ネックレス","description":"【お知らせ（8月11日）】\n・軽量版チェーン(ポリゴン数が約1/10、シェイプキーなし版）‬を追加してVer 1.5にしました。\n・同時に価格を100円値上げしました。\n‪・既にご購入いただいた方はアップデート版も無料で再DLできます。\n——\n\nVRChat・Unityでの使用を想定した歯車モチーフのネックレスです。\n(Questでの挙動は検証できていません)\n特徴\n・Animatorによってギアが回転します。\n・曲がり具合を調節するシェイプキー付きのチェーンが同梱されています。\n・シェーダーの異なる二種のプレハブが同梱されています。\n・少し重めのデータになります。購入前に仕様をご確認ください。\n\n【モデルの使用条件】\n　改変：OK   商用利用：OK\n　性的・暴力的コンテンツでの使用：NG\n　※詳細は利用規約をご確認ください。","url":"https://booth.pm/ja/items/1195981","offers":{"priceCurrency":"JPY","@type":"Offer","price":"600"},"image":"https://booth.pximg.net/c/620x620/d4226d01-b958-4710-a35d-de900bd2a76a/i/1195981/dfb10ea7-81c5-4a87-a4e4-8c3608e5148a_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -72,6 +89,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "A3N0kMtfVgFekc77vXNX9FqYBXCFXTwi94VpYdpmwHk="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -487,6 +508,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/REok_TQEy68\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"同梱物","content":"1. 以下が含まれたunitypackage\n  - ペンダントトップfbxモデル\n  - ネックレスチェーンfbxモデル（曲がり具合調節シェイプキー入り）\n  - 軽量版ネックレスチェーンfbxモデル\n  - Standardシェーダー用テクスチャ＆マテリアル\n  - unilit系用軽量テクスチャ＆マテリアル\n  - アニメーションコントローラー\n  - アニメーションファイル\n  - 上記をセットアップしたprefabオブジェクト（Standard版＆Unlit軽量版）\n  - UV展開図（改変用）\n2. 説明書（Readme）\n3. 利用規約(Lisense)"},{"type":"text","title":"仕様","content":"- ポリゴン数\n　- ペンダントトップ：△2334\n　- チェーン：△8536\n　- 軽量版チェーン： △800\n- テクスチャ解像度：1024px\n- テクスチャ構成\n　- Standard版：3枚\n　　- Albedo\u0026Transparency\n　　- Metallic\u0026Smoothness\n　　- Normal\n　- Unlit軽量版：1枚\n　　- MaterialColor"},{"type":"text","title":"利用規約","content":"LICENSE Agreement (English follows after Japanese)\n規約制定日：2019年2月10日\n\n# 1. 本規約について\n1. 本3Dモデルデータ(以下「本モデル」)の利用者(以下「利用者」)は本モデルを購入した時点で下記の規約(以下「本規約」)に同意したものとみなします。\n2. 本規約は予告なく改訂される場合があり、最新のものが適用されます。\n最新の規約および変更内容は下記のURLで確認することができます。\n( https://github.com/Kozu-vr/BOOTH_LISENSE/blob/master/3DModel/LISENSE.md )\n3. 本規約が変更された場合、Kozu(以下「作者」)はBOOTH内ページに変更の旨を記載するものとし、利用者は変更後に利用した段階で変更内容に承諾したものとみなします。\n4. 日本語と英語の規約に不一致がある場合、日本語の規約が優先されるものとします。\n\n# 2. モデルの使用に関する許諾範囲\n次の許諾範囲においてアバター、アバターの付属品もしくはワールド内オブジェクトとして本モデルの使用を利用者に許可します。\n1. 本モデルを用いて暴力表現を演じることの許可\n - 不許可\n2. 本モデルを用いて性的表現を演じることの許可\n - 不許可\n3. 政治的・宗教的・反社会的な目的での使用\n - 不許可\n4. 商用利用の許可\n - 許可\n\n# 3. 再配布に関する許諾範囲\n1. 作者と利用者の間で別途合意がある場合を除き、再配布を禁止します。\n\n# 4. その他の禁止事項\n1. 作者が正当な理由をもって不適切な使用と判断した場合、本モデルの使用を禁止することができ、この場合利用者は直ちに利用を中止するものとします。これによる利用者の損害について作者は一切の責任を負わないものとします。\n\n# 5. 改変\n1. 利用者は本規約で許諾する範囲で本モデルを自由に改変できます。\n2. 本モデルのVRM等の他のデータフォーマットへの変換を認めます。\n3. 本モデルおよび改変されたモデルの原著作者としての権利は作者に帰属します。改変データの改変部分に生じる権利については利用者に帰属します。\n\n# 6. 免責\n1. 本モデルを使用したことによって発生した損害について、作者は一切の責任を負わないものとします。\n2. 利用者が本モデルを使用したことによって第三者に対し損害を与えた場合、作者は一切の責任を負わないものとします。この場合に作者が第三者から損害賠償請求を受けたときは、利用者は作者に対してそれにかかる損害額及び費用を賠償するものとします。\n3. 作者は予告なく本モデルの価格、色 、仕様およびモデルデータを変更する権利を留保します。\n4. 作者は予告なく本モデルの公開を終了する権利を留保します。\n\n# 7. 連絡先\nTwitter: https://twitter.com/kozu_vr\nE-mail: kozu.vr+booth@gmail.com\n\n---\nEffective date: February 10, 2019\nThis License is made effective between you and Kozu upon making a purchase of any digital product from kozu.booth.pm.\n# 1. License Agreement\n1. By purchasing this 3D model(\"Model\"), you agree that you have read and agree with this Terms and Conditions(\"License\").\n2. Kozu may revise and update this License at any time and without notice.\nThe latest License can be confirmed by the following URL.\n( https://github.com/Kozu-vr/BOOTH_LISENSE/blob/master/3DModel/LISENSE.md )\n3. If the License is changed, Kozu shall state the change in the page in BOOTH, and you acknowledge and agree the change contents at the time of using after the change.\n4. If this Japanese version of the Terms and Conditions does not conform to English versions, the Japanese version shall prevail.\n\n# 2. User License\nYou can use this Model as avatar, avatar's accessories, and world objects in the following permission.\n1. Violent acts using this Model\n - Disallow\n2. Sexuality acts using this Model\n - Disallow\n3. Political / Religious / Antisocial use\n - Disallow\n4. Commercial use\n - Allow\n\n# 3. Redistribution License\n1. Redistribution Prohibited unless otherwise agreed between you and Kozu.\n\n# 4. Other Limitations\n1. You shall stop to use this Model immediately if Kozu deems any use to be inappropriate.\n\n# 5. Modification License\n1. Modifications Allowed under this License.\n2. Data foamat conversion allowed under this License.\n3. Kozu reserves the right as the original author of this model and remodeled model. The rights arising in the modified part of the modified data are attributed to the user.\n\n# 6. Disclaimer\n1. Kozu assumes no responsibility for any losses incurred by you or third parties arising from the use of this Model.\n2. If the user damages the outdoors by using this Model, Kozu assumes no responsibility. In this case, when Kozu receives a claim for damages from a third party, the user shall compensate the amount of damages and expenses resulting therefrom to Kozu.\n3. Kozu reserves the right to change the price, color, specification and Model data of this Model without notice.\n4. Kozu reserves the right to terminate the publication of this Model without notice.\n\n# 7. Contact\nTwitter: https://twitter.com/kozu_vr\nEmail: kozu.vr+booth@gmail.com\n"},{"type":"text","title":"履歴","content":"・2019/02/16：ver 1.0公開\n・2019/08/12：ver 1.5公開"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
