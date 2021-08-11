@@ -57,6 +57,16 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "rJw9CR39UvHCvn3qlksTb+IrJEFMFTEBAYcsnWpXziA="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
   </head>
   <body>
     <div class="mini-player-controller" style="display: none;">
@@ -85,6 +95,13 @@
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "rJw9CR39UvHCvn3qlksTb+IrJEFMFTEBAYcsnWpXziA="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"コンサートペンライト","description":"■　HKG Style Penlight　■","url":"https://booth.pm/ja/items/1275071","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"100"},"image":"https://booth.pximg.net/c/620x620/ef636c3e-c379-4ba7-9bff-aa6b51029c71/i/1275071/a924d612-55e9-4793-8254-d4b551613ab2_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -92,6 +109,10 @@
     rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "rJw9CR39UvHCvn3qlksTb+IrJEFMFTEBAYcsnWpXziA="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -434,6 +455,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"内容物","content":"・penlight.fbx(△1624)\n・penlight_light.fbx(△862)\n・penlight.unitypackage\n・light.psd\n・silver.psd\n・readme.txt\n\nUnityおよびVRChatでの使用を想定しています。\n"},{"type":"text","title":"利用規約","content":"【利用規約】\n・本モデルを使用した時点で利用規約に同意したものとみなします。\n・テクスチャ、モデルの改変、再配布(※1)を認めます。\n・商用利用可能です。相談、連絡も不要です。\n・R-18/R-18Gコンテンツでの利用は制限しませんが、個人の責任のもとでお願いします。\n・著作権は放棄しておりませんが、禁止事項に該当しない限りは行使するつもりはありません。\n・本モデルデータ、および改造・改変したモデルデータを使用したことにより発生したトラブルや損失に関して、作者および作者の所属するいかなる団体も一切の責任を負いません。\n\n※1：再配布に関しては無償での配布のみ認めます。\n\n\n【禁止事項】\n・公序良俗に反する利用(社会倫理的な意味とお考えください)\n・政治的・宗教的主張に関する利用および他者を誹謗中傷する表現での利用\n・本モデルデータ、および改造・改変したモデルデータの有料再販売\n"},{"type":"text","title":"導入・カスタマイズ","content":"【導入方法】\n「penlight.unitypackage」をプロジェクトにインポートし、\npenlight.prefabもしくはpenlight_light.prefabをアバターの手のボーンの子に入れてください。\n角度や大きさを調節してアバターに合った大きさにしてあげましょう。\n両手に一本ずつがフォーマルスタイル。細くしてバルログ持ちしても良し。\n\n\n【カスタマイズ】\nUnity上でブレードの色や長さを自由にカスタマイズできます。\nparticleマテリアルのカラーを変更すれば簡単にライトの色が変えられます。\n\nブレード部分に入っている文字はテクスチャを書き換えれば自由に変えられます。\n同梱のlight.psdファイルにUVが入っています。推しの名前を入れよう。\nこれはブレードシートといい、本来は推しの名前を縦書きする文化があるのですが、VRChatだとIDや名前がアルファベットの場合が多い関係上、横書きしやすいようにUVを配置しています。\n文字を消したいときはlightマテリアルのemission textureをNoneにするだけで大丈夫です。\n\nsilver.psdはブレードの根本の銀色の部分です。\nprefabでは設定していませんが、UV展開してあるのでテクスチャを貼れます。\n文字を入れる場合はnormal mapを指定してやるといい感じです。\n"},{"type":"text","title":"Changelog","content":"2019/03/16 v1.00 リリース\n"},{"type":"text","title":"Special Thanks","content":"かにさん(@kani_tm_bb)\nぽにか(@ponica)\n敬称略\n"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
