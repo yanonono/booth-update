@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "YYSejqwp6SKCcg2EriBaOhsWR+vLLyD/4IxPsMBcfMU="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "YYSejqwp6SKCcg2EriBaOhsWR+vLLyD/4IxPsMBcfMU="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"【VRChat用】NewVirtualKeyboard V2.1","description":"[English]\nHere are the text chat prefabs. All you need to do is add the prefab to your scene. Standard Assets is required.\n\nこのパッケージはVRChatでテキストチャットができるようになるプレハブセットになります！\n通常（無料）と投げイワシ（Boost用）がありますがどちらも同じ内容なのでご注意ください！\n\n","url":"https://booth.pm/ja/items/1135731","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"184"},"image":"https://booth.pximg.net/c/620x620/030a2645-c1e5-4596-84e0-6756664df27c/i/1135731/0e3d0bd7-2a01-4fa8-a3a0-9c2487554694_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "YYSejqwp6SKCcg2EriBaOhsWR+vLLyD/4IxPsMBcfMU="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -446,6 +467,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"■ パッケージ内容","content":"・キーボードのプレハブ\n・プレハブに使用しているModel・Texture・Material・Shader・Animation・Font・Soundファイル\n・サンプルシーン"},{"type":"text","title":"■ 使用方法","content":"プレハブをシーンに設置するだけで使用できます！"},{"type":"text","title":"■ ライセンス","content":"・NewVirtualKeyboard V2.1\nMIT License - LICENSE.txt\n\n・前提アセット\nStandard Assets\n\n・使用素材/Assets\nFont: HigashiOme Gothic\nShader: builtin_shaders/UI-Default改変 (MIT License - NewVirtualKeyboardV2/Sharders/license.txt)\nAssets:\nDebrisSpawn (ナルさん Twitter:@momoma_creative)\nAutoChair (〃)"},{"type":"text","title":"■ 更新履歴","content":"・v2.1\n設置した際にチャットログの表示がされない場合がある不具合を修正しました。\n\n・v2.0\nシステム・デザインを一新\nCamera/RenderTexture/SpawnObjectを使わないように変更した為セットアップが不要に、プレハブの複製のみでいくつも設置が可能になりました。\n□ 既知の不具合\n・複数台設置した際にチャットログの表示がされないものが発生する場合があります。設置予定数より多めに設置してから不具合の発生している物を削除する事で対処可能です。\n\n・v1.0\nリリース"},{"type":"text","title":"■ その他","content":"V1からかなりの軽量化を行った為、個数制限がなくなりUnityがフリーズするようなオブジェクトも無くなりました。\nシステムが全く異なり、DebrisSpawnを利用した低コストなスポーン方式になります。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
