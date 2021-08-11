@@ -58,6 +58,16 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "xnsDRH4J/Vv8KnnYtMbVl3OlKfMVKo1sdxeTrK+QH5Y="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
   </head>
   <body>
     <div class="mini-player-controller" style="display: none;">
@@ -86,6 +96,13 @@
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "xnsDRH4J/Vv8KnnYtMbVl3OlKfMVKo1sdxeTrK+QH5Y="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"[VRChat向け3Dモデル]　ねこみみメイドさん","description":"[VRChat向け3Dモデル]　ねこみみメイドさん\n\nVRChatを想定したアバターモデルです。\nUnity2018に対応しています。\nVRMも付属しています。\nアバター3.0に対応しました。\n\nゲームや映像作品の素材としてもおつかいただけます。\n\nこのアバターは別途DynamicBoneが必要になります。","url":"https://booth.pm/ja/items/1062058","offers":{"priceCurrency":"JPY","@type":"Offer","price":"4000"},"image":"https://booth.pximg.net/c/620x620/6d25c339-b51a-47b5-8e63-8735e5161229/i/1062058/0a444e8e-5ef6-462f-b810-892b37135e3c_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -93,6 +110,10 @@
     rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "xnsDRH4J/Vv8KnnYtMbVl3OlKfMVKo1sdxeTrK+QH5Y="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -740,6 +761,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"概要","content":"・ポリゴン数△ 21,200\n\n・髪8色と目4色で32種類の組み合わせがVRC上で選べます。\n・リップシンク対応\n・独自の移動モーションを付属\n・自動まばたき機能付き\n・Pen機能を標準で付属\n・アイトラッキングは対応していません\n・ハンドサインに表情が初期設定されています。\n・その他16種類の表情がメニューから選べます\n・22種のポーズをVRC上のメニューから選べます。\n・表情のシェイプキーは眉、目、口で独立しており別の組み合わせも作ることができます。\n\n・DynamicBone対応箇所はヘッドリボン、ケモミミ、髪の毛、舌、ネックリボン、チェストリボン、\n　おっぱい、しっぽ、エプロンリボン、エプロン、スカートです\n　（※DynamicBoneを使用しないと揺れません。ご注意ください）\n　（※DynamicBoneはUnityAssetStoreで販売されている有料Assetです）\n\n・フルボディトラッキングに対応しています"},{"type":"text","title":"内容","content":"・VRC_Nekomimi_Maid_san.unitypackage\n・FBXのモデルファイル\n・pngのテクスチャファイル\n・read me.txt\n・VRMファイル"},{"type":"text","title":"シェーダーについて","content":"・ユニティちゃんトゥーンシェーダー2.07を使用しています。\n\n・しっぽはファーシェーダーに変更できます。\n（光の影響を受けられないシェーダーです）"},{"type":"text","title":"VRCHATにアバターを導入する方法","content":"1.UnityにVRChat_SDKを読み込む\n\n2.DynamicBoneを使用する方はDynamicBoneを読み込む\n\n3.VRC_Nekomimi_maid_san_v2.0.unitypackageを読み込む\n\n4.UnityのProjectタブより\"Asset/Nekomimi_maid_san AV3.0/\"の中のシーンファイルを読み込む\n\n5.Unityのメニューバーより”VRChat_SDK｜Show Build Control Panel”を開きVRChatウィンドウの\"Build\u0026Publish\"を押す\n　（このとき黄色い三角のエラーがありますが気にしなくても大丈夫です）\n　（またエラーがでて一時停止することがありますが、Unityメニューバーの下の一時停止ボタンを解除してください）\n\n6.名前など各種設定をしてUploadを押す\n\n7.Uploadが完了したらVRChatにログインして確認してください\n"},{"type":"text","title":"利用規約","content":"当データを購入した時点で規約に同意したものとみなします。\n当データを改変・改造したデータにも当規約が適用されるものとします。\n改造したデータの著作権は当方が所持するものとします。\n\n利用可能\n・VRChatなどで購入者が自身のアバターとして利用\n・VRChatのワールドでNPCやマネキンとして利用\n・営利利用\n・改変・改造\n・ゲーム制作\n・映像作品や動画配信\n・R-18，R-18G\n\n禁止事項\n・当データの再配布、販売を禁止します（改造品も含まれます）。\n・購入者以外の方に当データやその一部を利用させることを禁止します。\n　（VRChatのペデスタルなども含みます）\n　（VRChatでNPCやマネキンとして使用する場合はこれに含みません）\n・自作発言を禁止します（改造品も含まれます）。\n・公序良俗に反する行為や目的、政治, 宗教活動、他者に対する誹謗中傷目的での利用を禁止します。\n\n免責事項\n・当データについて当方はいかなる保証も行いません。\n・当データを利用して何らかのトラブル・損失及び損害等が発生した場合でも当方は一切の責任を負いません。\n"},{"type":"text","title":"更新履歴","content":"2021/05/10 Ver2.01\n　・パーティクルの設定を調整しました。\n　・ペンがミラーに映るようになりました。\n\n2021/05/03 Ver2.0\n　・アバター3.0に変更しました。\n　・Pen機能を追加しました。\n　・カラーチェンジをVRC上のメニューから指定出来るようにしました。\n　・キラキラするパーティクルを追加しました。\n　・フルトラッキングのキャリブレーションを調整しました。\n　・シェーダーをユニティちゃんトゥーンシェーダーに統一しました。\n\n2020/05/13\n　・VRMを追加しました。\n\n2020/04/12 Ver1.4\n　・Unity2018に対応しました。\n　・ユニティちゃんトゥーンシェーダーを2.07に更新しました。\n　・ユニティちゃんトゥーンシェーダーの設定とまわり道シェーダーの設定のものを一つのパッケージに統合しました。\n\n　・スポットライトで顔の堀が深くなるのを修正しました。\n　・LightProbeを使用したワールドに対応しました。\n　・目に浮かぶハートと星が淡く光るようになりました。\n\n　・首元の影のつなぎをなめらかにしました。\n　・VRCHATの移動モーションを追加しました。\n　・手の形にハート、猫の手を追加しました。\n　・初期登録の手と表情の組み合わせを変更しました。\n　・VRCの透過処理のバグに対処するために前髪、赤面を顔オブジェクトに統合しました。\n　（テクスチャやUV、ポリゴン自体に変化はありません）\n\nVer1.3\n・Unity2017.4.15.ｆ1に対応しました。\n・赤面の描画方式を変更しました。\n・付属のシェーダーを更新しました。擬似的な光源を設定し陰影をつけるシェーダーです。色の調整もできます。\n・しっぽのマテリアルを独立させファーシェーダーに変更しました。（テクスチャに変更はありません）\n・体と服のマテリアルをそれぞれ2つに分割しました。（テクスチャに変更はありません）\n・付属の表情アニメーションを2つ追加しました。（目に星が浮かぶ、目にハートが浮かぶ）\n・付属の手のアニメーションを2つ追加しました。（FIST、OPEN）\n・フルトラッキングでキャリブレーションしやすいように腰ボーンを調整しました。\n\nVer1.2.1\n　・付属のアニメーション（kiss)の不具合を修正しました。\n\nVer1.2\n　・自動まばたきを追加。\n　・立ち待機モーションを変更しました。\n　・ウェスト周辺のウェイトを調整しました。\n　・パンツの一部のウェイトを調整しました。\n　・シェーダーの変数名を修正しました。\n\nVer1.1\n　・髪の色を4つ追加。\n　・付属シェーダーのバージョンアップ。加算、乗算、オーバーレイで色の微調整ができるようになりました。\n　・さらにケモミミ内側のマテリアルを分離したことで髪の毛の色が調整できるようになりました。\n　・前髪の透明度の調整。\n　・髪のテクスチャの調整。\n　・舌を少しだけ揺れやすくしました。\n　・エプロン（後ろの）リボンのウェイト、ボーンを調整しました。"},{"type":"text","title":"制作","content":"まわり道\nhttps://twitter.com/kdaoigjoawi\nEmail:mawarimichi123@hotmail.co.jp"},{"type":"media","content":"\u003ciframe width=\"500\" height=\"500\" src=\"https://hub.vroid.com/characters/1803968563773994112/models/2311799399890151317/embed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\" allow=\"xr-spatial-tracking\"\u003e\u003c/iframe\u003e"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
