@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "Mdj0AoKMUwbsqsEo3eefwV0ppC6pcrQhLkvorrWxVbw="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "Mdj0AoKMUwbsqsEo3eefwV0ppC6pcrQhLkvorrWxVbw="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"PTRS1941　シモノフ対戦車ライフル","description":"ソ連の対戦車ライフル、PTRS1941のフルスクラッチ3Dモデルです。\n\nそのままの状態、または改変してご利用頂けます。\n\nUnitypackageを同梱しているので、手軽にUnityにインポートしてご使用いただけます。\n\nオブジェクト数: 4(銃本体、クリップ、弾薬、マズルフラッシュ)\nマテリアル数: 2(銃本体・クリップ・弾薬、マズルフラッシュ)\nポリゴン数: 44,792三角面(通常版)、22,774三角面(軽量版)　ともに全オブジェクトの総和\nテクスチャ解像度: 4096x4096\n\nおまけとしてSubstancePainterでレンダリングする際に使えるPBRテクスチャを付けてあります。\n\n■注意事項\n・本モデルはVRChatにて使用できることを確認していますが、ポリゴン数が多い為そのままではアバターの上限ポリゴン数(7万三角面)を超過してしまう場合があります。\nその場合、アニメーションで取り出す等の設定をする必要が発生しますので予めご了承ください。","url":"https://booth.pm/ja/items/1171409","offers":{"priceCurrency":"JPY","@type":"Offer","price":"4100"},"image":"https://booth.pximg.net/c/620x620/39edc5c4-fd37-4865-94df-88cfbc8cbd88/i/1171409/b48057e1-64e7-4873-8de4-26468b0058fe_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "Mdj0AoKMUwbsqsEo3eefwV0ppC6pcrQhLkvorrWxVbw="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -521,6 +542,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"スキニング・シェイプキー設定済","content":"実銃同様に各種可動部を可動させることが可能で、アニメーション等を作成する際に便利です。\n\n下記のスキニング・シェイプキーが設定済です。\n\nスキニング:\n・ボルト\n・トリガー\n・マガジンカバー\n・弾薬押し上げ板\n・リアサイト\n・安全装置\n・銃身\n\nシェイプキー:\n・バイポッド折りたたみ\n・ボルトストップ\n・ボルト開放時形状\n・ガスピストン\n・マガジンカバー開閉用つまみ\n・銃身分離ロックピン"},{"type":"text","title":"注意事項","content":"・本モデルはVRChatにて使用できることを確認していますが、ポリゴン数が多い為そのままではアバターの上限ポリゴン数(7万三角面)を超過してしまう場合があります。\nその場合、アニメーションで取り出す等の設定をする必要が発生しますので予めご了承ください。\n\n・トップ画像の背景の撮影用セットは付属しません(要望があれば提供します)"},{"type":"text","title":"軽量版が選択可能","content":"ポリゴン数や処理性能に余裕が無い場合に役立つ、ポリゴン数を削減した軽量版が入っています。\n通常版の目立たない部分を中心に削減してあり、見た目のクオリティはなるべく維持したままでポリゴン数を約半分に節約できます。"},{"type":"text","title":"利用規約","content":"・本モデルは改変可能です。購入者はモデル及びテクスチャを自由に改変し、又はそのまま使用することができます。\n\n・改変の有無に関わらず、また有償無償を問わずいかなる形態でも、本モデルを転売または再配布することを禁じます。\n\n・購入者は本モデルを、自身の無償作品(ゲームや動画等の制作物)に組み込み、またそれを頒布することができます。ただし、本モデルがそのコンテンツ主体となる(実質的に再配布にあたる)形態のものは不可とします。\n\n・購入者は本モデルを、必要なクレジット表記(制作者名、本モデルの商品URL)を行うことで、自身の有償作品に組み込み、またそれを頒布することができます。ただし、本モデルがそのコンテンツ主体となる(実質的に転売にあたる)形態のものは不可とします。\n\n・本モデルを使用して公共良俗に反する行為をすることを禁じます。\n\n・本モデルを使用して特定の個人や団体を誹謗中傷することを禁じます。\n\n・著作者人格権を侵害する行為を禁じます。\n\n・本モデルを使用することによって生じた、いかなる金銭的、機会的な損害や不利益に関して、茜しゅんは一切の責任を負いません。"},{"type":"text","title":"アニメーション同梱","content":"Unitypackageには、音声付きの初弾装填動作と射撃の2種類のアニメーションが含まれていますので、アニメーションの実装がお手軽です。\n\n※パーティクルシステムは実装されていません。必要に応じて各自で実装をして下さい。"},{"type":"text","title":"更新履歴","content":"Release-1.0　商品公開\nRelease-1.1　軽量版を追加"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
