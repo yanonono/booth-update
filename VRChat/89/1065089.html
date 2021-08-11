@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "G9E13uj8F3QpTigEZm2wdZ613svE7uDxSPN4PUddE/g="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "G9E13uj8F3QpTigEZm2wdZ613svE7uDxSPN4PUddE/g="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"VRChat用 Emote詰め合わせ (無料版)","description":"Unity Animationファイル Emoteの詰め合わせ Ver'1.20","url":"https://booth.pm/ja/items/1065089","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"0"},"image":"https://booth.pximg.net/c/620x620/7bb5bc5a-a1f5-4ff7-80fe-8049fab00a8e/i/1065089/7b932cbf-ac61-4868-be86-1952140e4848_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "G9E13uj8F3QpTigEZm2wdZ613svE7uDxSPN4PUddE/g="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -548,6 +569,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"製品情報","content":"【VRChat】の機能の一つに モーションを再生する『Emote』があります。\n\nこちらでは私「かんな久（ねここや）」が作成したEmote用アニメーションファイル45種類を無料で配布いたします。主にかわいい女の子向けのモーションとなっています。\n\nUnityでHumanoid設定されているモデルで、かつアニメーションオーバーライド設定できる方なら、アニメーションファイルを「Emote1～8」の所に放り込むだけで簡単にVRChat内で使用できます。\n\n\n設置方法は、右の説明書もしくはこちらの特設ページを参照してください。利用規約や注意事項もそちらに記しています。\n\n\n※モデルはHumanoid設定されている必要があります。\n※アニメーションするのはHumanoid設定しているボーンのみです。表情(モーフ)やダイナミックボーンは含まれていません。\n\n\n－－－－－\nこの作品は無料配信ですが、それなりに時間を要してしまいましたので、もしEmoteを使用して気に入ってもらえましたら、Booth内に Emote詰め合わせ用の募金箱を設置していますので、よろしければ支援をよろしくお願いいたします。\n募金してくれた方に、返礼品としてEmoteをさらに48個贈呈します。\n\nhttps://necocoya.booth.pm/items/1093533\n"},{"type":"text","title":"収録Emote01","content":"・手振り１　・手振り２　・うきうき\n・バンザイ　・怯え　・拗ねる\n・あくび　・胸隠し　・スカート抑え\n・orz　・ラッキースケベ　・ドジっ子\n・照れ１　・照れ２　・キス(立ち)\n・キス(座り)　・スリープ　・ウマウマ(ﾟ∀ﾟ)\n・ヨシッ！　・踏みつけ　・壁尻"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/riaay9qTpls\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"収録Emote02","content":"・手振り３　・おじぎ　・ひみつ\n・はわわっ　・ピース１　・ピース２\n・がおーっ　・ひょっこり　・中二病\n・荒ぶる鷹のポーズ　・止まるんじゃねぇぞ…　・次回予告\n・エンゼル体操　・座禅　・二礼二拍手一礼(参拝)\n・シャフ度　・壁ドン１　・壁ドン２\n・じゃんけん(グー/チョキ/パー)　・フュージョン(L/R)"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/E8Qfao4PYwY\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"収録Emote03","content":"・モンキーダンス　・正義\n・ケツワープ(＋チャクチ)　・カカポ"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/I80GeXNTbTc\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
