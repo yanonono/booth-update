@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "M7jmhmGIqti1/r831xbNY65dzKTtMtgdaTY5QiIdyC8="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "M7jmhmGIqti1/r831xbNY65dzKTtMtgdaTY5QiIdyC8="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"Humanoid Uuga Ver.1.0.1 - VRChat対応アバター","description":"■このキャラクターについて\n・VRChat用に制作した恐竜型アバターをそれとなく人型化してみました。性別は不詳です。\n\n■コンテンツについて\n・VRChatでの利用を想定した3Dモデルですが、VRChat以外でもご利用いただけます。詳しくは利用規約をお読みください。\n\n■ご購入前の注意点\n・表情によって瞬きが干渉する場合があります。\n・ハンドサインが識別しにくい手の形状をしています。\n・尻尾を揺らすには有料アセットのDynamicBoneが別途必要になります。\n\n■シェーダーについて\n・synqark様のArktoon-Shadersを同梱しています。\n　https://booth.pm/ja/items/1027997\n・Arktoon-Shadersのドキュメントサイトはこちらです。\n　https://synqark.github.io/Arktoon-Shaders-Doc/\n\n影の彩度・色合い・明度の調節\nhttps://synqark.github.io/Arktoon-Shaders-Doc/documents/shadow/#hue-shift-saturation-value\n「つや」の調節\nhttps://synqark.github.io/Arktoon-Shaders-Doc/documents/gloss/\n\n■使い方\n1.VRChatSDK・Arktoon-Shaders(順不同)→Avatar_Lucyの順番でUnityPackageをインポートします。\n2.当該フォルダ（Assets→ugarex→Lucy）にあるLucy_Scene.unityをダブルクリックするか、Lucy.prefabをHierarchyウィンドウにドラッグ＆ドロップします。\n3.メニューバーのVRChat SDKからShow Control Panelを開き、Builderタブで「Lucy」が選択されていることを確認した後、Build \u0026 Publishボタンをクリックします。\nしばらくするとアップロード画面が表示されます。\n\n■お問い合わせ\nTwitter:@ugai_34","url":"https://booth.pm/ja/items/1326188","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"1000","highPrice":"1500"},"image":"https://booth.pximg.net/c/620x620/23840f3b-d94e-4725-8c42-f7a85f56d151/i/1326188/c74932bc-6f85-41eb-9644-f2530eed5c12_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "M7jmhmGIqti1/r831xbNY65dzKTtMtgdaTY5QiIdyC8="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -505,6 +526,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"利用規約","content":"対象コンテンツの利用権利の販売となります。コンテンツを改変および任意メディアで利用することができます。\n\nただし下記を禁止します。\n・他人が利用できるようにし、著作者の販売を阻害すること。\n・コンテンツ自体に政治的または宗教的もしくは反社会的なメッセージを持たせること。\n\nその他\n・コンテンツあるいは発生した不利益に対して著作者はなんら責任を負いません。\n・利用権利は他人に譲渡することができません。\n\nこのライセンスにおける解説情報は下記になります。\nhttps://gitlab.com/towelfunnelvrc/towel-license/wikis/\n（タオルライセンス 販売用 version0.9）"},{"type":"text","title":"更新履歴","content":"2019年6月7日\nアバターデータ(fbx)の修正をしました。(v.1.0.1)\n詳細\n・瞬き時に意図しない頂点が動いていた問題を修正\n\n2019年5月1日\nテクスチャ改変用追加ファイルを更新しました。(v.1.0.1)\n詳細\n・上着部分に着色するとUVの境界に白い滲みができてしまう問題を修正\n\n2019年4月28日\nテクスチャ改変用追加ファイルがダウンロードできるようになりました。\n内容\n・より詳細なUV展開図\n・psdファイル\n\n2019年4月26日\n紹介用画像にスカートの色改変に役立つ補足画像を追加しました。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
