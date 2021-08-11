@@ -57,9 +57,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "KmwQ2zc5DBrFhbpQV8CknrzMeYvTkUqlNi7Y4MoYUhE="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "KmwQ2zc5DBrFhbpQV8CknrzMeYvTkUqlNi7Y4MoYUhE="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"Makia 01 NL (VRChat向け)","description":"1ボタンで遊べるゲームです　筐体は各々で作ってください\n","url":"https://booth.pm/ja/items/1262183","offers":{"priceCurrency":"JPY","@type":"Offer","price":"516"},"image":"https://booth.pximg.net/c/620x620/890f1c67-1f43-498b-b3ae-8f41ae0eb8fa/i/1262183/a7162080-a2a6-4817-9756-9f04219e38f0_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -70,6 +87,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "KmwQ2zc5DBrFhbpQV8CknrzMeYvTkUqlNi7Y4MoYUhE="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -378,6 +399,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"中身","content":"・Makia_01_NL.unitypackage: データ\n　・/phi16_distr/Makia_01_NL/\n　　・Makia_01_NL.prefab: 計算機構・表示盤・スイッチが含まれるprefab\n　　・Internal/: 内部的に使用しているもの\n　　・1/: 1つのゲーム機構毎に用意するもの\n・README.md: この文章以上に詳細を含めた文書"},{"type":"text","title":"使い方","content":"Makia_01_NL.unitypackage を開き、任意のUnityプロジェクトにimport\n\nVRCSDKを導入した状態で Makia_01_NL.prefab をHierarchyの任意の場所に追加\n\n綺麗に配置する場合・複数配置する場合は README.md に詳細があります"},{"type":"text","title":"注意点","content":"同期は一切しません (ボタンを押したことくらいはわかる)"},{"type":"text","title":"規約","content":"・著作権は制作者 phi16 に帰属\n・本データの使用によって生じうる任意の責任を制作者は負わない\n・任意の解析・改変可\n・本データの利用によって利益を得ることは可、但し主目的である場合は引用を明示すること\n・第三者による、全体を含む部分的な再配布及び公開は不可、但し以下の例外が存在\n　・本データそのものを配布する目的でないと客観的に判断できる状態での再配布は可\n・個人的改変の差分のみを配布及び公開することは可\n　・完全に置き換えた場合のそれ単体での配布には引用を明示すること\n・本規約における引用とは、本データの販売ページURL (https://phi16.booth.pm/items/1262183) を含む文字列である\n・本データに元来結びついていない情報を付加して広く周知させる行動は禁止\n・本規約の内容は時代の流れによって変化することがあり、解釈は解釈しようとした時点で行う\n\n機構だけ参考にして新たなゲーム作ってくれてもいいし コードごりごり弄って新たなゲーム作ってもいいし\n\nどちらかというといろんな種類のシェーダ製ゲームを気軽に配置できるといいなという気持ち (誰か作ってください)\n\nまぁワールドの情報量をちょっと増やす飾りくらいの気持ちでどうぞ"},{"type":"text","title":"連絡先","content":"・Mail: phi16.256@gmail.com\n・Twitter: @phi16_\n\n質問は気軽にどうぞ"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
