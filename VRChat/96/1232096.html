@@ -59,9 +59,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "HteVsoX1VqwSx4XLS9JKCD2ripCyrUv/2o2Skm0qo8k="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "HteVsoX1VqwSx4XLS9JKCD2ripCyrUv/2o2Skm0qo8k="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"Saku*saku パウダーファンデーション","description":"「VRoidの為のコスメブランド、この春誕生…！」\n\nこれは「VRoid ユーザーの、VRoid から生まれた、すべての女の子のためのコスメブランド」です。\n\nVRoid Studioや、VRoidから出力されたVRMなどの3Dモデルに対応しています。（UVが共通なら、恐らく他形式への変換後も使えると思います）\n\n※ブランドコンセプト上、「女の子モデルへの適用」を想定として調整していますが、男の子モデルもUVは共通のようなので使えるかもしれません。","url":"https://booth.pm/ja/items/1232096","offers":{"priceCurrency":"JPY","@type":"Offer","price":"600"},"image":"https://booth.pximg.net/c/620x620/cb1b1816-d018-4c58-b349-b7f3c5d8bd2f/i/1232096/ef1af6fa-1cab-4f40-9463-8731404956e3_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -72,6 +89,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "HteVsoX1VqwSx4XLS9JKCD2ripCyrUv/2o2Skm0qo8k="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -466,6 +487,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"内容物","content":"Sakusaku-foundation.zip\n├「おまけモデルデータ」（コスメの3Dモデルが入っています）\n\n├foundation.blend（blender向けデータ。）\n├foundation.fbx（VRCで使う場合はunityのを使ってください。）\n├foundation.unitypackage（Unityパッケージ。2017.4.15f1で制作しています。）\n└「texture」（3Dモデルのテクスチャデータが入っています。差分あり。）\n\n├「顔テクスチャ」（VRoidモデル向けのテクスチャです）\n\n ├bodyFoundation-cacao.png\n ├bodyFoundation-cinnamonbeige.png\n ├bodyFoundation-hicacao.png\n └bodyFoundationーorangebaige .png\n └bodyFoundationーorangebaige.png\n └bodyFoundationーpeachyellow.png\n └bodyFoundation-peach.png\n └bodyFoundation-peachwhite.png\n └eye-petit.png(おまけで付けたアイプチです。お好みでどうぞ）\n └faceFoundation-cacao.png\n └faceFoundation-cinnamonbeige.png\n └faceFoundation-hicacao.png\n └faceFoundationーorangebaige.png\n └faceFoundationーpeach.png\n └faceFoundationーpeachwhite.png\n └faceFoundationーpeachyellow.png\n\n└(説明書Readme)Sakusaku2019spling.pdf（説明書データです。2019年春分のSaku*sakuコスメ素材で共通です。）\n\nなお「おまけモデルデータ」の方に「arktoon-shaders-1.0.0.0」を使用しています。（Unity packageの中に入っています）\nすでにこのシェーダーをインポート済みの場合は、インポート時にチェックを外すか、インポート前に削除してからインポートをしてください。"},{"type":"text","title":"◆利用規約(2020年4月18日より適用)","content":"日本語版\nUni-Virtual License\n\n【利用規約】\n本モデルはUVライセンスで公開されています。\n本モデルでは基礎条項に加え、個別条項をもとに以下の行為を許可します。\n\n・個人の商用利用の許可\n・法人の利用の許可\n・二次的著作物の配布の許可\n・配布、販売時のデータ流用の許可\n・成人向け表現（性的表現）の許可\n・成人向け表現（暴力表現）の許可\n\n本データは以下の特記事項があります。\n\n◆R-18、R-18G、NFSW表現についての補足\n各プラットフォームのルールに従ってください。\n未成年者へ「R-18、R-18G、NSFW表現」を含むコンテンツを見せることが無いよう、配慮をお願いします。\n\n◆商用利用についての補足\n基本的にUV Licenseに従ってください。\nただし、以下のような使用はご遠慮ください。\n・誇大表現、優良誤認を誘う内容のコンテンツへの利用\n\n◆基礎条項の4条の補足\nUV Licenseの「本著作権者の権利を阻害する行為の禁止」は、主に次のようなことを示します。\n(これに限らず、本著作権者の権利を阻害する行為はご遠慮ください)\n・VRChat上でアバターやワールドを「Public」に設定すること\n・VRoid Hub上で「他の人の利用」を「YES」に設定すること\n・THE SEED ONLINE上で「公開」「限定公開」に設定すること\n\n規約全文は下記URLを参照してください。\nhttps://uv-license.com/ja/license?utf8=%E2%9C%93\u0026pcu=true\u0026ccu=true\u0026ddw=true\u0026dmd=true\u0026seu=true\u0026veu=true\u0026remarks=true"},{"type":"text","title":"◆ Terms of Use (Applicable from April 18, 2020)","content":"English ver.\nUni-Virtual License\n\n【Terms of Use】\nThis model is released under UV license.\nThis model allows the following actions based on Individual terms in addition to the Basic Terms.\n\n・Personal Commercial Use\n・Corporate Commercial Use\n・Distribution of Derivative Works\n・Diversion of Model Data\n・For Adults, Sexual Expressions Use\n・For Adults, Violence Expressions Use\n\nThis data has the following special notes.\n\nRemarks\n◆ Supplement to about R-18, R-18G, NSFW\nFollow the rules for each platform.\nPlease take care not to show the contents including \"R-18, R-18G, NFSW\" to minors.\n\n◆ Supplement to about commercial use\nPlease basically according to the UV License.\nHowever, please do not use it as shown below.\n・Use of exaggerated expressions and content that induces misunderstanding\n\n◆Supplement to Article 4 of the basic clause\n“Prohibition of Acts that Inhibit the Rights of the Copyright Holder”on the UV License ,indicates the following.\n(Not limited to this, please refrain from acts that Inhibit the Rights of the Copyright Holder.)\n・Set your avatar or world to \"Public\" on VRChat\n・on VRoid Hub, set \"Can this model data be used by others?\" to \"YES\".\n・Make settings so that other users can use this item on THE SEED Online\n\nFor the full text of the rules, please refer to the following URL.\n\nhttps://uv-license.com/en/license?utf8=%E2%9C%93\u0026pcu=true\u0026ccu=true\u0026ddw=true\u0026dmd=true\u0026seu=true\u0026veu=true\u0026remarks=true"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
