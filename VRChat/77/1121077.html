@@ -56,9 +56,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "3iT4pDOAJqWZbJGeO2AhHd82Axxc3s73mBQx3jya2Kk="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "3iT4pDOAJqWZbJGeO2AhHd82Axxc3s73mBQx3jya2Kk="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"VRChat対応モデル：モノクロロータス","description":"VRChat対応モデル：モノクロロータス","url":"https://booth.pm/ja/items/1121077","offers":{"priceCurrency":"JPY","@type":"Offer","price":"0"},"image":"https://booth.pximg.net/c/620x620/b4b2996b-a70b-447a-bd93-ba50d0e12fef/i/1121077/c7547531-f64c-4550-a637-7d96b9d08dcd_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -69,6 +86,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "3iT4pDOAJqWZbJGeO2AhHd82Axxc3s73mBQx3jya2Kk="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -363,6 +384,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"概要","content":"VRChat対応モデル「モノクロロータス」です。\n名前の通りモノクロカラーが特徴の男性型アバターです。\n理由・意図があって無料配布となっております。その点に関する考えについてはダウンロード後にReadme.txtを参照ください。"},{"type":"text","title":"基本情報","content":"・頂点数△17,060\n\n・リップシンク、ダイナミックボーン、表情設定済み\n\n・Arktoon-Shaders使用・同梱\n\n・改変用に服の内部を削除していないオリジナルファイル（blender/fbx）とテクスチャ（clip/psd）を同梱\n\n※アイトラッキング、まばたきは未実装となります。"},{"type":"text","title":"利用規約","content":"・どのような形であれ利用が確認された場合は、下記の規約を確認の上、同意していただいたものと判断します\n。\n\n・当モデルを利用して発生した一切の損害・トラブルについては、全て利用者自身が責任を負うものとします。\n\n・当モデルの著作権は改変の有無を問わず、制作者であるなかのひとに帰属します。\n\n・商用利用：可。\n　動画配信、ゲーム・映像作品等のコンテンツ、Vtuber活動等、特に制限なくご利用いただけます。\n　ただし利用の際はアバター制作者名（なかのひと）とモデル名（モノクロロータス）の双方のクレジットが必要となります。\n\n・改変：可。\n　モデル本体、服、装飾品、テクスチャ等の改変・流用について特に制限なくご利用いただけます。\n\n・成人向けコンテンツへの利用：可。\n　エロ・グロどちらのコンテンツにもご利用いただけます。\n　ただし下記の禁止事項に抵触しない形での利用に限ります。\n\n・再配布：条件付きで可。\n　制作者であるなかのひとの許可なしでの再配布は禁止します。\n　ただし改変したモデルについては販売含めて許可を出す場合がありますので、再配布をお考えの方はご連絡ください。\n　一切改変なし・部分的に抜き出しただけでの再配布は許可が下りないとお考えください。\n　再配布モデルが許可したものかどうかの確認方法としては、なかのひとがツイッター上で告知をした上、BOOTHのモノクロロータス販売ページで「許可リスト」という形で公表する予定にしておりますので、お手数ですがそちらでご確認をお願いします。\n　なお再配布に関しましては、一切の責任を再配布者が負うものとします。\n\n・ペデスタルの設置：条件付きで可。\n　無断での設置を禁止していますが、制作者であるなかのひとが許可を出した場合に限り可とします。\n　その場合も再配布の際と同様、許可リストに記載をさせていただきます。\n\n・政治宗教目的での利用、公序良俗に反する行為、誹謗中傷目的での利用は全面的に禁止します。"},{"type":"text","title":"その他","content":"不具合・質問等はBOOTH（https://nknht-shop.booth.pm/）のプロフィール欄のメールフォームもしくはツイッター（https://twitter.com/nknnknnknht）から受付します。\nただし無料配布のアイテムである都合上、制作者自身が致命的な不具合だと判断しない限り、アップデートの予定はありません。ご了承の上お使いください。\n\n※商品画像に用いたフォントは全て、もじワク研究様の「廻想体 マキナ（B）」を利用しています。\n\n※Arktoon-Shadersはsynqark様が制作されたシェーダーです。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
