@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "CdEwKH8d9L95WCm8Z9s20SeH5MneL6YYX6ivacautss="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "CdEwKH8d9L95WCm8Z9s20SeH5MneL6YYX6ivacautss="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"我楽多印の歯車貯古齢糖‐大入‐","description":"私が愛をこめて作った我楽多印の歯車貯古齢糖です\nいろんな方に配れるように大容量です\n袋には10個チョコが入って計16100ポリゴンになります\nunitypackageには\n本体、取り出し用、パーティクルの３つのプレハブが入っています\nまた、袋と包み紙には開封用シェイプキーが設定してありますのでお好みでアニメーションに組み込んでください\n\nシェーダーはフレアさん(@whiteflare_vrc)作成のシェーダパック\"Unlit_WF_ShaderSuite\"(https://twitter.com/whiteflare_vrc/status/1084721244274999296)を使用させて頂いております\nこの場を借りて深く感謝致します","url":"https://booth.pm/ja/items/1217516","offers":{"priceCurrency":"JPY","@type":"Offer","price":"100"},"image":"https://booth.pximg.net/c/620x620/54d1b61a-a76a-4e92-aff9-20e36195e60e/i/1217516/16c4a9e5-d453-4527-882f-cc406c8904bd_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "CdEwKH8d9L95WCm8Z9s20SeH5MneL6YYX6ivacautss="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -404,6 +425,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"利用規約","content":"改変、商用利用は許可いたします。再配布は禁止させていただきます\n商用利用の場合どこかに作者名クレジットを掲載していただけると助かりますが強制ではありません。\nモデルが抜き出せる状態での組み込み作品の配布は再配布とみなしますのでお気を付けください。\n動画、及び画像等の映像コンテンツでの収益化等の制限はありません。\n\nまた当モデルを使用していかなる損害が発生したとしても、制作者は責任を負いません。\n使用は自己責任でお願いします。"},{"type":"text","title":"その他","content":"連絡先:Twitter\n　我楽多(@shoten0108)\n\n不具合、要望、質問等はこちらにお願い致します。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
