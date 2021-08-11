@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "yvCX0FK5fKxF7VcSFuZ28M/wNtcm4fdsEL4Ei/VKSbA="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "yvCX0FK5fKxF7VcSFuZ28M/wNtcm4fdsEL4Ei/VKSbA="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"【3Dモデル】chibi P","description":"バーチャルマーケット2の開催にあわせて販売開始予定だったキャラクターのボクセルちびキャラverです。\n\n開催までににモデル販売開始が間に合わかったお詫びです。\n\n\n他のアバターの頭上にちびキャラを載せつつ、腕を同期させるいわゆる｢サブアーム｣ためのセットアップ方法を同梱しています。\n\n※ 販売予定だったほうも無事販売しています．\n  【オリジナル3Dモデル】プラン / プラン Lite 【セット】\n  https://sporadic-e.booth.pm/items/1295846\n\n※ サブアームはUnity2017での実装(RidgitBody\u0026FixJoint)になっています．Unity2018での対応等は未確認です．","url":"https://booth.pm/ja/items/1263131","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"100"},"image":"https://booth.pximg.net/c/620x620/81541f91-c514-450c-b882-988fe98aaa68/i/1263131/9882333d-8e98-4cf3-ad35-12fee8bee02a_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "yvCX0FK5fKxF7VcSFuZ28M/wNtcm4fdsEL4Ei/VKSbA="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -443,6 +464,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"概要","content":"* Unity Humanoid対応 身長約45cm\n* MagicaBoxelプロジェクト同梱\n* ポリゴン数 約△7000\n* 表情 アイトラッキング リップシンクなし\n* 3点トラッキング 対応\n* フルトラッキング 未確認\n* VRChat Avator Performance: Excellent\n* UnityChanToonShader v2.0.6"},{"type":"text","title":"規約","content":"本データの著作権は作成者 かでん に帰属します。本データを利用した時点で以下の内容に同意したものとします。\n\n* 自作発言NG\n* 再配布OK\n* その他の利用に関しては節度を守ってお願いします"},{"type":"text","title":"連絡先等","content":"* Main Modeling/Desgin: かでん\n*** Twitter @2_sac\n*** VRCID   kden\n*** Discord kden#8262\n\n* Main Desgin/Support: uui\n*** Twitter @trashbako"},{"type":"text","title":"更新履歴","content":"2019/03/07 1.0"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
