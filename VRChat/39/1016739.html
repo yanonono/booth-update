@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "O2FT5eKY++/TKbipoOb9D4fmrxfP5iR+hSHWZQogSMM="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "O2FT5eKY++/TKbipoOb9D4fmrxfP5iR+hSHWZQogSMM="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"VRCDeveloperTool","description":"主にVRChat開発などUnityでの開発で役に立ちそうなEditor拡張の詰め合わせです。(今後増えていく予定)\n\nこの詰め合わせに含まれる特にアバターの基本的な設定をおこなうツールはこちらでパッケージ化しています\nhttps://booth.pm/ja/items/1258744\n\nComponentAdderとVRCAvatarTester以外はAvatars3.0にも対応しています","url":"https://booth.pm/ja/items/1016739","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"500"},"image":"https://booth.pximg.net/c/620x620/5daaaeb1-43fa-4c89-8da3-e7e44093dddb/i/1016739/622ac638-57a1-40df-945b-b56a4ec17b82_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "O2FT5eKY++/TKbipoOb9D4fmrxfP5iR+hSHWZQogSMM="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -601,6 +622,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/2w8yrDTfxDM\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"内容物一覧","content":"・ComponentAdder (ver1.2.2)\n特定のオブジェクトの子オブジェクトすべてに指定したコンポーネントを追加・変更・削除することができるツール\n\n・HandPoseAdder (ver1.2)\n特定のAnimationファイルに手の形を特定のもの(Fist等)に変更するAnimationキーを追加するツール。自分で用意したAnimationファイルのキーを追加することもできます。\n\n・HumanoidPoseResetter (ver1.2)\nアニメーションオーバーライドの設定等で変更されてしまったポーズを修正するツール\nhttps://twitter.com/gatosyocora/status/1095691649139634177\n\n・MeshBoundsSetter (ver1.0.2)\nアバターのメッシュのBoundsを一括でいい感じに調整するツール\nhttps://twitter.com/gatosyocora/status/1085549835241967616\nこちらのサポートは終了しています。\n最新版はVRCAvatarEditorに機能として追加されています。\nhttps://gatosyocora.booth.pm/items/1258744\n\n・ProbeAnchorSetter (ver1.0)\nアバターのメッシュのProbeAnchorを一括で自動設定するツール\nhttps://twitter.com/gatosyocora/status/1096454230125080576\nこちらのサポートは終了しています。\n最新版はVRCAvatarEditorに機能として追加されています。\nhttps://gatosyocora.booth.pm/items/1258744\n\n・ScaleLimitVisualizer (ver1.0)\nUnity上での大きさを視覚化して分かりやすくするツール。規定サイズのものの大きさの確認に使えます。\n\n・AnimationPropertyConverter (ver1.0)\nAnimationファイルに含まれるプロパティ名を別の名前に変更するツール。シェイプキーの名前の変更でAnimationファイルが使えなくなったときに使えます。\nhttps://twitter.com/gatosyocora/status/1114515745969336320\n\n・ShapeKeyNameChanger (ver1.1)\nメッシュのシェイプキーの名前を変更します。\nhttps://twitter.com/gatosyocora/status/1145314795177967617\n\n・ShapeKeyMixer (ver1.0)\nメッシュの複数のシェイプキーを合成します。\nhttps://twitter.com/gatosyocora/status/1158585582424956930\n\n・SubMeshDeleter (ver1.0.1)\n特定のサブメッシュを削除します\nhttps://twitter.com/gatosyocora/status/1159699752889380864\n\n・ShapeKeyReorder(ver1.0)\nメッシュのシェイプキーの順番を変更します\nhttps://twitter.com/gatosyocora/status/1191302503247171584\n\n・AnimatorControllerDuplicator(ver1.0.1)\nAnimatorControllerまたはAnimatorOverrideControllerとそれに設定されたAnimationClipを複製します\nhttps://twitter.com/gatosyocora/status/1260175394654715904\n\n・VRCAssetCreator(ver1.0)\nVRChatに関連したAssetを右クリックで作れるようにします\n現在はアバター用のAnimatorOverrrideControllerに対応しています\n\n・ShapeKeyDeleter(ver1.0)\nメッシュのシェイプキーを削除します\n\n・VRCAvatarTester(ver1.0)\nUnity上でVRChatのアバターのAnimationOverride(表情アニメーション)やEmoteAnimationを確認できる\nhttps://twitter.com/gatosyocora/status/1274630559000485889"},{"type":"text","title":"更新履歴","content":"2020/6/22 アップロード時にエラーが発生する不具合を修正\n2020/6/21 VRCAvatarTesterを追加\n2020/5/17 VRCAssetCreatorを追加\n2020/5/13 AnimatorControllerDuplicatorが他のツールと干渉してしまう問題を修正\n2020/5/12 AnimatorControllerDuplicatorを追加\n2020/4/28 ComponentAdderをVRCSDKがインポートされていなくても動作するように\n2020/4/27 HumanoidPoseResetterをUnpackPrefabしたモデルに対しても使えるように\n2019/11/4 ShapekeyReorderを追加しました\n　　　　　ShapeKeyNameChangerに複製機能と選択機能を追加\n2019/8/10 SubMeshDeleterで法線の処理を変更\n2019/8/9 SubMeshDeleterを追加しました\n2019/8/7 HumanoidPoseResetterが使えなくなっていた不具合を修正"},{"type":"text","title":"利用について","content":"本商品はzlibライセンスで運用されます。\n著作権はgatosyocoraに帰属します。\n\n\nBoost版に含まれるものは通常版と同じです。\n\n動作確認はUnity2018.4.20f1でおこなっております。\n他のバージョンでは正常に動かない可能性がありますのでご了承ください"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
