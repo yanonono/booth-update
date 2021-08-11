@@ -58,19 +58,62 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "ORH3LT7yBiAv8NWL2WXnY+5HpB+iseK+/hcD3LJQV/U="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "ORH3LT7yBiAv8NWL2WXnY+5HpB+iseK+/hcD3LJQV/U="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"Worker-Megh Ranger","description":"ワーカー・メイ「レンジャー」はVRChat用のアバターデータです。\nデータはunitypackage形式なので使用にはUnity2017.4.28f1が必要になります。\nアップデート情報や実際に使用したイメージ等はTwitterにてご確認下さい。\nhttps://twitter.com/nD_ntny\n\nOculus Questでは動作しません。\n現状対応予定もありません。(19.05.25)","url":"https://booth.pm/ja/items/1308648","offers":{"priceCurrency":"JPY","@type":"Offer","price":"3200"},"image":"https://booth.pximg.net/c/620x620/d39dae26-ac7c-4731-91c7-2278770e276e/i/1308648/90734cb1-3b91-4a49-8f43-6c1db0d45ad3_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
     "https://asset.booth.pm/assets/apple-touch-icon-precomposed-f7358b936e9404f3e499e1bf3c9f0967366212144a16374ebc7558b391eeafe1.png"
-    rel="apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "ORH3LT7yBiAv8NWL2WXnY+5HpB+iseK+/hcD3LJQV/U="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -400,6 +443,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"Release note","content":"1.2(データ上の更新は無し)\n- 一部規約を改訂しました\n\n1.2\n- 不要なBluePrintデータを削除\n- SDKを最新版に更新(2019.2.4)\n- 一部不適切なテクスチャを修正\n\n1.1\n- IDマップを追加\n- ONYXテクスチャを同梱\n- 一部不適切なテクスチャを修正\n- 表情を固定型とリップシンク型に分離\n　(リップシンクによる意図しない変形を防ぎたい場合は「Fixed」フォルダにある表情に差し替えてください)\n\n1.0\n- Release version."},{"type":"text","title":"Specifications","content":"ポリゴン数：39642 Tris\nアイトラッキング：非サポート\nリップシンク：サポート(固定版同梱)\nフルトラッキング：サポート\nシェーダー：Standardとオリジナル及びUTS2.0.7\nダイナミックボーン：設定済み(要別途購入及び事前インストール)\n身長：約140cm"},{"type":"text","title":"Main Contents","content":"・AV03_Ranger_Body\n・AV03_Ranger_Body_BlackONYX\n・AV03_Ranger_Body_WhiteONYX\n(アップデートにて追加予定)"},{"type":"text","title":"Extra Contents","content":"★Blenderシーンデータ\nこのシーンデータはBlender v2.79にてFBXをインポートして保存しただけの物です。\n作者はBlenderを使えない為、詳細を説明する事が出来ませんので、あくまでもオマケとしてご利用ください。\n(コーネリアス販売時『Blenderにインポートできない』というお問い合わせが多かったので用意してみました)\n\n★改変用テクスチャ ONYX\nマーキングを省いた白と黒のテクスチャセットです。"},{"type":"text","title":"アバター導入方法","content":"本パッケージを使用するにはUnityを使用してVRChatへアバターをアップロードできる知識が必要になります。\n\n2019.04.09現在、VRChat上にカスタムアバターをアップロードするには一定以上のトラスト値が必要となります。\nVRChatをインストールして直ぐに本データを使用することはできませんのでご注意ください。\n\n①Unity2017.4.15f1を起動し、新規プロジェクトを作ります。\n②VRChat公式サイトからSDKをダウンロードしてUnityにインポートします。\n③AssetStoreからDynamicBoneを購入(既に購入済みであればダウンロード)しインポートします。\n④BOOTHにて購入した本パッケージ(AV02_Cornelius.unitypackage)をインポートします。\n⑤OwlcoltIndustries/Avatars/AV03_Ranger/ScenesフォルダにあるAV03_Ranger.sceneを開き、任意のデータをアップロードします。\n\n全てのデータはOwlcoltIndustries以下に格納されています。\n\nUTS2.0.7もOwlcoltIndustries以下に格納されるため、既に存在しているUTSとバージョンが一致しない場合何らかのエラーが出る可能性が有ります。"},{"type":"text","title":"改変のヒント","content":"★頭部テクスチャ\nレンジャーの頭部はAV03_Head.fbxとAV03_Hair.fbxの二つからなっています。\nそれぞれ改変用のPSDファイルが入っているので必要に応じてご利用ください。\n\n★別頭部への差し替え\nAV03_Ranger_Body.fbxには頭部を除く胴体+瞳がセットになっています。\nこのFBXはユニット毎にオブジェクトが分かれており、Unity上でEyesを非表示にする事で頭部が全て空になります。\n差し替えたい頭部の位置を合わせ、Armature以下CH_Headにぶら下げる事で頭部の換装が可能です。\n\n★手のリサイズ\nAV03_Ranger.sceneに配置されているレンジャーモデルは手のボーンスケールが0.5になっています。本来のサイズに戻したい場合はこれを1にしてください。\n(VRChatのUIやカメラ操作の難度が上がるのでご注意ください)\n\n★リペイント\nAV03_Ranger_BodyはSubstancePainter用に要素別に頂点カラーが割り当てられています。\nIDマップをベイクする事で簡単に独自ペイントに仕上げる事が出来ます。"},{"type":"text","title":"ガイドライン","content":"★免責\n・本データの購入者は本データをUnityにインポートした時点をもって以下の規約に同意したものとみなします。\n・本データを利用する事によって生じる如何なる障害、損失に対してもOwlcolt Industriesは一切の責任を負いません。\n・改変の有無に関わらず本データの著作権は制作者であるntnyに帰属します。\n・本データは予告なくアップデート、販売の停止をする場合があります。\n・販売停止された場合、購入者は購入した時点の規約をもって使用し続ける事が出来ます。\n・また、アップデート以前のデータを持っている場合、継続して使う権利を持ちますが、サポート対象ではなくなります。\n・本規約は予告なく変更される場合があります。\n・Owlcolt Industries社はneotenyDesignが運営する架空の企業です。\n\n★利用可\n・本データは2020.12.24時点で自己責任の元、自身のみがアバターまたはプレイヤーキャラクターとして使う場合に限り、VRChat以外の各サービス上で使用できます。\n　(Owlcolt IndustriesはVRChat以外での動作確認をしておりません。VRChat以外での動作に関しては原則自己責任となり、サポート対象外となります)\n・本データは全体または一部を非アバターペデスタルオブジェクトとしてワールドに配置することができます。\n・本データに含まれるキャラクター以外のアクセサリやシェーダーは、自作を含む他者製モデル(各EULAに準拠)に使用する事が出来ます。\n・本データは非営利目的の研究及び試験開発に於いて第三者が本データを入手不可能である限り自由に使う事が出来ます。\n\n★利用不可\n・本データの制作者及び販売者を騙る事は出来ません。\n・本データは如何なる条件を持ってしても購入者による再配布及び再販売することはできません。\n・本データはアダルトコンテンツに使用することはできません。\n・本データは改変の有無に関わらず、またPublic、Private問わずアバターペデスタルとしてワールドに配置することはできません。\n・本データを無改変のままVtuberとして使用することはできません。\n　(Vtuberとして扱う場合はオリジナルと明確な差異が見て取れるレベルまで改変して頂く必要があります)\n・本データは各サービスに於いて購入者以外が使用可能になる形でのアップロードは出来ません。\n\n●収益\n・本データを用いて作られたコンテンツは個人利用に限り収益を得る事ができます。\n・法人及び購入者の前年度売上が2000万円を超える場合は別途ご相談ください。\n・尚、上記条件に該当する場合でも、Youtubeなど動画作品での短期的使用(紹介、関係者以外の使用など)の場合はこの限りではありません。\n\n★ロゴ\n・本データにはOwlcolt Industries社のブランド・ロゴが同梱されております。\n・このデータはOwlcolt Industries社のアバターまたはアクセサリのオーナーである証明となります。\n・このデータは自分専用アバターなど個人的な利用に限定され、配布・販売物に使用する事は出来ません。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
