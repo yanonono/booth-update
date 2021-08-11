@@ -58,6 +58,16 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "txu3RyoKrXyS4LbrOMoehkNzHCAKHdYdgWb0+yfLPXQ="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
   </head>
   <body>
     <div class="mini-player-controller" style="display: none;">
@@ -86,6 +96,13 @@
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "txu3RyoKrXyS4LbrOMoehkNzHCAKHdYdgWb0+yfLPXQ="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"オリジナル3Ⅾモデル【結衣川アーリャ】","description":"モデル概要\n\n・当モデルはVRChatを想定して作成されています。\n・△17443ポリゴン\n・フルボディトラッキング対応\n・アイトラッキング対応\n・『あ～お』のシェイプキー及びリップシンク15種\n・表情アニメーション8種\n・使用シェーダー『ユニティちゃんトゥーンシェーダー Ver.2.0.5』\n(c)Unity Technologies Japan/UCL\n\n制作：暫時（リファリン）","url":"https://booth.pm/ja/items/1138311","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"1000","highPrice":"2500"},"image":"https://booth.pximg.net/c/620x620/a2e97651-68cf-4d14-9715-5cd6cf3aad2a/i/1138311/af28b142-5e4c-4298-baf6-e1fd28474398_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -93,6 +110,10 @@
     rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "txu3RyoKrXyS4LbrOMoehkNzHCAKHdYdgWb0+yfLPXQ="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -574,6 +595,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"データ概要","content":"--単行本購入者特典無料DL版--\n・結衣川アーリャ.unitypackage\n・readme.txt VRChatへの導入方法.txt\n【単行本『Passion Girls!!』購入者特典無料DL版URLはこちら\n『 https://bowlroll.net/file/184766』\nDLキーは単行本の本体表紙（カバーを外した裏）に記載してあります。】\n\n--お試しシンプル版--\n無料DL版とデータ内容は同じです。\n\n--カスタム用フルセット版--\n・結衣川アーリャ.unitypackage\n・readme.txt VRChatへの導入方法.txt\n・UVグリッド付き未統合テクスチャPSDファイル\n・blender、fbxファイル（通常、素体、貧乳素体）\n（カスタム版にはパーツごとにわかれた表情シェイプキー及び、シンプル版では未使用のシェイプキーがあります。また、素体には体型調整シェイプキーもあります。）\n・腕や足など身体の各部位を分割したblender、fbxファイル（通常、素体、貧乳素体）\n・非褐色肌のテクスチャ、マテリアルファイル\n\n\n更新情報\n2018/12/15　公開\n2018/12/16　・手首と手首紐のボーン順序が入れ変わっていたのを修正しました。\n・Fullバージョンにてアニメーションオーバーライドの初期設定がされていなかったのを修正しました。\n2018/12/27　Simple版においてダイナミックボーン等、プレファブファイルの設定値がエラーになっていたのを修正しました。"},{"type":"text","title":"利用規約","content":"・本モデル『結衣川アーリャ』を購入、ダウンロードした時点で本利用規約に同意したものとします。また、本規約は予告なく変更される場合があり、常に最新のものが適用されます。\n・日本語である本利用規約を他国語に翻訳したものと差異が生じた場合、日本語のものが優先されます。\n・本データ使用に際して何らかのトラブルや損害が発生した場合、制作者『暫時』は一切の責任を負いません。\n\n・本モデルはVRSNS、ゲーム、動画配信等でご利用いただけます。\n・商用、非商用どちらも可能です。また、本モデルは主にVRchatでの利用を想定していますが、VRChat以外での利用も可能です。\n・本モデルデータは個人的利用範囲での使用のみ可能です。本モデルデータの著作権は改変の有無を問わず制作者である暫時（リファリン）に帰属します。\n・モデルを使用する際のクレジット表記は必要ありませんがお知らせいただけると嬉しいです。\n\n・動画配信者用のアバターとしての利用：可\n・R18,R18Gコンテンツでの利用：可\n・R18のゾーニングはしっかり守りましょう。\n\n＜禁止事項＞\n・ユニティちゃんトゥーンシェーダーを除く本モデルとそれに関連したデータの再配布、販売を改変の有無を問わず禁止します。（VRchatのアバターペデスタルで購入者以外が使用できるようにする行為も禁止です。）\n・公序良俗に反する行為や目的、政治, 宗教活動、他者に対する誹謗中傷目的での利用を禁止します。"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/zEOFQa15PgY\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
