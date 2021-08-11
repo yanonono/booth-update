@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "V55yARVOhi5GTqh/IFOUgiFMsGJ08HHtFRzCjm93oXs="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "V55yARVOhi5GTqh/IFOUgiFMsGJ08HHtFRzCjm93oXs="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"Valkyrie【VRChat想定３Dモデル】","description":"【バーチャルマーケット】出店中。\nサークル名は「テセウスの右腕」\n場所は西１F　A-1です。\n\nVRchatを想定した３Ｄモデル【Valkyrie】（ヴァルキリー）です。\nVRChat想定ですが、他のサービスなどでも利用可能です。\n\nみんな大好きロボ娘がついに仮想工廠に登場！\n汎用素体として作られた内部フレームに、女性型らしい膨らみを持ったアーマーと量産型の戦闘用装甲がついた基本のセットです。\nシンプルな外見としっかりとした内部フレームを用いて、自分だけのロボ娘を作ることも可能な【改変推薦モデル】となっております。マテリアルの色を変えるだけでも印象がガラッと変わりますよ！\n\n\n\n△ポリゴンは14000程度と、少し多めながら改造の猶予を持たせています。\n\n\nhumanoidに対応しているため、特別調整せずともアバターとしてお使いいただけます。\nまた、自作のゲームなどにもお使いいただけます。\nVRMファイルも付属しているので、Cluster.などのVRM対応サービスならば買った瞬間から使用可能です。","url":"https://booth.pm/ja/items/975498","offers":{"priceCurrency":"JPY","@type":"Offer","price":"1000"},"image":"https://booth.pximg.net/c/620x620/206a8b82-4b06-4ab2-b38d-760242ca86be/i/975498/2baa5912-94db-4cbc-bc17-bf48b9c6ffbc_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "V55yARVOhi5GTqh/IFOUgiFMsGJ08HHtFRzCjm93oXs="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -389,6 +410,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"【内容物】","content":"・fbxファイル\n・blendファイル\n・unityパッケージ\n・vrmファイル\n・readme"},{"type":"text","title":"【利用規約】","content":"・このデータの使用をもって、規約に同意したとみなします。\n\n【このモデルでできること】\n・VRChatを始めとするサービスでの、VRアバターとしての使用は自由です。\n\n・ゲームや動画等にも使用可能です。禁止事項に抵触しなければお好きなように。\n\n・改変自由です。素体として作られたのでむしろ改変推薦です。自分だけのロボ子を作り出せ！\n\n・商用利用自由です。この子でVtuberデビューしてもオッケーです。デビューしたらすぐ見に行きます。\n\n・性的、暴力的なコンテンツへの使用も自由ですが、時と場所を選んで行って下さい。時と場所さえ選べばむしろ歓迎するので、あとでこっそり教えて下さい。\n\n\n【禁止事項】\n・このモデルや、このモデルをベースに改変したものを自作であると発言するのは禁止です。\n　このモデルの著作権は作者であるグラレッド（＠Graredvrchat1）にあります。\n\n・このモデルの全て、または一部を、第三者が自由に扱える形での再配布は禁止です。テクスチャのみ、メッシュのみであっても禁止します。（VRChat等への、自分のみが使用するためのアップロードは可）\n・このモデルに装備可能な装甲や武装などといった、このモデルを前提としたデータの配布、販売は許可しますが、このモデル本体を含まないように気をつけて行って下さい。\n\n・VRChatにおけるペデスタルとしての設置は禁止です。（第三者が自由に扱える為）\n・どうしてもペデスタルとして設置したい場合は、グラレッドに相談していただければ許可を出せる場合もあります。\n\n・このモデルを再販売することも当然禁止です。\n\n・このモデルを利用しての政治的、宗教的な意図を持った利用は禁止です。\n\n【免責事項】\n・当モデルの使用により何らかのトラブル・損失及び損害等が発生した場合、当方は一切の責任を負いません。\n\n・利用規約の内容は予告なく変更されることがあります。\n\n【その他】\n・このモデルについて何かご不明な点や不具合を発見した際はhttps://twitter.com/Graredvrchat1までご連絡下さい。可能な限り対応いたします。\n\n最終更新日　2018年8月26日"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
