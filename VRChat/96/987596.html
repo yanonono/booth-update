@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "9N6E9BMDHHTUD8eYWEW/WjUGbxpxUQgSun8mfV/ExFY="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "9N6E9BMDHHTUD8eYWEW/WjUGbxpxUQgSun8mfV/ExFY="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"5.6.3p1VRC想定Clothスカートサンプル","description":"2021年現在、この方法は古いため、販売(ブースト版)を停止します。\n情報として残しますが、現在はお勧めしません。\n\nUnity5.6.3p1時代のVRChatで使用想定のCloth設定のサンプルです。\n情報共有が主な目的です。\n大抵の場合、そのまま流用はできないですが、一緒にClothとの和解を試みましょう。\n\nUnity上ではおよそ90度足を上げる所まで貫通せずに耐えますが、\nVRChatではClothの演算がローカルで行われるため、20fps以下ではコライダーを貫通して元に戻らないことが稀に起こります。\n\n対策として、スカートの位置リセット用にコライダーを抜くアニメーションも同梱していますので、セットでどうぞ。","url":"https://booth.pm/ja/items/987596","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"0"},"image":"https://booth.pximg.net/c/620x620/398453f0-c317-488e-9f19-c38eb6274343/i/987596/679f049a-a8be-497f-81d0-5f968262df1c_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "9N6E9BMDHHTUD8eYWEW/WjUGbxpxUQgSun8mfV/ExFY="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -490,6 +511,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"ライセンスなど:","content":"商用利用・再配布・改変など、自由に使用していただいて構いません。\n改変・再配布時には私にも共有していただけると嬉しいです。\n\nその他不明瞭な点がございましたらご気軽にお問い合わせください。 本モデルデータの使用による損失・損害等は一切責任を負いかねます。\n\nTwitter：@Yuzuki_Tatikawa"},{"type":"text","title":"内容物:","content":"ClothSkirtSample.Unitypackage\nClothSkirtSample.blend\nSkirtSample.fbx\nSkirtSample.prefab\nSkirtSample.png\nMaterials/SkirtSample.mat\nStandardDoubleSide.shader\nSkirtReset.anim\n各metaファイル\nライセンスなど.txt\n\nv2\nClothSkirtSample.Unitypackage\nSkirtSample.fbx\nSkirtSample.png\nライセンスなど.txt"},{"type":"text","title":"色々説明:","content":"サンプルで入れている、32ヒダプリーツスカートのUVは一致させており、1ヒダ分のテクスチャで割り当てていて、裾のヒダはα値で抜いています。\n→v2：ヒダ部分もポリゴンで作成方式に変更しました。\n\n上記のスカートに対してClothのパラメータを独自に調整したものです。\n\nコライダーはfixdeJointで足のボーンに接続しています。\n→v2：コライダーは普通にUpperLegに変更しました。\n\nスカートがめくれたままになってしまう。\nコライダーを貫通して初期位置に戻らなくなってしまう対策として、コライダー抜きアニメーションを同梱しています。\n急加減速や激しい動きした後など、自身では問題ない場合でも、アニメーションオーバーライドでなおしてあげるとを抜けてしまったスカートを元に戻すことができます。\n→v2：スカートのClothコンポーネントを非アクティブにするアニメーションで足のウェイト位置にスカートをリセットする方法に変更しました。\n"},{"type":"text","title":"ぱすわーど","content":"meronpan"},{"type":"text","title":"更新経歴","content":"300DL記念\n2018.11.23　v2追加\n2021.03.15　ブースト用削除"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
