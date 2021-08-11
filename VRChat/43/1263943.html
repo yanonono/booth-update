@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "UGdWDI/lRaXqwerUutkoMjgxWpVJZMj8HImUvXJsgdQ="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "UGdWDI/lRaXqwerUutkoMjgxWpVJZMj8HImUvXJsgdQ="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"水無月ルアVer4.00【オリジナル3Dモデル】VRChat\u0026VRM対応","description":"〇こちらの３Dモデルは水無月カヲルが製作したものになっています。\n\n〇VRChat用アバター（Default＆スクール水着＆チャイナ服）、VRM用アバター（Default＆スクール水着＆チャイナ服）の計4種類を梱包しています。\n\n【Default】\n〇ポリゴン数　△30059polygon\n〇メッシュ数　3\n〇マテリアルスロット数　3\n〇ボーン数　115\n〇DynamicBone　設定済み（別途購入）\n〇リップシンク設定済み\n〇オーバーライド（表情差分）設定済み\n\n【スクール水着】\n〇ポリゴン数　△31956polygon\n〇メッシュ数　3\n〇マテリアルスロット数　3\n〇ボーン数　117\n〇DynamicBone　設定済み（別途購入）\n〇リップシンク設定済み\n〇オーバーライド（表情差分）設定済み\n\n【チャイナ服】\n〇ポリゴン数　△27880polygon\n〇メッシュ数　3\n〇マテリアルスロット数　3\n〇ボーン数　115\n〇DynamicBone　設定済み（別途購入）\n〇リップシンク設定済み\n〇オーバーライド（表情差分）設定済み","url":"https://booth.pm/ja/items/1263943","offers":{"priceCurrency":"JPY","@type":"Offer","price":"5000"},"image":"https://booth.pximg.net/c/620x620/a19ba3ba-41bc-4115-8b35-10de24d6e4b9/i/1263943/aaf73ddc-4454-4562-bf10-19847c665d73_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "UGdWDI/lRaXqwerUutkoMjgxWpVJZMj8HImUvXJsgdQ="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -565,6 +586,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"media","content":"\u003ciframe width=\"500\" height=\"500\" src=\"https://hub.vroid.com/characters/611929919162001096/models/4614969846761255697/embed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\" allow=\"xr-spatial-tracking\"\u003e\u003c/iframe\u003e"},{"type":"media","content":"\u003ciframe width=\"500\" height=\"500\" src=\"https://hub.vroid.com/characters/6831162125622837859/models/890603027480892945/embed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\" allow=\"xr-spatial-tracking\"\u003e\u003c/iframe\u003e"},{"type":"media","content":"\u003ciframe width=\"500\" height=\"500\" src=\"https://hub.vroid.com/characters/4726241229847401571/models/3852373552919567053/embed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\" allow=\"xr-spatial-tracking\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"◇◆内容物◆◇","content":"【VRChat用３Dモデル】\n〇揺れ物用のボーン（髪）が入っておりますので、Unityの有償アセット（Dynamic Bone）を利用して揺らすことができます。\n※ DynamicBoneは設定済み\n\n〇unitypackageファイル　（VRChat用です）\n\nMinadukiRua_Ver4.00\n┃\n┣ Default\n┃   ┣ Animation\n┃   ┣ Materials\n┃   ┣ Textures\n┃   ┗ MinadukiRua_Default_Prefab4.00\n┃\n┣ Swimsuit\n┃   ┣ Animation\n┃   ┣ Materials\n┃   ┣ Textures\n┃   ┗ MinadukiRua_Swimsuit_Prefab4.00\n┃\n┣ ChinaDress\n┃   ┣ Animation\n┃   ┣ Materials\n┃   ┣ Textures\n┃   ┗ MinadukiRua_Swimsuit_Prefab4.00\n┃\n┗ Reflex Shader 2\n\n※VRChatにアップロードする際はMinadukiRua_Default_Prefab4.00とMinadukiRua_Swimsuit_Prefab4.00とMinadukiRua_ChinaDress_Prefab4.00を使用してください。\n\n【VRMファイル】\n〇3teneやVDRAW、VWorldといったVRMファイル対応のソフトで遊ぶことができます。\n\n〇VRMは対応ソフトを使っていただいて、生放送や動画撮影といった活動もできます。"},{"type":"text","title":"◇◆導入方法◆◇","content":"【VRChat用のファイルについて】\n①Unity2018.4.20f1の新しいプロジェクトを用意\n\n②先にVRCSDK2とDynamicBone（購入していれば）をインポートします。\n※ DynamicBoneは設定済みです。\n\n③MinadukiRua_Ver4.00.unitypackageをインポートします。\n\n④HierarchyにMinadukiRua_Default_Prefab4.00、MinadukiRua_Swimsuit_Prefab4.00、MinadukiRua_ChinaDress_Prefab4.00をドラッグ＆ドロップします。\n\n⑤上部にあるメニュー欄のVRChat SDK　→　Show Control Panelを選択\n\n⑥Build ＆ Publishを選択\n\n⑦Avatar Nameに名前を入力し、SharingはPrivateにチェックが入っていることを確認しましょう。\n\n⑧Uploadの上に四角をチェックしUploadを押してください。\n\n⑨数分待ち、問題がなければ「Update Complete!・・・」とでてきてアップロードが完了します。"},{"type":"text","title":"◇◆利用規約◆◇","content":"〇【水無月ルア】とその付属のモデルデータ・テクスチャーデータの再配付・販売は改変の有無を問わず禁止します。\n\n〇VRchatのアバターペデスタルなど、購入者以外が【水無月ルア】を自由に使用できるようにする行為を禁止します。\n\n〇特定個人や団体への誹謗中傷、政治、宗教活動を目的とした利用を禁止します。\n\n〇営利利用に関しては可能です。\nゲーム, 映像作品, 動画配信等にご利用していただいて構いません。\n※Unity、Unreal Engine、MMD等ソフトウェア問わずご利用いただけます。\n※ VTuber等自由に人格を与えてご利用いただけます。\n\n〇改変、改造は可能です。当モデルデータに付属しているデータの改変は自由です。\n\n〇R-18コンテンツでは利用可能です。\n\n〇R-18Gコンテンツでは利用禁止です。\n\n〇再配布は禁止です。（改変、改造含む）\n※当モデルデータに付属しているデータの再配布, 販売は改変の有無を問わず禁止します。\n※VRChatでのアバターとしてのアップロードは可能です。"},{"type":"text","title":"◇◆更新履歴◆◇","content":"販売開始\n\nVer2.00に大型アップデート\nポリゴンの見直し、表情・リップシンク・装飾の追加\n\nVケット4開催までにVer3.00アップデート\nそれにあたって新しい衣装としてスクール水着＆パーカーを配布、シェーダーをArktoon-ShadersからReflex Shaderに変更、表情が崩れるのを防ぐためまばたきを削除、対応ができなくなったためBeat Saber用アバターの配布を終了。\n\nVer3.01にアップデート\nアップロードのさい「Mipmapあるが\"Streaming Mip Maps\"が無効」というエラーが出ないように修正\n一部ファイルの名前の訂正\n\nVer4.00にアップデート\nチャイナ服を追加"},{"type":"text","title":"◇◆使用させていただいたもの◆◇","content":"〇Reflex Shader 2.2.0\nReflex Shader 2.2.0はMITライセンスが適用されています。\n▼BOOTH配布場所\nhttps://booth.pm/ja/items/1088971"},{"type":"text","title":"◇◆お問い合わせ◆◇","content":"〇初めて販売用に製作したアバターになるのでファイルに不備等があるかもしれません。そのときはBOOTHのメッセージやTwitterにてご連絡をいただけるととても助かります。\n※比較的、反応が早いのはTwitterです。\n\n〇何か問題が発生した、このように改善してほしいといった声がありましたら\n@KAWORU196939へメッセージをお送りください。\nhttps://twitter.com/KAWORU196939"},{"type":"text","title":"◇◆免責事項◆◇","content":"〇作成者は、本データに関していかなる保証も行いません。\n\n〇本モデルを利用して損害があったとしても、作成者は何らの責任を負うものではありません。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
