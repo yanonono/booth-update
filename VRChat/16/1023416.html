@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "vrDAfqlFc7jQCMZGtbzzv96d2j0Aa8NjS9Bcji3adQQ="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "vrDAfqlFc7jQCMZGtbzzv96d2j0Aa8NjS9Bcji3adQQ="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"VRChat用3Dモデル「スノードロップ」","description":"本製品は、ポリゴン数822の花［スノードロップ］のfbx形式3Dモデルです。\n","url":"https://booth.pm/ja/items/1023416","offers":{"priceCurrency":"JPY","@type":"Offer","price":"100"},"image":"https://booth.pximg.net/c/620x620/2014e33f-05a5-4e3e-a47f-302975c62b4c/i/1023416/8056fb98-6286-4373-a6e0-3717724ade11_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "vrDAfqlFc7jQCMZGtbzzv96d2j0Aa8NjS9Bcji3adQQ="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -378,6 +399,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"【ポリゴン数内訳】","content":"・花弁_中[△50]×3\n・花弁_外[△52]×3\n・花託[△88]\n・茎[△252]\n・葉[△88]×2"},{"type":"text","title":"【製品内容】","content":"○オブジェクト個別版(オブジェクト数10、マテリアル数5)\n・fbxファイル(花弁_中3枚、花弁_外3枚、花托、茎、葉)\n・テクスチャ5枚(花弁_中、花弁_外、花托、茎、葉)\n\n○統合モデル版(オブジェクト数1、マテリアル数1)\n・fbxファイル(スノードロップ本体)\n・テクスチャ1枚\n\n○readme(利用規約)"},{"type":"text","title":"【利用規約】","content":"　本モデルを購入した時点で本利用規約に同意したものとします。\n　利用規約の内容は変更する場合があり、最新のものが適用されます。\n\n○禁止行為\n　以下のような使用を禁止致します。\n　×公序良俗に反する利用\n　×政治的・宗教的主張に関する利用\n　×製品の再配布・再販売\n　×自作発言等\n\n・ゲームに組み込む・VRChatでのペデスタル、ワールドへの使用等は再配布とせず、許可致します。\n\n○テクスチャ改変、モデル改変および商業への使用は、禁止行為に抵触しない限り制限致しません。\n\n○本モデルを使用した動画・静止画の制作・公開可\n\n\n○免責事項\n\n　本モデルを使用していかなる損害が発生したとしても、制作者は責任を負いません。\n　使用は自己責任でお願いします。"},{"type":"text","title":"【お問い合わせ】","content":"　規約への不明点、本製品の不備等ございましたら、製作者水無月のTwitter：@VR13144322までご連絡ください。"},{"type":"text","title":"【ご注意？】","content":"　スノードロップの花言葉は「希望」「慰め」ですが、人に送る場合「あなたの死を望みます」になるそうです。\n　使用にはご注意ください。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
