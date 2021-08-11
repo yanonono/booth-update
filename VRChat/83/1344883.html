@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "rEjn9XXm6IePRt2Ca3eSw9+24NgyFVmlXz/zcIWnYWc="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "rEjn9XXm6IePRt2Ca3eSw9+24NgyFVmlXz/zcIWnYWc="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"【Unity】LSaber Model LS004","description":"例のセーバーです。\nYouTubeで公開しているタイムラプス動画で制作したモデルです。\nDynamicBoneトレイルに加え、新機能の「LS Trail Shader」を搭載しています。\n不明点があればTwitter(@tsutsuji815)まで","url":"https://booth.pm/ja/items/1344883","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"100"},"image":"https://booth.pximg.net/c/620x620/aa7414fb-c4aa-4710-9c36-eb78e1f7edbb/i/1344883/5ee22641-7fe1-45cf-9359-6143c2be23eb_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "rEjn9XXm6IePRt2Ca3eSw9+24NgyFVmlXz/zcIWnYWc="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -446,6 +467,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/RJhmZPQIdWQ\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"ファイルについて","content":"モデルにはFBXデータ、テクスチャ、マテリアルに加え各種設定済みのPrefabが用意されています。\nまた、ブレード及び残像に使用するシェーダーが含まれています。\nブレードは「LS Blade Shader」、残像には専用の「LS Trail Shader」を使用します。\n\n・LS004_DB.prefab\nブレードの残像をDynamicBoneを利用して表現します。有料アセットのDynamicBoneが必要です。\n\n・LS004_v2.prefab\nブレードの残像をシェーダーを利用して表現します。付属の「LS Trail Shader」群とRenderTexture,カメラ,専用メッシュを使用します。\n\n・LS004_Plane.prefab\n残像に何も使いません。マテリアル設定済みのヒルトとブレードのみが含まれます。残像が不要な場合やTrailRenderer等を自分で設定する場合に使用してください。"},{"type":"text","title":"使用方法","content":"zipファイルを展開するとunitypackageが同梱されていますのでUnityのプロジェクトにインポートしてお使いください。\nAssets/Tsutsuji/LS004ディレクトリ以下にあるPrefabをシーンに配置して位置回転スケールをあわせアバター等に持たせます。\n\nセーバー本体のブレンドシェイプ「blade_on」でブレードの出し入れができます。\n\nDynamicBone方式を使用する場合、ブレードOFF時にはDynamicBoneのコンポーネントも非アクティブにしてください。アクティブのままだとヒルト内に隠したブレードが外部にはみ出します。\n\nLS Trail Shaderを使用する場合スケールを変更した際に付属スクリプトを使用してカメラサイズをあわせる必要があります。(次項参照)"},{"type":"text","title":"LS Trail Shaderについて","content":"それらしい残像を描画するために付属しているシェーダーです。\n最大8フレーム前までのブレードの座標を記録し、その座標までポリゴンを伸ばします。\nシェーダー群、メッシュ、RenderTexture、カメラ、設定支援スクリプトで構成されています。\n\n基本的にprefabそのままで使用できるようになっていますが、モデルのスケールを変更した場合カメラの領域が合わなくなるので設定支援スクリプトを使用します。\nアバター等にスケールをあわせた後、Unity上部のツールバーからTsutsuji/SetupSaberTrailを選択し、表示されたウィンドウにセーバーのルートオブジェクト(ls○○○_v2)をドラッグアンドドロップし、SetupCameraボタンを押すとカメラサイズが自動で設定されます。\n\nカメラとRenderTextureを使用していますので、アバターアップロード時にTexCamA･BのカメラコンポーネントとTrailオブジェクトを非アクティブにした状態でアップロードします。(カメラがアクティブのままだと自分だけに見えるローカル扱いになるため)\n\nトレイルを表示したい場合はアニメーション等でこれらをアクティブにします。"},{"type":"text","title":"LS Trail Shaderの構成とパラメータ","content":"※分かる人むけ\n\n・オブジェクト構成\nTrail(トレイル本体)\nHeadPos,BottomPos(ブレードの根本と先端の座標を取得するためのオブジェクト)\nPosTexA･B,TexCamA･B(取得した座標を表示､8フレームまで保存するためのメッシュとカメラ)\nStencilMask(RenderTextureが外から見えないよう隠す)\n\n・LS Trail Shaderのパラメータ\nMainTex:トレイルに貼るテクスチャです\nColor:トレイルのメインカラーです\nOutlineColor:トレイル外側のカラーです\nOutlineWidth:上記のカラーの太さです\nPosTex:座標が保存されたRenderTexture、BladePosAが初期設定されており通常変更する必要はありません\nSampleFrame:描画するトレイルの長さ、最大8フレーム前までを描画し、値を小さくすると短くなります\nFixToFPS,TargetFPS:FixToFPSがチェックされていると、ゲーム内のFPSがTargetFPSより低下した場合にトレイルの後ろを消してもたつきを誤魔化します"},{"type":"text","title":"ライセンス","content":"モデルデータにつきましては、クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際 ライセンス(CC-BY-NC-SA)の下に提供されます。\n但し、VRChatのアバターに使用する場合は著作権表示は必要ありません。\nhttp://creativecommons.org/licenses/by-nc-sa/4.0/\n\nシェーダー及びスクリプトのソースコードにつきましては、MITライセンスの下に提供されます。\nCopyright (c) 2019 Tsutsuji815\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
