@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "zvTeZKiglGTEzjXFnVJLXkrgohyqldMDLLCoLcGYT60="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "zvTeZKiglGTEzjXFnVJLXkrgohyqldMDLLCoLcGYT60="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"スキニング済み3D衣装「例のタートルネックセーター(胸メッシュ付)」","description":"※本品はたわわ胸Ver1.x用です。たわわ胸Ver.2とは互換性がありません。\n\n更新\nVer.1.10：\n　・標準のキッシュ素体の胸サイズに合わせたFBXデータおよびにプレハブを追加。WEB解説の追記\n\nVer.1.20：\n　・ワンピースタイプのタートルネックセーターのfbxとprefabを追加、今の所たわわのみ。\n　・あと着せ替え支援ツール（ClothEditor）用のxmlデータを追加。\n　・たわわな方のfbxの形状微調整。\n\nVer.1.21\n　・ワンピに標準胸タイプ追加\n　・ワンピの後ろがお尻にめり込みやすかったのでダイナミックボーンを修正\n\n\n●概要\nスキニング済みの３Dモデルデータの衣装です。\n\nサンプル動画\n(たわわ)\nhttps://twitter.com/KuuKuuKon/status/1064152621336784897\n(標準)\nhttps://twitter.com/KuuKuuKon/status/1068858001912545280\n(ワンピ)\nhttps://twitter.com/KuuKuuKon/status/1076454888119316480\n\nたわわな胸メッシュ付きなので、胸のないアバターの子でも着せることが出来ます。\n標準的な胸バージョンも追加！\n\nむた様制作のキッシュちゃんを基準に制作しているのでキッシュちゃんへは調整不要で利用可。\n他アバターへも調整・改変すれば使用可能です。\n他アバターへも『キッシュ』用素体へ付け替えると調整不要で着せることが出来ます。\nまた、胸・スカートのダイナミックボーン設定済みのUnityPackageを同梱しています。\n\n・3Dデータ形式：FBX\n・ポリゴン合計：4434\n・ベーステクスチャー、ノーマルマップ、PSD付属\n・ダイナミックボーン設定済みUnityPackage同梱。\n・実装解説付き(WEB)\n\n・改変自由\n・本データ、改変物の無許可の再配布、販売の禁止（要相談）\n・収益化・無償問わず動画・放送への出演可\n・本データ、改変物を再利用不可能な形で組み込んだアプリケーション、ゲームの配布・販売可\n\n詳しくは下記の利用規約を読んでください。購入した時点で同意したものとみなします。\n\n●実装方法(下記のドキュメントにアクセスしてください）\nhttps://docs.google.com/document/d/1V6ov8JXHneF2amua_TZidM_V-eQ5G9IJYNcGajfUdhA/edit?usp=sharing\n","url":"https://booth.pm/ja/items/1100666","offers":{"priceCurrency":"JPY","@type":"Offer","price":"1200"},"image":"https://booth.pximg.net/c/620x620/e9067cd7-09e7-438a-a716-24ff8190ff99/i/1100666/194cc02c-5f3b-4d61-ad5a-12eca5fe141b_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "zvTeZKiglGTEzjXFnVJLXkrgohyqldMDLLCoLcGYT60="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -455,6 +476,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"●利用規約","content":"　本データ及びに改造データの著作権は空々こんに帰属します。\n　注意事項：本データは他の３Dモデルに組み込む前提です。必ず組み込んだ先の利用規約に確認し、両者ともに許諾される範囲で利用してください。\n\n【利用許諾】\n1.本データをアプリケーションで利用すること、ネットワーク上で利用すること、改変することを許可する。\n　(例：VRChatなどのVRSNSでの利用が可能）\n\n2.本データ、改変データが映る動画、放送を配信、放送することを有償・収益化・無償にかかわらず許可する。\n（例：Vtuber活動、TV出演などが可能）\n\n3.本データ、改変データを利用した３Dモデルを、データの再利用を出来ない形でアプリケーションやゲームに組み込み、配布・販売することを許可する。\n（例：VRChatのペデスタルでのアバター設置は、データの再利用が出来ない形でのゲームへの組み込みとみなし可能とします。ただし他モデルの利用規約を守ってください）\n\n3.R-18・R-18Gへの利用を許可する。\n\n【禁止事項】\n1.本データ、改変データを許可なく配布、販売することを禁じる。\n　補足：改変データの配布、販売は相談いただければ対応できるかもしれません。\n　　　また、本データ及び改変データを組み込んだ３Dモデルを許可なく配布、販売することも本項目に該当するので禁じますが、\n　　　相談いただければ対応できるとおもいます。\n\n\n【利用条件】\n1.本データ及びその改変物を公序良俗に反する行為や目的、反社会的な行為や目的、特定の信条や宗教、政治的発言のために利用しないこと。\n\n2.第三者の知的財産権およびその他一切の権利を損なう行為を行わず、かかる権利を損なう目的のために本データ及びその改変物を利用しないこと。\n\n【免責】\n1.本データを含むあらゆるデータを利用することで、利用者が受ける損害および被害に関し、空々こんはいかなる補償をもいたしません。\n\n2.本データを含むあらゆるデータを利用することで、利用者が他者に損害および被害を与えた場合には、その責任および補償の義務は当該利用者にあるものとし、空々こんは一切責任を負いません。\n\n-----------------------------------------------------\n制定 平成30年11月18日\n\n疑問点や問い合わせ、質問等がありましたら\nTwitter：@kuukuukon\nまで連絡をしてください。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
