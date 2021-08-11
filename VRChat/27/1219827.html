@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "G4PEc4hl4c3yjCgDWI8+upEN1KngzDSg3z/ivVFzw0Y="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "G4PEc4hl4c3yjCgDWI8+upEN1KngzDSg3z/ivVFzw0Y="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"KA-03 ASR \"Brionac\"","description":"KA-03 ASR \"Brionac\"\n巨大な銃身から撃ち出される弾丸は、神話の槍の如く全てを貫き焼き尽くす。\n3cmAPFSDSの劣化ウラン弾は戦車、ヘリ、艦船の装甲を容易に侵徹し、内部を焼夷することで無力化する。\n無骨な外見だが最新技術が投入されており、過去に小銃では技術不足によって採用に至らなかったAPFSDS弾を使用し、ボルトアクションを自動で行う。\nアンドロイドや強化外骨格が携行することを想定し、その巨躯、重量ながら銃身を折り畳むことができる。","url":"https://booth.pm/ja/items/1219827","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"800","highPrice":"1200"},"image":"https://booth.pximg.net/c/620x620/3713aef5-42d6-43d4-b456-e2fe144cfcc8/i/1219827/26adce4b-a0c5-4a47-bab8-6cb8706f3a0f_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "G4PEc4hl4c3yjCgDWI8+upEN1KngzDSg3z/ivVFzw0Y="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -487,6 +508,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"","content":"フルスクラッチモデルの大型ライフルです。\n主にVRChatでの利用を想定していますが他で使っていただいても構いません。\nご購入頂いた時点で利用規約に同意したものとします。\nマテリアルにArktoonシェーダーを利用していますので事前のインポートを推奨します。\n\n銃本体に加え、RifleScope KS-01\"Telegnosis\"を同梱したセットをご用意しております。(少しお得)\n\nメッシュ：銃本体(16566△)\nセットスコープ(3985△　計20551△)\n\nfbxファイル：Brionac、Magazin、Telegnosis(セットのみ)\n\nテクスチャ：本体 4096(アルベド、メタリック、ノーマル)計3枚\nセットスコープ:2048(アルベド、メタリック、ノーマル、エミッション)計4枚 \n\nボーン\nMainFrame\n┗Barrel\n　Bolt\n　Grip\n　Monopod\n　ScopeBase\n　ShoulderPad\n　Trigger\n　BipodBase\n　┣Bipodleg_L1\n　┃┗Bipodleg_L2\n  　┃  ┗Bipodfoot_L\n　┗Bipodleg_R1\n　　┗Bipodleg_R2\n　　　┗Bipodfoot_R\n\nマテリアル:1つ(セットスコープ込みで2つ)\n\n禁止事項：再配布(パーツを流用したもの含む)\n※このモデルを使用したVRChatにおけるPublicアバターとそのペデスタルの利用は可能です。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
