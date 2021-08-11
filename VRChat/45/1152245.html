@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "Xhcg2rjGoUEIuNx6MvwkYLypsuo1m2QsBKvcBCrVgOs="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "Xhcg2rjGoUEIuNx6MvwkYLypsuo1m2QsBKvcBCrVgOs="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"亜-03式自動小銃【VRChat向け】","description":"追加DLC 亜-03式小型小銃(別売り100\\)登場！！\n=========================================================\n【注意】\n・商品画像は動く城のフィオのお店 様の「裏面を描画するStandardシェーダー」を使用しています。本製品には含まれていません。\n・当製品には工房「The garden of Ash」 様のGA-01A1 マガジンは含まれていません。\n・Textureを修正したため商品画像と多少異なる点がありますが、ご了承ください。","url":"https://booth.pm/ja/items/1152245","offers":{"priceCurrency":"JPY","@type":"Offer","price":"200"},"image":"https://booth.pximg.net/c/620x620/41af4b60-c647-4ace-80c0-e2874277d5ec/i/1152245/d273adb3-3922-4ff2-af50-16a4e0a1c2bb_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "Xhcg2rjGoUEIuNx6MvwkYLypsuo1m2QsBKvcBCrVgOs="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -582,6 +603,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"ー製品説明ー","content":"●亜-03式自動小銃　TypeA-03AssaultRifle\n亜-03式自動小銃は世界中のあらゆるユーザー、軍隊、特殊部隊、民兵、ストリートギャングのために設計されました。\n多くの過酷なテストに合格し、どんな状況下でも快適に動作する亜-03式自動小銃は命を預けられる相棒にふさわしいでしょう。\n構造は単純でメンテナスも簡単、\"サブスタンスペイント\"を使わない製法により低コスト化を実現しています。\nなに？セレクターはいきなりフルオートだし、ボルトリリースがなくて使いづらい？何より見た目が悪い？大丈夫！\n亜-03式自動小銃の射撃は小さなことは忘れさせてくれる。\nさぁ今すぐ標的に向かって撃ちまくろう！\n\n弾薬は5.56mm　装弾数30発　ロングストロークピストン式　セミオートフルオート選択可能　マガジンはGA-01シリーズと共通サイズ　\nピカティニーレールを搭載し自由にカスタムが可能。　\nリアサイトは取り外せ、フロントサイトは折りたためます。　\nマガジンキャッチ、セレクターは左右両方にあり操作性に優れています。\nストックは折りたため、コンパクトにすることができます。\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n〇シェイプキーにより可動するパーツがあります\n〇フラッシュサップレッサーは外すことができますのでお好みのハイダーをお付けください\n〇GA-01シリーズマガジンをお使いの際は座標等の調整が必要になります　サイズは両方のScale値を変更しなければ導入時のままで合うはずです\n〇商品画像と同仕様のprefabがあるので手間を省けます"},{"type":"text","title":"ー製品内容ー","content":"・本体fbx\n・マガジンと弾薬fbx\n全体で5943ポリゴン、普段見えない弾+弾単体を除いて4407ポリゴン(blender上)\n・テクスチャ\n・Unitypackage\n・追加DLC用のベースモデル\n"},{"type":"text","title":"ー利用規約ー","content":"当データの著作権は製作者である白亜重工(白雪)に帰属します\n改変・商用利用は許可されています\n下記の禁止事項に抵触した時点で当モデルの使用権は自動的に終了します\n以下規約に従った上でご自由お使いください\n●禁止事項\n・本製品を取り出せる形での再配布・再販売\n・製作者を偽る言動\n・特定の個人や団体への誹謗中傷のための使用\n●免責事項\n当データを使用して発生したトラブルに一切の責任を製作者は負いません\nご利用は自己責任でお願いします\n"},{"type":"text","title":"ー更新履歴ー","content":"2018/12/28\n・ReadMEの内容を少し修正\n2019/03/05\n・Textureを修正\n・商品画像と同じ仕様のPrefabを追加\n・ReadMeに少し追加\n2019/05/20\n・追加DLC用のベースモデルを追加"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
