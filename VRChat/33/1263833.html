@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "+Dcf4+I2DFMZUO/oToSAbuhJz7Jp130d2J640G7qa2c="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "+Dcf4+I2DFMZUO/oToSAbuhJz7Jp130d2J640G7qa2c="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"八重桜のコサージュとブローチ","description":"3Dモデルアクセサリー「八重桜のコサージュ」\n\nコサージュ：1027ポリゴン\nブローチ：947ポリゴン\n\nカラーごとにUnitypackage prefab 対応\n\n\n洋服や帽子につけたり、髪飾りにしたりして\n自由に楽しんでくださいね！\n\n\n「コサージュのnatural」のみお試し版で無料です！\n\nシェーダーはユニティちゃんトゥーンシェーダーを使っています。\n\n＜アップデート＞\n2020.04.30　テクスチャ改変用にAlpha抜きPNGを追加しました。\n2019.11.19　全部パックにブローチを追加しました。\n2019.09.02　全部のバリエーションにClipping Maskを対応しました。以前のものと比べて少しアウトラインが入りますが、暗いところなどでの表示が綺麗になると思います。\n2019.08.13　Blackのテクスチャを修正・追加しました。それぞれのバリエーションごとにPrefabを作りました。","url":"https://booth.pm/ja/items/1263833","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"500"},"image":"https://booth.pximg.net/c/620x620/1f163e5b-a0e4-46e7-be27-4850d72c7bc9/i/1263833/61a5eb04-d68a-499e-9229-80aa47675e01_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "+Dcf4+I2DFMZUO/oToSAbuhJz7Jp130d2J640G7qa2c="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -484,6 +505,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"zipファイル内容物","content":"＜無料版＞naturalのみ\n\n・SakuraCorsage_natural.unitypackage\n・連絡先など.txt\n\n\n＜全部パック＞コサージュ、ブローチ、カラーバリエーション全部\n\n・SakuraCorsage.unitypackage\n・連絡先など.txt\n\nSakuraCorsageTextureフォルダにテクスチャ改変用のPSD、Aplha抜きPNGファイルが入っています。\n"},{"type":"text","title":"＜導入方法＞","content":"■インポートする前に\n\n「ユニティちゃんトゥーンシェーダー」を入れていただくと自動でシェーダーのセッティングがされます。\n\nダウンロードサイト\nhttp://unity-chan.com/download/releaseNote.php?id=UTS2_0\n\n\n■unitypackageをインポート\n\n_CHIMAYA/SakuraCorsage/\nから、お好みのカラーのPrefabを設置してください。\nコサージュはSakuraCorsage_prefab_\nブローチはsakuraBrooch_prefab_\nから始まるPrefabファイルです。"},{"type":"text","title":"使用に関して","content":"3Dモデルの使用について　のページをご確認ください。\nPlease check here\nhttps://chimaya.booth.pm/items/2105305\n\n\nDo not sell or redistribute\nAvatarPedestal Disallow"},{"type":"text","title":"何かありましたら","content":"BOOTHのメッセージ、またはツイッター(https://twitter.com/ha_ru_u)などでご連絡ください。DMもフォロー外からでも受け取れます。\n\nその他、ご感想、ご要望等も気軽にいただけたら嬉しいです！"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
