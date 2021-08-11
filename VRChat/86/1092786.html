@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "Xzn1pBSP0a8dGcRDum3XYlMDPDvasrqn5FTqRq2TVOU="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "Xzn1pBSP0a8dGcRDum3XYlMDPDvasrqn5FTqRq2TVOU="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"霊刀睡蓮［屈折トレイル付き］","description":"3Dモデル霊刀睡蓮［レイトウスイレン］。\n約6000ポリゴンです。軌跡が屈折するトレイルが付属しています。トレイルは規約の範囲内であれば、他のモデルに流用しても大丈夫です。\nVRChat、映像、営利非営利問わず自由にお使いください。\n\n\nその昔、國に空から岩がひとつ降った。まわりは窪み池となった。これは天の御利益に違いないと、皇はこれで刀を打たせた。すると、刀には木目のような模様が現れた。池は睡蓮の花が美しく咲いたことから、皇はこれに睡蓮の名をつけ宝とした。","url":"https://booth.pm/ja/items/1092786","offers":{"priceCurrency":"JPY","@type":"Offer","price":"840"},"image":"https://booth.pximg.net/c/620x620/ec467e09-9e3c-4fb6-8a6a-55f885c9820b/i/1092786/4d092426-e078-4ae3-947e-13e942f7983c_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "Xzn1pBSP0a8dGcRDum3XYlMDPDvasrqn5FTqRq2TVOU="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -461,6 +482,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"media","content":"\u003ciframe width=\"640\" height=\"480\" src=\"https://sketchfab.com/models/0a4491d394374b5ca348b468b7bde927/embed\" frameborder=\"0\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/AlLeTaYu_R0?ecver=1\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"せつめい","content":"せつめい\n\n［モデルについて］\n睡蓮にはDefaultとTekatekaのバージョンがあります。Defaultは普通、Tekatekaは景色の映り込みが強いです。\nライティングに依存しているため、ワールドにより表情は変わります。\n\n［Unityでの扱い方］\nマテリアルなどを設定済みのPrefabを同梱してあります。PrefabフォルダからHierarchyにドロップしてください。\nDefault、Tekatekaの2パターン＋トレイル付きの4パターンです。\n\n［Textureについて］\n4枚のTextureが同梱されています。Albedo、Metallicマップ、Nomalマップ、Emissionマップです。\nデフォルト設定では光っていませんが、マテリアルのEmissionの値を変えると刃紋を光らせることができます。\n\n［ボーンについて］\n刃、柄、鞘にボーンが割り当てられています。ボーンを動かすことで位置を調整することもできます。"},{"type":"text","title":"内容物","content":"・モデルのFBXファイル\n・テクスチャファイル(1024×1024)\n・Readmeテキスト\n・説明テキスト\n・以上を含んだUnityPackageファイル"},{"type":"text","title":"Readme内容","content":"利用規約\n制作者:Captain\n\n本モデルを購入した時点で本利用規約に同意したものとします。\n利用規約の内容は変更する場合があり、最新のものが適用されます。\n\n------------------------------------------------------------\n・本モデルの著作権はCaptainに帰属します。\n\n・モデルの改変、改造は自由です。\n\n・モデルデータを利用した商業利用を含む映像制作や配信活動などへの利用は制限いたしません。\n\n・本モデル及び改変モデルの再配布や再販売などは禁止いたします。\n\n・VRChatへのアバターアップロードは制限いたしませんが、アバターペデスタルの設置は禁止いたします。\n\n・公序良俗に配慮してご利用ください。\n------------------------------------------------------------\n制定日：2018-11-08\n\n不明点等ございましたら以下にご連絡ください。\nTwitter:@CaptainAyakashi\nDiscord:Captain#1920"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
