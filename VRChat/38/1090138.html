@@ -58,6 +58,16 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "Qq0czgREFQUU2jJAP5+v6sCaHynYK9doWcD43OktKT8="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
   </head>
   <body>
     <div class="mini-player-controller" style="display: none;">
@@ -86,6 +96,13 @@
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "Qq0czgREFQUU2jJAP5+v6sCaHynYK9doWcD43OktKT8="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"軽量型サイバーカタナ 3Dモデル「菊-001」","description":"VRChatで利用想定の、ローポリ軽量型サイバーカタナの3Dモデルです。\nunitypackageでの提供となります。\n△318の通常版の他に、本体とバッテリー部分それぞれ単品のモデルも同梱しています。","url":"https://booth.pm/ja/items/1090138","offers":{"priceCurrency":"JPY","@type":"Offer","price":"300"},"image":"https://booth.pximg.net/c/620x620/7d19caf7-8413-4b46-abe2-17f1a8dd9250/i/1090138/35e4f631-2faf-4922-9f67-252de8d7d16a_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -93,6 +110,10 @@
     rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "Qq0czgREFQUU2jJAP5+v6sCaHynYK9doWcD43OktKT8="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -422,6 +443,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"【内容物】","content":"・README\n・unitypackage┬ fbxデータ(本体 (△394)、バッテリー (△140)、統合 (△318))\n　　　　　　　├ マテリアル\n　　　　　　　├ プレハブ(通常版・分離版の2種)\n　　　　　　　└ テクスチャ(メイン、メタリック、エミッション、ノーマル)"},{"type":"text","title":"【利用規約】","content":"本モデルデータ及びテクスチャデータ『菊-001』(以下本モデルデータと記載)の利用者は、本モデルデータの利用をもって以下の規約を読了し同意したものとみなします。\n\noo許可することoo\n1. 本モデルデータをゲームや映像作品にR-18、R-18G問わず利用すること。\n　使ったら報告してもらえると嬉しくなります。\n2. 全てまたは一部に関わらず、営利利用・改変・二次創作ご自由に。\n\nxx禁止することxx\n1. 改変した･していないに関わらず本モデルデータのすべてまたは一部を、他の人がデータをいじることができる形で再配布･販売･提供すること。\n2. 本モデルデータを他人が不快に感じるようなこと(政治的及び宗教的活動も含みます)に利用すること。\n3. 「VRChat」に本モデルデータをアップロードする際、改変した･していないに関わらずPublicの状態でアップロードすること。\n\n*権利関係等*\n1. 作者は配布物の本モデルデータ及びその改変者について、著作権を専有しています。\n2. 利用者が、上記の「xx禁止することxx」に違反した場合、その利用者は本モデルデータの一切の利用を禁じられます。\n3. 作者はいつでも本モデルデータの利用や配布を停止・終了させることができます。\n4. 作者はいつでも、利用者による本データ･またはその二次創作物の利用を中止・削除させることができます。\n5. 上記による本モデルデータの利用停止や中止･または本モデルデータの利用などにより利用者に発生したいかなる損害についても、作者は一切責任を負いません。\n6. 当規約は日本法を準拠法とし、日本語によるものを正本として常に日本語により解釈されます。\n\n*規約の変更*\n1. 作者は当規約を変更できます。\n2. 変更する場合、変更内容をtwitter等で掲載することで利用者に通知します。\n3. 変更通知が行われた後、利用者は本モデルデータを利用することで変更後の規約に同意したものとみなします。\n\n\n2018/11/13 配布\n2018/11/13 規約内容訂正、削除・・・*ライセンスの終了*第3項、「このときより」より後の文を削除\n2018/12/27 規約内容よよりわかりやすく大幅改良"},{"type":"text","title":"【作者】","content":"作者名 : Neq a.k.a Yuri\ntwitter : @p_303_p(ゆりだよ)\n連絡先 : yurichan.vr@gmail.com\n\nお問い合わせはこちらまで。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
