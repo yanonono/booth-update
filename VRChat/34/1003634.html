@@ -53,6 +53,16 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "u/lYlJCT7MTZFgKDkrLsKfYQCS81CtR0RN5dldCWo48="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
   </head>
   <body>
     <div class="mini-player-controller" style="display: none;">
@@ -81,6 +91,13 @@
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "u/lYlJCT7MTZFgKDkrLsKfYQCS81CtR0RN5dldCWo48="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"魔剣「七光」","description":"・ファンタジックな大剣モデルです。","url":"https://booth.pm/ja/items/1003634","offers":{"priceCurrency":"JPY","@type":"Offer","price":"200"},"image":"https://booth.pximg.net/c/620x620/97c114c0-fba8-44bb-94b5-aaa1efd40633/i/1003634/108ebc04-72b4-4b4a-bf31-dbaff75bcc3a_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -88,6 +105,10 @@
     rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "u/lYlJCT7MTZFgKDkrLsKfYQCS81CtR0RN5dldCWo48="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -400,6 +421,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/DIoiowTGpRc\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"◆概要・仕様","content":"・△5204ポリゴン\n\n・Unity用animation設定済みPrefab同梱\n・DynamicBone設定済み(DynamicBoneは別売りです)\n・商用利用可\n・改変利用可\n・VRchat以外での利用可\n\n・ポリゴン数が重いのでアニメーションでの出力やワールドに配置して楽しむと良いかと思います。\n\n・Dynamic Boneの設定が一部に入っているのでDynamicBoneをインポートした後、Unitypackageをインポートすると設定が反映されるかと思います。\n\n・改変したモデルを使用する場合、アニメーションなどの設定は少し特殊でそのままでは使えないので、アニメーションを使用したい場合は完成済みのプレハブのオブジェクト構造を真似してみてください。"},{"type":"text","title":"◆内容物","content":"・モデルデータ(Fbx形式)\n・Texture(PNG形式)\n・Unitypackage\n(アニメーション、エフェクトの有無合わせて3種類のそのままで動くプレハブがprefabフォルダに同梱されています。)\n・修正、変更点テキスト\n・簡易的な導入解説画像"},{"type":"text","title":"◆注意点・使用条件など","content":"・購入した時点で以下の条件に同意したものとします。\n\n・本モデルを利用した場合に生じる問題などについて当方は一切の責任を負いません。ご了承ください。\n\n・データの一部または全ての二次配布は禁止します。\n\n\n※条件などの内容については予告なく変更する場合があります。"},{"type":"text","title":"◆更新履歴","content":"・v1.0:2018/09/07\n┗公開\n・v1.1:2018/10/27\n┗animationをはじめとしたオブジェクト構造の更新\n・v1.1a:2018/11/22\n┗Booth商品ページの文章を修正変更"},{"type":"text","title":"◆連絡先など","content":"・制作配布：七草次郎\n・Twitter (七草次郎) @Nanairokusa\n(https://twitter.com/Nanairokusa)"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
