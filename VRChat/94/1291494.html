@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "5PqhM6czNidahEdqRZ6zaL+D4MWeHE1zmT/Y7y+GjTk="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "5PqhM6czNidahEdqRZ6zaL+D4MWeHE1zmT/Y7y+GjTk="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"【VRChatアバター】yu","description":"VRChat向け男性アバターです。\n\n\nVRChatでもっと男性が増えて欲しくて作りました。\n衣装はclothのズボンが動くとふわっとして綺麗です。\nclothの参考としてもどうぞ\n\n参考動画\nhttps://twitter.com/KouuAo/status/1110535621137723392\n\n\nキッシュちゃんの髪\nhttps://booth.pm/ja/items/1006913\n衣装\nhttps://kouuao.booth.pm/items/1214957\nを組み合わせると女性にもなります。\n\n髪の毛や身体のメッシュは分けてあるのでunityだけで改変が完結します。\n\n\n\nシェーダーはArktoon-Shadersを使用していますhttps://packetbird.booth.pm/items/1027997\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\n使用前に同梱されている利用規約を必ずお読みください。\n\n不明点、不備等御座いましたら\nhttps://twitter.com/KouuAo\nまで気軽にご相談ください\n\nーーーーーーーーーーーーーーーーーーーーーーーーーー","url":"https://booth.pm/ja/items/1291494","offers":{"priceCurrency":"JPY","@type":"Offer","price":"1000"},"image":"https://booth.pximg.net/c/620x620/37301c7a-40ea-4639-a455-c5e6e35d3d3b/i/1291494/cae22d28-7df9-4d1a-836c-5a8a1c19cf24_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "5PqhM6czNidahEdqRZ6zaL+D4MWeHE1zmT/Y7y+GjTk="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -383,6 +404,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"下記利用規約抜粋","content":"この度はダウンロードしていただきありがとうございます。\n下記内容を確認の上ご利用お願いいたします。\n\n・同封物\nunitypackage\nfbxファイル\ntexture\n利用規約\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\n・改変等はぜひしてください。\n　衣装改変なども推奨しています。ですが、組み合わせるアバターの利用規約で禁止されていることは禁止です。\n　MMDやVRM化などのファイル変換にも制限はありませんが、ズボンが上手く動作しない可能性が高いです。\n　パーツ流用なども個人の使用の範囲内であれば特に制限はありません。\n\n・二次創作などもOKです。\n\n・商用利用について\n　動画、配信などへの映り込みは営利、非営利問わず許可します\n\n・二次配布することは禁止します。\n　改変等の有無に関わらず禁止です。\n\n・自作発言はやめてください\n\n・他人を不快にさせる、宗教、政治などに関わる使用は禁止します\n　エロ、グロなどについては禁止はしませんが、他人が不快な思いをすることがないよう棲み分けをお願い致します。\n　裸体にした画像や動画をTwitterなどに投稿することを禁止します。\n\n\n・このモデルを使用しての迷惑行為はやめてください\n\n・このファイルを使用して発生したトラブルには一切責任を負いません\n\n・利用規約が更新された際はそれに従うこと。\n\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\nシェーダーはArktoon-Shaders(https://booth.pm/ja/items/1027997)を使用しています。\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\n不備や分からない点、要望などがございましたら気軽にTwitter(@KouuAo)などに問い合わせください。\n\n理由が明確な場合、アバターのIDやデータを配布することを条件付きで許可する場合があるので\nもし迷った際はTwitterのDMにご相談ください。\n\n\n改めてこの度はダウンロードしていただきありがとうございました。\nVRChatがより一層楽しいものになりますように…！"},{"type":"text","title":"更新履歴","content":"2019/3/30\n女性改変用textureをboothからDL出来るようにしました。\n\n2019/4/26\n衣装UVをDL出来るようにしました。\n\n2019/4/28\n・表情モーフの追加、animationの変更\n頬染め\n困り眉\n口、笑い\n口、下げ\n\n・衣装、スウェットの追加\nちょっとラフな感じになります。\n\n・靴のメッシュを分離\nunity上の改変がよりしやすくなりました。\n\n・首のボーンの修正\n首がめっちゃ伸びる現象を修正しました。\n\n2019/6/4\n利用規約の更新\nR18のエロ表現に対しての追記\n裸体の画像や動画をTwitterなどに投稿することを禁止します。\n"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
