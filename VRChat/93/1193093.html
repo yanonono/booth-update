@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "Wsp0kdH1uLUmIajs1cOzXf5QMp/eDlsanzplt0cy8Rk="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "Wsp0kdH1uLUmIajs1cOzXf5QMp/eDlsanzplt0cy8Rk="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"【スキニング済】ハイカットスニーカー","description":"◇ 概要 ◇\n\n追記：2019/1/31\nボーン構成を改善した改良版に更新しました！\nHumanoid-Toeボーンの追加（以前のものはMMD標準ボーンを使用していました）\n購入者は再度DL可能ですのでどうぞよろしくお願いします。\n\nVRChatの自作モデル用に制作したものです。\nMMDや自作ゲームなどにもお使いいただけます。\nVRChat向けなのでローポリを心掛けて作りました。（ポリゴン数1,984）\nカラーバリエーションは8種類です。\nお好みで変更してお楽しみください。\nもちろん改変もOKですのでペイントソフトでいじって自分なりのカラーにしていただいて結構です＾＾\nreadme.txtと参考画像にて導入方法の解説付き（Unityは独学ですので悪しからず）","url":"https://booth.pm/ja/items/1193093","offers":{"priceCurrency":"JPY","@type":"Offer","price":"300"},"image":"https://booth.pximg.net/c/620x620/a968361b-677c-4df2-bd21-ba86af47c168/i/1193093/c0bfb361-c8fe-4a12-94c6-eea2b53ddcdb_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "Wsp0kdH1uLUmIajs1cOzXf5QMp/eDlsanzplt0cy8Rk="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -422,6 +443,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"◇ 同梱ファイル ◇","content":"nyaikishoes.fbx\nNyaikiShoes.unitypackage\nreadme.txt\nテクスチャ―ファイル（bmp）×8カラー\nサンプル画像\n導入方法参考画像\n\n"},{"type":"text","title":"◇ 利用規約 ◇","content":"◆改変：可\n◆商用利用：可（VTuber活動・MMD動画などのモデルへ追加することをさします）\n◆再配布、本データを含めた販売：不可\n◆アバターやワールドへの同梱：可\n◆作者を名乗る行為は禁止です。\n◆その他、製作者ぴかおが不適切な使用と判断した際には利用の停止を求める場合があります。\n\n"},{"type":"text","title":"◇ 免責 ◇","content":"本データを使用したことによって発生したトラブルや損失に対して\n製作者ぴかおは一切の責任を負いません。\n\n"},{"type":"text","title":"◇ お願い ◇","content":"上記の利用規約を違反していると思われる行為を見かけましたら\nTwitterかメールアドレスへご連絡をお願いします。\nご協力のほどよろしくお願いいたします。\n\n\nP.S.\nTwitterで使用報告してくれるとめちゃうれしいです！\nみなさんの着こなしを見せてください！(∩´∀｀)∩"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
