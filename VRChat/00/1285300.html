@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "6seng3nYcsOKRr4MSJn72JDOpghOr8XJjKqLe1Algqs="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "6seng3nYcsOKRr4MSJn72JDOpghOr8XJjKqLe1Algqs="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"Raymarching 3DMap (VRChat/Unity)","description":"ワールドの3Dマップを描画するためのシェーダとその機構です。  \n256*256のカメラ2つで、画像のような綺麗かつ軽量な3Dマップを描画できます。(プレイヤーの陰を表示する場合は追加で一つ)\nそれぞれ二枚目の画像では、高解像度な\nColor: 512 * 512\nDepth: 256 * 256\nMaxStep: 256\nという設定を使用しています。\n---\n使用した場合、READMEを読み全文に同意したものとみなします。\n----------\n\nA shader and its mechanism for drawing 3D maps of the world.\nYou can draw beautiful and lightweight 3D maps with a minimum of two 256 * 256 cameras. (If you want to show the player's shadow, you can add one camera additionaly)\n  \nEach second images, using high resolve settings:\nColor: 512 * 512\nDepth: 256 * 256\nMaxStep: 256\n\n---\nIf you use this, I consider you to read the README and agree to the full text.","url":"https://booth.pm/ja/items/1285300","offers":{"priceCurrency":"JPY","@type":"Offer","price":"500"},"image":"https://booth.pximg.net/c/620x620/17196f09-c9fe-4c94-8cb2-5b76e97ce982/i/1285300/79e0ab89-8637-4b0a-9f22-41496ca1653a_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "6seng3nYcsOKRr4MSJn72JDOpghOr8XJjKqLe1Algqs="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -445,6 +466,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"README","content":"# Ray-Marching 3DMap\n\n## Author\n(c) 2019 wraikny\nTwitter: @wraikny\nemail: writtenknown@gmail.com\n\n---\n\n## Japanese\n\n### Caution\n本配布物を作者に無断での再配布・公開を禁止します。\n解析・改変はご自由にどうぞ。\nVRChatで使用可能です。\nただしワールドギミックとして使用する場合は、クレジット表記(ex. Author:wraikny)を行ってください。\n\n### Descriiption\nワールドの3Dマップを描画するためのシェーダとその機構です。  \n256*256のカメラ最小2つで綺麗かつ軽量な3Dマップを描画できます。(プレイヤーの陰を表示する場合は追加で一つ)\n\nEnv_Colorのテクスチャを512*512にすると、負荷を上げる代わりに見た目がかなり綺麗になります。\n更に綺麗にしたい場合は、MaxStepを256に設定すると良いかも。\n\n### Installation\n1. \"RM3DMap_Camera\" prefab をアバター直下に置きます。\n2. \"RM3DMap_Disaplay\" prefab を手のボーンの下に置きます。\n3. EmoteSwitchで上記２つのオブジェクトを収納すると扱いやすいです。\n4. アバターにてローカルオンリーの場合やワールドで使用する場合は、カメラコンポーネントをデフォルトでEnableにした上でAnimatorコンポーネントを削除してください。\n\n### Properties\n#### Textures\n* _EnvColorTex: ワールドのColorを取得するRenderTextureをセットする。\n* _EnvDepthTex: ワールドのDepthを取得するRenderTextureをセットする。\n* _AvatarDepthTopTex: アバターのDepthを取得するRenderTextureをセットする。不必要の場合は、該当するカメラを削除した上でRenderTextureをマテリアルから外してください。\n\n#### RayMarching\n* _MaxStep: 更新回数。256にすると高解像度かつ多少負荷が高い。\n* Enough Distance: 更新を打ち切る距離。\n* Draw Dist: 描画判定を行う距離\n* Hight Scale: 高さ方向のスケール(多分使わない......)\n\n#### Colors\n* Un Hit Color: 衝突しなかった場合の色\n* Player Color: _AvatarDepthTopTexに何かが写っている場合の色\n* LineColor: 中央に表示する十字線の色\n* LineWidth: 中央に表示する十字線の幅\n\n#### Others\n* _DisableWhenOrthographic: 平行投影カメラで非表示にする。チェック推奨。\n\n\n\n## English\n### Caution\nI prohibit redistribution / publication of this distribution without notice to me.  \nFree to analyze / modify.  \nYou can use it in VRChat.  \nWhen using it as a world gimmick, please do credit notation (ex. Author: wraikny).  \n\n### Descriiption\nA shader and its mechanism for drawing 3D maps of the world.\nYou can draw beautiful and lightweight 3D maps with a minimum of two 256 * 256 cameras. (If you want to show the player's shadow, you can add one camera additionaly)\n  \nIf you set the texture of Env_Color to 512 * 512, the appearance will look pretty instead of heavyness.\nIf you want to make it even cleaner, you mcan set MaxStep to 256.\n\n### Installation\n1. Place the \"RM3DMap_Camera\" prefab directly below your avatar.\n2. Place the \"RM3DMap_Disaplay\" prefab under the hand bone.\n3. Using EmoteSwitch is easy way to store the above two objects.\n4. If you use local only in avatar, or in the world, delete the Animator component after enabling the camera component by default.\n\n### Properties\nTextures\n* _EnvColorTex: Set RenderTexture to get the color of the world.\n* _EnvDepthTex: Set RenderTexture to get the depth of the world.\n* _AvatarDepthTopTex: Set RenderTexture to get Avatar Depth. If it is not necessary, remove the corresponding camera and then remove RenderTexture from the material.\n\n#### Ray marching\n* _MaxStep: Number of updates. If it is 256, high resolution and somewhat high load.\n* Enough Distance: The distance to break the update.\n* Draw Dist: Distance to judge drawing\n* Hight Scale: Scale in the height direction (may not be used ...)\n\n#### Colors\n* Un Hit Color: Color without collision\n* Player Color: The color when _AvatarDepthTopTex shows something\n* LineColor: Color of crosshair to be displayed in the center\n* LineWidth: Width of crosshair to be displayed in the center\n\n#### Others\n* _DisableWhenOrthographic: Hide with parallel projection camera. Check recommended."},{"type":"text","title":"CREDIT","content":"イメージ画像使用ワールド\n\n1619Hz\nCN Village Yae 2.3\nFantasy Shukaijo"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
