@@ -58,6 +58,16 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "m922maKEWgO8RPMIAYSOoEhOj1+EHxJiMwsGQ/zIaCk="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
   </head>
   <body>
     <div class="mini-player-controller" style="display: none;">
@@ -86,6 +96,13 @@
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "m922maKEWgO8RPMIAYSOoEhOj1+EHxJiMwsGQ/zIaCk="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"バーチャルゲームハード　ハローファクト","description":"HELLO。HelloFactの世界へようこそ。\n\n「ハローファクト」はアレジゴクゲームスが開発した、\nバーチャルゲームハードです。\n\n","url":"https://booth.pm/ja/items/1154615","offers":{"priceCurrency":"JPY","@type":"Offer","price":"0"},"image":"https://booth.pximg.net/c/620x620/52b7362d-ed74-44ab-acd8-f1839973d17e/i/1154615/d8fa6bd3-08db-4dbd-8999-ae932b3bd663_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -93,6 +110,10 @@
     rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "m922maKEWgO8RPMIAYSOoEhOj1+EHxJiMwsGQ/zIaCk="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -484,6 +505,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/aPo1A5SVhKg\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"●ソフト上だけの、ゲームハード。","content":"　HelloFactはデータとしてのみ存在するゲームハードです。\nユーザー間で「HelloFact」という概念を共有することにより、その世界は無限に広がっていきます。"},{"type":"text","title":"●HelloFactで、こんなことができます。","content":"・あなたはバーチャル世界の中で、HelloFactを使ってゲームを遊ぶことができます。または、遊んでいるフリをすることができます。\n・あなたは小説、イラスト、漫画、アニメ、動画、ゲームなどの媒体を問わずオリジナル作品で、HelloFactを登場させることができます。許可を取る必要はありません。\n・あなたはHelloFactを、バーチャル世界の自宅に置くことができます。職場でも、学校でも構いません。ええ、トイレでも。お風呂でも壊れません。バーチャルですから。\n・もし、あなたがオリジナルゲームを作る技術を持っているなら、あなたは作ったゲームがHelloFactに対応していることを公表することができます。\n（それがたとえ、真実でなかったとしても）\nまた、あなたの作るゲーム内でロゴ、3Dモデル、起動音を使用することができます。\n・あなたはHelloFactの周辺機器を名乗る3Dモデルを作成し、それにライセンスシールを貼ることができます。面倒で時間のかかる申請をする必要はありません。\n・HelloFactは対応ゲームの審査をしません。ただし、ゾーニングはしっかりと。\n・あなたはHelloFactのゲームカセットの端子に、フーフー息を吹きかけることができます。"},{"type":"text","title":"●以下の行為は禁じられています。","content":"・HelloFactのロゴ、3Dモデル、起動音そのものを販売すること。\n・”HelloFact”、”ハローファクト”、および”アレジゴクゲームス”を商標登録に申請すること。\n・HelloFactのゲームカセット、特に端子部を舐めること。\n・HelloFact本体の角でイヤな上司を殴り殺すこと。"},{"type":"text","title":"●更新履歴","content":"2019/01/01 配布開始しました。\n2019/01/19 内容物にソフト箱とトレー、ローンチタイトル「HellOfAction」のテクスチャを追加。\n2019/01/02 本体の端子部デザインを変更。\n2019/09/08 内容の一部を変更。"},{"type":"text","title":"●内容物","content":"・取扱説明書\n・HelloFact本体3Dモデル\n・HelloFact本体テクスチャ\n・ゲームカセット3Dモデル\n・ゲームカセットテクスチャ\n・カセットテクスチャ編集用PSDファイル\n・HelloFact本体箱3Dモデル\n・HelloFact本体箱テクスチャ\n・起動音\n・ライセンス周辺機器ステッカー\n・ロゴ\n●ver2追加分\n・ソフト箱\n・ソフト箱テクスチャ\n・ソフトトレー\n・「HellOfAction」カセットテクスチャ\n・「HellOfAction」ソフト箱テクスチャ"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
