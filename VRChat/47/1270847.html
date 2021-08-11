@@ -58,6 +58,16 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "e2dOsJ83bf/n8xY9kUxzuKo5RcumV5QeqGtR+pF7Fyk="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
   </head>
   <body>
     <div class="mini-player-controller" style="display: none;">
@@ -86,6 +96,13 @@
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "e2dOsJ83bf/n8xY9kUxzuKo5RcumV5QeqGtR+pF7Fyk="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"【VRChat用】VideoTrigger alpha v1.01","description":"このパッケージはギミック開発者向けの、外部からトリガーを引くことのできるプレハブのサンプルとなります！\n※ エンドユーザー向けではありませんのでご注意ください！\n","url":"https://booth.pm/ja/items/1270847","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"184"},"image":"https://booth.pximg.net/c/620x620/030a2645-c1e5-4596-84e0-6756664df27c/i/1270847/f82d731f-d17e-4c89-bf5a-2cdf5068ae2f_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -93,6 +110,10 @@
     rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "e2dOsJ83bf/n8xY9kUxzuKo5RcumV5QeqGtR+pF7Fyk="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -457,6 +478,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"■ パッケージ内容","content":"・トリガーを引くために使用しているフォントファイル\n・VideoTriggerのプレハブ\n・サンプルシーン2種\n・サンプルに使用しているサウンド・プレハブファイル\n\nサンプルシーンの内容\n□ ServerTriggerSample\n・Cubeのスポーン\n・AddDamage\n・Sound Play\nそれぞれPanoramaでサーバーにアクセスしてスプレッドシートにURLを書き込んでいます。\nそれをワールド側で読み取ってトリガーを引きます。\n\n□ WorldChangeSample\n・ワールドの切り替え\nボタンを押してからワールドに入りなおすと、押されたボタンに対応したワールドに切り替わります。\n\n\n※ サンプルに使用しているサーバースクリプトは公開しません、使用される際は各自でご用意ください。"},{"type":"text","title":"■ 使用方法","content":"・同梱のプレハブの場合\n「VideoTrigger/SpawnVideo/SyncVideoPlayer」のVRC_SyncVideoPlayerに読み込むURLをセット（サーバー側でURLを変化できる物）\n「VideoTrigger/Trigger」のEnterに実行したい内容のActionを設定、任意の操作で同TriggerのSpawnを実行。\n実行したタイミングでサーバーにURLを読みに行って、動画が無ければ何も起きず、正常に読み込まれればトリガーが引かれます。\n\n・サンプルシーンの場合\nWorldChangeSampleは「VideoTrigger_WorldChange/SyncVideoPlayer」に読み込むURLをセットする事でワールドに入ったタイミングで動画があればトリガーが引かれます。\nトリガーが引かれるとワールドの床オブジェクトが切り替わります。（切り替えるオブジェクトは自由に設定できるので、全く違うワールドを同じシーンに2つ用意してアップロード後に切り替えることが可能です。）\n\nServerTriggerSampleはそれぞれのボタンを押したタイミングでPanorama経由でサーバーにURLをセットしています。\nSyncVideoPlayerを10秒おきにスポーンさせて更新していて、このタイミングで「VideoTrigger_ServerTrigger/VideoTrigger/SpawnVideo/SyncVideoPlayer」にセットされているURLを読み込みます。\n「VideoTrigger_ServerTrigger/VideoTrigger/SpawnVideo/SyncVideoPlayer/SpawnOriginal/SpawnItem/Panorama」にサーバー側でセットされているURLを消すスクリプトへのURLをセットします。\nそうする事でトリガーが実行されたタイミングでサーバー側のURLをリセットして多重でトリガーが引かれるのを防いでいます。\n※ ServerTriggerSampleの様に頻繁にVideoPlayerを更新するとVRCクライアントでVideoPlayerが壊れてしまい、クライアント再起動するまで直らないバグがあります。（なのでこちらは実用的ではないかもしれません）\n"},{"type":"text","title":"■ ライセンス","content":"・VideoTrigger\nMIT License - LICENSE.txt\n\n・前提アセット\nStandard Assets\niwashibox（https://gitlab.com/iwashi_farm/iwashibox/releases）\nToybox（iwashiboxに必要）"},{"type":"text","title":"■ 更新履歴","content":"・alpha v1.01\n同梱していたiwashiboxをGitLabのリンクに変更。\n\n・alpha v1.0\nリリース"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
