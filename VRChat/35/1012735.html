@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "u1LgcWykTOrPWqlgMUvqwCA78UyeZbP2eJalwuwW6JQ="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "u1LgcWykTOrPWqlgMUvqwCA78UyeZbP2eJalwuwW6JQ="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"【無料】3Dモデル「鯖の味噌煮缶」v1.03","description":"v1.03でシェイプキーがなくなるという重大（？）な不具合を治したので、以前のバージョンの人は更新を推奨します。\n\n・モデル説明\nこのモデルは「鯖の味噌煮缶」です\n制作者：アステリー\n\nヒューマノイドボーン搭載でVRChatでアバターとして使えます！\nリップシンク対応！","url":"https://booth.pm/ja/items/1012735","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"100"},"image":"https://booth.pximg.net/c/620x620/34729524-be4f-4d18-959f-182804b8cf19/i/1012735/c5243278-f46d-4096-940a-5a23898f8a74_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "u1LgcWykTOrPWqlgMUvqwCA78UyeZbP2eJalwuwW6JQ="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -412,6 +433,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"内容物","content":"sabanomisoni.fbx\n　本体のモデルデータになります。\n\nsabanomisoni.png\nfuta.png\n　テクスチャになります。\n\n鯖缶本体.psd\n鯖缶フタ.psd\n　UVデータの含まれたPSDファイルになります。\nこのPSDを編集して書き出すことでオリジナル缶を作ることができます。\n\nreadme.txt\n　内容物、規約等が書かれたテキストになります。\n以下に規約などを記しますが、必ずこのファイルを一読してください。\n\nテクスチャ変更方法.txt\n　雑ながら、中身、ラベルを変更する方法を記してあります。\n"},{"type":"text","title":"利用規約","content":"・このモデルを使用する場合は規約に同意したものとみなします。\n\n・このモデル、および改変モデルの著作権はアステリーに帰属とします。\n\n・VRChatなどにアップロードし、アバター、アクセサリー等としての使用をすることは自由です。\n\n・メッシュやテクスチャの改変自由です。\n　自分好みの缶詰にしてください。\n\n・商用利用は自由です。\n　利用した際のクレジット表記は自由です。\n　強制ではありませんが、自分の作ったものがどう使われるのか知りたいので、もしよろしければ一報ください。\n\n・このモデルを使用して起きたトラブルなどに対して、作者は一切責任を負いません。\n"},{"type":"text","title":"禁止事項","content":"・二次配布は禁止とします。\n　改変したものであっても禁止とします。\n\n・このモデルを自分で作ったものかのような発言は禁止とします。\n"},{"type":"text","title":"その他","content":"・視点に関しての質問が何回かあったので、私の設定を参考までに記載しておきます。\nX:0 Y:1.0 Z:0.5\n\n・このモデルに関する質問はTwitter:@kouki1997219までDMまたはリプをお願いいたします。\n\n・これらの規約などは予告なく変更されることがあります。\n\n\n\n\n\n\n更新履歴\n2018/09/15　v1.00　公開\n2018/09/15　v1.01　PSDファイルのレイヤー名を変更しました。\n　　　　　　　　　 テクスチャ変更方法.txtを追加しました。\n2018/09/17　v1.02　不要なオブジェクトが入っていた為削除しました。\n2018/10/02　v1.03　blenderに読み込ませたとき、シェイプキーが消えてしまう不具合を解消しました。\n　　　　　　　　   それに伴い、fbxの親子関係等の変更を行いました。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
