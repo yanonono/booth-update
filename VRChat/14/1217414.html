@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "Z5R63FwjkbMHwdqp5I0l4X1rR2THRNXmedh363nCBpE="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "Z5R63FwjkbMHwdqp5I0l4X1rR2THRNXmedh363nCBpE="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"オリジナル3Dモデル 「NEON」(ネオン)","description":"\nNEON用素体+水着を販売開始しました。\nhttps://namzaru-shop.booth.pm/items/1467618\n\n\n■ドラゴン娘アバター「NEON」■\n\nVRChatなどのアバターとして利用することを想定したUnity用3Dモデルです。\nHumanoid形式、VRChatとDynamic Boneのセットアップ済みです。\n(VRChatSDKとDynamic Boneは本モデルに含まれていません)\n商用利用、配信などの活動での使用可\n\nポリゴン数：19555\nマテリアル数：5\nシェイプキー数：47＋リップシンク用シェイプキー\nフルトラッキングに対応したボーン構造です。\nシェーダーはArktoon shaderを使用しています。\n\n髪・角パーツ・各部テクスチャにそれぞれ二つのバリエーションがあります。\n\n\n■ファイル内容■\n\nVRChat用にメッシュを統合したfbxファイル2種\n改変用にメッシュを統合していないfbxファイルとblendファイル\nセットアップ済みのsceneファイルとprefabを含むunitypackage\n各種テクスチャとclip及びpsdファイル\n別途販売の素体用に合わせた顔メッシュのfbxファイルとblendファイル\n","url":"https://booth.pm/ja/items/1217414","offers":{"priceCurrency":"JPY","@type":"Offer","price":"3000"},"image":"https://booth.pximg.net/c/620x620/7ddc5b4a-9e11-4455-8c2c-7607cc08cbcf/i/1217414/31df0b5d-f0d3-424d-89d1-6724db0409f2_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "Z5R63FwjkbMHwdqp5I0l4X1rR2THRNXmedh363nCBpE="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -606,6 +627,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"■更新履歴■","content":"\nv1.01\n身体のメッシュが対称になっていなかったので修正しました。\n体系変化用のシェイプキーを一部修正しました。\nprefabファイルを追加しました。\n\nv1.02\n着せ替え時などに首すげ替えが出来るように顔メッシュとテクスチャを修正しました。\nDynamic Boneの別パターン設定(胸ボーンが反応しあうようになっています)を追加しました。\n負荷は上がると思いますので注意してください。\n同梱しているArktoon-Shaderを1.0.1.1に更新しました。\n一部マテリアルの設定を変更しました。\n\nv1.03\nGIMPなど一部作業環境でグラデーションマップが正常に作動しないので、\nそういった作業環境用のPSDファイルを追加しました。\nまた、いくつかのmask画像を追加しました。\nv1.04\nフルトラ時の肩下がり現象を治すため肩ボーンを伸ばしました。\nむちむち素体に対応するため顔メッシュのみのfbx及びblendファイルを追加しました。\nIdleモーションを追加しました。2A-7ちゃん(https://hiroiheya.booth.pm/items/1197108)のIdleモーションの改変です。\nDBの垂れ乳設定を追加しました。\n同梱しているArktoon-Shaderを1.0.2.5に更新しました。\n\n"},{"type":"text","title":"■ファイル内容■","content":"\nVRChat用にメッシュを統合したfbxファイル2種\n改変用にメッシュを統合していないfbxファイルとblendファイル\nセットアップ済みのsceneファイルとprefabを含むunitypackage\n各種テクスチャとclip及びpsdファイル\n"},{"type":"text","title":"■アバター導入方法■","content":"\n①導入前にVRCSDKをVRC公式からダウンロードしてUnityプロジェクト内にインポートしておいて下さい。\nダイナミックボーンを使用する場合も事前にインポートして下さい。\n②フォルダ内にあるdragon girl.unitypackageをインポートして下さい。\nSceneファイルをOpen Sceneで開くことでセットアップされたアバターがHierarchy上に表示されます。\n③改変をしたい場合はフォルダ内のdragongirl.fbxをご使用下さい。メッシュがパーツごとに分離しています。\nblendファイルも同梱していますが、導入されているアドオンやBlenderのverの関係上上手く動かない可能性があります。\n"},{"type":"text","title":"■利用規約■","content":"\nオリジナル3Dモデル 「NEON」\n制作者：ナムザル\n\n・本モデルを購入された時点で本利用規約に同意したものとします。\n本利用規約の内容は変更される場合があり、最新のものが適応されます。\n\n＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n\n\n・本モデルの著作権は製作者ナムザルに帰属するものとします。\n\n・各自の責任の下、本モデルの改造を許可します。\n　ただし、本モデルの改変方法、ＭＭＤなどunity以外のアプリケーションでの利用方法、別拡張子への変換など\n　本モデルに含まれていない事柄へのご相談は受けかねます、ご了承ください。\n\n・本モデル、及び改造モデルのVRChatなどのモデルデータをアップロードし、アバターなどとして利用するサービスへの使用を許可します。\n\n・上記サービスで購入者本人以外がアバターとして使用できるようにする行為を禁止します。\n\n・本モデル、及び改造モデルを第三者が3Dモデルとして再利用できる形での再配布、販売、及び製作者の詐称を禁止します。\n\n・購入者が本モデル、及び改造モデルを用いたYoutubeなどの動画サイトでの活動を許可します。収益化などは制限しません。\n\n・R-18、R-18Gへの利用は制限しませんが、各自の責任の下、利用するサービスや発表する場の規約を守って使用してください。\n\n・本モデル、及び改造モデルを使用した政治、宗教活動、他者を誹謗中傷する表現を禁止します。\n\n・翻訳の都合上日本語の利用規約と他言語の利用規約に差異が出た場合日本語が正しいものとします。\n\n＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n制定日：2019年2月6日\n\n免責事項\n\n本モデル、及び改造モデルを使用することによって生じた何らかのトラブル、損失に対しナムザルは一切責任を負わないものとします。\n本モデル、及び改造モデルのご使用は使用者の責任において行ってください。\n\n"},{"type":"text","title":"■クレジット■","content":"\n使用シェーダー\nArktoon Shader (https://packetbird.booth.pm/items/1027997)\nIdleモーション改変元\n2A-7/2ERO (https://booth.pm/ja/items/1197108)"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
