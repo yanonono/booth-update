@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "HsDFxmlCLIfBYc+9zIQv+nMAbgFq+a2yZlLNHTOQOiY="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "HsDFxmlCLIfBYc+9zIQv+nMAbgFq+a2yZlLNHTOQOiY="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"ミリタリーワンピースセット【VRoid用（ FBXモデル付）】","description":"このデータは軍服の正装をイメージしたVRoid Studio用のミリタリーワンピースのテクスチャです。\nセシル変身はもちろん、ワンピースのFBX入りなのでVRoidじゃなくても着用可能（FBXの利用はモデリングソフトなどが必要です）\n\n『Vket3 \u003e 九龍帝国城下町-参番街 \u003e 提灯横丁 \u003e 純喫茶ひきこもり庵2F』\n『Vket4 \u003e ワールドエンド・ユートピア \u003e ジュリエット \u003e 破滅の残り香』\n『アバターミュージアム小物/衣装展』の衣装展\nに出展しています。","url":"https://booth.pm/ja/items/1198541","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"500"},"image":"https://booth.pximg.net/c/620x620/8646e4ca-61b7-453d-88a5-dc39305d61ba/i/1198541/ec21fc99-0aa2-4e8d-8c58-ad56f5127ef1_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "HsDFxmlCLIfBYc+9zIQv+nMAbgFq+a2yZlLNHTOQOiY="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -510,6 +531,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"ファイル内容","content":"・ワンピース用\n　▶︎ミリタリーワンピースモスグリーン.png\n　▶︎ミリタリーワンピースブラウン.png\n　▶︎ミリタリーワンピースネイビー.png\n　▶︎ミリタリーワンピースブラック.png\n　▶︎ミリタリーワンピースホワイト.png\n　▶︎飾緒.png\n　▶︎月の記章.png\n　▶︎太陽の記章.png\n　▶︎星の記章.png\n　▶︎アクセサリーつけ方.png\n　▶︎パラメータ目安.png\n\n・ブーツ\n　▶︎ミリタリーブーツブラック.png\n　▶︎ミリタリーブーツホワイト.png\n\n・VRoid身体用\n　▶︎ミリタリーロングブーツブラック.png\n　▶︎ミリタリーロングブーツホワイト.png\n\n・README\n\n（無料版はミリタリーワンピモスグリーンとブーツテクスチャのセットです）\n\n※追加・軽量化・修正などのため予告無くバージョンを更新する場合があります\n※アバターは付属しません\n※ダウンロード販売のため、ご購入後の返金はできかねますので注意下さい\n※告知がある場合はTwitterを利用したり、BOOTHのフォロワーさんに一括メッセージを送ります"},{"type":"text","title":"利用方法","content":"VRoidStudioでの使用を想定しています。\n『ミリタリーワンピース』はVRoidのワンピース(長袖)用テクスチャです。\n衣装編集→テクスチャ→デフォルトのテクスチャは非表示→『＋』でレイヤーを追加→ワンピースのレイヤーにインポートして下さい。"},{"type":"text","title":"プロメ亭利用規約 -LicenseAgreement-","content":"利用規約は下記URLのBOOTHページでダウンロードしてご確認ください\n→ https://promethe.booth.pm/items/2084986"},{"type":"text","title":"権利者および権利者への問い合わせ先","content":"権利者:​ららるー\nメール:​promethe.avatar@gmail.com\nTwitter:@LalaluuVR\nウェブサイト:​ https://promethe.booth.pm/"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
