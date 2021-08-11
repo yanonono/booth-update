@@ -59,6 +59,16 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "dIPCh72x4sFVUqDzIxhdazUGoO7tE0P29bVYvrLQHiY="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
   </head>
   <body>
     <div class="mini-player-controller" style="display: none;">
@@ -87,6 +97,13 @@
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "dIPCh72x4sFVUqDzIxhdazUGoO7tE0P29bVYvrLQHiY="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"【VRMモデル】セラミア・シスハートVer1.0.0vroidファイル付属【第1弾】","description":"商品名：【VRMモデル】セラミア・シスハートVer1.0.0【第1弾】\n\nモデルVer1.0.0　2019/05/17 公開\n　　　　　　　　2019/10/20 メイドコスチュームテクスチャ変更\n　　　　　　　　　　　　　 v0.7.5で再出力\n　　　　　　　　2020/09/27 .vroidファイル付属　\n\n↓確認用\nhttps://hub.vroid.com/characters/5493598611611845363/models/7628983571895824457\n※VRoidStudio-v0.7.5-winで作成","url":"https://booth.pm/ja/items/1269803","offers":{"priceCurrency":"JPY","@type":"Offer","price":"500"},"image":"https://booth.pximg.net/c/620x620/013dc726-548e-4719-9ab6-5d4b00ceeb87/i/1269803/13fc34d1-9712-4c95-8f71-4d2a56fe8ce5_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -94,6 +111,10 @@
     rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "dIPCh72x4sFVUqDzIxhdazUGoO7tE0P29bVYvrLQHiY="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -638,6 +659,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"\u003cモデル情報\u003e","content":"セラミア・シスハート(私服).vrm　Ver1.0.0\nセラミア・シスハート(私服_肌干渉部分削除).vrm　Ver1.0.0\nポリゴン数：37884\nマテリアル数：17\nボーン数：224\nリップシンク対応\n\nセラミア・シスハート(メイド風ワンピ).vrm　Ver1.0.0\nセラミア・シスハート(メイド風ワンピ_肌干渉部分削除).vrm　Ver1.0.0\nポリゴン数：36732\nマテリアル数：16\nボーン数：224\nリップシンク対応\n\n.vroidファイルを読み込む際は以下のavatarsフォルダの中に入れてVRoidStudioを起動してください。\nデフォルトだとc:\\document\\vroid\\avatarsになります。"},{"type":"text","title":"\u003c内容物\u003e","content":"・readme.txt\n・001_VRM_vroid\n  Ceramia_Sisheart.vroid\n　セラミア・シスハート(メイド風ワンピ).vrm\n　セラミア・シスハート(メイド風ワンピ_肌干渉部分削除).vrm\n　セラミア・シスハート(私服).vrm\n　セラミア・シスハート(私服_肌干渉部分削除).vrm\n　モデル情報.txt\n・002_テクスチャ\n　ゴシックメイド風ミニスカワンピース(黒).png\n　ショーツ.png\n　スカート.png\n　セラミア私服.png\n　ニーソ.png\n　ブーツ.png\n　リボン(黒).png\n　リボン(赤).png\n　顔テクスチャ.png\n　瞳.png\n　肌.png\n　肌_メイド風ワンピ用(干渉削除).png\n　肌_私服用(干渉削除).png\n　髪.png\n"},{"type":"text","title":"\u003c利用規約\u003e","content":"・商用利用可(販売用のゲーム、動画、画像など営利目的での使用可)\n　(商用利用可ではございますがお声掛けくださいませ。ツイッター:@fox_kokona　URL:https://twitter.com/fox_kokona)\n・当データを利用して作成した3Dモデルの販売、配布禁止。\n・当データのみ又はパーツの一部を含んだ再配布及び販売禁止\n・当店で販売しているテクスチャやデータを使用したモデルをVRoid Hub等にアップロードされる場合は他者の利用又はダウンロードができない状態にしてください。\n・データ改変可(ただし、製作者を騙る行為又は改変したデータの再配布及び販売禁止)\n・使用報告やクレジット表記は必要ありません(任意)\n・政治、宗教活動、他者に対する誹謗中傷目的での使用禁止。\n・当データを使用していかなる損害が発生したとしても、当ショップはいかなる責任も負いません。\n・改変の有無にかかわらず作者の許可なく、人格を与えて活動することの禁止（VirtualYoutuber、VRChat等におけるロールプレイはこれに含まれません）\n・VRChatでの使用可(その際は、必ずprivateアバターとしてアップロードしてください)。\n・各種プラットフォームでの利用可\n・利用規約の違反が発覚した場合、被害額を請求する場合がございます。\n・予告なしでデータのアップデート、販売の中止、値段の変更を行う場合があります。\n・ご不明な点がございましたら、お気軽にお問い合わせください。"},{"type":"text","title":"\u003c著作権について\u003e","content":"本素材データの著作権及び著作者人格権等のその他一切の権利は、製作者na-yaに帰属します。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
