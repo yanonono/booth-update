@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "yqNmX6dbWVFeIMfjmwWnj2tEFppRSp9pgV0FmlXZ9Ds="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "yqNmX6dbWVFeIMfjmwWnj2tEFppRSp9pgV0FmlXZ9Ds="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"VRChat向け3Dモデル「白神鈴」","description":"VRChat向けオリジナル３Dモデル「白神鈴」\n制作者：YUU_0w0（白星Vトリエ）\n\n本モデルはUnityのHumanoid形式に対応したオリジナルモデルです。\n下に利用規約が記載されていますので、ご了承の上での購入をお願いします。\n\n本モデルを使った写真など、もしよければ　#白星Vトリエ　を付けてツイートすると嬉しいです！\n\n白神鈴ちゃんの裏設定の漫画もゆっくり描いているので、もし良ければ読んでみませんか： https://twitter.com/YUU_0w0w0/status/1189116219963535360\n\n【HAKUSEI AVATARS TESTING 白星アバター試着ワールド】： https://vrchat.com/home/world/wrld_5366b1ab-e4e0-4047-adfd-641f8a39a836","url":"https://booth.pm/ja/items/1323719","offers":{"priceCurrency":"JPY","@type":"Offer","price":"5000"},"image":"https://booth.pximg.net/c/620x620/53a255d6-2b15-47c4-b89d-927a3c9564c4/i/1323719/c9217dbe-3106-403a-8311-3ac2f1bafc6e_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "yqNmX6dbWVFeIMfjmwWnj2tEFppRSp9pgV0FmlXZ9Ds="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -538,6 +559,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"✪ 概要","content":"● △ポリゴン数：61902\n● マテリアル数：5\n● メッシュ数：4\n● 素体あり\n● リップシンク：○対応\n● フルボディトラッキング：○対応\n● アイトラッキング：×非対応\n● 自動瞬き：○対応\n● Dynamic Bone：○設定済み\n● 使用シェーダー：Arktoon-Shaders（https://booth.pm/ja/items/1027997）"},{"type":"text","title":"✪ 商品内容","content":"● Unityパッケージ\n（設定済みのモデルデータ）\n\n● FBXファイル\n※メタセコイアで制作した物なので、他ソフトでの互換は保障出来ません、ご了承ください。\n\n● PNGテクスチャ（15枚）\n\n● PSDファイル（5個）\n（レイヤー分けのテクスチャPSD）"},{"type":"text","title":"✪ 導入手順","content":"① VRChat現在対応しているバージョンのUnityで新規プロジェクトを作成（バージョンが重要です） 詳細: https://docs.vrchat.com/docs/setting-up-the-sdk\n②VRCSDK ( https://vrchat.com/home/download ) とDynamic Bone（任意）をAssetフォルダにインポート。\n➂ Unityパッケージ（Shiragami_Rin_vX.XX.unitypackage）をAssetフォルダにインポート。\n④ ダブルクリックでShiragami_Rin_vX.XX.unityを開けて、アバターが既に設定済みの状態になります、そしてメニューのVRChat SDKでアップロードしてください。\n\n※Dynamic Boneは別途購入が必要で、無くてもアバターの使用は可能ですが、その場合揺れものは揺れません。https://assetstore.unity.com/packages/tools/animation/dynamic-bone-16743\n\n※表情作成する時にはVRCAvatarEditor betaを使用することがおすすめです: https://gatosyocora.booth.pm/items/1258744\n"},{"type":"text","title":"✪ 改変TIPS","content":"●リムライトや輪郭線を入れる時、顔辺りが汚くなりやすいので、テクスチャのFace_Hair_mask.pngをMaskの項目に入れると綺麗になると思います。\n\n●眼帯の外し方\n眼帯はv1.20から別メッシュとして分離したので、ボーンの中のHips\u003eSpine\u003eChest\u003eNeck\u003eHead\u003eEyePatch\nを隠す／削除すればできます。\n\n●素体の出し方\n素体は貫通防止のため一部を隠してるので、テクスチャPSDのレイヤーのマスクを解除すれば素体が見えるようになります。\n\n●v1.1からの袖を外したい場合\n袖は直接OFFできますが、中の手は貫通防止のため透明にしているので、テクスチャPSDから右手の部分を出せばいいです。"},{"type":"text","title":"✪ 利用規約","content":"本モデルを購入した時点で本利用規約に同意したものとします。\n利用規約の内容は変更する場合があり、最新のものが適用されます。\n\n\n★利用可能範囲\n・購入者のみが使える前提としてあらゆるサービスへのアップロード(VRChat、バーチャルキャスト、cluster等々)\n・モデルを改変しての利用\n・モデルの一部だけ他のモデルと組み合わせること\n・データを別のフォーマットに変換して使用すること（VRM、MMD PMX等々）\n・間接的な個人範囲内での商用利用は可能です（配信やゲームの一部として）（法人の方は別途お問い合わせください）\n\n★禁止事項\n・本モデル（改変の有無を問わず）の再配布、販売を禁止します。\n・購入者本人以外がアバターを使用できるようにする行為を禁止します。\n・政治、宗教活動、他者に対する誹謗中傷目的での使用を禁止します。\n\n★著作権\n本モデルの著作権は改変の有無を問わずモデル制作者の「YUU_0w0」（白星Vトリエ）に帰属します\n\n★免責事項\n本モデルデータを使用して発生したいかなる損害・損失・その他不利益等には、当方は一切の責任を負いません。\n\n\n-----------------------------------------------------------------------------\nその他不明点、不具合、ご要望などがありましたら以下にご連絡ください。\n（不具合報告はとてもありがたいので、ご遠慮なくしてください）\n\nTwitter: https://twitter.com/YUU_0w0w0\nEmail: yuu0w0w0@gmail.com"},{"type":"text","title":"✪ 更新履歴","content":"※バージョンアップはデータの上書きが行うので、改変済みのデータは必ずバックアップしてください。\n\n2020/11/24 v3.02\n・【修正】表情が消えた問題\n・【修正】待機モーションのBase_Locomotion_Normalの不具合で伏せモーションが機能しない問題\n\n2020/11/9 v3.01\n・【追加】人の手の素体に貫通対策の肩やひじ、足を隠すシェープキー\n・【追加】PSDファイルに目のテクスチャType C\n・【修正】VRモードで左足が曲がる問題\n・【修正】強いPoint Lightに当てた状態で左手の明るさがおかしくなる問題\n・【修正】Bodyのリムライトの明るさ調整（下げた）\n\n2020/10/13 v3.00\n・【修正】Avatars3.0対応\n・【追加】顔／前髪調整シェープキー\n・【追加】BodyのテクスチャPSDの中にパンツを隠す為のブラックホールレイヤー\n・【修正】Armatureボーンの位置を全て0に移動\n・【修正】白星アバター共通用のアニメーション置き場所としてAssets/Avatar/Hakusei_Animationsというフォルダを追加（中のアニメーションファイルは共通用なので個別のアバターに違う表情を付けたい場合は各アバターフォルダ内のAnimations_Controllersを使ってください）\n\n2020/2/5 v1.40\n・【追加】前髪がシェープキーで調整出来るようになりました\n・【追加】前髪ボーンを増加\n・【追加】顔のシェープキーを増加\n・【追加】縞パンテクスチャ（PSD内）\n・【修正】改変しやすいように顔と体、狐耳と髪のテクスチャを統合しました\n・【修正】手のひら・指の形/スムージングを改善\n・【修正】前髪の一部だけが発光みたいな現象\n・【修正】PSDテクスチャをGIMPとフォトショップに対応\n・【修正】顔の法線\n・【修正】狐耳と尻尾のウェイト\n\n2019/12/10 v1.30\n・【追加】ニーハイのテクスチャと食い込みシェープキー\n・【修正】改変しやすい為に各パーツをもっと分けた\n・【修正】顔の輪郭を調整\n・【修正】素体の改善\n・【修正】身体のテクスチャを改善\n・【修正】ボーンの構造がちょっと変わった（Blender対応）\n\n2019/11/13 v1.21\n・【追加】Blenderに対応したFbxとその説明画像を別に追加、本体のFbxは変わってません（ベータ版）\n\n2019/10/24 v1.20\n・【修正】フルトラの不具合\n・【修正】眼帯を別メッシュとして分離したので、これで外しやすくなる／一時外すことができるようになりました\n・【修正】リアルタイム陰影はワールドのライティングによる見た目が不安定になるため、デフォルトはオフにしました。付けたい方はMaterialの中のShadowの項目内のStrength \u0026 Maskの数値を1にしてください、ほかの項目は設定済みです。\n\n2019/10/9 v1.11\n・【修正】輪郭線とリムライトのマスクは同じテクスチャを使ってたが、ちょっと不具合があるので二枚に分けました\n・【修正】ケモ腕と尻尾の輪郭線の調整\n\n2019/10/8 v1.10\n・【追加】表情とリップシンクが干渉しない仕様\n・【追加】輪郭線とリアルタイム陰影\n・【追加】両手ケモ腕バージョン\n・【追加】両手人型バージョン\n・【追加】目のemission\n・【修正】袖と脇辺りのウェイト\n・【修正】小さい不具合\n・【修正】テクスチャPSD\n\n2019/9/25 v1.03\n・【修正】デフォルト表情がSadになってた\n・【修正】Default Animation SetがMaleになってた\n\n2019/9/25 v1.02\n・【追加】内股待機モーション\n・【追加】刀にemission（発光）\n・【追加】たれ耳切ない表情（Ear_Sad_Fist）\n（各自でStandingAnimationの中のすきなところに入れて下さい）\n・【修正】スカートの一つにDynamicBoneが入れてなかった\n\n2019/9/22 v1.01\n・【修正】シェーダーとテクスチャの不具合\n\n2019/9/22 v1.00\n\n"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
