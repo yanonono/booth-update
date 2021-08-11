@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "0u0r0EqnvD6OiCVizA4SNkOnksnRIoaGkykuDxszNow="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "0u0r0EqnvD6OiCVizA4SNkOnksnRIoaGkykuDxszNow="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"愛奈（AINA）【▲3994ローポリ アバター or 素体用3Dモデル】","description":"VRChatでの利用を想定したオリジナル3Dモデルです。\n2018年5月くらいから作者がVRChatでアバターとして使っているものと同一のものです。\nそのまま使っても良いですし、ローポリモデルの素体などにもどうぞ。\n\nこのモデルは「エミル・クロニクル・オンライン」のアバターモデルのローポリなかわいさに感銘をうけたところからそれっぽい雰囲気で作られています。\n","url":"https://booth.pm/ja/items/1319390","offers":{"priceCurrency":"JPY","@type":"Offer","price":"0"},"image":"https://booth.pximg.net/c/620x620/f395cbdc-1e1f-4507-a60f-e85a50f576a0/i/1319390/5777be25-0452-4728-a90f-b0e7192cc063_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "0u0r0EqnvD6OiCVizA4SNkOnksnRIoaGkykuDxszNow="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -665,6 +686,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"内容物","content":"・VRChat向けに設定済みのunitypackage\n・オブジェクト統合前のblenderファイル\n・テクスチャのclipファイル・psdファイル・pngファイル\n"},{"type":"text","title":"この3Dモデルについて","content":"△ポリゴン数: PC用=3994 Quest用=4570\nOculus Questはシェーダーによる裏面描画対応ができないため、裏面分ポリゴン数が増えています。\n基本構成ならPCはMedium、QuestはGood判定です。\n\n\n一部揺れ物の制御には「Dynamic Bone」が必要です。Asset Storeから入手してください。\nまんまるシェーダー3は同梱済みです。\n\n表情:\n- 笑顔\n- ジト目\n- 照れ顔\n- 目とじ\n\n表情以外のシェイプキー:\n- 胸の大小調整7+1段階（普通・貧乳化1段階・巨乳化5+1段階）\n\nDynamic Bone設定:\n- ポニーテール\n- アホ毛\n- 胸\n\n設定済シェーダー:\n- まんまるシェーダー3\n- VRM/MToon（あまり使ってない）\n\nリップシンク:\n- 設定済み\n\nアイトラッキング:\n- 未設定（設定予定がありません）\n\nなにぶんモデリング初心者が作った1作目そのままなもので、特にUV微妙なとこ（スカート、セーラー服、耳）がある雑な感じのモデルですが、まあちょっぱやでなんか作るときとかに使えたりするかも……？\n\nハンドサインアニメーションに「アンテナショップ【ねここや】」の「ポーズ詰め合わせ 募金箱+返礼品（Donation+Gift）」（ https://booth.pm/ja/items/1634088 ）からのコピー部分を使用しています。（キーフレームを組み込んだ自作のアニメーションファイルを配布・同梱・販売することが許可されており、規約上組み込んで再配布可能なものです。）\n\n■パンツパッチ対応\nTenteEEEE てんて- さんの「キッシュちゃんパンツパッチ」プロジェクトが本アバターに対応済みです。\n下記サイトで「愛奈」または「愛奈(クエスト)」を選択した上でお好きなものを選んでパッチを当てることができます。是非ご活用ください。\nhttps://joniburn.github.io/quiche-pantie-patch-gui/\nなお本アバター「愛奈」イメージのものは316番（316.png）です。\n\n■変更点\n○0.6.1\n・changelog等の更新忘れを反映\n\n〇0.6.0\n・表情アサインを追加\n    ・FIST（にぎり）で笑顔\n    ・THUMBSUP（親指立て）で目をつぶる\n・ハンドポーズを「アンテナショップ【ねここや】」の「ポーズ詰め合わせ 募金箱+返礼品（Donation+Gift）」（ https://booth.pm/ja/items/1634088 ）のものに変更（特にFIST, HANDOPENが顕著）\n・Crunch Compressionをやめた（特にQuestで容量削減効果と質の劣化が釣り合わないと感じたため）\n・まんまるシェーダー3に更新\n\n〇0.5.0\n・胸を非常に大きくする・甚大に大きくする・破滅的に大きくする（実験的）シェイプキーを追加\n・中央ボーンが左右非対称であった問題を修正\n\n〇0.4.1\n・セーラー服を隠すシェイプキーが正しく隠れていなかった問題を修正\n\n〇0.4.0\n・胸をかなり大きくする・非常に大きくするシェイプキーを追加\n\n〇0.3.0\n・基本ポリゴン数が3994に\n・照れ顔を追加\n・MMDのモーフ規格に適合するようオブジェクトとシェイプキー名を調整\n・DynamicBoneを削減することでVRChatの公開アバター基準対応（胸ボーンが各2→1本、アホ下DB廃止、顔DB Collider廃止）\n・隠しオブジェクトカウントでのDesktop Medium / Quest Good対応としてメガネの出し入れなどを含めて多くのオブジェクトの出し入れをシェイプキーによって制御するように\n・両方の軽量化対応に伴って、Unityに出力したfbxがオブジェクトを結合した状態に\n・UTSサポートを廃止\n\n〇0.2.0\n・基本ポリゴン数が3972に\n・体のUVとテクスチャが大幅に変更されています。\n・胸のウェイトとDynamicBoneの調整がされました。\n・メガネが付きました。\n・Quest用アバターを影が落ちない設定にしました。\n"},{"type":"text","title":"ライセンス","content":"Copyright (c) 2020 Narazaka\n\nThis software is provided 'as-is', without any express or implied warranty. In no event will the authors be held liable for any damages arising from the use of this software.\nPermission is granted to anyone to use this software for any purpose, except commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:\n1. The origin of this software must not be misrepresented; you must not claim that you wrote the original software. If you use this software in a product, an acknowledgment in the product documentation would be appreciated but is not required.\n2. Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.\n3. This notice may not be removed or altered from any source distribution.\n\nこのソフトウェアは、\"as-is (現状のまま)\" で、明示であるか暗黙であるかを問わず、何らの保証もなく提供されます（著作者はバグを含めたあらゆる改修義務を負いません）。\n著作者は、それが利用されることによって起こりうるいかなる損害に対しても責任を負いません。\n商用利用でない場合にのみ、ソフトウェアの改変・配布は以下の制限のもとで許可されます。\n1. ソフトウェアの原著作者であると詐称してはなりません。（著作者の表示義務はありません）\n2. ソフトウェアを改変した場合はオリジナルのままだと勘違いされないようにしなければなりません。\n3. ライセンス表示をソフトウェアそのものの配布物（blendファイル・fbxファイル・unitypackageなど）から削除してはなりません。（ソフトウェアを利用した著作物に含める義務はありません）\n"},{"type":"media","content":"\u003ciframe width=\"500\" height=\"500\" src=\"https://hub.vroid.com/characters/1266021540175598519/models/6077161447185407899/embed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\" allow=\"xr-spatial-tracking\"\u003e\u003c/iframe\u003e"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
