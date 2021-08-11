@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "tThOyxsv3pQBGTStMsaEYZPjlhEedcQBx0W86wo/kNk="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "tThOyxsv3pQBGTStMsaEYZPjlhEedcQBx0W86wo/kNk="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"QRCodeListerer Ver. 0.0.1.6","description":"PCの画面上に表示されたQRコードを読み取ってリスト化するアプリケーションです。\n読み取った結果を保持し、あとからリストをダブルクリックするとブラウザが起動して購入などが行えます。\n\n通常のPC画面でもQRコード認識ができますが、主にVRChatでの利用を想定しています。\n\nVR/デスクトップモード問わず使用できます。\n\n\nfor English:\nApplication can use english and any languages.\nyou can download to \"無料DL\" button.","url":"https://booth.pm/ja/items/1203814","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"500"},"image":"https://booth.pximg.net/c/620x620/cc94a38f-816e-407f-86e5-13bc78cd95c6/i/1203814/71b55e64-4302-45e0-8927-059ca2a734b1_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "tThOyxsv3pQBGTStMsaEYZPjlhEedcQBx0W86wo/kNk="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -469,6 +490,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"最近の更新","content":"2019/03/08 0.0.1.6\n\n・「Tweet」ボタンを追加\n　読み込んだデータをもとにツイートできます。(要・ブラウザ側でのTwitterログイン)\n　お気に入りのBOOTHの商品などがあればツイートしてみましょう！\n\n\n2019/03/07 0.0.1.5\n\n・動作しないバグを修正\n\n\n2019/03/07 0.0.1.4\n\n・「Open」ボタンを追加してリンクを開けるようにしました\n\n・QRコード読み取り時に最新の読み取り結果を選択するようにしました\n　※「Open」ボタンで開きやすくなりました\n\n・「リストの下に追加」チェックを追加\n　QRコード読み込み時に、読み込んだものをリストの下へ追加できます。(デフォルトは上から追加)\n"},{"type":"text","title":"できること","content":"・PC画面上のQRコードのURLを検出してリストに追加できます\n・追加したQRコードのサムネイルとタイトルを取得し、一覧表示できます\n・VRChatを終了した後でもリストからブラウザを起動して購入などが行えます\n・アプリケーションを終了してもリストを保持できます\n・QRコード読み取り用にVRChatを最前面にできます\n　※このオプションを設定すると、VRChatを終了するまでほかのアプリケーションにスイッチしにくくなるので注意してください。\n・読み取った結果をもとにツイートできます。\n・VIVEBatteryInfoから読み取りを制御できます\n　※現状β版です。また、VIVEBatteryInfoを先に起動しておく必要があります。"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/4FNpHE5aUNo\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"使い方(VRChat想定)","content":"1. ダウンロードして解凍したQRCodeListererを起動します。\n\n2. QRコードが表示されているワールドに行き、視点を合わせるか、VRの場合はStreamingCameraを使用してQRコードに合わせます。\n\n3. 音が鳴ったら認識ができています。気になる作品をどんどんスキャンしていきましょう。\n(設定で認識音を消すこともできます)\n\n※画面内に複数のQRコードがある場合はうまく認識できないので近寄ってみてください。\nVRの場合はStreamingCameraで接写してみてください。この際スクリーンショットを撮影する必要はありません。"},{"type":"text","title":"動作環境","content":"OS : Windows10 x64\n.Net Framework : 4.6.1以上\n(Windows7などはダウンロードが必要 https://www.microsoft.com/ja-jp/download/details.aspx?id=49982 )"},{"type":"text","title":"よくある質問","content":"Q. QRコードが認識されない\n\nA. PCのメインモニタを走査しているので、サブモニタに表示されたものは認識されません。\nまた、VRChatのウィンドウがほかのアプリケーションの後ろに隠れてしまっていたりすると認識できません。\nQRコードの見えている範囲や角度によってうまく認識されないことがあります。\nマージンがない・テクスチャが引き延ばされているなど、QRコードの規格に沿っていないものは認識できません。\n\n\nQ. QRコードの認識が開始されない\n\nA. 画面上に複数QRコードが存在したり、すでに読み込まれたQRコードが映っていると認識が停止します。\n視点を動かしてみてください。\n\nまた、サムネイル内にQRコードが存在する場合に読み取り無限ループになるのを防ぐため、QRCodeListererのウィンドウがアクティブな状態では読み取りを停止しています。"},{"type":"text","title":"更新履歴","content":"2019/03/08 0.0.1.6\n\n・「Tweet」ボタンを追加\n　読み込んだデータをもとにツイートできます。(要・ブラウザ側でのTwitterログイン)\n　お気に入りのBOOTHの商品などがあればツイートしてみましょう！\n\n\n2019/03/07 0.0.1.5\n\n・動作しないバグを修正\n\n\n2019/03/07 0.0.1.4\n\n・「Open」ボタンを追加してリンクを開けるようにしました\n\n・QRコード読み取り時に最新の読み取り結果を選択するようにしました\n　※「Open」ボタンで開きやすくなりました\n\n・「リストの下に追加」チェックを追加\n　QRコード読み込み時に、読み込んだものをリストの下へ追加できます。(デフォルトは上から追加)\n\n\n2019/02/23 0.0.1.2 細かなアップデート\n\n・画面内に複数のQRコードが存在しても読み込めるようにした\n\n・不正なURLの場合もアプリケーションが終了しないようにした\n\t(サイトが存在しないなど。 一度エラーになったURLは再度読み込まないようにした)\n\t\n・連携機能\n　VIVEBatteryInfo側からVR内でスキャンのON/OFF操作できるようになりました。\n　※VIVEBatteryInfoのアップデートが必要です。0.18bではまだ対応していません。\n\n・「URLのみ読み込み」を追加\n　サムネイルなどのデータを取得しないため高速で軽いです。\n\n・最新バージョン確認機能を実装\n　起動時にバージョンを確認し、新しいバージョンがあれば右上のバージョン表記が青くなります。\n　これをクリックするとダウンロードページへ飛べます。\n\n\n2019/01/30 0.0.1.0 初回リリース"},{"type":"text","title":"使用コンポーネント・ライセンス表記など","content":"- Zxing.net ( https://github.com/micjahn/ZXing.Net )\n- AngleSharp ( https://github.com/AngleSharp/AngleSharp )\n- UnityNamedPipe ( https://github.com/sh-akira/UnityNamedPipe )\n- フリー効果音素材 くらげ工匠 ( http://www.kurage-kosho.info/ )\n\n\nこのソフトウェアはApache License 2.0およびMITライセンスのコンポーネントが含まれています。\n\n「QRコード」は株式会社デンソーウェーブの登録商標です。"},{"type":"text","title":"免責事項・禁止事項","content":"このソフトウェアを使用して発生したいかなる事象について、作者は責任を負わないものとします。\n\nこのソフトウェアのリバースエンジニアリング、逆コンパイル、逆アセンブルなどの行為を禁止します。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
