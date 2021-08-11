@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "0gxiIUNN/oK8wq/lf8u0KFDBJ2WhYTlNcpjy60MV0Vk="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "0gxiIUNN/oK8wq/lf8u0KFDBJ2WhYTlNcpjy60MV0Vk="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"オーダーメイドイラスト","description":"オーダーメイドでキャラクター（オリジナル・版権問わず）の画像を作成致します。\n\nお支払いは完成の目処が立ったタイミングでお願いしています。\n現在在庫０になっていますが注文を受けた後で設定し直します。\n依頼は随時受付中なので、まずはお気軽にご連絡ください。\n\n下記の本文を最後までお読み下さい。","url":"https://booth.pm/ja/items/1216688","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"10000"},"image":"https://booth.pximg.net/c/620x620/484fd3bd-ab86-46c4-a192-90b882962424/i/1216688/577224f6-6cfb-4dec-891c-d670f4dff323_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "0gxiIUNN/oK8wq/lf8u0KFDBJ2WhYTlNcpjy60MV0Vk="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -653,6 +674,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"オーダーイラスト作成","content":"SNSのアイコンやヘッダー、VRchat内でのサムネイル画像などにキャラクターのイラストを作成させて頂きます。\n\nオリジナルキャラクター、改変キャラクター、版権モノなどお好みのキャラを描き起こします。\n\n※個人での使用に限ります、ダウンロード販売の作品に使われる際は別途ご相談ください。\n※依頼される前に、著作権元の規約を再度ご確認ください。個人使用のアバターは規約の確認ができませんので、規約の範疇内である事を前提として依頼を受けます。\n\n\n【商品説明】\n・解像度＝150dpi\n・サイズは用途にてご相談ください\n・ファイル形式＝jpg、png\n・背景＝透過、単色、柄パターン\n・納期＝打ち合わせ後５～１０日程度\n・別途オプション＝表情差分（500円)服、装備（1000円～）\n・ラフ、線画完成の段階でご確認いただきますが、お返事が遅れると納期が遅れる事もあります\n・リテイクはラフの段階で２回まで、塗りの段階で２回までとさせて下さい\n・塗りに入る段階でご購入頂きます\n\n・個人での加工、編集などはご自由にお使い下さい\n・営利目的での利用は禁止とさせて頂きます（その際は別途ご連絡下さい）\n・著作権は放棄致しません（他者への販売は致しませんが作品サンプルなどで使用致します）\n\n連絡はTwitterのDM（⑩→＠：⑩kazunou）Discord（かずまる#8088）VRchat（IDかずまる）にて直接お願いします。\n\nご質問等ございましたら、お気軽にご連絡ください。\n\n購入後ブーストしたい人の為にこんなの作りました。\nhttps://kazunou.booth.pm/items/1536524\nよろしければご利用ください。"},{"type":"text","title":"","content":"許可が取れているアバター一覧（許可貰えた順）↓\n\n\nアルマジロン様\nhttps://armadillon.booth.pm/\n『メディカルセンタースタッフさん』『スノウエルフのお嬢様』\n\n長兎路こより様\nhttps://nagatorokoyori.booth.pm/\n『ファジー』『マロン』\n\n⊿S.I.N様\nhttps://tomori-hikage.booth.pm/\n『シャーロ』『フェイリア』\n\nナムザル様\nhttps://namzaru-shop.booth.pm/\n『NEON』\n\nノラネコP様\nhttps://noracat.booth.pm/\n『のらきゃっと』『量産型のらきゃっと』\n\nふぃな様\nhttps://ficsnade.booth.pm/\n『Lua』\n\n冴吹稔様\nhttps://kidaidai.booth.pm/\n『カイルダイン』『嵐剣丸』『ヴァルク』他\n\n偽紳士様\nhttps://ryuugadou.booth.pm/\n『みずあお』\n\nシリンダ様\n『きつねちゃん』\n\nこまど様\nhttps://komado.booth.pm/\n『ミルク』『リル』『シナモン』他\n\nウメ太様\nhttps://umeumeta.booth.pm/\n『サンギータ』『伊麻狸』『ククル』他\n\nびよら様\nhttps://hakoniworks.booth.pm/\n『モクモクラン』\n\nmuta様\nhttps://mutachannel.booth.pm/\n『リンツ』『モナカ』『キッシュ』\n\n潮留様\nhttps://siodamari.booth.pm/\n『ナナナ/ネコシロ』\n\nNEG-13様\nhttps://neg-13.booth.pm/\n『猫魔女 アカゲ』『超獣擬我ツツジ』\n\nYAMIRIN様\nhttps://yamirin.booth.pm/\n『Michelle Bunny』\n\nぽんでろ様\nhttps://ponderogen.booth.pm/\n『ミーシェ』『クレリック』『フェンサー』\n\n香坂様\nhttps://nyahuuu.booth.pm/\n『リラン -Liran-』『狐鈴 -Kosuzu- 』『セィミヤ -Slimiya-』他"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
