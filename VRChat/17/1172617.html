@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "z5/HLReZxgHBk1b/Zjez2+hzz0UkXuKvYz66EmrjhEQ="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "z5/HLReZxgHBk1b/Zjez2+hzz0UkXuKvYz66EmrjhEQ="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"衣-03式プレートキャリア【VRChat向け】","description":"【Vケット出展記念！！バーチャルマーケットワッペン追加！！】\n\n・商品画像のシェーダーはまんまるシェーダーを使用しています。本製品には含まれていません。\n・本製品に含まれているモデルはプレートキャリア、マガジンポーチ、ユーティリティーポーチ、ワッペンのみです。\n・プレートキャリア調整方法説明画像に「鯨井印の肉まん屋」様のyell（エル）を使用していますが、本製品には含まれておりません。","url":"https://booth.pm/ja/items/1172617","offers":{"priceCurrency":"JPY","@type":"Offer","price":"100"},"image":"https://booth.pximg.net/c/620x620/41af4b60-c647-4ace-80c0-e2874277d5ec/i/1172617/48f3bba7-0bd6-4e3d-af54-f2ffb3698c4a_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "z5/HLReZxgHBk1b/Zjez2+hzz0UkXuKvYz66EmrjhEQ="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -614,6 +635,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"ー製品説明ー","content":"●衣-03式プレートキャリア\n例えば、今あなたは戦場のど真ん中にいるとします。しかし銃が弾切れに！新しいマガジンを取りに家に帰りますか？\nあなたは穴あきチーズとなることでしょう。マガジンは常に持っている必要があります。衣-03式プレートキャリアで常に新しいマガジンを持ち歩きましょう。\n高い機動性と信頼できる防護力を誇ります。\n\nマガジンを取るために時間を掛けていてはリロードをする前に倒されてしまいます。\n本製品に付属しているマガジンポーチは(Magazine pouch2~4)は即座にマガジンをとることができます。\nマガジンを2つ収納できるタイプ、拳銃のマガジンとともに収納できるタイプ、拳銃のマガジンのみを収納するタイプが含まれています。\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n・プレートキャリアはシェイプキーでアバターに合わせ調整ができます\n・マガジンポーチはシェイプキーで幅が調整できます\n・ワッペンはUVを付属しているのでご自由に改変してお使いください(好きな絵、文字、チーム名など)"},{"type":"text","title":"ー製品内容ー","content":"・プレートキャリアfbx\n・マガジンポーチfbx\n・ユーティリティーポーチfbx\n・ワッペンfbx\n・テクスチャ各3種類+ワッペンサンプルテクスチャ\n・ワッペンUV\n・Unitypackage\n・プレートキャリア調整方法説明画像\n・ReadMe"},{"type":"text","title":"ー利用規約ー","content":"ー利用規約ー\n当データの著作権は製作者である白亜重工(白雪)に帰属します\n改変・商用利用は許可されています\n下記の禁止事項に抵触した時点で当モデルの使用権は自動的に終了します\n以下規約に従った上でご自由お使いください\n●禁止事項\n・本製品を取り出せる形での再配布・再販売\n・製作者を偽る言動\n・特定の個人や団体への誹謗中傷のための使用\n●免責事項\n当データを使用して発生したトラブルに一切の責任を製作者は負いません\nご利用は自己責任でお願いします\n"},{"type":"text","title":"ー更新履歴ー","content":"2019/03/05\n・Texture追加"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
