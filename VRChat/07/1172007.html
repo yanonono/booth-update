@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "VwqCTrze0aS8A6OZcW3iy7RIinco0GClKz7UK8t0I3E="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "VwqCTrze0aS8A6OZcW3iy7RIinco0GClKz7UK8t0I3E="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"VRoid用、革ジャンセットアップ","description":"某バーチャルお笑い芸人さん着用の革ジャンセットアップをVRoid用に改変したものです。\n本家の着用モデルとは若干の違いがあります。\nモデルは付属しません。\nブーツは別途出品しています。","url":"https://booth.pm/ja/items/1172007","offers":{"priceCurrency":"JPY","@type":"Offer","price":"300"},"image":"https://booth.pximg.net/c/620x620/7093a5da-d6d1-4557-b7d9-e2a846dd2b40/i/1172007/df3726d2-9cc1-4356-90da-a80eaec1d53b_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "VwqCTrze0aS8A6OZcW3iy7RIinco0GClKz7UK8t0I3E="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -376,6 +397,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"text","title":"","content":"VRoid用のテクスチャ素材です。スタンダードモデルのワンピースにインポートしてご使用ください。\nパンチラしても大丈夫、アンダーパンツ付きボディテクスチャ同梱です。\n\n\n衣装からボディが突き抜けてしまう場合の対策として、衣装に隠れる部分を透明にしたボディテクスチャを同梱しています。オマケ程度にお考え下さい。\nお手持ちの衣装と組み合わせて使っていただくこともできます。\n"},{"type":"text","title":"★してはいけないこと★","content":"\nこの革ジャンセットに関しては素材の改変は不可。色を変える、形を変える、一部を描き換える等一切不可とさせていただきます。\n\nテクスチャの再配布は有償、無償にかかわらず不可。元データに改編を加えたものを配布することも不可。\n性的表現、暴力表現を許可されたモデルへの使用は不可。\n他人に着用させる、モデルをダウンロードさせる等は不可。\n着用済みのモデルをダウンロードできる状態で公開することも不可。\n"},{"type":"text","title":"☆しても良いこと☆","content":"\n着用モデルの商用利用OK、ただし購入した当人の利用に限ります。\n着用した状態で、VRChatその他のゲームでの利用OK。\n動画、静止画への利用OK。"},{"type":"text","title":"","content":"著作権は放棄しません。\n商用利用の際はクレジットに名前かツイッターアカウントを記載していただけると嬉しいです（任意です、強制ではありません）。\n"},{"type":"text","title":"","content":"モデルへの適応方法はダウンロードファイルのReadmeに記載しています。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
