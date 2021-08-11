@@ -58,9 +58,26 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
+    <script src=
+    "https://asset.booth.pm/assets/5036b759aa8f5739115d.js" defer=
+    "defer" nonce=
+    "B2vRVjO31RtsT/58F5mv/OqzTZ/8Bv2HFgu8nv8lV28="></script>
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/9196604acc57c3d85efd.js" defer=
+    "defer" nonce=
+    "B2vRVjO31RtsT/58F5mv/OqzTZ/8Bv2HFgu8nv8lV28="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"VRChat想定 ケモノアバター　『トラコ』","description":"製作者：キウィー\n\n概要\n本モデルはVRChatでの使用を想定したメスのトラ獣人のオリジナルモデル『トラコ』です。\nUnityのHumanoid形式に対応しております。\nVRChat以外での利用も可能です。詳しくは利用規約をお読みください。\n\nVRChat向けにセットアップしたUnity Packageを同梱しています。\n予めVRCSDKと、必要に応じてDynamicBoneをインポートしておくことですぐにVRChatにアップロードが可能です。\n\n\n着物のテクスチャには以下の素材を使わせていただきました。\n\"和柄素材6\" by Copyright 2013 Borbone\nhttp://borbone.info\n\"【フリー素材】*和柄5\" by Copyright 2014 柳猫\nhttps://www.pixiv.net/member.php?id=4004121","url":"https://booth.pm/ja/items/1139735","offers":{"priceCurrency":"JPY","@type":"Offer","price":"3000"},"image":"https://booth.pximg.net/c/620x620/e1cb2816-75d6-4f1f-9f88-6087b87ed648/i/1139735/f3ea1234-377b-4df1-ae78-e74241c9de1b_base_resized.jpg"}
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
@@ -71,6 +88,10 @@
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
+    <script src=
+    "https://asset.booth.pm/assets/f0c0acc41a1320237347.js" defer=
+    "defer" nonce=
+    "B2vRVjO31RtsT/58F5mv/OqzTZ/8Bv2HFgu8nv8lV28="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -495,6 +516,9 @@
           <div class="shoplist-with-items" v-if=
           "shops &amp;&amp; shops.length &gt; 0"></div>
         </aside>
+        <script id="json_modules" type="application/json">
+        {"modules":[{"type":"media","content":"\u003ciframe width=\"640\" height=\"480\" src=\"https://sketchfab.com/models/422532628a0d4de38447ee96b69c0827/embed\" frameborder=\"0\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"更新履歴","content":"・2021/02/11　v1.3公開　喋っていないときに口が開きっぱなしになる不具合を修正しました\n・2019/03/08　v1.2公開　Vケット2記念ドレス追加\n・2019/01/07　価格を3000円に変更\n・2018/12/30　v1.1公開　着物追加\n・2018/12/17　v1.0公開"},{"type":"text","title":"紹介","content":"モデルの詳細\n・チャイナドレスと冬服、着物、Vケット2記念ドレスの4つの服装と素体が同梱されています。\n・ポリゴン数はチャイナドレス時△13200、冬服時△12820、着物時△12778、Vケット記念ドレス時△17176、素体のみ時△12634です。\n・VRChat用のリップシンク用ブレンドシェイプ搭載\n・微笑み、笑顔、困惑、いぶかしみの表情モーフ搭載\n・ブレンドシェイプによる目の形や位置の変形、胸の大きさの調整機能を搭載。Unity上で簡易な顔立ち調整ができます。\n・テクスチャ改変用にxcfファイルを同梱。Gimp( https://www.gimp.org )といった対応する画像編集ソフトでの改変がしやすくなっております。\n・アイトラッキング/フルボディトラッキング対応\n・シェーダはFakeLightToonを使用しています。\nhttps://kiuxi.booth.pm/items/1139555"},{"type":"text","title":"内容物","content":"・torako_v1.3.unitypackage\nマテリアル、Avatar Descriptor、Cloth、Dynamic Boneをセットアップしたパッケージです。\n\n・Licence.txt\n利用規約が書かれています。内容は下記のものと同一です。\n\n・readme.txt\n導入に向けて簡単な説明が書かれています。\n\n・blends\nblender向けのデータが入ったフォルダです。以下、その内容物\n・Torako_v1.3.blend\n素体、衣装3つすべてを含むデータです。\n・Torako_v1.3_china_dress.blend\nチャイナドレス用に調整されたデータです。\n・Torako_v1.3_winter.blend\n冬服用に調整されたデータです。\n・Torako_v1.3_kimono.blend\n着物用に調整されたデータです。\n着物のみボーン構造が異なるため、改変する場合はこちらのデータで編集することをおすすめします。\n・Torako_v1.3_dress_for_vket2.blend\nVケット2記念ドレス用に調整されたデータです。\n\n・fbxs\nチャイナドレス、冬服、着物、Vケット2記念ドレスの各fbxファイルが入っています。\n\n・textures\nチャイナドレス、冬服、着物、Vケット2記念ドレス、素体のテクスチャ用pngファイルとテクスチャ作成用のxcfファイルが入っています。"},{"type":"text","title":"利用規約","content":"制定日：2018/12/17\n\n本データを購入した時点で本利用規約に同意したものとします。\n\n利用規約は予告なく変更される可能性があり、最新のものが適用されます。\n\n本利用規約を翻訳した場合においても日本語のものを正しいものとします。\n\n・『トラコ』の著作権は、改変/改造の有無を問わずキウィーに帰属します。\n\n・改変/改造の有無を問わず、本データの再配布/再販売を禁止します。\n\n・上記に基づき、改変/改造の有無を問わずVRChat等サービスにおいて本データをアバターペデスタル等の購入者以外が自由に利用可能な状態でのアップロードを禁止します。\n\n・本データを公序良俗に反する行為や目的、政治活動、宗教活動、他者に対する誹謗中傷目的での使用を禁止します。\n\n・本データは自由に改変/改造することができます。\n\n・本データおよびその改変/改造データは、購入者のみが使用する場合に限定してアバターアップロード機能のあるサービス（VRChatなど）へのアップロードおよびアバターとしての利用ができます。\n\n・本データおよびその改変/改造データは、ゲーム、映像作品、動画配信等、コンテンツの種類に問わず営利/非営利目的での利用が可能です。ただし、本データおよびその改変/改造データを第三者が別のコンテンツへと再利用できない形式での利用に限ります。\n\n・本データおよびその改変/改造データを営利目的で使用する場合はクレジットの表記をお願いします。ただし、他者の動画や配信への映り込みなどクレジット表記が困難な場合は除きます。\n\n・R-18/R-18Gへの利用を制限しません。ただし、利用するサービスの規約に違反しないようにお願いします。\n\n・その他不明点がございましたら下記のtwitterアカウントにご連絡ください。\n\nTwitter:@okiuxio"},{"type":"text","title":"免責事項","content":"・本データの利用によって生じるいかなるトラブルや損失、障害に対して製作者キウィーは責任を負わないものとします。"}]}
+        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
