@@ -61,7 +61,7 @@
     <script src=
     "https://asset.booth.pm/assets/dd49109ca7799041b74f.js" defer=
     "defer" nonce=
-    "SKkxpLnqUc0J7RUGD3SBoTnIOIO6y9yQNpYhXDzOyR8="></script>
+    "PLk3qXv07VetKqcoR8JLNQyY6m3x1RYAatrx33vkwO4="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -72,9 +72,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/fe2ae7a266ecd1b0bf33.js" defer=
+    "https://asset.booth.pm/assets/924bbdac9ff37dbce04a.js" defer=
     "defer" nonce=
-    "SKkxpLnqUc0J7RUGD3SBoTnIOIO6y9yQNpYhXDzOyR8="></script>
+    "PLk3qXv07VetKqcoR8JLNQyY6m3x1RYAatrx33vkwO4="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"スキニング済み衣装「ワンピース」（無料配布あり）","description":"スキニング済み衣装『ワンピース』\n\nスキニング済みのワンピースです。\nお好きな柄にしたり動作確認や着せ替えの練習などにどうぞ。\n改変用PSD付き、デフォルト柄4種です。\n\nこちらに着せ替えの仕方の解説記事も書いています。\nhttps://www.pixiv.net/fanbox/creator/3442639/post/527837\n\nまたizm様配布のVRChat向けUnity着替え補助スクリプト（UnityWearChangeSupporter.unitypackage）を同梱しています。\n非常に着せ替えが楽になるので配布元の手順を参考にお試しください。\n\t・配布ページ；https://neon-izm.booth.pm/items/1273588\n\n\n内容物説明\n\t.fbx : fbxファイルです。\n\t.unitypackage : シェーダー設定済みのunitypackageです。シェーダーにはArktoon-Shadersを使用させていただいています。\n\tAlbedoTransparency.png : アルベドマップです。主にメインテクスチャに使います。\n\tNormal.png : ノーマルマップです。ノーマルマップに対応したシェーダーに入れると質感が出ます。\n\tMetallicSmoothness.png : ノーマルマップです。ノーマルマップに対応したシェーダーに入れると質感が出ます。\n\n下準備\n\t着せ替えに合わせてメッシュを残した着せ替えたいモデルのスキニング済みモデルを用意します。\n\tまたこの際Humanoidリグにconfigureよりボーンを指定する際におかしくなりやすいので\n\t正しくボーンが指定されているかの確認をお願いします。\n\t\n\t解説動画 : https://twitter.com/siodome0/status/1033232450187476992\n\n使い方\n\t1.同梱のモデルを着せたいモデルにスケールなどを調整していい感じに位置を合わせます。\n\n\t2.同梱のモデルを着せたいモデルの直下に入れ、Hip以下のボーンを着せたいモデルの\n\t　同名ボーン（モデルによって名称が違うと思いますが同じ位置のボーン）のそれぞれの子にします。\n\t　（青い文字のボーンが元のモデルのボーン、黒字が追加した着せ替えのボーンとなります）\n\n\t3.追加した着せ替えのUpperLeg,Leg,Foot,Arm,Handボーンの座標のXYZそれぞれに0を入れ、\n\t　元モデルのボーンの位置に合わせます。\n\t　関節を曲げた際に破綻していればその一つ上のジョイントのスケールを調整して合わせます。\n\t　（例えば肘が破綻していればUpperArmのXスケールを小さくする）\n\t　その際突き抜けや歪みなどおかしな状態になれば適宜ボーンを移動させ微調整を行ってください。\n\t\n\t\n\t解説動画 : https://twitter.com/siodome0/status/1025278903038828544\n\n\tまたBoothにて着せ替え支援用エディタの配布を行っております。\n\tそちらを使うと2の項目を手軽に行うことが可能です。\n\t詳細については以下の配布ページ及びエディタ解説動画をご覧ください。\n\t・配布ページ : https://siodamari.booth.pm/items/954433\n\t・解説動画\t : https://twitter.com/siodome0/status/1026122864682913792\n\n\n注意事項\n\t・上記設定時に着せ替えのプレファブの構成を崩すため、着せ替えのfbxを更新したとしてもシーンビュー上の\n\t　モデルに反映されない場合があります。ご了承ください。\n\n利用規約\n\n\t同梱のLICENSE.txtに準じます。\n\t要約：\n\t\t* テクスチャ、モデルなど製品に含まれるものを改変することを許可する\n\t\t* 商用利用可能\n\t\t* R-18での利用可能,R-18Gでの利用不可\n\t\t* 再配布/再販売の禁止,VRCにおけるペデスタル利用の可\n\t\t* VRMファイルへの利用の許可、ただし他者が利用できる形式での出力を許可しない\n\t\t* 政治, 宗教, 民族問題に関わる利用を禁止\n\t\t* 他者または集団に対する誹謗中傷のための利用を禁止\n\n\t作者または著作者は, 本製品に起因または関連, 利用によって生じる一切の請求, 損害, その他の義務について何らの責任も負わないものとします.\n\n\tこの規約は製品を購入, または入手した瞬間効力を発揮し利用者は規約に同意したものと見做します.\n\n\tこの規約は著作者が属する国の倫理の下で解釈されると見做します.\n\n\tまた, この規約は作者または著作者の意思により変更される可能性があります\n\n使用素材\n\n・【Arktoon-Shaders】 \n\tsynqark 様【https://booth.pm/ja/items/1027997】\n\n----------------------\n\n更新履歴\n\n2019/05/23 リリース\n\n----------------------\n\n\n作成・配布者　siodome0","url":"https://booth.pm/ja/items/1383770","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"100"},"image":"https://booth.pximg.net/c/620x620/55d0b3cd-8d44-43f0-8467-7e99fcc0d318/i/1383770/c5dfa568-00d9-45a1-af8a-3e655138a844_base_resized.jpg"}
     </script>
@@ -91,7 +91,7 @@
     <script src=
     "https://asset.booth.pm/assets/c7c54a079ceddfa99df8.js" defer=
     "defer" nonce=
-    "SKkxpLnqUc0J7RUGD3SBoTnIOIO6y9yQNpYhXDzOyR8="></script>
+    "PLk3qXv07VetKqcoR8JLNQyY6m3x1RYAatrx33vkwO4="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
