@@ -61,7 +61,7 @@
     <script src=
     "https://asset.booth.pm/assets/dd49109ca7799041b74f.js" defer=
     "defer" nonce=
-    "rDYuUh2Ly1b4G8At9kmu3UZ4Wsgs/WwQqQRBmKhZp1E="></script>
+    "XBfyg8cYvvYazBulhm8IpXPWCOiWMgc4KDy6/bcqslk="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -72,9 +72,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/fe2ae7a266ecd1b0bf33.js" defer=
+    "https://asset.booth.pm/assets/924bbdac9ff37dbce04a.js" defer=
     "defer" nonce=
-    "rDYuUh2Ly1b4G8At9kmu3UZ4Wsgs/WwQqQRBmKhZp1E="></script>
+    "XBfyg8cYvvYazBulhm8IpXPWCOiWMgc4KDy6/bcqslk="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"【VRChat用】PanoramaImageLoader v1.0","description":"このパッケージはVRC_Panoramaを使用した画像の表示/更新ができるプレハブセットになります！\n\n※v1.1に問題が見つかったためバージョンをv1.0に戻しました。\n\n■ パッケージ内容\n・VRC_Panoramaの表示/更新システムのプレハブとサンプルシーン\n・Google SpreadSheetsを用いた画像読み込み用PHPファイル（別途PHPが利用可能なサーバーが必要になります。）\n\nサンプルシーンの内容\n・ランダム表示\n・index指定表示\n・スケール変更表示\n・PhotoFrame(15秒毎に更新)\n\n■ 使用方法\nGoogle SpreadSheetsでスプレッドシートを新規作成、左下のシート名を「Default」に変更します。\n右上の「共有」から共有設定を「リンクを知っている全員」にします。(自分のみ編集する場合は閲覧可、多人数で編集したい場合は編集可に設定)\n共有リンク「https://docs.google.com/spreadsheets/d/[sheetID]/edit?usp=sharing」からsheetIDを取得できます。\n次にapiKeyを取得するために「https://console.developers.google.com/apis/credentials」にアクセスします。\n左上の「プロジェクトの選択」から「新しいプロジェクト」を押してプロジェクトを作成します。\n作成が完了したら「認証情報を作成」から「APIキー」を選択する事でapiKeyを取得できます。\n左にある「ライブラリ」から「Google Sheets API」を選択、「有効にする」をクリックしてAPIを有効にします。\nこれでsheetIDとapiKeyが取得できました。(apiKeyは同アカウントで使い回しが可能なので別のSpreadSheetsを作ってもsheetIDのみを変更すれば利用できます)\n\n・SpreadSheetsの設定の注意点\nSpreadSheetsはA列のみ使用するのでそれ以外は削除してください。\nまた、ランダム表示の際に行数を取得しているので空白の行はすべて削除しないと正常にランダム表示できません。\n\n次にWebContent内のImageLoaderフォルダの中のindex.phpをテキストエディタ等で開いて、先ほど取得したsheetIDとapiKeyを設定します。\nファイルを保存したら、ImageLoaderフォルダをPHPが利用可能なサーバーにアップロードしてください。\n\nプレハブをシーンに設置し、PanoramaSpawn\\SpawnItem\\PanoramaのVRC_Panorama/Panoramas/Urlの項目にアップロードしたファイルのURLを入力します。\n例：http://www.iwashi-184.com/ImageLoader/index.php\n\n以上でセットアップ完了です！\nまた、index.phpにGETリクエストでパラメーターをセットする事で表示させる画像を変更できます。\n指定できるパラメーターは以下になります。\n\n・sheet\n└シート名\t：SpreadSheetsのシート名を指定します。未指定の場合はDefaultになります。\n\n・mode\n└random\t：画像をランダムに表示します。10秒間隔でアクセス毎に切り替わります。\n\n・number\n└数値\t\t：指定した数値に対応したSpreadSheetsの画像を表示します。\n\n・width/height\n└サイズ\t：指定したサイズのアスペクト比にあわせて画像の余白を調節します。\n※PanoramaのScaleを変更した際にScaleのx/yの値(小数点を除く。1.84なら184)をそれぞれwidth/heightに入れてあげることでアスペクト比を維持できます。\n\n例：http://www.iwashi-184.com/ImageLoader/index.php?sheet=iwashi\u0026mode=random\u0026number=1width=8\u0026height=4\n意味：シート名「iwashi」の1個目以降の画像をランダムに8:4(2:1)のアスペクト比で余白をつけて表示\n(1個目のパラメーターの最初に「?」を、2個目以降のパラメーターをつなぐ際は「\u0026」を使用します。)\n\n■ ライセンス\n・PanoramaImageLoader\nMIT License - LICENSE.txt\n\n・前提アセット\nStandard Assets\n\n・Google SpreadSheets https://www.google.com/intl/ja_jp/sheets/about/\n\n・使用Assets\nAssets:\nDebrisSpawn (ナルさん Twitter:@momoma_creative)\n\n■ 更新履歴\n\n・VRChatアップデートで動作しなくなったスクリプトが動作するように修正された為v1.1とv1.0両方公開します。\n\n・「v1.1」に問題が見つかったため削除しました。v1.0を使用してください！\n\n・v1.1\nVRChatアップデートによりDebrisSpawnが動作しなくなった為、DropdownSpawnに変更しました。\n\n・v1.0\nリリース","url":"https://booth.pm/ja/items/1135757","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"184"},"image":"https://booth.pximg.net/c/620x620/030a2645-c1e5-4596-84e0-6756664df27c/i/1135757/04a56117-bc47-4e7e-bb5e-b44d212cca97_base_resized.jpg"}
     </script>
@@ -91,7 +91,7 @@
     <script src=
     "https://asset.booth.pm/assets/c7c54a079ceddfa99df8.js" defer=
     "defer" nonce=
-    "rDYuUh2Ly1b4G8At9kmu3UZ4Wsgs/WwQqQRBmKhZp1E="></script>
+    "XBfyg8cYvvYazBulhm8IpXPWCOiWMgc4KDy6/bcqslk="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
