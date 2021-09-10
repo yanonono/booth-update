@@ -61,7 +61,7 @@
     <script src=
     "https://asset.booth.pm/assets/dd49109ca7799041b74f.js" defer=
     "defer" nonce=
-    "MTsUYNFd5myO0RI+5PeljsF3yYcKTseKhz8JuYpLXbM="></script>
+    "4XkQLAOlTQWlay4c/NPxk1vy5yyQI6dfu/H2SpqOhCM="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -72,9 +72,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/8de43a8c3e3cabb82e4f.js" defer=
+    "https://asset.booth.pm/assets/924bbdac9ff37dbce04a.js" defer=
     "defer" nonce=
-    "MTsUYNFd5myO0RI+5PeljsF3yYcKTseKhz8JuYpLXbM="></script>
+    "4XkQLAOlTQWlay4c/NPxk1vy5yyQI6dfu/H2SpqOhCM="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"VRCaht向けトゥーンシェーダー　AAShader　Magical","description":"※こちらは開発の終了した旧バージョンとなります。新しい物はこちら※\nhttps://atreides.booth.pm/items/2151888\n\nぼくのかんがえたさいつよのVRChat向けトゥーンシェーダー！\n半年以上にわたるいろいろなワールド光源との戦いの成果がここに！\n\n〇特徴と基本思想\n①陰影はきっちり出して割とリッチめな描写。\n②様々なVRCahtのワールドで極力ワールドの光源は拾いつつ破綻は少なく。\n③毛髪のハイライトをシェーダーで入れたい。\n④なるべくマテリアル分けせずに済む仕様\n\n〇機能\n・主にメインのディレクショナルライトに対してトゥーン感ある陰影を出して無い場合は環境色より生成します。\nこの時に別格機能の設定を行うことにより髪の毛の天使の輪などの光沢を再現できます。\n・中途半端な角度なライトを顔面に受けるのを減らすために直角に近い光源は視線方向に曲げて処理しています。\n・環境光よりリムライトを描写しています。\n環境光が真っ白なワールドだと単純に縁取りが真っ白になったりしますが仕様です。\n・Inspectorによる設定事項はほぼありません。\n光沢などのはRGBの各チャンネルで質感を設定したテクスチャにより設定します。\nこのため質感によってマテリアルを変更する必要はありません。\n・暗い部分の彩度を上げる処理により影のくすみが緩和されます。\n・頂点カラーの赤チャンネルによってアウトラインの太さを調整でいます。\n目の周りなどアウトラインを出したくない部分はモデルの頂点カラーを黒くすることによりアウトラインが出なくなります。\n\n※質感テクスチャはsRGBのチェックを外してご利用ください（つけたままだと補正されてしまいます）\n\n\nこちらのシェーダーはMIT Licenseとします。\nみんなもいろんなVRCのワールドの光源と戦おう！\n\n2019年2月25日\nver2.01 バグフィックス\n主たる光源がない場合に生成する光源の方向がワールド座標依存でなくオブジェクト座標依存だったために意図しない表現になっていたものを修正しました。\n2019年3月4日\nver2.1　アップデート\n①逆光時の処理を追加しました。\n平坦な描写になってしまいますが、逆光時に不快な陰影が出るのを抑えました。\n②一部光線の処理に視線からの方向ベクトルを利用していたものを視線ベクトルへ変更することにより特にＶＲ時の視差によるちらつきを抑えました。\n代わりに視線をずらすと見え方が変わってしまいますが仕様です。\n③ほか細かい描画修正。\nVer2.2　アップデート\n①ポイントライトの表現を変更しました。\n順光時にのみ陰影を描写します。\n②ハイライトの表現を若干変更しました。\n③ほか細かい最適化とバグフィックス。\n2019年3月4日\nVer2.3 Tightsアップデート\nTights機能を追加しました！\n使用法は画像を参考してください。\nBekkaku機能と排他でマテリアルテクスチャのB値の値で厚みを表現していい感じの透け感を表現できます。\n\n2019年7月1日　アップデート\n逆光時には逆光感あるよう表現を変更しました。\nまたディレクショナルライトを受ける方向の調整を行うスライダーを追加しました。\n他細かいバグフィックスと調整\n2019年7月10日　ファイルが壊れていたようなので上げなおしました。\n2019年12月14日　アップデート AAShader2.4 Magical\n・エミッション機能の追加\n・ハイライトの表現を変更\n・アウトラインの処理を変更\n・他細かいバグフィックスおよびコードの整理\n\n","url":"https://booth.pm/ja/items/1233511","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"500"},"image":"https://booth.pximg.net/c/620x620/091e5aa4-67bb-479c-8d17-dd9330fc9eeb/i/1233511/95420f8c-2968-4aaf-9d03-86319ab8febf_base_resized.jpg"}
     </script>
@@ -91,7 +91,7 @@
     <script src=
     "https://asset.booth.pm/assets/c7c54a079ceddfa99df8.js" defer=
     "defer" nonce=
-    "MTsUYNFd5myO0RI+5PeljsF3yYcKTseKhz8JuYpLXbM="></script>
+    "4XkQLAOlTQWlay4c/NPxk1vy5yyQI6dfu/H2SpqOhCM="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
