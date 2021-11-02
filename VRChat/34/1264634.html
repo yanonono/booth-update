@@ -62,20 +62,45 @@
     <script src=
     "https://asset.booth.pm/assets/168ceedf2030b5bc7718.js" defer=
     "defer" nonce=
-    "1m4gVjJ09Fiaytm7JF92zPg2VCQpzojwrympZA8VTAI="></script>
+    "PXOK1Yi4U/UyUFQ298tRuNL9goY/hmw795Eb5yxEU1U="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
     "https://asset.booth.pm/assets/c813b54844a4d8f1f2d7.js" defer=
     "defer" nonce=
-    "1m4gVjJ09Fiaytm7JF92zPg2VCQpzojwrympZA8VTAI="></script>
+    "PXOK1Yi4U/UyUFQ298tRuNL9goY/hmw795Eb5yxEU1U="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"【羽鳥ぽぽぽType】激カワ！レース鳩アバター(5種 x マフラー＆脚環3色)【￥８１０版】","description":"VR羽鳥鳩舎作出、バーチャル鳩tuber「羽鳥ぽぽぽ」を生み出した鳩舎が作出したバーチャルレース鳩のアバターです。\nみんなで鳩になろう！！\n\n【収録されている翼の柄】\n・灰二引き（B)\n・灰ごま（BC)\n・栗（R）\n・栗ごま（RC)\n・白（W)\n\n+各々にマフラー・脚環それぞれ3色のマテリアルが付いています。\n\n\n（※当モデルの売り上げおよびカンパはモデルの質の向上とvtuber羽鳥ぽぽぽの運営に充てられます）\n\n【仕様】\n・unity2017.4でunitypackage化されています。\n・そのままVRChatなどに持ち込めるポリゴン数です。\n・口パクもあります。\n・ただし、VRChat専用に作られたモデルではないので、ウェイトやリギングなど、色々と調子の悪い部分があります、必要に応じて鳩の面倒を見れる人推奨です。\n\n【規約】\n・テクスチャ等の素材を含む当モデル、またはその改変物の再配布、並びにデータを元に制作されたグッズなどの許可なき販売はかたくお断りいたします。\n・公序良俗に反する使用をしてはいけません。\n・「羽鳥ぽぽぽ」になりすますのはやめましょう。\n・鳩をいじめる目的で利用してはいけません。\n・レース鳩の普及に努めましょう。","url":"https://booth.pm/ja/items/1264634","offers":{"priceCurrency":"JPY","@type":"Offer","price":"810"},"image":"https://booth.pximg.net/c/620x620/d1def8d0-8300-4cb0-92c4-7d478075a721/i/1264634/6ac85b50-c6f4-404b-8800-f403787cd809_base_resized.jpg"}
     </script>
@@ -83,16 +108,13 @@
     "https://asset.booth.pm/favicon.ico">
     <link href=
     "https://asset.booth.pm/assets/apple-touch-icon-precomposed-f7358b936e9404f3e499e1bf3c9f0967366212144a16374ebc7558b391eeafe1.png"
-    rel="apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src=
     "https://asset.booth.pm/assets/f10f25a0367282c705f4.js" defer=
     "defer" nonce=
-    "1m4gVjJ09Fiaytm7JF92zPg2VCQpzojwrympZA8VTAI="></script>
+    "PXOK1Yi4U/UyUFQ298tRuNL9goY/hmw795Eb5yxEU1U="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
