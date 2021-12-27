@@ -61,45 +61,20 @@
     <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "yo8G1hk240Edj67cykWsoidDgPUw4NAOxvBHhiyXywI="></script>
+    "db5JZSiMGL5F8TcJaAhTrLoTFdyNhW18tRdwZ+ZEKdU="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
-  </head>
-  <body>
-    <div class="mini-player-controller" style="display: none;">
-      <a class="scroller" data-smooth-scroll="true"><img class=
-      "mini-player-controller__image" src=
-      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
-      data-smooth-scroll="true">
-      <div class="mini-player-information__item-name"></div>
-      <div class="mini-player-information__shop-name"></div>
-      <div class="mini-player-information__navigation">
-        試聴中の商品へスクロール
-      </div></a>
-      <div class="mini-player-controls">
-        <div class="mini-player-mode-ui">
-          <div class="mini-player-mode-ui__knob"></div>
-          <div class="mini-player-mode-ui__short">
-            15秒
-          </div>
-          <div class="mini-player-mode-ui__full">
-            フル
-          </div>
-        </div>
-        <div class="mini-player-play-ui"></div>
-      </div>
-    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
     "https://asset.booth.pm/assets/7ad3c0d6db4a567bcc38.js" defer=
     "defer" nonce=
-    "yo8G1hk240Edj67cykWsoidDgPUw4NAOxvBHhiyXywI="></script>
+    "db5JZSiMGL5F8TcJaAhTrLoTFdyNhW18tRdwZ+ZEKdU="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"3Dアバター「巡璃めぐる」","description":"VRC向けアバター「巡璃めぐる」\n\n特筆事項\n●「ふぃぎゅあばたー」での利用可能　https://gitlab.com/figureavatar/figureavatar/\n●「『それなり～の』アバターフィギュア」での利用可能　http://htc.hotaru-printing.com/Avatar3dfbx.html\n\n更新：v1.7\n●VRMファイルの追加\n●胸揺れのDynamicBoneが複数設定されていた不具合\n更新：v1.6\n●UTSフォルダの内容が欠けていた\n●一部ダイナミックボーンが設定されていなかった\n更新：v1.5\n●胸揺れのDynamicBoneが片方しか設定されていなかった不具合、\n●マツゲの一部が青くなっていた不具合の修正。\n更新：v1.4\n●両足のコライダーがisTriggerになっていなかった不具合の修正。\n\n\n■ご利用方法\n新しいプロジェクトを作成→VRCSDKとDynamicBoneをインポート→当unitypackageをインポート。\nその後、すぐにVRChatにアップロードできます。\n\n■アバター詳細\nポリゴン数：27656\n髪：DynamicBone設定済み\nオートアイムーブメント：有り\nシェーダー：UTS2.0.5設定済み\nスカート：Cloth設定済み\nVRC用設定：リップシンク、アニメーションオーバーライド設定済み\nフルトラッキング：対応\n\n■利用に際して\n\n許可\n○改造や改変\n○VRM化、その他VRMソフトでの個人利用（誰でも使用可能はNGです）\n○収益化動画への写り込み\n○モデルを利用したvTuber活動\n○unityで制作するゲームに使用できます。\n　インディーズの場合、作者名と作品名の明記のみお願いします。企業の場合、別途利用料が発生しますので、ご連絡ください。\n\n禁止事項\n○第三者への貸出：VRChat上でペデスタル、アバターコピーでの使用を禁止します。\n○配布：改造の有無を問わず、インターネットを通じて誰でもDL可能な状態にすることを禁止します。\n○売買：改造の有無を問わず、第三者への売買を禁止します。\n\nTo English speaking people.\nThis data can be remodeled, good for commercial use, do not redistribute.\n\n■利用規約全文\n同梱のkiyaku.txtか、\nオンライン利用規約のこちらを御覧ください\nhttps://kuroneko-youhinten.wixsite.com/mysite/kiyaku-preview\n\n■免責事項\n当3Dモデルに起因または関連する、使用またはその他の扱いによって生じる一切の請求、損害、その他の義務について何らの責任も負いません。\n\n■シェーダーについて\n当モデルは、UTS2v.2.0.5（http://unity-chan.com/download/releaseNote.php?id=UTS2_0）を同封、設定させていただいております。\n\n■お問い合わせ\nBOOTHのメッセージ機能よりお願いいたします。\n\n制作：黒井\n2019/1/31\nver1.7","url":"https://booth.pm/ja/items/1198232","offers":{"priceCurrency":"JPY","@type":"Offer","price":"3500"},"image":"https://booth.pximg.net/c/620x620/3101f45b-b262-485c-a1a1-3d2a8da33466/i/1198232/76f53b18-389c-4c72-9d3c-ff68e8012263_base_resized.jpg"}
     </script>
@@ -107,13 +82,16 @@
     "https://asset.booth.pm/favicon.ico">
     <link href=
     "https://asset.booth.pm/assets/apple-touch-icon-precomposed-f7358b936e9404f3e499e1bf3c9f0967366212144a16374ebc7558b391eeafe1.png"
-    rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
-    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    rel="apple-touch-icon-precomposed">
+  </head>
+  <body>
+    <noscript><iframe height="0" src=
+    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "yo8G1hk240Edj67cykWsoidDgPUw4NAOxvBHhiyXywI="></script>
+    "db5JZSiMGL5F8TcJaAhTrLoTFdyNhW18tRdwZ+ZEKdU="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
