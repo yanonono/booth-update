@@ -59,9 +59,13 @@
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
     <script src=
+    "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
+    defer="defer" nonce=
+    "vSKj81aBiWtr79WvaVMUPNcdd12W82kHC1hu/Fifd/E="></script>
+    <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "rS0odaV/g5zsulqhyZxVLwwdDQcCWudjXQ0dkuiZZew="></script>
+    "vSKj81aBiWtr79WvaVMUPNcdd12W82kHC1hu/Fifd/E="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -74,7 +78,7 @@
     <script src=
     "https://asset.booth.pm/assets/ab357483f48c9496242e.js" defer=
     "defer" nonce=
-    "rS0odaV/g5zsulqhyZxVLwwdDQcCWudjXQ0dkuiZZew="></script>
+    "vSKj81aBiWtr79WvaVMUPNcdd12W82kHC1hu/Fifd/E="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"【汎用小物】ネームプレート付きチョーカー","description":"VRChatでの利用を想定した、ネームプレート付きのチョーカー（首輪）です。\n名前を入れられるので、写真に映ったとき印象に残りやすかったり、製品に愛着がわきやすかったりするかと思います。\n\nなお、本製品をご利用の際は、下記にある「ネムタインの自作モデルに関する利用規約（キャラモデル以外）」をご確認の上、ご購入頂けますと幸いです。","url":"https://booth.pm/ja/items/1279003","offers":{"priceCurrency":"JPY","@type":"Offer","price":"300"},"image":"https://booth.pximg.net/c/620x620/c8f8ce29-be10-40e7-82c9-fcbcecf53a46/i/1279003/34b16ca4-4280-423b-aa16-8c89ae3af92c_base_resized.jpg"}
     </script>
@@ -91,7 +95,7 @@
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "rS0odaV/g5zsulqhyZxVLwwdDQcCWudjXQ0dkuiZZew="></script>
+    "vSKj81aBiWtr79WvaVMUPNcdd12W82kHC1hu/Fifd/E="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -100,18 +104,19 @@
         <div class="recaptcha-tag" data-action=
         "booth/checkout_order" data-site-key=
         "6LfF1dcZAAAAAOHQX8v16MX5SktDwmQINVD_6mBF"></div>
-        <div class="market-item-detail u-bg-white"
-        data-ga-tracking-id="UA-150755370-1" data-product-brand=
-        "nemutain" data-product-category="209" data-product-id=
-        "1279003" data-product-list="market_show"
+        <div class="market" data-ga-tracking-id="UA-150755370-1"
+        data-product-brand="nemutain" data-product-category="209"
+        data-product-id="1279003" data-product-list="market_show"
         data-product-price="300"
         data-shop-tracking-product-category=
         "3D Character Attachments" data-shop-tracking-product-id=
         "1279003" data-shop-tracking-product-name=
         "【汎用小物】ネームプレート付きチョーカー" data-shop-tracking-product-price=
-        "300" data-tracking="detail_item">
+        "300" data-tracking="detail_item" id="items">
+          <div class="market"></div>
           <nav>
-            <div class="breadcrumbs u-border-b u-border-100">
+            <div class=
+            "market breadcrumbs u-bg-white u-border-b u-border-100">
               <div class="container">
                 <div class="breadcrumb">
                   <a class="label" data-tracking="click"
@@ -133,40 +138,40 @@
           </nav>
           <article>
             <div class=
-            "market-item-detail-article u-d-flex u-flex-column u-align-items-center u-pb-600 u-bg-white">
-              <div class="container">
-                <div class="market-item-detail__exhibition-banner">
-                </div>
-              </div>
-              <div class="u-bg-white u-pt-600 u-px-700">
+            "market market-item-detail item-info-detail u-bg-white">
+              <div class=
+              "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class="u-d-flex">
-                    <div class="u-order-1 l-col-2of5 u-pl-600">
-                      <header>
-                        <div class="u-my-200 u-tpg-title3">
-                          <a class="nav" target="_blank"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" rel="noopener"
-                          href="https://nemutain.booth.pm/">
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
+                  <div class="u-pt-600 u-d-flex">
+                    <div class=
+                    "summary u-order-1 l-col-2of5 u-pl-600">
+                      <div class="mobile-section">
+                        <header>
+                          <div class="u-my-200 u-tpg-title3">
+                            <a class="nav" target="_blank"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" rel="noopener"
+                            href="https://nemutain.booth.pm/">
+                            <div class=
+                            "u-d-flex u-align-items-center">
+                              <img alt="ネムタインストア" class=
+                              "user-avatar at-item-summary" src=
+                              "https://booth.pximg.net/c/48x48/users/5829879/icon_image/be5a94a4-436b-429d-b59f-223acd900f9c_base_resized.jpg">
+                              <div class="u-text-ellipsis">
+                                ネムタインストア
+                              </div>
+                            </div></a>
+                          </div>
+                          <h2 class=
+                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                            【汎用小物】ネームプレート付きチョーカー
+                          </h2>
                           <div class=
-                          "u-d-flex u-align-items-center">
-                            <img alt="ネムタインストア" class=
-                            "user-avatar at-item-summary" src=
-                            "https://booth.pximg.net/c/48x48/users/5829879/icon_image/be5a94a4-436b-429d-b59f-223acd900f9c_base_resized.jpg">
-                            <div class="u-text-ellipsis">
-                              ネムタインストア
-                            </div>
-                          </div></a>
-                        </div>
-                        <h2 class=
-                        "u-text-wrap u-tpg-title1 u-mt-0 u-mb-400">
-                          【汎用小物】ネームプレート付きチョーカー
-                        </h2>
-                        <div class=
-                        "u-text-assertive u-tpg-caption1"></div>
-                      </header>
-                      <section>
+                          "u-text-assertive u-tpg-caption1"></div>
+                        </header>
                         <div class="wish-list-link">
                           <a class="add-to-wish-list"
                           data-tracking="add_to_wishlist"
@@ -219,24 +224,32 @@
                             </li>
                           </ul>
                         </div>
-                      </section>
+                      </div>
                       <section>
                         <div class=
                         "share-btns u-d-flex u-flex-1 u-justify-content-start u-px-200 u-py-400">
-                          <a data-url=
-                          "https://booth.pm/ja/items/1279003"
-                          data-lang="ja" data-hashtags="booth_pm"
-                          data-text=
-                          "【汎用小物】ネームプレート付きチョーカー | ネムタインストア"
-                          data-count="none" class=
-                          "twitter-share-button" href=
-                          "https://twitter.com/share">ツイート</a>
-                          <div class="u-ml-300">
+                          <div class="social-btn">
+                            <a data-url=
+                            "https://booth.pm/ja/items/1279003"
+                            data-lang="ja" data-hashtags="booth_pm"
+                            data-text=
+                            "【汎用小物】ネームプレート付きチョーカー | ネムタインストア"
+                            data-count="none" class=
+                            "twitter-share-button" href=
+                            "https://twitter.com/share">ツイート</a>
+                          </div>
+                          <div class="social-btn u-ml-300">
                             <div class="fb-like" data-action="like"
                             data-href=
                             "https://booth.pm/ja/items/1279003"
                             data-layout="button_count" data-share=
                             "false" data-show-faces="false"></div>
+                          </div>
+                          <div class="mobile social-btn u-mx-200">
+                            <div class="line-it-button" data-lang=
+                            "ja" data-type="share-a" data-url=
+                            "https://booth.pm/ja/items/1279003"
+                            style="display: none;"></div>
                           </div>
                         </div>
                       </section>
@@ -278,7 +291,7 @@
                         </div>
                       </div>
                       <div class=
-                      "primary-image-thumbnails u-d-sp-none">
+                      "primary-image-thumbnails u-d-sp-none image-list">
                         <a class="pointer">
                         <div class="slick-thumbnail-border">
                           <img src=
@@ -293,9 +306,9 @@
                           "https://booth.pximg.net/c/72x72_a2_g5/c8f8ce29-be10-40e7-82c9-fcbcecf53a46/i/1279003/436d0f65-fc2f-4f1c-9554-4badeb53e91b_base_resized.jpg">
                         </div></a>
                       </div>
-                      <section>
+                      <section class="main-info-column">
                         <div class=
-                        "js-market-item-detail-description">
+                        "js-market-item-detail-description description">
                           <p class="autolink u-text-wrap">
                             VRChatでの利用を想定した、ネームプレート付きのチョーカー（首輪）です。
                             名前を入れられるので、写真に映ったとき印象に残りやすかったり、製品に愛着がわきやすかったりするかと思います。
@@ -303,173 +316,186 @@
                           </p>
                         </div>
                       </section>
-                      <section>
-                        <div class="u-text-wrap page_design" id=
-                        "modules"></div>
-                      </section>
+                      <section class="u-text-wrap page_design" id=
+                      "modules"></section>
                     </div>
                   </div>
+                  <section class="container">
+                    <div class="u-border-t u-py-500">
+                      <div class="mobile-section">
+                        <h3 class="u-m-0">
+                          タグ
+                        </h3>
+                      </div>
+                      <div class="search-guide-nav">
+                        <div class="search-guide-slider-wrapper">
+                          <div class="search-guide-slider">
+                            <div class=
+                            "search-guide-slider-container">
+                              <a class="search-guide-tablet"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  オリジナル
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href="https://booth.pm/ja/search/3D">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3D
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%83%81%E3%83%A7%E3%83%BC%E3%82%AB%E3%83%BC">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  チョーカー
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/Unity">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  Unity
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%82%B2%E3%83%BC%E3%83%A0%E7%B4%A0%E6%9D%90">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  ゲーム素材
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3Dモデル
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3D%E7%B4%A0%E6%9D%90">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3D素材
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E9%A6%96%E8%BC%AA">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  首輪
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/FBX">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  FBX
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB%E5%B0%8F%E7%89%A9">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3Dモデル小物
+                                </div>
+                              </div></a>
+                            </div>
+                          </div><a class=
+                          "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
+                        </div>
+                      </div>
+                      <div class="mobile-section">
+                        <div class="u-my-500 u-mt-sp-300">
+                          <a class=
+                          "btn btn--default-outline u-tpg-caption1 u-text-wrap"
+                          data-tracking="click" data-product-list=
+                          "from market_show via tag_category_search to search_index"
+                          href=
+                          "https://booth.pm/ja/browse/3D%E8%A1%A3%E8%A3%85%E3%83%BB%E8%A3%85%E9%A3%BE%E5%93%81?q=%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB">
+                          オリジナル x 3D衣装・装飾品 で検索</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-                <section class="container">
-                  <div class="u-border-t u-py-500">
-                    <div class="mobile-section">
-                      <h3 class="u-m-0">
-                        タグ
-                      </h3>
-                    </div>
-                    <div class="search-guide-nav">
-                      <div class="search-guide-slider-wrapper">
-                        <div class="search-guide-slider">
-                          <div class=
-                          "search-guide-slider-container">
-                            <a class="search-guide-tablet"
-                            data-tracking="click"
-                            data-product-list="from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                オリジナル
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href="https://booth.pm/ja/search/3D">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3D
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%83%81%E3%83%A7%E3%83%BC%E3%82%AB%E3%83%BC">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                チョーカー
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/Unity">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                Unity
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%82%B2%E3%83%BC%E3%83%A0%E7%B4%A0%E6%9D%90">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                ゲーム素材
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3Dモデル
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/3D%E7%B4%A0%E6%9D%90">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3D素材
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E9%A6%96%E8%BC%AA">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                首輪
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href="https://booth.pm/ja/search/FBX">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                FBX
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB%E5%B0%8F%E7%89%A9">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3Dモデル小物
-                              </div>
-                            </div></a>
-                          </div>
-                        </div><a class=
-                        "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
-                      </div>
-                    </div>
-                    <div class="mobile-section">
-                      <div class="u-my-500 u-mt-sp-300">
-                        <a class=
-                        "btn btn--default-outline u-tpg-caption1 u-text-wrap"
-                        data-tracking="click" data-product-list=
-                        "from market_show via tag_category_search to search_index"
-                        href=
-                        "https://booth.pm/ja/browse/3D%E8%A1%A3%E8%A3%85%E3%83%BB%E8%A3%85%E9%A3%BE%E5%93%81?q=%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB">
-                        オリジナル x 3D衣装・装飾品 で検索</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
               </div>
             </div>
           </article>
+          <aside>
+            <div class="market">
+              <div class="shoplist-with-items" v-if=
+              "shops &amp;&amp; shops.length &gt; 0"></div>
+            </div>
+          </aside>
+          <script id="json_modules" type="application/json">
+          {"modules":[{"type":"text","title":"もくじ","content":"1：Unitypackageを同封しているため、VRChatですぐに使用できる\n2：6種類のカラーパターンを搭載"},{"type":"text","title":"1：Unitypackageを同封しているため、VRChatですぐに使用できる","content":"モデルやテクスチャーなどのデータをまとめた「Unitypackage」。\nこのUnitypackageを展開することによって、素早くセットアップすることが可能です。\n\nなお、本製品にはsynqark様製の「Arktoon-Shaders」を使用しています。\nそのため、本製品を組み込む前にあらかじめインポートしておくことをオススメします。\n（使用しない場合は別のシェーダーを適用してください）\n\n・Arktoon-Shaders\nhttps://packetbird.booth.pm/items/1027997"},{"type":"text","title":"2：6種類のカラーパターンを搭載","content":"ネームプレート付きチョーカーには、6種類のカラーパターンがあります。\nまた、psdファイルを同封していますので上記以外のカラーにも変更可能です。\n\n・レッド（デフォルトカラー）\n・ブルー\n・グリーン\n・イエロー\n・ラベンダー\n・ブラック\n\n（ネームプレートの書き換えやチョーカーのカラー変更には、psdを開ける環境が必要です）"},{"type":"text","title":"利用規約","content":"利用規約につきましては下記ページをご確認くださいませ。\n\n・ネムタインの自作モデルに関する利用規約（キャラモデル以外）\nhttps://www.pixiv.net/fanbox/creator/36080587/post/292870"},{"type":"text","title":"内容構成","content":"・ポリゴン数：779\n・シェーダー：Arktoon-Shaders(1.0.2.2)\n（上記シェーダーを設定していますが、改めて使用するアバターのシェーダーなどを適用して頂けますと幸いです）"},{"type":"text","title":"フォルダ構成","content":"・Kubiwa-100\n　・Kubiwa-100.unitypackage（Unity展開用データ）\n　・texture（モデル改造用のテクスチャーフォルダ）\n　　・texture.psd（首輪のテクスチャー改変用データ）\n　　・texture2.psd（ブラックのネームプレート差し替え用）\n　　・texture3.psd（ブルーのネームプレート差し替え用）\n　　・texture4.psd（グリーンのネームプレート差し替え用）\n　　・texture5.psd（イエローのネームプレート差し替え用）\n　　・texture6.psd（ラベンダーのネームプレート差し替え用）\n　・model（fbxやモデル用テクスチャーフォルダ）\n　　・kubiwa.fbx（チョーカーのfbxデータ）\n　　・kubiwatex.png（チョーカーのテクスチャー）\n　・Readme.txt（本製品の概要などを記載）\n　・利用規約.txt（本製品の利用規約）\n　・マニュアル.png（チョーカーを身に着ける方法のマニュアルです）\n\n●Kubiwa-100.unitypackageの内部構成\n・kubiwa.prefab（プレハブデータです。こちらをヒエラルキーに入れてください）\n・kubiwa.mat（首輪のマテリアルデータです）\n・kubiwa.fbx（首輪の3Dモデルデータです）\n・kubiwatex.png（首輪のテクスチャーデータです）"},{"type":"text","title":"更新履歴","content":"2019/03/19 Ver1.00 販売開始"},{"type":"text","title":"制作","content":"・ネムタイン\nhttps://twitter.com/nemutain333"},{"type":"text","title":"スペシャルサンクス","content":"・synqark様（Arktoon-Shaders使用）\nhttps://packetbird.booth.pm/items/1027997\n\n・muta様（使用例にモナカちゃん使用）\nhttps://booth.pm/ja/items/1093504"},{"type":"text","title":"注意事項","content":"商品画像はUnity上で製作したものとなります。そのため、VRChatなどでの見えかたや挙動が異なる可能性がございます。\n\nVRChatへのUnityを使った導入テストは、衣装販売時点のバージョンでおこなっています。\nもし衣装を導入する際に違和感やトラブルが発生した場合は、恐縮ですがメッセージよりご連絡くださいませ。\n（VRChatやUnityのアップデートによって、想定外の見え方になる場合がございます）\n\n●2021/08/05\n「Unity 2019 4.29f1」で導入に問題がないことを確認しました。\nもしトラブルが発生した場合は、恐縮ですがお問い合わせ頂けますと幸いです。"},{"type":"text","title":"お問合せについて","content":"ネムタインストアの製品について気になる点がございましたら、お手数ですが下記よりお問合せいただけますと幸いです。\n\nhttps://accounts.booth.pm/conversations/2691603/messages"}]}
+          </script>
         </div>
-        <aside>
-          <div class="shoplist-with-items" v-if=
-          "shops &amp;&amp; shops.length &gt; 0"></div>
-        </aside>
-        <script id="json_modules" type="application/json">
-        {"modules":[{"type":"text","title":"もくじ","content":"1：Unitypackageを同封しているため、VRChatですぐに使用できる\n2：6種類のカラーパターンを搭載"},{"type":"text","title":"1：Unitypackageを同封しているため、VRChatですぐに使用できる","content":"モデルやテクスチャーなどのデータをまとめた「Unitypackage」。\nこのUnitypackageを展開することによって、素早くセットアップすることが可能です。\n\nなお、本製品にはsynqark様製の「Arktoon-Shaders」を使用しています。\nそのため、本製品を組み込む前にあらかじめインポートしておくことをオススメします。\n（使用しない場合は別のシェーダーを適用してください）\n\n・Arktoon-Shaders\nhttps://packetbird.booth.pm/items/1027997"},{"type":"text","title":"2：6種類のカラーパターンを搭載","content":"ネームプレート付きチョーカーには、6種類のカラーパターンがあります。\nまた、psdファイルを同封していますので上記以外のカラーにも変更可能です。\n\n・レッド（デフォルトカラー）\n・ブルー\n・グリーン\n・イエロー\n・ラベンダー\n・ブラック\n\n（ネームプレートの書き換えやチョーカーのカラー変更には、psdを開ける環境が必要です）"},{"type":"text","title":"利用規約","content":"利用規約につきましては下記ページをご確認くださいませ。\n\n・ネムタインの自作モデルに関する利用規約（キャラモデル以外）\nhttps://www.pixiv.net/fanbox/creator/36080587/post/292870"},{"type":"text","title":"内容構成","content":"・ポリゴン数：779\n・シェーダー：Arktoon-Shaders(1.0.2.2)\n（上記シェーダーを設定していますが、改めて使用するアバターのシェーダーなどを適用して頂けますと幸いです）"},{"type":"text","title":"フォルダ構成","content":"・Kubiwa-100\n　・Kubiwa-100.unitypackage（Unity展開用データ）\n　・texture（モデル改造用のテクスチャーフォルダ）\n　　・texture.psd（首輪のテクスチャー改変用データ）\n　　・texture2.psd（ブラックのネームプレート差し替え用）\n　　・texture3.psd（ブルーのネームプレート差し替え用）\n　　・texture4.psd（グリーンのネームプレート差し替え用）\n　　・texture5.psd（イエローのネームプレート差し替え用）\n　　・texture6.psd（ラベンダーのネームプレート差し替え用）\n　・model（fbxやモデル用テクスチャーフォルダ）\n　　・kubiwa.fbx（チョーカーのfbxデータ）\n　　・kubiwatex.png（チョーカーのテクスチャー）\n　・Readme.txt（本製品の概要などを記載）\n　・利用規約.txt（本製品の利用規約）\n　・マニュアル.png（チョーカーを身に着ける方法のマニュアルです）\n\n●Kubiwa-100.unitypackageの内部構成\n・kubiwa.prefab（プレハブデータです。こちらをヒエラルキーに入れてください）\n・kubiwa.mat（首輪のマテリアルデータです）\n・kubiwa.fbx（首輪の3Dモデルデータです）\n・kubiwatex.png（首輪のテクスチャーデータです）"},{"type":"text","title":"更新履歴","content":"2019/03/19 Ver1.00 販売開始"},{"type":"text","title":"制作","content":"・ネムタイン\nhttps://twitter.com/nemutain333"},{"type":"text","title":"スペシャルサンクス","content":"・synqark様（Arktoon-Shaders使用）\nhttps://packetbird.booth.pm/items/1027997\n\n・muta様（使用例にモナカちゃん使用）\nhttps://booth.pm/ja/items/1093504"},{"type":"text","title":"注意事項","content":"商品画像はUnity上で製作したものとなります。そのため、VRChatなどでの見えかたや挙動が異なる可能性がございます。\n\nVRChatへのUnityを使った導入テストは、衣装販売時点のバージョンでおこなっています。\nもし衣装を導入する際に違和感やトラブルが発生した場合は、恐縮ですがメッセージよりご連絡くださいませ。\n（VRChatやUnityのアップデートによって、想定外の見え方になる場合がございます）\n\n●2021/08/05\n「Unity 2019 4.29f1」で導入に問題がないことを確認しました。\nもしトラブルが発生した場合は、恐縮ですがお問い合わせ頂けますと幸いです。"},{"type":"text","title":"お問合せについて","content":"ネムタインストアの製品について気になる点がございましたら、お手数ですが下記よりお問合せいただけますと幸いです。\n\nhttps://accounts.booth.pm/conversations/2691603/messages"}]}
-        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
