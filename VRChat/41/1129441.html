@@ -59,9 +59,13 @@
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
     <script src=
+    "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
+    defer="defer" nonce=
+    "XkS3uYuKgct8IFHj48iLSJpPhOLCoLd8NkRbB5cXGbY="></script>
+    <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "kZWvueCU/Y2FUPHV60/ZQy9a/U7Tja1om8todxbbQnw="></script>
+    "XkS3uYuKgct8IFHj48iLSJpPhOLCoLd8NkRbB5cXGbY="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -99,7 +103,7 @@
     <script src=
     "https://asset.booth.pm/assets/ab357483f48c9496242e.js" defer=
     "defer" nonce=
-    "kZWvueCU/Y2FUPHV60/ZQy9a/U7Tja1om8todxbbQnw="></script>
+    "XkS3uYuKgct8IFHj48iLSJpPhOLCoLd8NkRbB5cXGbY="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"無料配布！超フルスクラッチお好み焼き(どんどん亭完全監修)","description":"リアルワールドの九州を中心に48店舗（2018/10/10 現在）を展開するお好み焼きレストランどんどん亭さん完全監修の下、作成された超フルスクラッチお好み焼きです。\n写真撮影・画像加工などをどんどん亭【公式】広報部さんにお手伝いいただきました。\n\nお好み焼き代を払いたい方は是非、どんどん亭リアル店舗に足を運んでご支払いください。\nどうしてもリアル店舗に行けない方の代わりは私が行きます。\n\nどんどん亭公式HP\nhttps://www.dondontei.com/\nどんどん亭【公式】広報部\n@dondontei_PR\nどんどん亭研修生　雉玉かえしちゃんVRM\nhttps://3d.nicovideo.jp/works/td43978","url":"https://booth.pm/ja/items/1129441","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"500"},"image":"https://booth.pximg.net/c/620x620/398453f0-c317-488e-9f19-c38eb6274343/i/1129441/2083a82f-556f-4f60-a10e-68389b55328c_base_resized.jpg"}
     </script>
@@ -113,7 +117,7 @@
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "kZWvueCU/Y2FUPHV60/ZQy9a/U7Tja1om8todxbbQnw="></script>
+    "XkS3uYuKgct8IFHj48iLSJpPhOLCoLd8NkRbB5cXGbY="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -122,13 +126,15 @@
         <div class="recaptcha-tag" data-action=
         "booth/checkout_order" data-site-key=
         "6LfF1dcZAAAAAOHQX8v16MX5SktDwmQINVD_6mBF"></div>
-        <div class="market-item-detail u-bg-white"
-        data-ga-tracking-id="" data-product-brand="meron-pan"
-        data-product-category="127" data-product-id="1129441"
-        data-product-list="market_show" data-product-price="500"
-        data-tracking="detail_item">
+        <div class="market" data-ga-tracking-id=""
+        data-product-brand="meron-pan" data-product-category="127"
+        data-product-id="1129441" data-product-list="market_show"
+        data-product-price="500" data-tracking="detail_item" id=
+        "items">
+          <div class="market"></div>
           <nav>
-            <div class="breadcrumbs u-border-b u-border-100">
+            <div class=
+            "market breadcrumbs u-bg-white u-border-b u-border-100">
               <div class="container">
                 <div class="breadcrumb">
                   <a class="label" data-tracking="click"
@@ -150,40 +156,40 @@
           </nav>
           <article>
             <div class=
-            "market-item-detail-article u-d-flex u-flex-column u-align-items-center u-pb-600 u-bg-white">
-              <div class="container">
-                <div class="market-item-detail__exhibition-banner">
-                </div>
-              </div>
-              <div class="u-bg-white u-pt-600 u-px-700">
+            "market market-item-detail item-info-detail u-bg-white">
+              <div class=
+              "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class="u-d-flex">
-                    <div class="u-order-1 l-col-2of5 u-pl-600">
-                      <header>
-                        <div class="u-my-200 u-tpg-title3">
-                          <a class="nav" target="_blank"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" rel="noopener"
-                          href="https://meron-pan.booth.pm/">
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
+                  <div class="u-pt-600 u-d-flex">
+                    <div class=
+                    "summary u-order-1 l-col-2of5 u-pl-600">
+                      <div class="mobile-section">
+                        <header>
+                          <div class="u-my-200 u-tpg-title3">
+                            <a class="nav" target="_blank"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" rel="noopener"
+                            href="https://meron-pan.booth.pm/">
+                            <div class=
+                            "u-d-flex u-align-items-center">
+                              <img alt="メロンパンのショーケース" class=
+                              "user-avatar at-item-summary" src=
+                              "https://booth.pximg.net/c/48x48/users/5188551/icon_image/1f401117-e530-48b1-ac8d-70d0ff7aa7e3_base_resized.jpg">
+                              <div class="u-text-ellipsis">
+                                メロンパンのショーケース
+                              </div>
+                            </div></a>
+                          </div>
+                          <h2 class=
+                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                            無料配布！超フルスクラッチお好み焼き(どんどん亭完全監修)
+                          </h2>
                           <div class=
-                          "u-d-flex u-align-items-center">
-                            <img alt="メロンパンのショーケース" class=
-                            "user-avatar at-item-summary" src=
-                            "https://booth.pximg.net/c/48x48/users/5188551/icon_image/1f401117-e530-48b1-ac8d-70d0ff7aa7e3_base_resized.jpg">
-                            <div class="u-text-ellipsis">
-                              メロンパンのショーケース
-                            </div>
-                          </div></a>
-                        </div>
-                        <h2 class=
-                        "u-text-wrap u-tpg-title1 u-mt-0 u-mb-400">
-                          無料配布！超フルスクラッチお好み焼き(どんどん亭完全監修)
-                        </h2>
-                        <div class=
-                        "u-text-assertive u-tpg-caption1"></div>
-                      </header>
-                      <section>
+                          "u-text-assertive u-tpg-caption1"></div>
+                        </header>
                         <div class="wish-list-link">
                           <a class="add-to-wish-list"
                           data-tracking="add_to_wishlist"
@@ -288,24 +294,32 @@
                             </li>
                           </ul>
                         </div>
-                      </section>
+                      </div>
                       <section>
                         <div class=
                         "share-btns u-d-flex u-flex-1 u-justify-content-start u-px-200 u-py-400">
-                          <a data-url=
-                          "https://booth.pm/ja/items/1129441"
-                          data-lang="ja" data-hashtags="booth_pm"
-                          data-text=
-                          "無料配布！超フルスクラッチお好み焼き(どんどん亭完全監修) | メロンパンのショーケース"
-                          data-count="none" class=
-                          "twitter-share-button" href=
-                          "https://twitter.com/share">ツイート</a>
-                          <div class="u-ml-300">
+                          <div class="social-btn">
+                            <a data-url=
+                            "https://booth.pm/ja/items/1129441"
+                            data-lang="ja" data-hashtags="booth_pm"
+                            data-text=
+                            "無料配布！超フルスクラッチお好み焼き(どんどん亭完全監修) | メロンパンのショーケース"
+                            data-count="none" class=
+                            "twitter-share-button" href=
+                            "https://twitter.com/share">ツイート</a>
+                          </div>
+                          <div class="social-btn u-ml-300">
                             <div class="fb-like" data-action="like"
                             data-href=
                             "https://booth.pm/ja/items/1129441"
                             data-layout="button_count" data-share=
                             "false" data-show-faces="false"></div>
+                          </div>
+                          <div class="mobile social-btn u-mx-200">
+                            <div class="line-it-button" data-lang=
+                            "ja" data-type="share-a" data-url=
+                            "https://booth.pm/ja/items/1129441"
+                            style="display: none;"></div>
                           </div>
                         </div>
                       </section>
@@ -374,7 +388,7 @@
                         </div>
                       </div>
                       <div class=
-                      "primary-image-thumbnails u-d-sp-none">
+                      "primary-image-thumbnails u-d-sp-none image-list">
                         <a class="pointer">
                         <div class="slick-thumbnail-border">
                           <img src=
@@ -397,9 +411,9 @@
                           "https://booth.pximg.net/c/72x72_a2_g5/398453f0-c317-488e-9f19-c38eb6274343/i/1129441/c3015e9d-5686-46db-9f8d-cdc39f00b3fe_base_resized.jpg">
                         </div></a>
                       </div>
-                      <section>
+                      <section class="main-info-column">
                         <div class=
-                        "js-market-item-detail-description">
+                        "js-market-item-detail-description description">
                           <p class="autolink u-text-wrap">
                             リアルワールドの九州を中心に48店舗（2018/10/10
                             現在）を展開するお好み焼きレストランどんどん亭さん完全監修の下、作成された超フルスクラッチお好み焼きです。
@@ -412,151 +426,162 @@
                           </p>
                         </div>
                       </section>
-                      <section>
-                        <div class="u-text-wrap page_design" id=
-                        "modules"></div>
-                      </section>
+                      <section class="u-text-wrap page_design" id=
+                      "modules"></section>
                     </div>
                   </div>
+                  <section class="container">
+                    <div class="u-border-t u-py-500">
+                      <div class="mobile-section">
+                        <h3 class="u-m-0">
+                          タグ
+                        </h3>
+                      </div>
+                      <div class="search-guide-nav">
+                        <div class="search-guide-slider-wrapper">
+                          <div class="search-guide-slider">
+                            <div class=
+                            "search-guide-slider-container">
+                              <a class="search-guide-tablet"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E9%A3%9F%E5%93%81">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  食品
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/Unity">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  Unity
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3Dモデル
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%83%AA%E3%82%A2%E3%83%AB">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  リアル
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/FBX">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  FBX
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href="https://booth.pm/ja/search/VR">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VR
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  オブジェクト
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%81%8A%E5%A5%BD%E3%81%BF%E7%84%BC%E3%81%8D">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  お好み焼き
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat
+                                </div>
+                              </div></a>
+                            </div>
+                          </div><a class=
+                          "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
+                        </div>
+                      </div>
+                      <div class="mobile-section">
+                        <div class="u-my-500 u-mt-sp-300">
+                          <a class=
+                          "btn btn--default-outline u-tpg-caption1 u-text-wrap"
+                          data-tracking="click" data-product-list=
+                          "from market_show via tag_category_search to search_index"
+                          href=
+                          "https://booth.pm/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=%E9%A3%9F%E5%93%81">
+                          食品 x 3Dモデル（その他） で検索</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-                <section class="container">
-                  <div class="u-border-t u-py-500">
-                    <div class="mobile-section">
-                      <h3 class="u-m-0">
-                        タグ
-                      </h3>
-                    </div>
-                    <div class="search-guide-nav">
-                      <div class="search-guide-slider-wrapper">
-                        <div class="search-guide-slider">
-                          <div class=
-                          "search-guide-slider-container">
-                            <a class="search-guide-tablet"
-                            data-tracking="click"
-                            data-product-list="from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E9%A3%9F%E5%93%81">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                食品
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/Unity">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                Unity
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3Dモデル
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%83%AA%E3%82%A2%E3%83%AB">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                リアル
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href="https://booth.pm/ja/search/FBX">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                FBX
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href="https://booth.pm/ja/search/VR">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VR
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                オブジェクト
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%81%8A%E5%A5%BD%E3%81%BF%E7%84%BC%E3%81%8D">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                お好み焼き
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat
-                              </div>
-                            </div></a>
-                          </div>
-                        </div><a class=
-                        "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
-                      </div>
-                    </div>
-                    <div class="mobile-section">
-                      <div class="u-my-500 u-mt-sp-300">
-                        <a class=
-                        "btn btn--default-outline u-tpg-caption1 u-text-wrap"
-                        data-tracking="click" data-product-list=
-                        "from market_show via tag_category_search to search_index"
-                        href=
-                        "https://booth.pm/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=%E9%A3%9F%E5%93%81">
-                        食品 x 3Dモデル（その他） で検索</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
               </div>
             </div>
           </article>
+          <aside>
+            <div class="market">
+              <div class="shoplist-with-items" v-if=
+              "shops &amp;&amp; shops.length &gt; 0"></div>
+            </div>
+          </aside>
+          <script id="json_modules" type="application/json">
+          {"modules":[{"type":"text","title":"初めに:","content":"お好み焼きで人を苦しめたり悲しませたりするのはやめましょう。\n深夜に美味しそうなお好み焼きを見せることは他人を苦しめる行為に入りません。"},{"type":"text","title":"ライセンスなど:","content":"アバターに人格を与えることの許諾範囲(A person who can perform with this avatar)\n  全員に許可(Everyone)\n\nこのアバターを用いて暴力表現を演じることの許可(Violent acts using this avatar)\n  不許可(Disallow)\n\nこのアバターを用いて性的表現を演じることの許可(Sexuality acts using this avatar)\n  不許可(Disallow)\n\n商用利用の許可(For commercial use)\n  許可(Allow)\n\n再配布・改変に関する許諾範囲(Redistribution / Modifications License)\n  再配布禁止(Redistribution Prohibited)\n    ※ビルド済みデータなど、容易に再利用出来ない場合を除く\n  改変許可(Allow)\n\nお好み焼きの画像はどんどん亭さんに、商用利用の許可をいただいております。\n\nその他不明瞭な点がございましたらご気軽にお問い合わせください。\nTwitter：@Yuzuki_Tatikawa\n本モデルデータの使用による損失・損害等は一切責任を負いかねます。\n本ライセンスは変更する場合があります。\n変更があった場合、オンライン版の内容を優先します。"},{"type":"text","title":"内容物:","content":"chou_okonomiyaki.fbx\n-Okonomi_High Δ3008\n-Okonomi_Standard Δ1090\n-Okonomi_VeryLow Δ124\nokonomiyaki_01.png（ソース無し）\nokonomiyaki_02.png（ソース有り）\nokonomiyaki_03.png（マヨ有り）\nokonomiyaki_04.png（鰹節有り）\n\nノーマルマップ等は付属しておりません。"},{"type":"text","title":"VRChatのオススメ設定:","content":"完成されているテクスチャのため、光の影響を受けないUnlit系がオススメです。\n\nVRChatアップデートによるポリゴン数制限緩和に伴い、△3008のOkonomi_Highモデルが使いやすくなりました！"},{"type":"text","title":"ぱすわーど","content":"規約を読めない環境の方が意図せず違反利用することを防止するために、フォルダにはパスワードをかけさせていただいています。\nokonomiyakitabetai\n\n制定日:2018年12月07日"}]}
+          </script>
         </div>
-        <aside>
-          <div class="shoplist-with-items" v-if=
-          "shops &amp;&amp; shops.length &gt; 0"></div>
-        </aside>
-        <script id="json_modules" type="application/json">
-        {"modules":[{"type":"text","title":"初めに:","content":"お好み焼きで人を苦しめたり悲しませたりするのはやめましょう。\n深夜に美味しそうなお好み焼きを見せることは他人を苦しめる行為に入りません。"},{"type":"text","title":"ライセンスなど:","content":"アバターに人格を与えることの許諾範囲(A person who can perform with this avatar)\n  全員に許可(Everyone)\n\nこのアバターを用いて暴力表現を演じることの許可(Violent acts using this avatar)\n  不許可(Disallow)\n\nこのアバターを用いて性的表現を演じることの許可(Sexuality acts using this avatar)\n  不許可(Disallow)\n\n商用利用の許可(For commercial use)\n  許可(Allow)\n\n再配布・改変に関する許諾範囲(Redistribution / Modifications License)\n  再配布禁止(Redistribution Prohibited)\n    ※ビルド済みデータなど、容易に再利用出来ない場合を除く\n  改変許可(Allow)\n\nお好み焼きの画像はどんどん亭さんに、商用利用の許可をいただいております。\n\nその他不明瞭な点がございましたらご気軽にお問い合わせください。\nTwitter：@Yuzuki_Tatikawa\n本モデルデータの使用による損失・損害等は一切責任を負いかねます。\n本ライセンスは変更する場合があります。\n変更があった場合、オンライン版の内容を優先します。"},{"type":"text","title":"内容物:","content":"chou_okonomiyaki.fbx\n-Okonomi_High Δ3008\n-Okonomi_Standard Δ1090\n-Okonomi_VeryLow Δ124\nokonomiyaki_01.png（ソース無し）\nokonomiyaki_02.png（ソース有り）\nokonomiyaki_03.png（マヨ有り）\nokonomiyaki_04.png（鰹節有り）\n\nノーマルマップ等は付属しておりません。"},{"type":"text","title":"VRChatのオススメ設定:","content":"完成されているテクスチャのため、光の影響を受けないUnlit系がオススメです。\n\nVRChatアップデートによるポリゴン数制限緩和に伴い、△3008のOkonomi_Highモデルが使いやすくなりました！"},{"type":"text","title":"ぱすわーど","content":"規約を読めない環境の方が意図せず違反利用することを防止するために、フォルダにはパスワードをかけさせていただいています。\nokonomiyakitabetai\n\n制定日:2018年12月07日"}]}
-        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
