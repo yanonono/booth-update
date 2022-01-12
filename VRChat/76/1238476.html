@@ -59,9 +59,13 @@
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
     <script src=
+    "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
+    defer="defer" nonce=
+    "dLfJa3jqhI6PjMLSrBsqnlDOxzGxMdiKMlJjYlCQzgw="></script>
+    <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "I2uMOvpEfLmkcbT0NBGONRu1ljjfdP2xQazLa8/fo3s="></script>
+    "dLfJa3jqhI6PjMLSrBsqnlDOxzGxMdiKMlJjYlCQzgw="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -74,7 +78,7 @@
     <script src=
     "https://asset.booth.pm/assets/ab357483f48c9496242e.js" defer=
     "defer" nonce=
-    "I2uMOvpEfLmkcbT0NBGONRu1ljjfdP2xQazLa8/fo3s="></script>
+    "dLfJa3jqhI6PjMLSrBsqnlDOxzGxMdiKMlJjYlCQzgw="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"VRChat Photo Selector - カメラ撮影した画像をワールドごとに仕分けする","description":"[ja]\nVRChatのVRモードでカメラ撮影した画像ファイルをワールドごとのフォルダに仕分けします。\n\n[en]\nSort the photo image files taken by VR camera in VRChat into folders for each world.\n\n","url":"https://booth.pm/ja/items/1238476","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"100"},"image":"https://booth.pximg.net/c/620x620/0bad566e-2b36-415e-ae3c-fcc3b09373e8/i/1238476/394e8285-4750-434f-af6d-326a5f1cf92b_base_resized.jpg"}
     </script>
@@ -91,7 +95,7 @@
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "I2uMOvpEfLmkcbT0NBGONRu1ljjfdP2xQazLa8/fo3s="></script>
+    "dLfJa3jqhI6PjMLSrBsqnlDOxzGxMdiKMlJjYlCQzgw="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -100,18 +104,19 @@
         <div class="recaptcha-tag" data-action=
         "booth/checkout_order" data-site-key=
         "6LfF1dcZAAAAAOHQX8v16MX5SktDwmQINVD_6mBF"></div>
-        <div class="market-item-detail u-bg-white"
-        data-ga-tracking-id="UA-134992133-1" data-product-brand=
-        "yanonono" data-product-category="142" data-product-id=
-        "1238476" data-product-list="market_show"
+        <div class="market" data-ga-tracking-id="UA-134992133-1"
+        data-product-brand="yanonono" data-product-category="142"
+        data-product-id="1238476" data-product-list="market_show"
         data-product-price="100"
         data-shop-tracking-product-category="Game-related Items"
         data-shop-tracking-product-id="1238476"
         data-shop-tracking-product-name="VRChat Photo Selector ..."
         data-shop-tracking-product-price="100" data-tracking=
-        "detail_item">
+        "detail_item" id="items">
+          <div class="market"></div>
           <nav>
-            <div class="breadcrumbs u-border-b u-border-100">
+            <div class=
+            "market breadcrumbs u-bg-white u-border-b u-border-100">
               <div class="container">
                 <div class="breadcrumb">
                   <a class="label" data-tracking="click"
@@ -133,41 +138,41 @@
           </nav>
           <article>
             <div class=
-            "market-item-detail-article u-d-flex u-flex-column u-align-items-center u-pb-600 u-bg-white">
-              <div class="container">
-                <div class="market-item-detail__exhibition-banner">
-                </div>
-              </div>
-              <div class="u-bg-white u-pt-600 u-px-700">
+            "market market-item-detail item-info-detail u-bg-white">
+              <div class=
+              "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class="u-d-flex">
-                    <div class="u-order-1 l-col-2of5 u-pl-600">
-                      <header>
-                        <div class="u-my-200 u-tpg-title3">
-                          <a class="nav" target="_blank"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" rel="noopener"
-                          href="https://yanonono.booth.pm/">
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
+                  <div class="u-pt-600 u-d-flex">
+                    <div class=
+                    "summary u-order-1 l-col-2of5 u-pl-600">
+                      <div class="mobile-section">
+                        <header>
+                          <div class="u-my-200 u-tpg-title3">
+                            <a class="nav" target="_blank"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" rel="noopener"
+                            href="https://yanonono.booth.pm/">
+                            <div class=
+                            "u-d-flex u-align-items-center">
+                              <img alt="のの屋" class=
+                              "user-avatar at-item-summary" src=
+                              "https://booth.pximg.net/c/48x48/users/6124820/icon_image/e3e522d2-703d-4f5c-ba11-b2d1f93fe61a_base_resized.jpg">
+                              <div class="u-text-ellipsis">
+                                のの屋
+                              </div>
+                            </div></a>
+                          </div>
+                          <h2 class=
+                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                            VRChat Photo Selector -
+                            カメラ撮影した画像をワールドごとに仕分けする
+                          </h2>
                           <div class=
-                          "u-d-flex u-align-items-center">
-                            <img alt="のの屋" class=
-                            "user-avatar at-item-summary" src=
-                            "https://booth.pximg.net/c/48x48/users/6124820/icon_image/e3e522d2-703d-4f5c-ba11-b2d1f93fe61a_base_resized.jpg">
-                            <div class="u-text-ellipsis">
-                              のの屋
-                            </div>
-                          </div></a>
-                        </div>
-                        <h2 class=
-                        "u-text-wrap u-tpg-title1 u-mt-0 u-mb-400">
-                          VRChat Photo Selector -
-                          カメラ撮影した画像をワールドごとに仕分けする
-                        </h2>
-                        <div class=
-                        "u-text-assertive u-tpg-caption1"></div>
-                      </header>
-                      <section>
+                          "u-text-assertive u-tpg-caption1"></div>
+                        </header>
                         <div class="wish-list-link">
                           <a class="add-to-wish-list"
                           data-tracking="add_to_wishlist"
@@ -274,24 +279,32 @@
                             </li>
                           </ul>
                         </div>
-                      </section>
+                      </div>
                       <section>
                         <div class=
                         "share-btns u-d-flex u-flex-1 u-justify-content-start u-px-200 u-py-400">
-                          <a data-url=
-                          "https://booth.pm/ja/items/1238476"
-                          data-lang="ja" data-hashtags="booth_pm"
-                          data-text=
-                          "VRChat Photo Selector - カメラ撮影した画像をワールドごとに仕分けする | のの屋"
-                          data-count="none" class=
-                          "twitter-share-button" href=
-                          "https://twitter.com/share">ツイート</a>
-                          <div class="u-ml-300">
+                          <div class="social-btn">
+                            <a data-url=
+                            "https://booth.pm/ja/items/1238476"
+                            data-lang="ja" data-hashtags="booth_pm"
+                            data-text=
+                            "VRChat Photo Selector - カメラ撮影した画像をワールドごとに仕分けする | のの屋"
+                            data-count="none" class=
+                            "twitter-share-button" href=
+                            "https://twitter.com/share">ツイート</a>
+                          </div>
+                          <div class="social-btn u-ml-300">
                             <div class="fb-like" data-action="like"
                             data-href=
                             "https://booth.pm/ja/items/1238476"
                             data-layout="button_count" data-share=
                             "false" data-show-faces="false"></div>
+                          </div>
+                          <div class="mobile social-btn u-mx-200">
+                            <div class="line-it-button" data-lang=
+                            "ja" data-type="share-a" data-url=
+                            "https://booth.pm/ja/items/1238476"
+                            style="display: none;"></div>
                           </div>
                         </div>
                       </section>
@@ -312,16 +325,16 @@
                         </div>
                       </div>
                       <div class=
-                      "primary-image-thumbnails u-d-sp-none">
+                      "primary-image-thumbnails u-d-sp-none image-list">
                         <a class="pointer">
                         <div class="slick-thumbnail-border">
                           <img src=
                           "https://booth.pximg.net/c/72x72_a2_g5/0bad566e-2b36-415e-ae3c-fcc3b09373e8/i/1238476/394e8285-4750-434f-af6d-326a5f1cf92b_base_resized.jpg">
                         </div></a>
                       </div>
-                      <section>
+                      <section class="main-info-column">
                         <div class=
-                        "js-market-item-detail-description">
+                        "js-market-item-detail-description description">
                           <p class="autolink u-text-wrap">
                             [ja]
                             VRChatのVRモードでカメラ撮影した画像ファイルをワールドごとのフォルダに仕分けします。
@@ -331,76 +344,79 @@
                           </p>
                         </div>
                       </section>
-                      <section>
-                        <div class="u-text-wrap page_design" id=
-                        "modules"></div>
-                      </section>
+                      <section class="u-text-wrap page_design" id=
+                      "modules"></section>
                     </div>
                   </div>
+                  <section class="container">
+                    <div class="u-border-t u-py-500">
+                      <div class="mobile-section">
+                        <h3 class="u-m-0">
+                          タグ
+                        </h3>
+                      </div>
+                      <div class="search-guide-nav">
+                        <div class="search-guide-slider-wrapper">
+                          <div class="search-guide-slider">
+                            <div class=
+                            "search-guide-slider-container">
+                              <a class="search-guide-tablet"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/PowerShell">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  PowerShell
+                                </div>
+                              </div></a>
+                            </div>
+                          </div><a class=
+                          "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
+                        </div>
+                      </div>
+                      <div class="mobile-section">
+                        <div class="u-my-500 u-mt-sp-300">
+                          <a class=
+                          "btn btn--default-outline u-tpg-caption1 u-text-wrap"
+                          data-tracking="click" data-product-list=
+                          "from market_show via tag_category_search to search_index"
+                          href=
+                          "https://booth.pm/ja/browse/%E3%82%B2%E3%83%BC%E3%83%A0%E9%96%A2%E9%80%A3%E5%95%86%E5%93%81?q=VRChat">
+                          VRChat x ゲーム関連商品 で検索</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-                <section class="container">
-                  <div class="u-border-t u-py-500">
-                    <div class="mobile-section">
-                      <h3 class="u-m-0">
-                        タグ
-                      </h3>
-                    </div>
-                    <div class="search-guide-nav">
-                      <div class="search-guide-slider-wrapper">
-                        <div class="search-guide-slider">
-                          <div class=
-                          "search-guide-slider-container">
-                            <a class="search-guide-tablet"
-                            data-tracking="click"
-                            data-product-list="from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/PowerShell">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                PowerShell
-                              </div>
-                            </div></a>
-                          </div>
-                        </div><a class=
-                        "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
-                      </div>
-                    </div>
-                    <div class="mobile-section">
-                      <div class="u-my-500 u-mt-sp-300">
-                        <a class=
-                        "btn btn--default-outline u-tpg-caption1 u-text-wrap"
-                        data-tracking="click" data-product-list=
-                        "from market_show via tag_category_search to search_index"
-                        href=
-                        "https://booth.pm/ja/browse/%E3%82%B2%E3%83%BC%E3%83%A0%E9%96%A2%E9%80%A3%E5%95%86%E5%93%81?q=VRChat">
-                        VRChat x ゲーム関連商品 で検索</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
               </div>
             </div>
           </article>
+          <aside>
+            <div class="market">
+              <div class="shoplist-with-items" v-if=
+              "shops &amp;&amp; shops.length &gt; 0"></div>
+            </div>
+          </aside>
+          <script id="json_modules" type="application/json">
+          {"modules":[{"type":"text","title":"VRChat Photo Selector","content":"[ja]\n無料版を公開しました。有料版と同じです。\n\n[en]\nThe free version is now available. It's the same as the paid version.\n"},{"type":"text","title":"ソースコードを公開しています","content":"https://gist.github.com/yanonono/b55701c8e80517e5d0cebbd3e5023b33\n\n[ja]\nPowerShellのソースコードはgistにて公開しています。\n\n[en]\nThe source code of PowerShell is available on gist(github)."},{"type":"text","title":"実行方法(Windows GUI)","content":" 1. \"VRC_PhotoSelector_v110b.exe\"を実行します\n 2. 各種パラメータを設定して、右下の\"Run\"をクリックします\n 3. 指定されたピクチャフォルダの画像ファイルが「日時＋ワールド名」のフォルダに移動します\n 4. 終了するには、下の\"Exit\"をクリックします"},{"type":"text","title":"更新履歴","content":"- v1.10b 2021/10/13 入力待ちが発生してしまう不具合修正。\n- v1.10 2021/10/09 VRChatの画像ファイル保存場所の変更に伴う修正。\n- v1.0902(b) 2021/03/11 World IDが正しく取得できない不具合の修正。\n- v1.09 2021/03/11 ユーザーへJOINが発生したときに、正しく振り分けされない不具合の修正。\n- v1.08 2021/02/05 VRChatのログ表記方式の変更(RoomManagerの廃止)に対応。\n- v1.07 2020/05/06 設定をファイル(setting.json)に記録する形式に変更。オプションとしてハッシュタグなどを登録できるように追加。画像の数だけテキストファイルを作成していた不具合の修正。\n- v1.06 2020/04/30 ログに記載されている時刻が00:00～09:59(午前中の桁数が1桁時間)のとき、時刻の前にゼロが追加されていない不具合修正。\n- v1.05 2019/10/14 ワールド情報のテキストファイルにURLやVRChatワールド紹介用ハッシュタグを出力する機能追加, 実行ファイル名にバージョン名を追加\n- v1.04 2019/02/22 ログファイルを選択するコンボボックスに、ログファイル名＋最終更新日が表示されるように修正。\n- v1.03 2019/02/22 ワールド情報のテキストファイルを出力する機能追加。\n- v1.02 2019/02/21 GUI版実行時、移動するファイルごとにポップアップが表示されないように修正。\n- v1.01 2019/02/21 ワールド名に含まれる記号を全角変換する文字を追加。readme.mdを追加。\n- v1.00 2019/02/20 初版公開"}]}
+          </script>
         </div>
-        <aside>
-          <div class="shoplist-with-items" v-if=
-          "shops &amp;&amp; shops.length &gt; 0"></div>
-        </aside>
-        <script id="json_modules" type="application/json">
-        {"modules":[{"type":"text","title":"VRChat Photo Selector","content":"[ja]\n無料版を公開しました。有料版と同じです。\n\n[en]\nThe free version is now available. It's the same as the paid version.\n"},{"type":"text","title":"ソースコードを公開しています","content":"https://gist.github.com/yanonono/b55701c8e80517e5d0cebbd3e5023b33\n\n[ja]\nPowerShellのソースコードはgistにて公開しています。\n\n[en]\nThe source code of PowerShell is available on gist(github)."},{"type":"text","title":"実行方法(Windows GUI)","content":" 1. \"VRC_PhotoSelector_v110b.exe\"を実行します\n 2. 各種パラメータを設定して、右下の\"Run\"をクリックします\n 3. 指定されたピクチャフォルダの画像ファイルが「日時＋ワールド名」のフォルダに移動します\n 4. 終了するには、下の\"Exit\"をクリックします"},{"type":"text","title":"更新履歴","content":"- v1.10b 2021/10/13 入力待ちが発生してしまう不具合修正。\n- v1.10 2021/10/09 VRChatの画像ファイル保存場所の変更に伴う修正。\n- v1.0902(b) 2021/03/11 World IDが正しく取得できない不具合の修正。\n- v1.09 2021/03/11 ユーザーへJOINが発生したときに、正しく振り分けされない不具合の修正。\n- v1.08 2021/02/05 VRChatのログ表記方式の変更(RoomManagerの廃止)に対応。\n- v1.07 2020/05/06 設定をファイル(setting.json)に記録する形式に変更。オプションとしてハッシュタグなどを登録できるように追加。画像の数だけテキストファイルを作成していた不具合の修正。\n- v1.06 2020/04/30 ログに記載されている時刻が00:00～09:59(午前中の桁数が1桁時間)のとき、時刻の前にゼロが追加されていない不具合修正。\n- v1.05 2019/10/14 ワールド情報のテキストファイルにURLやVRChatワールド紹介用ハッシュタグを出力する機能追加, 実行ファイル名にバージョン名を追加\n- v1.04 2019/02/22 ログファイルを選択するコンボボックスに、ログファイル名＋最終更新日が表示されるように修正。\n- v1.03 2019/02/22 ワールド情報のテキストファイルを出力する機能追加。\n- v1.02 2019/02/21 GUI版実行時、移動するファイルごとにポップアップが表示されないように修正。\n- v1.01 2019/02/21 ワールド名に含まれる記号を全角変換する文字を追加。readme.mdを追加。\n- v1.00 2019/02/20 初版公開"}]}
-        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
