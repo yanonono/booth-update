@@ -59,9 +59,13 @@
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
     <script src=
+    "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
+    defer="defer" nonce=
+    "+H5G3347CJhO1UfFhYh4co7RosMepkTakeV8nLTbJ40="></script>
+    <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "5v6WgRCRWAHY4x4KfcxpTqwzii9NItvIJK+4hCBYZ7w="></script>
+    "+H5G3347CJhO1UfFhYh4co7RosMepkTakeV8nLTbJ40="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -74,7 +78,7 @@
     <script src=
     "https://asset.booth.pm/assets/ab357483f48c9496242e.js" defer=
     "defer" nonce=
-    "5v6WgRCRWAHY4x4KfcxpTqwzii9NItvIJK+4hCBYZ7w="></script>
+    "+H5G3347CJhO1UfFhYh4co7RosMepkTakeV8nLTbJ40="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"3Dオリジナルモデル  - Cordname.梟 - 現在は販売を行っていません","description":"ハッシュタグ #CodeName梟 \n・2019年1月1日～2019年1月3日までの3日間のみの販売となった今回の販売は開始4分で完売という予想外の結果で幕を閉じました。\n\n価格：50000円\n\n詳細は本文へ","url":"https://booth.pm/ja/items/1124392","offers":{"priceCurrency":"JPY","@type":"Offer","price":"0"},"image":"https://booth.pximg.net/c/620x620/3923a6a5-7600-4cc2-9240-d92591e77ceb/i/1124392/cec7a5a5-8baa-4deb-9e5d-07565011d24a_base_resized.jpg"}
     </script>
@@ -91,7 +95,7 @@
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "5v6WgRCRWAHY4x4KfcxpTqwzii9NItvIJK+4hCBYZ7w="></script>
+    "+H5G3347CJhO1UfFhYh4co7RosMepkTakeV8nLTbJ40="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -100,13 +104,15 @@
         <div class="recaptcha-tag" data-action=
         "booth/checkout_order" data-site-key=
         "6LfF1dcZAAAAAOHQX8v16MX5SktDwmQINVD_6mBF"></div>
-        <div class="market-item-detail u-bg-white"
-        data-ga-tracking-id="" data-product-brand="skd-noratama"
-        data-product-category="127" data-product-id="1124392"
-        data-product-list="market_show" data-product-price="0"
-        data-tracking="detail_item">
+        <div class="market" data-ga-tracking-id=""
+        data-product-brand="skd-noratama" data-product-category=
+        "127" data-product-id="1124392" data-product-list=
+        "market_show" data-product-price="0" data-tracking=
+        "detail_item" id="items">
+          <div class="market"></div>
           <nav>
-            <div class="breadcrumbs u-border-b u-border-100">
+            <div class=
+            "market breadcrumbs u-bg-white u-border-b u-border-100">
               <div class="container">
                 <div class="breadcrumb">
                   <a class="label" data-tracking="click"
@@ -128,40 +134,40 @@
           </nav>
           <article>
             <div class=
-            "market-item-detail-article u-d-flex u-flex-column u-align-items-center u-pb-600 u-bg-white">
-              <div class="container">
-                <div class="market-item-detail__exhibition-banner">
-                </div>
-              </div>
-              <div class="u-bg-white u-pt-600 u-px-700">
+            "market market-item-detail item-info-detail u-bg-white">
+              <div class=
+              "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class="u-d-flex">
-                    <div class="u-order-1 l-col-2of5 u-pl-600">
-                      <header>
-                        <div class="u-my-200 u-tpg-title3">
-                          <a class="nav" target="_blank"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" rel="noopener"
-                          href="https://skd-noratama.booth.pm/">
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
+                  <div class="u-pt-600 u-d-flex">
+                    <div class=
+                    "summary u-order-1 l-col-2of5 u-pl-600">
+                      <div class="mobile-section">
+                        <header>
+                          <div class="u-my-200 u-tpg-title3">
+                            <a class="nav" target="_blank"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" rel="noopener"
+                            href="https://skd-noratama.booth.pm/">
+                            <div class=
+                            "u-d-flex u-align-items-center">
+                              <img alt="電脳屋" class=
+                              "user-avatar at-item-summary" src=
+                              "https://booth.pximg.net/c/48x48/users/4873611/icon_image/c8b700f5-4c0c-4035-a02f-7de16e33da09_base_resized.jpg">
+                              <div class="u-text-ellipsis">
+                                電脳屋
+                              </div>
+                            </div></a>
+                          </div>
+                          <h2 class=
+                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                            3Dオリジナルモデル - Cordname.梟 - 現在は販売を行っていません
+                          </h2>
                           <div class=
-                          "u-d-flex u-align-items-center">
-                            <img alt="電脳屋" class=
-                            "user-avatar at-item-summary" src=
-                            "https://booth.pximg.net/c/48x48/users/4873611/icon_image/c8b700f5-4c0c-4035-a02f-7de16e33da09_base_resized.jpg">
-                            <div class="u-text-ellipsis">
-                              電脳屋
-                            </div>
-                          </div></a>
-                        </div>
-                        <h2 class=
-                        "u-text-wrap u-tpg-title1 u-mt-0 u-mb-400">
-                          3Dオリジナルモデル - Cordname.梟 - 現在は販売を行っていません
-                        </h2>
-                        <div class=
-                        "u-text-assertive u-tpg-caption1"></div>
-                      </header>
-                      <section>
+                          "u-text-assertive u-tpg-caption1"></div>
+                        </header>
                         <div class="wish-list-link">
                           <a class="add-to-wish-list"
                           data-tracking="add_to_wishlist"
@@ -229,24 +235,32 @@
                             </li>
                           </ul>
                         </div>
-                      </section>
+                      </div>
                       <section>
                         <div class=
                         "share-btns u-d-flex u-flex-1 u-justify-content-start u-px-200 u-py-400">
-                          <a data-url=
-                          "https://booth.pm/ja/items/1124392"
-                          data-lang="ja" data-hashtags="booth_pm"
-                          data-text=
-                          "3Dオリジナルモデル - Cordname.梟 - 現在は販売を行っていません | 電脳屋"
-                          data-count="none" class=
-                          "twitter-share-button" href=
-                          "https://twitter.com/share">ツイート</a>
-                          <div class="u-ml-300">
+                          <div class="social-btn">
+                            <a data-url=
+                            "https://booth.pm/ja/items/1124392"
+                            data-lang="ja" data-hashtags="booth_pm"
+                            data-text=
+                            "3Dオリジナルモデル - Cordname.梟 - 現在は販売を行っていません | 電脳屋"
+                            data-count="none" class=
+                            "twitter-share-button" href=
+                            "https://twitter.com/share">ツイート</a>
+                          </div>
+                          <div class="social-btn u-ml-300">
                             <div class="fb-like" data-action="like"
                             data-href=
                             "https://booth.pm/ja/items/1124392"
                             data-layout="button_count" data-share=
                             "false" data-show-faces="false"></div>
+                          </div>
+                          <div class="mobile social-btn u-mx-200">
+                            <div class="line-it-button" data-lang=
+                            "ja" data-type="share-a" data-url=
+                            "https://booth.pm/ja/items/1124392"
+                            style="display: none;"></div>
                           </div>
                         </div>
                       </section>
@@ -297,7 +311,7 @@
                         </div>
                       </div>
                       <div class=
-                      "primary-image-thumbnails u-d-sp-none">
+                      "primary-image-thumbnails u-d-sp-none image-list">
                         <a class="pointer">
                         <div class=
                         "embedded-content-thumbnail slick-thumbnail-border">
@@ -313,9 +327,9 @@
                           "https://booth.pximg.net/c/72x72_a2_g5/3923a6a5-7600-4cc2-9240-d92591e77ceb/i/1124392/cec7a5a5-8baa-4deb-9e5d-07565011d24a_base_resized.jpg">
                         </div></a>
                       </div>
-                      <section>
+                      <section class="main-info-column">
                         <div class=
-                        "js-market-item-detail-description">
+                        "js-market-item-detail-description description">
                           <p class="autolink u-text-wrap">
                             ハッシュタグ #CodeName梟
                             ・2019年1月1日～2019年1月3日までの3日間のみの販売となった今回の販売は開始4分で完売という予想外の結果で幕を閉じました。
@@ -323,131 +337,139 @@
                           </p>
                         </div>
                       </section>
-                      <section>
-                        <div class="u-text-wrap page_design" id=
-                        "modules"></div>
-                      </section>
+                      <section class="u-text-wrap page_design" id=
+                      "modules"></section>
                     </div>
                   </div>
+                  <section class="container">
+                    <div class="u-border-t u-py-500">
+                      <div class="mobile-section">
+                        <h3 class="u-m-0">
+                          タグ
+                        </h3>
+                      </div>
+                      <div class="search-guide-nav">
+                        <div class="search-guide-slider-wrapper">
+                          <div class="search-guide-slider">
+                            <div class=
+                            "search-guide-slider-container">
+                              <a class="search-guide-tablet"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  オリジナル
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3Dモデル
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRC%E6%83%B3%E5%AE%9A%E3%83%A2%E3%83%87%E3%83%AB">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRC想定モデル
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRC%E6%83%B3%E5%AE%9A%E3%83%A2%E3%83%87%E3%83%AB(%E3%82%A2%E3%83%90%E3%82%BF%E3%83%BC)">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRC想定モデル(アバター)
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat%203D%E3%83%A2%E3%83%87%E3%83%AB">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat 3Dモデル
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3D%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3Dオリジナル
+                                </div>
+                              </div></a>
+                            </div>
+                          </div><a class=
+                          "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
+                        </div>
+                      </div>
+                      <div class="mobile-section">
+                        <div class="u-my-500 u-mt-sp-300">
+                          <a class=
+                          "btn btn--default-outline u-tpg-caption1 u-text-wrap"
+                          data-tracking="click" data-product-list=
+                          "from market_show via tag_category_search to search_index"
+                          href=
+                          "https://booth.pm/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB">
+                          オリジナル x 3Dモデル（その他） で検索</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-                <section class="container">
-                  <div class="u-border-t u-py-500">
-                    <div class="mobile-section">
-                      <h3 class="u-m-0">
-                        タグ
-                      </h3>
-                    </div>
-                    <div class="search-guide-nav">
-                      <div class="search-guide-slider-wrapper">
-                        <div class="search-guide-slider">
-                          <div class=
-                          "search-guide-slider-container">
-                            <a class="search-guide-tablet"
-                            data-tracking="click"
-                            data-product-list="from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                オリジナル
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3Dモデル
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRC%E6%83%B3%E5%AE%9A%E3%83%A2%E3%83%87%E3%83%AB">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRC想定モデル
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRC%E6%83%B3%E5%AE%9A%E3%83%A2%E3%83%87%E3%83%AB(%E3%82%A2%E3%83%90%E3%82%BF%E3%83%BC)">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRC想定モデル(アバター)
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat%203D%E3%83%A2%E3%83%87%E3%83%AB">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat 3Dモデル
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/3D%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3Dオリジナル
-                              </div>
-                            </div></a>
-                          </div>
-                        </div><a class=
-                        "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
-                      </div>
-                    </div>
-                    <div class="mobile-section">
-                      <div class="u-my-500 u-mt-sp-300">
-                        <a class=
-                        "btn btn--default-outline u-tpg-caption1 u-text-wrap"
-                        data-tracking="click" data-product-list=
-                        "from market_show via tag_category_search to search_index"
-                        href=
-                        "https://booth.pm/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB">
-                        オリジナル x 3Dモデル（その他） で検索</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
               </div>
             </div>
           </article>
+          <aside>
+            <div class="market">
+              <div class="shoplist-with-items" v-if=
+              "shops &amp;&amp; shops.length &gt; 0"></div>
+            </div>
+          </aside>
+          <script id="json_modules" type="application/json">
+          {"modules":[{"type":"media","content":"\u003ciframe width=\"480\" height=\"270\" src=\"https://www.youtube.com/embed/BV1jcMzLndQ\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"","content":"・2019年1月1日～2019年1月3日までの3日間のみの販売となった今回の販売は開始4分で完売という予想外の結果で幕を閉じました。今回の販売方法は10に到達した時点で非公開化する。という方法を取った為、キャッシュからの購入が有り、1人の例外が生まれ、その個体に限りERRORCODEが生まれました。つまり現行No.10番台の姉妹達には11人目のNo.外の存在が有ります。\n\n次回、No.20番台の販売再開は未定です。\n\n・総数30中最初の10個体は誠に有難いことに完売いたしました。そして素敵な例外も生まれた最初の販売と成りました。\n\n・それぞれの販売時期は未定です。またNoが30個体に到達した時点で無期限の販売停止となります。10個体おきの理由は以下より\n\n・彼女達には製造時codenameに加え、№が割り振られなければなりません。ご購入がお済の方は注文番号を添えて、@dennou_noratama(https://twitter.com/dennou_noratama)までごご連絡ください。№毎にNo.を含めデザインされた特別なアクセサリー（№入りアクセサリ）をシークレット公開（リンクと合言葉を知る方にのみ配布できる方法）にて配布致します。これは10番台、20番台、30番台とそれぞれのNo.を獲得した姉妹へのぼくからのお揃いの贈り物と成ります。\n\n・限定販売期間を過ぎ、残った場合に限り、10個体中の残りの№の個体は永久欠番となり廃棄されます。二度と手に入らない状態となりますのでよろしくお願いいたします。\n\n・電脳のノラタマ twitter@dennou_noratama\n\n・詳細な販売開始時刻は電脳のノラタマTwitterにて随時告知致します。手に入れたい方の参考になれば幸いです。\n\nオリジナル3Dモデル - Cordname.梟 -\n\n申請受付期間は販売開始から30日間となります。期限を過ぎた場合№は永続的に失効致します。先着で№を付与致します。"},{"type":"media","content":"\u003ciframe width=\"640\" height=\"360\" src=\"https://www.youtube.com/embed/mU0PgjL5nJc\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"media","content":"\u003ciframe width=\"640\" height=\"360\" src=\"https://www.youtube.com/embed/-IkpmOvaDvo\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"}]}
+          </script>
         </div>
-        <aside>
-          <div class="shoplist-with-items" v-if=
-          "shops &amp;&amp; shops.length &gt; 0"></div>
-        </aside>
-        <script id="json_modules" type="application/json">
-        {"modules":[{"type":"media","content":"\u003ciframe width=\"480\" height=\"270\" src=\"https://www.youtube.com/embed/BV1jcMzLndQ\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"","content":"・2019年1月1日～2019年1月3日までの3日間のみの販売となった今回の販売は開始4分で完売という予想外の結果で幕を閉じました。今回の販売方法は10に到達した時点で非公開化する。という方法を取った為、キャッシュからの購入が有り、1人の例外が生まれ、その個体に限りERRORCODEが生まれました。つまり現行No.10番台の姉妹達には11人目のNo.外の存在が有ります。\n\n次回、No.20番台の販売再開は未定です。\n\n・総数30中最初の10個体は誠に有難いことに完売いたしました。そして素敵な例外も生まれた最初の販売と成りました。\n\n・それぞれの販売時期は未定です。またNoが30個体に到達した時点で無期限の販売停止となります。10個体おきの理由は以下より\n\n・彼女達には製造時codenameに加え、№が割り振られなければなりません。ご購入がお済の方は注文番号を添えて、@dennou_noratama(https://twitter.com/dennou_noratama)までごご連絡ください。№毎にNo.を含めデザインされた特別なアクセサリー（№入りアクセサリ）をシークレット公開（リンクと合言葉を知る方にのみ配布できる方法）にて配布致します。これは10番台、20番台、30番台とそれぞれのNo.を獲得した姉妹へのぼくからのお揃いの贈り物と成ります。\n\n・限定販売期間を過ぎ、残った場合に限り、10個体中の残りの№の個体は永久欠番となり廃棄されます。二度と手に入らない状態となりますのでよろしくお願いいたします。\n\n・電脳のノラタマ twitter@dennou_noratama\n\n・詳細な販売開始時刻は電脳のノラタマTwitterにて随時告知致します。手に入れたい方の参考になれば幸いです。\n\nオリジナル3Dモデル - Cordname.梟 -\n\n申請受付期間は販売開始から30日間となります。期限を過ぎた場合№は永続的に失効致します。先着で№を付与致します。"},{"type":"media","content":"\u003ciframe width=\"640\" height=\"360\" src=\"https://www.youtube.com/embed/mU0PgjL5nJc\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"media","content":"\u003ciframe width=\"640\" height=\"360\" src=\"https://www.youtube.com/embed/-IkpmOvaDvo\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"}]}
-        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
