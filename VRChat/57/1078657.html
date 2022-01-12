@@ -59,9 +59,13 @@
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
     <script src=
+    "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
+    defer="defer" nonce=
+    "SQ8fhYzFHS4t+33lUcmCMM8jizHCq/A4R06H63Qi9ag="></script>
+    <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "EDPyQKpRg2BL2djyfi8e7StC8WLVmsBynn3etnWkk8U="></script>
+    "SQ8fhYzFHS4t+33lUcmCMM8jizHCq/A4R06H63Qi9ag="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -99,7 +103,7 @@
     <script src=
     "https://asset.booth.pm/assets/ab357483f48c9496242e.js" defer=
     "defer" nonce=
-    "EDPyQKpRg2BL2djyfi8e7StC8WLVmsBynn3etnWkk8U="></script>
+    "SQ8fhYzFHS4t+33lUcmCMM8jizHCq/A4R06H63Qi9ag="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"コンパクトカメラ Ver 1.1","description":"VRChatでの利用を想定した、オートフォーカスしそうなフィルムカメラを模したモデルです。\n(1084～1088ポリゴン)\n\n背面には何かを写すなどの用途を想定して、別マテリアルが割り当てられています。\n背面スクリーンの大きさなどが違う3種類のモデルを同梱しています。\n\nVer1.1にて、スクリーン面の周囲に細い枠をつけました。\n写真撮影用のフィルタとして使う際、フィルタの範囲がわかりやすくなりました。","url":"https://booth.pm/ja/items/1078657","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"100"},"image":"https://booth.pximg.net/c/620x620/64255878-1532-4d6c-abdb-a9cf35ee4a39/i/1078657/7a435103-d308-4045-8bf1-61f160eaa8ce_base_resized.jpg"}
     </script>
@@ -113,7 +117,7 @@
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "EDPyQKpRg2BL2djyfi8e7StC8WLVmsBynn3etnWkk8U="></script>
+    "SQ8fhYzFHS4t+33lUcmCMM8jizHCq/A4R06H63Qi9ag="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -122,13 +126,15 @@
         <div class="recaptcha-tag" data-action=
         "booth/checkout_order" data-site-key=
         "6LfF1dcZAAAAAOHQX8v16MX5SktDwmQINVD_6mBF"></div>
-        <div class="market-item-detail u-bg-white"
-        data-ga-tracking-id="" data-product-brand="oyasumisan"
-        data-product-category="127" data-product-id="1078657"
-        data-product-list="market_show" data-product-price="100"
-        data-tracking="detail_item">
+        <div class="market" data-ga-tracking-id=""
+        data-product-brand="oyasumisan" data-product-category="127"
+        data-product-id="1078657" data-product-list="market_show"
+        data-product-price="100" data-tracking="detail_item" id=
+        "items">
+          <div class="market"></div>
           <nav>
-            <div class="breadcrumbs u-border-b u-border-100">
+            <div class=
+            "market breadcrumbs u-bg-white u-border-b u-border-100">
               <div class="container">
                 <div class="breadcrumb">
                   <a class="label" data-tracking="click"
@@ -150,40 +156,40 @@
           </nav>
           <article>
             <div class=
-            "market-item-detail-article u-d-flex u-flex-column u-align-items-center u-pb-600 u-bg-white">
-              <div class="container">
-                <div class="market-item-detail__exhibition-banner">
-                </div>
-              </div>
-              <div class="u-bg-white u-pt-600 u-px-700">
+            "market market-item-detail item-info-detail u-bg-white">
+              <div class=
+              "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class="u-d-flex">
-                    <div class="u-order-1 l-col-2of5 u-pl-600">
-                      <header>
-                        <div class="u-my-200 u-tpg-title3">
-                          <a class="nav" target="_blank"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" rel="noopener"
-                          href="https://oyasumisan.booth.pm/">
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
+                  <div class="u-pt-600 u-d-flex">
+                    <div class=
+                    "summary u-order-1 l-col-2of5 u-pl-600">
+                      <div class="mobile-section">
+                        <header>
+                          <div class="u-my-200 u-tpg-title3">
+                            <a class="nav" target="_blank"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" rel="noopener"
+                            href="https://oyasumisan.booth.pm/">
+                            <div class=
+                            "u-d-flex u-align-items-center">
+                              <img alt="お休みさんの作ったもの" class=
+                              "user-avatar at-item-summary" src=
+                              "https://booth.pximg.net/c/48x48/users/3598247/icon_image/51527b13-a01a-4cb2-857d-abb4285536bc_base_resized.jpg">
+                              <div class="u-text-ellipsis">
+                                お休みさんの作ったもの
+                              </div>
+                            </div></a>
+                          </div>
+                          <h2 class=
+                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                            コンパクトカメラ Ver 1.1
+                          </h2>
                           <div class=
-                          "u-d-flex u-align-items-center">
-                            <img alt="お休みさんの作ったもの" class=
-                            "user-avatar at-item-summary" src=
-                            "https://booth.pximg.net/c/48x48/users/3598247/icon_image/51527b13-a01a-4cb2-857d-abb4285536bc_base_resized.jpg">
-                            <div class="u-text-ellipsis">
-                              お休みさんの作ったもの
-                            </div>
-                          </div></a>
-                        </div>
-                        <h2 class=
-                        "u-text-wrap u-tpg-title1 u-mt-0 u-mb-400">
-                          コンパクトカメラ Ver 1.1
-                        </h2>
-                        <div class=
-                        "u-text-assertive u-tpg-caption1"></div>
-                      </header>
-                      <section>
+                          "u-text-assertive u-tpg-caption1"></div>
+                        </header>
                         <div class="wish-list-link">
                           <a class="add-to-wish-list"
                           data-tracking="add_to_wishlist"
@@ -289,24 +295,32 @@
                             </li>
                           </ul>
                         </div>
-                      </section>
+                      </div>
                       <section>
                         <div class=
                         "share-btns u-d-flex u-flex-1 u-justify-content-start u-px-200 u-py-400">
-                          <a data-url=
-                          "https://booth.pm/ja/items/1078657"
-                          data-lang="ja" data-hashtags="booth_pm"
-                          data-text=
-                          "コンパクトカメラ Ver 1.1 | お休みさんの作ったもの"
-                          data-count="none" class=
-                          "twitter-share-button" href=
-                          "https://twitter.com/share">ツイート</a>
-                          <div class="u-ml-300">
+                          <div class="social-btn">
+                            <a data-url=
+                            "https://booth.pm/ja/items/1078657"
+                            data-lang="ja" data-hashtags="booth_pm"
+                            data-text=
+                            "コンパクトカメラ Ver 1.1 | お休みさんの作ったもの"
+                            data-count="none" class=
+                            "twitter-share-button" href=
+                            "https://twitter.com/share">ツイート</a>
+                          </div>
+                          <div class="social-btn u-ml-300">
                             <div class="fb-like" data-action="like"
                             data-href=
                             "https://booth.pm/ja/items/1078657"
                             data-layout="button_count" data-share=
                             "false" data-show-faces="false"></div>
+                          </div>
+                          <div class="mobile social-btn u-mx-200">
+                            <div class="line-it-button" data-lang=
+                            "ja" data-type="share-a" data-url=
+                            "https://booth.pm/ja/items/1078657"
+                            style="display: none;"></div>
                           </div>
                         </div>
                       </section>
@@ -370,7 +384,7 @@
                         </div>
                       </div>
                       <div class=
-                      "primary-image-thumbnails u-d-sp-none">
+                      "primary-image-thumbnails u-d-sp-none image-list">
                         <a class="pointer">
                         <div class="slick-thumbnail-border">
                           <img src=
@@ -393,9 +407,9 @@
                           "https://booth.pximg.net/c/72x72_a2_g5/64255878-1532-4d6c-abdb-a9cf35ee4a39/i/1078657/1dfd4b85-09a2-485c-9b55-ef2376be2947_base_resized.jpg">
                         </div></a>
                       </div>
-                      <section>
+                      <section class="main-info-column">
                         <div class=
-                        "js-market-item-detail-description">
+                        "js-market-item-detail-description description">
                           <p class="autolink u-text-wrap">
                             VRChatでの利用を想定した、オートフォーカスしそうなフィルムカメラを模したモデルです。
                             (1084～1088ポリゴン)
@@ -406,141 +420,151 @@
                           </p>
                         </div>
                       </section>
-                      <section>
-                        <div class="u-text-wrap page_design" id=
-                        "modules"></div>
-                      </section>
+                      <section class="u-text-wrap page_design" id=
+                      "modules"></section>
                     </div>
                   </div>
+                  <section class="container">
+                    <div class="u-border-t u-py-500">
+                      <div class="mobile-section">
+                        <h3 class="u-m-0">
+                          タグ
+                        </h3>
+                      </div>
+                      <div class="search-guide-nav">
+                        <div class="search-guide-slider-wrapper">
+                          <div class="search-guide-slider">
+                            <div class=
+                            "search-guide-slider-container">
+                              <a class="search-guide-tablet"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%82%AB%E3%83%A1%E3%83%A9">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  カメラ
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/Unity">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  Unity
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3Dモデル
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%83%95%E3%82%A3%E3%83%AB%E3%83%A0%E3%82%AB%E3%83%A1%E3%83%A9">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  フィルムカメラ
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/FBX">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  FBX
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/Camera">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  Camera
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%82%B3%E3%83%B3%E3%83%91%E3%82%AF%E3%83%88%E3%82%AB%E3%83%A1%E3%83%A9">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  コンパクトカメラ
+                                </div>
+                              </div></a>
+                            </div>
+                          </div><a class=
+                          "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
+                        </div>
+                      </div>
+                      <div class="mobile-section">
+                        <div class="u-my-500 u-mt-sp-300">
+                          <a class=
+                          "btn btn--default-outline u-tpg-caption1 u-text-wrap"
+                          data-tracking="click" data-product-list=
+                          "from market_show via tag_category_search to search_index"
+                          href=
+                          "https://booth.pm/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=%E3%82%AB%E3%83%A1%E3%83%A9">
+                          カメラ x 3Dモデル（その他） で検索</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-                <section class="container">
-                  <div class="u-border-t u-py-500">
-                    <div class="mobile-section">
-                      <h3 class="u-m-0">
-                        タグ
-                      </h3>
-                    </div>
-                    <div class="search-guide-nav">
-                      <div class="search-guide-slider-wrapper">
-                        <div class="search-guide-slider">
-                          <div class=
-                          "search-guide-slider-container">
-                            <a class="search-guide-tablet"
-                            data-tracking="click"
-                            data-product-list="from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%82%AB%E3%83%A1%E3%83%A9">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                カメラ
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/Unity">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                Unity
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3Dモデル
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%83%95%E3%82%A3%E3%83%AB%E3%83%A0%E3%82%AB%E3%83%A1%E3%83%A9">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                フィルムカメラ
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href="https://booth.pm/ja/search/FBX">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                FBX
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/Camera">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                Camera
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%82%B3%E3%83%B3%E3%83%91%E3%82%AF%E3%83%88%E3%82%AB%E3%83%A1%E3%83%A9">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                コンパクトカメラ
-                              </div>
-                            </div></a>
-                          </div>
-                        </div><a class=
-                        "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
-                      </div>
-                    </div>
-                    <div class="mobile-section">
-                      <div class="u-my-500 u-mt-sp-300">
-                        <a class=
-                        "btn btn--default-outline u-tpg-caption1 u-text-wrap"
-                        data-tracking="click" data-product-list=
-                        "from market_show via tag_category_search to search_index"
-                        href=
-                        "https://booth.pm/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=%E3%82%AB%E3%83%A1%E3%83%A9">
-                        カメラ x 3Dモデル（その他） で検索</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
               </div>
             </div>
           </article>
+          <aside>
+            <div class="market">
+              <div class="shoplist-with-items" v-if=
+              "shops &amp;&amp; shops.length &gt; 0"></div>
+            </div>
+          </aside>
+          <script id="json_modules" type="application/json">
+          {"modules":[{"type":"text","title":"ライセンス","content":"このパッケージはMITライセンスで配布しています。\nライセンスはLICENSE.txtを参照してください。\nThis package is released under the MIT License, see LICENSE.txt.\nCopyright (c) Oyasumisan(お休みさん)\n\nまた、同梱しているシェーダー「Standard_Transparent.shader」はUnity 5.6.3f1に含まれるStandard Shaderの改変物であり、ライセンスはMITライセンスとなります。\nShadersフォルダ内のLICENSE.TXTを参照してください。\n\"Standard_Transparent.shader\" is released under the MIT License, see LICENSE.txt.\nCopyright (c) 2016 Unity Technologies."},{"type":"text","title":"インストール(Unityで使用する場合)","content":"Unityプロジェクトを開き、適当なフォルダに各fbxファイルと、Shadersフォルダ、Texturesフォルダをドラッグ\u0026ドロップしてください。\n\nいずれかのfbxファイルをヒエラルキーウインドウにドロップし、適宜設定を行って使用してください。\nfbxファイルは以下の3つがあります。\n\nCompactCamera.fbx　：通常のカメラ。(1084ポリゴン)\n背面に何かを写すなど用途を想定して別マテリアルが割り当てられています。\n\nCompactCamera_LargeScreen.fbx　：背面スクリーンのサイズのみ約2倍に広げたバージョン：枠付き。(1088ポリゴン)\n背面スクリーンをVRChatのカメラ機能に対してのフィルターとして使う場合は、こちらの使用がおすすめです。\nこちらはスクリーン面の周囲に細い枠がついています。\n\nCompactCamera_LargeScreen_noframe.fbx　：背面スクリーンのサイズのみ約2倍に広げたバージョン：枠なし。(1084ポリゴン)\nこちらはスクリーン面の周囲に枠はありません。"},{"type":"text","title":"一般的な使い方","content":"まずCompactCamera/CompactCameraのマテリアル「CameraBody」にて、シェーダー「Standard」を選択してください。\n\nAlbedoのテクスチャ欄に、Texturesフォルダ内に同梱している「CompactCamera_CameraBody_AlbedoTransparency.png」をセットし、色は白(#FFFFFF)にします。\n\nMetallicのテクスチャ欄に、Texturesフォルダ内に同梱している「CompactCamera_CameraBody_MetallicSmoothness.png」をセットします。\n\nNormal Mapのテクスチャ欄に、Texturesフォルダ内に同梱している「CompactCamera_CameraBody_Normal.png」をセットし、「Fix Now」ボタンをクリックします。\n\n次に、マテリアル「CameraScreen」にて、スクリーンに表示したい任意のシェーダーを選択・設定します。"},{"type":"text","title":"参考：「Kurotori_DoF_Filter」使用の場合の使い方","content":"当該シェーダーを使う場合、カメラ本体のメッシュが写り込まないよう対策する必要があります。\n補助として、スタンダードシェーダーを若干改変したものを添付しています。\n\nあらかじめKurotori_DoF_Filter.unitypackageはインポート済みとします。\nまずCompactCamera/CompactCameraのマテリアル「CameraBody」にて、シェーダー「Standard_Transparent」を選択してください。\nテクスチャの設定は一般的な使い方の場合と同じです。\n\n次に、マテリアル「CameraScreen」にて、シェーダー「Kurotori_DoF_Filter」または「Kurotori_DoF_Filter-Auto」を選択・設定します。\n(このカメラはオートフォーカスが売りですので、Autoのほうをお勧めします)\n設定方法は当該シェーダーの説明を参照してください。"},{"type":"text","title":"おまけ","content":"改変の参考として「for Customize」フォルダ内にUV展開図及び、IDマップとして使えるPNGファイルを同梱しています。"},{"type":"text","title":"更新履歴","content":"Ver 1.1\nCompactCamera_LargeScreen.fbxについて、スクリーン面に枠を追加。\n写真撮影用のフィルタとして使う際、フィルタの範囲がわかりやすくなりました。\nなお、従来のfbxはCompactCamera_LargeScreen_noframe.fbxとして格納しています。\n\nVer 1.0\n初版"}]}
+          </script>
         </div>
-        <aside>
-          <div class="shoplist-with-items" v-if=
-          "shops &amp;&amp; shops.length &gt; 0"></div>
-        </aside>
-        <script id="json_modules" type="application/json">
-        {"modules":[{"type":"text","title":"ライセンス","content":"このパッケージはMITライセンスで配布しています。\nライセンスはLICENSE.txtを参照してください。\nThis package is released under the MIT License, see LICENSE.txt.\nCopyright (c) Oyasumisan(お休みさん)\n\nまた、同梱しているシェーダー「Standard_Transparent.shader」はUnity 5.6.3f1に含まれるStandard Shaderの改変物であり、ライセンスはMITライセンスとなります。\nShadersフォルダ内のLICENSE.TXTを参照してください。\n\"Standard_Transparent.shader\" is released under the MIT License, see LICENSE.txt.\nCopyright (c) 2016 Unity Technologies."},{"type":"text","title":"インストール(Unityで使用する場合)","content":"Unityプロジェクトを開き、適当なフォルダに各fbxファイルと、Shadersフォルダ、Texturesフォルダをドラッグ\u0026ドロップしてください。\n\nいずれかのfbxファイルをヒエラルキーウインドウにドロップし、適宜設定を行って使用してください。\nfbxファイルは以下の3つがあります。\n\nCompactCamera.fbx　：通常のカメラ。(1084ポリゴン)\n背面に何かを写すなど用途を想定して別マテリアルが割り当てられています。\n\nCompactCamera_LargeScreen.fbx　：背面スクリーンのサイズのみ約2倍に広げたバージョン：枠付き。(1088ポリゴン)\n背面スクリーンをVRChatのカメラ機能に対してのフィルターとして使う場合は、こちらの使用がおすすめです。\nこちらはスクリーン面の周囲に細い枠がついています。\n\nCompactCamera_LargeScreen_noframe.fbx　：背面スクリーンのサイズのみ約2倍に広げたバージョン：枠なし。(1084ポリゴン)\nこちらはスクリーン面の周囲に枠はありません。"},{"type":"text","title":"一般的な使い方","content":"まずCompactCamera/CompactCameraのマテリアル「CameraBody」にて、シェーダー「Standard」を選択してください。\n\nAlbedoのテクスチャ欄に、Texturesフォルダ内に同梱している「CompactCamera_CameraBody_AlbedoTransparency.png」をセットし、色は白(#FFFFFF)にします。\n\nMetallicのテクスチャ欄に、Texturesフォルダ内に同梱している「CompactCamera_CameraBody_MetallicSmoothness.png」をセットします。\n\nNormal Mapのテクスチャ欄に、Texturesフォルダ内に同梱している「CompactCamera_CameraBody_Normal.png」をセットし、「Fix Now」ボタンをクリックします。\n\n次に、マテリアル「CameraScreen」にて、スクリーンに表示したい任意のシェーダーを選択・設定します。"},{"type":"text","title":"参考：「Kurotori_DoF_Filter」使用の場合の使い方","content":"当該シェーダーを使う場合、カメラ本体のメッシュが写り込まないよう対策する必要があります。\n補助として、スタンダードシェーダーを若干改変したものを添付しています。\n\nあらかじめKurotori_DoF_Filter.unitypackageはインポート済みとします。\nまずCompactCamera/CompactCameraのマテリアル「CameraBody」にて、シェーダー「Standard_Transparent」を選択してください。\nテクスチャの設定は一般的な使い方の場合と同じです。\n\n次に、マテリアル「CameraScreen」にて、シェーダー「Kurotori_DoF_Filter」または「Kurotori_DoF_Filter-Auto」を選択・設定します。\n(このカメラはオートフォーカスが売りですので、Autoのほうをお勧めします)\n設定方法は当該シェーダーの説明を参照してください。"},{"type":"text","title":"おまけ","content":"改変の参考として「for Customize」フォルダ内にUV展開図及び、IDマップとして使えるPNGファイルを同梱しています。"},{"type":"text","title":"更新履歴","content":"Ver 1.1\nCompactCamera_LargeScreen.fbxについて、スクリーン面に枠を追加。\n写真撮影用のフィルタとして使う際、フィルタの範囲がわかりやすくなりました。\nなお、従来のfbxはCompactCamera_LargeScreen_noframe.fbxとして格納しています。\n\nVer 1.0\n初版"}]}
-        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
