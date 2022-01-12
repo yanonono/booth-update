@@ -59,9 +59,13 @@
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
     <script src=
+    "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
+    defer="defer" nonce=
+    "WhE21QHnbIFZ6Kxc71SwrVLDxrnDh3pZQfMsCL2K7RE="></script>
+    <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "NErT7rrCr0evTRsOKXbbEfuivdaE5sBO/nXVdhX8h+Q="></script>
+    "WhE21QHnbIFZ6Kxc71SwrVLDxrnDh3pZQfMsCL2K7RE="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -74,7 +78,7 @@
     <script src=
     "https://asset.booth.pm/assets/ab357483f48c9496242e.js" defer=
     "defer" nonce=
-    "NErT7rrCr0evTRsOKXbbEfuivdaE5sBO/nXVdhX8h+Q="></script>
+    "WhE21QHnbIFZ6Kxc71SwrVLDxrnDh3pZQfMsCL2K7RE="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"オーダーメイドイラスト","description":"オーダーメイドでキャラクター（オリジナル・版権問わず）の画像を作成致します。\n\nお支払いは完成の目処が立ったタイミングでお願いしています。\n現在在庫０になっていますが注文を受けた後で設定し直します。\n依頼は随時受付中なので、まずはお気軽にご連絡ください。\n\n下記の本文を最後までお読み下さい。","url":"https://booth.pm/ja/items/1216688","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"10000"},"image":"https://booth.pximg.net/c/620x620/484fd3bd-ab86-46c4-a192-90b882962424/i/1216688/577224f6-6cfb-4dec-891c-d670f4dff323_base_resized.jpg"}
     </script>
@@ -91,7 +95,7 @@
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "NErT7rrCr0evTRsOKXbbEfuivdaE5sBO/nXVdhX8h+Q="></script>
+    "WhE21QHnbIFZ6Kxc71SwrVLDxrnDh3pZQfMsCL2K7RE="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -100,18 +104,19 @@
         <div class="recaptcha-tag" data-action=
         "booth/checkout_order" data-site-key=
         "6LfF1dcZAAAAAOHQX8v16MX5SktDwmQINVD_6mBF"></div>
-        <div class="market-item-detail u-bg-white"
-        data-ga-tracking-id="UA-133881524-1" data-product-brand=
-        "kazunou" data-product-category="129" data-product-id=
-        "1216688" data-product-list="market_show"
+        <div class="market" data-ga-tracking-id="UA-133881524-1"
+        data-product-brand="kazunou" data-product-category="129"
+        data-product-id="1216688" data-product-list="market_show"
         data-product-price="3000"
         data-shop-tracking-product-category="Icons"
         data-shop-tracking-product-id="1216688"
         data-shop-tracking-product-name="オーダーメイドイラスト"
         data-shop-tracking-product-price="3000" data-tracking=
-        "detail_item">
+        "detail_item" id="items">
+          <div class="market"></div>
           <nav>
-            <div class="breadcrumbs u-border-b u-border-100">
+            <div class=
+            "market breadcrumbs u-bg-white u-border-b u-border-100">
               <div class="container">
                 <div class="breadcrumb">
                   <a class="label" data-tracking="click"
@@ -134,52 +139,53 @@
           </nav>
           <article>
             <div class=
-            "market-item-detail-article u-d-flex u-flex-column u-align-items-center u-pb-600 u-bg-white">
-              <div class="container">
-                <div class="market-item-detail__exhibition-banner">
-                </div>
-              </div>
-              <div class="u-bg-white u-pt-600 u-px-700">
+            "market market-item-detail item-info-detail u-bg-white">
+              <div class=
+              "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class="u-d-flex">
-                    <div class="u-order-1 l-col-2of5 u-pl-600">
-                      <header>
-                        <div class="u-mb-200">
-                          <div class="eventname-flag">
-                            <a class="eventname-flag--inner"
-                            data-tracking="click"
-                            data-product-list="from market_show via eventname_flag to event_index"
-                            href=
-                            "https://booth.pm/ja/events/v-market2">
-                            <div class="eventname-flag__name">
-                              Vケット2
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
+                  <div class="u-pt-600 u-d-flex">
+                    <div class=
+                    "summary u-order-1 l-col-2of5 u-pl-600">
+                      <div class="mobile-section">
+                        <header>
+                          <div class="u-mb-200">
+                            <div class="eventname-flag">
+                              <a class="eventname-flag--inner"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via eventname_flag to event_index"
+                              href=
+                              "https://booth.pm/ja/events/v-market2">
+                              <div class="eventname-flag__name">
+                                Vケット2
+                              </div></a>
+                            </div>
+                          </div>
+                          <div class="u-my-200 u-tpg-title3">
+                            <a class="nav" target="_blank"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" rel="noopener"
+                            href="https://kazunou.booth.pm/">
+                            <div class=
+                            "u-d-flex u-align-items-center">
+                              <img alt="かずまるSHOP" class=
+                              "user-avatar at-item-summary" src=
+                              "https://booth.pximg.net/c/48x48/users/835079/icon_image/68f07424-20d8-4777-b97c-dab89b79b9cc_base_resized.jpg">
+                              <div class="u-text-ellipsis">
+                                かずまるSHOP
+                              </div>
                             </div></a>
                           </div>
-                        </div>
-                        <div class="u-my-200 u-tpg-title3">
-                          <a class="nav" target="_blank"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" rel="noopener"
-                          href="https://kazunou.booth.pm/">
+                          <h2 class=
+                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                            オーダーメイドイラスト
+                          </h2>
                           <div class=
-                          "u-d-flex u-align-items-center">
-                            <img alt="かずまるSHOP" class=
-                            "user-avatar at-item-summary" src=
-                            "https://booth.pximg.net/c/48x48/users/835079/icon_image/68f07424-20d8-4777-b97c-dab89b79b9cc_base_resized.jpg">
-                            <div class="u-text-ellipsis">
-                              かずまるSHOP
-                            </div>
-                          </div></a>
-                        </div>
-                        <h2 class=
-                        "u-text-wrap u-tpg-title1 u-mt-0 u-mb-400">
-                          オーダーメイドイラスト
-                        </h2>
-                        <div class=
-                        "u-text-assertive u-tpg-caption1"></div>
-                      </header>
-                      <section>
+                          "u-text-assertive u-tpg-caption1"></div>
+                        </header>
                         <div class="wish-list-link">
                           <a class="add-to-wish-list"
                           data-tracking="add_to_wishlist"
@@ -471,23 +477,31 @@
                             </li>
                           </ul>
                         </div>
-                      </section>
+                      </div>
                       <section>
                         <div class=
                         "share-btns u-d-flex u-flex-1 u-justify-content-start u-px-200 u-py-400">
-                          <a data-url=
-                          "https://booth.pm/ja/items/1216688"
-                          data-lang="ja" data-hashtags="booth_pm"
-                          data-text="オーダーメイドイラスト | かずまるSHOP"
-                          data-count="none" class=
-                          "twitter-share-button" href=
-                          "https://twitter.com/share">ツイート</a>
-                          <div class="u-ml-300">
+                          <div class="social-btn">
+                            <a data-url=
+                            "https://booth.pm/ja/items/1216688"
+                            data-lang="ja" data-hashtags="booth_pm"
+                            data-text="オーダーメイドイラスト | かずまるSHOP"
+                            data-count="none" class=
+                            "twitter-share-button" href=
+                            "https://twitter.com/share">ツイート</a>
+                          </div>
+                          <div class="social-btn u-ml-300">
                             <div class="fb-like" data-action="like"
                             data-href=
                             "https://booth.pm/ja/items/1216688"
                             data-layout="button_count" data-share=
                             "false" data-show-faces="false"></div>
+                          </div>
+                          <div class="mobile social-btn u-mx-200">
+                            <div class="line-it-button" data-lang=
+                            "ja" data-type="share-a" data-url=
+                            "https://booth.pm/ja/items/1216688"
+                            style="display: none;"></div>
                           </div>
                         </div>
                       </section>
@@ -529,7 +543,7 @@
                         </div>
                       </div>
                       <div class=
-                      "primary-image-thumbnails u-d-sp-none">
+                      "primary-image-thumbnails u-d-sp-none image-list">
                         <a class="pointer">
                         <div class="slick-thumbnail-border">
                           <img src=
@@ -544,9 +558,9 @@
                           "https://booth.pximg.net/c/72x72_a2_g5/484fd3bd-ab86-46c4-a192-90b882962424/i/1216688/6807766c-be27-4628-9670-184b5db29c6a_base_resized.jpg">
                         </div></a>
                       </div>
-                      <section>
+                      <section class="main-info-column">
                         <div class=
-                        "js-market-item-detail-description">
+                        "js-market-item-detail-description description">
                           <p class="autolink u-text-wrap">
                             オーダーメイドでキャラクター（オリジナル・版権問わず）の画像を作成致します。
                             お支払いは完成の目処が立ったタイミングでお願いしています。
@@ -556,130 +570,139 @@
                           </p>
                         </div>
                       </section>
-                      <section>
-                        <div class="u-text-wrap page_design" id=
-                        "modules"></div>
-                      </section>
+                      <section class="u-text-wrap page_design" id=
+                      "modules"></section>
                     </div>
                   </div>
+                  <section class="container">
+                    <div class="u-border-t u-py-500">
+                      <div class="mobile-section">
+                        <h3 class="u-m-0">
+                          タグ
+                        </h3>
+                      </div>
+                      <div class="search-guide-nav">
+                        <div class="search-guide-slider-wrapper">
+                          <div class="search-guide-slider">
+                            <div class=
+                            "search-guide-slider-container">
+                              <a class="search-guide-tablet"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  アイコン
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/LINE">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  LINE
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/Twitter">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  Twitter
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%82%AA%E3%83%BC%E3%83%80%E3%83%BC%E3%83%A1%E3%82%A4%E3%83%89">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  オーダーメイド
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/Discord">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  Discord
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%82%B5%E3%83%A0%E3%83%8D%E3%82%A4%E3%83%AB">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  サムネイル
+                                </div>
+                              </div></a>
+                            </div>
+                          </div><a class=
+                          "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
+                        </div>
+                      </div>
+                      <div class="mobile-section">
+                        <div class="u-my-500 u-mt-sp-300">
+                          <a class=
+                          "btn btn--default-outline u-tpg-caption1 u-text-wrap"
+                          data-tracking="click" data-product-list=
+                          "from market_show via tag_category_search to search_index"
+                          href=
+                          "https://booth.pm/ja/browse/%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3?q=%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3">
+                          アイコン x アイコン で検索</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-                <section class="container">
-                  <div class="u-border-t u-py-500">
-                    <div class="mobile-section">
-                      <h3 class="u-m-0">
-                        タグ
-                      </h3>
-                    </div>
-                    <div class="search-guide-nav">
-                      <div class="search-guide-slider-wrapper">
-                        <div class="search-guide-slider">
-                          <div class=
-                          "search-guide-slider-container">
-                            <a class="search-guide-tablet"
-                            data-tracking="click"
-                            data-product-list="from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                アイコン
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href="https://booth.pm/ja/search/LINE">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                LINE
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/Twitter">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                Twitter
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%82%AA%E3%83%BC%E3%83%80%E3%83%BC%E3%83%A1%E3%82%A4%E3%83%89">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                オーダーメイド
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/Discord">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                Discord
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%82%B5%E3%83%A0%E3%83%8D%E3%82%A4%E3%83%AB">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                サムネイル
-                              </div>
-                            </div></a>
-                          </div>
-                        </div><a class=
-                        "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
-                      </div>
-                    </div>
-                    <div class="mobile-section">
-                      <div class="u-my-500 u-mt-sp-300">
-                        <a class=
-                        "btn btn--default-outline u-tpg-caption1 u-text-wrap"
-                        data-tracking="click" data-product-list=
-                        "from market_show via tag_category_search to search_index"
-                        href=
-                        "https://booth.pm/ja/browse/%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3?q=%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3">
-                        アイコン x アイコン で検索</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
               </div>
             </div>
           </article>
+          <aside>
+            <div class="market">
+              <div class="shoplist-with-items" v-if=
+              "shops &amp;&amp; shops.length &gt; 0"></div>
+            </div>
+          </aside>
+          <script id="json_modules" type="application/json">
+          {"modules":[{"type":"text","title":"オーダーイラスト作成","content":"SNSのアイコンやヘッダー、VRchat内でのサムネイル画像などにキャラクターのイラストを作成させて頂きます。\n\nオリジナルキャラクター、改変キャラクター、版権モノなどお好みのキャラを描き起こします。\n\n※個人での使用に限ります、ダウンロード販売の作品に使われる際は別途ご相談ください。\n※依頼される前に、著作権元の規約を再度ご確認ください。個人使用のアバターは規約の確認ができませんので、規約の範疇内である事を前提として依頼を受けます。\n\n\n【商品説明】\n・解像度＝150dpi\n・サイズは用途にてご相談ください\n・ファイル形式＝jpg、png\n・背景＝透過、単色、柄パターン\n・納期＝打ち合わせ後５～１０日程度\n・別途オプション＝表情差分（500円)服、装備（1000円～）\n・ラフ、線画完成の段階でご確認いただきますが、お返事が遅れると納期が遅れる事もあります\n・リテイクはラフの段階で２回まで、塗りの段階で２回までとさせて下さい\n・塗りに入る段階でご購入頂きます\n\n・個人での加工、編集などはご自由にお使い下さい\n・営利目的での利用は禁止とさせて頂きます（その際は別途ご連絡下さい）\n・著作権は放棄致しません（他者への販売は致しませんが作品サンプルなどで使用致します）\n\n連絡はTwitterのDM（⑩→＠：⑩kazunou）Discord（かずまる#8088）VRchat（IDかずまる）にて直接お願いします。\n\nご質問等ございましたら、お気軽にご連絡ください。\n\n購入後ブーストしたい人の為にこんなの作りました。\nhttps://kazunou.booth.pm/items/1536524\nよろしければご利用ください。"},{"type":"text","title":"","content":"許可が取れているアバター一覧（許可貰えた順）↓\n\n\nアルマジロン様\nhttps://armadillon.booth.pm/\n『メディカルセンタースタッフさん』『スノウエルフのお嬢様』\n\n長兎路こより様\nhttps://nagatorokoyori.booth.pm/\n『ファジー』『マロン』\n\n⊿S.I.N様\nhttps://tomori-hikage.booth.pm/\n『シャーロ』『フェイリア』\n\nナムザル様\nhttps://namzaru-shop.booth.pm/\n『NEON』\n\nノラネコP様\nhttps://noracat.booth.pm/\n『のらきゃっと』『量産型のらきゃっと』\n\nふぃな様\nhttps://ficsnade.booth.pm/\n『Lua』\n\n冴吹稔様\nhttps://kidaidai.booth.pm/\n『カイルダイン』『嵐剣丸』『ヴァルク』他\n\n偽紳士様\nhttps://ryuugadou.booth.pm/\n『みずあお』\n\nシリンダ様\n『きつねちゃん』\n\nこまど様\nhttps://komado.booth.pm/\n『ミルク』『リル』『シナモン』他\n\nウメ太様\nhttps://umeumeta.booth.pm/\n『サンギータ』『伊麻狸』『ククル』他\n\nびよら様\nhttps://hakoniworks.booth.pm/\n『モクモクラン』\n\nmuta様\nhttps://mutachannel.booth.pm/\n『リンツ』『モナカ』『キッシュ』\n\n潮留様\nhttps://siodamari.booth.pm/\n『ナナナ/ネコシロ』\n\nNEG-13様\nhttps://neg-13.booth.pm/\n『猫魔女 アカゲ』『超獣擬我ツツジ』\n\nYAMIRIN様\nhttps://yamirin.booth.pm/\n『Michelle Bunny』\n\nぽんでろ様\nhttps://ponderogen.booth.pm/\n『ミーシェ』『クレリック』『フェンサー』\n\n香坂様\nhttps://nyahuuu.booth.pm/\n『リラン -Liran-』『狐鈴 -Kosuzu- 』『セィミヤ -Slimiya-』他"}]}
+          </script>
         </div>
-        <aside>
-          <div class="shoplist-with-items" v-if=
-          "shops &amp;&amp; shops.length &gt; 0"></div>
-        </aside>
-        <script id="json_modules" type="application/json">
-        {"modules":[{"type":"text","title":"オーダーイラスト作成","content":"SNSのアイコンやヘッダー、VRchat内でのサムネイル画像などにキャラクターのイラストを作成させて頂きます。\n\nオリジナルキャラクター、改変キャラクター、版権モノなどお好みのキャラを描き起こします。\n\n※個人での使用に限ります、ダウンロード販売の作品に使われる際は別途ご相談ください。\n※依頼される前に、著作権元の規約を再度ご確認ください。個人使用のアバターは規約の確認ができませんので、規約の範疇内である事を前提として依頼を受けます。\n\n\n【商品説明】\n・解像度＝150dpi\n・サイズは用途にてご相談ください\n・ファイル形式＝jpg、png\n・背景＝透過、単色、柄パターン\n・納期＝打ち合わせ後５～１０日程度\n・別途オプション＝表情差分（500円)服、装備（1000円～）\n・ラフ、線画完成の段階でご確認いただきますが、お返事が遅れると納期が遅れる事もあります\n・リテイクはラフの段階で２回まで、塗りの段階で２回までとさせて下さい\n・塗りに入る段階でご購入頂きます\n\n・個人での加工、編集などはご自由にお使い下さい\n・営利目的での利用は禁止とさせて頂きます（その際は別途ご連絡下さい）\n・著作権は放棄致しません（他者への販売は致しませんが作品サンプルなどで使用致します）\n\n連絡はTwitterのDM（⑩→＠：⑩kazunou）Discord（かずまる#8088）VRchat（IDかずまる）にて直接お願いします。\n\nご質問等ございましたら、お気軽にご連絡ください。\n\n購入後ブーストしたい人の為にこんなの作りました。\nhttps://kazunou.booth.pm/items/1536524\nよろしければご利用ください。"},{"type":"text","title":"","content":"許可が取れているアバター一覧（許可貰えた順）↓\n\n\nアルマジロン様\nhttps://armadillon.booth.pm/\n『メディカルセンタースタッフさん』『スノウエルフのお嬢様』\n\n長兎路こより様\nhttps://nagatorokoyori.booth.pm/\n『ファジー』『マロン』\n\n⊿S.I.N様\nhttps://tomori-hikage.booth.pm/\n『シャーロ』『フェイリア』\n\nナムザル様\nhttps://namzaru-shop.booth.pm/\n『NEON』\n\nノラネコP様\nhttps://noracat.booth.pm/\n『のらきゃっと』『量産型のらきゃっと』\n\nふぃな様\nhttps://ficsnade.booth.pm/\n『Lua』\n\n冴吹稔様\nhttps://kidaidai.booth.pm/\n『カイルダイン』『嵐剣丸』『ヴァルク』他\n\n偽紳士様\nhttps://ryuugadou.booth.pm/\n『みずあお』\n\nシリンダ様\n『きつねちゃん』\n\nこまど様\nhttps://komado.booth.pm/\n『ミルク』『リル』『シナモン』他\n\nウメ太様\nhttps://umeumeta.booth.pm/\n『サンギータ』『伊麻狸』『ククル』他\n\nびよら様\nhttps://hakoniworks.booth.pm/\n『モクモクラン』\n\nmuta様\nhttps://mutachannel.booth.pm/\n『リンツ』『モナカ』『キッシュ』\n\n潮留様\nhttps://siodamari.booth.pm/\n『ナナナ/ネコシロ』\n\nNEG-13様\nhttps://neg-13.booth.pm/\n『猫魔女 アカゲ』『超獣擬我ツツジ』\n\nYAMIRIN様\nhttps://yamirin.booth.pm/\n『Michelle Bunny』\n\nぽんでろ様\nhttps://ponderogen.booth.pm/\n『ミーシェ』『クレリック』『フェンサー』\n\n香坂様\nhttps://nyahuuu.booth.pm/\n『リラン -Liran-』『狐鈴 -Kosuzu- 』『セィミヤ -Slimiya-』他"}]}
-        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
