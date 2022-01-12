@@ -59,9 +59,13 @@
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
     <script src=
+    "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
+    defer="defer" nonce=
+    "wdCyTbVXOSpgYcj65tRdCdKEO4uy6bF4dmsYu3hWO2E="></script>
+    <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "po1BD6+3MLBGYIxrQ5aXrz64Vyv8vNj4tJG8Jt0aLbQ="></script>
+    "wdCyTbVXOSpgYcj65tRdCdKEO4uy6bF4dmsYu3hWO2E="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -74,7 +78,7 @@
     <script src=
     "https://asset.booth.pm/assets/ab357483f48c9496242e.js" defer=
     "defer" nonce=
-    "po1BD6+3MLBGYIxrQ5aXrz64Vyv8vNj4tJG8Jt0aLbQ="></script>
+    "wdCyTbVXOSpgYcj65tRdCdKEO4uy6bF4dmsYu3hWO2E="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"亜-03式小型自動小銃(追加DLC)【VRChat向け】","description":"【重要】\n本製品は追加DLCです。本製品単体ではとても使える状態じゃありませんので亜-03式自動小銃(200円の方)に含まれているベースモデルと組み合わせてください\n【注意】\n・商品画像は動く城のフィオのお店 様の「裏面を描画するStandardシェーダー」を使用しています。本製品には含まれていません。","url":"https://booth.pm/ja/items/1379156","offers":{"priceCurrency":"JPY","@type":"Offer","price":"100"},"image":"https://booth.pximg.net/c/620x620/41af4b60-c647-4ace-80c0-e2874277d5ec/i/1379156/e4ab1ca7-0846-41d6-9e8c-b3a132cd7fa0_base_resized.jpg"}
     </script>
@@ -91,7 +95,7 @@
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "po1BD6+3MLBGYIxrQ5aXrz64Vyv8vNj4tJG8Jt0aLbQ="></script>
+    "wdCyTbVXOSpgYcj65tRdCdKEO4uy6bF4dmsYu3hWO2E="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -100,13 +104,15 @@
         <div class="recaptcha-tag" data-action=
         "booth/checkout_order" data-site-key=
         "6LfF1dcZAAAAAOHQX8v16MX5SktDwmQINVD_6mBF"></div>
-        <div class="market-item-detail u-bg-white"
-        data-ga-tracking-id="" data-product-brand="hakuahi"
-        data-product-category="210" data-product-id="1379156"
-        data-product-list="market_show" data-product-price="100"
-        data-tracking="detail_item">
+        <div class="market" data-ga-tracking-id=""
+        data-product-brand="hakuahi" data-product-category="210"
+        data-product-id="1379156" data-product-list="market_show"
+        data-product-price="100" data-tracking="detail_item" id=
+        "items">
+          <div class="market"></div>
           <nav>
-            <div class="breadcrumbs u-border-b u-border-100">
+            <div class=
+            "market breadcrumbs u-bg-white u-border-b u-border-100">
               <div class="container">
                 <div class="breadcrumb">
                   <a class="label" data-tracking="click"
@@ -127,40 +133,40 @@
           </nav>
           <article>
             <div class=
-            "market-item-detail-article u-d-flex u-flex-column u-align-items-center u-pb-600 u-bg-white">
-              <div class="container">
-                <div class="market-item-detail__exhibition-banner">
-                </div>
-              </div>
-              <div class="u-bg-white u-pt-600 u-px-700">
+            "market market-item-detail item-info-detail u-bg-white">
+              <div class=
+              "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class="u-d-flex">
-                    <div class="u-order-1 l-col-2of5 u-pl-600">
-                      <header>
-                        <div class="u-my-200 u-tpg-title3">
-                          <a class="nav" target="_blank"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" rel="noopener"
-                          href="https://hakuahi.booth.pm/">
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
+                  <div class="u-pt-600 u-d-flex">
+                    <div class=
+                    "summary u-order-1 l-col-2of5 u-pl-600">
+                      <div class="mobile-section">
+                        <header>
+                          <div class="u-my-200 u-tpg-title3">
+                            <a class="nav" target="_blank"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" rel="noopener"
+                            href="https://hakuahi.booth.pm/">
+                            <div class=
+                            "u-d-flex u-align-items-center">
+                              <img alt="白亜重工" class=
+                              "user-avatar at-item-summary" src=
+                              "https://booth.pximg.net/c/48x48/users/5327731/icon_image/59451fdc-9e57-435a-870f-12a22b45e50e_base_resized.jpg">
+                              <div class="u-text-ellipsis">
+                                白亜重工
+                              </div>
+                            </div></a>
+                          </div>
+                          <h2 class=
+                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                            亜-03式小型自動小銃(追加DLC)【VRChat向け】
+                          </h2>
                           <div class=
-                          "u-d-flex u-align-items-center">
-                            <img alt="白亜重工" class=
-                            "user-avatar at-item-summary" src=
-                            "https://booth.pximg.net/c/48x48/users/5327731/icon_image/59451fdc-9e57-435a-870f-12a22b45e50e_base_resized.jpg">
-                            <div class="u-text-ellipsis">
-                              白亜重工
-                            </div>
-                          </div></a>
-                        </div>
-                        <h2 class=
-                        "u-text-wrap u-tpg-title1 u-mt-0 u-mb-400">
-                          亜-03式小型自動小銃(追加DLC)【VRChat向け】
-                        </h2>
-                        <div class=
-                        "u-text-assertive u-tpg-caption1"></div>
-                      </header>
-                      <section>
+                          "u-text-assertive u-tpg-caption1"></div>
+                        </header>
                         <div class="wish-list-link">
                           <a class="add-to-wish-list"
                           data-tracking="add_to_wishlist"
@@ -213,24 +219,32 @@
                             </li>
                           </ul>
                         </div>
-                      </section>
+                      </div>
                       <section>
                         <div class=
                         "share-btns u-d-flex u-flex-1 u-justify-content-start u-px-200 u-py-400">
-                          <a data-url=
-                          "https://booth.pm/ja/items/1379156"
-                          data-lang="ja" data-hashtags="booth_pm"
-                          data-text=
-                          "亜-03式小型自動小銃(追加DLC)【VRChat向け】 | 白亜重工"
-                          data-count="none" class=
-                          "twitter-share-button" href=
-                          "https://twitter.com/share">ツイート</a>
-                          <div class="u-ml-300">
+                          <div class="social-btn">
+                            <a data-url=
+                            "https://booth.pm/ja/items/1379156"
+                            data-lang="ja" data-hashtags="booth_pm"
+                            data-text=
+                            "亜-03式小型自動小銃(追加DLC)【VRChat向け】 | 白亜重工"
+                            data-count="none" class=
+                            "twitter-share-button" href=
+                            "https://twitter.com/share">ツイート</a>
+                          </div>
+                          <div class="social-btn u-ml-300">
                             <div class="fb-like" data-action="like"
                             data-href=
                             "https://booth.pm/ja/items/1379156"
                             data-layout="button_count" data-share=
                             "false" data-show-faces="false"></div>
+                          </div>
+                          <div class="mobile social-btn u-mx-200">
+                            <div class="line-it-button" data-lang=
+                            "ja" data-type="share-a" data-url=
+                            "https://booth.pm/ja/items/1379156"
+                            style="display: none;"></div>
                           </div>
                         </div>
                       </section>
@@ -316,7 +330,7 @@
                         </div>
                       </div>
                       <div class=
-                      "primary-image-thumbnails u-d-sp-none">
+                      "primary-image-thumbnails u-d-sp-none image-list">
                         <a class="pointer">
                         <div class="slick-thumbnail-border">
                           <img src=
@@ -347,9 +361,9 @@
                           "https://booth.pximg.net/c/72x72_a2_g5/41af4b60-c647-4ace-80c0-e2874277d5ec/i/1379156/e85c3343-19de-4557-b443-8921e9f00c70_base_resized.jpg">
                         </div></a>
                       </div>
-                      <section>
+                      <section class="main-info-column">
                         <div class=
-                        "js-market-item-detail-description">
+                        "js-market-item-detail-description description">
                           <p class="autolink u-text-wrap">
                             【重要】
                             本製品は追加DLCです。本製品単体ではとても使える状態じゃありませんので亜-03式自動小銃(200円の方)に含まれているベースモデルと組み合わせてください
@@ -358,120 +372,127 @@
                           </p>
                         </div>
                       </section>
-                      <section>
-                        <div class="u-text-wrap page_design" id=
-                        "modules"></div>
-                      </section>
+                      <section class="u-text-wrap page_design" id=
+                      "modules"></section>
                     </div>
                   </div>
+                  <section class="container">
+                    <div class="u-border-t u-py-500">
+                      <div class="mobile-section">
+                        <h3 class="u-m-0">
+                          タグ
+                        </h3>
+                      </div>
+                      <div class="search-guide-nav">
+                        <div class="search-guide-slider-wrapper">
+                          <div class="search-guide-slider">
+                            <div class=
+                            "search-guide-slider-container">
+                              <a class="search-guide-tablet"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%83%9F%E3%83%AA%E3%82%BF%E3%83%AA%E3%83%BC">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  ミリタリー
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E9%8A%83">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  銃
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E6%AD%A6%E5%99%A8">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  武器
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3Dモデル
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E8%A3%85%E5%82%99">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  装備
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat
+                                </div>
+                              </div></a>
+                            </div>
+                          </div><a class=
+                          "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
+                        </div>
+                      </div>
+                      <div class="mobile-section">
+                        <div class="u-my-500 u-mt-sp-300">
+                          <a class=
+                          "btn btn--default-outline u-tpg-caption1 u-text-wrap"
+                          data-tracking="click" data-product-list=
+                          "from market_show via tag_category_search to search_index"
+                          href=
+                          "https://booth.pm/ja/browse/3D%E5%B0%8F%E9%81%93%E5%85%B7?q=%E3%83%9F%E3%83%AA%E3%82%BF%E3%83%AA%E3%83%BC">
+                          ミリタリー x 3D小道具 で検索</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-                <section class="container">
-                  <div class="u-border-t u-py-500">
-                    <div class="mobile-section">
-                      <h3 class="u-m-0">
-                        タグ
-                      </h3>
-                    </div>
-                    <div class="search-guide-nav">
-                      <div class="search-guide-slider-wrapper">
-                        <div class="search-guide-slider">
-                          <div class=
-                          "search-guide-slider-container">
-                            <a class="search-guide-tablet"
-                            data-tracking="click"
-                            data-product-list="from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%83%9F%E3%83%AA%E3%82%BF%E3%83%AA%E3%83%BC">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                ミリタリー
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E9%8A%83">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                銃
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E6%AD%A6%E5%99%A8">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                武器
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3Dモデル
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E8%A3%85%E5%82%99">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                装備
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat
-                              </div>
-                            </div></a>
-                          </div>
-                        </div><a class=
-                        "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
-                      </div>
-                    </div>
-                    <div class="mobile-section">
-                      <div class="u-my-500 u-mt-sp-300">
-                        <a class=
-                        "btn btn--default-outline u-tpg-caption1 u-text-wrap"
-                        data-tracking="click" data-product-list=
-                        "from market_show via tag_category_search to search_index"
-                        href=
-                        "https://booth.pm/ja/browse/3D%E5%B0%8F%E9%81%93%E5%85%B7?q=%E3%83%9F%E3%83%AA%E3%82%BF%E3%83%AA%E3%83%BC">
-                        ミリタリー x 3D小道具 で検索</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
               </div>
             </div>
           </article>
+          <aside>
+            <div class="market">
+              <div class="shoplist-with-items" v-if=
+              "shops &amp;&amp; shops.length &gt; 0"></div>
+            </div>
+          </aside>
+          <script id="json_modules" type="application/json">
+          {"modules":[{"type":"text","title":"ー製品説明ー","content":"●亜-03式小型自動小銃　TypeA-03AssaultRifleShortModel\n亜-03式自動小銃は世界中のあらゆるユーザー、軍隊、特殊部隊、民兵、ストリートギャングのために設計されました。\n多くの過酷なテストに合格し、どんな状況下でも快適に動作する亜-03式自動小銃は命を預けられる相棒にふさわしいでしょう。\n構造は単純でメンテナスも簡単、\"サブスタンスペイント\"を使わない製法により低コスト化を実現しています。\n今回の改修ではバレルを切り詰めショートカービン化を実現しました。これによりさらなる機動性を体験することができるでしょう。\n長すぎるバレルをドアに引っ掛けることはもうありません。\n\n弾薬は5.56mm　装弾数30発　ロングストロークピストン式　セミオートフルオート選択可能　マガジンはGA-01シリーズと共通サイズ　\nピカティニーレールを搭載し自由にカスタムが可能。　\nリアサイトは取り外せ、フロントサイトは折りたためます。　\nマガジンキャッチ、セレクターは左右両方にあり操作性に優れています。\nストックは折りたため、コンパクトにすることができます。\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n〇200円の方に含まれているDLC-Baseと組み合わせてご利用ください。\n\n〇シェイプキーにより可動するパーツがあります\n\n〇フラッシュサップレッサーは外すことができますのでお好みのハイダーをお付けください\n"},{"type":"text","title":"ー製品内容ー","content":"・本体fbx(DLC部分のみ)\n・テクスチャ\n・Unitypackage\n〇ベースモデルのFbxと本製品のprefabを組み合わせて使うと面倒がなさそうです。お手数ですが不要なメッシュは手動で非表示にしてください。"},{"type":"text","title":"ー利用規約ー","content":"当データの著作権は製作者である白亜重工(白雪)に帰属します\n改変・商用利用は許可されています\n下記の禁止事項に抵触した時点で当モデルの使用権は自動的に終了します\n以下規約に従った上でご自由お使いください\n●禁止事項\n・本製品を取り出せる形での再配布・再販売\n・製作者を偽る言動\n・特定の個人や団体への誹謗中傷のための使用\n●免責事項\n当データを使用して発生したトラブルに一切の責任を製作者は負いません\nご利用は自己責任でお願いします"}]}
+          </script>
         </div>
-        <aside>
-          <div class="shoplist-with-items" v-if=
-          "shops &amp;&amp; shops.length &gt; 0"></div>
-        </aside>
-        <script id="json_modules" type="application/json">
-        {"modules":[{"type":"text","title":"ー製品説明ー","content":"●亜-03式小型自動小銃　TypeA-03AssaultRifleShortModel\n亜-03式自動小銃は世界中のあらゆるユーザー、軍隊、特殊部隊、民兵、ストリートギャングのために設計されました。\n多くの過酷なテストに合格し、どんな状況下でも快適に動作する亜-03式自動小銃は命を預けられる相棒にふさわしいでしょう。\n構造は単純でメンテナスも簡単、\"サブスタンスペイント\"を使わない製法により低コスト化を実現しています。\n今回の改修ではバレルを切り詰めショートカービン化を実現しました。これによりさらなる機動性を体験することができるでしょう。\n長すぎるバレルをドアに引っ掛けることはもうありません。\n\n弾薬は5.56mm　装弾数30発　ロングストロークピストン式　セミオートフルオート選択可能　マガジンはGA-01シリーズと共通サイズ　\nピカティニーレールを搭載し自由にカスタムが可能。　\nリアサイトは取り外せ、フロントサイトは折りたためます。　\nマガジンキャッチ、セレクターは左右両方にあり操作性に優れています。\nストックは折りたため、コンパクトにすることができます。\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n〇200円の方に含まれているDLC-Baseと組み合わせてご利用ください。\n\n〇シェイプキーにより可動するパーツがあります\n\n〇フラッシュサップレッサーは外すことができますのでお好みのハイダーをお付けください\n"},{"type":"text","title":"ー製品内容ー","content":"・本体fbx(DLC部分のみ)\n・テクスチャ\n・Unitypackage\n〇ベースモデルのFbxと本製品のprefabを組み合わせて使うと面倒がなさそうです。お手数ですが不要なメッシュは手動で非表示にしてください。"},{"type":"text","title":"ー利用規約ー","content":"当データの著作権は製作者である白亜重工(白雪)に帰属します\n改変・商用利用は許可されています\n下記の禁止事項に抵触した時点で当モデルの使用権は自動的に終了します\n以下規約に従った上でご自由お使いください\n●禁止事項\n・本製品を取り出せる形での再配布・再販売\n・製作者を偽る言動\n・特定の個人や団体への誹謗中傷のための使用\n●免責事項\n当データを使用して発生したトラブルに一切の責任を製作者は負いません\nご利用は自己責任でお願いします"}]}
-        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
