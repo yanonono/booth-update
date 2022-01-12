@@ -59,47 +59,26 @@
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
     <script src=
+    "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
+    defer="defer" nonce=
+    "hDVEAPr6Ratg19O8aoIjba8BPLxCOGJGYKi9r0Zoa50="></script>
+    <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "8BIf7N5k2dHbQAoBLffJpY7p6Cl76iuWdGta9sd8MNY="></script>
+    "hDVEAPr6Ratg19O8aoIjba8BPLxCOGJGYKi9r0Zoa50="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
-  </head>
-  <body>
-    <div class="mini-player-controller" style="display: none;">
-      <a class="scroller" data-smooth-scroll="true"><img class=
-      "mini-player-controller__image" src=
-      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
-      data-smooth-scroll="true">
-      <div class="mini-player-information__item-name"></div>
-      <div class="mini-player-information__shop-name"></div>
-      <div class="mini-player-information__navigation">
-        試聴中の商品へスクロール
-      </div></a>
-      <div class="mini-player-controls">
-        <div class="mini-player-mode-ui">
-          <div class="mini-player-mode-ui__knob"></div>
-          <div class="mini-player-mode-ui__short">
-            15秒
-          </div>
-          <div class="mini-player-mode-ui__full">
-            フル
-          </div>
-        </div>
-        <div class="mini-player-play-ui"></div>
-      </div>
-    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
     "https://asset.booth.pm/assets/ab357483f48c9496242e.js" defer=
     "defer" nonce=
-    "8BIf7N5k2dHbQAoBLffJpY7p6Cl76iuWdGta9sd8MNY="></script>
+    "hDVEAPr6Ratg19O8aoIjba8BPLxCOGJGYKi9r0Zoa50="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"[VRChat向け3Dモデル] うさみみウェイトレスさん","description":"[VRChat向け3Dモデル]　うさみみウェイトレスさん\n\nVRChatを想定したアバターモデルです。\nUnity2018に対応しています。\nVRMも付属しています。\nアバター3.0に対応しています。\n\nゲームや映像作品の素材としてもおつかいただけます。\n\nこのアバターは別途DynamicBoneが必要になります。","url":"https://booth.pm/ja/items/1198516","offers":{"priceCurrency":"JPY","@type":"Offer","price":"4000"},"image":"https://booth.pximg.net/c/620x620/6d25c339-b51a-47b5-8e63-8735e5161229/i/1198516/e7a8dafe-e7e3-4c9a-b29d-b358ea06b53d_base_resized.jpg"}
     </script>
@@ -107,13 +86,16 @@
     "https://asset.booth.pm/favicon.ico">
     <link href=
     "https://asset.booth.pm/assets/apple-touch-icon-precomposed-f7358b936e9404f3e499e1bf3c9f0967366212144a16374ebc7558b391eeafe1.png"
-    rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
-    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    rel="apple-touch-icon-precomposed">
+  </head>
+  <body>
+    <noscript><iframe height="0" src=
+    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "8BIf7N5k2dHbQAoBLffJpY7p6Cl76iuWdGta9sd8MNY="></script>
+    "hDVEAPr6Ratg19O8aoIjba8BPLxCOGJGYKi9r0Zoa50="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -122,13 +104,15 @@
         <div class="recaptcha-tag" data-action=
         "booth/checkout_order" data-site-key=
         "6LfF1dcZAAAAAOHQX8v16MX5SktDwmQINVD_6mBF"></div>
-        <div class="market-item-detail u-bg-white"
-        data-ga-tracking-id="" data-product-brand="mawarimichi"
-        data-product-category="127" data-product-id="1198516"
-        data-product-list="market_show" data-product-price="4000"
-        data-tracking="detail_item">
+        <div class="market" data-ga-tracking-id=""
+        data-product-brand="mawarimichi" data-product-category=
+        "127" data-product-id="1198516" data-product-list=
+        "market_show" data-product-price="4000" data-tracking=
+        "detail_item" id="items">
+          <div class="market"></div>
           <nav>
-            <div class="breadcrumbs u-border-b u-border-100">
+            <div class=
+            "market breadcrumbs u-bg-white u-border-b u-border-100">
               <div class="container">
                 <div class="breadcrumb">
                   <a class="label" data-tracking="click"
@@ -150,40 +134,40 @@
           </nav>
           <article>
             <div class=
-            "market-item-detail-article u-d-flex u-flex-column u-align-items-center u-pb-600 u-bg-white">
-              <div class="container">
-                <div class="market-item-detail__exhibition-banner">
-                </div>
-              </div>
-              <div class="u-bg-white u-pt-600 u-px-700">
+            "market market-item-detail item-info-detail u-bg-white">
+              <div class=
+              "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class="u-d-flex">
-                    <div class="u-order-1 l-col-2of5 u-pl-600">
-                      <header>
-                        <div class="u-my-200 u-tpg-title3">
-                          <a class="nav" target="_blank"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" rel="noopener"
-                          href="https://mawarimichi.booth.pm/">
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
+                  <div class="u-pt-600 u-d-flex">
+                    <div class=
+                    "summary u-order-1 l-col-2of5 u-pl-600">
+                      <div class="mobile-section">
+                        <header>
+                          <div class="u-my-200 u-tpg-title3">
+                            <a class="nav" target="_blank"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" rel="noopener"
+                            href="https://mawarimichi.booth.pm/">
+                            <div class=
+                            "u-d-flex u-align-items-center">
+                              <img alt="まわり道" class=
+                              "user-avatar at-item-summary" src=
+                              "https://booth.pximg.net/c/48x48/users/1627315/icon_image/739f5d36-5da1-41b1-8f95-d32d6ec569b1_base_resized.jpg">
+                              <div class="u-text-ellipsis">
+                                まわり道
+                              </div>
+                            </div></a>
+                          </div>
+                          <h2 class=
+                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                            [VRChat向け3Dモデル] うさみみウェイトレスさん
+                          </h2>
                           <div class=
-                          "u-d-flex u-align-items-center">
-                            <img alt="まわり道" class=
-                            "user-avatar at-item-summary" src=
-                            "https://booth.pximg.net/c/48x48/users/1627315/icon_image/739f5d36-5da1-41b1-8f95-d32d6ec569b1_base_resized.jpg">
-                            <div class="u-text-ellipsis">
-                              まわり道
-                            </div>
-                          </div></a>
-                        </div>
-                        <h2 class=
-                        "u-text-wrap u-tpg-title1 u-mt-0 u-mb-400">
-                          [VRChat向け3Dモデル] うさみみウェイトレスさん
-                        </h2>
-                        <div class=
-                        "u-text-assertive u-tpg-caption1"></div>
-                      </header>
-                      <section>
+                          "u-text-assertive u-tpg-caption1"></div>
+                        </header>
                         <div class="wish-list-link">
                           <a class="add-to-wish-list"
                           data-tracking="add_to_wishlist"
@@ -236,24 +220,32 @@
                             </li>
                           </ul>
                         </div>
-                      </section>
+                      </div>
                       <section>
                         <div class=
                         "share-btns u-d-flex u-flex-1 u-justify-content-start u-px-200 u-py-400">
-                          <a data-url=
-                          "https://booth.pm/ja/items/1198516"
-                          data-lang="ja" data-hashtags="booth_pm"
-                          data-text=
-                          "[VRChat向け3Dモデル] うさみみウェイトレスさん | まわり道"
-                          data-count="none" class=
-                          "twitter-share-button" href=
-                          "https://twitter.com/share">ツイート</a>
-                          <div class="u-ml-300">
+                          <div class="social-btn">
+                            <a data-url=
+                            "https://booth.pm/ja/items/1198516"
+                            data-lang="ja" data-hashtags="booth_pm"
+                            data-text=
+                            "[VRChat向け3Dモデル] うさみみウェイトレスさん | まわり道"
+                            data-count="none" class=
+                            "twitter-share-button" href=
+                            "https://twitter.com/share">ツイート</a>
+                          </div>
+                          <div class="social-btn u-ml-300">
                             <div class="fb-like" data-action="like"
                             data-href=
                             "https://booth.pm/ja/items/1198516"
                             data-layout="button_count" data-share=
                             "false" data-show-faces="false"></div>
+                          </div>
+                          <div class="mobile social-btn u-mx-200">
+                            <div class="line-it-button" data-lang=
+                            "ja" data-type="share-a" data-url=
+                            "https://booth.pm/ja/items/1198516"
+                            style="display: none;"></div>
                           </div>
                         </div>
                       </section>
@@ -481,7 +473,7 @@
                         </div>
                       </div>
                       <div class=
-                      "primary-image-thumbnails u-d-sp-none">
+                      "primary-image-thumbnails u-d-sp-none image-list">
                         <a class="pointer">
                         <div class=
                         "embedded-content-thumbnail slick-thumbnail-border">
@@ -563,9 +555,9 @@
                           "https://booth.pximg.net/c/72x72_a2_g5/6d25c339-b51a-47b5-8e63-8735e5161229/i/1198516/89850b65-671e-4e11-bb21-92b54b232c9f_base_resized.jpg">
                         </div></a>
                       </div>
-                      <section>
+                      <section class="main-info-column">
                         <div class=
-                        "js-market-item-detail-description">
+                        "js-market-item-detail-description description">
                           <p class="autolink u-text-wrap">
                             [VRChat向け3Dモデル]　うさみみウェイトレスさん
                             VRChatを想定したアバターモデルです。
@@ -576,152 +568,163 @@
                           </p>
                         </div>
                       </section>
-                      <section>
-                        <div class="u-text-wrap page_design" id=
-                        "modules"></div>
-                      </section>
+                      <section class="u-text-wrap page_design" id=
+                      "modules"></section>
                     </div>
                   </div>
+                  <section class="container">
+                    <div class="u-border-t u-py-500">
+                      <div class="mobile-section">
+                        <h3 class="u-m-0">
+                          タグ
+                        </h3>
+                      </div>
+                      <div class="search-guide-nav">
+                        <div class="search-guide-slider-wrapper">
+                          <div class="search-guide-slider">
+                            <div class=
+                            "search-guide-slider-container">
+                              <a class="search-guide-tablet"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%82%B2%E3%83%BC%E3%83%A0%E7%B4%A0%E6%9D%90">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  ゲーム素材
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3D%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3Dキャラクター
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3Dモデル
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%82%A2%E3%83%90%E3%82%BF%E3%83%BC">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  アバター
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/FBX">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  FBX
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/avatar3.0">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  avatar3.0
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%82%A2%E3%83%90%E3%82%BF%E3%83%BC3.0">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  アバター3.0
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/avatars3.0">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  avatars3.0
+                                </div>
+                              </div></a>
+                            </div>
+                          </div><a class=
+                          "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
+                        </div>
+                      </div>
+                      <div class="mobile-section">
+                        <div class="u-my-500 u-mt-sp-300">
+                          <a class=
+                          "btn btn--default-outline u-tpg-caption1 u-text-wrap"
+                          data-tracking="click" data-product-list=
+                          "from market_show via tag_category_search to search_index"
+                          href=
+                          "https://booth.pm/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=%E3%82%B2%E3%83%BC%E3%83%A0%E7%B4%A0%E6%9D%90">
+                          ゲーム素材 x 3Dモデル（その他） で検索</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-                <section class="container">
-                  <div class="u-border-t u-py-500">
-                    <div class="mobile-section">
-                      <h3 class="u-m-0">
-                        タグ
-                      </h3>
-                    </div>
-                    <div class="search-guide-nav">
-                      <div class="search-guide-slider-wrapper">
-                        <div class="search-guide-slider">
-                          <div class=
-                          "search-guide-slider-container">
-                            <a class="search-guide-tablet"
-                            data-tracking="click"
-                            data-product-list="from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%82%B2%E3%83%BC%E3%83%A0%E7%B4%A0%E6%9D%90">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                ゲーム素材
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/3D%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3Dキャラクター
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3Dモデル
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%82%A2%E3%83%90%E3%82%BF%E3%83%BC">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                アバター
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href="https://booth.pm/ja/search/FBX">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                FBX
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/avatar3.0">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                avatar3.0
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%82%A2%E3%83%90%E3%82%BF%E3%83%BC3.0">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                アバター3.0
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/avatars3.0">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                avatars3.0
-                              </div>
-                            </div></a>
-                          </div>
-                        </div><a class=
-                        "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
-                      </div>
-                    </div>
-                    <div class="mobile-section">
-                      <div class="u-my-500 u-mt-sp-300">
-                        <a class=
-                        "btn btn--default-outline u-tpg-caption1 u-text-wrap"
-                        data-tracking="click" data-product-list=
-                        "from market_show via tag_category_search to search_index"
-                        href=
-                        "https://booth.pm/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=%E3%82%B2%E3%83%BC%E3%83%A0%E7%B4%A0%E6%9D%90">
-                        ゲーム素材 x 3Dモデル（その他） で検索</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
               </div>
             </div>
           </article>
+          <aside>
+            <div class="market">
+              <div class="shoplist-with-items" v-if=
+              "shops &amp;&amp; shops.length &gt; 0"></div>
+            </div>
+          </aside>
+          <script id="json_modules" type="application/json">
+          {"modules":[{"type":"text","title":"概要","content":"・ポリゴン数△ 28,271\n・リップシンク対応\n・アイトラッキング対応\n・耳しっぽはVRC上で着脱可能です\n・もみあげの長さはVRC上で2種類から選べます\n・ハンドサインに表情が初期設定されています。\n・21種類の表情がVRC上で選べます\n・23種のポーズがVRC上で設定できます\n・表情のシェイプキーは眉、目、口、涙、赤面で独立しており別の組み合わせも作ることができます。\n・DynamicBone対応箇所は、うさみみ、髪の毛、ネックリボン、おっぱい、スカート、うさしっぽです。\n（※DynamicBoneを使用しないと揺れません。ご注意ください）\n（※DynamicBoneはUnityAssetStoreで販売されている有料Assetです）\n・フルボディトラッキングに対応しています。"},{"type":"text","title":"内容物","content":"・VRC_Usamimi_Waitress_san.unitypackage\n・FBXのモデルファイル\n・pngのテクスチャファイル\n・read me.txt\n・説明書（pngファイル)"},{"type":"text","title":"シェーダーについて","content":"・またユニティちゃんトゥーンシェーダー Ver.2.0.7を使用しています。"},{"type":"text","title":"VRCHATにアバターを導入する方法","content":"1.UnityにVRChat_SDKを読み込む。\n（Ver2.0より前はSDK2，Ver2.0以降はSDK3)\n\n2.DynamicBoneを読み込む。\n\n3.VRC_Usamimi_Waitress_san_v2.0.unitypackageを読み込む。\n\n4.UnityのProjectタブより\"Asset/VRC_Usamimi_Waitress_san/\"のシーンファイルを読み込む。\n\n5.Unityのメニューバーより”VRChat_SDK｜Show Control Panel”を開きVRChatウィンドウの\"Builder\"タブから\"Build\u0026Publish\"を押す。\n\n6.名前など各種設定をしてUploadを押す。\n\n7.Uploadが完了したらVRChatにログインして確認してください。"},{"type":"text","title":"利用規約","content":"当データを購入した時点で規約に同意したものとみなします。\n当データを改変・改造したデータにも当規約が適用されるものとします。\n改造したデータの著作権は当方が所持するものとします。\n\n利用可能\n・VRChatなどで購入者が自身のアバターとして利用\n・VRChatのワールドでマネキンやNPCとして利用\n・営利利用\n・改変・改造\n・ゲーム制作\n・映像作品や動画配信\n・R-18，R-18G\n\n禁止事項\n・当データの再配布、販売を禁止します（改造品も含まれます）。\n・購入者以外の方に当データやその一部を利用させることを禁止します。\n　（VRChatのペデスタルなども含みます）\n・自作発言を禁止します（改造品も含まれます）。\n・公序良俗に反する行為や目的、政治, 宗教活動、他者に対する誹謗中傷目的での利用を禁止します。\n\n免責事項\n・当データについて当方はいかなる保証も行いません。\n・当データを利用して何らかのトラブル・損失及び損害等が発生した場合でも当方は一切の責任を負いません。\n"},{"type":"text","title":"更新履歴","content":"2021/05/10 Ver2.01\n・パーティクルが目と干渉を起こしていたのを修正しました。\n・パーティクルの設定を調整しました。\n・ペンがミラーに映るようになりました。\n\n2021/05/03　Ver2.0\n・アバター3.0に対応しました。\n・髪と目の色を追加しました。\n・ペンを追加しました。\n・表情をメニューに追加しました。\n・ポーズをメニューに追加しました。\n・ティーカップとトレイを追加しました。\n・ヘッドドレス、耳しっぽがVRC上で着脱可能になりました。\n・フルトラッキングのキャリブレーションを改善しました。\nシェーダーをユニティちゃんトゥーンシェーダーに統一しました。\n\n2020/0516\n・VRMを追加しました。\n\n2020/04/16　Ver1.20\n・Unity2018に対応しました。\n・VRChatの移動モーションを追加しました。\n・手の形にハートを追加しました。\n・初期登録の手と表情の組み合わせを変更しました。\n・ユニティちゃんトゥーンシェーダーを2.07に更新しました。\n・LightProbeに対応しました。\n・フルトラッキング時の腰の傾きを緩和しました。\n・規約の利用可能項目にVRChatのワールドにNPCやマネキンとして使用できることをを明記しました。\n\nVer1.10\n・髪と目のマテリアルを変更しました。\n\nVer1.03\n・靴下のテクスチャの汚れを修正しました。\n・肩紐のウェイトを修正しました。\n・上腕のウェイトを修正しました。\n・まつげなど透過テクスチャの描画順を調整しました。\n\nVer1.02\n・前髪を半透過させました\n・標準の姿勢をややうつむきにしました\n・まつ毛の微調整をしました\n\nVer1.01\n・おっぱいを寄せたときに一部ポリゴンが抜けるのを修正しました\n・髪の毛が一部揺れすぎていたため調整をしました\n・腕のウェイトを一部調整しました\n・ネックリボンの基点がずれていたのを修正しました\n・ユニティちゃんトゥーンシェーダーの設定を調整しました"},{"type":"text","title":"制作","content":"まわり道\nhttps://twitter.com/kdaoigjoawi\nEmail:mawarimichi123@hotmail.co.jp"},{"type":"media","content":"\u003ciframe width=\"500\" height=\"500\" src=\"https://hub.vroid.com/characters/6220285925433408176/models/2925518375996461586/embed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\" allow=\"xr-spatial-tracking\"\u003e\u003c/iframe\u003e"}]}
+          </script>
         </div>
-        <aside>
-          <div class="shoplist-with-items" v-if=
-          "shops &amp;&amp; shops.length &gt; 0"></div>
-        </aside>
-        <script id="json_modules" type="application/json">
-        {"modules":[{"type":"text","title":"概要","content":"・ポリゴン数△ 28,271\n・リップシンク対応\n・アイトラッキング対応\n・耳しっぽはVRC上で着脱可能です\n・もみあげの長さはVRC上で2種類から選べます\n・ハンドサインに表情が初期設定されています。\n・21種類の表情がVRC上で選べます\n・23種のポーズがVRC上で設定できます\n・表情のシェイプキーは眉、目、口、涙、赤面で独立しており別の組み合わせも作ることができます。\n・DynamicBone対応箇所は、うさみみ、髪の毛、ネックリボン、おっぱい、スカート、うさしっぽです。\n（※DynamicBoneを使用しないと揺れません。ご注意ください）\n（※DynamicBoneはUnityAssetStoreで販売されている有料Assetです）\n・フルボディトラッキングに対応しています。"},{"type":"text","title":"内容物","content":"・VRC_Usamimi_Waitress_san.unitypackage\n・FBXのモデルファイル\n・pngのテクスチャファイル\n・read me.txt\n・説明書（pngファイル)"},{"type":"text","title":"シェーダーについて","content":"・またユニティちゃんトゥーンシェーダー Ver.2.0.7を使用しています。"},{"type":"text","title":"VRCHATにアバターを導入する方法","content":"1.UnityにVRChat_SDKを読み込む。\n（Ver2.0より前はSDK2，Ver2.0以降はSDK3)\n\n2.DynamicBoneを読み込む。\n\n3.VRC_Usamimi_Waitress_san_v2.0.unitypackageを読み込む。\n\n4.UnityのProjectタブより\"Asset/VRC_Usamimi_Waitress_san/\"のシーンファイルを読み込む。\n\n5.Unityのメニューバーより”VRChat_SDK｜Show Control Panel”を開きVRChatウィンドウの\"Builder\"タブから\"Build\u0026Publish\"を押す。\n\n6.名前など各種設定をしてUploadを押す。\n\n7.Uploadが完了したらVRChatにログインして確認してください。"},{"type":"text","title":"利用規約","content":"当データを購入した時点で規約に同意したものとみなします。\n当データを改変・改造したデータにも当規約が適用されるものとします。\n改造したデータの著作権は当方が所持するものとします。\n\n利用可能\n・VRChatなどで購入者が自身のアバターとして利用\n・VRChatのワールドでマネキンやNPCとして利用\n・営利利用\n・改変・改造\n・ゲーム制作\n・映像作品や動画配信\n・R-18，R-18G\n\n禁止事項\n・当データの再配布、販売を禁止します（改造品も含まれます）。\n・購入者以外の方に当データやその一部を利用させることを禁止します。\n　（VRChatのペデスタルなども含みます）\n・自作発言を禁止します（改造品も含まれます）。\n・公序良俗に反する行為や目的、政治, 宗教活動、他者に対する誹謗中傷目的での利用を禁止します。\n\n免責事項\n・当データについて当方はいかなる保証も行いません。\n・当データを利用して何らかのトラブル・損失及び損害等が発生した場合でも当方は一切の責任を負いません。\n"},{"type":"text","title":"更新履歴","content":"2021/05/10 Ver2.01\n・パーティクルが目と干渉を起こしていたのを修正しました。\n・パーティクルの設定を調整しました。\n・ペンがミラーに映るようになりました。\n\n2021/05/03　Ver2.0\n・アバター3.0に対応しました。\n・髪と目の色を追加しました。\n・ペンを追加しました。\n・表情をメニューに追加しました。\n・ポーズをメニューに追加しました。\n・ティーカップとトレイを追加しました。\n・ヘッドドレス、耳しっぽがVRC上で着脱可能になりました。\n・フルトラッキングのキャリブレーションを改善しました。\nシェーダーをユニティちゃんトゥーンシェーダーに統一しました。\n\n2020/0516\n・VRMを追加しました。\n\n2020/04/16　Ver1.20\n・Unity2018に対応しました。\n・VRChatの移動モーションを追加しました。\n・手の形にハートを追加しました。\n・初期登録の手と表情の組み合わせを変更しました。\n・ユニティちゃんトゥーンシェーダーを2.07に更新しました。\n・LightProbeに対応しました。\n・フルトラッキング時の腰の傾きを緩和しました。\n・規約の利用可能項目にVRChatのワールドにNPCやマネキンとして使用できることをを明記しました。\n\nVer1.10\n・髪と目のマテリアルを変更しました。\n\nVer1.03\n・靴下のテクスチャの汚れを修正しました。\n・肩紐のウェイトを修正しました。\n・上腕のウェイトを修正しました。\n・まつげなど透過テクスチャの描画順を調整しました。\n\nVer1.02\n・前髪を半透過させました\n・標準の姿勢をややうつむきにしました\n・まつ毛の微調整をしました\n\nVer1.01\n・おっぱいを寄せたときに一部ポリゴンが抜けるのを修正しました\n・髪の毛が一部揺れすぎていたため調整をしました\n・腕のウェイトを一部調整しました\n・ネックリボンの基点がずれていたのを修正しました\n・ユニティちゃんトゥーンシェーダーの設定を調整しました"},{"type":"text","title":"制作","content":"まわり道\nhttps://twitter.com/kdaoigjoawi\nEmail:mawarimichi123@hotmail.co.jp"},{"type":"media","content":"\u003ciframe width=\"500\" height=\"500\" src=\"https://hub.vroid.com/characters/6220285925433408176/models/2925518375996461586/embed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\" allow=\"xr-spatial-tracking\"\u003e\u003c/iframe\u003e"}]}
-        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
