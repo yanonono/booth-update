@@ -59,9 +59,13 @@
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
     <script src=
+    "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
+    defer="defer" nonce=
+    "W2Ud8af46vZgA03/dug6BxYTWEl6g1mbQWYG/V7NrXQ="></script>
+    <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "K4ukvQuR/B8w6GKT4mMm2qn7su4breviuCAEhSE7AmY="></script>
+    "W2Ud8af46vZgA03/dug6BxYTWEl6g1mbQWYG/V7NrXQ="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -74,7 +78,7 @@
     <script src=
     "https://asset.booth.pm/assets/ab357483f48c9496242e.js" defer=
     "defer" nonce=
-    "K4ukvQuR/B8w6GKT4mMm2qn7su4breviuCAEhSE7AmY="></script>
+    "W2Ud8af46vZgA03/dug6BxYTWEl6g1mbQWYG/V7NrXQ="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"ニーソックス｜#VRoid","description":"デフォルトワンピースにピッタリな絶対領域を意識して丈を微調整したオーバーニーソックスです。\n\n特典版にはプレーン版と白ベースのPSDデータが付属します。\nレースと生地の2レイヤーに分かれています。\n\nお着替えした姿を投稿するときは@yui_noe宛にリプライやタグ付けをしてくださると嬉しいです。\nTwitter: https://twitter.com/yui_noe","url":"https://booth.pm/ja/items/1274072","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"300","highPrice":"700"},"image":"https://booth.pximg.net/c/620x620/58c3a4b7-3cf8-4d35-b645-655d8f4315aa/i/1274072/4ccf28df-3294-4d77-9bb7-f0d339153777_base_resized.jpg"}
     </script>
@@ -91,7 +95,7 @@
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "K4ukvQuR/B8w6GKT4mMm2qn7su4breviuCAEhSE7AmY="></script>
+    "W2Ud8af46vZgA03/dug6BxYTWEl6g1mbQWYG/V7NrXQ="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -100,13 +104,15 @@
         <div class="recaptcha-tag" data-action=
         "booth/checkout_order" data-site-key=
         "6LfF1dcZAAAAAOHQX8v16MX5SktDwmQINVD_6mBF"></div>
-        <div class="market-item-detail u-bg-white"
-        data-ga-tracking-id="" data-product-brand="yui-noe"
-        data-product-category="127" data-product-id="1274072"
-        data-product-list="market_show" data-product-price="300"
-        data-tracking="detail_item">
+        <div class="market" data-ga-tracking-id=""
+        data-product-brand="yui-noe" data-product-category="127"
+        data-product-id="1274072" data-product-list="market_show"
+        data-product-price="300" data-tracking="detail_item" id=
+        "items">
+          <div class="market"></div>
           <nav>
-            <div class="breadcrumbs u-border-b u-border-100">
+            <div class=
+            "market breadcrumbs u-bg-white u-border-b u-border-100">
               <div class="container">
                 <div class="breadcrumb">
                   <a class="label" data-tracking="click"
@@ -128,42 +134,42 @@
           </nav>
           <article>
             <div class=
-            "market-item-detail-article u-d-flex u-flex-column u-align-items-center u-pb-600 u-bg-white">
-              <div class="container">
-                <div class="market-item-detail__exhibition-banner">
-                </div>
-              </div>
-              <div class="u-bg-white u-pt-600 u-px-700">
+            "market market-item-detail item-info-detail u-bg-white">
+              <div class=
+              "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class="u-d-flex">
-                    <div class="u-order-1 l-col-2of5 u-pl-600">
-                      <header>
-                        <div class="u-my-200 u-tpg-title3">
-                          <a class="nav" target="_blank"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" rel="noopener"
-                          href="https://yui-noe.booth.pm/">
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
+                  <div class="u-pt-600 u-d-flex">
+                    <div class=
+                    "summary u-order-1 l-col-2of5 u-pl-600">
+                      <div class="mobile-section">
+                        <header>
+                          <div class="u-my-200 u-tpg-title3">
+                            <a class="nav" target="_blank"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" rel="noopener"
+                            href="https://yui-noe.booth.pm/">
+                            <div class=
+                            "u-d-flex u-align-items-center">
+                              <img alt="#YUINOESTORE" class=
+                              "user-avatar at-item-summary" src=
+                              "https://booth.pximg.net/c/48x48/users/5080392/icon_image/6bfb8f2d-3823-4fb5-9ba7-c328510bb076_base_resized.jpg">
+                              <div class="u-text-ellipsis">
+                                #YUINOESTORE
+                              </div>
+                            </div></a>
+                          </div>
+                          <h2 class=
+                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                            ニーソックス｜#VRoid
+                          </h2>
                           <div class=
-                          "u-d-flex u-align-items-center">
-                            <img alt="#YUINOESTORE" class=
-                            "user-avatar at-item-summary" src=
-                            "https://booth.pximg.net/c/48x48/users/5080392/icon_image/6bfb8f2d-3823-4fb5-9ba7-c328510bb076_base_resized.jpg">
-                            <div class="u-text-ellipsis">
-                              #YUINOESTORE
-                            </div>
-                          </div></a>
-                        </div>
-                        <h2 class=
-                        "u-text-wrap u-tpg-title1 u-mt-0 u-mb-400">
-                          ニーソックス｜#VRoid
-                        </h2>
-                        <div class=
-                        "u-text-assertive u-tpg-caption1">
-                          お一人様10個まで
-                        </div>
-                      </header>
-                      <section>
+                          "u-text-assertive u-tpg-caption1">
+                            お一人様10個まで
+                          </div>
+                        </header>
                         <div class="wish-list-link">
                           <a class="add-to-wish-list"
                           data-tracking="add_to_wishlist"
@@ -319,23 +325,32 @@
                             </li>
                           </ul>
                         </div>
-                      </section>
+                      </div>
                       <section>
                         <div class=
                         "share-btns u-d-flex u-flex-1 u-justify-content-start u-px-200 u-py-400">
-                          <a data-url=
-                          "https://booth.pm/ja/items/1274072"
-                          data-lang="ja" data-hashtags="booth_pm"
-                          data-text="ニーソックス｜#VRoid | #YUINOESTORE"
-                          data-count="none" class=
-                          "twitter-share-button" href=
-                          "https://twitter.com/share">ツイート</a>
-                          <div class="u-ml-300">
+                          <div class="social-btn">
+                            <a data-url=
+                            "https://booth.pm/ja/items/1274072"
+                            data-lang="ja" data-hashtags="booth_pm"
+                            data-text=
+                            "ニーソックス｜#VRoid | #YUINOESTORE"
+                            data-count="none" class=
+                            "twitter-share-button" href=
+                            "https://twitter.com/share">ツイート</a>
+                          </div>
+                          <div class="social-btn u-ml-300">
                             <div class="fb-like" data-action="like"
                             data-href=
                             "https://booth.pm/ja/items/1274072"
                             data-layout="button_count" data-share=
                             "false" data-show-faces="false"></div>
+                          </div>
+                          <div class="mobile social-btn u-mx-200">
+                            <div class="line-it-button" data-lang=
+                            "ja" data-type="share-a" data-url=
+                            "https://booth.pm/ja/items/1274072"
+                            style="display: none;"></div>
                           </div>
                         </div>
                       </section>
@@ -355,16 +370,16 @@
                         </div>
                       </div>
                       <div class=
-                      "primary-image-thumbnails u-d-sp-none">
+                      "primary-image-thumbnails u-d-sp-none image-list">
                         <a class="pointer">
                         <div class="slick-thumbnail-border">
                           <img src=
                           "https://booth.pximg.net/c/72x72_a2_g5/58c3a4b7-3cf8-4d35-b645-655d8f4315aa/i/1274072/4ccf28df-3294-4d77-9bb7-f0d339153777_base_resized.jpg">
                         </div></a>
                       </div>
-                      <section>
+                      <section class="main-info-column">
                         <div class=
-                        "js-market-item-detail-description">
+                        "js-market-item-detail-description description">
                           <p class="autolink u-text-wrap">
                             デフォルトワンピースにピッタリな絶対領域を意識して丈を微調整したオーバーニーソックスです。
                             特典版にはプレーン版と白ベースのPSDデータが付属します。
@@ -374,153 +389,163 @@
                           </p>
                         </div>
                       </section>
-                      <section>
-                        <div class="u-text-wrap page_design" id=
-                        "modules"></div>
-                      </section>
+                      <section class="u-text-wrap page_design" id=
+                      "modules"></section>
                     </div>
                   </div>
+                  <section class="container">
+                    <div class="u-border-t u-py-500">
+                      <div class="mobile-section">
+                        <h3 class="u-m-0">
+                          タグ
+                        </h3>
+                      </div>
+                      <div class="search-guide-nav">
+                        <div class="search-guide-slider-wrapper">
+                          <div class="search-guide-slider">
+                            <div class=
+                            "search-guide-slider-container">
+                              <a class="search-guide-tablet"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%83%8B%E3%83%BC%E3%82%BD">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  ニーソ
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%83%8B%E3%83%BC%E3%82%BD%E3%83%83%E3%82%AF%E3%82%B9/%E3%83%8B%E3%83%BC%E3%83%8F%E3%82%A4">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  ニーソックス/ニーハイ
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRoid">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRoid
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat%E5%8F%AF">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat可
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRoid%E7%94%A8%E3%83%86%E3%82%AF%E3%82%B9%E3%83%81%E3%83%A3">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRoid用テクスチャ
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3D%E7%94%A8%E3%83%86%E3%82%AF%E3%82%B9%E3%83%81%E3%83%A3">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3D用テクスチャ
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRoid%20Studio">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRoid Studio
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRoidHub">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRoidHub
+                                </div>
+                              </div></a>
+                            </div>
+                          </div><a class=
+                          "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
+                        </div>
+                      </div>
+                      <div class="mobile-section">
+                        <div class="u-my-500 u-mt-sp-300">
+                          <a class=
+                          "btn btn--default-outline u-tpg-caption1 u-text-wrap"
+                          data-tracking="click" data-product-list=
+                          "from market_show via tag_category_search to search_index"
+                          href=
+                          "https://booth.pm/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=%E3%83%8B%E3%83%BC%E3%82%BD">
+                          ニーソ x 3Dモデル（その他） で検索</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-                <section class="container">
-                  <div class="u-border-t u-py-500">
-                    <div class="mobile-section">
-                      <h3 class="u-m-0">
-                        タグ
-                      </h3>
-                    </div>
-                    <div class="search-guide-nav">
-                      <div class="search-guide-slider-wrapper">
-                        <div class="search-guide-slider">
-                          <div class=
-                          "search-guide-slider-container">
-                            <a class="search-guide-tablet"
-                            data-tracking="click"
-                            data-product-list="from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%83%8B%E3%83%BC%E3%82%BD">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                ニーソ
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%83%8B%E3%83%BC%E3%82%BD%E3%83%83%E3%82%AF%E3%82%B9/%E3%83%8B%E3%83%BC%E3%83%8F%E3%82%A4">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                ニーソックス/ニーハイ
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRoid">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRoid
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat%E5%8F%AF">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat可
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRoid%E7%94%A8%E3%83%86%E3%82%AF%E3%82%B9%E3%83%81%E3%83%A3">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRoid用テクスチャ
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/3D%E7%94%A8%E3%83%86%E3%82%AF%E3%82%B9%E3%83%81%E3%83%A3">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3D用テクスチャ
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRoid%20Studio">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRoid Studio
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRoidHub">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRoidHub
-                              </div>
-                            </div></a>
-                          </div>
-                        </div><a class=
-                        "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
-                      </div>
-                    </div>
-                    <div class="mobile-section">
-                      <div class="u-my-500 u-mt-sp-300">
-                        <a class=
-                        "btn btn--default-outline u-tpg-caption1 u-text-wrap"
-                        data-tracking="click" data-product-list=
-                        "from market_show via tag_category_search to search_index"
-                        href=
-                        "https://booth.pm/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=%E3%83%8B%E3%83%BC%E3%82%BD">
-                        ニーソ x 3Dモデル（その他） で検索</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
               </div>
             </div>
           </article>
+          <aside>
+            <div class="market">
+              <div class="shoplist-with-items" v-if=
+              "shops &amp;&amp; shops.length &gt; 0"></div>
+            </div>
+          </aside>
+          <script id="json_modules" type="application/json">
+          {"modules":[{"type":"text","title":"VRoidHub着用モデル","content":"https://hub.vroid.com/characters/6438111756465902006/models/4942688115494127216"},{"type":"text","title":"同梱ファイル","content":"付属のYUINOESTORE_Readmeを必ずお読みください。\n\n【ブラック】\nYuinoe_Kneesocks_Black.png\n\n【ホワイト】\nYuinoe_Kneesocks_White.png\n\n【２色入り】\n\n【特典版】\n上記すべて＋\nYuinoe_Kneesocks_Black_Plane.png\nYuinoe_Kneesocks_White_Plane.png\nYuinoe_Kneesocks_White.psd\n\n推奨動作環境: VRoid Studio v0.6.4\n©2016-2019 Yuinoe"},{"type":"text","title":"利用規約 / Terms of service","content":"ご購入前に必ず以下のオンライン利用規約をご確認ください。\nhttps://docs.google.com/document/d/1nLj1r5Yp1_h2uniDmsAeyLhoErgGVDwm5_IBvNbx7jU/edit?usp=sharing\n\nYUINOE STOREで提供及び記載されているすべてのコンテンツの無断転載・複製を固く禁じます。"},{"type":"text","title":"更新履歴","content":"●2019.09.09\n-後頭部を透過処理しました\n\n●2019.04.24\n-下記ファイルを追加しました\n　・黒ニーソックス.png\n　・色変更用.psd\n　過去にご支援版をご購入された方は本日追加されたファイルをご購入履歴よりDLできます\n\n-下記ファイルをリネームしました\n　・ニーソックス_白.png→白ニーソックス.png"}]}
+          </script>
         </div>
-        <aside>
-          <div class="shoplist-with-items" v-if=
-          "shops &amp;&amp; shops.length &gt; 0"></div>
-        </aside>
-        <script id="json_modules" type="application/json">
-        {"modules":[{"type":"text","title":"VRoidHub着用モデル","content":"https://hub.vroid.com/characters/6438111756465902006/models/4942688115494127216"},{"type":"text","title":"同梱ファイル","content":"付属のYUINOESTORE_Readmeを必ずお読みください。\n\n【ブラック】\nYuinoe_Kneesocks_Black.png\n\n【ホワイト】\nYuinoe_Kneesocks_White.png\n\n【２色入り】\n\n【特典版】\n上記すべて＋\nYuinoe_Kneesocks_Black_Plane.png\nYuinoe_Kneesocks_White_Plane.png\nYuinoe_Kneesocks_White.psd\n\n推奨動作環境: VRoid Studio v0.6.4\n©2016-2019 Yuinoe"},{"type":"text","title":"利用規約 / Terms of service","content":"ご購入前に必ず以下のオンライン利用規約をご確認ください。\nhttps://docs.google.com/document/d/1nLj1r5Yp1_h2uniDmsAeyLhoErgGVDwm5_IBvNbx7jU/edit?usp=sharing\n\nYUINOE STOREで提供及び記載されているすべてのコンテンツの無断転載・複製を固く禁じます。"},{"type":"text","title":"更新履歴","content":"●2019.09.09\n-後頭部を透過処理しました\n\n●2019.04.24\n-下記ファイルを追加しました\n　・黒ニーソックス.png\n　・色変更用.psd\n　過去にご支援版をご購入された方は本日追加されたファイルをご購入履歴よりDLできます\n\n-下記ファイルをリネームしました\n　・ニーソックス_白.png→白ニーソックス.png"}]}
-        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
