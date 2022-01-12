@@ -59,9 +59,13 @@
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
     <script src=
+    "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
+    defer="defer" nonce=
+    "cPJG0TxY3R/rI2ezF7YTfoMwI1DOyrjqgarKH9flNsE="></script>
+    <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "QlkawESGC5Spr+OoGfhaCVbnx2nIULT3rU2Y5Gd8IIg="></script>
+    "cPJG0TxY3R/rI2ezF7YTfoMwI1DOyrjqgarKH9flNsE="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -74,7 +78,7 @@
     <script src=
     "https://asset.booth.pm/assets/ab357483f48c9496242e.js" defer=
     "defer" nonce=
-    "QlkawESGC5Spr+OoGfhaCVbnx2nIULT3rU2Y5Gd8IIg="></script>
+    "cPJG0TxY3R/rI2ezF7YTfoMwI1DOyrjqgarKH9flNsE="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"ガラス球向けガラスシェーダー Ver2.0","description":"球体などに適用することでガラス球のような見た目にできるシェーダーです。\n●ゆがみや反射の度合いを調節可能\n●球面へのテクスチャやノーマルマップを適用可能\n●ワールドのライティングにある程度追従するMatcapを使用可能\n\nVRChatでの使用を想定し、2018.4.20f1で動作確認しています。\n\n\n","url":"https://booth.pm/ja/items/1118922","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"100"},"image":"https://booth.pximg.net/c/620x620/64255878-1532-4d6c-abdb-a9cf35ee4a39/i/1118922/de3880f9-b83b-4f7a-9207-ba54bf0401ae_base_resized.jpg"}
     </script>
@@ -91,7 +95,7 @@
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "QlkawESGC5Spr+OoGfhaCVbnx2nIULT3rU2Y5Gd8IIg="></script>
+    "cPJG0TxY3R/rI2ezF7YTfoMwI1DOyrjqgarKH9flNsE="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -100,13 +104,15 @@
         <div class="recaptcha-tag" data-action=
         "booth/checkout_order" data-site-key=
         "6LfF1dcZAAAAAOHQX8v16MX5SktDwmQINVD_6mBF"></div>
-        <div class="market-item-detail u-bg-white"
-        data-ga-tracking-id="" data-product-brand="oyasumisan"
-        data-product-category="127" data-product-id="1118922"
-        data-product-list="market_show" data-product-price="100"
-        data-tracking="detail_item">
+        <div class="market" data-ga-tracking-id=""
+        data-product-brand="oyasumisan" data-product-category="127"
+        data-product-id="1118922" data-product-list="market_show"
+        data-product-price="100" data-tracking="detail_item" id=
+        "items">
+          <div class="market"></div>
           <nav>
-            <div class="breadcrumbs u-border-b u-border-100">
+            <div class=
+            "market breadcrumbs u-bg-white u-border-b u-border-100">
               <div class="container">
                 <div class="breadcrumb">
                   <a class="label" data-tracking="click"
@@ -128,40 +134,40 @@
           </nav>
           <article>
             <div class=
-            "market-item-detail-article u-d-flex u-flex-column u-align-items-center u-pb-600 u-bg-white">
-              <div class="container">
-                <div class="market-item-detail__exhibition-banner">
-                </div>
-              </div>
-              <div class="u-bg-white u-pt-600 u-px-700">
+            "market market-item-detail item-info-detail u-bg-white">
+              <div class=
+              "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class="u-d-flex">
-                    <div class="u-order-1 l-col-2of5 u-pl-600">
-                      <header>
-                        <div class="u-my-200 u-tpg-title3">
-                          <a class="nav" target="_blank"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" rel="noopener"
-                          href="https://oyasumisan.booth.pm/">
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
+                  <div class="u-pt-600 u-d-flex">
+                    <div class=
+                    "summary u-order-1 l-col-2of5 u-pl-600">
+                      <div class="mobile-section">
+                        <header>
+                          <div class="u-my-200 u-tpg-title3">
+                            <a class="nav" target="_blank"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" rel="noopener"
+                            href="https://oyasumisan.booth.pm/">
+                            <div class=
+                            "u-d-flex u-align-items-center">
+                              <img alt="お休みさんの作ったもの" class=
+                              "user-avatar at-item-summary" src=
+                              "https://booth.pximg.net/c/48x48/users/3598247/icon_image/51527b13-a01a-4cb2-857d-abb4285536bc_base_resized.jpg">
+                              <div class="u-text-ellipsis">
+                                お休みさんの作ったもの
+                              </div>
+                            </div></a>
+                          </div>
+                          <h2 class=
+                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                            ガラス球向けガラスシェーダー Ver2.0
+                          </h2>
                           <div class=
-                          "u-d-flex u-align-items-center">
-                            <img alt="お休みさんの作ったもの" class=
-                            "user-avatar at-item-summary" src=
-                            "https://booth.pximg.net/c/48x48/users/3598247/icon_image/51527b13-a01a-4cb2-857d-abb4285536bc_base_resized.jpg">
-                            <div class="u-text-ellipsis">
-                              お休みさんの作ったもの
-                            </div>
-                          </div></a>
-                        </div>
-                        <h2 class=
-                        "u-text-wrap u-tpg-title1 u-mt-0 u-mb-400">
-                          ガラス球向けガラスシェーダー Ver2.0
-                        </h2>
-                        <div class=
-                        "u-text-assertive u-tpg-caption1"></div>
-                      </header>
-                      <section>
+                          "u-text-assertive u-tpg-caption1"></div>
+                        </header>
                         <div class="wish-list-link">
                           <a class="add-to-wish-list"
                           data-tracking="add_to_wishlist"
@@ -268,24 +274,32 @@
                             </li>
                           </ul>
                         </div>
-                      </section>
+                      </div>
                       <section>
                         <div class=
                         "share-btns u-d-flex u-flex-1 u-justify-content-start u-px-200 u-py-400">
-                          <a data-url=
-                          "https://booth.pm/ja/items/1118922"
-                          data-lang="ja" data-hashtags="booth_pm"
-                          data-text=
-                          "ガラス球向けガラスシェーダー Ver2.0 | お休みさんの作ったもの"
-                          data-count="none" class=
-                          "twitter-share-button" href=
-                          "https://twitter.com/share">ツイート</a>
-                          <div class="u-ml-300">
+                          <div class="social-btn">
+                            <a data-url=
+                            "https://booth.pm/ja/items/1118922"
+                            data-lang="ja" data-hashtags="booth_pm"
+                            data-text=
+                            "ガラス球向けガラスシェーダー Ver2.0 | お休みさんの作ったもの"
+                            data-count="none" class=
+                            "twitter-share-button" href=
+                            "https://twitter.com/share">ツイート</a>
+                          </div>
+                          <div class="social-btn u-ml-300">
                             <div class="fb-like" data-action="like"
                             data-href=
                             "https://booth.pm/ja/items/1118922"
                             data-layout="button_count" data-share=
                             "false" data-show-faces="false"></div>
+                          </div>
+                          <div class="mobile social-btn u-mx-200">
+                            <div class="line-it-button" data-lang=
+                            "ja" data-type="share-a" data-url=
+                            "https://booth.pm/ja/items/1118922"
+                            style="display: none;"></div>
                           </div>
                         </div>
                       </section>
@@ -327,7 +341,7 @@
                         </div>
                       </div>
                       <div class=
-                      "primary-image-thumbnails u-d-sp-none">
+                      "primary-image-thumbnails u-d-sp-none image-list">
                         <a class="pointer">
                         <div class="slick-thumbnail-border">
                           <img src=
@@ -342,9 +356,9 @@
                           "https://booth.pximg.net/c/72x72_a2_g5/64255878-1532-4d6c-abdb-a9cf35ee4a39/i/1118922/e4796b47-14d2-420d-89d9-0b378e742ce9_base_resized.jpg">
                         </div></a>
                       </div>
-                      <section>
+                      <section class="main-info-column">
                         <div class=
-                        "js-market-item-detail-description">
+                        "js-market-item-detail-description description">
                           <p class="autolink u-text-wrap">
                             球体などに適用することでガラス球のような見た目にできるシェーダーです。
                             ●ゆがみや反射の度合いを調節可能
@@ -354,98 +368,103 @@
                           </p>
                         </div>
                       </section>
-                      <section>
-                        <div class="u-text-wrap page_design" id=
-                        "modules"></div>
-                      </section>
+                      <section class="u-text-wrap page_design" id=
+                      "modules"></section>
                     </div>
                   </div>
+                  <section class="container">
+                    <div class="u-border-t u-py-500">
+                      <div class="mobile-section">
+                        <h3 class="u-m-0">
+                          タグ
+                        </h3>
+                      </div>
+                      <div class="search-guide-nav">
+                        <div class="search-guide-slider-wrapper">
+                          <div class="search-guide-slider">
+                            <div class=
+                            "search-guide-slider-container">
+                              <a class="search-guide-tablet"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%82%AC%E3%83%A9%E3%82%B9">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  ガラス
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/Unity">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  Unity
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%82%B7%E3%82%A7%E3%83%BC%E3%83%80%E3%83%BC">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  シェーダー
+                                </div>
+                              </div></a>
+                            </div>
+                          </div><a class=
+                          "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
+                        </div>
+                      </div>
+                      <div class="mobile-section">
+                        <div class="u-my-500 u-mt-sp-300">
+                          <a class=
+                          "btn btn--default-outline u-tpg-caption1 u-text-wrap"
+                          data-tracking="click" data-product-list=
+                          "from market_show via tag_category_search to search_index"
+                          href=
+                          "https://booth.pm/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=%E3%82%AC%E3%83%A9%E3%82%B9">
+                          ガラス x 3Dモデル（その他） で検索</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-                <section class="container">
-                  <div class="u-border-t u-py-500">
-                    <div class="mobile-section">
-                      <h3 class="u-m-0">
-                        タグ
-                      </h3>
-                    </div>
-                    <div class="search-guide-nav">
-                      <div class="search-guide-slider-wrapper">
-                        <div class="search-guide-slider">
-                          <div class=
-                          "search-guide-slider-container">
-                            <a class="search-guide-tablet"
-                            data-tracking="click"
-                            data-product-list="from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%82%AC%E3%83%A9%E3%82%B9">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                ガラス
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/Unity">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                Unity
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%82%B7%E3%82%A7%E3%83%BC%E3%83%80%E3%83%BC">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                シェーダー
-                              </div>
-                            </div></a>
-                          </div>
-                        </div><a class=
-                        "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
-                      </div>
-                    </div>
-                    <div class="mobile-section">
-                      <div class="u-my-500 u-mt-sp-300">
-                        <a class=
-                        "btn btn--default-outline u-tpg-caption1 u-text-wrap"
-                        data-tracking="click" data-product-list=
-                        "from market_show via tag_category_search to search_index"
-                        href=
-                        "https://booth.pm/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=%E3%82%AC%E3%83%A9%E3%82%B9">
-                        ガラス x 3Dモデル（その他） で検索</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
               </div>
             </div>
           </article>
+          <aside>
+            <div class="market">
+              <div class="shoplist-with-items" v-if=
+              "shops &amp;&amp; shops.length &gt; 0"></div>
+            </div>
+          </aside>
+          <script id="json_modules" type="application/json">
+          {"modules":[{"type":"text","title":"インストール","content":"＜インストール＞\nUnityプロジェクトを開き、Oyasumisan_GlassSphere.unitypackageをインポートしてください。\n"},{"type":"text","title":"使い方","content":"まず任意のマテリアルにて、「Shader Forge/oy_GlassSphere」で始まるいずれかのシェーダを選択してください。\nシェーダごとの違いは以下の通りです。\n\n「oy_GlassSphere_2.0(VRCSafety:Particle)」：標準となるガラス球シェーダです。別途販売しているハーバリウムなカメラに同梱しているものと同じ内容のものになります。\n\n「oy_GlassSphere_Forward_2.0(VRCSafety:Particle)」：表面描画としたバージョンです。「Forward」の有無による違いは後述する＜おまけ1＞を参照ください。\n\n「oy_GlassSphere_2.0(ZWrite)(VRCSafety:Particle)」\n「oy_GlassSphere_Forward_2.0(ZWrite)(VRCSafety:Particle)」：ZWriteをオン(デプスマップ書き込み有り)にしたバージョンです。ZWriteの有無による違いは後述する＜おまけ3＞を参照ください。\n\n「oy_GlassSphere(VRCSafety:Particle)」\n「oy_GlassSphere_Forward(VRCSafety:Particle)」：2021年2月9日まで配布していた旧バージョンです。従来通りの見た目にしたい場合に使用ください。\n\n次にMatcapのテクスチャ欄に、Texturesフォルダ内に同梱している「matcap_horizon_gradation.png」をセットします。\n他のパラメータはデフォルトの設定でまずは試してみてください。\nまた、Oyasumisan/GlassSphereShader/内にサンプルプレハブを、\nOyasumisan/GlassSphereShader/Materials内にサンプルマテリアルを同梱しています。\n\n\n◆ShaderForgeで作成しているため、ShaderForgeを導入している環境であればノードベースでの編集ができます。これを踏み台にして自由にシェーダを作ってみてください。\n\nなお、VRChatにてこのシェーダを使用した際、他プレイヤーのセーフティ設定によりシェーダを無効化された場合には、白色半透明のシェーダ(Particles)としてふるまいます。"},{"type":"text","title":"設定項目","content":"以下のパラメータを調整して、好みのガラス感を出してみてください。\n\nUse Distortion:\nDistortion（縁のゆがみ）の使用をオンオフできます。\n\nDistortion:\nガラスを通して見えるもののゆがみ度合いを調整できます。\n小さな値にするとゆがみ効果が大きくなり、大きな値にするとゆがみ効果はなくなります。\n実際のガラスとは違う効果ですが、適度な値にすることでガラスらしさを表現できるかもしれません。\n設定したら、モデルを斜めや横から見てみてください。\n\nSpecular:\n表面での反射度合いを調整できます。\nリアルタイムライト及びReflection Probeによる反射度合いになります。\n\nGloss:\nこちらも表面での反射度合いですが、Specularと効果のかかり方が違います。\n大きな値にすると、映り込みが鏡面のようにくっきりします。\nこちらもリアルタイムライト及びReflection Probeによる反射度合いになります。\n\n【NEW】Exposure:\n明るさ補正機能です。\nExposureスライダを調整することで、ガラスを通した景色の明るさを調整できます。ガラスに集光する様子をイメージした明るさの調整などに使用ください。1が補正無しです。\n\nAlbedo_Base_Color:\nガラスのベースの色味を変更します。\n\nGlass_Color:\nガラスのベースの色味を変更します。(Albedo_Base_Colorでも変更できますが、こちらを変えると少し暗くもできます)\n\nIncident_Color:\nガラス自体とは別に、入射光に対しての色味付けや明るさの強弱を調整できます。\n\nReflection_Color:\n反射光全体(Specular,Matcap)に対しての色味付けや明るさの強弱を調整できます。\n\nEmission_Base_Color:\n暗いワールドなどで、周囲の明るさや傾きによらず常に一定の色で光らせたい場合に設定します。\n通常は黒のままで良いです。\n\nMatcap:\nMatcapとして使用する画像をセットします。\nMatcapにより、ワールドのライトやReflection Probeによらず、光を反射しているように見せることができます。\n\nMatcap Style:\nMatcap効果の現れ方を切り替えます。\nオフの場合:Matcapテクスチャの反映がワールド基準になり、疑似的なReflection Probeのような感じになります。\n添付している「matcap_horizon_gradation.png」ではオフ推奨です。\nオンの場合:Matcapテクスチャの反映がビュー基準になり、一般的なMatcapっぽい挙動になります。\n\nMatcap_Scale:\nMatcapによる反射光のサイズを変更します。小さくすると広範囲にわたって反射しているように見えます。\n大きなオブジェクトに適用する場合にこの値を小さくするなど試してみてください。\n\nMatcap_Strength:\nMatcapによる反射の強さを設定します。\n反射光全体の明るさはReflection_Colorで変更できますが、こちらはそれに加えてMatcapのみを調整するものです。\n(Matcapによる反射はEmissionで実現しているため、好みに応じて強弱をつけられるようにしました。)\n\nMatcap_Hue_Range:\nMatcapによる反射に対する、色相変化効果の強弱を調整できます。\nMatcapにはメガネレンズのコーティングをイメージして、視点からの位置関係で色相が変化する効果を追加してあります。0にすると色相は変化しません。\n\nMatcap_Emission_Bottom: \nMatcapによる反射では、ワールドの明るさに応じたMatcapの明るさ調整を行っています。\nこの明るさ調整の下限値を調整できます。\n\nNormal Map:\n必要であればノーマルマップを指定できます。例えば型ガラス風にしたり、表面に水滴がついているかのような効果を付加したりができるかもしれません。\n\n【NEW】Normal Intensity:\nノーマルマップ影響強さの調整です。\nノーマルマップを指定した場合にのみ有効です。指定したノーマルマップの影響を弱めることでガラスの風合いをお好みで調整できます。\n\nTexture:\nガラスに適用するテクスチャを指定します。\nアルファ値に対応しています。\nまた、テクスチャの描画はDistortionの影響を受けます。\n\nTexture Opacity:\nテクスチャ全体の透過率を指定します。\n0で不透明、1で完全に透明となります。\n\n※ダミーパラメータ\nColor\nこのパラメータはVRChatにてセーフティ設定によりシェーダを無効化された際、半透明のシェーダとしてふるまうために必要なパラメータであり、変更不要です。\nこのパラメータを変更することによる見た目の変化はないようです。"},{"type":"text","title":"おまけ1","content":"このシェーダー「oy_GlassSphere」はFrontface Culling（メッシュの裏面に描画し、表面は非表示）ですが、\n逆のBackface Culling（メッシュの表面に描画し、裏面は非表示）に設定しただけのシェーダー「oy_GlassSphere_Forward」も同梱してあります。\n特徴は以下のような感じです。\n\n「oy_GlassSphere」\n・内側に入った物に球の反射光が被らない\n・内側に入った物がゆがまない(ゆがむ場合は、その物の背面側に描画される)\n・Distortion値をある程度大きくしてもガラス玉っぽさがある ※私見\n・(多分)大きなものを入れるには向かない ※私見\n・アバターなど歪ませたくないものを入れる場合向き\n\n「oy_GlassSphere_Forward」\n・内側に入った物に球の反射光が被る\n・内側に入った物がゆがむ\n・Distortionを小さくするととてもガラス玉っぽい ※私見\n・無機物などゆがませても問題ないものを入れる場合向き\n\n好みや用途に応じて好きなほうをお使いください。"},{"type":"text","title":"おまけ2","content":"「oy_GlassSphere」を使用する際には球の表面にあたる部分の反射は再現できないため、\n同じ形のメッシュ(オブジェクト)を同じ位置、サイズでもう一つ重ねて使用することを想定した透明のMatcapシェーダーを2種類同梱しています。\nいずれも背景を透過し、Matcapのテクスチャだけを重ねるシェーダーです。\n各パラメータは「oy_GlassSphere」に準じます。\n\n「oy_Matcap.shader」\nこちらはワールドの明るさに応じたMatcapの明るさ調整が可能になっています。\n\n「oy_MatcapSimple.shader」\nこちらはMatcapの明るさは周囲によらず固定で、Matcap_Strengthのみ調整可能です。\n明るさ調整が不要であればこちらのほうが軽量です。\n設定例は「Matcapシェーダー設定例.PNG」にあります。\nまた、Matcapテクスチャの例としてTexturesフォルダ内に「Matcap_01.png」を同梱しています。\n※なお、設定例ではRender Queueの値を3001としていますが、VRChatにアップロードする場合この値は無視されデフォルトの3000に戻るようです。"},{"type":"text","title":"おまけ3","content":"バージョン2.0のシェーダについて、ZWriteをオン(デプスマップ書き込み有り)にしたバージョンを同梱しています。\nこのバージョンは通常の見た目にはZWrite無しと変わりありませんが、このシェーダを適用したメッシュの距離情報がデプスマップに書き込まれます。\nこれにより、例えばカメラの被写界深度効果を適用した際、このシェーダを適用したメッシュにピントを合わせられるようになります。\nただし、ガラス球シェーダを透過した向こう側の景色にもピントが合うことになるため、このバージョンはテクスチャ等で向こう側が透けない使い方をする場合や、歪みを強く効かせる場合での使用をお勧めします。\n"},{"type":"text","title":"更新履歴","content":"Ver 2.0 2021.02.09\nunitypackageを同梱\nシェーダの歪み計算値を最適化\n明るさ補正機能の追加\nノーマルマップ影響強さの調整機能の追加\nZWrite版(デプスマップ書き込み有り版)の追加\n\nVer 1.1 2019.06.15\noy_GlassSphere_Forward.shaderについて、シェーダの名称がoy_GlassSphere.shaderと同じになっていたため、Unity上で共存できなかったのを修正\n(シェーダ名を\"Shader Forge/oy_GlassSphere_Forward(VRCSafety:Particle)\"に変更)\n\nVer 1.0 2018.12.01\n公開"}]}
+          </script>
         </div>
-        <aside>
-          <div class="shoplist-with-items" v-if=
-          "shops &amp;&amp; shops.length &gt; 0"></div>
-        </aside>
-        <script id="json_modules" type="application/json">
-        {"modules":[{"type":"text","title":"インストール","content":"＜インストール＞\nUnityプロジェクトを開き、Oyasumisan_GlassSphere.unitypackageをインポートしてください。\n"},{"type":"text","title":"使い方","content":"まず任意のマテリアルにて、「Shader Forge/oy_GlassSphere」で始まるいずれかのシェーダを選択してください。\nシェーダごとの違いは以下の通りです。\n\n「oy_GlassSphere_2.0(VRCSafety:Particle)」：標準となるガラス球シェーダです。別途販売しているハーバリウムなカメラに同梱しているものと同じ内容のものになります。\n\n「oy_GlassSphere_Forward_2.0(VRCSafety:Particle)」：表面描画としたバージョンです。「Forward」の有無による違いは後述する＜おまけ1＞を参照ください。\n\n「oy_GlassSphere_2.0(ZWrite)(VRCSafety:Particle)」\n「oy_GlassSphere_Forward_2.0(ZWrite)(VRCSafety:Particle)」：ZWriteをオン(デプスマップ書き込み有り)にしたバージョンです。ZWriteの有無による違いは後述する＜おまけ3＞を参照ください。\n\n「oy_GlassSphere(VRCSafety:Particle)」\n「oy_GlassSphere_Forward(VRCSafety:Particle)」：2021年2月9日まで配布していた旧バージョンです。従来通りの見た目にしたい場合に使用ください。\n\n次にMatcapのテクスチャ欄に、Texturesフォルダ内に同梱している「matcap_horizon_gradation.png」をセットします。\n他のパラメータはデフォルトの設定でまずは試してみてください。\nまた、Oyasumisan/GlassSphereShader/内にサンプルプレハブを、\nOyasumisan/GlassSphereShader/Materials内にサンプルマテリアルを同梱しています。\n\n\n◆ShaderForgeで作成しているため、ShaderForgeを導入している環境であればノードベースでの編集ができます。これを踏み台にして自由にシェーダを作ってみてください。\n\nなお、VRChatにてこのシェーダを使用した際、他プレイヤーのセーフティ設定によりシェーダを無効化された場合には、白色半透明のシェーダ(Particles)としてふるまいます。"},{"type":"text","title":"設定項目","content":"以下のパラメータを調整して、好みのガラス感を出してみてください。\n\nUse Distortion:\nDistortion（縁のゆがみ）の使用をオンオフできます。\n\nDistortion:\nガラスを通して見えるもののゆがみ度合いを調整できます。\n小さな値にするとゆがみ効果が大きくなり、大きな値にするとゆがみ効果はなくなります。\n実際のガラスとは違う効果ですが、適度な値にすることでガラスらしさを表現できるかもしれません。\n設定したら、モデルを斜めや横から見てみてください。\n\nSpecular:\n表面での反射度合いを調整できます。\nリアルタイムライト及びReflection Probeによる反射度合いになります。\n\nGloss:\nこちらも表面での反射度合いですが、Specularと効果のかかり方が違います。\n大きな値にすると、映り込みが鏡面のようにくっきりします。\nこちらもリアルタイムライト及びReflection Probeによる反射度合いになります。\n\n【NEW】Exposure:\n明るさ補正機能です。\nExposureスライダを調整することで、ガラスを通した景色の明るさを調整できます。ガラスに集光する様子をイメージした明るさの調整などに使用ください。1が補正無しです。\n\nAlbedo_Base_Color:\nガラスのベースの色味を変更します。\n\nGlass_Color:\nガラスのベースの色味を変更します。(Albedo_Base_Colorでも変更できますが、こちらを変えると少し暗くもできます)\n\nIncident_Color:\nガラス自体とは別に、入射光に対しての色味付けや明るさの強弱を調整できます。\n\nReflection_Color:\n反射光全体(Specular,Matcap)に対しての色味付けや明るさの強弱を調整できます。\n\nEmission_Base_Color:\n暗いワールドなどで、周囲の明るさや傾きによらず常に一定の色で光らせたい場合に設定します。\n通常は黒のままで良いです。\n\nMatcap:\nMatcapとして使用する画像をセットします。\nMatcapにより、ワールドのライトやReflection Probeによらず、光を反射しているように見せることができます。\n\nMatcap Style:\nMatcap効果の現れ方を切り替えます。\nオフの場合:Matcapテクスチャの反映がワールド基準になり、疑似的なReflection Probeのような感じになります。\n添付している「matcap_horizon_gradation.png」ではオフ推奨です。\nオンの場合:Matcapテクスチャの反映がビュー基準になり、一般的なMatcapっぽい挙動になります。\n\nMatcap_Scale:\nMatcapによる反射光のサイズを変更します。小さくすると広範囲にわたって反射しているように見えます。\n大きなオブジェクトに適用する場合にこの値を小さくするなど試してみてください。\n\nMatcap_Strength:\nMatcapによる反射の強さを設定します。\n反射光全体の明るさはReflection_Colorで変更できますが、こちらはそれに加えてMatcapのみを調整するものです。\n(Matcapによる反射はEmissionで実現しているため、好みに応じて強弱をつけられるようにしました。)\n\nMatcap_Hue_Range:\nMatcapによる反射に対する、色相変化効果の強弱を調整できます。\nMatcapにはメガネレンズのコーティングをイメージして、視点からの位置関係で色相が変化する効果を追加してあります。0にすると色相は変化しません。\n\nMatcap_Emission_Bottom: \nMatcapによる反射では、ワールドの明るさに応じたMatcapの明るさ調整を行っています。\nこの明るさ調整の下限値を調整できます。\n\nNormal Map:\n必要であればノーマルマップを指定できます。例えば型ガラス風にしたり、表面に水滴がついているかのような効果を付加したりができるかもしれません。\n\n【NEW】Normal Intensity:\nノーマルマップ影響強さの調整です。\nノーマルマップを指定した場合にのみ有効です。指定したノーマルマップの影響を弱めることでガラスの風合いをお好みで調整できます。\n\nTexture:\nガラスに適用するテクスチャを指定します。\nアルファ値に対応しています。\nまた、テクスチャの描画はDistortionの影響を受けます。\n\nTexture Opacity:\nテクスチャ全体の透過率を指定します。\n0で不透明、1で完全に透明となります。\n\n※ダミーパラメータ\nColor\nこのパラメータはVRChatにてセーフティ設定によりシェーダを無効化された際、半透明のシェーダとしてふるまうために必要なパラメータであり、変更不要です。\nこのパラメータを変更することによる見た目の変化はないようです。"},{"type":"text","title":"おまけ1","content":"このシェーダー「oy_GlassSphere」はFrontface Culling（メッシュの裏面に描画し、表面は非表示）ですが、\n逆のBackface Culling（メッシュの表面に描画し、裏面は非表示）に設定しただけのシェーダー「oy_GlassSphere_Forward」も同梱してあります。\n特徴は以下のような感じです。\n\n「oy_GlassSphere」\n・内側に入った物に球の反射光が被らない\n・内側に入った物がゆがまない(ゆがむ場合は、その物の背面側に描画される)\n・Distortion値をある程度大きくしてもガラス玉っぽさがある ※私見\n・(多分)大きなものを入れるには向かない ※私見\n・アバターなど歪ませたくないものを入れる場合向き\n\n「oy_GlassSphere_Forward」\n・内側に入った物に球の反射光が被る\n・内側に入った物がゆがむ\n・Distortionを小さくするととてもガラス玉っぽい ※私見\n・無機物などゆがませても問題ないものを入れる場合向き\n\n好みや用途に応じて好きなほうをお使いください。"},{"type":"text","title":"おまけ2","content":"「oy_GlassSphere」を使用する際には球の表面にあたる部分の反射は再現できないため、\n同じ形のメッシュ(オブジェクト)を同じ位置、サイズでもう一つ重ねて使用することを想定した透明のMatcapシェーダーを2種類同梱しています。\nいずれも背景を透過し、Matcapのテクスチャだけを重ねるシェーダーです。\n各パラメータは「oy_GlassSphere」に準じます。\n\n「oy_Matcap.shader」\nこちらはワールドの明るさに応じたMatcapの明るさ調整が可能になっています。\n\n「oy_MatcapSimple.shader」\nこちらはMatcapの明るさは周囲によらず固定で、Matcap_Strengthのみ調整可能です。\n明るさ調整が不要であればこちらのほうが軽量です。\n設定例は「Matcapシェーダー設定例.PNG」にあります。\nまた、Matcapテクスチャの例としてTexturesフォルダ内に「Matcap_01.png」を同梱しています。\n※なお、設定例ではRender Queueの値を3001としていますが、VRChatにアップロードする場合この値は無視されデフォルトの3000に戻るようです。"},{"type":"text","title":"おまけ3","content":"バージョン2.0のシェーダについて、ZWriteをオン(デプスマップ書き込み有り)にしたバージョンを同梱しています。\nこのバージョンは通常の見た目にはZWrite無しと変わりありませんが、このシェーダを適用したメッシュの距離情報がデプスマップに書き込まれます。\nこれにより、例えばカメラの被写界深度効果を適用した際、このシェーダを適用したメッシュにピントを合わせられるようになります。\nただし、ガラス球シェーダを透過した向こう側の景色にもピントが合うことになるため、このバージョンはテクスチャ等で向こう側が透けない使い方をする場合や、歪みを強く効かせる場合での使用をお勧めします。\n"},{"type":"text","title":"更新履歴","content":"Ver 2.0 2021.02.09\nunitypackageを同梱\nシェーダの歪み計算値を最適化\n明るさ補正機能の追加\nノーマルマップ影響強さの調整機能の追加\nZWrite版(デプスマップ書き込み有り版)の追加\n\nVer 1.1 2019.06.15\noy_GlassSphere_Forward.shaderについて、シェーダの名称がoy_GlassSphere.shaderと同じになっていたため、Unity上で共存できなかったのを修正\n(シェーダ名を\"Shader Forge/oy_GlassSphere_Forward(VRCSafety:Particle)\"に変更)\n\nVer 1.0 2018.12.01\n公開"}]}
-        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
