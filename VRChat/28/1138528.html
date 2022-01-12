@@ -59,9 +59,13 @@
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
     <script src=
+    "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
+    defer="defer" nonce=
+    "pry1nynGbUCVKgaaTWlIz+3qlIxUkutGycTssC8QP30="></script>
+    <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "joxth7s8am/J5YtBHdewUXEsImoeSX/2L/ISzx+99MA="></script>
+    "pry1nynGbUCVKgaaTWlIz+3qlIxUkutGycTssC8QP30="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -74,7 +78,7 @@
     <script src=
     "https://asset.booth.pm/assets/ab357483f48c9496242e.js" defer=
     "defer" nonce=
-    "joxth7s8am/J5YtBHdewUXEsImoeSX/2L/ISzx+99MA="></script>
+    "pry1nynGbUCVKgaaTWlIz+3qlIxUkutGycTssC8QP30="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"RaymarchingStrapシェーダー","description":"白黒の画像からオブジェクトを作り出すシェーダーです\nアバターのアクセサリーに使ったり、ワールドの小物として使ってください\n\n紹介ツイート・使用例↓\nhttps://twitter.com/gatosyocora/status/1064859851195539456\n(制作過程がリプで連なっています)\n","url":"https://booth.pm/ja/items/1138528","offers":{"priceCurrency":"JPY","@type":"Offer","price":"500"},"image":"https://booth.pximg.net/c/620x620/5daaaeb1-43fa-4c89-8da3-e7e44093dddb/i/1138528/784e2cd8-94ae-4a62-8610-9878057cee40_base_resized.jpg"}
     </script>
@@ -91,7 +95,7 @@
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "joxth7s8am/J5YtBHdewUXEsImoeSX/2L/ISzx+99MA="></script>
+    "pry1nynGbUCVKgaaTWlIz+3qlIxUkutGycTssC8QP30="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -100,18 +104,19 @@
         <div class="recaptcha-tag" data-action=
         "booth/checkout_order" data-site-key=
         "6LfF1dcZAAAAAOHQX8v16MX5SktDwmQINVD_6mBF"></div>
-        <div class="market-item-detail u-bg-white"
-        data-ga-tracking-id="UA-115652612-2" data-product-brand=
-        "gatosyocora" data-product-category="134" data-product-id=
-        "1138528" data-product-list="market_show"
-        data-product-price="500"
+        <div class="market" data-ga-tracking-id="UA-115652612-2"
+        data-product-brand="gatosyocora" data-product-category=
+        "134" data-product-id="1138528" data-product-list=
+        "market_show" data-product-price="500"
         data-shop-tracking-product-category="Materials (Other)"
         data-shop-tracking-product-id="1138528"
         data-shop-tracking-product-name="RaymarchingStrapシェーダー"
         data-shop-tracking-product-price="500" data-tracking=
-        "detail_item">
+        "detail_item" id="items">
+          <div class="market"></div>
           <nav>
-            <div class="breadcrumbs u-border-b u-border-100">
+            <div class=
+            "market breadcrumbs u-bg-white u-border-b u-border-100">
               <div class="container">
                 <div class="breadcrumb">
                   <a class="label" data-tracking="click"
@@ -134,52 +139,53 @@
           </nav>
           <article>
             <div class=
-            "market-item-detail-article u-d-flex u-flex-column u-align-items-center u-pb-600 u-bg-white">
-              <div class="container">
-                <div class="market-item-detail__exhibition-banner">
-                </div>
-              </div>
-              <div class="u-bg-white u-pt-600 u-px-700">
+            "market market-item-detail item-info-detail u-bg-white">
+              <div class=
+              "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class="u-d-flex">
-                    <div class="u-order-1 l-col-2of5 u-pl-600">
-                      <header>
-                        <div class="u-mb-200">
-                          <div class="eventname-flag">
-                            <a class="eventname-flag--inner"
-                            data-tracking="click"
-                            data-product-list="from market_show via eventname_flag to event_index"
-                            href=
-                            "https://booth.pm/ja/events/v-market2">
-                            <div class="eventname-flag__name">
-                              Vケット2
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
+                  <div class="u-pt-600 u-d-flex">
+                    <div class=
+                    "summary u-order-1 l-col-2of5 u-pl-600">
+                      <div class="mobile-section">
+                        <header>
+                          <div class="u-mb-200">
+                            <div class="eventname-flag">
+                              <a class="eventname-flag--inner"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via eventname_flag to event_index"
+                              href=
+                              "https://booth.pm/ja/events/v-market2">
+                              <div class="eventname-flag__name">
+                                Vケット2
+                              </div></a>
+                            </div>
+                          </div>
+                          <div class="u-my-200 u-tpg-title3">
+                            <a class="nav" target="_blank"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" rel="noopener"
+                            href="https://gatosyocora.booth.pm/">
+                            <div class=
+                            "u-d-flex u-align-items-center">
+                              <img alt="がとーしょこらのおみせ" class=
+                              "user-avatar at-item-summary" src=
+                              "https://booth.pximg.net/c/48x48/users/5127238/icon_image/eb27c0f1-331b-445a-b5f7-961724b150c7_base_resized.jpg">
+                              <div class="u-text-ellipsis">
+                                がとーしょこらのおみせ
+                              </div>
                             </div></a>
                           </div>
-                        </div>
-                        <div class="u-my-200 u-tpg-title3">
-                          <a class="nav" target="_blank"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" rel="noopener"
-                          href="https://gatosyocora.booth.pm/">
+                          <h2 class=
+                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                            RaymarchingStrapシェーダー
+                          </h2>
                           <div class=
-                          "u-d-flex u-align-items-center">
-                            <img alt="がとーしょこらのおみせ" class=
-                            "user-avatar at-item-summary" src=
-                            "https://booth.pximg.net/c/48x48/users/5127238/icon_image/eb27c0f1-331b-445a-b5f7-961724b150c7_base_resized.jpg">
-                            <div class="u-text-ellipsis">
-                              がとーしょこらのおみせ
-                            </div>
-                          </div></a>
-                        </div>
-                        <h2 class=
-                        "u-text-wrap u-tpg-title1 u-mt-0 u-mb-400">
-                          RaymarchingStrapシェーダー
-                        </h2>
-                        <div class=
-                        "u-text-assertive u-tpg-caption1"></div>
-                      </header>
-                      <section>
+                          "u-text-assertive u-tpg-caption1"></div>
+                        </header>
                         <div class="wish-list-link">
                           <a class="add-to-wish-list"
                           data-tracking="add_to_wishlist"
@@ -232,24 +238,32 @@
                             </li>
                           </ul>
                         </div>
-                      </section>
+                      </div>
                       <section>
                         <div class=
                         "share-btns u-d-flex u-flex-1 u-justify-content-start u-px-200 u-py-400">
-                          <a data-url=
-                          "https://booth.pm/ja/items/1138528"
-                          data-lang="ja" data-hashtags="booth_pm"
-                          data-text=
-                          "RaymarchingStrapシェーダー | がとーしょこらのおみせ"
-                          data-count="none" class=
-                          "twitter-share-button" href=
-                          "https://twitter.com/share">ツイート</a>
-                          <div class="u-ml-300">
+                          <div class="social-btn">
+                            <a data-url=
+                            "https://booth.pm/ja/items/1138528"
+                            data-lang="ja" data-hashtags="booth_pm"
+                            data-text=
+                            "RaymarchingStrapシェーダー | がとーしょこらのおみせ"
+                            data-count="none" class=
+                            "twitter-share-button" href=
+                            "https://twitter.com/share">ツイート</a>
+                          </div>
+                          <div class="social-btn u-ml-300">
                             <div class="fb-like" data-action="like"
                             data-href=
                             "https://booth.pm/ja/items/1138528"
                             data-layout="button_count" data-share=
                             "false" data-show-faces="false"></div>
+                          </div>
+                          <div class="mobile social-btn u-mx-200">
+                            <div class="line-it-button" data-lang=
+                            "ja" data-type="share-a" data-url=
+                            "https://booth.pm/ja/items/1138528"
+                            style="display: none;"></div>
                           </div>
                         </div>
                       </section>
@@ -291,7 +305,7 @@
                         </div>
                       </div>
                       <div class=
-                      "primary-image-thumbnails u-d-sp-none">
+                      "primary-image-thumbnails u-d-sp-none image-list">
                         <a class="pointer">
                         <div class="slick-thumbnail-border">
                           <img src=
@@ -306,9 +320,9 @@
                           "https://booth.pximg.net/c/72x72_a2_g5/5daaaeb1-43fa-4c89-8da3-e7e44093dddb/i/1138528/48a22e0d-9e0e-4124-8c59-b32043c41a2c_base_resized.jpg">
                         </div></a>
                       </div>
-                      <section>
+                      <section class="main-info-column">
                         <div class=
-                        "js-market-item-detail-description">
+                        "js-market-item-detail-description description">
                           <p class="autolink u-text-wrap">
                             白黒の画像からオブジェクトを作り出すシェーダーです
                             アバターのアクセサリーに使ったり、ワールドの小物として使ってください
@@ -318,120 +332,127 @@
                           </p>
                         </div>
                       </section>
-                      <section>
-                        <div class="u-text-wrap page_design" id=
-                        "modules"></div>
-                      </section>
+                      <section class="u-text-wrap page_design" id=
+                      "modules"></section>
                     </div>
                   </div>
+                  <section class="container">
+                    <div class="u-border-t u-py-500">
+                      <div class="mobile-section">
+                        <h3 class="u-m-0">
+                          タグ
+                        </h3>
+                      </div>
+                      <div class="search-guide-nav">
+                        <div class="search-guide-slider-wrapper">
+                          <div class="search-guide-slider">
+                            <div class=
+                            "search-guide-slider-container">
+                              <a class="search-guide-tablet"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B5%E3%83%AA%E3%83%BC">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  アクセサリー
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/Unity">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  Unity
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/Shader">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  Shader
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%82%B7%E3%82%A7%E3%83%BC%E3%83%80%E3%83%BC">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  シェーダー
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%82%A2%E3%83%A0C">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  バーチャルミュージアムC
+                                </div>
+                              </div></a>
+                            </div>
+                          </div><a class=
+                          "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
+                        </div>
+                      </div>
+                      <div class="mobile-section">
+                        <div class="u-my-500 u-mt-sp-300">
+                          <a class=
+                          "btn btn--default-outline u-tpg-caption1 u-text-wrap"
+                          data-tracking="click" data-product-list=
+                          "from market_show via tag_category_search to search_index"
+                          href=
+                          "https://booth.pm/ja/browse/%E7%B4%A0%E6%9D%90%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B5%E3%83%AA%E3%83%BC">
+                          アクセサリー x 素材（その他） で検索</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-                <section class="container">
-                  <div class="u-border-t u-py-500">
-                    <div class="mobile-section">
-                      <h3 class="u-m-0">
-                        タグ
-                      </h3>
-                    </div>
-                    <div class="search-guide-nav">
-                      <div class="search-guide-slider-wrapper">
-                        <div class="search-guide-slider">
-                          <div class=
-                          "search-guide-slider-container">
-                            <a class="search-guide-tablet"
-                            data-tracking="click"
-                            data-product-list="from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B5%E3%83%AA%E3%83%BC">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                アクセサリー
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/Unity">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                Unity
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/Shader">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                Shader
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%82%B7%E3%82%A7%E3%83%BC%E3%83%80%E3%83%BC">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                シェーダー
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%82%A2%E3%83%A0C">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                バーチャルミュージアムC
-                              </div>
-                            </div></a>
-                          </div>
-                        </div><a class=
-                        "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
-                      </div>
-                    </div>
-                    <div class="mobile-section">
-                      <div class="u-my-500 u-mt-sp-300">
-                        <a class=
-                        "btn btn--default-outline u-tpg-caption1 u-text-wrap"
-                        data-tracking="click" data-product-list=
-                        "from market_show via tag_category_search to search_index"
-                        href=
-                        "https://booth.pm/ja/browse/%E7%B4%A0%E6%9D%90%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B5%E3%83%AA%E3%83%BC">
-                        アクセサリー x 素材（その他） で検索</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
               </div>
             </div>
           </article>
+          <aside>
+            <div class="market">
+              <div class="shoplist-with-items" v-if=
+              "shops &amp;&amp; shops.length &gt; 0"></div>
+            </div>
+          </aside>
+          <script id="json_modules" type="application/json">
+          {"modules":[{"type":"text","title":"主な内容物","content":"・RaymarchingStrap.shader : 白黒の画像からオブジェクトを作り出すシェーダー\n・RaymarchingStrap.prefab : このシェーダーを使ったストラップ（別途DynamicBoneが必要です）\n・RaymarcingSample.prefab : このシェーダーを使ったサンプル"},{"type":"text","title":"設定可能なパラメータ","content":"設定可能なパラメータは以下の通りです。\n[Main]\n・SiroKuroTexture : 生成されるオブジェクトのもとになる白黒の画像\n・Color : 生成されるオブジェクトの色\n・isRainbow : チェックを入れると生成されるオブジェクトの色を虹色にします\n・Texture : 生成されるオブジェクトの表面に貼るテクスチャ\n\n[Option]\n・StepNum(0-100) : レイを移動させる回数\n・ShapeLevel : 生成されるオブジェクトの側面を整える\n・useTransparent : チェックを入れるとSiroKuroTextureで設定した画像の透過値でオブジェクトを生成\n・isInverse : 生成されるオブジェクトで残す部分を反転\n\n[Trimming]\n・TrimmingUp : オブジェクトを上からトリミング\n・TrimmingBottom : オブジェクトを下からトリミング\n・TrimmingLeft : オブジェクトを左からトリミング\n・TrimmingRight : オブジェクトを右からトリミング\n\n[Shadow]\n・ShadowType : 影の種類\n  - Type1 : 側面にはっきりとした影\n  - Type2 : 奥に行くほど暗くなっていくような影\n・ShadowLevel : 影の濃さなど"},{"type":"text","title":"利用規約","content":"プログラムの著作権はgatosyocoraに帰属します。\n改造や解析は自由にしていただいて大丈夫です。\nアバターやワールド、ゲーム開発などに使用していただいて構いません。\nそのままの再配布や販売は禁止します。\nゲームなどに組み込んで配布する際には問題ないです。\nクレジットは記載していただけると助かります。\n"},{"type":"text","title":"免責事項","content":"本製品を使って発生した問題に対してはgatosyocoraは一切の責任を負いません。"},{"type":"text","title":"","content":"Boostもしていただけるとすごく嬉しいです。"}]}
+          </script>
         </div>
-        <aside>
-          <div class="shoplist-with-items" v-if=
-          "shops &amp;&amp; shops.length &gt; 0"></div>
-        </aside>
-        <script id="json_modules" type="application/json">
-        {"modules":[{"type":"text","title":"主な内容物","content":"・RaymarchingStrap.shader : 白黒の画像からオブジェクトを作り出すシェーダー\n・RaymarchingStrap.prefab : このシェーダーを使ったストラップ（別途DynamicBoneが必要です）\n・RaymarcingSample.prefab : このシェーダーを使ったサンプル"},{"type":"text","title":"設定可能なパラメータ","content":"設定可能なパラメータは以下の通りです。\n[Main]\n・SiroKuroTexture : 生成されるオブジェクトのもとになる白黒の画像\n・Color : 生成されるオブジェクトの色\n・isRainbow : チェックを入れると生成されるオブジェクトの色を虹色にします\n・Texture : 生成されるオブジェクトの表面に貼るテクスチャ\n\n[Option]\n・StepNum(0-100) : レイを移動させる回数\n・ShapeLevel : 生成されるオブジェクトの側面を整える\n・useTransparent : チェックを入れるとSiroKuroTextureで設定した画像の透過値でオブジェクトを生成\n・isInverse : 生成されるオブジェクトで残す部分を反転\n\n[Trimming]\n・TrimmingUp : オブジェクトを上からトリミング\n・TrimmingBottom : オブジェクトを下からトリミング\n・TrimmingLeft : オブジェクトを左からトリミング\n・TrimmingRight : オブジェクトを右からトリミング\n\n[Shadow]\n・ShadowType : 影の種類\n  - Type1 : 側面にはっきりとした影\n  - Type2 : 奥に行くほど暗くなっていくような影\n・ShadowLevel : 影の濃さなど"},{"type":"text","title":"利用規約","content":"プログラムの著作権はgatosyocoraに帰属します。\n改造や解析は自由にしていただいて大丈夫です。\nアバターやワールド、ゲーム開発などに使用していただいて構いません。\nそのままの再配布や販売は禁止します。\nゲームなどに組み込んで配布する際には問題ないです。\nクレジットは記載していただけると助かります。\n"},{"type":"text","title":"免責事項","content":"本製品を使って発生した問題に対してはgatosyocoraは一切の責任を負いません。"},{"type":"text","title":"","content":"Boostもしていただけるとすごく嬉しいです。"}]}
-        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
