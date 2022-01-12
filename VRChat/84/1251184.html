@@ -58,9 +58,13 @@
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
     <script src=
+    "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
+    defer="defer" nonce=
+    "UN71oMp7/EbObSyhSkItMRS8aQVoSHMomXgx3jkqtkU="></script>
+    <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "dfO+Ur8OF11e3iegCU/FZ3zCe1QdACGRs8HRqpvMCrw="></script>
+    "UN71oMp7/EbObSyhSkItMRS8aQVoSHMomXgx3jkqtkU="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -73,7 +77,7 @@
     <script src=
     "https://asset.booth.pm/assets/ab357483f48c9496242e.js" defer=
     "defer" nonce=
-    "dfO+Ur8OF11e3iegCU/FZ3zCe1QdACGRs8HRqpvMCrw="></script>
+    "UN71oMp7/EbObSyhSkItMRS8aQVoSHMomXgx3jkqtkU="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"VRC_ArrivalShaderPack","description":"VRC_ArrivalShaderPack","url":"https://booth.pm/ja/items/1251184","offers":{"priceCurrency":"JPY","@type":"Offer","price":"700"},"image":"https://booth.pximg.net/c/620x620/4367a840-2f6a-4ba3-b547-41699c7045cb/i/1251184/f32e3820-ae5e-44af-8d1e-a9f07bc97b31_base_resized.jpg"}
     </script>
@@ -90,7 +94,7 @@
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "dfO+Ur8OF11e3iegCU/FZ3zCe1QdACGRs8HRqpvMCrw="></script>
+    "UN71oMp7/EbObSyhSkItMRS8aQVoSHMomXgx3jkqtkU="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -99,13 +103,15 @@
         <div class="recaptcha-tag" data-action=
         "booth/checkout_order" data-site-key=
         "6LfF1dcZAAAAAOHQX8v16MX5SktDwmQINVD_6mBF"></div>
-        <div class="market-item-detail u-bg-white"
-        data-ga-tracking-id="" data-product-brand="kususu"
-        data-product-category="134" data-product-id="1251184"
-        data-product-list="market_show" data-product-price="700"
-        data-tracking="detail_item">
+        <div class="market" data-ga-tracking-id=""
+        data-product-brand="kususu" data-product-category="134"
+        data-product-id="1251184" data-product-list="market_show"
+        data-product-price="700" data-tracking="detail_item" id=
+        "items">
+          <div class="market"></div>
           <nav>
-            <div class="breadcrumbs u-border-b u-border-100">
+            <div class=
+            "market breadcrumbs u-bg-white u-border-b u-border-100">
               <div class="container">
                 <div class="breadcrumb">
                   <a class="label" data-tracking="click"
@@ -128,40 +134,40 @@
           </nav>
           <article>
             <div class=
-            "market-item-detail-article u-d-flex u-flex-column u-align-items-center u-pb-600 u-bg-white">
-              <div class="container">
-                <div class="market-item-detail__exhibition-banner">
-                </div>
-              </div>
-              <div class="u-bg-white u-pt-600 u-px-700">
+            "market market-item-detail item-info-detail u-bg-white">
+              <div class=
+              "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class="u-d-flex">
-                    <div class="u-order-1 l-col-2of5 u-pl-600">
-                      <header>
-                        <div class="u-my-200 u-tpg-title3">
-                          <a class="nav" target="_blank"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" rel="noopener"
-                          href="https://kususu.booth.pm/">
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
+                  <div class="u-pt-600 u-d-flex">
+                    <div class=
+                    "summary u-order-1 l-col-2of5 u-pl-600">
+                      <div class="mobile-section">
+                        <header>
+                          <div class="u-my-200 u-tpg-title3">
+                            <a class="nav" target="_blank"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" rel="noopener"
+                            href="https://kususu.booth.pm/">
+                            <div class=
+                            "u-d-flex u-align-items-center">
+                              <img alt="kususuの何か" class=
+                              "user-avatar at-item-summary" src=
+                              "https://asset.booth.pm/assets/thumbnail_placeholder_f_150x150-73e650fbec3b150090cbda36377f1a3402c01e36ff9fa96158de6016fa067d01.png">
+                              <div class="u-text-ellipsis">
+                                kususuの何か
+                              </div>
+                            </div></a>
+                          </div>
+                          <h2 class=
+                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                            VRC_ArrivalShaderPack
+                          </h2>
                           <div class=
-                          "u-d-flex u-align-items-center">
-                            <img alt="kususuの何か" class=
-                            "user-avatar at-item-summary" src=
-                            "https://asset.booth.pm/assets/thumbnail_placeholder_f_150x150-73e650fbec3b150090cbda36377f1a3402c01e36ff9fa96158de6016fa067d01.png">
-                            <div class="u-text-ellipsis">
-                              kususuの何か
-                            </div>
-                          </div></a>
-                        </div>
-                        <h2 class=
-                        "u-text-wrap u-tpg-title1 u-mt-0 u-mb-400">
-                          VRC_ArrivalShaderPack
-                        </h2>
-                        <div class=
-                        "u-text-assertive u-tpg-caption1"></div>
-                      </header>
-                      <section>
+                          "u-text-assertive u-tpg-caption1"></div>
+                        </header>
                         <div class="wish-list-link">
                           <a class="add-to-wish-list"
                           data-tracking="add_to_wishlist"
@@ -214,24 +220,32 @@
                             </li>
                           </ul>
                         </div>
-                      </section>
+                      </div>
                       <section>
                         <div class=
                         "share-btns u-d-flex u-flex-1 u-justify-content-start u-px-200 u-py-400">
-                          <a data-url=
-                          "https://booth.pm/ja/items/1251184"
-                          data-lang="ja" data-hashtags="booth_pm"
-                          data-text=
-                          "VRC_ArrivalShaderPack | kususuの何か"
-                          data-count="none" class=
-                          "twitter-share-button" href=
-                          "https://twitter.com/share">ツイート</a>
-                          <div class="u-ml-300">
+                          <div class="social-btn">
+                            <a data-url=
+                            "https://booth.pm/ja/items/1251184"
+                            data-lang="ja" data-hashtags="booth_pm"
+                            data-text=
+                            "VRC_ArrivalShaderPack | kususuの何か"
+                            data-count="none" class=
+                            "twitter-share-button" href=
+                            "https://twitter.com/share">ツイート</a>
+                          </div>
+                          <div class="social-btn u-ml-300">
                             <div class="fb-like" data-action="like"
                             data-href=
                             "https://booth.pm/ja/items/1251184"
                             data-layout="button_count" data-share=
                             "false" data-show-faces="false"></div>
+                          </div>
+                          <div class="mobile social-btn u-mx-200">
+                            <div class="line-it-button" data-lang=
+                            "ja" data-type="share-a" data-url=
+                            "https://booth.pm/ja/items/1251184"
+                            style="display: none;"></div>
                           </div>
                         </div>
                       </section>
@@ -284,7 +298,7 @@
                         </div>
                       </div>
                       <div class=
-                      "primary-image-thumbnails u-d-sp-none">
+                      "primary-image-thumbnails u-d-sp-none image-list">
                         <a class="pointer">
                         <div class="slick-thumbnail-border">
                           <img src=
@@ -303,84 +317,87 @@
                           "https://booth.pximg.net/c/72x72_a2_g5/4367a840-2f6a-4ba3-b547-41699c7045cb/i/1251184/3db805ba-c789-4971-ba3a-6d0d3e775f52_base_resized.jpg">
                         </div></a>
                       </div>
-                      <section>
+                      <section class="main-info-column">
                         <div class=
-                        "js-market-item-detail-description">
+                        "js-market-item-detail-description description">
                           <p class="autolink u-text-wrap">
                             VRC_ArrivalShaderPack
                           </p>
                         </div>
                       </section>
-                      <section>
-                        <div class="u-text-wrap page_design" id=
-                        "modules"></div>
-                      </section>
+                      <section class="u-text-wrap page_design" id=
+                      "modules"></section>
                     </div>
                   </div>
+                  <section class="container">
+                    <div class="u-border-t u-py-500">
+                      <div class="mobile-section">
+                        <h3 class="u-m-0">
+                          タグ
+                        </h3>
+                      </div>
+                      <div class="search-guide-nav">
+                        <div class="search-guide-slider-wrapper">
+                          <div class="search-guide-slider">
+                            <div class=
+                            "search-guide-slider-container">
+                              <a class="search-guide-tablet"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/shader">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  shader
+                                </div>
+                              </div></a>
+                            </div>
+                          </div><a class=
+                          "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
+                        </div>
+                      </div>
+                      <div class="mobile-section">
+                        <div class="u-my-500 u-mt-sp-300">
+                          <a class=
+                          "btn btn--default-outline u-tpg-caption1 u-text-wrap"
+                          data-tracking="click" data-product-list=
+                          "from market_show via tag_category_search to search_index"
+                          href=
+                          "https://booth.pm/ja/browse/%E7%B4%A0%E6%9D%90%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=VRChat">
+                          VRChat x 素材（その他） で検索</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-                <section class="container">
-                  <div class="u-border-t u-py-500">
-                    <div class="mobile-section">
-                      <h3 class="u-m-0">
-                        タグ
-                      </h3>
-                    </div>
-                    <div class="search-guide-nav">
-                      <div class="search-guide-slider-wrapper">
-                        <div class="search-guide-slider">
-                          <div class=
-                          "search-guide-slider-container">
-                            <a class="search-guide-tablet"
-                            data-tracking="click"
-                            data-product-list="from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/shader">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                shader
-                              </div>
-                            </div></a>
-                          </div>
-                        </div><a class=
-                        "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
-                      </div>
-                    </div>
-                    <div class="mobile-section">
-                      <div class="u-my-500 u-mt-sp-300">
-                        <a class=
-                        "btn btn--default-outline u-tpg-caption1 u-text-wrap"
-                        data-tracking="click" data-product-list=
-                        "from market_show via tag_category_search to search_index"
-                        href=
-                        "https://booth.pm/ja/browse/%E7%B4%A0%E6%9D%90%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=VRChat">
-                        VRChat x 素材（その他） で検索</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
               </div>
             </div>
           </article>
+          <aside>
+            <div class="market">
+              <div class="shoplist-with-items" v-if=
+              "shops &amp;&amp; shops.length &gt; 0"></div>
+            </div>
+          </aside>
+          <script id="json_modules" type="application/json">
+          {"modules":[{"type":"text","title":"概要","content":"出現/消失用のshader4種類です。武器や小道具、ログインアニメーションなどにどうぞ。\nモデルの頂点を移動させているため、モデルによって見え方が違います、お好みで調整してください。\n\n2020/01/13\n各shaderにPositionRandomPower ,DensityMap,DensPowerの項目を追加、ランダムのseedの値を調整。\n"},{"type":"text","title":"内容物","content":"Shader4種類　\n boxArrivalShaderV2\n butterflyArrivalShader_simpleV2\n butterflyArrivalShader_swirlV2\n sakuraArrivalShader_swirlV2\nサンプルシーン\n arrivalshaders\nTexture\n butterfly\n sakura"},{"type":"text","title":"ざっくりとした説明","content":"boxArrivalShaderV2 　四角い枠が大量に出てきて出現/消失する\nbutterfly ArrivalShader_simpleV2　蝶が法線方向に飛んでいき出現/消失する\nbutterfly ArrivalShader_swirlV2　蝶が渦を巻きながら飛んでいき出現/消失する\nsakuraArrivalShader_swirlV2\t　桜の花びらが渦を巻きながら飛んでいき出現/消失する\n"},{"type":"text","title":"それぞれのシェーダのプロパティについて","content":"boxArrivalShaderV2\nTexture 消失前の元のテクスチャ\nHeight　消失と出現の境の値（基本的にこの値を上下させて出現/消失してください）\nReverseArrive　通常とは出現の方向を逆にします\nMainColor 縁の色\nEmissionColor 出現時に発光する際の色\nEmmisionRate 出現時の発光する割合（1/EmissionRate、の割合で発光します）\nBoxSize　箱の大きさ\nAspectRatio 箱の縦横比\nAspectRatioPower 出現時の縦横比の変化の大きさ\nArriveDistance 　出現する最大サイズまでの距離\nArriveDistancePower 最大サイズから最小サイズまでの変化の大きさ\nPositionRandomPower 箱の位置のランダムの力\nWavePower 出現時の箱の位置の揺れる力\nWaveWidth 揺れる幅\nEdgeWidth 縁の幅\nAXIS（XYZ)　 出現する方向\nARRIVE_AXIS（XY)　箱のサイズの変化方向\nWAVE_AXIS（XYZ)　 揺れの方向\nDensityMap　箱の密度を決める白黒マスクテクスチャ、白色に近いほど密度が薄くなる\nDensPower　高い値にするほど密度が薄くなる、DensityMapを参照する\n\n\nbutterfly ArrivalShader_simpleV2\nTexture 消失前の元のテクスチャ\nButterflyTexture 蝶のテクスチャ\nHeight　消失と出現の境の値（基本的にこの値を上下させて出現/消失してください）\nReverseArrive　通常とは出現の方向を逆にします\nReverseButterfly 蝶の向き（0.5以下、0.5以上で変わります）\nMainColor　蝶の色\nButterflySize 蝶の大きさ\nRange 蝶の出現する長さ\nDistance 蝶の消失までの距離\nDistancePower　蝶のある距離に対するHeightのかかる強さ\nPositionRandomPower 蝶の位置のランダムの力\nWavePower 出現時の蝶の位置の揺れる力\nWaveWidth 揺れる幅\nAXIS（XYZ)　 出現する方向\nDensityMap　蝶の密度を決める白黒マスクテクスチャ、白色に近いほど密度が薄くなる\nDensPower　高い値にするほど密度が薄くなる、DensityMapを参照する\n\nbutterfly ArrivalShader_swirlV2\nTexture 消失前の元のテクスチャ\nButterflyTexture 蝶のテクスチャ\nHeight　消失と出現の境の値（基本的にこの値を上下させて出現/消失してください）\nReverseArrive　通常とは出現の方向を逆にします\nReverseButterfly 蝶の向き（0.5以下、0.5以上で変わります）\nMainColor　蝶の色\nButterflySize 蝶の大きさ\nRange 蝶の出現する長さ\nPositionRandomPower 蝶の位置のランダムの力\nWavePower 出現時の蝶の位置の揺れる力\nWaveWidth 揺れる幅\nAXIS（XYZ)　 出現する方向\nSWIRL_AXIS（XYZ)　渦の方向\nDensityMap　蝶の密度を決める白黒マスクテクスチャ、白色に近いほど密度が薄くなる\nDensPower　高い値にするほど密度が薄くなる、DensityMapを参照する\n\nsakuraArrivalShader_swirlV2\nTexture 消失前の元のテクスチャ\nButterflyTexture 桜の花びらのテクスチャ\nHeight　消失と出現の境の値（基本的にこの値を上下させて出現/消失してください）\nSortMode　桜の花びらの向きをソートします\nReverseArrive　通常とは出現の方向を逆にします\nReverseSakura 桜の花びらの向き（0.5以下、0.5以上で変わります）\nMainColor　桜の花びらの色\nSakuraSize 桜の花びらの大きさ\nRange 桜の花びらの出現する長さ\nPositionRandomPower 桜の位置のランダムの力\nWavePower 出現時の桜の花びらの位置の揺れる力\nWaveWidth 揺れる幅\nAXIS（XYZ)　 出現する方向\nSWIRL_AXIS（XYZ)　渦の方向\nDensityMap　桜の密度を決める白黒マスクテクスチャ、白色に近いほど密度が薄くなる\nDensPower　高い値にするほど密度が薄くなる、DensityMapを参照する\n\n\n基本的にObjectの大きさ1で想定されていますが、FixScaleの値を変化させることである程度対応できます。\n\n注意：共通項目のTessFactorは大きくすると負荷が上がります、頂点数が足りない場合のみ変更してください。\n\n\n\n\n \n"},{"type":"text","title":"","content":"改造等は自由にしていただいて構いませんが、再配布等は不可とさせていただきます。 \n \n他人の迷惑にならない様に使用してください。 また利用は自己責任とし、トラブルが発生した場合でも一切の責任は負いかねます\n"}]}
+          </script>
         </div>
-        <aside>
-          <div class="shoplist-with-items" v-if=
-          "shops &amp;&amp; shops.length &gt; 0"></div>
-        </aside>
-        <script id="json_modules" type="application/json">
-        {"modules":[{"type":"text","title":"概要","content":"出現/消失用のshader4種類です。武器や小道具、ログインアニメーションなどにどうぞ。\nモデルの頂点を移動させているため、モデルによって見え方が違います、お好みで調整してください。\n\n2020/01/13\n各shaderにPositionRandomPower ,DensityMap,DensPowerの項目を追加、ランダムのseedの値を調整。\n"},{"type":"text","title":"内容物","content":"Shader4種類　\n boxArrivalShaderV2\n butterflyArrivalShader_simpleV2\n butterflyArrivalShader_swirlV2\n sakuraArrivalShader_swirlV2\nサンプルシーン\n arrivalshaders\nTexture\n butterfly\n sakura"},{"type":"text","title":"ざっくりとした説明","content":"boxArrivalShaderV2 　四角い枠が大量に出てきて出現/消失する\nbutterfly ArrivalShader_simpleV2　蝶が法線方向に飛んでいき出現/消失する\nbutterfly ArrivalShader_swirlV2　蝶が渦を巻きながら飛んでいき出現/消失する\nsakuraArrivalShader_swirlV2\t　桜の花びらが渦を巻きながら飛んでいき出現/消失する\n"},{"type":"text","title":"それぞれのシェーダのプロパティについて","content":"boxArrivalShaderV2\nTexture 消失前の元のテクスチャ\nHeight　消失と出現の境の値（基本的にこの値を上下させて出現/消失してください）\nReverseArrive　通常とは出現の方向を逆にします\nMainColor 縁の色\nEmissionColor 出現時に発光する際の色\nEmmisionRate 出現時の発光する割合（1/EmissionRate、の割合で発光します）\nBoxSize　箱の大きさ\nAspectRatio 箱の縦横比\nAspectRatioPower 出現時の縦横比の変化の大きさ\nArriveDistance 　出現する最大サイズまでの距離\nArriveDistancePower 最大サイズから最小サイズまでの変化の大きさ\nPositionRandomPower 箱の位置のランダムの力\nWavePower 出現時の箱の位置の揺れる力\nWaveWidth 揺れる幅\nEdgeWidth 縁の幅\nAXIS（XYZ)　 出現する方向\nARRIVE_AXIS（XY)　箱のサイズの変化方向\nWAVE_AXIS（XYZ)　 揺れの方向\nDensityMap　箱の密度を決める白黒マスクテクスチャ、白色に近いほど密度が薄くなる\nDensPower　高い値にするほど密度が薄くなる、DensityMapを参照する\n\n\nbutterfly ArrivalShader_simpleV2\nTexture 消失前の元のテクスチャ\nButterflyTexture 蝶のテクスチャ\nHeight　消失と出現の境の値（基本的にこの値を上下させて出現/消失してください）\nReverseArrive　通常とは出現の方向を逆にします\nReverseButterfly 蝶の向き（0.5以下、0.5以上で変わります）\nMainColor　蝶の色\nButterflySize 蝶の大きさ\nRange 蝶の出現する長さ\nDistance 蝶の消失までの距離\nDistancePower　蝶のある距離に対するHeightのかかる強さ\nPositionRandomPower 蝶の位置のランダムの力\nWavePower 出現時の蝶の位置の揺れる力\nWaveWidth 揺れる幅\nAXIS（XYZ)　 出現する方向\nDensityMap　蝶の密度を決める白黒マスクテクスチャ、白色に近いほど密度が薄くなる\nDensPower　高い値にするほど密度が薄くなる、DensityMapを参照する\n\nbutterfly ArrivalShader_swirlV2\nTexture 消失前の元のテクスチャ\nButterflyTexture 蝶のテクスチャ\nHeight　消失と出現の境の値（基本的にこの値を上下させて出現/消失してください）\nReverseArrive　通常とは出現の方向を逆にします\nReverseButterfly 蝶の向き（0.5以下、0.5以上で変わります）\nMainColor　蝶の色\nButterflySize 蝶の大きさ\nRange 蝶の出現する長さ\nPositionRandomPower 蝶の位置のランダムの力\nWavePower 出現時の蝶の位置の揺れる力\nWaveWidth 揺れる幅\nAXIS（XYZ)　 出現する方向\nSWIRL_AXIS（XYZ)　渦の方向\nDensityMap　蝶の密度を決める白黒マスクテクスチャ、白色に近いほど密度が薄くなる\nDensPower　高い値にするほど密度が薄くなる、DensityMapを参照する\n\nsakuraArrivalShader_swirlV2\nTexture 消失前の元のテクスチャ\nButterflyTexture 桜の花びらのテクスチャ\nHeight　消失と出現の境の値（基本的にこの値を上下させて出現/消失してください）\nSortMode　桜の花びらの向きをソートします\nReverseArrive　通常とは出現の方向を逆にします\nReverseSakura 桜の花びらの向き（0.5以下、0.5以上で変わります）\nMainColor　桜の花びらの色\nSakuraSize 桜の花びらの大きさ\nRange 桜の花びらの出現する長さ\nPositionRandomPower 桜の位置のランダムの力\nWavePower 出現時の桜の花びらの位置の揺れる力\nWaveWidth 揺れる幅\nAXIS（XYZ)　 出現する方向\nSWIRL_AXIS（XYZ)　渦の方向\nDensityMap　桜の密度を決める白黒マスクテクスチャ、白色に近いほど密度が薄くなる\nDensPower　高い値にするほど密度が薄くなる、DensityMapを参照する\n\n\n基本的にObjectの大きさ1で想定されていますが、FixScaleの値を変化させることである程度対応できます。\n\n注意：共通項目のTessFactorは大きくすると負荷が上がります、頂点数が足りない場合のみ変更してください。\n\n\n\n\n \n"},{"type":"text","title":"","content":"改造等は自由にしていただいて構いませんが、再配布等は不可とさせていただきます。 \n \n他人の迷惑にならない様に使用してください。 また利用は自己責任とし、トラブルが発生した場合でも一切の責任は負いかねます\n"}]}
-        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
