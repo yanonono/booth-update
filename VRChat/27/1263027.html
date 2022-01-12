@@ -59,9 +59,13 @@
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
     <script src=
+    "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
+    defer="defer" nonce=
+    "aCdQ4JYMw1TVjGIZHPNs3sv6G/vdCIKlEVO+Y62v/NI="></script>
+    <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "PfeD63IYoXzmsPVQIAIRaQdlL/gvpKmdvek3VgWr9LQ="></script>
+    "aCdQ4JYMw1TVjGIZHPNs3sv6G/vdCIKlEVO+Y62v/NI="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -74,7 +78,7 @@
     <script src=
     "https://asset.booth.pm/assets/ab357483f48c9496242e.js" defer=
     "defer" nonce=
-    "PfeD63IYoXzmsPVQIAIRaQdlL/gvpKmdvek3VgWr9LQ="></script>
+    "aCdQ4JYMw1TVjGIZHPNs3sv6G/vdCIKlEVO+Y62v/NI="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"CRL-16 Hortensis","description":"専用フレームを内蔵し、高機動力と中距離射撃戦を想定した機体です。\nバックパックのサブアーム、ビームカノンにはボーンが入っているので動かす事が可能です。","url":"https://booth.pm/ja/items/1263027","offers":{"priceCurrency":"JPY","@type":"Offer","price":"3000"},"image":"https://booth.pximg.net/c/620x620/ea95dbd8-fd5b-43a0-9a82-ee7157567ac9/i/1263027/1f259594-ecff-4739-8d78-405433172b65_base_resized.jpg"}
     </script>
@@ -91,7 +95,7 @@
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "PfeD63IYoXzmsPVQIAIRaQdlL/gvpKmdvek3VgWr9LQ="></script>
+    "aCdQ4JYMw1TVjGIZHPNs3sv6G/vdCIKlEVO+Y62v/NI="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -100,13 +104,15 @@
         <div class="recaptcha-tag" data-action=
         "booth/checkout_order" data-site-key=
         "6LfF1dcZAAAAAOHQX8v16MX5SktDwmQINVD_6mBF"></div>
-        <div class="market-item-detail u-bg-white"
-        data-ga-tracking-id="" data-product-brand="jefdepot"
-        data-product-category="127" data-product-id="1263027"
-        data-product-list="market_show" data-product-price="3000"
-        data-tracking="detail_item">
+        <div class="market" data-ga-tracking-id=""
+        data-product-brand="jefdepot" data-product-category="127"
+        data-product-id="1263027" data-product-list="market_show"
+        data-product-price="3000" data-tracking="detail_item" id=
+        "items">
+          <div class="market"></div>
           <nav>
-            <div class="breadcrumbs u-border-b u-border-100">
+            <div class=
+            "market breadcrumbs u-bg-white u-border-b u-border-100">
               <div class="container">
                 <div class="breadcrumb">
                   <a class="label" data-tracking="click"
@@ -128,52 +134,53 @@
           </nav>
           <article>
             <div class=
-            "market-item-detail-article u-d-flex u-flex-column u-align-items-center u-pb-600 u-bg-white">
-              <div class="container">
-                <div class="market-item-detail__exhibition-banner">
-                </div>
-              </div>
-              <div class="u-bg-white u-pt-600 u-px-700">
+            "market market-item-detail item-info-detail u-bg-white">
+              <div class=
+              "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class="u-d-flex">
-                    <div class="u-order-1 l-col-2of5 u-pl-600">
-                      <header>
-                        <div class="u-mb-200">
-                          <div class="eventname-flag">
-                            <a class="eventname-flag--inner"
-                            data-tracking="click"
-                            data-product-list="from market_show via eventname_flag to event_index"
-                            href=
-                            "https://booth.pm/ja/events/v-market2">
-                            <div class="eventname-flag__name">
-                              Vケット2
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
+                  <div class="u-pt-600 u-d-flex">
+                    <div class=
+                    "summary u-order-1 l-col-2of5 u-pl-600">
+                      <div class="mobile-section">
+                        <header>
+                          <div class="u-mb-200">
+                            <div class="eventname-flag">
+                              <a class="eventname-flag--inner"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via eventname_flag to event_index"
+                              href=
+                              "https://booth.pm/ja/events/v-market2">
+                              <div class="eventname-flag__name">
+                                Vケット2
+                              </div></a>
+                            </div>
+                          </div>
+                          <div class="u-my-200 u-tpg-title3">
+                            <a class="nav" target="_blank"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" rel="noopener"
+                            href="https://jefdepot.booth.pm/">
+                            <div class=
+                            "u-d-flex u-align-items-center">
+                              <img alt="JEFの倉庫" class=
+                              "user-avatar at-item-summary" src=
+                              "https://booth.pximg.net/c/48x48/users/4951201/icon_image/4c682b74-5f6f-41b9-a550-f5204e903b60_base_resized.jpg">
+                              <div class="u-text-ellipsis">
+                                JEFの倉庫
+                              </div>
                             </div></a>
                           </div>
-                        </div>
-                        <div class="u-my-200 u-tpg-title3">
-                          <a class="nav" target="_blank"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" rel="noopener"
-                          href="https://jefdepot.booth.pm/">
+                          <h2 class=
+                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                            CRL-16 Hortensis
+                          </h2>
                           <div class=
-                          "u-d-flex u-align-items-center">
-                            <img alt="JEFの倉庫" class=
-                            "user-avatar at-item-summary" src=
-                            "https://booth.pximg.net/c/48x48/users/4951201/icon_image/4c682b74-5f6f-41b9-a550-f5204e903b60_base_resized.jpg">
-                            <div class="u-text-ellipsis">
-                              JEFの倉庫
-                            </div>
-                          </div></a>
-                        </div>
-                        <h2 class=
-                        "u-text-wrap u-tpg-title1 u-mt-0 u-mb-400">
-                          CRL-16 Hortensis
-                        </h2>
-                        <div class=
-                        "u-text-assertive u-tpg-caption1"></div>
-                      </header>
-                      <section>
+                          "u-text-assertive u-tpg-caption1"></div>
+                        </header>
                         <div class="wish-list-link">
                           <a class="add-to-wish-list"
                           data-tracking="add_to_wishlist"
@@ -226,23 +233,31 @@
                             </li>
                           </ul>
                         </div>
-                      </section>
+                      </div>
                       <section>
                         <div class=
                         "share-btns u-d-flex u-flex-1 u-justify-content-start u-px-200 u-py-400">
-                          <a data-url=
-                          "https://booth.pm/ja/items/1263027"
-                          data-lang="ja" data-hashtags="booth_pm"
-                          data-text="CRL-16 Hortensis | JEFの倉庫"
-                          data-count="none" class=
-                          "twitter-share-button" href=
-                          "https://twitter.com/share">ツイート</a>
-                          <div class="u-ml-300">
+                          <div class="social-btn">
+                            <a data-url=
+                            "https://booth.pm/ja/items/1263027"
+                            data-lang="ja" data-hashtags="booth_pm"
+                            data-text="CRL-16 Hortensis | JEFの倉庫"
+                            data-count="none" class=
+                            "twitter-share-button" href=
+                            "https://twitter.com/share">ツイート</a>
+                          </div>
+                          <div class="social-btn u-ml-300">
                             <div class="fb-like" data-action="like"
                             data-href=
                             "https://booth.pm/ja/items/1263027"
                             data-layout="button_count" data-share=
                             "false" data-show-faces="false"></div>
+                          </div>
+                          <div class="mobile social-btn u-mx-200">
+                            <div class="line-it-button" data-lang=
+                            "ja" data-type="share-a" data-url=
+                            "https://booth.pm/ja/items/1263027"
+                            style="display: none;"></div>
                           </div>
                         </div>
                       </section>
@@ -284,7 +299,7 @@
                         </div>
                       </div>
                       <div class=
-                      "primary-image-thumbnails u-d-sp-none">
+                      "primary-image-thumbnails u-d-sp-none image-list">
                         <a class="pointer">
                         <div class="slick-thumbnail-border">
                           <img src=
@@ -299,139 +314,148 @@
                           "https://booth.pximg.net/c/72x72_a2_g5/ea95dbd8-fd5b-43a0-9a82-ee7157567ac9/i/1263027/9a5d0184-9ddc-4dad-b339-7214a4d85043_base_resized.jpg">
                         </div></a>
                       </div>
-                      <section>
+                      <section class="main-info-column">
                         <div class=
-                        "js-market-item-detail-description">
+                        "js-market-item-detail-description description">
                           <p class="autolink u-text-wrap">
                             専用フレームを内蔵し、高機動力と中距離射撃戦を想定した機体です。
                             バックパックのサブアーム、ビームカノンにはボーンが入っているので動かす事が可能です。
                           </p>
                         </div>
                       </section>
-                      <section>
-                        <div class="u-text-wrap page_design" id=
-                        "modules"></div>
-                      </section>
+                      <section class="u-text-wrap page_design" id=
+                      "modules"></section>
                     </div>
                   </div>
+                  <section class="container">
+                    <div class="u-border-t u-py-500">
+                      <div class="mobile-section">
+                        <h3 class="u-m-0">
+                          タグ
+                        </h3>
+                      </div>
+                      <div class="search-guide-nav">
+                        <div class="search-guide-slider-wrapper">
+                          <div class="search-guide-slider">
+                            <div class=
+                            "search-guide-slider-container">
+                              <a class="search-guide-tablet"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  ロボット
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3Dモデル
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/FBX">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  FBX
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E6%96%B0%E4%BD%9C">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  新作
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%83%E3%83%882">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  バーチャルマーケット2
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/FutureTerminalA">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  FutureTerminalA
+                                </div>
+                              </div></a>
+                            </div>
+                          </div><a class=
+                          "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
+                        </div>
+                      </div>
+                      <div class="mobile-section">
+                        <div class="u-my-500 u-mt-sp-300">
+                          <a class=
+                          "btn btn--default-outline u-tpg-caption1 u-text-wrap"
+                          data-tracking="click" data-product-list=
+                          "from market_show via tag_category_search to search_index"
+                          href=
+                          "https://booth.pm/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88">
+                          ロボット x 3Dモデル（その他） で検索</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-                <section class="container">
-                  <div class="u-border-t u-py-500">
-                    <div class="mobile-section">
-                      <h3 class="u-m-0">
-                        タグ
-                      </h3>
-                    </div>
-                    <div class="search-guide-nav">
-                      <div class="search-guide-slider-wrapper">
-                        <div class="search-guide-slider">
-                          <div class=
-                          "search-guide-slider-container">
-                            <a class="search-guide-tablet"
-                            data-tracking="click"
-                            data-product-list="from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                ロボット
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3Dモデル
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href="https://booth.pm/ja/search/FBX">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                FBX
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E6%96%B0%E4%BD%9C">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                新作
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%83%E3%83%882">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                バーチャルマーケット2
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/FutureTerminalA">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                FutureTerminalA
-                              </div>
-                            </div></a>
-                          </div>
-                        </div><a class=
-                        "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
-                      </div>
-                    </div>
-                    <div class="mobile-section">
-                      <div class="u-my-500 u-mt-sp-300">
-                        <a class=
-                        "btn btn--default-outline u-tpg-caption1 u-text-wrap"
-                        data-tracking="click" data-product-list=
-                        "from market_show via tag_category_search to search_index"
-                        href=
-                        "https://booth.pm/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88">
-                        ロボット x 3Dモデル（その他） で検索</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
               </div>
             </div>
           </article>
+          <aside>
+            <div class="market">
+              <div class="shoplist-with-items" v-if=
+              "shops &amp;&amp; shops.length &gt; 0"></div>
+            </div>
+          </aside>
+          <script id="json_modules" type="application/json">
+          {"modules":[{"type":"text","title":"VRChat想定3Dモデル「CRL-16Hortensis」Ver1.0","content":"「CRL-16Hortensis」はVRchatでの使用を想定したモデルです。\n\nその他外装バリエーションについては近日追加予定です。どんな形での配布かは未定。\n\nデスクトップ、トラッカー無しの場合は動きに問題なし\nフルトラッキング時は足の緑のセンサーあたりに足のトラッキングを合わせてください。（視点がやや上に上がりますがロボなので問題ありません。多分）\n\n\n※本モデルをVRchatで利用する場合はVRCSDKを事前にご用意ください\n※「arktoon-shaders-1.0.1.1」の使用を想定しています。こちらも先に導入をお願いします"},{"type":"text","title":"仕様","content":"・ポリゴン数29457\n・内容物\n「FBXファイル」\n「テクスチャ５枚」\n「Unityパッケージファイル」\n「Read me」"},{"type":"text","title":"利用規約","content":"◆以下の行為は禁止です\n・このモデルデータおよびこのデータを基にした改変物を取り出せる状態での再配布\n\n・各種サービスにおいて第三者が使える状態にすること（VRchatのペデスタル機能は第三者が使えるようになるのでご遠慮ください）\n\n・製作者を騙る事\n\n・公序良俗に反する行為\n\n・政治的、宗教主張に関する利用\n\n\n◆以下の行為を許可します\n・VRchat内でのアバターとしてのアップロード、ワールドの飾り\n\n・モデルデータ、テクスチャ改変\n\n・動画への映り込みなど問題なし　クレジット記載不要です\n\n・バーチャルマーケットにおいてのペデスタル化を許可\n\n・VRCでの使用を想定したモデルですが、その他サービスでの利用も可能です\n\n・アバターを利用しての商用利用。営利放送での使用や、ゲームや映像作品での利用を許可します。ご一報いただくと作者が喜びます。\n\n◆改変について\n・改造、改変後のモデルの著作権もJefclaxが保持するものとします\n\n・改変に他の方のモデルを利用する場合は他の方のモデルの利用規約も厳守してください\n\n\n本データ使用時に発生したトラブルに関して製作者は一切責任をもちません　自己責任にてお使いください"},{"type":"text","title":"更新履歴","content":"2019/03/07 ver1.0\n配布開始"}]}
+          </script>
         </div>
-        <aside>
-          <div class="shoplist-with-items" v-if=
-          "shops &amp;&amp; shops.length &gt; 0"></div>
-        </aside>
-        <script id="json_modules" type="application/json">
-        {"modules":[{"type":"text","title":"VRChat想定3Dモデル「CRL-16Hortensis」Ver1.0","content":"「CRL-16Hortensis」はVRchatでの使用を想定したモデルです。\n\nその他外装バリエーションについては近日追加予定です。どんな形での配布かは未定。\n\nデスクトップ、トラッカー無しの場合は動きに問題なし\nフルトラッキング時は足の緑のセンサーあたりに足のトラッキングを合わせてください。（視点がやや上に上がりますがロボなので問題ありません。多分）\n\n\n※本モデルをVRchatで利用する場合はVRCSDKを事前にご用意ください\n※「arktoon-shaders-1.0.1.1」の使用を想定しています。こちらも先に導入をお願いします"},{"type":"text","title":"仕様","content":"・ポリゴン数29457\n・内容物\n「FBXファイル」\n「テクスチャ５枚」\n「Unityパッケージファイル」\n「Read me」"},{"type":"text","title":"利用規約","content":"◆以下の行為は禁止です\n・このモデルデータおよびこのデータを基にした改変物を取り出せる状態での再配布\n\n・各種サービスにおいて第三者が使える状態にすること（VRchatのペデスタル機能は第三者が使えるようになるのでご遠慮ください）\n\n・製作者を騙る事\n\n・公序良俗に反する行為\n\n・政治的、宗教主張に関する利用\n\n\n◆以下の行為を許可します\n・VRchat内でのアバターとしてのアップロード、ワールドの飾り\n\n・モデルデータ、テクスチャ改変\n\n・動画への映り込みなど問題なし　クレジット記載不要です\n\n・バーチャルマーケットにおいてのペデスタル化を許可\n\n・VRCでの使用を想定したモデルですが、その他サービスでの利用も可能です\n\n・アバターを利用しての商用利用。営利放送での使用や、ゲームや映像作品での利用を許可します。ご一報いただくと作者が喜びます。\n\n◆改変について\n・改造、改変後のモデルの著作権もJefclaxが保持するものとします\n\n・改変に他の方のモデルを利用する場合は他の方のモデルの利用規約も厳守してください\n\n\n本データ使用時に発生したトラブルに関して製作者は一切責任をもちません　自己責任にてお使いください"},{"type":"text","title":"更新履歴","content":"2019/03/07 ver1.0\n配布開始"}]}
-        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
