@@ -59,9 +59,13 @@
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
     <script src=
+    "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
+    defer="defer" nonce=
+    "uo0JCfXKU2uzANhLmZyFLPqlhXZNBIWtLXjer25pg5g="></script>
+    <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "YH2APu4ImV2vti/BuAOD5HGQP4fdSS+DRWX5mBM3y5U="></script>
+    "uo0JCfXKU2uzANhLmZyFLPqlhXZNBIWtLXjer25pg5g="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -74,7 +78,7 @@
     <script src=
     "https://asset.booth.pm/assets/ab357483f48c9496242e.js" defer=
     "defer" nonce=
-    "YH2APu4ImV2vti/BuAOD5HGQP4fdSS+DRWX5mBM3y5U="></script>
+    "uo0JCfXKU2uzANhLmZyFLPqlhXZNBIWtLXjer25pg5g="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"VRCaht向けトゥーンシェーダー　AAShader　Magical","description":"※こちらは開発の終了した旧バージョンとなります。新しい物はこちら※\nhttps://atreides.booth.pm/items/2151888\n\nぼくのかんがえたさいつよのVRChat向けトゥーンシェーダー！\n半年以上にわたるいろいろなワールド光源との戦いの成果がここに！\n\n〇特徴と基本思想\n①陰影はきっちり出して割とリッチめな描写。\n②様々なVRCahtのワールドで極力ワールドの光源は拾いつつ破綻は少なく。\n③毛髪のハイライトをシェーダーで入れたい。\n④なるべくマテリアル分けせずに済む仕様\n\n〇機能\n・主にメインのディレクショナルライトに対してトゥーン感ある陰影を出して無い場合は環境色より生成します。\nこの時に別格機能の設定を行うことにより髪の毛の天使の輪などの光沢を再現できます。\n・中途半端な角度なライトを顔面に受けるのを減らすために直角に近い光源は視線方向に曲げて処理しています。\n・環境光よりリムライトを描写しています。\n環境光が真っ白なワールドだと単純に縁取りが真っ白になったりしますが仕様です。\n・Inspectorによる設定事項はほぼありません。\n光沢などのはRGBの各チャンネルで質感を設定したテクスチャにより設定します。\nこのため質感によってマテリアルを変更する必要はありません。\n・暗い部分の彩度を上げる処理により影のくすみが緩和されます。\n・頂点カラーの赤チャンネルによってアウトラインの太さを調整でいます。\n目の周りなどアウトラインを出したくない部分はモデルの頂点カラーを黒くすることによりアウトラインが出なくなります。\n\n※質感テクスチャはsRGBのチェックを外してご利用ください（つけたままだと補正されてしまいます）\n\n\nこちらのシェーダーはMIT Licenseとします。\nみんなもいろんなVRCのワールドの光源と戦おう！\n\n2019年2月25日\nver2.01 バグフィックス\n主たる光源がない場合に生成する光源の方向がワールド座標依存でなくオブジェクト座標依存だったために意図しない表現になっていたものを修正しました。\n2019年3月4日\nver2.1　アップデート\n①逆光時の処理を追加しました。\n平坦な描写になってしまいますが、逆光時に不快な陰影が出るのを抑えました。\n②一部光線の処理に視線からの方向ベクトルを利用していたものを視線ベクトルへ変更することにより特にＶＲ時の視差によるちらつきを抑えました。\n代わりに視線をずらすと見え方が変わってしまいますが仕様です。\n③ほか細かい描画修正。\nVer2.2　アップデート\n①ポイントライトの表現を変更しました。\n順光時にのみ陰影を描写します。\n②ハイライトの表現を若干変更しました。\n③ほか細かい最適化とバグフィックス。\n2019年3月4日\nVer2.3 Tightsアップデート\nTights機能を追加しました！\n使用法は画像を参考してください。\nBekkaku機能と排他でマテリアルテクスチャのB値の値で厚みを表現していい感じの透け感を表現できます。\n\n2019年7月1日　アップデート\n逆光時には逆光感あるよう表現を変更しました。\nまたディレクショナルライトを受ける方向の調整を行うスライダーを追加しました。\n他細かいバグフィックスと調整\n2019年7月10日　ファイルが壊れていたようなので上げなおしました。\n2019年12月14日　アップデート AAShader2.4 Magical\n・エミッション機能の追加\n・ハイライトの表現を変更\n・アウトラインの処理を変更\n・他細かいバグフィックスおよびコードの整理\n\n","url":"https://booth.pm/ja/items/1233511","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"500"},"image":"https://booth.pximg.net/c/620x620/091e5aa4-67bb-479c-8d17-dd9330fc9eeb/i/1233511/95420f8c-2968-4aaf-9d03-86319ab8febf_base_resized.jpg"}
     </script>
@@ -91,7 +95,7 @@
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "YH2APu4ImV2vti/BuAOD5HGQP4fdSS+DRWX5mBM3y5U="></script>
+    "uo0JCfXKU2uzANhLmZyFLPqlhXZNBIWtLXjer25pg5g="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -100,13 +104,15 @@
         <div class="recaptcha-tag" data-action=
         "booth/checkout_order" data-site-key=
         "6LfF1dcZAAAAAOHQX8v16MX5SktDwmQINVD_6mBF"></div>
-        <div class="market-item-detail u-bg-white"
-        data-ga-tracking-id="" data-product-brand="atreides"
-        data-product-category="134" data-product-id="1233511"
-        data-product-list="market_show" data-product-price="500"
-        data-tracking="detail_item">
+        <div class="market" data-ga-tracking-id=""
+        data-product-brand="atreides" data-product-category="134"
+        data-product-id="1233511" data-product-list="market_show"
+        data-product-price="500" data-tracking="detail_item" id=
+        "items">
+          <div class="market"></div>
           <nav>
-            <div class="breadcrumbs u-border-b u-border-100">
+            <div class=
+            "market breadcrumbs u-bg-white u-border-b u-border-100">
               <div class="container">
                 <div class="breadcrumb">
                   <a class="label" data-tracking="click"
@@ -129,40 +135,40 @@
           </nav>
           <article>
             <div class=
-            "market-item-detail-article u-d-flex u-flex-column u-align-items-center u-pb-600 u-bg-white">
-              <div class="container">
-                <div class="market-item-detail__exhibition-banner">
-                </div>
-              </div>
-              <div class="u-bg-white u-pt-600 u-px-700">
+            "market market-item-detail item-info-detail u-bg-white">
+              <div class=
+              "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class="u-d-flex">
-                    <div class="u-order-1 l-col-2of5 u-pl-600">
-                      <header>
-                        <div class="u-my-200 u-tpg-title3">
-                          <a class="nav" target="_blank"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" rel="noopener"
-                          href="https://atreides.booth.pm/">
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
+                  <div class="u-pt-600 u-d-flex">
+                    <div class=
+                    "summary u-order-1 l-col-2of5 u-pl-600">
+                      <div class="mobile-section">
+                        <header>
+                          <div class="u-my-200 u-tpg-title3">
+                            <a class="nav" target="_blank"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" rel="noopener"
+                            href="https://atreides.booth.pm/">
+                            <div class=
+                            "u-d-flex u-align-items-center">
+                              <img alt="Atreides System" class=
+                              "user-avatar at-item-summary" src=
+                              "https://booth.pximg.net/c/48x48/users/84259/icon_image/9c226183-63a7-431b-b387-bd0064f28c43_base_resized.jpg">
+                              <div class="u-text-ellipsis">
+                                Atreides System
+                              </div>
+                            </div></a>
+                          </div>
+                          <h2 class=
+                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                            VRCaht向けトゥーンシェーダー　AAShader　Magical
+                          </h2>
                           <div class=
-                          "u-d-flex u-align-items-center">
-                            <img alt="Atreides System" class=
-                            "user-avatar at-item-summary" src=
-                            "https://booth.pximg.net/c/48x48/users/84259/icon_image/9c226183-63a7-431b-b387-bd0064f28c43_base_resized.jpg">
-                            <div class="u-text-ellipsis">
-                              Atreides System
-                            </div>
-                          </div></a>
-                        </div>
-                        <h2 class=
-                        "u-text-wrap u-tpg-title1 u-mt-0 u-mb-400">
-                          VRCaht向けトゥーンシェーダー　AAShader　Magical
-                        </h2>
-                        <div class=
-                        "u-text-assertive u-tpg-caption1"></div>
-                      </header>
-                      <section>
+                          "u-text-assertive u-tpg-caption1"></div>
+                        </header>
                         <div class="wish-list-link">
                           <a class="add-to-wish-list"
                           data-tracking="add_to_wishlist"
@@ -412,24 +418,32 @@
                             </li>
                           </ul>
                         </div>
-                      </section>
+                      </div>
                       <section>
                         <div class=
                         "share-btns u-d-flex u-flex-1 u-justify-content-start u-px-200 u-py-400">
-                          <a data-url=
-                          "https://booth.pm/ja/items/1233511"
-                          data-lang="ja" data-hashtags="booth_pm"
-                          data-text=
-                          "VRCaht向けトゥーンシェーダー　AAShader　Magical | Atreides System"
-                          data-count="none" class=
-                          "twitter-share-button" href=
-                          "https://twitter.com/share">ツイート</a>
-                          <div class="u-ml-300">
+                          <div class="social-btn">
+                            <a data-url=
+                            "https://booth.pm/ja/items/1233511"
+                            data-lang="ja" data-hashtags="booth_pm"
+                            data-text=
+                            "VRCaht向けトゥーンシェーダー　AAShader　Magical | Atreides System"
+                            data-count="none" class=
+                            "twitter-share-button" href=
+                            "https://twitter.com/share">ツイート</a>
+                          </div>
+                          <div class="social-btn u-ml-300">
                             <div class="fb-like" data-action="like"
                             data-href=
                             "https://booth.pm/ja/items/1233511"
                             data-layout="button_count" data-share=
                             "false" data-show-faces="false"></div>
+                          </div>
+                          <div class="mobile social-btn u-mx-200">
+                            <div class="line-it-button" data-lang=
+                            "ja" data-type="share-a" data-url=
+                            "https://booth.pm/ja/items/1233511"
+                            style="display: none;"></div>
                           </div>
                         </div>
                       </section>
@@ -520,7 +534,7 @@
                         </div>
                       </div>
                       <div class=
-                      "primary-image-thumbnails u-d-sp-none">
+                      "primary-image-thumbnails u-d-sp-none image-list">
                         <a class="pointer">
                         <div class=
                         "embedded-content-thumbnail slick-thumbnail-border">
@@ -550,9 +564,9 @@
                           "https://booth.pximg.net/c/72x72_a2_g5/091e5aa4-67bb-479c-8d17-dd9330fc9eeb/i/1233511/c20a8843-847c-427f-bd6b-abdcb2dc34a2_base_resized.jpg">
                         </div></a>
                       </div>
-                      <section>
+                      <section class="main-info-column">
                         <div class=
-                        "js-market-item-detail-description">
+                        "js-market-item-detail-description description">
                           <p class="autolink u-text-wrap">
                             ※こちらは開発の終了した旧バージョンとなります。新しい物はこちら※
                             https://atreides.booth.pm/items/2151888
@@ -598,76 +612,79 @@
                           </p>
                         </div>
                       </section>
-                      <section>
-                        <div class="u-text-wrap page_design" id=
-                        "modules"></div>
-                      </section>
+                      <section class="u-text-wrap page_design" id=
+                      "modules"></section>
                     </div>
                   </div>
+                  <section class="container">
+                    <div class="u-border-t u-py-500">
+                      <div class="mobile-section">
+                        <h3 class="u-m-0">
+                          タグ
+                        </h3>
+                      </div>
+                      <div class="search-guide-nav">
+                        <div class="search-guide-slider-wrapper">
+                          <div class="search-guide-slider">
+                            <div class=
+                            "search-guide-slider-container">
+                              <a class="search-guide-tablet"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/Unity">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  Unity
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat
+                                </div>
+                              </div></a>
+                            </div>
+                          </div><a class=
+                          "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
+                        </div>
+                      </div>
+                      <div class="mobile-section">
+                        <div class="u-my-500 u-mt-sp-300">
+                          <a class=
+                          "btn btn--default-outline u-tpg-caption1 u-text-wrap"
+                          data-tracking="click" data-product-list=
+                          "from market_show via tag_category_search to search_index"
+                          href=
+                          "https://booth.pm/ja/browse/%E7%B4%A0%E6%9D%90%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=Unity">
+                          Unity x 素材（その他） で検索</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-                <section class="container">
-                  <div class="u-border-t u-py-500">
-                    <div class="mobile-section">
-                      <h3 class="u-m-0">
-                        タグ
-                      </h3>
-                    </div>
-                    <div class="search-guide-nav">
-                      <div class="search-guide-slider-wrapper">
-                        <div class="search-guide-slider">
-                          <div class=
-                          "search-guide-slider-container">
-                            <a class="search-guide-tablet"
-                            data-tracking="click"
-                            data-product-list="from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/Unity">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                Unity
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat
-                              </div>
-                            </div></a>
-                          </div>
-                        </div><a class=
-                        "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
-                      </div>
-                    </div>
-                    <div class="mobile-section">
-                      <div class="u-my-500 u-mt-sp-300">
-                        <a class=
-                        "btn btn--default-outline u-tpg-caption1 u-text-wrap"
-                        data-tracking="click" data-product-list=
-                        "from market_show via tag_category_search to search_index"
-                        href=
-                        "https://booth.pm/ja/browse/%E7%B4%A0%E6%9D%90%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=Unity">
-                        Unity x 素材（その他） で検索</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
               </div>
             </div>
           </article>
+          <aside>
+            <div class="market">
+              <div class="shoplist-with-items" v-if=
+              "shops &amp;&amp; shops.length &gt; 0"></div>
+            </div>
+          </aside>
+          <script id="json_modules" type="application/json">
+          {"modules":[{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/-Gnzv6jfqbA\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"投げ銭用（お土産入り）","content":"こちらは投げ銭していただいた人向けのお土産品（AAShader2.4適応サンプルフィギア2種類）についての説明・規約となります。\nAAShader2.4 Magical向けマテリアル・アバター適応サンプルモデルです。\nUnity上で参照したり眺めるフィギアとしての利用を想定しています。\n編集するなどしてHumanoidのアバターとして使うことはできませんのでご注意ください。\nアバターとして使いたい場合は当サークル製「狐児院のおんなのこ」シリーズをご利用ください。\n同梱はPrefab2つのモデルおよび関連アセットです。\n\n\n☆利用規約\nAAShader2.4 Magical向けマテリアル・アバター適応サンプル\n\n〇本モデルを購入した時点で本利用規約に同意したものとします。\n本規約は内容を変更される場合があり、最新のものが適用されます。\n\n〇改変について。\n出来ません。\n\n〇本モデルはサンプルとしての仕様を目的としており、アバター等として使うことはできません。\n各種サービスへのアップロードも個人で楽しむもののみにしてください。\n\n〇本モデル、改変モデルの再配布、販売を禁止します。\n\n〇公序良俗に反する行為や誹謗中傷行為目的に用いることを禁止します。\n\n〇本モデル、改造モデルを利用することによって生じたトラブル損失に関して一切責任を負わないものとします。\n\n〇翻訳等で差異が存在した場合日本語が優先されます。\n\n--------------------------------------------------------------------\n制定日　2019年12月14日\n\n不明点ありましたら以下に連絡してください。\n\nTwitter: @AlbertAtreides\nDISCORD AlbertAtreides#5117"}]}
+          </script>
         </div>
-        <aside>
-          <div class="shoplist-with-items" v-if=
-          "shops &amp;&amp; shops.length &gt; 0"></div>
-        </aside>
-        <script id="json_modules" type="application/json">
-        {"modules":[{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/-Gnzv6jfqbA\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"投げ銭用（お土産入り）","content":"こちらは投げ銭していただいた人向けのお土産品（AAShader2.4適応サンプルフィギア2種類）についての説明・規約となります。\nAAShader2.4 Magical向けマテリアル・アバター適応サンプルモデルです。\nUnity上で参照したり眺めるフィギアとしての利用を想定しています。\n編集するなどしてHumanoidのアバターとして使うことはできませんのでご注意ください。\nアバターとして使いたい場合は当サークル製「狐児院のおんなのこ」シリーズをご利用ください。\n同梱はPrefab2つのモデルおよび関連アセットです。\n\n\n☆利用規約\nAAShader2.4 Magical向けマテリアル・アバター適応サンプル\n\n〇本モデルを購入した時点で本利用規約に同意したものとします。\n本規約は内容を変更される場合があり、最新のものが適用されます。\n\n〇改変について。\n出来ません。\n\n〇本モデルはサンプルとしての仕様を目的としており、アバター等として使うことはできません。\n各種サービスへのアップロードも個人で楽しむもののみにしてください。\n\n〇本モデル、改変モデルの再配布、販売を禁止します。\n\n〇公序良俗に反する行為や誹謗中傷行為目的に用いることを禁止します。\n\n〇本モデル、改造モデルを利用することによって生じたトラブル損失に関して一切責任を負わないものとします。\n\n〇翻訳等で差異が存在した場合日本語が優先されます。\n\n--------------------------------------------------------------------\n制定日　2019年12月14日\n\n不明点ありましたら以下に連絡してください。\n\nTwitter: @AlbertAtreides\nDISCORD AlbertAtreides#5117"}]}
-        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
