@@ -59,9 +59,13 @@
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
     <script src=
+    "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
+    defer="defer" nonce=
+    "oYWuaWfXXzwyoTAiOUD/sUClQQaktYaTOc7ppEyct0k="></script>
+    <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "qtYynhUsxNFTmamwjrsEvsk/tfMo0tJc/38tLubhky4="></script>
+    "oYWuaWfXXzwyoTAiOUD/sUClQQaktYaTOc7ppEyct0k="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -99,7 +103,7 @@
     <script src=
     "https://asset.booth.pm/assets/ab357483f48c9496242e.js" defer=
     "defer" nonce=
-    "qtYynhUsxNFTmamwjrsEvsk/tfMo0tJc/38tLubhky4="></script>
+    "oYWuaWfXXzwyoTAiOUD/sUClQQaktYaTOc7ppEyct0k="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"オリジナル3Dモデル『グリ』(v4.1.0)","description":"オリジナル3Dモデル『グリ』\nUnityのHumanoidに対応しているモデルです。\n\n・3Dモデルの大きさは好きなように調節して使用してください。\n・シェーダーはお好きなものを使用してもOKです。\n・オブジェクトが分かれていますのでBlenderなどで統合したり、そのまま使用したり、好きなようにご使用ください。\n・服にボーンが入っているので揺らせられるようになってます。\n　揺らせたい方は各自[DynamicBone](有料アセット)をご用意、設定してください。","url":"https://booth.pm/ja/items/1356563","offers":{"priceCurrency":"JPY","@type":"Offer","price":"500"},"image":"https://booth.pximg.net/c/620x620/8c71c490-ea94-492a-9ac9-6b5ecea92123/i/1356563/24ec5062-dfa7-434d-b56c-ab5a613b3b18_base_resized.jpg"}
     </script>
@@ -113,7 +117,7 @@
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "qtYynhUsxNFTmamwjrsEvsk/tfMo0tJc/38tLubhky4="></script>
+    "oYWuaWfXXzwyoTAiOUD/sUClQQaktYaTOc7ppEyct0k="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -122,13 +126,15 @@
         <div class="recaptcha-tag" data-action=
         "booth/checkout_order" data-site-key=
         "6LfF1dcZAAAAAOHQX8v16MX5SktDwmQINVD_6mBF"></div>
-        <div class="market-item-detail u-bg-white"
-        data-ga-tracking-id="" data-product-brand="masumarokobo"
-        data-product-category="208" data-product-id="1356563"
-        data-product-list="market_show" data-product-price="500"
-        data-tracking="detail_item">
+        <div class="market" data-ga-tracking-id=""
+        data-product-brand="masumarokobo" data-product-category=
+        "208" data-product-id="1356563" data-product-list=
+        "market_show" data-product-price="500" data-tracking=
+        "detail_item" id="items">
+          <div class="market"></div>
           <nav>
-            <div class="breadcrumbs u-border-b u-border-100">
+            <div class=
+            "market breadcrumbs u-bg-white u-border-b u-border-100">
               <div class="container">
                 <div class="breadcrumb">
                   <a class="label" data-tracking="click"
@@ -150,40 +156,40 @@
           </nav>
           <article>
             <div class=
-            "market-item-detail-article u-d-flex u-flex-column u-align-items-center u-pb-600 u-bg-white">
-              <div class="container">
-                <div class="market-item-detail__exhibition-banner">
-                </div>
-              </div>
-              <div class="u-bg-white u-pt-600 u-px-700">
+            "market market-item-detail item-info-detail u-bg-white">
+              <div class=
+              "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class="u-d-flex">
-                    <div class="u-order-1 l-col-2of5 u-pl-600">
-                      <header>
-                        <div class="u-my-200 u-tpg-title3">
-                          <a class="nav" target="_blank"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" rel="noopener"
-                          href="https://masumarokobo.booth.pm/">
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
+                  <div class="u-pt-600 u-d-flex">
+                    <div class=
+                    "summary u-order-1 l-col-2of5 u-pl-600">
+                      <div class="mobile-section">
+                        <header>
+                          <div class="u-my-200 u-tpg-title3">
+                            <a class="nav" target="_blank"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" rel="noopener"
+                            href="https://masumarokobo.booth.pm/">
+                            <div class=
+                            "u-d-flex u-align-items-center">
+                              <img alt="マスマロ工房" class=
+                              "user-avatar at-item-summary" src=
+                              "https://booth.pximg.net/c/48x48/users/343823/icon_image/9d0923d6-4c88-4f76-97d5-0042983589de_base_resized.jpg">
+                              <div class="u-text-ellipsis">
+                                マスマロ工房
+                              </div>
+                            </div></a>
+                          </div>
+                          <h2 class=
+                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                            オリジナル3Dモデル『グリ』(v4.1.0)
+                          </h2>
                           <div class=
-                          "u-d-flex u-align-items-center">
-                            <img alt="マスマロ工房" class=
-                            "user-avatar at-item-summary" src=
-                            "https://booth.pximg.net/c/48x48/users/343823/icon_image/9d0923d6-4c88-4f76-97d5-0042983589de_base_resized.jpg">
-                            <div class="u-text-ellipsis">
-                              マスマロ工房
-                            </div>
-                          </div></a>
-                        </div>
-                        <h2 class=
-                        "u-text-wrap u-tpg-title1 u-mt-0 u-mb-400">
-                          オリジナル3Dモデル『グリ』(v4.1.0)
-                        </h2>
-                        <div class=
-                        "u-text-assertive u-tpg-caption1"></div>
-                      </header>
-                      <section>
+                          "u-text-assertive u-tpg-caption1"></div>
+                        </header>
                         <div class="wish-list-link">
                           <a class="add-to-wish-list"
                           data-tracking="add_to_wishlist"
@@ -236,24 +242,32 @@
                             </li>
                           </ul>
                         </div>
-                      </section>
+                      </div>
                       <section>
                         <div class=
                         "share-btns u-d-flex u-flex-1 u-justify-content-start u-px-200 u-py-400">
-                          <a data-url=
-                          "https://booth.pm/ja/items/1356563"
-                          data-lang="ja" data-hashtags="booth_pm"
-                          data-text=
-                          "オリジナル3Dモデル『グリ』(v4.1.0) | マスマロ工房"
-                          data-count="none" class=
-                          "twitter-share-button" href=
-                          "https://twitter.com/share">ツイート</a>
-                          <div class="u-ml-300">
+                          <div class="social-btn">
+                            <a data-url=
+                            "https://booth.pm/ja/items/1356563"
+                            data-lang="ja" data-hashtags="booth_pm"
+                            data-text=
+                            "オリジナル3Dモデル『グリ』(v4.1.0) | マスマロ工房"
+                            data-count="none" class=
+                            "twitter-share-button" href=
+                            "https://twitter.com/share">ツイート</a>
+                          </div>
+                          <div class="social-btn u-ml-300">
                             <div class="fb-like" data-action="like"
                             data-href=
                             "https://booth.pm/ja/items/1356563"
                             data-layout="button_count" data-share=
                             "false" data-show-faces="false"></div>
+                          </div>
+                          <div class="mobile social-btn u-mx-200">
+                            <div class="line-it-button" data-lang=
+                            "ja" data-type="share-a" data-url=
+                            "https://booth.pm/ja/items/1356563"
+                            style="display: none;"></div>
                           </div>
                         </div>
                       </section>
@@ -360,7 +374,7 @@
                         </div>
                       </div>
                       <div class=
-                      "primary-image-thumbnails u-d-sp-none">
+                      "primary-image-thumbnails u-d-sp-none image-list">
                         <a class="pointer">
                         <div class=
                         "embedded-content-thumbnail slick-thumbnail-border">
@@ -398,9 +412,9 @@
                           "https://booth.pximg.net/c/72x72_a2_g5/8c71c490-ea94-492a-9ac9-6b5ecea92123/i/1356563/78d34d88-b1a9-40b6-9787-0281cccd5d2d_base_resized.jpg">
                         </div></a>
                       </div>
-                      <section>
+                      <section class="main-info-column">
                         <div class=
-                        "js-market-item-detail-description">
+                        "js-market-item-detail-description description">
                           <p class="autolink u-text-wrap">
                             オリジナル3Dモデル『グリ』
                             UnityのHumanoidに対応しているモデルです。
@@ -412,109 +426,115 @@
                           </p>
                         </div>
                       </section>
-                      <section>
-                        <div class="u-text-wrap page_design" id=
-                        "modules"></div>
-                      </section>
+                      <section class="u-text-wrap page_design" id=
+                      "modules"></section>
                     </div>
                   </div>
+                  <section class="container">
+                    <div class="u-border-t u-py-500">
+                      <div class="mobile-section">
+                        <h3 class="u-m-0">
+                          タグ
+                        </h3>
+                      </div>
+                      <div class="search-guide-nav">
+                        <div class="search-guide-slider-wrapper">
+                          <div class="search-guide-slider">
+                            <div class=
+                            "search-guide-slider-container">
+                              <a class="search-guide-tablet"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%83%95%E3%82%A1%E3%83%B3%E3%82%BF%E3%82%B8%E3%83%BC">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  ファンタジー
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%83%95%E3%83%BC%E3%83%89">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  フード
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%83%E3%83%883">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  バーチャルマーケット3
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%83%E3%83%885">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  バーチャルマーケット5
+                                </div>
+                              </div></a>
+                            </div>
+                          </div><a class=
+                          "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
+                        </div>
+                      </div>
+                      <div class="mobile-section">
+                        <div class="u-my-500 u-mt-sp-300">
+                          <a class=
+                          "btn btn--default-outline u-tpg-caption1 u-text-wrap"
+                          data-tracking="click" data-product-list=
+                          "from market_show via tag_category_search to search_index"
+                          href=
+                          "https://booth.pm/ja/browse/3D%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC?q=%E3%83%95%E3%82%A1%E3%83%B3%E3%82%BF%E3%82%B8%E3%83%BC">
+                          ファンタジー x 3Dキャラクター で検索</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-                <section class="container">
-                  <div class="u-border-t u-py-500">
-                    <div class="mobile-section">
-                      <h3 class="u-m-0">
-                        タグ
-                      </h3>
-                    </div>
-                    <div class="search-guide-nav">
-                      <div class="search-guide-slider-wrapper">
-                        <div class="search-guide-slider">
-                          <div class=
-                          "search-guide-slider-container">
-                            <a class="search-guide-tablet"
-                            data-tracking="click"
-                            data-product-list="from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%83%95%E3%82%A1%E3%83%B3%E3%82%BF%E3%82%B8%E3%83%BC">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                ファンタジー
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%83%95%E3%83%BC%E3%83%89">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                フード
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%83%E3%83%883">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                バーチャルマーケット3
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%83%E3%83%885">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                バーチャルマーケット5
-                              </div>
-                            </div></a>
-                          </div>
-                        </div><a class=
-                        "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
-                      </div>
-                    </div>
-                    <div class="mobile-section">
-                      <div class="u-my-500 u-mt-sp-300">
-                        <a class=
-                        "btn btn--default-outline u-tpg-caption1 u-text-wrap"
-                        data-tracking="click" data-product-list=
-                        "from market_show via tag_category_search to search_index"
-                        href=
-                        "https://booth.pm/ja/browse/3D%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC?q=%E3%83%95%E3%82%A1%E3%83%B3%E3%82%BF%E3%82%B8%E3%83%BC">
-                        ファンタジー x 3Dキャラクター で検索</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
               </div>
             </div>
           </article>
+          <aside>
+            <div class="market">
+              <div class="shoplist-with-items" v-if=
+              "shops &amp;&amp; shops.length &gt; 0"></div>
+            </div>
+          </aside>
+          <script id="json_modules" type="application/json">
+          {"modules":[{"type":"text","title":"───▼色々な説明───","content":"───▼使用シェイダー───\n◆Unlit_WF_ShaderSuite　制作者様：フレア/whiteflare\n配布元： https://github.com/whiteflare/Unlit_WF_ShaderSuite/wiki\n-------------------------------------------\n───▼導入方法───\n◆準備しておくもの\n・Unity\n・Unlit_WF_ShaderSuite(シェーダー)\n・Guriフォルダ\n\n①Unityに【Unlit_WF_ShaderSuite】と本フォルダ内の【Guri(.Unitypackage)】をインポートする。\n②Assets内の【Guir】フォルダをクリック。\n③お好きな(.prefab)または(.FBX)を[Hierarchy]にドラッグ＆ドロップして入れてください。\n\n④あとは、各自お好きな設定をしてください。\n▷VRChatへのアップロード、アニメーションオーバーライド\n（表情設定、物を出す方法）などの方法は各自お調べください。"},{"type":"text","title":"───▼仕様───","content":"●ポリゴン数　　　：△3650[Guri]\n　　　　　　　　　：△2881[P.Guri]\n●FBX数　　　　　 ：(G:1　P:1)\n●オブジェクト数　：(G:5　P:1)\n●マテリアル数　　：1\n●テクスチャ数　　：7(1+別カラー：4　マスク：2)\n●フルボディトラッキング：×非確認\n●Oculus Quest　　：×非確認\n●リップシンク　　：×非対応\n●アイトラッキング：×非対応\n●Dynamic Bone 　 ：×非確認\n\nGuri→G　P.Guri→P"},{"type":"text","title":"───▼内容物───","content":"■【Guri(v4.1.0)】\n┣■【Blender】\n┃　　┗・.Blend:2\n┣■【FBX】\n┃　　┗・.FBX：2\n┣■【Textures】\n┃　　┣・テクスチャ.png：7（通常:1　マスク:2　サンプルカラー:4）\n┃　　┗・テクスチャ改変用.psd(展開図入り)\n┣◆Guri.Unitypackage\n┗◇Readme_利用規約.txt\n-------------------------------------------\n──▽Unitypackage内モデルデータ──\n■【Guri】\n┣■【Animation】\n┃　　┣[Guri]・アニメーション：22（表情:14　ポーズ:5　鞄:2　座り:1）\n┃　　┗[P.Guri]・アニメーション：10（表情:7　鞄:2　座り:1）\n┣■【FBX】\n┃　　┗・FBX:2\n┣■【Materials】\n┃　　┗・マテリアル：1\n┣■【Textures】\n┃　　┗・テクスチャ：7\n┃　　　・Guri_tex_Outline（目や顔の輪郭線を表示させないためのマスク）\n┃　　　・Guri_tex_Shadow（手以外影をつけないためのマスク）\n┗◆Guri.prefab"},{"type":"text","title":"──▼利用規約──（※必ずお読みください）","content":"■↓こちらに利用規約を記載しています。※必ずご覧ください。\nhttps://masumarokobo.booth.pm/items/2473622\n\n※本モデルを購入した時点で本利用規約に同意したものとします。\n利用規約の内容は変更する場合があり、最新のものが適用されます。"},{"type":"text","title":"───▽連絡先───","content":"制作者：マスマロ(鱒麻呂)\ntwitter： https://twitter.com/masumaro__\nBOOTH： https://masumarokobo.booth.pm/\n\n●質問などございましたら［BOOTH内メッセージ］または［Twitter］にご連絡ください。"},{"type":"text","title":"───▽履歴───","content":"■ver.無印　2019/5/25\n・発売日\n■ver.1.1.0　2019/7/31\n・Arktoon-Shaders(v1.0.2.5) \n　同梱シェーダーのバージョンアップ。\n■ver.1.1.1　2019/8/10\n・商品説明修正。\n■ver.2.0.0　2019/12/25\n・ボーン名変更。\n・Unitypackage内テクスチャの容量削減しました。\n・Arktoon-Shaders(v1.0.2.6)\n　同梱シェーダーのバージョンアップ。\n・商品説明、利用規約修正。\n■ver.2.0.1　2020/2/29\n・.psd　修正。\n・商品説明、利用規約修正。\n■ver.3.0.0　2020/5/1\n・商品説明、利用規約修正。\n↓以下が新しく増えました。\n・Blenderファイル\n・FBXファイル\n・P.Guri.fbx（ポリゴン削減、結合版）\n■ver.4.0.0　2020/10/8\n・Unity2018対応\n・商品説明修正。\n・3Dモデルの大きさが一回り小さくなりました。\n・ポリゴン数削減。\n・[Hand_Pose]新しく作り直しました。\n・名前変更。アーマチュア→Armature\n・[Toes]のボーン消去。\n・[Bag]Chestウェイト塗りました。\n↓以下が新しく増えました。\n・Unity:FBXファイル\n・Unity:(.prefab)\n・Unity:[Hand_Pose]Animationファイル\n・地面に座るアニメーション\n■ver.4.0.1　2020/10/17\n・[Guri]ボーン長さ修正。\n・Armature：スケール差[0.9]→[1]修正。\n■ver.4.0.2　2020/10/21\n・[P.Guri]目のシェイプキー修正。\n・[Hand_Pose]修正。\n・シェーディングを良い感じにしました。\n■ver.4.0.3　2020/10/26\n・利用規約修正。\n\n■ver.4.1.0　2021/10/8\n・Blender2.9対応\n・グローバル-Z軸に統一しました\n・シェーダー変更\n・PGuri.prefab消去"},{"type":"media","content":"\u003ciframe width=\"500\" height=\"500\" src=\"https://hub.vroid.com/characters/1414362449181855096/models/6293157989480530458/embed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\" allow=\"xr-spatial-tracking\"\u003e\u003c/iframe\u003e"}]}
+          </script>
         </div>
-        <aside>
-          <div class="shoplist-with-items" v-if=
-          "shops &amp;&amp; shops.length &gt; 0"></div>
-        </aside>
-        <script id="json_modules" type="application/json">
-        {"modules":[{"type":"text","title":"───▼色々な説明───","content":"───▼使用シェイダー───\n◆Unlit_WF_ShaderSuite　制作者様：フレア/whiteflare\n配布元： https://github.com/whiteflare/Unlit_WF_ShaderSuite/wiki\n-------------------------------------------\n───▼導入方法───\n◆準備しておくもの\n・Unity\n・Unlit_WF_ShaderSuite(シェーダー)\n・Guriフォルダ\n\n①Unityに【Unlit_WF_ShaderSuite】と本フォルダ内の【Guri(.Unitypackage)】をインポートする。\n②Assets内の【Guir】フォルダをクリック。\n③お好きな(.prefab)または(.FBX)を[Hierarchy]にドラッグ＆ドロップして入れてください。\n\n④あとは、各自お好きな設定をしてください。\n▷VRChatへのアップロード、アニメーションオーバーライド\n（表情設定、物を出す方法）などの方法は各自お調べください。"},{"type":"text","title":"───▼仕様───","content":"●ポリゴン数　　　：△3650[Guri]\n　　　　　　　　　：△2881[P.Guri]\n●FBX数　　　　　 ：(G:1　P:1)\n●オブジェクト数　：(G:5　P:1)\n●マテリアル数　　：1\n●テクスチャ数　　：7(1+別カラー：4　マスク：2)\n●フルボディトラッキング：×非確認\n●Oculus Quest　　：×非確認\n●リップシンク　　：×非対応\n●アイトラッキング：×非対応\n●Dynamic Bone 　 ：×非確認\n\nGuri→G　P.Guri→P"},{"type":"text","title":"───▼内容物───","content":"■【Guri(v4.1.0)】\n┣■【Blender】\n┃　　┗・.Blend:2\n┣■【FBX】\n┃　　┗・.FBX：2\n┣■【Textures】\n┃　　┣・テクスチャ.png：7（通常:1　マスク:2　サンプルカラー:4）\n┃　　┗・テクスチャ改変用.psd(展開図入り)\n┣◆Guri.Unitypackage\n┗◇Readme_利用規約.txt\n-------------------------------------------\n──▽Unitypackage内モデルデータ──\n■【Guri】\n┣■【Animation】\n┃　　┣[Guri]・アニメーション：22（表情:14　ポーズ:5　鞄:2　座り:1）\n┃　　┗[P.Guri]・アニメーション：10（表情:7　鞄:2　座り:1）\n┣■【FBX】\n┃　　┗・FBX:2\n┣■【Materials】\n┃　　┗・マテリアル：1\n┣■【Textures】\n┃　　┗・テクスチャ：7\n┃　　　・Guri_tex_Outline（目や顔の輪郭線を表示させないためのマスク）\n┃　　　・Guri_tex_Shadow（手以外影をつけないためのマスク）\n┗◆Guri.prefab"},{"type":"text","title":"──▼利用規約──（※必ずお読みください）","content":"■↓こちらに利用規約を記載しています。※必ずご覧ください。\nhttps://masumarokobo.booth.pm/items/2473622\n\n※本モデルを購入した時点で本利用規約に同意したものとします。\n利用規約の内容は変更する場合があり、最新のものが適用されます。"},{"type":"text","title":"───▽連絡先───","content":"制作者：マスマロ(鱒麻呂)\ntwitter： https://twitter.com/masumaro__\nBOOTH： https://masumarokobo.booth.pm/\n\n●質問などございましたら［BOOTH内メッセージ］または［Twitter］にご連絡ください。"},{"type":"text","title":"───▽履歴───","content":"■ver.無印　2019/5/25\n・発売日\n■ver.1.1.0　2019/7/31\n・Arktoon-Shaders(v1.0.2.5) \n　同梱シェーダーのバージョンアップ。\n■ver.1.1.1　2019/8/10\n・商品説明修正。\n■ver.2.0.0　2019/12/25\n・ボーン名変更。\n・Unitypackage内テクスチャの容量削減しました。\n・Arktoon-Shaders(v1.0.2.6)\n　同梱シェーダーのバージョンアップ。\n・商品説明、利用規約修正。\n■ver.2.0.1　2020/2/29\n・.psd　修正。\n・商品説明、利用規約修正。\n■ver.3.0.0　2020/5/1\n・商品説明、利用規約修正。\n↓以下が新しく増えました。\n・Blenderファイル\n・FBXファイル\n・P.Guri.fbx（ポリゴン削減、結合版）\n■ver.4.0.0　2020/10/8\n・Unity2018対応\n・商品説明修正。\n・3Dモデルの大きさが一回り小さくなりました。\n・ポリゴン数削減。\n・[Hand_Pose]新しく作り直しました。\n・名前変更。アーマチュア→Armature\n・[Toes]のボーン消去。\n・[Bag]Chestウェイト塗りました。\n↓以下が新しく増えました。\n・Unity:FBXファイル\n・Unity:(.prefab)\n・Unity:[Hand_Pose]Animationファイル\n・地面に座るアニメーション\n■ver.4.0.1　2020/10/17\n・[Guri]ボーン長さ修正。\n・Armature：スケール差[0.9]→[1]修正。\n■ver.4.0.2　2020/10/21\n・[P.Guri]目のシェイプキー修正。\n・[Hand_Pose]修正。\n・シェーディングを良い感じにしました。\n■ver.4.0.3　2020/10/26\n・利用規約修正。\n\n■ver.4.1.0　2021/10/8\n・Blender2.9対応\n・グローバル-Z軸に統一しました\n・シェーダー変更\n・PGuri.prefab消去"},{"type":"media","content":"\u003ciframe width=\"500\" height=\"500\" src=\"https://hub.vroid.com/characters/1414362449181855096/models/6293157989480530458/embed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\" allow=\"xr-spatial-tracking\"\u003e\u003c/iframe\u003e"}]}
-        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
