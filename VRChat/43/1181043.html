@@ -59,9 +59,13 @@
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
     <script src=
+    "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
+    defer="defer" nonce=
+    "ioxi6ZAaJz9CXtDho8E0HRfNrBjtbBeXM7mC0lNn/Z4="></script>
+    <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "fIK3/YquVIXifBM9bZ6LwimFmgsB8gHGOEEMwxO1atU="></script>
+    "ioxi6ZAaJz9CXtDho8E0HRfNrBjtbBeXM7mC0lNn/Z4="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -74,7 +78,7 @@
     <script src=
     "https://asset.booth.pm/assets/ab357483f48c9496242e.js" defer=
     "defer" nonce=
-    "fIK3/YquVIXifBM9bZ6LwimFmgsB8gHGOEEMwxO1atU="></script>
+    "ioxi6ZAaJz9CXtDho8E0HRfNrBjtbBeXM7mC0lNn/Z4="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"GA-02 \"Single Shooter\"（単発小銃）","description":"「今回はアニメーション実装周りの知見を得たい為、無料で配布します！フィードバック等、頂けると幸いです。」\n\n単発に特化した、シンプルで堅牢な構造を持つ銃です。\nStandardシェーダー向きのPBRテクスチャと、トゥーン系シェーダー向きのColorテクスチャを用意しています\nポリゴン数：△5402（スコープマウントを外して3878）\n","url":"https://booth.pm/ja/items/1181043","offers":{"priceCurrency":"JPY","@type":"Offer","price":"0"},"image":"https://booth.pximg.net/c/620x620/719c3d6d-7dd0-4162-aa85-2ed21e39cf9a/i/1181043/5d1528e6-20bc-4077-9d27-bf6e56f90c29_base_resized.jpg"}
     </script>
@@ -91,7 +95,7 @@
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "fIK3/YquVIXifBM9bZ6LwimFmgsB8gHGOEEMwxO1atU="></script>
+    "ioxi6ZAaJz9CXtDho8E0HRfNrBjtbBeXM7mC0lNn/Z4="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -100,18 +104,20 @@
         <div class="recaptcha-tag" data-action=
         "booth/checkout_order" data-site-key=
         "6LfF1dcZAAAAAOHQX8v16MX5SktDwmQINVD_6mBF"></div>
-        <div class="market-item-detail u-bg-white"
-        data-ga-tracking-id="UA-124731854-1" data-product-brand=
-        "garden-of-ashen" data-product-category="127"
-        data-product-id="1181043" data-product-list="market_show"
-        data-product-price="0" data-shop-tracking-product-category=
-        "3D Models (Other)" data-shop-tracking-product-id="1181043"
+        <div class="market" data-ga-tracking-id="UA-124731854-1"
+        data-product-brand="garden-of-ashen" data-product-category=
+        "127" data-product-id="1181043" data-product-list=
+        "market_show" data-product-price="0"
+        data-shop-tracking-product-category="3D Models (Other)"
+        data-shop-tracking-product-id="1181043"
         data-shop-tracking-product-name=
         "GA-02 &quot;Single Shooter&quot;..."
         data-shop-tracking-product-price="0" data-tracking=
-        "detail_item">
+        "detail_item" id="items">
+          <div class="market"></div>
           <nav>
-            <div class="breadcrumbs u-border-b u-border-100">
+            <div class=
+            "market breadcrumbs u-bg-white u-border-b u-border-100">
               <div class="container">
                 <div class="breadcrumb">
                   <a class="label" data-tracking="click"
@@ -133,52 +139,55 @@
           </nav>
           <article>
             <div class=
-            "market-item-detail-article u-d-flex u-flex-column u-align-items-center u-pb-600 u-bg-white">
-              <div class="container">
-                <div class="market-item-detail__exhibition-banner">
-                </div>
-              </div>
-              <div class="u-bg-white u-pt-600 u-px-700">
+            "market market-item-detail item-info-detail u-bg-white">
+              <div class=
+              "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class="u-d-flex">
-                    <div class="u-order-1 l-col-2of5 u-pl-600">
-                      <header>
-                        <div class="u-mb-200">
-                          <div class="eventname-flag">
-                            <a class="eventname-flag--inner"
-                            data-tracking="click"
-                            data-product-list="from market_show via eventname_flag to event_index"
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
+                  <div class="u-pt-600 u-d-flex">
+                    <div class=
+                    "summary u-order-1 l-col-2of5 u-pl-600">
+                      <div class="mobile-section">
+                        <header>
+                          <div class="u-mb-200">
+                            <div class="eventname-flag">
+                              <a class="eventname-flag--inner"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via eventname_flag to event_index"
+                              href=
+                              "https://booth.pm/ja/events/bf-digitalgames">
+                              <div class="eventname-flag__name">
+                                デジタルゲーム回
+                              </div></a>
+                            </div>
+                          </div>
+                          <div class="u-my-200 u-tpg-title3">
+                            <a class="nav" target="_blank"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" rel="noopener"
                             href=
-                            "https://booth.pm/ja/events/bf-digitalgames">
-                            <div class="eventname-flag__name">
-                              デジタルゲーム回
+                            "https://garden-of-ashen.booth.pm/">
+                            <div class=
+                            "u-d-flex u-align-items-center">
+                              <img alt="工房「The garden of Ash」"
+                              class="user-avatar at-item-summary"
+                              src=
+                              "https://booth.pximg.net/c/48x48/users/713569/icon_image/a4836315-8e31-4050-b1f8-56be73a7a5ac_base_resized.jpg">
+                              <div class="u-text-ellipsis">
+                                工房「The garden of Ash」
+                              </div>
                             </div></a>
                           </div>
-                        </div>
-                        <div class="u-my-200 u-tpg-title3">
-                          <a class="nav" target="_blank"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" rel="noopener"
-                          href="https://garden-of-ashen.booth.pm/">
+                          <h2 class=
+                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                            GA-02 "Single Shooter"（単発小銃）
+                          </h2>
                           <div class=
-                          "u-d-flex u-align-items-center">
-                            <img alt="工房「The garden of Ash」" class=
-                            "user-avatar at-item-summary" src=
-                            "https://booth.pximg.net/c/48x48/users/713569/icon_image/a4836315-8e31-4050-b1f8-56be73a7a5ac_base_resized.jpg">
-                            <div class="u-text-ellipsis">
-                              工房「The garden of Ash」
-                            </div>
-                          </div></a>
-                        </div>
-                        <h2 class=
-                        "u-text-wrap u-tpg-title1 u-mt-0 u-mb-400">
-                          GA-02 "Single Shooter"（単発小銃）
-                        </h2>
-                        <div class=
-                        "u-text-assertive u-tpg-caption1"></div>
-                      </header>
-                      <section>
+                          "u-text-assertive u-tpg-caption1"></div>
+                        </header>
                         <div class="wish-list-link">
                           <a class="add-to-wish-list"
                           data-tracking="add_to_wishlist"
@@ -248,24 +257,32 @@
                             </li>
                           </ul>
                         </div>
-                      </section>
+                      </div>
                       <section>
                         <div class=
                         "share-btns u-d-flex u-flex-1 u-justify-content-start u-px-200 u-py-400">
-                          <a data-url=
-                          "https://booth.pm/ja/items/1181043"
-                          data-lang="ja" data-hashtags="booth_pm"
-                          data-text=
-                          "GA-02 &quot;Single Shooter&quot;（単発小銃） | 工房「The garden of Ash」"
-                          data-count="none" class=
-                          "twitter-share-button" href=
-                          "https://twitter.com/share">ツイート</a>
-                          <div class="u-ml-300">
+                          <div class="social-btn">
+                            <a data-url=
+                            "https://booth.pm/ja/items/1181043"
+                            data-lang="ja" data-hashtags="booth_pm"
+                            data-text=
+                            "GA-02 &quot;Single Shooter&quot;（単発小銃） | 工房「The garden of Ash」"
+                            data-count="none" class=
+                            "twitter-share-button" href=
+                            "https://twitter.com/share">ツイート</a>
+                          </div>
+                          <div class="social-btn u-ml-300">
                             <div class="fb-like" data-action="like"
                             data-href=
                             "https://booth.pm/ja/items/1181043"
                             data-layout="button_count" data-share=
                             "false" data-show-faces="false"></div>
+                          </div>
+                          <div class="mobile social-btn u-mx-200">
+                            <div class="line-it-button" data-lang=
+                            "ja" data-type="share-a" data-url=
+                            "https://booth.pm/ja/items/1181043"
+                            style="display: none;"></div>
                           </div>
                         </div>
                       </section>
@@ -286,16 +303,16 @@
                         </div>
                       </div>
                       <div class=
-                      "primary-image-thumbnails u-d-sp-none">
+                      "primary-image-thumbnails u-d-sp-none image-list">
                         <a class="pointer">
                         <div class="slick-thumbnail-border">
                           <img src=
                           "https://booth.pximg.net/c/72x72_a2_g5/719c3d6d-7dd0-4162-aa85-2ed21e39cf9a/i/1181043/5d1528e6-20bc-4077-9d27-bf6e56f90c29_base_resized.jpg">
                         </div></a>
                       </div>
-                      <section>
+                      <section class="main-info-column">
                         <div class=
-                        "js-market-item-detail-description">
+                        "js-market-item-detail-description description">
                           <p class="autolink u-text-wrap">
                             「今回はアニメーション実装周りの知見を得たい為、無料で配布します！フィードバック等、頂けると幸いです。」
                             単発に特化した、シンプルで堅牢な構造を持つ銃です。
@@ -304,130 +321,139 @@
                           </p>
                         </div>
                       </section>
-                      <section>
-                        <div class="u-text-wrap page_design" id=
-                        "modules"></div>
-                      </section>
+                      <section class="u-text-wrap page_design" id=
+                      "modules"></section>
                     </div>
                   </div>
+                  <section class="container">
+                    <div class="u-border-t u-py-500">
+                      <div class="mobile-section">
+                        <h3 class="u-m-0">
+                          タグ
+                        </h3>
+                      </div>
+                      <div class="search-guide-nav">
+                        <div class="search-guide-slider-wrapper">
+                          <div class="search-guide-slider">
+                            <div class=
+                            "search-guide-slider-container">
+                              <a class="search-guide-tablet"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E9%8A%83">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  銃
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E6%AD%A6%E5%99%A8">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  武器
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/FBX">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  FBX
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3D%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC%E7%94%A8%E8%A3%85%E9%A3%BE">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3Dキャラクター用装飾
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%83%E3%83%882">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  バーチャルマーケット2
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%82%A2%E3%83%A0A">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  バーチャルミュージアムA
+                                </div>
+                              </div></a>
+                            </div>
+                          </div><a class=
+                          "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
+                        </div>
+                      </div>
+                      <div class="mobile-section">
+                        <div class="u-my-500 u-mt-sp-300">
+                          <a class=
+                          "btn btn--default-outline u-tpg-caption1 u-text-wrap"
+                          data-tracking="click" data-product-list=
+                          "from market_show via tag_category_search to search_index"
+                          href=
+                          "https://booth.pm/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=%E9%8A%83">
+                          銃 x 3Dモデル（その他） で検索</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-                <section class="container">
-                  <div class="u-border-t u-py-500">
-                    <div class="mobile-section">
-                      <h3 class="u-m-0">
-                        タグ
-                      </h3>
-                    </div>
-                    <div class="search-guide-nav">
-                      <div class="search-guide-slider-wrapper">
-                        <div class="search-guide-slider">
-                          <div class=
-                          "search-guide-slider-container">
-                            <a class="search-guide-tablet"
-                            data-tracking="click"
-                            data-product-list="from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E9%8A%83">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                銃
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E6%AD%A6%E5%99%A8">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                武器
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href="https://booth.pm/ja/search/FBX">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                FBX
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/3D%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC%E7%94%A8%E8%A3%85%E9%A3%BE">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3Dキャラクター用装飾
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%83%E3%83%882">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                バーチャルマーケット2
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9F%E3%83%A5%E3%83%BC%E3%82%B8%E3%82%A2%E3%83%A0A">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                バーチャルミュージアムA
-                              </div>
-                            </div></a>
-                          </div>
-                        </div><a class=
-                        "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
-                      </div>
-                    </div>
-                    <div class="mobile-section">
-                      <div class="u-my-500 u-mt-sp-300">
-                        <a class=
-                        "btn btn--default-outline u-tpg-caption1 u-text-wrap"
-                        data-tracking="click" data-product-list=
-                        "from market_show via tag_category_search to search_index"
-                        href=
-                        "https://booth.pm/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=%E9%8A%83">
-                        銃 x 3Dモデル（その他） で検索</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
               </div>
             </div>
           </article>
+          <aside>
+            <div class="market">
+              <div class="shoplist-with-items" v-if=
+              "shops &amp;&amp; shops.length &gt; 0"></div>
+            </div>
+          </aside>
+          <script id="json_modules" type="application/json">
+          {"modules":[{"type":"text","title":"武器説明","content":"装弾数１発の銃。射撃の度に銃身前端を折り曲げ、次の弾を装填する必要がある。\n\n連発機構も、装弾機構も持たない故に銃としては最もシンプルで、まず故障しない堅実な信頼性を持つ。"},{"type":"text","title":"利用規約","content":"注意：訳の解釈に違いが生じた場合、日本語の規約を優先します。\nCaution: If there are any translation errors of rules between language, I will prioritize the japanese rules.\n\n目次\n１．定義\n２．禁止事項\n３．許可事項\n４．免責\n\n\n１．定義\n　・製作者：Ash (Twitter ID: @ash_q563）のこと\n　・購入者：正規の販売サイト（18/10/21現在 https://garden-of-ashen.booth.pm/ のみ）でデータを購入した方\n　・販売データ：製品データのダウンロードにより得られるファイルの中身\n\n\n２．禁止事項\n　・いかなる形態を問わず購入者本人以外が販売データの全て、または一部（改変含む）の元データを取り出せる状態でアップロードすること\n　（アップローダにアップロード、吸い出しができる状態で公開するなど）\n　　※誰かにカスタムテクスチャを依頼するのにデータを渡したい時は相談して下さい\n\n　・宗教、政治関係に使う\n\n　・特定の個人や団体への誹謗中傷をするのに使う\n\n禁止事項に抵触した時点で、許可事項に基づくモデルの使用権は自動的に終了します。\n悪質な場合、損害賠償の請求を行う場合があります。\n\n\n３．許可事項\n　・禁止事項に抵触しない全てのこと\n　例：\n　　・営利利用\n　　・キャラクターの装備品に\n　　・ゲーム内データなど、パッケージをビルドし、容易に取り出せない形にしての再配布\n　　・ワールドの装飾、ワールド配置の装備品に\n　　・データを活用して動画投稿、写真投稿\n　　・自分で改造して自分で使う\n　　・これを装備して、もしくはこれそのものになって配信活動\n　　・その他色々…\n　　（当然ですが、R-18(G)的用途などに関してはゾーニングをしっかりと）\n\n　※用途が禁止事項に抵触するか分からない場合、お気軽にお問い合わせください。\n\n\n４．免責\n・本データを使用したことによる利用者の損害、被害に関し、作者は一切補償をしません\n・本データを使用した結果、購入者が他人、他社に損害、被害を与えた場合、その責任は当該購入者にあるものとします\n\n"}]}
+          </script>
         </div>
-        <aside>
-          <div class="shoplist-with-items" v-if=
-          "shops &amp;&amp; shops.length &gt; 0"></div>
-        </aside>
-        <script id="json_modules" type="application/json">
-        {"modules":[{"type":"text","title":"武器説明","content":"装弾数１発の銃。射撃の度に銃身前端を折り曲げ、次の弾を装填する必要がある。\n\n連発機構も、装弾機構も持たない故に銃としては最もシンプルで、まず故障しない堅実な信頼性を持つ。"},{"type":"text","title":"利用規約","content":"注意：訳の解釈に違いが生じた場合、日本語の規約を優先します。\nCaution: If there are any translation errors of rules between language, I will prioritize the japanese rules.\n\n目次\n１．定義\n２．禁止事項\n３．許可事項\n４．免責\n\n\n１．定義\n　・製作者：Ash (Twitter ID: @ash_q563）のこと\n　・購入者：正規の販売サイト（18/10/21現在 https://garden-of-ashen.booth.pm/ のみ）でデータを購入した方\n　・販売データ：製品データのダウンロードにより得られるファイルの中身\n\n\n２．禁止事項\n　・いかなる形態を問わず購入者本人以外が販売データの全て、または一部（改変含む）の元データを取り出せる状態でアップロードすること\n　（アップローダにアップロード、吸い出しができる状態で公開するなど）\n　　※誰かにカスタムテクスチャを依頼するのにデータを渡したい時は相談して下さい\n\n　・宗教、政治関係に使う\n\n　・特定の個人や団体への誹謗中傷をするのに使う\n\n禁止事項に抵触した時点で、許可事項に基づくモデルの使用権は自動的に終了します。\n悪質な場合、損害賠償の請求を行う場合があります。\n\n\n３．許可事項\n　・禁止事項に抵触しない全てのこと\n　例：\n　　・営利利用\n　　・キャラクターの装備品に\n　　・ゲーム内データなど、パッケージをビルドし、容易に取り出せない形にしての再配布\n　　・ワールドの装飾、ワールド配置の装備品に\n　　・データを活用して動画投稿、写真投稿\n　　・自分で改造して自分で使う\n　　・これを装備して、もしくはこれそのものになって配信活動\n　　・その他色々…\n　　（当然ですが、R-18(G)的用途などに関してはゾーニングをしっかりと）\n\n　※用途が禁止事項に抵触するか分からない場合、お気軽にお問い合わせください。\n\n\n４．免責\n・本データを使用したことによる利用者の損害、被害に関し、作者は一切補償をしません\n・本データを使用した結果、購入者が他人、他社に損害、被害を与えた場合、その責任は当該購入者にあるものとします\n\n"}]}
-        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
