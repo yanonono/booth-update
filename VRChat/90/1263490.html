@@ -59,9 +59,13 @@
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
     <script src=
+    "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
+    defer="defer" nonce=
+    "zWwlw97eQuv1xBNsU4i3TmXI2v2rtlALHrHdasuZrb8="></script>
+    <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "P7wQlllL7x7RNKedF0H1IksVCWWMAOU1NmxmxJUljQw="></script>
+    "zWwlw97eQuv1xBNsU4i3TmXI2v2rtlALHrHdasuZrb8="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -74,7 +78,7 @@
     <script src=
     "https://asset.booth.pm/assets/ab357483f48c9496242e.js" defer=
     "defer" nonce=
-    "P7wQlllL7x7RNKedF0H1IksVCWWMAOU1NmxmxJUljQw="></script>
+    "zWwlw97eQuv1xBNsU4i3TmXI2v2rtlALHrHdasuZrb8="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"たぬき【獣型3Dアバター】※Oculus Quest対応","description":"愛らしい表情とだらしないモーションを思う存分堪能してください。\nポリゴン数：6,584(アクセサリ類込み)\n \nYou can enjoy adorable expressions and sloppy motions.\nPolygon count:6,584(including accessories)","url":"https://booth.pm/ja/items/1263490","offers":{"priceCurrency":"JPY","@type":"Offer","price":"292"},"image":"https://booth.pximg.net/c/620x620/cf33cb75-8d81-4e28-a425-e7617a50d1e4/i/1263490/50498676-ec95-4dbe-b93f-6b4ece17964a_base_resized.jpg"}
     </script>
@@ -91,7 +95,7 @@
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "P7wQlllL7x7RNKedF0H1IksVCWWMAOU1NmxmxJUljQw="></script>
+    "zWwlw97eQuv1xBNsU4i3TmXI2v2rtlALHrHdasuZrb8="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -100,18 +104,19 @@
         <div class="recaptcha-tag" data-action=
         "booth/checkout_order" data-site-key=
         "6LfF1dcZAAAAAOHQX8v16MX5SktDwmQINVD_6mBF"></div>
-        <div class="market-item-detail u-bg-white"
-        data-ga-tracking-id="UA-164534176-1" data-product-brand=
-        "act-ib" data-product-category="127" data-product-id=
-        "1263490" data-product-list="market_show"
+        <div class="market" data-ga-tracking-id="UA-164534176-1"
+        data-product-brand="act-ib" data-product-category="127"
+        data-product-id="1263490" data-product-list="market_show"
         data-product-price="292"
         data-shop-tracking-product-category="3D Models (Other)"
         data-shop-tracking-product-id="1263490"
         data-shop-tracking-product-name="たぬき【獣型3Dアバター】※Oculus Q..."
         data-shop-tracking-product-price="292" data-tracking=
-        "detail_item">
+        "detail_item" id="items">
+          <div class="market"></div>
           <nav>
-            <div class="breadcrumbs u-border-b u-border-100">
+            <div class=
+            "market breadcrumbs u-bg-white u-border-b u-border-100">
               <div class="container">
                 <div class="breadcrumb">
                   <a class="label" data-tracking="click"
@@ -133,52 +138,53 @@
           </nav>
           <article>
             <div class=
-            "market-item-detail-article u-d-flex u-flex-column u-align-items-center u-pb-600 u-bg-white">
-              <div class="container">
-                <div class="market-item-detail__exhibition-banner">
-                </div>
-              </div>
-              <div class="u-bg-white u-pt-600 u-px-700">
+            "market market-item-detail item-info-detail u-bg-white">
+              <div class=
+              "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class="u-d-flex">
-                    <div class="u-order-1 l-col-2of5 u-pl-600">
-                      <header>
-                        <div class="u-mb-200">
-                          <div class="eventname-flag">
-                            <a class="eventname-flag--inner"
-                            data-tracking="click"
-                            data-product-list="from market_show via eventname_flag to event_index"
-                            href=
-                            "https://booth.pm/ja/events/v-market2">
-                            <div class="eventname-flag__name">
-                              Vケット2
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
+                  <div class="u-pt-600 u-d-flex">
+                    <div class=
+                    "summary u-order-1 l-col-2of5 u-pl-600">
+                      <div class="mobile-section">
+                        <header>
+                          <div class="u-mb-200">
+                            <div class="eventname-flag">
+                              <a class="eventname-flag--inner"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via eventname_flag to event_index"
+                              href=
+                              "https://booth.pm/ja/events/v-market2">
+                              <div class="eventname-flag__name">
+                                Vケット2
+                              </div></a>
+                            </div>
+                          </div>
+                          <div class="u-my-200 u-tpg-title3">
+                            <a class="nav" target="_blank"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" rel="noopener"
+                            href="https://act-ib.booth.pm/">
+                            <div class=
+                            "u-d-flex u-align-items-center">
+                              <img alt="iB STORE BOOTH支店" class=
+                              "user-avatar at-item-summary" src=
+                              "https://booth.pximg.net/c/48x48/users/5978193/icon_image/db064ed7-513c-408a-a9f5-378c834befc2_base_resized.jpg">
+                              <div class="u-text-ellipsis">
+                                iB STORE BOOTH支店
+                              </div>
                             </div></a>
                           </div>
-                        </div>
-                        <div class="u-my-200 u-tpg-title3">
-                          <a class="nav" target="_blank"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" rel="noopener"
-                          href="https://act-ib.booth.pm/">
+                          <h2 class=
+                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                            たぬき【獣型3Dアバター】※Oculus Quest対応
+                          </h2>
                           <div class=
-                          "u-d-flex u-align-items-center">
-                            <img alt="iB STORE BOOTH支店" class=
-                            "user-avatar at-item-summary" src=
-                            "https://booth.pximg.net/c/48x48/users/5978193/icon_image/db064ed7-513c-408a-a9f5-378c834befc2_base_resized.jpg">
-                            <div class="u-text-ellipsis">
-                              iB STORE BOOTH支店
-                            </div>
-                          </div></a>
-                        </div>
-                        <h2 class=
-                        "u-text-wrap u-tpg-title1 u-mt-0 u-mb-400">
-                          たぬき【獣型3Dアバター】※Oculus Quest対応
-                        </h2>
-                        <div class=
-                        "u-text-assertive u-tpg-caption1"></div>
-                      </header>
-                      <section>
+                          "u-text-assertive u-tpg-caption1"></div>
+                        </header>
                         <div class="wish-list-link">
                           <a class="add-to-wish-list"
                           data-tracking="add_to_wishlist"
@@ -231,24 +237,32 @@
                             </li>
                           </ul>
                         </div>
-                      </section>
+                      </div>
                       <section>
                         <div class=
                         "share-btns u-d-flex u-flex-1 u-justify-content-start u-px-200 u-py-400">
-                          <a data-url=
-                          "https://booth.pm/ja/items/1263490"
-                          data-lang="ja" data-hashtags="booth_pm"
-                          data-text=
-                          "たぬき【獣型3Dアバター】※Oculus Quest対応 | iB STORE BOOTH支店"
-                          data-count="none" class=
-                          "twitter-share-button" href=
-                          "https://twitter.com/share">ツイート</a>
-                          <div class="u-ml-300">
+                          <div class="social-btn">
+                            <a data-url=
+                            "https://booth.pm/ja/items/1263490"
+                            data-lang="ja" data-hashtags="booth_pm"
+                            data-text=
+                            "たぬき【獣型3Dアバター】※Oculus Quest対応 | iB STORE BOOTH支店"
+                            data-count="none" class=
+                            "twitter-share-button" href=
+                            "https://twitter.com/share">ツイート</a>
+                          </div>
+                          <div class="social-btn u-ml-300">
                             <div class="fb-like" data-action="like"
                             data-href=
                             "https://booth.pm/ja/items/1263490"
                             data-layout="button_count" data-share=
                             "false" data-show-faces="false"></div>
+                          </div>
+                          <div class="mobile social-btn u-mx-200">
+                            <div class="line-it-button" data-lang=
+                            "ja" data-type="share-a" data-url=
+                            "https://booth.pm/ja/items/1263490"
+                            style="display: none;"></div>
                           </div>
                         </div>
                       </section>
@@ -279,7 +293,7 @@
                         </div>
                       </div>
                       <div class=
-                      "primary-image-thumbnails u-d-sp-none">
+                      "primary-image-thumbnails u-d-sp-none image-list">
                         <a class="pointer">
                         <div class="slick-thumbnail-border">
                           <img src=
@@ -290,9 +304,9 @@
                           "https://booth.pximg.net/c/72x72_a2_g5/cf33cb75-8d81-4e28-a425-e7617a50d1e4/i/1263490/7522d74d-2ee0-4084-8b79-98625e2c9431_base_resized.jpg">
                         </div></a>
                       </div>
-                      <section>
+                      <section class="main-info-column">
                         <div class=
-                        "js-market-item-detail-description">
+                        "js-market-item-detail-description description">
                           <p class="autolink u-text-wrap">
                             愛らしい表情とだらしないモーションを思う存分堪能してください。
                             ポリゴン数：6,584(アクセサリ類込み) You can enjoy
@@ -302,108 +316,115 @@
                           </p>
                         </div>
                       </section>
-                      <section>
-                        <div class="u-text-wrap page_design" id=
-                        "modules"></div>
-                      </section>
+                      <section class="u-text-wrap page_design" id=
+                      "modules"></section>
                     </div>
                   </div>
+                  <section class="container">
+                    <div class="u-border-t u-py-500">
+                      <div class="mobile-section">
+                        <h3 class="u-m-0">
+                          タグ
+                        </h3>
+                      </div>
+                      <div class="search-guide-nav">
+                        <div class="search-guide-slider-wrapper">
+                          <div class="search-guide-slider">
+                            <div class=
+                            "search-guide-slider-container">
+                              <a class="search-guide-tablet"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/Unity">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  Unity
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3D%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3Dキャラクター
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/FBX">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  FBX
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E7%B5%A2%E7%88%9B%E5%8D%9A%E8%A6%A7%E4%BC%9AA">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  絢爛博覧会A
+                                </div>
+                              </div></a>
+                            </div>
+                          </div><a class=
+                          "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
+                        </div>
+                      </div>
+                      <div class="mobile-section">
+                        <div class="u-my-500 u-mt-sp-300">
+                          <a class=
+                          "btn btn--default-outline u-tpg-caption1 u-text-wrap"
+                          data-tracking="click" data-product-list=
+                          "from market_show via tag_category_search to search_index"
+                          href=
+                          "https://booth.pm/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=Unity">
+                          Unity x 3Dモデル（その他） で検索</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-                <section class="container">
-                  <div class="u-border-t u-py-500">
-                    <div class="mobile-section">
-                      <h3 class="u-m-0">
-                        タグ
-                      </h3>
-                    </div>
-                    <div class="search-guide-nav">
-                      <div class="search-guide-slider-wrapper">
-                        <div class="search-guide-slider">
-                          <div class=
-                          "search-guide-slider-container">
-                            <a class="search-guide-tablet"
-                            data-tracking="click"
-                            data-product-list="from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/Unity">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                Unity
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/3D%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3Dキャラクター
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href="https://booth.pm/ja/search/FBX">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                FBX
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E7%B5%A2%E7%88%9B%E5%8D%9A%E8%A6%A7%E4%BC%9AA">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                絢爛博覧会A
-                              </div>
-                            </div></a>
-                          </div>
-                        </div><a class=
-                        "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
-                      </div>
-                    </div>
-                    <div class="mobile-section">
-                      <div class="u-my-500 u-mt-sp-300">
-                        <a class=
-                        "btn btn--default-outline u-tpg-caption1 u-text-wrap"
-                        data-tracking="click" data-product-list=
-                        "from market_show via tag_category_search to search_index"
-                        href=
-                        "https://booth.pm/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=Unity">
-                        Unity x 3Dモデル（その他） で検索</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
               </div>
             </div>
           </article>
+          <aside>
+            <div class="market">
+              <div class="shoplist-with-items" v-if=
+              "shops &amp;&amp; shops.length &gt; 0"></div>
+            </div>
+          </aside>
+          <script id="json_modules" type="application/json">
+          {"modules":[{"type":"text","title":"特徴","content":"１．たぬき\n2足歩行していますが、だれが何と言おうと、たぬきです。\n※何かに憧れているうちに2足歩行できるようになりました。\n \n２．VRChatで使える\nVRChatでの利用を想定したモデルですので、簡単なセットアップで\nすぐにたぬきになれます。\n \n３．付属品がついてる\n酒瓶、傘、帳簿が付属しています。これらの取り外しはUnityで\n読み込むことで可能です。\n \n４．虚無表情\n愛らしい表情でチャット相手もイチコロです。"},{"type":"text","title":"Features","content":"1. Raccoon dog\nIt walks on two legs, but it is a japanese traditional raccoon dog.\n※It seems to be able to walk on two legs while longing for something.\n \n2. You can use it in VRChat\nThis model is designed for use in VRChat.\nSo, it’s easy to use it in VRChat.\n \n3. Accessories\nThis model includes a japanese sake bottle, a japanese straw hat, and a book.\nYou can attach and remove by loading them in Unity.\n \n4. Face of blank expression.\nThe adorable expression on your face will win over others."},{"type":"text","title":"想定する利用シーン","content":"・日本の伝統的なPotteryでワールドワイドなVRChatに挑む。\n・置き物プレイ。\n・マスコットキャラとして愛嬌をふりまく。"},{"type":"text","title":"Usage Scenario","content":"・You can enjoy the japanese traditional raccoon dog in VRChat.\n・You can play a role as pottery.\n・You can make yourself agreeable to everybody as a mascot."},{"type":"text","title":"利用規約","content":"・購入してからのデータ改変に制限はありません。\n・本モデル、改変モデルの著作権はiBに帰属するものとします。\n・個人利用、商用利用は可としますが、\n　政治／宗教／他者への誹謗中傷目的での利用は禁止です。\n　　(なお、iBへご一報いただけると、喜びます)\n・再配布は改変の有無に関わらず禁止とします。\n・付属品やモデルの一部などを取り込んだデータの配布は禁止とします。\n・本モデルや改変されたモデルを使用することによる生じたトラブルや\n　損失については、iBは一切の責任を負わないものとします。"},{"type":"text","title":"User Policy","content":"・There are no restrictions to modify this model after buying.\n・The copyright with this model and any modified model is owned by iB.\n・This model is permitted for personal and commercial use, but prohibited for political use, religional use, and the purpose of slandering others.\n（We would be pleased if you could let iB know when you use it.）\n・The redistribution is prohibited with or without modification.\n・The distribution of data that incorporates accessories or parts of this model is prohibited.\n・iB shall not be liable for any trouble or loss caused by the use of this model or any modified model."},{"type":"text","title":"更新履歴","content":"2019/03/08　販売開始 - バーチャルマーケット2に合わせ"},{"type":"text","title":"Change Log","content":"2019/03/08 Launch with Virtual Market 2"}]}
+          </script>
         </div>
-        <aside>
-          <div class="shoplist-with-items" v-if=
-          "shops &amp;&amp; shops.length &gt; 0"></div>
-        </aside>
-        <script id="json_modules" type="application/json">
-        {"modules":[{"type":"text","title":"特徴","content":"１．たぬき\n2足歩行していますが、だれが何と言おうと、たぬきです。\n※何かに憧れているうちに2足歩行できるようになりました。\n \n２．VRChatで使える\nVRChatでの利用を想定したモデルですので、簡単なセットアップで\nすぐにたぬきになれます。\n \n３．付属品がついてる\n酒瓶、傘、帳簿が付属しています。これらの取り外しはUnityで\n読み込むことで可能です。\n \n４．虚無表情\n愛らしい表情でチャット相手もイチコロです。"},{"type":"text","title":"Features","content":"1. Raccoon dog\nIt walks on two legs, but it is a japanese traditional raccoon dog.\n※It seems to be able to walk on two legs while longing for something.\n \n2. You can use it in VRChat\nThis model is designed for use in VRChat.\nSo, it’s easy to use it in VRChat.\n \n3. Accessories\nThis model includes a japanese sake bottle, a japanese straw hat, and a book.\nYou can attach and remove by loading them in Unity.\n \n4. Face of blank expression.\nThe adorable expression on your face will win over others."},{"type":"text","title":"想定する利用シーン","content":"・日本の伝統的なPotteryでワールドワイドなVRChatに挑む。\n・置き物プレイ。\n・マスコットキャラとして愛嬌をふりまく。"},{"type":"text","title":"Usage Scenario","content":"・You can enjoy the japanese traditional raccoon dog in VRChat.\n・You can play a role as pottery.\n・You can make yourself agreeable to everybody as a mascot."},{"type":"text","title":"利用規約","content":"・購入してからのデータ改変に制限はありません。\n・本モデル、改変モデルの著作権はiBに帰属するものとします。\n・個人利用、商用利用は可としますが、\n　政治／宗教／他者への誹謗中傷目的での利用は禁止です。\n　　(なお、iBへご一報いただけると、喜びます)\n・再配布は改変の有無に関わらず禁止とします。\n・付属品やモデルの一部などを取り込んだデータの配布は禁止とします。\n・本モデルや改変されたモデルを使用することによる生じたトラブルや\n　損失については、iBは一切の責任を負わないものとします。"},{"type":"text","title":"User Policy","content":"・There are no restrictions to modify this model after buying.\n・The copyright with this model and any modified model is owned by iB.\n・This model is permitted for personal and commercial use, but prohibited for political use, religional use, and the purpose of slandering others.\n（We would be pleased if you could let iB know when you use it.）\n・The redistribution is prohibited with or without modification.\n・The distribution of data that incorporates accessories or parts of this model is prohibited.\n・iB shall not be liable for any trouble or loss caused by the use of this model or any modified model."},{"type":"text","title":"更新履歴","content":"2019/03/08　販売開始 - バーチャルマーケット2に合わせ"},{"type":"text","title":"Change Log","content":"2019/03/08 Launch with Virtual Market 2"}]}
-        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
