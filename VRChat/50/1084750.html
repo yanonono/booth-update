@@ -59,9 +59,13 @@
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
     <script src=
+    "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
+    defer="defer" nonce=
+    "TMSZODOeUnBuZ2KBHoLwoy1lwlURMkeXhHxg+1JKCq8="></script>
+    <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "XfsOEbfpjbdcrenUrfVrNsemt+hjRVSV37wAhPA8JMI="></script>
+    "TMSZODOeUnBuZ2KBHoLwoy1lwlURMkeXhHxg+1JKCq8="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -74,7 +78,7 @@
     <script src=
     "https://asset.booth.pm/assets/ab357483f48c9496242e.js" defer=
     "defer" nonce=
-    "XfsOEbfpjbdcrenUrfVrNsemt+hjRVSV37wAhPA8JMI="></script>
+    "TMSZODOeUnBuZ2KBHoLwoy1lwlURMkeXhHxg+1JKCq8="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"オリジナル３Dモデル　「ラナ - Classic-」","description":"オリジナル３Dモデル　RANA - ラナ -Classic- v1.2\n\n*このモデルはアップデートによるサポートはございません。\n*This model is not supported by updates.\n-2500円-\u003e1000円\n\n*ダイナミックボーンがインポートされてない場合、prefabのアップロードができない現象があります。\nダイナミックボーンをお持ちしていない方は「Amature\\hips\\spine\\chest\\neck」の「Head,Aho_Bone_1,Hair_Front,Hair_Side,Ponytail_1」のTransform以外のComponentを消してください。\n\n* If dynamic bone is not imported, prefab may not be uploaded.\nIf you don't have dynamic bones, please delete Components other than Transform of \"Head, Aho_Bone_1, Hair_Front, Hair_Side, Ponytail_1\" of \"Amature \\ hips \\ spine \\ chest \\ neck\".","url":"https://booth.pm/ja/items/1084750","offers":{"priceCurrency":"JPY","@type":"Offer","price":"1000"},"image":"https://booth.pximg.net/c/620x620/bf4eda07-ab20-4fe6-888a-5fc4f823e298/i/1084750/f99346e2-8919-4259-9c96-26a9eb22a115_base_resized.jpg"}
     </script>
@@ -91,7 +95,7 @@
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "XfsOEbfpjbdcrenUrfVrNsemt+hjRVSV37wAhPA8JMI="></script>
+    "TMSZODOeUnBuZ2KBHoLwoy1lwlURMkeXhHxg+1JKCq8="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -100,13 +104,15 @@
         <div class="recaptcha-tag" data-action=
         "booth/checkout_order" data-site-key=
         "6LfF1dcZAAAAAOHQX8v16MX5SktDwmQINVD_6mBF"></div>
-        <div class="market-item-detail u-bg-white"
-        data-ga-tracking-id="" data-product-brand="softkaran"
-        data-product-category="127" data-product-id="1084750"
-        data-product-list="market_show" data-product-price="1000"
-        data-tracking="detail_item">
+        <div class="market" data-ga-tracking-id=""
+        data-product-brand="softkaran" data-product-category="127"
+        data-product-id="1084750" data-product-list="market_show"
+        data-product-price="1000" data-tracking="detail_item" id=
+        "items">
+          <div class="market"></div>
           <nav>
-            <div class="breadcrumbs u-border-b u-border-100">
+            <div class=
+            "market breadcrumbs u-bg-white u-border-b u-border-100">
               <div class="container">
                 <div class="breadcrumb">
                   <a class="label" data-tracking="click"
@@ -128,52 +134,53 @@
           </nav>
           <article>
             <div class=
-            "market-item-detail-article u-d-flex u-flex-column u-align-items-center u-pb-600 u-bg-white">
-              <div class="container">
-                <div class="market-item-detail__exhibition-banner">
-                </div>
-              </div>
-              <div class="u-bg-white u-pt-600 u-px-700">
+            "market market-item-detail item-info-detail u-bg-white">
+              <div class=
+              "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class="u-d-flex">
-                    <div class="u-order-1 l-col-2of5 u-pl-600">
-                      <header>
-                        <div class="u-mb-200">
-                          <div class="eventname-flag">
-                            <a class="eventname-flag--inner"
-                            data-tracking="click"
-                            data-product-list="from market_show via eventname_flag to event_index"
-                            href=
-                            "https://booth.pm/ja/events/v-market2">
-                            <div class="eventname-flag__name">
-                              Vケット2
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
+                  <div class="u-pt-600 u-d-flex">
+                    <div class=
+                    "summary u-order-1 l-col-2of5 u-pl-600">
+                      <div class="mobile-section">
+                        <header>
+                          <div class="u-mb-200">
+                            <div class="eventname-flag">
+                              <a class="eventname-flag--inner"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via eventname_flag to event_index"
+                              href=
+                              "https://booth.pm/ja/events/v-market2">
+                              <div class="eventname-flag__name">
+                                Vケット2
+                              </div></a>
+                            </div>
+                          </div>
+                          <div class="u-my-200 u-tpg-title3">
+                            <a class="nav" target="_blank"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" rel="noopener"
+                            href="https://softkaran.booth.pm/">
+                            <div class=
+                            "u-d-flex u-align-items-center">
+                              <img alt="リリク３D" class=
+                              "user-avatar at-item-summary" src=
+                              "https://booth.pximg.net/c/48x48/users/2228921/icon_image/a7e426ef-009f-4160-b38d-85c90f1d63eb_base_resized.jpg">
+                              <div class="u-text-ellipsis">
+                                リリク３D
+                              </div>
                             </div></a>
                           </div>
-                        </div>
-                        <div class="u-my-200 u-tpg-title3">
-                          <a class="nav" target="_blank"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" rel="noopener"
-                          href="https://softkaran.booth.pm/">
+                          <h2 class=
+                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                            オリジナル３Dモデル　「ラナ - Classic-」
+                          </h2>
                           <div class=
-                          "u-d-flex u-align-items-center">
-                            <img alt="リリク３D" class=
-                            "user-avatar at-item-summary" src=
-                            "https://booth.pximg.net/c/48x48/users/2228921/icon_image/a7e426ef-009f-4160-b38d-85c90f1d63eb_base_resized.jpg">
-                            <div class="u-text-ellipsis">
-                              リリク３D
-                            </div>
-                          </div></a>
-                        </div>
-                        <h2 class=
-                        "u-text-wrap u-tpg-title1 u-mt-0 u-mb-400">
-                          オリジナル３Dモデル　「ラナ - Classic-」
-                        </h2>
-                        <div class=
-                        "u-text-assertive u-tpg-caption1"></div>
-                      </header>
-                      <section>
+                          "u-text-assertive u-tpg-caption1"></div>
+                        </header>
                         <div class="wish-list-link">
                           <a class="add-to-wish-list"
                           data-tracking="add_to_wishlist"
@@ -226,24 +233,32 @@
                             </li>
                           </ul>
                         </div>
-                      </section>
+                      </div>
                       <section>
                         <div class=
                         "share-btns u-d-flex u-flex-1 u-justify-content-start u-px-200 u-py-400">
-                          <a data-url=
-                          "https://booth.pm/ja/items/1084750"
-                          data-lang="ja" data-hashtags="booth_pm"
-                          data-text=
-                          "オリジナル３Dモデル　「ラナ - Classic-」 | リリク３D"
-                          data-count="none" class=
-                          "twitter-share-button" href=
-                          "https://twitter.com/share">ツイート</a>
-                          <div class="u-ml-300">
+                          <div class="social-btn">
+                            <a data-url=
+                            "https://booth.pm/ja/items/1084750"
+                            data-lang="ja" data-hashtags="booth_pm"
+                            data-text=
+                            "オリジナル３Dモデル　「ラナ - Classic-」 | リリク３D"
+                            data-count="none" class=
+                            "twitter-share-button" href=
+                            "https://twitter.com/share">ツイート</a>
+                          </div>
+                          <div class="social-btn u-ml-300">
                             <div class="fb-like" data-action="like"
                             data-href=
                             "https://booth.pm/ja/items/1084750"
                             data-layout="button_count" data-share=
                             "false" data-show-faces="false"></div>
+                          </div>
+                          <div class="mobile social-btn u-mx-200">
+                            <div class="line-it-button" data-lang=
+                            "ja" data-type="share-a" data-url=
+                            "https://booth.pm/ja/items/1084750"
+                            style="display: none;"></div>
                           </div>
                         </div>
                       </section>
@@ -307,7 +322,7 @@
                         </div>
                       </div>
                       <div class=
-                      "primary-image-thumbnails u-d-sp-none">
+                      "primary-image-thumbnails u-d-sp-none image-list">
                         <a class="pointer">
                         <div class="slick-thumbnail-border">
                           <img src=
@@ -330,9 +345,9 @@
                           "https://booth.pximg.net/c/72x72_a2_g5/bf4eda07-ab20-4fe6-888a-5fc4f823e298/i/1084750/8ecdf3dd-3dbb-462b-abcf-eb1695f5be31_base_resized.jpg">
                         </div></a>
                       </div>
-                      <section>
+                      <section class="main-info-column">
                         <div class=
-                        "js-market-item-detail-description">
+                        "js-market-item-detail-description description">
                           <p class="autolink u-text-wrap">
                             オリジナル３Dモデル　RANA - ラナ -Classic- v1.2
                             *このモデルはアップデートによるサポートはございません。 *This
@@ -350,151 +365,163 @@
                           </p>
                         </div>
                       </section>
-                      <section>
-                        <div class="u-text-wrap page_design" id=
-                        "modules"></div>
-                      </section>
+                      <section class="u-text-wrap page_design" id=
+                      "modules"></section>
                     </div>
                   </div>
+                  <section class="container">
+                    <div class="u-border-t u-py-500">
+                      <div class="mobile-section">
+                        <h3 class="u-m-0">
+                          タグ
+                        </h3>
+                      </div>
+                      <div class="search-guide-nav">
+                        <div class="search-guide-slider-wrapper">
+                          <div class="search-guide-slider">
+                            <div class=
+                            "search-guide-slider-container">
+                              <a class="search-guide-tablet"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3DCG">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3DCG
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3D%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3Dキャラクター
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3Dモデル
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%82%B2%E3%83%BC%E3%83%A0%E5%88%B6%E4%BD%9C">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  ゲーム制作
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/unity">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  unity
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/FBX">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  FBX
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/unity3d">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  unity3d
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3d%E3%83%87%E3%83%BC%E3%82%BF">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3dデータ
+                                </div>
+                              </div></a>
+                            </div>
+                          </div><a class=
+                          "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
+                        </div>
+                      </div>
+                      <div class="mobile-section">
+                        <div class="u-my-500 u-mt-sp-300">
+                          <a class=
+                          "btn btn--default-outline u-tpg-caption1 u-text-wrap"
+                          data-tracking="click" data-product-list=
+                          "from market_show via tag_category_search to search_index"
+                          href=
+                          "https://booth.pm/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=3DCG">
+                          3DCG x 3Dモデル（その他） で検索</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-                <section class="container">
-                  <div class="u-border-t u-py-500">
-                    <div class="mobile-section">
-                      <h3 class="u-m-0">
-                        タグ
-                      </h3>
-                    </div>
-                    <div class="search-guide-nav">
-                      <div class="search-guide-slider-wrapper">
-                        <div class="search-guide-slider">
-                          <div class=
-                          "search-guide-slider-container">
-                            <a class="search-guide-tablet"
-                            data-tracking="click"
-                            data-product-list="from market_show via tag_list to search_index"
-                            href="https://booth.pm/ja/search/3DCG">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3DCG
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/3D%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3Dキャラクター
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3Dモデル
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%82%B2%E3%83%BC%E3%83%A0%E5%88%B6%E4%BD%9C">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                ゲーム制作
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/unity">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                unity
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href="https://booth.pm/ja/search/FBX">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                FBX
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/unity3d">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                unity3d
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/3d%E3%83%87%E3%83%BC%E3%82%BF">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3dデータ
-                              </div>
-                            </div></a>
-                          </div>
-                        </div><a class=
-                        "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
-                      </div>
-                    </div>
-                    <div class="mobile-section">
-                      <div class="u-my-500 u-mt-sp-300">
-                        <a class=
-                        "btn btn--default-outline u-tpg-caption1 u-text-wrap"
-                        data-tracking="click" data-product-list=
-                        "from market_show via tag_category_search to search_index"
-                        href=
-                        "https://booth.pm/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=3DCG">
-                        3DCG x 3Dモデル（その他） で検索</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
               </div>
             </div>
           </article>
+          <aside>
+            <div class="market">
+              <div class="shoplist-with-items" v-if=
+              "shops &amp;&amp; shops.length &gt; 0"></div>
+            </div>
+          </aside>
+          <script id="json_modules" type="application/json">
+          {"modules":[{"type":"text","title":"モデルの説明","content":"VRChat用に製作したHumanoid形式のオリジナル3DモデルRANAです。このモデルを購入した時点で、利用規約に同意したものとします。利用規約をよくお読みのうえ、ご購入ください。\nRANA -Suit- : https://softkaran.booth.pm/items/1263747\n\n・オリジナルモデルRANA製作者：リリク\n・三角ポリゴン数：22171ポリゴン\n・Lip Sync：15種\n・Eye Tracking：対応\n・BlendShape：46種\n- Lip Sync、Eye Trackingを含みます。\n・ Reflex Shader 2.0.1 対応"},{"type":"text","title":"内容案内","content":"・Animation：VRChat用に製作されたUnity表情アニメーションが含まれているフォルダ\n・Texture：モデルのテクスチャが含まれているフォルダ\n・PSD：テクスチャの修正のためのUVグリッドを表示することができる.psdファイルが含まれているフォルダ\n・ Shapekey_Guide : RANAのシェイプキーを簡単に見ることができるイメージ\n・RANA.FBX：RANAモデルデータ\n・ RANA.unitypackage : RANAユニティパッケージ\n・ Headphone.FBX : ヘッドホンデータ\n"},{"type":"text","title":"使用方法","content":"・同梱されたユニティパッケージの使用方法\n1）Unityで新しいUnityプロジェクトを作成します。\n2）VRCSDKと揺れものが欲しい場合はDynamicBoneをインポートしてください。\n※DynamicBoneが設定されていますが、アセットは別に準備する必要があります。\n3）ダウンロードしたフォルダ内のRANA.unitypackageをインポートしてください\n4）インポートが完了したら、RANA/ RANA.prefabを開き、アップロードしてください。"},{"type":"text","title":"利用規約","content":"このモデルを購入した時点で、利用規約に同意したものとします。利用規約は今後変更された場合、最新のものが適用されることとします。\n・営利利用：可能\n- プラットフォーム（ゲーム、映像など）を問わず、ご利用いただけます。\n- Vtuberなど自由にご利用いただけます。\n(※使用報告義務はありませんが、報告など頂けると制作者が喜びます)\n・再配布：禁止\n- モデルデータに含まれるデータの再配布、販売は変更の有無にかかわらず、禁止します。\n- VRChatのアバターアップロード可能。しかしVRChatのワールドアバター共有（ペデスタル設置等）は固く禁止します。\n・改変：可能\n- このモデルデータの修正は自由にすることができます。\n- このモデルデータの衣装やアクセサリーは、他のモデルに自由に利用することができます。\n・R-18、R-18Gコンテンツ利用：可能\n・このモデルデータを利用した政治、宗教活動や他のすべての誹謗を禁止します。\n・英語の解釈と日本語版の解釈に違いがある場合には、日本語版を採用します。"},{"type":"text","title":"免責事項","content":"本モデルデータの利用により、利用者にどのような不具合や損害、問題が発生してもリリク(製作者)は一切の責任を負いません。"},{"type":"text","title":"更新履歴","content":"・2019.03.07 v1.2\n - Reflex Shader 2.1.1に対応しました。\n - ウェイトを修正しました。\n - シェーダを修正しました。\n※　Shadow Maskを修正して顔の影の表現を変えました。\nv1.2前の表現がお気に入りの方はRana_Face_m, Rana_Eyebrow_Stencil_m二つのシェーダのShadow MaskをRANA/Texture/MaskのR_Face_shadow_OLDで変えてください。\n\n・2019.02.15 v1.1\n - 目の位置を修正しました。\n - emoteテクスチャーを修正しました。"},{"type":"text","title":"Model description","content":"It is the original 3D model RANA of Humanoid format produced for VRChat. By purchasing this model, you agree to the terms of use. Please read the terms of service carefully and purchase.\nRANA - Suit -: https://softkaran.booth.pm/items/1263747\n\n· Original model RANA Producer: リリク\nNumber of triangular polygons: 22171 Polygon\n· Lip Sync: 15 kinds\n· Eye Tracking: correspondence\n· BlendShape: 46 species\n- Includes Lip Sync and Eye Tracking.\n· Reflex Shader 2.0.1 compatible"},{"type":"text","title":"Content guide","content":"· Animation: Folder containing Unity facial expression animation produced for VRChat\n· Texture: Folder containing model texture\n· PSD: A folder containing a psd file that can display a UV grid for texture modification\n· Shapekey_Guide: An image that makes it easy to see RANA's shape key\n· RANA.FBX: RANA model data\n· RANA.unitypackage: RANA Unity Package\nHeadphone.FBX: Headphone data"},{"type":"text","title":"how to use","content":"· How to use the included unity package\n1) Create a new Unity project with Unity.\n2) Please import DynamicBone if you want VRCSDK and shaking items.\n* Although DynamicBone is set up, assets need to be prepared separately.\n3) Please import RANA.unitypackage in the downloaded folder\n4) Once the import is completed, open RANA / RANA.prefab and upload it."},{"type":"text","title":"Terms of service","content":"By purchasing this model, you agree to the terms of use. When the terms of service change in the future, the latest one will be applied.\n· For-profit use: possible\n- You can use it regardless of platform (game, video, etc.).\n- Vtuber and others are free to use.\n(※ There is no obligation to report the use, but the producer is pleased if reports etc. are obtained)\n· Redistribution: Prohibited\n- Redistribution and sale of data included in model data are prohibited regardless of the change.\n- VRChat avatar upload available. However, VRChat's world avatar sharing (pedestal installation etc.) is strictly forbidden.\n· Modify: Enabled\n- Modification of this model data can be made free.\n- Costumes and accessories of this model data can be freely used for other models.\n· R-18, R-18G Contents use: possible\n· We will prohibit politics, religious activities and all other slandering using this model data.\n· If there is a difference between interpretation of English and interpretation of Japanese version, we will adopt Japanese version."},{"type":"text","title":"Disclaimer","content":"By using this model data, リリク(producer) will not take any responsibility whatever trouble, damage or problem occurred to the user."},{"type":"text","title":"Change log","content":"· 2019.03.07 v1.2\n - Supported Reflex Shader 2.1.1.\n - Weight was corrected.\n - Fixed the shader.\n* Shadow Mask was modified to change the expression of the shadow of the face.\nv1.2 Rana_Face_m, Rana_Eyebrow_Stencil_m Change Shadow Mask of two shaders with R_Face_shadow_OLD of RANA / Texture / Mask.\n\n· 2019.02.15 v1.1\n - Fixed eye position.\n - Fixed emote texture."},{"type":"text","title":"----------------------------------","content":"Twitter : リリク@ririku3d\nDiscord : リリク#4139\n\n\nBooth Front Image Design\n\nZero_Rin\n\nSpecial Thanks\n\nYoshinon\nand VNC"}]}
+          </script>
         </div>
-        <aside>
-          <div class="shoplist-with-items" v-if=
-          "shops &amp;&amp; shops.length &gt; 0"></div>
-        </aside>
-        <script id="json_modules" type="application/json">
-        {"modules":[{"type":"text","title":"モデルの説明","content":"VRChat用に製作したHumanoid形式のオリジナル3DモデルRANAです。このモデルを購入した時点で、利用規約に同意したものとします。利用規約をよくお読みのうえ、ご購入ください。\nRANA -Suit- : https://softkaran.booth.pm/items/1263747\n\n・オリジナルモデルRANA製作者：リリク\n・三角ポリゴン数：22171ポリゴン\n・Lip Sync：15種\n・Eye Tracking：対応\n・BlendShape：46種\n- Lip Sync、Eye Trackingを含みます。\n・ Reflex Shader 2.0.1 対応"},{"type":"text","title":"内容案内","content":"・Animation：VRChat用に製作されたUnity表情アニメーションが含まれているフォルダ\n・Texture：モデルのテクスチャが含まれているフォルダ\n・PSD：テクスチャの修正のためのUVグリッドを表示することができる.psdファイルが含まれているフォルダ\n・ Shapekey_Guide : RANAのシェイプキーを簡単に見ることができるイメージ\n・RANA.FBX：RANAモデルデータ\n・ RANA.unitypackage : RANAユニティパッケージ\n・ Headphone.FBX : ヘッドホンデータ\n"},{"type":"text","title":"使用方法","content":"・同梱されたユニティパッケージの使用方法\n1）Unityで新しいUnityプロジェクトを作成します。\n2）VRCSDKと揺れものが欲しい場合はDynamicBoneをインポートしてください。\n※DynamicBoneが設定されていますが、アセットは別に準備する必要があります。\n3）ダウンロードしたフォルダ内のRANA.unitypackageをインポートしてください\n4）インポートが完了したら、RANA/ RANA.prefabを開き、アップロードしてください。"},{"type":"text","title":"利用規約","content":"このモデルを購入した時点で、利用規約に同意したものとします。利用規約は今後変更された場合、最新のものが適用されることとします。\n・営利利用：可能\n- プラットフォーム（ゲーム、映像など）を問わず、ご利用いただけます。\n- Vtuberなど自由にご利用いただけます。\n(※使用報告義務はありませんが、報告など頂けると制作者が喜びます)\n・再配布：禁止\n- モデルデータに含まれるデータの再配布、販売は変更の有無にかかわらず、禁止します。\n- VRChatのアバターアップロード可能。しかしVRChatのワールドアバター共有（ペデスタル設置等）は固く禁止します。\n・改変：可能\n- このモデルデータの修正は自由にすることができます。\n- このモデルデータの衣装やアクセサリーは、他のモデルに自由に利用することができます。\n・R-18、R-18Gコンテンツ利用：可能\n・このモデルデータを利用した政治、宗教活動や他のすべての誹謗を禁止します。\n・英語の解釈と日本語版の解釈に違いがある場合には、日本語版を採用します。"},{"type":"text","title":"免責事項","content":"本モデルデータの利用により、利用者にどのような不具合や損害、問題が発生してもリリク(製作者)は一切の責任を負いません。"},{"type":"text","title":"更新履歴","content":"・2019.03.07 v1.2\n - Reflex Shader 2.1.1に対応しました。\n - ウェイトを修正しました。\n - シェーダを修正しました。\n※　Shadow Maskを修正して顔の影の表現を変えました。\nv1.2前の表現がお気に入りの方はRana_Face_m, Rana_Eyebrow_Stencil_m二つのシェーダのShadow MaskをRANA/Texture/MaskのR_Face_shadow_OLDで変えてください。\n\n・2019.02.15 v1.1\n - 目の位置を修正しました。\n - emoteテクスチャーを修正しました。"},{"type":"text","title":"Model description","content":"It is the original 3D model RANA of Humanoid format produced for VRChat. By purchasing this model, you agree to the terms of use. Please read the terms of service carefully and purchase.\nRANA - Suit -: https://softkaran.booth.pm/items/1263747\n\n· Original model RANA Producer: リリク\nNumber of triangular polygons: 22171 Polygon\n· Lip Sync: 15 kinds\n· Eye Tracking: correspondence\n· BlendShape: 46 species\n- Includes Lip Sync and Eye Tracking.\n· Reflex Shader 2.0.1 compatible"},{"type":"text","title":"Content guide","content":"· Animation: Folder containing Unity facial expression animation produced for VRChat\n· Texture: Folder containing model texture\n· PSD: A folder containing a psd file that can display a UV grid for texture modification\n· Shapekey_Guide: An image that makes it easy to see RANA's shape key\n· RANA.FBX: RANA model data\n· RANA.unitypackage: RANA Unity Package\nHeadphone.FBX: Headphone data"},{"type":"text","title":"how to use","content":"· How to use the included unity package\n1) Create a new Unity project with Unity.\n2) Please import DynamicBone if you want VRCSDK and shaking items.\n* Although DynamicBone is set up, assets need to be prepared separately.\n3) Please import RANA.unitypackage in the downloaded folder\n4) Once the import is completed, open RANA / RANA.prefab and upload it."},{"type":"text","title":"Terms of service","content":"By purchasing this model, you agree to the terms of use. When the terms of service change in the future, the latest one will be applied.\n· For-profit use: possible\n- You can use it regardless of platform (game, video, etc.).\n- Vtuber and others are free to use.\n(※ There is no obligation to report the use, but the producer is pleased if reports etc. are obtained)\n· Redistribution: Prohibited\n- Redistribution and sale of data included in model data are prohibited regardless of the change.\n- VRChat avatar upload available. However, VRChat's world avatar sharing (pedestal installation etc.) is strictly forbidden.\n· Modify: Enabled\n- Modification of this model data can be made free.\n- Costumes and accessories of this model data can be freely used for other models.\n· R-18, R-18G Contents use: possible\n· We will prohibit politics, religious activities and all other slandering using this model data.\n· If there is a difference between interpretation of English and interpretation of Japanese version, we will adopt Japanese version."},{"type":"text","title":"Disclaimer","content":"By using this model data, リリク(producer) will not take any responsibility whatever trouble, damage or problem occurred to the user."},{"type":"text","title":"Change log","content":"· 2019.03.07 v1.2\n - Supported Reflex Shader 2.1.1.\n - Weight was corrected.\n - Fixed the shader.\n* Shadow Mask was modified to change the expression of the shadow of the face.\nv1.2 Rana_Face_m, Rana_Eyebrow_Stencil_m Change Shadow Mask of two shaders with R_Face_shadow_OLD of RANA / Texture / Mask.\n\n· 2019.02.15 v1.1\n - Fixed eye position.\n - Fixed emote texture."},{"type":"text","title":"----------------------------------","content":"Twitter : リリク@ririku3d\nDiscord : リリク#4139\n\n\nBooth Front Image Design\n\nZero_Rin\n\nSpecial Thanks\n\nYoshinon\nand VNC"}]}
-        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
