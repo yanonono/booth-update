@@ -59,9 +59,13 @@
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
     <script src=
+    "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
+    defer="defer" nonce=
+    "SOkAV19M/URt3mTEUQDOvsbgcPslEXxTnwre38N5I4w="></script>
+    <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "Ea1B4WLG2r+Uvro2WO+CHqebtXHz5bji4/SJKxxlS6s="></script>
+    "SOkAV19M/URt3mTEUQDOvsbgcPslEXxTnwre38N5I4w="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -74,7 +78,7 @@
     <script src=
     "https://asset.booth.pm/assets/ab357483f48c9496242e.js" defer=
     "defer" nonce=
-    "Ea1B4WLG2r+Uvro2WO+CHqebtXHz5bji4/SJKxxlS6s="></script>
+    "SOkAV19M/URt3mTEUQDOvsbgcPslEXxTnwre38N5I4w="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"雷核槌「pRacker」","description":"VRChatでの利用を想定した大きめのハンマーです。△4428\nunitypackageでの提供となります。\nおまけの放電パーティクル・シェーダー設定済みprefab付属。","url":"https://booth.pm/ja/items/1064398","offers":{"priceCurrency":"JPY","@type":"Offer","price":"350"},"image":"https://booth.pximg.net/c/620x620/7d19caf7-8413-4b46-abe2-17f1a8dd9250/i/1064398/37b9e183-94d8-4969-bb2b-cbfcdf41b195_base_resized.jpg"}
     </script>
@@ -91,7 +95,7 @@
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "Ea1B4WLG2r+Uvro2WO+CHqebtXHz5bji4/SJKxxlS6s="></script>
+    "SOkAV19M/URt3mTEUQDOvsbgcPslEXxTnwre38N5I4w="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -100,13 +104,15 @@
         <div class="recaptcha-tag" data-action=
         "booth/checkout_order" data-site-key=
         "6LfF1dcZAAAAAOHQX8v16MX5SktDwmQINVD_6mBF"></div>
-        <div class="market-item-detail u-bg-white"
-        data-ga-tracking-id="" data-product-brand="neq"
-        data-product-category="127" data-product-id="1064398"
-        data-product-list="market_show" data-product-price="350"
-        data-tracking="detail_item">
+        <div class="market" data-ga-tracking-id=""
+        data-product-brand="neq" data-product-category="127"
+        data-product-id="1064398" data-product-list="market_show"
+        data-product-price="350" data-tracking="detail_item" id=
+        "items">
+          <div class="market"></div>
           <nav>
-            <div class="breadcrumbs u-border-b u-border-100">
+            <div class=
+            "market breadcrumbs u-bg-white u-border-b u-border-100">
               <div class="container">
                 <div class="breadcrumb">
                   <a class="label" data-tracking="click"
@@ -128,40 +134,40 @@
           </nav>
           <article>
             <div class=
-            "market-item-detail-article u-d-flex u-flex-column u-align-items-center u-pb-600 u-bg-white">
-              <div class="container">
-                <div class="market-item-detail__exhibition-banner">
-                </div>
-              </div>
-              <div class="u-bg-white u-pt-600 u-px-700">
+            "market market-item-detail item-info-detail u-bg-white">
+              <div class=
+              "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class="u-d-flex">
-                    <div class="u-order-1 l-col-2of5 u-pl-600">
-                      <header>
-                        <div class="u-my-200 u-tpg-title3">
-                          <a class="nav" target="_blank"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" rel="noopener"
-                          href="https://neq.booth.pm/">
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
+                  <div class="u-pt-600 u-d-flex">
+                    <div class=
+                    "summary u-order-1 l-col-2of5 u-pl-600">
+                      <div class="mobile-section">
+                        <header>
+                          <div class="u-my-200 u-tpg-title3">
+                            <a class="nav" target="_blank"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" rel="noopener"
+                            href="https://neq.booth.pm/">
+                            <div class=
+                            "u-d-flex u-align-items-center">
+                              <img alt="Neqizm" class=
+                              "user-avatar at-item-summary" src=
+                              "https://booth.pximg.net/c/48x48/users/4368970/icon_image/457e0587-d37e-44d9-a2bf-64d68ac5e181_base_resized.jpg">
+                              <div class="u-text-ellipsis">
+                                Neqizm
+                              </div>
+                            </div></a>
+                          </div>
+                          <h2 class=
+                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                            雷核槌「pRacker」
+                          </h2>
                           <div class=
-                          "u-d-flex u-align-items-center">
-                            <img alt="Neqizm" class=
-                            "user-avatar at-item-summary" src=
-                            "https://booth.pximg.net/c/48x48/users/4368970/icon_image/457e0587-d37e-44d9-a2bf-64d68ac5e181_base_resized.jpg">
-                            <div class="u-text-ellipsis">
-                              Neqizm
-                            </div>
-                          </div></a>
-                        </div>
-                        <h2 class=
-                        "u-text-wrap u-tpg-title1 u-mt-0 u-mb-400">
-                          雷核槌「pRacker」
-                        </h2>
-                        <div class=
-                        "u-text-assertive u-tpg-caption1"></div>
-                      </header>
-                      <section>
+                          "u-text-assertive u-tpg-caption1"></div>
+                        </header>
                         <div class="wish-list-link">
                           <a class="add-to-wish-list"
                           data-tracking="add_to_wishlist"
@@ -214,23 +220,31 @@
                             </li>
                           </ul>
                         </div>
-                      </section>
+                      </div>
                       <section>
                         <div class=
                         "share-btns u-d-flex u-flex-1 u-justify-content-start u-px-200 u-py-400">
-                          <a data-url=
-                          "https://booth.pm/ja/items/1064398"
-                          data-lang="ja" data-hashtags="booth_pm"
-                          data-text="雷核槌「pRacker」 | Neqizm"
-                          data-count="none" class=
-                          "twitter-share-button" href=
-                          "https://twitter.com/share">ツイート</a>
-                          <div class="u-ml-300">
+                          <div class="social-btn">
+                            <a data-url=
+                            "https://booth.pm/ja/items/1064398"
+                            data-lang="ja" data-hashtags="booth_pm"
+                            data-text="雷核槌「pRacker」 | Neqizm"
+                            data-count="none" class=
+                            "twitter-share-button" href=
+                            "https://twitter.com/share">ツイート</a>
+                          </div>
+                          <div class="social-btn u-ml-300">
                             <div class="fb-like" data-action="like"
                             data-href=
                             "https://booth.pm/ja/items/1064398"
                             data-layout="button_count" data-share=
                             "false" data-show-faces="false"></div>
+                          </div>
+                          <div class="mobile social-btn u-mx-200">
+                            <div class="line-it-button" data-lang=
+                            "ja" data-type="share-a" data-url=
+                            "https://booth.pm/ja/items/1064398"
+                            style="display: none;"></div>
                           </div>
                         </div>
                       </section>
@@ -272,7 +286,7 @@
                         </div>
                       </div>
                       <div class=
-                      "primary-image-thumbnails u-d-sp-none">
+                      "primary-image-thumbnails u-d-sp-none image-list">
                         <a class="pointer">
                         <div class="slick-thumbnail-border">
                           <img src=
@@ -287,9 +301,9 @@
                           "https://booth.pximg.net/c/72x72_a2_g5/7d19caf7-8413-4b46-abe2-17f1a8dd9250/i/1064398/3243c94e-b6d9-44be-8843-2e01e2ec802a_base_resized.jpg">
                         </div></a>
                       </div>
-                      <section>
+                      <section class="main-info-column">
                         <div class=
-                        "js-market-item-detail-description">
+                        "js-market-item-detail-description description">
                           <p class="autolink u-text-wrap">
                             VRChatでの利用を想定した大きめのハンマーです。△4428
                             unitypackageでの提供となります。
@@ -297,87 +311,91 @@
                           </p>
                         </div>
                       </section>
-                      <section>
-                        <div class="u-text-wrap page_design" id=
-                        "modules"></div>
-                      </section>
+                      <section class="u-text-wrap page_design" id=
+                      "modules"></section>
                     </div>
                   </div>
+                  <section class="container">
+                    <div class="u-border-t u-py-500">
+                      <div class="mobile-section">
+                        <h3 class="u-m-0">
+                          タグ
+                        </h3>
+                      </div>
+                      <div class="search-guide-nav">
+                        <div class="search-guide-slider-wrapper">
+                          <div class="search-guide-slider">
+                            <div class=
+                            "search-guide-slider-container">
+                              <a class="search-guide-tablet"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3D%E3%83%87%E3%83%BC%E3%82%BF">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3Dデータ
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3Dモデル
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat
+                                </div>
+                              </div></a>
+                            </div>
+                          </div><a class=
+                          "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
+                        </div>
+                      </div>
+                      <div class="mobile-section">
+                        <div class="u-my-500 u-mt-sp-300">
+                          <a class=
+                          "btn btn--default-outline u-tpg-caption1 u-text-wrap"
+                          data-tracking="click" data-product-list=
+                          "from market_show via tag_category_search to search_index"
+                          href=
+                          "https://booth.pm/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=3D%E3%83%87%E3%83%BC%E3%82%BF">
+                          3Dデータ x 3Dモデル（その他） で検索</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-                <section class="container">
-                  <div class="u-border-t u-py-500">
-                    <div class="mobile-section">
-                      <h3 class="u-m-0">
-                        タグ
-                      </h3>
-                    </div>
-                    <div class="search-guide-nav">
-                      <div class="search-guide-slider-wrapper">
-                        <div class="search-guide-slider">
-                          <div class=
-                          "search-guide-slider-container">
-                            <a class="search-guide-tablet"
-                            data-tracking="click"
-                            data-product-list="from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/3D%E3%83%87%E3%83%BC%E3%82%BF">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3Dデータ
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3Dモデル
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat
-                              </div>
-                            </div></a>
-                          </div>
-                        </div><a class=
-                        "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
-                      </div>
-                    </div>
-                    <div class="mobile-section">
-                      <div class="u-my-500 u-mt-sp-300">
-                        <a class=
-                        "btn btn--default-outline u-tpg-caption1 u-text-wrap"
-                        data-tracking="click" data-product-list=
-                        "from market_show via tag_category_search to search_index"
-                        href=
-                        "https://booth.pm/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=3D%E3%83%87%E3%83%BC%E3%82%BF">
-                        3Dデータ x 3Dモデル（その他） で検索</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
               </div>
             </div>
           </article>
+          <aside>
+            <div class="market">
+              <div class="shoplist-with-items" v-if=
+              "shops &amp;&amp; shops.length &gt; 0"></div>
+            </div>
+          </aside>
+          <script id="json_modules" type="application/json">
+          {"modules":[{"type":"text","title":"【内容物】","content":"・README\n・unitypackage┬ fbxデータ △4428\n　　　　　　　├ マテリアル(3種)\n　　　　　　　├ プレハブ\n　　　　　　　├ シェーダー\n　　　　　　　└ テクスチャ(メイン用3種、エミッション用1種、CC0ノーマル2種)\n"},{"type":"text","title":"【利用規約】","content":"本モデルデータ及びテクスチャデータ『qRacker』(以下本モデルデータと記載)の利用者は、本モデルデータの利用をもって以下の規約を読了し同意したものとみなします。\n\noo許可することoo\n1. 本モデルデータをゲームや映像作品にR-18、R-18G問わず利用すること。\n　使ったら報告してもらえると嬉しくなります。\n2. 全てまたは一部に関わらず、営利利用・改変・二次創作ご自由に。\n\nxx禁止することxx\n1. 改変した･していないに関わらず本モデルデータのすべてまたは一部を、他の人がデータをいじることができる形で再配布･販売･提供すること。\n2. 本モデルデータを他人が不快に感じるようなこと(政治的及び宗教的活動も含みます)に利用すること。\n3. 「VRChat」に本モデルデータをアップロードする際、改変した･していないに関わらずPublicの状態でアップロードすること。\n\n*権利関係等*\n1. 作者は配布物の本モデルデータ及びその改変者について、著作権を専有しています。\n2. 利用者が、上記の「xx禁止することxx」に違反した場合、その利用者は本モデルデータの一切の利用を禁じられます。\n3. 作者はいつでも本モデルデータの利用や配布を停止・終了させることができます。\n4. 作者はいつでも、利用者による本データ･またはその二次創作物の利用を中止・削除させることができます。\n5. 上記による本モデルデータの利用停止や中止･または本モデルデータの利用などにより利用者に発生したいかなる損害についても、作者は一切責任を負いません。\n6. 当規約は日本法を準拠法とし、日本語によるものを正本として常に日本語により解釈されます。\n\n*規約の変更*\n1. 作者は当規約を変更できます。\n2. 変更する場合、変更内容をtwitter等で掲載することで利用者に通知します。\n3. 変更通知が行われた後、利用者は本モデルデータを利用することで変更後の規約に同意したものとみなします。\n\n\n2018/11/1 配布\n2018/11/13 規約内容訂正、削除・・・*ライセンスの終了*第3項、「このときより」より後の文を削除\n2018/12/27 規約内容をよりわかりやすく大幅改良"},{"type":"text","title":"【作者】","content":"作者名  : Neq a.k.a Yuri\ntwitter : @p_303_p(ゆりだよ)\n連絡先 : yurichan.vr@gmail.com\n\nお問い合わせはこちらまで。"}]}
+          </script>
         </div>
-        <aside>
-          <div class="shoplist-with-items" v-if=
-          "shops &amp;&amp; shops.length &gt; 0"></div>
-        </aside>
-        <script id="json_modules" type="application/json">
-        {"modules":[{"type":"text","title":"【内容物】","content":"・README\n・unitypackage┬ fbxデータ △4428\n　　　　　　　├ マテリアル(3種)\n　　　　　　　├ プレハブ\n　　　　　　　├ シェーダー\n　　　　　　　└ テクスチャ(メイン用3種、エミッション用1種、CC0ノーマル2種)\n"},{"type":"text","title":"【利用規約】","content":"本モデルデータ及びテクスチャデータ『qRacker』(以下本モデルデータと記載)の利用者は、本モデルデータの利用をもって以下の規約を読了し同意したものとみなします。\n\noo許可することoo\n1. 本モデルデータをゲームや映像作品にR-18、R-18G問わず利用すること。\n　使ったら報告してもらえると嬉しくなります。\n2. 全てまたは一部に関わらず、営利利用・改変・二次創作ご自由に。\n\nxx禁止することxx\n1. 改変した･していないに関わらず本モデルデータのすべてまたは一部を、他の人がデータをいじることができる形で再配布･販売･提供すること。\n2. 本モデルデータを他人が不快に感じるようなこと(政治的及び宗教的活動も含みます)に利用すること。\n3. 「VRChat」に本モデルデータをアップロードする際、改変した･していないに関わらずPublicの状態でアップロードすること。\n\n*権利関係等*\n1. 作者は配布物の本モデルデータ及びその改変者について、著作権を専有しています。\n2. 利用者が、上記の「xx禁止することxx」に違反した場合、その利用者は本モデルデータの一切の利用を禁じられます。\n3. 作者はいつでも本モデルデータの利用や配布を停止・終了させることができます。\n4. 作者はいつでも、利用者による本データ･またはその二次創作物の利用を中止・削除させることができます。\n5. 上記による本モデルデータの利用停止や中止･または本モデルデータの利用などにより利用者に発生したいかなる損害についても、作者は一切責任を負いません。\n6. 当規約は日本法を準拠法とし、日本語によるものを正本として常に日本語により解釈されます。\n\n*規約の変更*\n1. 作者は当規約を変更できます。\n2. 変更する場合、変更内容をtwitter等で掲載することで利用者に通知します。\n3. 変更通知が行われた後、利用者は本モデルデータを利用することで変更後の規約に同意したものとみなします。\n\n\n2018/11/1 配布\n2018/11/13 規約内容訂正、削除・・・*ライセンスの終了*第3項、「このときより」より後の文を削除\n2018/12/27 規約内容をよりわかりやすく大幅改良"},{"type":"text","title":"【作者】","content":"作者名  : Neq a.k.a Yuri\ntwitter : @p_303_p(ゆりだよ)\n連絡先 : yurichan.vr@gmail.com\n\nお問い合わせはこちらまで。"}]}
-        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
