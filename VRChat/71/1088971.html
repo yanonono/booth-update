@@ -59,9 +59,13 @@
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
     <script src=
+    "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
+    defer="defer" nonce=
+    "DqW5bIpfakRXA8K/zziECojHxDHNQ0/Pk8fY/UvuOXc="></script>
+    <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "H6P5tLd+FrA28+4RVj81dle3I7smyO7zQ/rSCuV1fN0="></script>
+    "DqW5bIpfakRXA8K/zziECojHxDHNQ0/Pk8fY/UvuOXc="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -74,7 +78,7 @@
     <script src=
     "https://asset.booth.pm/assets/ab357483f48c9496242e.js" defer=
     "defer" nonce=
-    "H6P5tLd+FrA28+4RVj81dle3I7smyO7zQ/rSCuV1fN0="></script>
+    "DqW5bIpfakRXA8K/zziECojHxDHNQ0/Pk8fY/UvuOXc="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"Reflex Shader 2.2.0","description":"Reflex Shader 2.2 リリースしました！\n基本的な色味はReflex Shader 1.0の面影を残しながら、トゥーン調の影やEmissiveScroll等の機能を追加しリッチな表現を可能にしました。2.2よりカスタムインスペクタを追加！更に使いやすくなったReflex Shaderをお楽しみください！","url":"https://booth.pm/ja/items/1088971","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"500"},"image":"https://booth.pximg.net/c/620x620/cbda31cc-ab61-4a8a-900c-882477cd9424/i/1088971/53f6d8a0-2684-4482-99b8-d467e0f15c05_base_resized.jpg"}
     </script>
@@ -91,7 +95,7 @@
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "H6P5tLd+FrA28+4RVj81dle3I7smyO7zQ/rSCuV1fN0="></script>
+    "DqW5bIpfakRXA8K/zziECojHxDHNQ0/Pk8fY/UvuOXc="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -100,18 +104,19 @@
         <div class="recaptcha-tag" data-action=
         "booth/checkout_order" data-site-key=
         "6LfF1dcZAAAAAOHQX8v16MX5SktDwmQINVD_6mBF"></div>
-        <div class="market-item-detail u-bg-white"
-        data-ga-tracking-id="UA-87269875-6" data-product-brand=
-        "reflex" data-product-category="201" data-product-id=
-        "1088971" data-product-list="market_show"
+        <div class="market" data-ga-tracking-id="UA-87269875-6"
+        data-product-brand="reflex" data-product-category="201"
+        data-product-id="1088971" data-product-list="market_show"
         data-product-price="100"
         data-shop-tracking-product-category="Software"
         data-shop-tracking-product-id="1088971"
         data-shop-tracking-product-name="Reflex Shader 2.2.0"
         data-shop-tracking-product-price="100" data-tracking=
-        "detail_item">
+        "detail_item" id="items">
+          <div class="market"></div>
           <nav>
-            <div class="breadcrumbs u-border-b u-border-100">
+            <div class=
+            "market breadcrumbs u-bg-white u-border-b u-border-100">
               <div class="container">
                 <div class="breadcrumb">
                   <a class="label" data-tracking="click"
@@ -134,40 +139,40 @@
           </nav>
           <article>
             <div class=
-            "market-item-detail-article u-d-flex u-flex-column u-align-items-center u-pb-600 u-bg-white">
-              <div class="container">
-                <div class="market-item-detail__exhibition-banner">
-                </div>
-              </div>
-              <div class="u-bg-white u-pt-600 u-px-700">
+            "market market-item-detail item-info-detail u-bg-white">
+              <div class=
+              "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class="u-d-flex">
-                    <div class="u-order-1 l-col-2of5 u-pl-600">
-                      <header>
-                        <div class="u-my-200 u-tpg-title3">
-                          <a class="nav" target="_blank"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" rel="noopener"
-                          href="https://reflex.booth.pm/">
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
+                  <div class="u-pt-600 u-d-flex">
+                    <div class=
+                    "summary u-order-1 l-col-2of5 u-pl-600">
+                      <div class="mobile-section">
+                        <header>
+                          <div class="u-my-200 u-tpg-title3">
+                            <a class="nav" target="_blank"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" rel="noopener"
+                            href="https://reflex.booth.pm/">
+                            <div class=
+                            "u-d-flex u-align-items-center">
+                              <img alt="Reflex Store" class=
+                              "user-avatar at-item-summary" src=
+                              "https://booth.pximg.net/c/48x48/users/1079144/icon_image/bc144c8a-b4a2-441d-9513-25dc2f789d26_base_resized.jpg">
+                              <div class="u-text-ellipsis">
+                                Reflex Store
+                              </div>
+                            </div></a>
+                          </div>
+                          <h2 class=
+                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                            Reflex Shader 2.2.0
+                          </h2>
                           <div class=
-                          "u-d-flex u-align-items-center">
-                            <img alt="Reflex Store" class=
-                            "user-avatar at-item-summary" src=
-                            "https://booth.pximg.net/c/48x48/users/1079144/icon_image/bc144c8a-b4a2-441d-9513-25dc2f789d26_base_resized.jpg">
-                            <div class="u-text-ellipsis">
-                              Reflex Store
-                            </div>
-                          </div></a>
-                        </div>
-                        <h2 class=
-                        "u-text-wrap u-tpg-title1 u-mt-0 u-mb-400">
-                          Reflex Shader 2.2.0
-                        </h2>
-                        <div class=
-                        "u-text-assertive u-tpg-caption1"></div>
-                      </header>
-                      <section>
+                          "u-text-assertive u-tpg-caption1"></div>
+                        </header>
                         <div class="wish-list-link">
                           <a class="add-to-wish-list"
                           data-tracking="add_to_wishlist"
@@ -306,24 +311,32 @@
                             </li>
                           </ul>
                         </div>
-                      </section>
+                      </div>
                       <section>
                         <div class=
                         "share-btns u-d-flex u-flex-1 u-justify-content-start u-px-200 u-py-400">
-                          <a data-url=
-                          "https://booth.pm/ja/items/1088971"
-                          data-lang="ja" data-hashtags="booth_pm"
-                          data-text=
-                          "Reflex Shader 2.2.0 | Reflex Store"
-                          data-count="none" class=
-                          "twitter-share-button" href=
-                          "https://twitter.com/share">ツイート</a>
-                          <div class="u-ml-300">
+                          <div class="social-btn">
+                            <a data-url=
+                            "https://booth.pm/ja/items/1088971"
+                            data-lang="ja" data-hashtags="booth_pm"
+                            data-text=
+                            "Reflex Shader 2.2.0 | Reflex Store"
+                            data-count="none" class=
+                            "twitter-share-button" href=
+                            "https://twitter.com/share">ツイート</a>
+                          </div>
+                          <div class="social-btn u-ml-300">
                             <div class="fb-like" data-action="like"
                             data-href=
                             "https://booth.pm/ja/items/1088971"
                             data-layout="button_count" data-share=
                             "false" data-show-faces="false"></div>
+                          </div>
+                          <div class="mobile social-btn u-mx-200">
+                            <div class="line-it-button" data-lang=
+                            "ja" data-type="share-a" data-url=
+                            "https://booth.pm/ja/items/1088971"
+                            style="display: none;"></div>
                           </div>
                         </div>
                       </section>
@@ -354,7 +367,7 @@
                         </div>
                       </div>
                       <div class=
-                      "primary-image-thumbnails u-d-sp-none">
+                      "primary-image-thumbnails u-d-sp-none image-list">
                         <a class="pointer">
                         <div class="slick-thumbnail-border">
                           <img src=
@@ -365,9 +378,9 @@
                           "https://booth.pximg.net/c/72x72_a2_g5/cbda31cc-ab61-4a8a-900c-882477cd9424/i/1088971/83bc1f39-8e3e-4438-8f45-626bcf5b1778_base_resized.jpg">
                         </div></a>
                       </div>
-                      <section>
+                      <section class="main-info-column">
                         <div class=
-                        "js-market-item-detail-description">
+                        "js-market-item-detail-description description">
                           <p class="autolink u-text-wrap">
                             Reflex Shader 2.2 リリースしました！
                             基本的な色味はReflex Shader
@@ -376,98 +389,103 @@
                           </p>
                         </div>
                       </section>
-                      <section>
-                        <div class="u-text-wrap page_design" id=
-                        "modules"></div>
-                      </section>
+                      <section class="u-text-wrap page_design" id=
+                      "modules"></section>
                     </div>
                   </div>
+                  <section class="container">
+                    <div class="u-border-t u-py-500">
+                      <div class="mobile-section">
+                        <h3 class="u-m-0">
+                          タグ
+                        </h3>
+                      </div>
+                      <div class="search-guide-nav">
+                        <div class="search-guide-slider-wrapper">
+                          <div class="search-guide-slider">
+                            <div class=
+                            "search-guide-slider-container">
+                              <a class="search-guide-tablet"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/Unity">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  Unity
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/Shader">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  Shader
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/FutureTerminalA">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  FutureTerminalA
+                                </div>
+                              </div></a>
+                            </div>
+                          </div><a class=
+                          "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
+                        </div>
+                      </div>
+                      <div class="mobile-section">
+                        <div class="u-my-500 u-mt-sp-300">
+                          <a class=
+                          "btn btn--default-outline u-tpg-caption1 u-text-wrap"
+                          data-tracking="click" data-product-list=
+                          "from market_show via tag_category_search to search_index"
+                          href=
+                          "https://booth.pm/ja/browse/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2?q=Unity">
+                          Unity x ソフトウェア で検索</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-                <section class="container">
-                  <div class="u-border-t u-py-500">
-                    <div class="mobile-section">
-                      <h3 class="u-m-0">
-                        タグ
-                      </h3>
-                    </div>
-                    <div class="search-guide-nav">
-                      <div class="search-guide-slider-wrapper">
-                        <div class="search-guide-slider">
-                          <div class=
-                          "search-guide-slider-container">
-                            <a class="search-guide-tablet"
-                            data-tracking="click"
-                            data-product-list="from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/Unity">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                Unity
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/Shader">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                Shader
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/FutureTerminalA">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                FutureTerminalA
-                              </div>
-                            </div></a>
-                          </div>
-                        </div><a class=
-                        "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
-                      </div>
-                    </div>
-                    <div class="mobile-section">
-                      <div class="u-my-500 u-mt-sp-300">
-                        <a class=
-                        "btn btn--default-outline u-tpg-caption1 u-text-wrap"
-                        data-tracking="click" data-product-list=
-                        "from market_show via tag_category_search to search_index"
-                        href=
-                        "https://booth.pm/ja/browse/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2?q=Unity">
-                        Unity x ソフトウェア で検索</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
               </div>
             </div>
           </article>
+          <aside>
+            <div class="market">
+              <div class="shoplist-with-items" v-if=
+              "shops &amp;&amp; shops.length &gt; 0"></div>
+            </div>
+          </aside>
+          <script id="json_modules" type="application/json">
+          {"modules":[{"type":"text","title":"Reflex Shader 2.2について","content":"Reflex Shader 2.2はVRChat向けに開発されているアバター向けシェーダーです。\n特徴的な機能として以下のものがあります。\n\n◇ オブジェクトからの影に対応\n◇ 影色の自由な指定\n◇ Matcapやリムライトなどのリッチな表現\n◇ 色味や明るさはCubed's Unity Shaderに似ています\n◇ 各機能にマスクを入れる場所を用意してあるので、一部のみ機能を有効化することができます。\n◇ VRChatのSafety設定においてシェーダーが無効化されStandardになった場合もテクスチャが維持されます\n◇ ScanlineやEmissive Scrollなどの発光系の機能が豊富なので、Sci-Fi系のアバターに適しています"},{"type":"text","title":"v2.2の新機能","content":"● カスタムインスペクタにより更に使いやすくわかりやすくなりました。\n● シェーダーキーワードを削減したことによりほかのシェーダーとの競合しなくなりました。\n● ベイクされたディレクショナルの環境でもシェーディングされるようになりました。\n● アウトラインなしのバージョンを追加しました。"},{"type":"text","title":"Shaders / シェーダー一覧","content":"■ Reflex Shader 2 (一般的な不透明のシェーダーです)\n■ Reflex Shader 2 Cutout (透過部分を切り抜くシェーダーです)\n■ Reflex Shader 2 Transparent (半透明のシェーダーです)\n■ Stencil/Write (ステンシルで透過させる側のシェーダーです)\n■ Stencil/Read (ステンシルで透過される側のシェーダーです)\n▶ No Outline\n  ■ Opaque (アウトラインなしの不透明シェーダーです)\n  ■ Cutout (アウトラインなしのカットアウトシェーダーです)\n  ■ Transparent (アウトラインなしの半透明シェーダーです)\n  ■ Stencil/Write (アウトラインなしのステンシルで透過させる側のシェーダーです) \n  ■ Stencil/Read (アウトラインなしのステンシルで透過される側のシェーダーです) "},{"type":"text","title":"Lisence / ライセンス","content":"当シェーダーはMITライセンスに基づき配布されています。\nMITライセンスに基づき、再配布、商用利用、改変等すべて許可しています。\n\nCopyright (c) 2019 Reflex\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."},{"type":"text","title":"Contact / 連絡先","content":"Twitter : @reflex_1124\nVRChat : reflex1124"},{"type":"text","title":"アップデート履歴","content":"2018.11.11 - 初版リリース\n2018.11.12 - 2.0.1 ライトがない場合に影が濃くなる不具合を修正\n2019.02.23 - 2.1リリース\n2019.02.25 - 2.1.1 CullModeの修正。シャドウ周辺の機能追加\n2019.03.14 - 2.1.2 Transparentで描画順がおかしくなる問題の修正。一部トグルの名称変更。インポート時間を大幅に短縮\n2019.07.13 - 2.1.3 Transparentで裏面が正常に描画されていなかった問題を修正。\n2019.11.20 - 2.2.0 カスタムインスペクタを追加。シェーダーキーワードを削減。No Outlineバージョンを追加"}]}
+          </script>
         </div>
-        <aside>
-          <div class="shoplist-with-items" v-if=
-          "shops &amp;&amp; shops.length &gt; 0"></div>
-        </aside>
-        <script id="json_modules" type="application/json">
-        {"modules":[{"type":"text","title":"Reflex Shader 2.2について","content":"Reflex Shader 2.2はVRChat向けに開発されているアバター向けシェーダーです。\n特徴的な機能として以下のものがあります。\n\n◇ オブジェクトからの影に対応\n◇ 影色の自由な指定\n◇ Matcapやリムライトなどのリッチな表現\n◇ 色味や明るさはCubed's Unity Shaderに似ています\n◇ 各機能にマスクを入れる場所を用意してあるので、一部のみ機能を有効化することができます。\n◇ VRChatのSafety設定においてシェーダーが無効化されStandardになった場合もテクスチャが維持されます\n◇ ScanlineやEmissive Scrollなどの発光系の機能が豊富なので、Sci-Fi系のアバターに適しています"},{"type":"text","title":"v2.2の新機能","content":"● カスタムインスペクタにより更に使いやすくわかりやすくなりました。\n● シェーダーキーワードを削減したことによりほかのシェーダーとの競合しなくなりました。\n● ベイクされたディレクショナルの環境でもシェーディングされるようになりました。\n● アウトラインなしのバージョンを追加しました。"},{"type":"text","title":"Shaders / シェーダー一覧","content":"■ Reflex Shader 2 (一般的な不透明のシェーダーです)\n■ Reflex Shader 2 Cutout (透過部分を切り抜くシェーダーです)\n■ Reflex Shader 2 Transparent (半透明のシェーダーです)\n■ Stencil/Write (ステンシルで透過させる側のシェーダーです)\n■ Stencil/Read (ステンシルで透過される側のシェーダーです)\n▶ No Outline\n  ■ Opaque (アウトラインなしの不透明シェーダーです)\n  ■ Cutout (アウトラインなしのカットアウトシェーダーです)\n  ■ Transparent (アウトラインなしの半透明シェーダーです)\n  ■ Stencil/Write (アウトラインなしのステンシルで透過させる側のシェーダーです) \n  ■ Stencil/Read (アウトラインなしのステンシルで透過される側のシェーダーです) "},{"type":"text","title":"Lisence / ライセンス","content":"当シェーダーはMITライセンスに基づき配布されています。\nMITライセンスに基づき、再配布、商用利用、改変等すべて許可しています。\n\nCopyright (c) 2019 Reflex\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."},{"type":"text","title":"Contact / 連絡先","content":"Twitter : @reflex_1124\nVRChat : reflex1124"},{"type":"text","title":"アップデート履歴","content":"2018.11.11 - 初版リリース\n2018.11.12 - 2.0.1 ライトがない場合に影が濃くなる不具合を修正\n2019.02.23 - 2.1リリース\n2019.02.25 - 2.1.1 CullModeの修正。シャドウ周辺の機能追加\n2019.03.14 - 2.1.2 Transparentで描画順がおかしくなる問題の修正。一部トグルの名称変更。インポート時間を大幅に短縮\n2019.07.13 - 2.1.3 Transparentで裏面が正常に描画されていなかった問題を修正。\n2019.11.20 - 2.2.0 カスタムインスペクタを追加。シェーダーキーワードを削減。No Outlineバージョンを追加"}]}
-        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
