@@ -57,9 +57,13 @@
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
     <script src=
+    "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
+    defer="defer" nonce=
+    "MNbkkOr2hnmgEQ1cF0MVNdImsHaZ5LBVETmgiaSGCVY="></script>
+    <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "JNoi1hwtYsGs8kn2brI7qP8FwSG9nvxrwwtWjDpItZ8="></script>
+    "MNbkkOr2hnmgEQ1cF0MVNdImsHaZ5LBVETmgiaSGCVY="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -72,7 +76,7 @@
     <script src=
     "https://asset.booth.pm/assets/ab357483f48c9496242e.js" defer=
     "defer" nonce=
-    "JNoi1hwtYsGs8kn2brI7qP8FwSG9nvxrwwtWjDpItZ8="></script>
+    "MNbkkOr2hnmgEQ1cF0MVNdImsHaZ5LBVETmgiaSGCVY="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"【VRChatオリジナルアバター】甘えんぼうのテディ ver3.1.0 Avatars3.0版追加","description":".","url":"https://booth.pm/ja/items/965488","offers":{"priceCurrency":"JPY","@type":"Offer","price":"3500"},"image":"https://booth.pximg.net/c/620x620/da3e4894-0b83-47ed-b0a9-5526bd9f9722/i/965488/f0ddb1b5-c94a-4fbc-a76a-7a1abe3797ae_base_resized.jpg"}
     </script>
@@ -89,7 +93,7 @@
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "JNoi1hwtYsGs8kn2brI7qP8FwSG9nvxrwwtWjDpItZ8="></script>
+    "MNbkkOr2hnmgEQ1cF0MVNdImsHaZ5LBVETmgiaSGCVY="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -98,18 +102,19 @@
         <div class="recaptcha-tag" data-action=
         "booth/checkout_order" data-site-key=
         "6LfF1dcZAAAAAOHQX8v16MX5SktDwmQINVD_6mBF"></div>
-        <div class="market-item-detail u-bg-white"
-        data-ga-tracking-id="UA-191531768-1" data-product-brand=
-        "minuetdoll" data-product-category="208" data-product-id=
-        "965488" data-product-list="market_show"
+        <div class="market" data-ga-tracking-id="UA-191531768-1"
+        data-product-brand="minuetdoll" data-product-category="208"
+        data-product-id="965488" data-product-list="market_show"
         data-product-price="3500"
         data-shop-tracking-product-category="3D Characters"
         data-shop-tracking-product-id="965488"
         data-shop-tracking-product-name="【VRChatオリジナルアバター】甘えんぼう..."
         data-shop-tracking-product-price="3500" data-tracking=
-        "detail_item">
+        "detail_item" id="items">
+          <div class="market"></div>
           <nav>
-            <div class="breadcrumbs u-border-b u-border-100">
+            <div class=
+            "market breadcrumbs u-bg-white u-border-b u-border-100">
               <div class="container">
                 <div class="breadcrumb">
                   <a class="label" data-tracking="click"
@@ -131,53 +136,54 @@
           </nav>
           <article>
             <div class=
-            "market-item-detail-article u-d-flex u-flex-column u-align-items-center u-pb-600 u-bg-white">
-              <div class="container">
-                <div class="market-item-detail__exhibition-banner">
-                </div>
-              </div>
-              <div class="u-bg-white u-pt-600 u-px-700">
+            "market market-item-detail item-info-detail u-bg-white">
+              <div class=
+              "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class="u-d-flex">
-                    <div class="u-order-1 l-col-2of5 u-pl-600">
-                      <header>
-                        <div class="u-mb-200">
-                          <div class="eventname-flag">
-                            <a class="eventname-flag--inner"
-                            data-tracking="click"
-                            data-product-list="from market_show via eventname_flag to event_index"
-                            href=
-                            "https://booth.pm/ja/events/v-market2">
-                            <div class="eventname-flag__name">
-                              Vケット2
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
+                  <div class="u-pt-600 u-d-flex">
+                    <div class=
+                    "summary u-order-1 l-col-2of5 u-pl-600">
+                      <div class="mobile-section">
+                        <header>
+                          <div class="u-mb-200">
+                            <div class="eventname-flag">
+                              <a class="eventname-flag--inner"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via eventname_flag to event_index"
+                              href=
+                              "https://booth.pm/ja/events/v-market2">
+                              <div class="eventname-flag__name">
+                                Vケット2
+                              </div></a>
+                            </div>
+                          </div>
+                          <div class="u-my-200 u-tpg-title3">
+                            <a class="nav" target="_blank"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" rel="noopener"
+                            href="https://minuetdoll.booth.pm/">
+                            <div class=
+                            "u-d-flex u-align-items-center">
+                              <img alt="Minuet_Doll×72ca" class=
+                              "user-avatar at-item-summary" src=
+                              "https://booth.pximg.net/c/48x48/users/5154774/icon_image/01586bd3-121e-45aa-86e4-b23d89427b97_base_resized.jpg">
+                              <div class="u-text-ellipsis">
+                                Minuet_Doll×72ca
+                              </div>
                             </div></a>
                           </div>
-                        </div>
-                        <div class="u-my-200 u-tpg-title3">
-                          <a class="nav" target="_blank"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" rel="noopener"
-                          href="https://minuetdoll.booth.pm/">
+                          <h2 class=
+                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                            【VRChatオリジナルアバター】甘えんぼうのテディ ver3.1.0
+                            Avatars3.0版追加
+                          </h2>
                           <div class=
-                          "u-d-flex u-align-items-center">
-                            <img alt="Minuet_Doll×72ca" class=
-                            "user-avatar at-item-summary" src=
-                            "https://booth.pximg.net/c/48x48/users/5154774/icon_image/01586bd3-121e-45aa-86e4-b23d89427b97_base_resized.jpg">
-                            <div class="u-text-ellipsis">
-                              Minuet_Doll×72ca
-                            </div>
-                          </div></a>
-                        </div>
-                        <h2 class=
-                        "u-text-wrap u-tpg-title1 u-mt-0 u-mb-400">
-                          【VRChatオリジナルアバター】甘えんぼうのテディ ver3.1.0
-                          Avatars3.0版追加
-                        </h2>
-                        <div class=
-                        "u-text-assertive u-tpg-caption1"></div>
-                      </header>
-                      <section>
+                          "u-text-assertive u-tpg-caption1"></div>
+                        </header>
                         <div class="wish-list-link">
                           <a class="add-to-wish-list"
                           data-tracking="add_to_wishlist"
@@ -230,24 +236,32 @@
                             </li>
                           </ul>
                         </div>
-                      </section>
+                      </div>
                       <section>
                         <div class=
                         "share-btns u-d-flex u-flex-1 u-justify-content-start u-px-200 u-py-400">
-                          <a data-url=
-                          "https://booth.pm/ja/items/965488"
-                          data-lang="ja" data-hashtags="booth_pm"
-                          data-text=
-                          "【VRChatオリジナルアバター】甘えんぼうのテディ ver3.1.0 Avatars3.0版追加 | Minuet_Doll×72ca"
-                          data-count="none" class=
-                          "twitter-share-button" href=
-                          "https://twitter.com/share">ツイート</a>
-                          <div class="u-ml-300">
+                          <div class="social-btn">
+                            <a data-url=
+                            "https://booth.pm/ja/items/965488"
+                            data-lang="ja" data-hashtags="booth_pm"
+                            data-text=
+                            "【VRChatオリジナルアバター】甘えんぼうのテディ ver3.1.0 Avatars3.0版追加 | Minuet_Doll×72ca"
+                            data-count="none" class=
+                            "twitter-share-button" href=
+                            "https://twitter.com/share">ツイート</a>
+                          </div>
+                          <div class="social-btn u-ml-300">
                             <div class="fb-like" data-action="like"
                             data-href=
                             "https://booth.pm/ja/items/965488"
                             data-layout="button_count" data-share=
                             "false" data-show-faces="false"></div>
+                          </div>
+                          <div class="mobile social-btn u-mx-200">
+                            <div class="line-it-button" data-lang=
+                            "ja" data-type="share-a" data-url=
+                            "https://booth.pm/ja/items/965488"
+                            style="display: none;"></div>
                           </div>
                         </div>
                       </section>
@@ -326,7 +340,7 @@
                         </div>
                       </div>
                       <div class=
-                      "primary-image-thumbnails u-d-sp-none">
+                      "primary-image-thumbnails u-d-sp-none image-list">
                         <a class="pointer">
                         <div class=
                         "embedded-content-thumbnail slick-thumbnail-border">
@@ -352,117 +366,123 @@
                           "https://booth.pximg.net/c/72x72_a2_g5/da3e4894-0b83-47ed-b0a9-5526bd9f9722/i/965488/6ae29ed7-4e5b-4289-871d-02b0ae0d1a23_base_resized.jpg">
                         </div></a>
                       </div>
-                      <section>
+                      <section class="main-info-column">
                         <div class=
-                        "js-market-item-detail-description">
+                        "js-market-item-detail-description description">
                           <p class="autolink u-text-wrap">
                             .
                           </p>
                         </div>
                       </section>
-                      <section>
-                        <div class="u-text-wrap page_design" id=
-                        "modules"></div>
-                      </section>
+                      <section class="u-text-wrap page_design" id=
+                      "modules"></section>
                     </div>
                   </div>
+                  <section class="container">
+                    <div class="u-border-t u-py-500">
+                      <div class="mobile-section">
+                        <h3 class="u-m-0">
+                          タグ
+                        </h3>
+                      </div>
+                      <div class="search-guide-nav">
+                        <div class="search-guide-slider-wrapper">
+                          <div class="search-guide-slider">
+                            <div class=
+                            "search-guide-slider-container">
+                              <a class="search-guide-tablet"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3D%E3%83%87%E3%83%BC%E3%82%BF">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3Dデータ
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3Dモデル
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%83%E3%83%88">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  バーチャルマーケット
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%83%A2%E3%82%AF%E3%83%AA%E3%83%90%E3%82%B6%E3%83%BC%E3%83%ABA">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  モクリバザールA
+                                </div>
+                              </div></a>
+                            </div>
+                          </div><a class=
+                          "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
+                        </div>
+                      </div>
+                      <div class="mobile-section">
+                        <div class="u-my-500 u-mt-sp-300">
+                          <a class=
+                          "btn btn--default-outline u-tpg-caption1 u-text-wrap"
+                          data-tracking="click" data-product-list=
+                          "from market_show via tag_category_search to search_index"
+                          href=
+                          "https://booth.pm/ja/browse/3D%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC?q=3D%E3%83%87%E3%83%BC%E3%82%BF">
+                          3Dデータ x 3Dキャラクター で検索</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-                <section class="container">
-                  <div class="u-border-t u-py-500">
-                    <div class="mobile-section">
-                      <h3 class="u-m-0">
-                        タグ
-                      </h3>
-                    </div>
-                    <div class="search-guide-nav">
-                      <div class="search-guide-slider-wrapper">
-                        <div class="search-guide-slider">
-                          <div class=
-                          "search-guide-slider-container">
-                            <a class="search-guide-tablet"
-                            data-tracking="click"
-                            data-product-list="from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/3D%E3%83%87%E3%83%BC%E3%82%BF">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3Dデータ
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3Dモデル
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%83%E3%83%88">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                バーチャルマーケット
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%83%A2%E3%82%AF%E3%83%AA%E3%83%90%E3%82%B6%E3%83%BC%E3%83%ABA">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                モクリバザールA
-                              </div>
-                            </div></a>
-                          </div>
-                        </div><a class=
-                        "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
-                      </div>
-                    </div>
-                    <div class="mobile-section">
-                      <div class="u-my-500 u-mt-sp-300">
-                        <a class=
-                        "btn btn--default-outline u-tpg-caption1 u-text-wrap"
-                        data-tracking="click" data-product-list=
-                        "from market_show via tag_category_search to search_index"
-                        href=
-                        "https://booth.pm/ja/browse/3D%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC?q=3D%E3%83%87%E3%83%BC%E3%82%BF">
-                        3Dデータ x 3Dキャラクター で検索</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
               </div>
             </div>
           </article>
+          <aside>
+            <div class="market">
+              <div class="shoplist-with-items" v-if=
+              "shops &amp;&amp; shops.length &gt; 0"></div>
+            </div>
+          </aside>
+          <script id="json_modules" type="application/json">
+          {"modules":[{"type":"text","title":"【重要なお知らせ】","content":"令和2年2月3日付でMinuet_Doll3Dモデル利用規約を改定いたしました。追加・削除箇所についてはSHOPのトップページにて記載しています。\nhttps://minuetdoll.booth.pm\nお買い上げいただいた皆様に個別のご連絡ができず大変申し訳御座いません。"},{"type":"text","title":"","content":"　ポリゴン数…△19128～21449\nVRChatでの利用を想定したUnity Humanoidモデルです。（Quest非対応）\n当モデルはDynamic Boneに対応しています。\nVRM化したサンプルモデルがおまけで入っています。\n\n\n【利用規約】\n同梱のインターネットショートカット、もしくは下記URLよりMinuet_Doll3Dモデル利用規約に従ってください。\nhttp://minuetdoll.info/3d/　　　　　　（日本語）\nhttp://minuetdoll.info/3d/english.htm　(English)\n\n\n【アップロード方法・その他仕様】\n同梱のインターネットショートカット、もしくは下記URLよりアップロードの手引きをご覧ください。\nhttp://minuetdoll.info/manual/Teddy_Avatars3.0_manual/\n\nVRChatやUnityのアップデートの影響で従来通りアップロードできなくなった場合は、下記URLをご確認ください。\nhttps://note.com/minuet_doll/n/ne16c3ea79548\n\n\n【シェーダーについて】\n各ライセンスに基づき使用させて頂いております。詳しくは同梱の各テキストファイル（Readme）をご覧ください。\n\n・ユニティ・テクノロジーズ・ジャパン合同会社様の「ユニティちゃんトゥーンシェーダー Ver.2.0.7」\nhttp://unity-chan.com/download/releaseNote.php?id=UTS2_0\n\n\n【内容】\n\nMD_Teddy_ver3.1.0_Avatars3.0\n├ license（テキスト版利用規約及び同梱させて頂いたシェーダー、その他ツールのライセンス）\n├ VRM（VRM化したモデルが入っています）\n｜ Minuet_Doll 3D Model Terms(Online_Japanese)（ご利用の際は最新の利用規約をご覧ください）\n｜ Minuet_Doll 3D Model Terms(English) （上記利用規約の英語版です）\n｜ Readme.txt（このファイル）\n｜ Upload Manual（モデルアップロードの際にはご活用ください）\n└ MD_Teddy_ver3.1.0.unitypackage（本体）\n\n\n【更新履歴】\n2021/03/13  ver3.1.0 Avatars3.0に対応しました。VRM化したモデルを追加しました。\n2018/12/12　ver2.1　 Unity2017.4に対応しました。フルトラッキングに対応しました。スケールの追加をしました。\n2018/10/08　ver2.0　 VRChat仕様変更に伴い自動アニメーションを修正しました。シェーダーの同梱、スケールの追加、テクスチャの形式変更、テクスチャの追加をしました。\n2018/08/29　ver1.1　 リップシンクと表情が干渉する問題を修正しました。ウィンクを追加しました。\n2018/08/13　ver1.0 　販売開始\n\n【制作】\nMinuet_Doll\nhttp://minuetdoll.info/\nhttps://twitter.com/Minuet_Doll"},{"type":"media","content":"\u003ciframe width=\"500\" height=\"500\" src=\"https://hub.vroid.com/characters/6458389359450085991/models/7791649480257182178/embed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\" allow=\"xr-spatial-tracking\"\u003e\u003c/iframe\u003e"}]}
+          </script>
         </div>
-        <aside>
-          <div class="shoplist-with-items" v-if=
-          "shops &amp;&amp; shops.length &gt; 0"></div>
-        </aside>
-        <script id="json_modules" type="application/json">
-        {"modules":[{"type":"text","title":"【重要なお知らせ】","content":"令和2年2月3日付でMinuet_Doll3Dモデル利用規約を改定いたしました。追加・削除箇所についてはSHOPのトップページにて記載しています。\nhttps://minuetdoll.booth.pm\nお買い上げいただいた皆様に個別のご連絡ができず大変申し訳御座いません。"},{"type":"text","title":"","content":"　ポリゴン数…△19128～21449\nVRChatでの利用を想定したUnity Humanoidモデルです。（Quest非対応）\n当モデルはDynamic Boneに対応しています。\nVRM化したサンプルモデルがおまけで入っています。\n\n\n【利用規約】\n同梱のインターネットショートカット、もしくは下記URLよりMinuet_Doll3Dモデル利用規約に従ってください。\nhttp://minuetdoll.info/3d/　　　　　　（日本語）\nhttp://minuetdoll.info/3d/english.htm　(English)\n\n\n【アップロード方法・その他仕様】\n同梱のインターネットショートカット、もしくは下記URLよりアップロードの手引きをご覧ください。\nhttp://minuetdoll.info/manual/Teddy_Avatars3.0_manual/\n\nVRChatやUnityのアップデートの影響で従来通りアップロードできなくなった場合は、下記URLをご確認ください。\nhttps://note.com/minuet_doll/n/ne16c3ea79548\n\n\n【シェーダーについて】\n各ライセンスに基づき使用させて頂いております。詳しくは同梱の各テキストファイル（Readme）をご覧ください。\n\n・ユニティ・テクノロジーズ・ジャパン合同会社様の「ユニティちゃんトゥーンシェーダー Ver.2.0.7」\nhttp://unity-chan.com/download/releaseNote.php?id=UTS2_0\n\n\n【内容】\n\nMD_Teddy_ver3.1.0_Avatars3.0\n├ license（テキスト版利用規約及び同梱させて頂いたシェーダー、その他ツールのライセンス）\n├ VRM（VRM化したモデルが入っています）\n｜ Minuet_Doll 3D Model Terms(Online_Japanese)（ご利用の際は最新の利用規約をご覧ください）\n｜ Minuet_Doll 3D Model Terms(English) （上記利用規約の英語版です）\n｜ Readme.txt（このファイル）\n｜ Upload Manual（モデルアップロードの際にはご活用ください）\n└ MD_Teddy_ver3.1.0.unitypackage（本体）\n\n\n【更新履歴】\n2021/03/13  ver3.1.0 Avatars3.0に対応しました。VRM化したモデルを追加しました。\n2018/12/12　ver2.1　 Unity2017.4に対応しました。フルトラッキングに対応しました。スケールの追加をしました。\n2018/10/08　ver2.0　 VRChat仕様変更に伴い自動アニメーションを修正しました。シェーダーの同梱、スケールの追加、テクスチャの形式変更、テクスチャの追加をしました。\n2018/08/29　ver1.1　 リップシンクと表情が干渉する問題を修正しました。ウィンクを追加しました。\n2018/08/13　ver1.0 　販売開始\n\n【制作】\nMinuet_Doll\nhttp://minuetdoll.info/\nhttps://twitter.com/Minuet_Doll"},{"type":"media","content":"\u003ciframe width=\"500\" height=\"500\" src=\"https://hub.vroid.com/characters/6458389359450085991/models/7791649480257182178/embed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\" allow=\"xr-spatial-tracking\"\u003e\u003c/iframe\u003e"}]}
-        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
