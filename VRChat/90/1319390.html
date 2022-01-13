@@ -59,9 +59,13 @@
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
     <script src=
+    "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
+    defer="defer" nonce=
+    "ppwIEKuhX7u8zZgrfM8gwkN+kEW1VlNRjKQ172NU6JI="></script>
+    <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "8ror3W83VRuBe0WVVz7GqMa+ZW4vPXmsHQVYlM3u+bU="></script>
+    "ppwIEKuhX7u8zZgrfM8gwkN+kEW1VlNRjKQ172NU6JI="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -74,7 +78,7 @@
     <script src=
     "https://asset.booth.pm/assets/ab357483f48c9496242e.js" defer=
     "defer" nonce=
-    "8ror3W83VRuBe0WVVz7GqMa+ZW4vPXmsHQVYlM3u+bU="></script>
+    "ppwIEKuhX7u8zZgrfM8gwkN+kEW1VlNRjKQ172NU6JI="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"愛奈（AINA）【▲3994ローポリ アバター or 素体用3Dモデル】","description":"VRChatでの利用を想定したオリジナル3Dモデルです。\n2018年5月くらいから作者がVRChatでアバターとして使っているものと同一のものです。\nそのまま使っても良いですし、ローポリモデルの素体などにもどうぞ。\n\nこのモデルは「エミル・クロニクル・オンライン」のアバターモデルのローポリなかわいさに感銘をうけたところからそれっぽい雰囲気で作られています。\n","url":"https://booth.pm/ja/items/1319390","offers":{"priceCurrency":"JPY","@type":"Offer","price":"0"},"image":"https://booth.pximg.net/c/620x620/f395cbdc-1e1f-4507-a60f-e85a50f576a0/i/1319390/5777be25-0452-4728-a90f-b0e7192cc063_base_resized.jpg"}
     </script>
@@ -91,7 +95,7 @@
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "8ror3W83VRuBe0WVVz7GqMa+ZW4vPXmsHQVYlM3u+bU="></script>
+    "ppwIEKuhX7u8zZgrfM8gwkN+kEW1VlNRjKQ172NU6JI="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -100,17 +104,18 @@
         <div class="recaptcha-tag" data-action=
         "booth/checkout_order" data-site-key=
         "6LfF1dcZAAAAAOHQX8v16MX5SktDwmQINVD_6mBF"></div>
-        <div class="market-item-detail u-bg-white"
-        data-ga-tracking-id="UA-47878001-1" data-product-brand=
-        "narazaka" data-product-category="208" data-product-id=
-        "1319390" data-product-list="market_show"
+        <div class="market" data-ga-tracking-id="UA-47878001-1"
+        data-product-brand="narazaka" data-product-category="208"
+        data-product-id="1319390" data-product-list="market_show"
         data-product-price="0" data-shop-tracking-product-category=
         "3D Characters" data-shop-tracking-product-id="1319390"
         data-shop-tracking-product-name="愛奈（AINA）【▲3994ローポリ アバタ..."
         data-shop-tracking-product-price="0" data-tracking=
-        "detail_item">
+        "detail_item" id="items">
+          <div class="market"></div>
           <nav>
-            <div class="breadcrumbs u-border-b u-border-100">
+            <div class=
+            "market breadcrumbs u-bg-white u-border-b u-border-100">
               <div class="container">
                 <div class="breadcrumb">
                   <a class="label" data-tracking="click"
@@ -132,40 +137,40 @@
           </nav>
           <article>
             <div class=
-            "market-item-detail-article u-d-flex u-flex-column u-align-items-center u-pb-600 u-bg-white">
-              <div class="container">
-                <div class="market-item-detail__exhibition-banner">
-                </div>
-              </div>
-              <div class="u-bg-white u-pt-600 u-px-700">
+            "market market-item-detail item-info-detail u-bg-white">
+              <div class=
+              "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class="u-d-flex">
-                    <div class="u-order-1 l-col-2of5 u-pl-600">
-                      <header>
-                        <div class="u-my-200 u-tpg-title3">
-                          <a class="nav" target="_blank"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" rel="noopener"
-                          href="https://narazaka.booth.pm/">
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
+                  <div class="u-pt-600 u-d-flex">
+                    <div class=
+                    "summary u-order-1 l-col-2of5 u-pl-600">
+                      <div class="mobile-section">
+                        <header>
+                          <div class="u-my-200 u-tpg-title3">
+                            <a class="nav" target="_blank"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" rel="noopener"
+                            href="https://narazaka.booth.pm/">
+                            <div class=
+                            "u-d-flex u-align-items-center">
+                              <img alt="奈良阪配本地" class=
+                              "user-avatar at-item-summary" src=
+                              "https://booth.pximg.net/c/48x48/users/34549/icon_image/27a734cc-bbb4-42e6-88e0-51af6d24577f_base_resized.jpg">
+                              <div class="u-text-ellipsis">
+                                奈良阪配本地
+                              </div>
+                            </div></a>
+                          </div>
+                          <h2 class=
+                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                            愛奈（AINA）【▲3994ローポリ アバター or 素体用3Dモデル】
+                          </h2>
                           <div class=
-                          "u-d-flex u-align-items-center">
-                            <img alt="奈良阪配本地" class=
-                            "user-avatar at-item-summary" src=
-                            "https://booth.pximg.net/c/48x48/users/34549/icon_image/27a734cc-bbb4-42e6-88e0-51af6d24577f_base_resized.jpg">
-                            <div class="u-text-ellipsis">
-                              奈良阪配本地
-                            </div>
-                          </div></a>
-                        </div>
-                        <h2 class=
-                        "u-text-wrap u-tpg-title1 u-mt-0 u-mb-400">
-                          愛奈（AINA）【▲3994ローポリ アバター or 素体用3Dモデル】
-                        </h2>
-                        <div class=
-                        "u-text-assertive u-tpg-caption1"></div>
-                      </header>
-                      <section>
+                          "u-text-assertive u-tpg-caption1"></div>
+                        </header>
                         <div class="wish-list-link">
                           <a class="add-to-wish-list"
                           data-tracking="add_to_wishlist"
@@ -319,24 +324,32 @@
                             </li>
                           </ul>
                         </div>
-                      </section>
+                      </div>
                       <section>
                         <div class=
                         "share-btns u-d-flex u-flex-1 u-justify-content-start u-px-200 u-py-400">
-                          <a data-url=
-                          "https://booth.pm/ja/items/1319390"
-                          data-lang="ja" data-hashtags="booth_pm"
-                          data-text=
-                          "愛奈（AINA）【▲3994ローポリ アバター or 素体用3Dモデル】 | 奈良阪配本地"
-                          data-count="none" class=
-                          "twitter-share-button" href=
-                          "https://twitter.com/share">ツイート</a>
-                          <div class="u-ml-300">
+                          <div class="social-btn">
+                            <a data-url=
+                            "https://booth.pm/ja/items/1319390"
+                            data-lang="ja" data-hashtags="booth_pm"
+                            data-text=
+                            "愛奈（AINA）【▲3994ローポリ アバター or 素体用3Dモデル】 | 奈良阪配本地"
+                            data-count="none" class=
+                            "twitter-share-button" href=
+                            "https://twitter.com/share">ツイート</a>
+                          </div>
+                          <div class="social-btn u-ml-300">
                             <div class="fb-like" data-action="like"
                             data-href=
                             "https://booth.pm/ja/items/1319390"
                             data-layout="button_count" data-share=
                             "false" data-show-faces="false"></div>
+                          </div>
+                          <div class="mobile social-btn u-mx-200">
+                            <div class="line-it-button" data-lang=
+                            "ja" data-type="share-a" data-url=
+                            "https://booth.pm/ja/items/1319390"
+                            style="display: none;"></div>
                           </div>
                         </div>
                       </section>
@@ -535,7 +548,7 @@
                         </div>
                       </div>
                       <div class=
-                      "primary-image-thumbnails u-d-sp-none">
+                      "primary-image-thumbnails u-d-sp-none image-list">
                         <a class="pointer">
                         <div class=
                         "embedded-content-thumbnail slick-thumbnail-border">
@@ -601,9 +614,9 @@
                           "https://booth.pximg.net/c/72x72_a2_g5/f395cbdc-1e1f-4507-a60f-e85a50f576a0/i/1319390/d74b971c-c1c8-4fb2-b6fa-f33a68542c88_base_resized.jpg">
                         </div></a>
                       </div>
-                      <section>
+                      <section class="main-info-column">
                         <div class=
-                        "js-market-item-detail-description">
+                        "js-market-item-detail-description description">
                           <p class="autolink u-text-wrap">
                             VRChatでの利用を想定したオリジナル3Dモデルです。
                             2018年5月くらいから作者がVRChatでアバターとして使っているものと同一のものです。
@@ -612,86 +625,91 @@
                           </p>
                         </div>
                       </section>
-                      <section>
-                        <div class="u-text-wrap page_design" id=
-                        "modules"></div>
-                      </section>
+                      <section class="u-text-wrap page_design" id=
+                      "modules"></section>
                     </div>
                   </div>
+                  <section class="container">
+                    <div class="u-border-t u-py-500">
+                      <div class="mobile-section">
+                        <h3 class="u-m-0">
+                          タグ
+                        </h3>
+                      </div>
+                      <div class="search-guide-nav">
+                        <div class="search-guide-slider-wrapper">
+                          <div class="search-guide-slider">
+                            <div class=
+                            "search-guide-slider-container">
+                              <a class="search-guide-tablet"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3D%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3Dキャラクター
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/FBX">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  FBX
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat
+                                </div>
+                              </div></a>
+                            </div>
+                          </div><a class=
+                          "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
+                        </div>
+                      </div>
+                      <div class="mobile-section">
+                        <div class="u-my-500 u-mt-sp-300">
+                          <a class=
+                          "btn btn--default-outline u-tpg-caption1 u-text-wrap"
+                          data-tracking="click" data-product-list=
+                          "from market_show via tag_category_search to search_index"
+                          href=
+                          "https://booth.pm/ja/browse/3D%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC?q=3D%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC">
+                          3Dキャラクター x 3Dキャラクター で検索</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-                <section class="container">
-                  <div class="u-border-t u-py-500">
-                    <div class="mobile-section">
-                      <h3 class="u-m-0">
-                        タグ
-                      </h3>
-                    </div>
-                    <div class="search-guide-nav">
-                      <div class="search-guide-slider-wrapper">
-                        <div class="search-guide-slider">
-                          <div class=
-                          "search-guide-slider-container">
-                            <a class="search-guide-tablet"
-                            data-tracking="click"
-                            data-product-list="from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/3D%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3Dキャラクター
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href="https://booth.pm/ja/search/FBX">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                FBX
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat
-                              </div>
-                            </div></a>
-                          </div>
-                        </div><a class=
-                        "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
-                      </div>
-                    </div>
-                    <div class="mobile-section">
-                      <div class="u-my-500 u-mt-sp-300">
-                        <a class=
-                        "btn btn--default-outline u-tpg-caption1 u-text-wrap"
-                        data-tracking="click" data-product-list=
-                        "from market_show via tag_category_search to search_index"
-                        href=
-                        "https://booth.pm/ja/browse/3D%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC?q=3D%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC">
-                        3Dキャラクター x 3Dキャラクター で検索</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
               </div>
             </div>
           </article>
+          <aside>
+            <div class="market">
+              <div class="shoplist-with-items" v-if=
+              "shops &amp;&amp; shops.length &gt; 0"></div>
+            </div>
+          </aside>
+          <script id="json_modules" type="application/json">
+          {"modules":[{"type":"text","title":"内容物","content":"・VRChat向けに設定済みのunitypackage\n・オブジェクト統合前のblenderファイル\n・テクスチャのclipファイル・psdファイル・pngファイル\n"},{"type":"text","title":"この3Dモデルについて","content":"△ポリゴン数: PC用=3994 Quest用=4570\nOculus Questはシェーダーによる裏面描画対応ができないため、裏面分ポリゴン数が増えています。\n基本構成ならPCはMedium、QuestはGood判定です。\n\n\n一部揺れ物の制御には「Dynamic Bone」が必要です。Asset Storeから入手してください。\nまんまるシェーダー3は同梱済みです。\n\n表情:\n- 笑顔\n- ジト目\n- 照れ顔\n- 目とじ\n\n表情以外のシェイプキー:\n- 胸の大小調整7+1段階（普通・貧乳化1段階・巨乳化5+1段階）\n\nDynamic Bone設定:\n- ポニーテール\n- アホ毛\n- 胸\n\n設定済シェーダー:\n- まんまるシェーダー3\n- VRM/MToon（あまり使ってない）\n\nリップシンク:\n- 設定済み\n\nアイトラッキング:\n- 未設定（設定予定がありません）\n\nなにぶんモデリング初心者が作った1作目そのままなもので、特にUV微妙なとこ（スカート、セーラー服、耳）がある雑な感じのモデルですが、まあちょっぱやでなんか作るときとかに使えたりするかも……？\n\nハンドサインアニメーションに「アンテナショップ【ねここや】」の「ポーズ詰め合わせ 募金箱+返礼品（Donation+Gift）」（ https://booth.pm/ja/items/1634088 ）からのコピー部分を使用しています。（キーフレームを組み込んだ自作のアニメーションファイルを配布・同梱・販売することが許可されており、規約上組み込んで再配布可能なものです。）\n\n■パンツパッチ対応\nTenteEEEE てんて- さんの「キッシュちゃんパンツパッチ」プロジェクトが本アバターに対応済みです。\n下記サイトで「愛奈」または「愛奈(クエスト)」を選択した上でお好きなものを選んでパッチを当てることができます。是非ご活用ください。\nhttps://joniburn.github.io/quiche-pantie-patch-gui/\nなお本アバター「愛奈」イメージのものは316番（316.png）です。\n\n■変更点\n○0.6.1\n・changelog等の更新忘れを反映\n\n〇0.6.0\n・表情アサインを追加\n    ・FIST（にぎり）で笑顔\n    ・THUMBSUP（親指立て）で目をつぶる\n・ハンドポーズを「アンテナショップ【ねここや】」の「ポーズ詰め合わせ 募金箱+返礼品（Donation+Gift）」（ https://booth.pm/ja/items/1634088 ）のものに変更（特にFIST, HANDOPENが顕著）\n・Crunch Compressionをやめた（特にQuestで容量削減効果と質の劣化が釣り合わないと感じたため）\n・まんまるシェーダー3に更新\n\n〇0.5.0\n・胸を非常に大きくする・甚大に大きくする・破滅的に大きくする（実験的）シェイプキーを追加\n・中央ボーンが左右非対称であった問題を修正\n\n〇0.4.1\n・セーラー服を隠すシェイプキーが正しく隠れていなかった問題を修正\n\n〇0.4.0\n・胸をかなり大きくする・非常に大きくするシェイプキーを追加\n\n〇0.3.0\n・基本ポリゴン数が3994に\n・照れ顔を追加\n・MMDのモーフ規格に適合するようオブジェクトとシェイプキー名を調整\n・DynamicBoneを削減することでVRChatの公開アバター基準対応（胸ボーンが各2→1本、アホ下DB廃止、顔DB Collider廃止）\n・隠しオブジェクトカウントでのDesktop Medium / Quest Good対応としてメガネの出し入れなどを含めて多くのオブジェクトの出し入れをシェイプキーによって制御するように\n・両方の軽量化対応に伴って、Unityに出力したfbxがオブジェクトを結合した状態に\n・UTSサポートを廃止\n\n〇0.2.0\n・基本ポリゴン数が3972に\n・体のUVとテクスチャが大幅に変更されています。\n・胸のウェイトとDynamicBoneの調整がされました。\n・メガネが付きました。\n・Quest用アバターを影が落ちない設定にしました。\n"},{"type":"text","title":"ライセンス","content":"Copyright (c) 2020 Narazaka\n\nThis software is provided 'as-is', without any express or implied warranty. In no event will the authors be held liable for any damages arising from the use of this software.\nPermission is granted to anyone to use this software for any purpose, except commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:\n1. The origin of this software must not be misrepresented; you must not claim that you wrote the original software. If you use this software in a product, an acknowledgment in the product documentation would be appreciated but is not required.\n2. Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.\n3. This notice may not be removed or altered from any source distribution.\n\nこのソフトウェアは、\"as-is (現状のまま)\" で、明示であるか暗黙であるかを問わず、何らの保証もなく提供されます（著作者はバグを含めたあらゆる改修義務を負いません）。\n著作者は、それが利用されることによって起こりうるいかなる損害に対しても責任を負いません。\n商用利用でない場合にのみ、ソフトウェアの改変・配布は以下の制限のもとで許可されます。\n1. ソフトウェアの原著作者であると詐称してはなりません。（著作者の表示義務はありません）\n2. ソフトウェアを改変した場合はオリジナルのままだと勘違いされないようにしなければなりません。\n3. ライセンス表示をソフトウェアそのものの配布物（blendファイル・fbxファイル・unitypackageなど）から削除してはなりません。（ソフトウェアを利用した著作物に含める義務はありません）\n"},{"type":"media","content":"\u003ciframe width=\"500\" height=\"500\" src=\"https://hub.vroid.com/characters/1266021540175598519/models/6077161447185407899/embed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\" allow=\"xr-spatial-tracking\"\u003e\u003c/iframe\u003e"}]}
+          </script>
         </div>
-        <aside>
-          <div class="shoplist-with-items" v-if=
-          "shops &amp;&amp; shops.length &gt; 0"></div>
-        </aside>
-        <script id="json_modules" type="application/json">
-        {"modules":[{"type":"text","title":"内容物","content":"・VRChat向けに設定済みのunitypackage\n・オブジェクト統合前のblenderファイル\n・テクスチャのclipファイル・psdファイル・pngファイル\n"},{"type":"text","title":"この3Dモデルについて","content":"△ポリゴン数: PC用=3994 Quest用=4570\nOculus Questはシェーダーによる裏面描画対応ができないため、裏面分ポリゴン数が増えています。\n基本構成ならPCはMedium、QuestはGood判定です。\n\n\n一部揺れ物の制御には「Dynamic Bone」が必要です。Asset Storeから入手してください。\nまんまるシェーダー3は同梱済みです。\n\n表情:\n- 笑顔\n- ジト目\n- 照れ顔\n- 目とじ\n\n表情以外のシェイプキー:\n- 胸の大小調整7+1段階（普通・貧乳化1段階・巨乳化5+1段階）\n\nDynamic Bone設定:\n- ポニーテール\n- アホ毛\n- 胸\n\n設定済シェーダー:\n- まんまるシェーダー3\n- VRM/MToon（あまり使ってない）\n\nリップシンク:\n- 設定済み\n\nアイトラッキング:\n- 未設定（設定予定がありません）\n\nなにぶんモデリング初心者が作った1作目そのままなもので、特にUV微妙なとこ（スカート、セーラー服、耳）がある雑な感じのモデルですが、まあちょっぱやでなんか作るときとかに使えたりするかも……？\n\nハンドサインアニメーションに「アンテナショップ【ねここや】」の「ポーズ詰め合わせ 募金箱+返礼品（Donation+Gift）」（ https://booth.pm/ja/items/1634088 ）からのコピー部分を使用しています。（キーフレームを組み込んだ自作のアニメーションファイルを配布・同梱・販売することが許可されており、規約上組み込んで再配布可能なものです。）\n\n■パンツパッチ対応\nTenteEEEE てんて- さんの「キッシュちゃんパンツパッチ」プロジェクトが本アバターに対応済みです。\n下記サイトで「愛奈」または「愛奈(クエスト)」を選択した上でお好きなものを選んでパッチを当てることができます。是非ご活用ください。\nhttps://joniburn.github.io/quiche-pantie-patch-gui/\nなお本アバター「愛奈」イメージのものは316番（316.png）です。\n\n■変更点\n○0.6.1\n・changelog等の更新忘れを反映\n\n〇0.6.0\n・表情アサインを追加\n    ・FIST（にぎり）で笑顔\n    ・THUMBSUP（親指立て）で目をつぶる\n・ハンドポーズを「アンテナショップ【ねここや】」の「ポーズ詰め合わせ 募金箱+返礼品（Donation+Gift）」（ https://booth.pm/ja/items/1634088 ）のものに変更（特にFIST, HANDOPENが顕著）\n・Crunch Compressionをやめた（特にQuestで容量削減効果と質の劣化が釣り合わないと感じたため）\n・まんまるシェーダー3に更新\n\n〇0.5.0\n・胸を非常に大きくする・甚大に大きくする・破滅的に大きくする（実験的）シェイプキーを追加\n・中央ボーンが左右非対称であった問題を修正\n\n〇0.4.1\n・セーラー服を隠すシェイプキーが正しく隠れていなかった問題を修正\n\n〇0.4.0\n・胸をかなり大きくする・非常に大きくするシェイプキーを追加\n\n〇0.3.0\n・基本ポリゴン数が3994に\n・照れ顔を追加\n・MMDのモーフ規格に適合するようオブジェクトとシェイプキー名を調整\n・DynamicBoneを削減することでVRChatの公開アバター基準対応（胸ボーンが各2→1本、アホ下DB廃止、顔DB Collider廃止）\n・隠しオブジェクトカウントでのDesktop Medium / Quest Good対応としてメガネの出し入れなどを含めて多くのオブジェクトの出し入れをシェイプキーによって制御するように\n・両方の軽量化対応に伴って、Unityに出力したfbxがオブジェクトを結合した状態に\n・UTSサポートを廃止\n\n〇0.2.0\n・基本ポリゴン数が3972に\n・体のUVとテクスチャが大幅に変更されています。\n・胸のウェイトとDynamicBoneの調整がされました。\n・メガネが付きました。\n・Quest用アバターを影が落ちない設定にしました。\n"},{"type":"text","title":"ライセンス","content":"Copyright (c) 2020 Narazaka\n\nThis software is provided 'as-is', without any express or implied warranty. In no event will the authors be held liable for any damages arising from the use of this software.\nPermission is granted to anyone to use this software for any purpose, except commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:\n1. The origin of this software must not be misrepresented; you must not claim that you wrote the original software. If you use this software in a product, an acknowledgment in the product documentation would be appreciated but is not required.\n2. Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.\n3. This notice may not be removed or altered from any source distribution.\n\nこのソフトウェアは、\"as-is (現状のまま)\" で、明示であるか暗黙であるかを問わず、何らの保証もなく提供されます（著作者はバグを含めたあらゆる改修義務を負いません）。\n著作者は、それが利用されることによって起こりうるいかなる損害に対しても責任を負いません。\n商用利用でない場合にのみ、ソフトウェアの改変・配布は以下の制限のもとで許可されます。\n1. ソフトウェアの原著作者であると詐称してはなりません。（著作者の表示義務はありません）\n2. ソフトウェアを改変した場合はオリジナルのままだと勘違いされないようにしなければなりません。\n3. ライセンス表示をソフトウェアそのものの配布物（blendファイル・fbxファイル・unitypackageなど）から削除してはなりません。（ソフトウェアを利用した著作物に含める義務はありません）\n"},{"type":"media","content":"\u003ciframe width=\"500\" height=\"500\" src=\"https://hub.vroid.com/characters/1266021540175598519/models/6077161447185407899/embed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\" allow=\"xr-spatial-tracking\"\u003e\u003c/iframe\u003e"}]}
-        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
