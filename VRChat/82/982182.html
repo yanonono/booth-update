@@ -59,9 +59,13 @@
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
     <script src=
+    "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
+    defer="defer" nonce=
+    "UvA8Q/kFn6BDxKvtH9m7vpbq6JT2a0n+33CXLnLYC1s="></script>
+    <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "RWFF7+D3gsxgzwMPI77vUkFeCMAmu5k6It/5HbxQ29c="></script>
+    "UvA8Q/kFn6BDxKvtH9m7vpbq6JT2a0n+33CXLnLYC1s="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -74,7 +78,7 @@
     <script src=
     "https://asset.booth.pm/assets/ab357483f48c9496242e.js" defer=
     "defer" nonce=
-    "RWFF7+D3gsxgzwMPI77vUkFeCMAmu5k6It/5HbxQ29c="></script>
+    "UvA8Q/kFn6BDxKvtH9m7vpbq6JT2a0n+33CXLnLYC1s="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"CRL-10＆おまけ素体","description":"CRL-10\nVRchatでお使いいただけるモデルデータになります。\nフルトラッキング時、肩がかなり下がるのでキャリブレーションのコツが要りますがトラッカー無し、デスクトップでの使用では問題ありません\n\nおまけ\n新規に作成した「CRL-16」に内蔵されている素体である、「Cruxフレーム」を同梱いたします。「Cruxフレーム」には頭部と足先が附属しておりません。ご注意ください。","url":"https://booth.pm/ja/items/982182","offers":{"priceCurrency":"JPY","@type":"Offer","price":"800"},"image":"https://booth.pximg.net/c/620x620/ea95dbd8-fd5b-43a0-9a82-ee7157567ac9/i/982182/d3107dcb-3fbb-4c05-a5f1-05d865accbef_base_resized.jpg"}
     </script>
@@ -91,7 +95,7 @@
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "RWFF7+D3gsxgzwMPI77vUkFeCMAmu5k6It/5HbxQ29c="></script>
+    "UvA8Q/kFn6BDxKvtH9m7vpbq6JT2a0n+33CXLnLYC1s="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -100,13 +104,15 @@
         <div class="recaptcha-tag" data-action=
         "booth/checkout_order" data-site-key=
         "6LfF1dcZAAAAAOHQX8v16MX5SktDwmQINVD_6mBF"></div>
-        <div class="market-item-detail u-bg-white"
-        data-ga-tracking-id="" data-product-brand="jefdepot"
-        data-product-category="127" data-product-id="982182"
-        data-product-list="market_show" data-product-price="800"
-        data-tracking="detail_item">
+        <div class="market" data-ga-tracking-id=""
+        data-product-brand="jefdepot" data-product-category="127"
+        data-product-id="982182" data-product-list="market_show"
+        data-product-price="800" data-tracking="detail_item" id=
+        "items">
+          <div class="market"></div>
           <nav>
-            <div class="breadcrumbs u-border-b u-border-100">
+            <div class=
+            "market breadcrumbs u-bg-white u-border-b u-border-100">
               <div class="container">
                 <div class="breadcrumb">
                   <a class="label" data-tracking="click"
@@ -128,40 +134,40 @@
           </nav>
           <article>
             <div class=
-            "market-item-detail-article u-d-flex u-flex-column u-align-items-center u-pb-600 u-bg-white">
-              <div class="container">
-                <div class="market-item-detail__exhibition-banner">
-                </div>
-              </div>
-              <div class="u-bg-white u-pt-600 u-px-700">
+            "market market-item-detail item-info-detail u-bg-white">
+              <div class=
+              "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class="u-d-flex">
-                    <div class="u-order-1 l-col-2of5 u-pl-600">
-                      <header>
-                        <div class="u-my-200 u-tpg-title3">
-                          <a class="nav" target="_blank"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" rel="noopener"
-                          href="https://jefdepot.booth.pm/">
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
+                  <div class="u-pt-600 u-d-flex">
+                    <div class=
+                    "summary u-order-1 l-col-2of5 u-pl-600">
+                      <div class="mobile-section">
+                        <header>
+                          <div class="u-my-200 u-tpg-title3">
+                            <a class="nav" target="_blank"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" rel="noopener"
+                            href="https://jefdepot.booth.pm/">
+                            <div class=
+                            "u-d-flex u-align-items-center">
+                              <img alt="JEFの倉庫" class=
+                              "user-avatar at-item-summary" src=
+                              "https://booth.pximg.net/c/48x48/users/4951201/icon_image/4c682b74-5f6f-41b9-a550-f5204e903b60_base_resized.jpg">
+                              <div class="u-text-ellipsis">
+                                JEFの倉庫
+                              </div>
+                            </div></a>
+                          </div>
+                          <h2 class=
+                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                            CRL-10＆おまけ素体
+                          </h2>
                           <div class=
-                          "u-d-flex u-align-items-center">
-                            <img alt="JEFの倉庫" class=
-                            "user-avatar at-item-summary" src=
-                            "https://booth.pximg.net/c/48x48/users/4951201/icon_image/4c682b74-5f6f-41b9-a550-f5204e903b60_base_resized.jpg">
-                            <div class="u-text-ellipsis">
-                              JEFの倉庫
-                            </div>
-                          </div></a>
-                        </div>
-                        <h2 class=
-                        "u-text-wrap u-tpg-title1 u-mt-0 u-mb-400">
-                          CRL-10＆おまけ素体
-                        </h2>
-                        <div class=
-                        "u-text-assertive u-tpg-caption1"></div>
-                      </header>
-                      <section>
+                          "u-text-assertive u-tpg-caption1"></div>
+                        </header>
                         <div class="wish-list-link">
                           <a class="add-to-wish-list"
                           data-tracking="add_to_wishlist"
@@ -214,23 +220,31 @@
                             </li>
                           </ul>
                         </div>
-                      </section>
+                      </div>
                       <section>
                         <div class=
                         "share-btns u-d-flex u-flex-1 u-justify-content-start u-px-200 u-py-400">
-                          <a data-url=
-                          "https://booth.pm/ja/items/982182"
-                          data-lang="ja" data-hashtags="booth_pm"
-                          data-text="CRL-10＆おまけ素体 | JEFの倉庫"
-                          data-count="none" class=
-                          "twitter-share-button" href=
-                          "https://twitter.com/share">ツイート</a>
-                          <div class="u-ml-300">
+                          <div class="social-btn">
+                            <a data-url=
+                            "https://booth.pm/ja/items/982182"
+                            data-lang="ja" data-hashtags="booth_pm"
+                            data-text="CRL-10＆おまけ素体 | JEFの倉庫"
+                            data-count="none" class=
+                            "twitter-share-button" href=
+                            "https://twitter.com/share">ツイート</a>
+                          </div>
+                          <div class="social-btn u-ml-300">
                             <div class="fb-like" data-action="like"
                             data-href=
                             "https://booth.pm/ja/items/982182"
                             data-layout="button_count" data-share=
                             "false" data-show-faces="false"></div>
+                          </div>
+                          <div class="mobile social-btn u-mx-200">
+                            <div class="line-it-button" data-lang=
+                            "ja" data-type="share-a" data-url=
+                            "https://booth.pm/ja/items/982182"
+                            style="display: none;"></div>
                           </div>
                         </div>
                       </section>
@@ -272,7 +286,7 @@
                         </div>
                       </div>
                       <div class=
-                      "primary-image-thumbnails u-d-sp-none">
+                      "primary-image-thumbnails u-d-sp-none image-list">
                         <a class="pointer">
                         <div class="slick-thumbnail-border">
                           <img src=
@@ -287,9 +301,9 @@
                           "https://booth.pximg.net/c/72x72_a2_g5/ea95dbd8-fd5b-43a0-9a82-ee7157567ac9/i/982182/ddd34cea-4130-4827-a3c7-4c4d131cf21f_base_resized.jpg">
                         </div></a>
                       </div>
-                      <section>
+                      <section class="main-info-column">
                         <div class=
-                        "js-market-item-detail-description">
+                        "js-market-item-detail-description description">
                           <p class="autolink u-text-wrap">
                             CRL-10 VRchatでお使いいただけるモデルデータになります。
                             フルトラッキング時、肩がかなり下がるのでキャリブレーションのコツが要りますがトラッカー無し、デスクトップでの使用では問題ありません
@@ -298,119 +312,127 @@
                           </p>
                         </div>
                       </section>
-                      <section>
-                        <div class="u-text-wrap page_design" id=
-                        "modules"></div>
-                      </section>
+                      <section class="u-text-wrap page_design" id=
+                      "modules"></section>
                     </div>
                   </div>
+                  <section class="container">
+                    <div class="u-border-t u-py-500">
+                      <div class="mobile-section">
+                        <h3 class="u-m-0">
+                          タグ
+                        </h3>
+                      </div>
+                      <div class="search-guide-nav">
+                        <div class="search-guide-slider-wrapper">
+                          <div class="search-guide-slider">
+                            <div class=
+                            "search-guide-slider-container">
+                              <a class="search-guide-tablet"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  ロボット
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/FBX">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  FBX
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/unitypackage">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  unitypackage
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%83%E3%83%88">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  バーチャルマーケット
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat%E5%8F%AF">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat可
+                                </div>
+                              </div></a>
+                            </div>
+                          </div><a class=
+                          "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
+                        </div>
+                      </div>
+                      <div class="mobile-section">
+                        <div class="u-my-500 u-mt-sp-300">
+                          <a class=
+                          "btn btn--default-outline u-tpg-caption1 u-text-wrap"
+                          data-tracking="click" data-product-list=
+                          "from market_show via tag_category_search to search_index"
+                          href=
+                          "https://booth.pm/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88">
+                          ロボット x 3Dモデル（その他） で検索</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-                <section class="container">
-                  <div class="u-border-t u-py-500">
-                    <div class="mobile-section">
-                      <h3 class="u-m-0">
-                        タグ
-                      </h3>
-                    </div>
-                    <div class="search-guide-nav">
-                      <div class="search-guide-slider-wrapper">
-                        <div class="search-guide-slider">
-                          <div class=
-                          "search-guide-slider-container">
-                            <a class="search-guide-tablet"
-                            data-tracking="click"
-                            data-product-list="from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                ロボット
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href="https://booth.pm/ja/search/FBX">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                FBX
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/unitypackage">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                unitypackage
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%83%E3%83%88">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                バーチャルマーケット
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat%E5%8F%AF">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat可
-                              </div>
-                            </div></a>
-                          </div>
-                        </div><a class=
-                        "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
-                      </div>
-                    </div>
-                    <div class="mobile-section">
-                      <div class="u-my-500 u-mt-sp-300">
-                        <a class=
-                        "btn btn--default-outline u-tpg-caption1 u-text-wrap"
-                        data-tracking="click" data-product-list=
-                        "from market_show via tag_category_search to search_index"
-                        href=
-                        "https://booth.pm/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88">
-                        ロボット x 3Dモデル（その他） で検索</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
               </div>
             </div>
           </article>
+          <aside>
+            <div class="market">
+              <div class="shoplist-with-items" v-if=
+              "shops &amp;&amp; shops.length &gt; 0"></div>
+            </div>
+          </aside>
+          <script id="json_modules" type="application/json">
+          {"modules":[{"type":"text","title":"内容物","content":"◆CRL-10\nポリゴン数9810\n①CRL-10ver1 fbxモデル　　　　　　　　　  …本体です　マテリアルが4つに分けられています\n②CRL-10texture pngファイル　　　　　　   …モデル本体用テクスチャ\n③CRL-10 マテリアル結合版　fbxモデル　　　…適用するテクスチャが一枚になるように①のモデルのマテリアルを一つのマテリアルに結合したモデルになります\n④Unitypackage                            …③に②を適用した状態でUnitypackage化した物です　\n\n◆Cruxフレーム\nポリゴン数15626\nfbxファイル及びテクスチャファイル"},{"type":"text","title":"使用方法","content":"◆CRL-10\n①と②はモデル改変時にお使いください\nそのまま使う場合は③に②を適用する、もしくは④をお使いください\n④は事前にVRCSDKを導入したUnityのプロジェクトにドラッグ＆ドロップしてください\n\n◆Cruxフレーム\n主に改変による使用を想定していますので、各自でカスタマイズしてお使いください"},{"type":"text","title":"利用規約","content":"\n【利用規約】\n◆以下の行為は禁止です\n・このモデルデータおよびこのデータを基にした改変物を取り出せる状態での再配布\n\n・各種サービスにおいて第三者が使える状態にすること（VRchatのペデスタル機能は第三者が使えるようになるのでご遠慮ください）\n\n・製作者を騙る事\n\n・公序良俗に反する行為\n\n・政治的、宗教主張に関する利用\n\n\n\n◆以下の行為を許可します\n・VRchat内でのアバターとしてのアップロード、ワールドの飾り\n\n・モデルデータ、テクスチャの改変、改造\n\n・動画への映り込みなど問題なし　クレジット記載不要です\n\n・バーチャルマーケットにおいてのペデスタル化を許可\n\n・VRCでの使用を想定したモデルですが、その他サービスでの利用も可能です\n\n・商用での利用。その場合、製作者jefclaxにご一報をお願いします\n\n◆改変について\n・改造、改変後のモデルの著作権もJefclaxが保持するものとします\n\n・改変に他の方のモデルを利用する場合は他の方のモデルの利用規約も厳守してください\n\n\n本データ使用時に発生したトラブルに関して製作者は一切責任をもちません　自己責任にてお使いください"}]}
+          </script>
         </div>
-        <aside>
-          <div class="shoplist-with-items" v-if=
-          "shops &amp;&amp; shops.length &gt; 0"></div>
-        </aside>
-        <script id="json_modules" type="application/json">
-        {"modules":[{"type":"text","title":"内容物","content":"◆CRL-10\nポリゴン数9810\n①CRL-10ver1 fbxモデル　　　　　　　　　  …本体です　マテリアルが4つに分けられています\n②CRL-10texture pngファイル　　　　　　   …モデル本体用テクスチャ\n③CRL-10 マテリアル結合版　fbxモデル　　　…適用するテクスチャが一枚になるように①のモデルのマテリアルを一つのマテリアルに結合したモデルになります\n④Unitypackage                            …③に②を適用した状態でUnitypackage化した物です　\n\n◆Cruxフレーム\nポリゴン数15626\nfbxファイル及びテクスチャファイル"},{"type":"text","title":"使用方法","content":"◆CRL-10\n①と②はモデル改変時にお使いください\nそのまま使う場合は③に②を適用する、もしくは④をお使いください\n④は事前にVRCSDKを導入したUnityのプロジェクトにドラッグ＆ドロップしてください\n\n◆Cruxフレーム\n主に改変による使用を想定していますので、各自でカスタマイズしてお使いください"},{"type":"text","title":"利用規約","content":"\n【利用規約】\n◆以下の行為は禁止です\n・このモデルデータおよびこのデータを基にした改変物を取り出せる状態での再配布\n\n・各種サービスにおいて第三者が使える状態にすること（VRchatのペデスタル機能は第三者が使えるようになるのでご遠慮ください）\n\n・製作者を騙る事\n\n・公序良俗に反する行為\n\n・政治的、宗教主張に関する利用\n\n\n\n◆以下の行為を許可します\n・VRchat内でのアバターとしてのアップロード、ワールドの飾り\n\n・モデルデータ、テクスチャの改変、改造\n\n・動画への映り込みなど問題なし　クレジット記載不要です\n\n・バーチャルマーケットにおいてのペデスタル化を許可\n\n・VRCでの使用を想定したモデルですが、その他サービスでの利用も可能です\n\n・商用での利用。その場合、製作者jefclaxにご一報をお願いします\n\n◆改変について\n・改造、改変後のモデルの著作権もJefclaxが保持するものとします\n\n・改変に他の方のモデルを利用する場合は他の方のモデルの利用規約も厳守してください\n\n\n本データ使用時に発生したトラブルに関して製作者は一切責任をもちません　自己責任にてお使いください"}]}
-        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
