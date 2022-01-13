@@ -59,9 +59,13 @@
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
     <script src=
+    "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
+    defer="defer" nonce=
+    "0cpWmfpoBurljxjIurQrVyo3O3e6QmlFqDVFQJ8ZRew="></script>
+    <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "kc6A8QJZidq02n3b3Ni9MMKw2tKNlIcTdjBcApfm5QI="></script>
+    "0cpWmfpoBurljxjIurQrVyo3O3e6QmlFqDVFQJ8ZRew="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -99,7 +103,7 @@
     <script src=
     "https://asset.booth.pm/assets/ab357483f48c9496242e.js" defer=
     "defer" nonce=
-    "kc6A8QJZidq02n3b3Ni9MMKw2tKNlIcTdjBcApfm5QI="></script>
+    "0cpWmfpoBurljxjIurQrVyo3O3e6QmlFqDVFQJ8ZRew="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"DITHER BOY （ディザリングシェーダー＋おまけアバター）","description":"DITHER BOY （ディザリングシェーダー）は、Unity3D用のディザリングシェーダーです。\n主に3Dモデルのマテリアルにセットして使うことを想定しています。\nレトロな携帯ゲーム機の画面で描画したような見た目にできます。\n4段階の明暗の色を設定できます。\n標準で35種類のカラーパレットのサンプルがついていますが、自分で自由に色をセットすることもできます。\nディザリング処理の種類を複数用意しています。","url":"https://booth.pm/ja/items/1310953","offers":{"priceCurrency":"JPY","@type":"Offer","price":"1500"},"image":"https://booth.pximg.net/c/620x620/d3da06ae-99cf-460b-b7bf-d7568cfbdb40/i/1310953/6e59319f-6636-45dd-98f7-8947562ce217_base_resized.jpg"}
     </script>
@@ -113,7 +117,7 @@
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "kc6A8QJZidq02n3b3Ni9MMKw2tKNlIcTdjBcApfm5QI="></script>
+    "0cpWmfpoBurljxjIurQrVyo3O3e6QmlFqDVFQJ8ZRew="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -122,13 +126,15 @@
         <div class="recaptcha-tag" data-action=
         "booth/checkout_order" data-site-key=
         "6LfF1dcZAAAAAOHQX8v16MX5SktDwmQINVD_6mBF"></div>
-        <div class="market-item-detail u-bg-white"
-        data-ga-tracking-id="" data-product-brand="kaiwarestore"
-        data-product-category="134" data-product-id="1310953"
-        data-product-list="market_show" data-product-price="1500"
-        data-tracking="detail_item">
+        <div class="market" data-ga-tracking-id=""
+        data-product-brand="kaiwarestore" data-product-category=
+        "134" data-product-id="1310953" data-product-list=
+        "market_show" data-product-price="1500" data-tracking=
+        "detail_item" id="items">
+          <div class="market"></div>
           <nav>
-            <div class="breadcrumbs u-border-b u-border-100">
+            <div class=
+            "market breadcrumbs u-bg-white u-border-b u-border-100">
               <div class="container">
                 <div class="breadcrumb">
                   <a class="label" data-tracking="click"
@@ -151,40 +157,40 @@
           </nav>
           <article>
             <div class=
-            "market-item-detail-article u-d-flex u-flex-column u-align-items-center u-pb-600 u-bg-white">
-              <div class="container">
-                <div class="market-item-detail__exhibition-banner">
-                </div>
-              </div>
-              <div class="u-bg-white u-pt-600 u-px-700">
+            "market market-item-detail item-info-detail u-bg-white">
+              <div class=
+              "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class="u-d-flex">
-                    <div class="u-order-1 l-col-2of5 u-pl-600">
-                      <header>
-                        <div class="u-my-200 u-tpg-title3">
-                          <a class="nav" target="_blank"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" rel="noopener"
-                          href="https://kaiwarestore.booth.pm/">
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
+                  <div class="u-pt-600 u-d-flex">
+                    <div class=
+                    "summary u-order-1 l-col-2of5 u-pl-600">
+                      <div class="mobile-section">
+                        <header>
+                          <div class="u-my-200 u-tpg-title3">
+                            <a class="nav" target="_blank"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" rel="noopener"
+                            href="https://kaiwarestore.booth.pm/">
+                            <div class=
+                            "u-d-flex u-align-items-center">
+                              <img alt="kaiware store" class=
+                              "user-avatar at-item-summary" src=
+                              "https://booth.pximg.net/c/48x48/users/3686531/icon_image/9e1e80e6-131f-4778-b67d-0a85f6c72063_base_resized.jpg">
+                              <div class="u-text-ellipsis">
+                                kaiware store
+                              </div>
+                            </div></a>
+                          </div>
+                          <h2 class=
+                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                            DITHER BOY （ディザリングシェーダー＋おまけアバター）
+                          </h2>
                           <div class=
-                          "u-d-flex u-align-items-center">
-                            <img alt="kaiware store" class=
-                            "user-avatar at-item-summary" src=
-                            "https://booth.pximg.net/c/48x48/users/3686531/icon_image/9e1e80e6-131f-4778-b67d-0a85f6c72063_base_resized.jpg">
-                            <div class="u-text-ellipsis">
-                              kaiware store
-                            </div>
-                          </div></a>
-                        </div>
-                        <h2 class=
-                        "u-text-wrap u-tpg-title1 u-mt-0 u-mb-400">
-                          DITHER BOY （ディザリングシェーダー＋おまけアバター）
-                        </h2>
-                        <div class=
-                        "u-text-assertive u-tpg-caption1"></div>
-                      </header>
-                      <section>
+                          "u-text-assertive u-tpg-caption1"></div>
+                        </header>
                         <div class="wish-list-link">
                           <a class="add-to-wish-list"
                           data-tracking="add_to_wishlist"
@@ -237,24 +243,32 @@
                             </li>
                           </ul>
                         </div>
-                      </section>
+                      </div>
                       <section>
                         <div class=
                         "share-btns u-d-flex u-flex-1 u-justify-content-start u-px-200 u-py-400">
-                          <a data-url=
-                          "https://booth.pm/ja/items/1310953"
-                          data-lang="ja" data-hashtags="booth_pm"
-                          data-text=
-                          "DITHER BOY （ディザリングシェーダー＋おまけアバター） | kaiware store"
-                          data-count="none" class=
-                          "twitter-share-button" href=
-                          "https://twitter.com/share">ツイート</a>
-                          <div class="u-ml-300">
+                          <div class="social-btn">
+                            <a data-url=
+                            "https://booth.pm/ja/items/1310953"
+                            data-lang="ja" data-hashtags="booth_pm"
+                            data-text=
+                            "DITHER BOY （ディザリングシェーダー＋おまけアバター） | kaiware store"
+                            data-count="none" class=
+                            "twitter-share-button" href=
+                            "https://twitter.com/share">ツイート</a>
+                          </div>
+                          <div class="social-btn u-ml-300">
                             <div class="fb-like" data-action="like"
                             data-href=
                             "https://booth.pm/ja/items/1310953"
                             data-layout="button_count" data-share=
                             "false" data-show-faces="false"></div>
+                          </div>
+                          <div class="mobile social-btn u-mx-200">
+                            <div class="line-it-button" data-lang=
+                            "ja" data-type="share-a" data-url=
+                            "https://booth.pm/ja/items/1310953"
+                            style="display: none;"></div>
                           </div>
                         </div>
                       </section>
@@ -323,7 +337,7 @@
                         </div>
                       </div>
                       <div class=
-                      "primary-image-thumbnails u-d-sp-none">
+                      "primary-image-thumbnails u-d-sp-none image-list">
                         <a class="pointer">
                         <div class="slick-thumbnail-border">
                           <img src=
@@ -346,9 +360,9 @@
                           "https://booth.pximg.net/c/72x72_a2_g5/d3da06ae-99cf-460b-b7bf-d7568cfbdb40/i/1310953/815a0ca8-6fd5-4d20-a21a-5528db39a1df_base_resized.jpg">
                         </div></a>
                       </div>
-                      <section>
+                      <section class="main-info-column">
                         <div class=
-                        "js-market-item-detail-description">
+                        "js-market-item-detail-description description">
                           <p class="autolink u-text-wrap">
                             DITHER BOY
                             （ディザリングシェーダー）は、Unity3D用のディザリングシェーダーです。
@@ -360,131 +374,139 @@
                           </p>
                         </div>
                       </section>
-                      <section>
-                        <div class="u-text-wrap page_design" id=
-                        "modules"></div>
-                      </section>
+                      <section class="u-text-wrap page_design" id=
+                      "modules"></section>
                     </div>
                   </div>
+                  <section class="container">
+                    <div class="u-border-t u-py-500">
+                      <div class="mobile-section">
+                        <h3 class="u-m-0">
+                          タグ
+                        </h3>
+                      </div>
+                      <div class="search-guide-nav">
+                        <div class="search-guide-slider-wrapper">
+                          <div class="search-guide-slider">
+                            <div class=
+                            "search-guide-slider-container">
+                              <a class="search-guide-tablet"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/Unity">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  Unity
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3Dモデル
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%82%A2%E3%83%90%E3%82%BF%E3%83%BC">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  アバター
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/Shader">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  Shader
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%82%B7%E3%82%A7%E3%83%BC%E3%83%80%E3%83%BC">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  シェーダー
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/Avatar">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  Avatar
+                                </div>
+                              </div></a>
+                            </div>
+                          </div><a class=
+                          "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
+                        </div>
+                      </div>
+                      <div class="mobile-section">
+                        <div class="u-my-500 u-mt-sp-300">
+                          <a class=
+                          "btn btn--default-outline u-tpg-caption1 u-text-wrap"
+                          data-tracking="click" data-product-list=
+                          "from market_show via tag_category_search to search_index"
+                          href=
+                          "https://booth.pm/ja/browse/%E7%B4%A0%E6%9D%90%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=Unity">
+                          Unity x 素材（その他） で検索</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-                <section class="container">
-                  <div class="u-border-t u-py-500">
-                    <div class="mobile-section">
-                      <h3 class="u-m-0">
-                        タグ
-                      </h3>
-                    </div>
-                    <div class="search-guide-nav">
-                      <div class="search-guide-slider-wrapper">
-                        <div class="search-guide-slider">
-                          <div class=
-                          "search-guide-slider-container">
-                            <a class="search-guide-tablet"
-                            data-tracking="click"
-                            data-product-list="from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/Unity">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                Unity
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3Dモデル
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%82%A2%E3%83%90%E3%82%BF%E3%83%BC">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                アバター
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/Shader">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                Shader
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%82%B7%E3%82%A7%E3%83%BC%E3%83%80%E3%83%BC">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                シェーダー
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/Avatar">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                Avatar
-                              </div>
-                            </div></a>
-                          </div>
-                        </div><a class=
-                        "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
-                      </div>
-                    </div>
-                    <div class="mobile-section">
-                      <div class="u-my-500 u-mt-sp-300">
-                        <a class=
-                        "btn btn--default-outline u-tpg-caption1 u-text-wrap"
-                        data-tracking="click" data-product-list=
-                        "from market_show via tag_category_search to search_index"
-                        href=
-                        "https://booth.pm/ja/browse/%E7%B4%A0%E6%9D%90%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=Unity">
-                        Unity x 素材（その他） で検索</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
               </div>
             </div>
           </article>
+          <aside>
+            <div class="market">
+              <div class="shoplist-with-items" v-if=
+              "shops &amp;&amp; shops.length &gt; 0"></div>
+            </div>
+          </aside>
+          <script id="json_modules" type="application/json">
+          {"modules":[{"type":"text","title":"含まれるシェーダーの種類","content":"・DitherBoySurface\n　Standard Surface Shader準拠のディザリングシェーダーです\n　ライトの影響を受けて明暗ができます\n　アウトラインもつけられます\n\n・DitherBoyUnlit\n　ライトの影響を受けないディザリングシェーダーです\n\n・DitherBoyTransparent\n　メッシュ自体は描画されませんが、メッシュの背後にある空間にディザリングがかかる特殊なシェーダーです"},{"type":"text","title":"シェーダーのパラメータについて","content":"Main Texture：メッシュのテクスチャ（DitherBoy Surfaceのみ）\n\nEmission：エミッション（光の影響を受けない）の有無（DitherBoy Surfaceのみ）\n\nSample Color Pattern：サンプルのカラーパレット３５種類\n\nDither Color 1(High Brightness)：最も明るい部分の色\nDither Color 2(Mid High Brightness)：２番めに明るい部分の色\nDither Color 3(Mid Low Brightness)：２番めに暗い部分の色\nDither Color 4(Low Brightness)：最も暗い部分の色\n\nDither Size：ディザリング処理の種類\n・なし：ディザリングなし、単純に4階調になる\n・２ｘ２：２ｘ２マス（４段階）のディザリング処理\n・３ｘ３：３ｘ３マス（９段階）のディザリング処理\n・４ｘ４：４ｘ４マス（１６段階）のディザリング処理\n・８ｘ８：８ｘ８マス（６４段階）段階のディザリング処理\n・ノイズ：ノイズを使った無段階のディザリング処理\n\nDot Scale：画面解像度に対するドットの倍率\n１なら等倍、２なら２倍\n\nEnable Outline：輪郭線の描画の有無（DitherBoy Surfaceのみ）\n\nOutlineWidth：輪郭線の太さ\n\n以下、細かな調整用パラメータ\n・Brightness Offset：ディザリング前の明度のオフセット値、数値が上げるほど明るくなる\n\n・Brightness Gamma：ディザリング前の明度グラフのガンマ値、下げるほど明るくなる"},{"type":"text","title":"おまけの３Dモデルについて","content":"架空の汎用人型携帯ゲーム機「DITHER BOY」の３Dモデルが２種類（人型形態とゲーム機形態）付属します。\nVRChatでの使用を想定しています。\n視点位置のカメラに写った絵が、胴体の液晶スクリーンにディザリングが掛かった状態で描画されます。\nまた、暗い場所での撮影用に、スポットライトもついています。\nさらに、自分で胴体が見えないので何が写ってるかの確認用に右目のあたりに確認用スクリーンが表示できる機能もついています。\nそれらは、全てEmoteによってオンオフできます。"},{"type":"text","title":"内容物","content":"[Blender\\]\n・DitherBoyRoboMode/HardModeのblenderファイルと使用しているテクスチャ\n\n[Substance\\]\n・DitherBoyRoboMode/HardModeのSubstanceファイルと使用しているアルファファイル\n\n[Texture\\]\n・DitherBoyRoboModeとカートリッジのテクスチャのPSDファイル\n\n[UnityPackage\\]\n・DitherBoy.unitypackage\n　→DitherBoyシェーダー＋VRChatセットアップ済みのモデル＋シェーダーサンプルシーン"},{"type":"text","title":"導入方法","content":"1. Unity 2017.4.15f1 で新規のプロジェクトを作成してください\n2. VRCSDKを予めインポートしておいてください。\n3. UnityPackage/DitherBoy.unitypackageをインポートしてください。\n"},{"type":"text","title":"VRChatへのアバター導入","content":"Assets/DitherBoy/VRChat/HardMode/Prefabs/DitherBoyHardMode.prefab または Assets/DitherBoy/VRChat/RoboMode/Prefabs/DitherBoyRoboMode.prefab をヒエラルキー上に配置してアップロードしてください。"},{"type":"text","title":"利用規約","content":"本商品を購入した時点で本利用規約に同意したとみなします。\n利用規約の内容は変更する場合があり、最新のものが適用されます。\n本モデルの使用によって生じた何らかのトラブル、損失について\n製作者であるカイワレは一切の責任を負わないものとします。\n本シェーダー及びおまけ3Dモデルの著作権はカイワレに帰属するものとします。"},{"type":"text","title":"DitherBoyシェーダー利用規約","content":"1. 改造可能\n2. Unityを使用して開発されたコンテンツ及びサービス（ゲーム、VTuberシステム、VRChat等）での利用可能\n3. 利用の際にクレジットの表記等は不要(利用を報告していただけると喜びます)\n4. 再配布、再販売の禁止\n5. 商用利用可能"},{"type":"text","title":"おまけ３Ｄモデル(DitherBoyRoboMode/HardMode)利用規約","content":"1. 改造可能\n2. 本モデル、改造モデルのVRChat等モデルデータをアップロードし、アバターとして使用するサービス（例：VRChat、cluster.など)への使用を許可します\n3. Unityを使用して開発されたコンテンツ及びサービス（ゲーム、VTuberシステム、VRChat等）での利用可能\n4. 配布元に直接の許可を得ない営利目的・商用目的の利用の禁止\n5. 過度の暴力的表現/猥褻目的/公序良俗に反する目的/特定の宗教・政治的利用/前述のいずれか一つでも該当する場合の利用の禁止\n6. 再配布、再販売の禁止（改造モデルも含む）\n7. 各種サービスで購入者本人以外がモデルを利用可能な状態にすることの禁止\n　 例：VRChatのペデスタル機能は購入者本人以外が利用可能になるので禁止です"},{"type":"text","title":"連絡先","content":"カイワレ / kaiware style \n( https://twitter.com/kaiware007 )"}]}
+          </script>
         </div>
-        <aside>
-          <div class="shoplist-with-items" v-if=
-          "shops &amp;&amp; shops.length &gt; 0"></div>
-        </aside>
-        <script id="json_modules" type="application/json">
-        {"modules":[{"type":"text","title":"含まれるシェーダーの種類","content":"・DitherBoySurface\n　Standard Surface Shader準拠のディザリングシェーダーです\n　ライトの影響を受けて明暗ができます\n　アウトラインもつけられます\n\n・DitherBoyUnlit\n　ライトの影響を受けないディザリングシェーダーです\n\n・DitherBoyTransparent\n　メッシュ自体は描画されませんが、メッシュの背後にある空間にディザリングがかかる特殊なシェーダーです"},{"type":"text","title":"シェーダーのパラメータについて","content":"Main Texture：メッシュのテクスチャ（DitherBoy Surfaceのみ）\n\nEmission：エミッション（光の影響を受けない）の有無（DitherBoy Surfaceのみ）\n\nSample Color Pattern：サンプルのカラーパレット３５種類\n\nDither Color 1(High Brightness)：最も明るい部分の色\nDither Color 2(Mid High Brightness)：２番めに明るい部分の色\nDither Color 3(Mid Low Brightness)：２番めに暗い部分の色\nDither Color 4(Low Brightness)：最も暗い部分の色\n\nDither Size：ディザリング処理の種類\n・なし：ディザリングなし、単純に4階調になる\n・２ｘ２：２ｘ２マス（４段階）のディザリング処理\n・３ｘ３：３ｘ３マス（９段階）のディザリング処理\n・４ｘ４：４ｘ４マス（１６段階）のディザリング処理\n・８ｘ８：８ｘ８マス（６４段階）段階のディザリング処理\n・ノイズ：ノイズを使った無段階のディザリング処理\n\nDot Scale：画面解像度に対するドットの倍率\n１なら等倍、２なら２倍\n\nEnable Outline：輪郭線の描画の有無（DitherBoy Surfaceのみ）\n\nOutlineWidth：輪郭線の太さ\n\n以下、細かな調整用パラメータ\n・Brightness Offset：ディザリング前の明度のオフセット値、数値が上げるほど明るくなる\n\n・Brightness Gamma：ディザリング前の明度グラフのガンマ値、下げるほど明るくなる"},{"type":"text","title":"おまけの３Dモデルについて","content":"架空の汎用人型携帯ゲーム機「DITHER BOY」の３Dモデルが２種類（人型形態とゲーム機形態）付属します。\nVRChatでの使用を想定しています。\n視点位置のカメラに写った絵が、胴体の液晶スクリーンにディザリングが掛かった状態で描画されます。\nまた、暗い場所での撮影用に、スポットライトもついています。\nさらに、自分で胴体が見えないので何が写ってるかの確認用に右目のあたりに確認用スクリーンが表示できる機能もついています。\nそれらは、全てEmoteによってオンオフできます。"},{"type":"text","title":"内容物","content":"[Blender\\]\n・DitherBoyRoboMode/HardModeのblenderファイルと使用しているテクスチャ\n\n[Substance\\]\n・DitherBoyRoboMode/HardModeのSubstanceファイルと使用しているアルファファイル\n\n[Texture\\]\n・DitherBoyRoboModeとカートリッジのテクスチャのPSDファイル\n\n[UnityPackage\\]\n・DitherBoy.unitypackage\n　→DitherBoyシェーダー＋VRChatセットアップ済みのモデル＋シェーダーサンプルシーン"},{"type":"text","title":"導入方法","content":"1. Unity 2017.4.15f1 で新規のプロジェクトを作成してください\n2. VRCSDKを予めインポートしておいてください。\n3. UnityPackage/DitherBoy.unitypackageをインポートしてください。\n"},{"type":"text","title":"VRChatへのアバター導入","content":"Assets/DitherBoy/VRChat/HardMode/Prefabs/DitherBoyHardMode.prefab または Assets/DitherBoy/VRChat/RoboMode/Prefabs/DitherBoyRoboMode.prefab をヒエラルキー上に配置してアップロードしてください。"},{"type":"text","title":"利用規約","content":"本商品を購入した時点で本利用規約に同意したとみなします。\n利用規約の内容は変更する場合があり、最新のものが適用されます。\n本モデルの使用によって生じた何らかのトラブル、損失について\n製作者であるカイワレは一切の責任を負わないものとします。\n本シェーダー及びおまけ3Dモデルの著作権はカイワレに帰属するものとします。"},{"type":"text","title":"DitherBoyシェーダー利用規約","content":"1. 改造可能\n2. Unityを使用して開発されたコンテンツ及びサービス（ゲーム、VTuberシステム、VRChat等）での利用可能\n3. 利用の際にクレジットの表記等は不要(利用を報告していただけると喜びます)\n4. 再配布、再販売の禁止\n5. 商用利用可能"},{"type":"text","title":"おまけ３Ｄモデル(DitherBoyRoboMode/HardMode)利用規約","content":"1. 改造可能\n2. 本モデル、改造モデルのVRChat等モデルデータをアップロードし、アバターとして使用するサービス（例：VRChat、cluster.など)への使用を許可します\n3. Unityを使用して開発されたコンテンツ及びサービス（ゲーム、VTuberシステム、VRChat等）での利用可能\n4. 配布元に直接の許可を得ない営利目的・商用目的の利用の禁止\n5. 過度の暴力的表現/猥褻目的/公序良俗に反する目的/特定の宗教・政治的利用/前述のいずれか一つでも該当する場合の利用の禁止\n6. 再配布、再販売の禁止（改造モデルも含む）\n7. 各種サービスで購入者本人以外がモデルを利用可能な状態にすることの禁止\n　 例：VRChatのペデスタル機能は購入者本人以外が利用可能になるので禁止です"},{"type":"text","title":"連絡先","content":"カイワレ / kaiware style \n( https://twitter.com/kaiware007 )"}]}
-        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
