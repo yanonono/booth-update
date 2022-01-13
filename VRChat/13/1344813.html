@@ -59,9 +59,13 @@
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
     <script src=
+    "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
+    defer="defer" nonce=
+    "J4WLMhgtLWKIJSOWOT9srfnPu8gvmEGB4VoL08KPehw="></script>
+    <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "8lGwCOC/CE0GpOwE2jdqIitlsGNiLKvMXRRllUWFZw8="></script>
+    "J4WLMhgtLWKIJSOWOT9srfnPu8gvmEGB4VoL08KPehw="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -74,7 +78,7 @@
     <script src=
     "https://asset.booth.pm/assets/ab357483f48c9496242e.js" defer=
     "defer" nonce=
-    "8lGwCOC/CE0GpOwE2jdqIitlsGNiLKvMXRRllUWFZw8="></script>
+    "J4WLMhgtLWKIJSOWOT9srfnPu8gvmEGB4VoL08KPehw="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"【Unity】LSaber Model LS001～LS003","description":"例のセーバーです。\n過去Twitter上で配布していたものを改訂した内容になっています。\n3本セットです。\n既存のDynamicBoneトレイルに加え、新機能の「LS Trail Shader」を搭載しています。\n不明点があればTwitter(@tsutsuji815)まで","url":"https://booth.pm/ja/items/1344813","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"100"},"image":"https://booth.pximg.net/c/620x620/aa7414fb-c4aa-4710-9c36-eb78e1f7edbb/i/1344813/65c2d4a4-6413-4008-84ee-0efc320e9310_base_resized.jpg"}
     </script>
@@ -91,7 +95,7 @@
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "8lGwCOC/CE0GpOwE2jdqIitlsGNiLKvMXRRllUWFZw8="></script>
+    "J4WLMhgtLWKIJSOWOT9srfnPu8gvmEGB4VoL08KPehw="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -100,18 +104,19 @@
         <div class="recaptcha-tag" data-action=
         "booth/checkout_order" data-site-key=
         "6LfF1dcZAAAAAOHQX8v16MX5SktDwmQINVD_6mBF"></div>
-        <div class="market-item-detail u-bg-white"
-        data-ga-tracking-id="UA-67548213-5" data-product-brand=
-        "tsutsuji815" data-product-category="127" data-product-id=
-        "1344813" data-product-list="market_show"
-        data-product-price="100"
+        <div class="market" data-ga-tracking-id="UA-67548213-5"
+        data-product-brand="tsutsuji815" data-product-category=
+        "127" data-product-id="1344813" data-product-list=
+        "market_show" data-product-price="100"
         data-shop-tracking-product-category="3D Models (Other)"
         data-shop-tracking-product-id="1344813"
         data-shop-tracking-product-name="【Unity】LSaber Model LS..."
         data-shop-tracking-product-price="100" data-tracking=
-        "detail_item">
+        "detail_item" id="items">
+          <div class="market"></div>
           <nav>
-            <div class="breadcrumbs u-border-b u-border-100">
+            <div class=
+            "market breadcrumbs u-bg-white u-border-b u-border-100">
               <div class="container">
                 <div class="breadcrumb">
                   <a class="label" data-tracking="click"
@@ -133,40 +138,40 @@
           </nav>
           <article>
             <div class=
-            "market-item-detail-article u-d-flex u-flex-column u-align-items-center u-pb-600 u-bg-white">
-              <div class="container">
-                <div class="market-item-detail__exhibition-banner">
-                </div>
-              </div>
-              <div class="u-bg-white u-pt-600 u-px-700">
+            "market market-item-detail item-info-detail u-bg-white">
+              <div class=
+              "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class="u-d-flex">
-                    <div class="u-order-1 l-col-2of5 u-pl-600">
-                      <header>
-                        <div class="u-my-200 u-tpg-title3">
-                          <a class="nav" target="_blank"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" rel="noopener"
-                          href="https://tsutsuji815.booth.pm/">
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
+                  <div class="u-pt-600 u-d-flex">
+                    <div class=
+                    "summary u-order-1 l-col-2of5 u-pl-600">
+                      <div class="mobile-section">
+                        <header>
+                          <div class="u-my-200 u-tpg-title3">
+                            <a class="nav" target="_blank"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" rel="noopener"
+                            href="https://tsutsuji815.booth.pm/">
+                            <div class=
+                            "u-d-flex u-align-items-center">
+                              <img alt="満天星躑躅だよ" class=
+                              "user-avatar at-item-summary" src=
+                              "https://booth.pximg.net/c/48x48/users/363023/icon_image/538e742c-674f-4c30-8706-dffa703f4ad0_base_resized.jpg">
+                              <div class="u-text-ellipsis">
+                                満天星躑躅だよ
+                              </div>
+                            </div></a>
+                          </div>
+                          <h2 class=
+                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                            【Unity】LSaber Model LS001～LS003
+                          </h2>
                           <div class=
-                          "u-d-flex u-align-items-center">
-                            <img alt="満天星躑躅だよ" class=
-                            "user-avatar at-item-summary" src=
-                            "https://booth.pximg.net/c/48x48/users/363023/icon_image/538e742c-674f-4c30-8706-dffa703f4ad0_base_resized.jpg">
-                            <div class="u-text-ellipsis">
-                              満天星躑躅だよ
-                            </div>
-                          </div></a>
-                        </div>
-                        <h2 class=
-                        "u-text-wrap u-tpg-title1 u-mt-0 u-mb-400">
-                          【Unity】LSaber Model LS001～LS003
-                        </h2>
-                        <div class=
-                        "u-text-assertive u-tpg-caption1"></div>
-                      </header>
-                      <section>
+                          "u-text-assertive u-tpg-caption1"></div>
+                        </header>
                         <div class="wish-list-link">
                           <a class="add-to-wish-list"
                           data-tracking="add_to_wishlist"
@@ -273,24 +278,32 @@
                             </li>
                           </ul>
                         </div>
-                      </section>
+                      </div>
                       <section>
                         <div class=
                         "share-btns u-d-flex u-flex-1 u-justify-content-start u-px-200 u-py-400">
-                          <a data-url=
-                          "https://booth.pm/ja/items/1344813"
-                          data-lang="ja" data-hashtags="booth_pm"
-                          data-text=
-                          "【Unity】LSaber Model LS001～LS003 | 満天星躑躅だよ"
-                          data-count="none" class=
-                          "twitter-share-button" href=
-                          "https://twitter.com/share">ツイート</a>
-                          <div class="u-ml-300">
+                          <div class="social-btn">
+                            <a data-url=
+                            "https://booth.pm/ja/items/1344813"
+                            data-lang="ja" data-hashtags="booth_pm"
+                            data-text=
+                            "【Unity】LSaber Model LS001～LS003 | 満天星躑躅だよ"
+                            data-count="none" class=
+                            "twitter-share-button" href=
+                            "https://twitter.com/share">ツイート</a>
+                          </div>
+                          <div class="social-btn u-ml-300">
                             <div class="fb-like" data-action="like"
                             data-href=
                             "https://booth.pm/ja/items/1344813"
                             data-layout="button_count" data-share=
                             "false" data-show-faces="false"></div>
+                          </div>
+                          <div class="mobile social-btn u-mx-200">
+                            <div class="line-it-button" data-lang=
+                            "ja" data-type="share-a" data-url=
+                            "https://booth.pm/ja/items/1344813"
+                            style="display: none;"></div>
                           </div>
                         </div>
                       </section>
@@ -369,7 +382,7 @@
                         </div>
                       </div>
                       <div class=
-                      "primary-image-thumbnails u-d-sp-none">
+                      "primary-image-thumbnails u-d-sp-none image-list">
                         <a class="pointer">
                         <div class=
                         "embedded-content-thumbnail slick-thumbnail-border">
@@ -395,9 +408,9 @@
                           "https://booth.pximg.net/c/72x72_a2_g5/aa7414fb-c4aa-4710-9c36-eb78e1f7edbb/i/1344813/4dd293fb-a914-4388-96d1-1703cfba2874_base_resized.jpg">
                         </div></a>
                       </div>
-                      <section>
+                      <section class="main-info-column">
                         <div class=
-                        "js-market-item-detail-description">
+                        "js-market-item-detail-description description">
                           <p class="autolink u-text-wrap">
                             例のセーバーです。
                             過去Twitter上で配布していたものを改訂した内容になっています。
@@ -407,108 +420,115 @@
                           </p>
                         </div>
                       </section>
-                      <section>
-                        <div class="u-text-wrap page_design" id=
-                        "modules"></div>
-                      </section>
+                      <section class="u-text-wrap page_design" id=
+                      "modules"></section>
                     </div>
                   </div>
+                  <section class="container">
+                    <div class="u-border-t u-py-500">
+                      <div class="mobile-section">
+                        <h3 class="u-m-0">
+                          タグ
+                        </h3>
+                      </div>
+                      <div class="search-guide-nav">
+                        <div class="search-guide-slider-wrapper">
+                          <div class="search-guide-slider">
+                            <div class=
+                            "search-guide-slider-container">
+                              <a class="search-guide-tablet"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E6%AD%A6%E5%99%A8">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  武器
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/Unity">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  Unity
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3Dモデル
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/FBX">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  FBX
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat
+                                </div>
+                              </div></a>
+                            </div>
+                          </div><a class=
+                          "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
+                        </div>
+                      </div>
+                      <div class="mobile-section">
+                        <div class="u-my-500 u-mt-sp-300">
+                          <a class=
+                          "btn btn--default-outline u-tpg-caption1 u-text-wrap"
+                          data-tracking="click" data-product-list=
+                          "from market_show via tag_category_search to search_index"
+                          href=
+                          "https://booth.pm/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=%E6%AD%A6%E5%99%A8">
+                          武器 x 3Dモデル（その他） で検索</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-                <section class="container">
-                  <div class="u-border-t u-py-500">
-                    <div class="mobile-section">
-                      <h3 class="u-m-0">
-                        タグ
-                      </h3>
-                    </div>
-                    <div class="search-guide-nav">
-                      <div class="search-guide-slider-wrapper">
-                        <div class="search-guide-slider">
-                          <div class=
-                          "search-guide-slider-container">
-                            <a class="search-guide-tablet"
-                            data-tracking="click"
-                            data-product-list="from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E6%AD%A6%E5%99%A8">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                武器
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/Unity">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                Unity
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3Dモデル
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href="https://booth.pm/ja/search/FBX">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                FBX
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat
-                              </div>
-                            </div></a>
-                          </div>
-                        </div><a class=
-                        "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
-                      </div>
-                    </div>
-                    <div class="mobile-section">
-                      <div class="u-my-500 u-mt-sp-300">
-                        <a class=
-                        "btn btn--default-outline u-tpg-caption1 u-text-wrap"
-                        data-tracking="click" data-product-list=
-                        "from market_show via tag_category_search to search_index"
-                        href=
-                        "https://booth.pm/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=%E6%AD%A6%E5%99%A8">
-                        武器 x 3Dモデル（その他） で検索</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
               </div>
             </div>
           </article>
+          <aside>
+            <div class="market">
+              <div class="shoplist-with-items" v-if=
+              "shops &amp;&amp; shops.length &gt; 0"></div>
+            </div>
+          </aside>
+          <script id="json_modules" type="application/json">
+          {"modules":[{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/JFSbRjTh5hU\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"ファイルについて","content":"各モデルにはFBXデータ、テクスチャ、マテリアルに加え各種設定済みのPrefabが用意されています。\nまた、ブレード及び残像に使用するシェーダーが含まれています。\nブレードは「LS Blade Shader」、残像には専用の「LS Trail Shader」を使用します。\n\n・LS○○○_DB.prefab\nブレードの残像をDynamicBoneを利用して表現します。有料アセットのDynamicBoneが必要です。\n\n・LS○○○_v2.prefab\nブレードの残像をシェーダーを利用して表現します。付属の「LS Trail Shader」群とRenderTexture,カメラ,専用メッシュを使用します。\n\n・LS○○○_Plane.prefab\n残像に何も使いません。マテリアル設定済みのヒルトとブレードのみが含まれます。残像が不要な場合やTrailRenderer等を自分で設定する場合に使用してください。"},{"type":"text","title":"使用方法","content":"zipファイルを展開するとunitypackageが同梱されていますのでUnityのプロジェクトにインポートしてお使いください。\nAssets/Tsutsuji/LS○○○ディレクトリ以下にあるPrefabをシーンに配置して位置回転スケールをあわせアバター等に持たせます。\n\nセーバー本体のブレンドシェイプ「blade_on」でブレードの出し入れができます。\n\nDynamicBone方式を使用する場合、ブレードOFF時にはDynamicBoneのコンポーネントも非アクティブにしてください。アクティブのままだとヒルト内に隠したブレードが外部にはみ出します。\n\nLS Trail Shaderを使用する場合スケールを変更した際に付属スクリプトを使用してカメラサイズをあわせる必要があります。(次項参照)"},{"type":"text","title":"LS Trail Shaderについて","content":"それらしい残像を描画するために付属しているシェーダーです。\n最大8フレーム前までのブレードの座標を記録し、その座標までポリゴンを伸ばします。\nシェーダー群、メッシュ、RenderTexture、カメラ、設定支援スクリプトで構成されています。\n\n基本的にprefabそのままで使用できるようになっていますが、モデルのスケールを変更した場合カメラの領域が合わなくなるので設定支援スクリプトを使用します。\nアバター等にスケールをあわせた後、Unity上部のツールバーからTsutsuji/SetupSaberTrailを選択し、表示されたウィンドウにセーバーのルートオブジェクト(ls○○○_v2)をドラッグアンドドロップし、SetupCameraボタンを押すとカメラサイズが自動で設定されます。\n\nカメラとRenderTextureを使用していますので、アバターアップロード時にTexCamA･BのカメラコンポーネントとTrailオブジェクトを非アクティブにした状態でアップロードします。(カメラがアクティブのままだと自分だけに見えるローカル扱いになるため)\n\nトレイルを表示したい場合はアニメーション等でこれらをアクティブにします。"},{"type":"text","title":"LS Trail Shaderの構成とパラメータ","content":"※分かる人むけ\n\n・オブジェクト構成\nTrail(トレイル本体)\nHeadPos,BottomPos(ブレードの根本と先端の座標を取得するためのオブジェクト)\nPosTexA･B,TexCamA･B(取得した座標を表示､8フレームまで保存するためのメッシュとカメラ)\nStencilMask(RenderTextureが外から見えないよう隠す)\n\n・LS Trail Shaderのパラメータ\nMainTex:トレイルに貼るテクスチャです\nColor:トレイルのメインカラーです\nOutlineColor:トレイル外側のカラーです\nOutlineWidth:上記のカラーの太さです\nPosTex:座標が保存されたRenderTexture、BladePosAが初期設定されており通常変更する必要はありません\nSampleFrame:描画するトレイルの長さ、最大8フレーム前までを描画し、値を小さくすると短くなります\nFixToFPS,TargetFPS:FixToFPSがチェックされていると、ゲーム内のFPSがTargetFPSより低下した場合にトレイルの後ろを消してもたつきを誤魔化します"},{"type":"text","title":"ライセンス","content":"モデルデータにつきましては、クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際 ライセンス(CC-BY-NC-SA)の下に提供されます。\n但し、VRChatのアバターに使用する場合は著作権表示は必要ありません。\nhttp://creativecommons.org/licenses/by-nc-sa/4.0/\n\nシェーダー及びスクリプトのソースコードにつきましては、MITライセンスの下に提供されます。\nCopyright (c) 2019 Tsutsuji815\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."}]}
+          </script>
         </div>
-        <aside>
-          <div class="shoplist-with-items" v-if=
-          "shops &amp;&amp; shops.length &gt; 0"></div>
-        </aside>
-        <script id="json_modules" type="application/json">
-        {"modules":[{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/JFSbRjTh5hU\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"ファイルについて","content":"各モデルにはFBXデータ、テクスチャ、マテリアルに加え各種設定済みのPrefabが用意されています。\nまた、ブレード及び残像に使用するシェーダーが含まれています。\nブレードは「LS Blade Shader」、残像には専用の「LS Trail Shader」を使用します。\n\n・LS○○○_DB.prefab\nブレードの残像をDynamicBoneを利用して表現します。有料アセットのDynamicBoneが必要です。\n\n・LS○○○_v2.prefab\nブレードの残像をシェーダーを利用して表現します。付属の「LS Trail Shader」群とRenderTexture,カメラ,専用メッシュを使用します。\n\n・LS○○○_Plane.prefab\n残像に何も使いません。マテリアル設定済みのヒルトとブレードのみが含まれます。残像が不要な場合やTrailRenderer等を自分で設定する場合に使用してください。"},{"type":"text","title":"使用方法","content":"zipファイルを展開するとunitypackageが同梱されていますのでUnityのプロジェクトにインポートしてお使いください。\nAssets/Tsutsuji/LS○○○ディレクトリ以下にあるPrefabをシーンに配置して位置回転スケールをあわせアバター等に持たせます。\n\nセーバー本体のブレンドシェイプ「blade_on」でブレードの出し入れができます。\n\nDynamicBone方式を使用する場合、ブレードOFF時にはDynamicBoneのコンポーネントも非アクティブにしてください。アクティブのままだとヒルト内に隠したブレードが外部にはみ出します。\n\nLS Trail Shaderを使用する場合スケールを変更した際に付属スクリプトを使用してカメラサイズをあわせる必要があります。(次項参照)"},{"type":"text","title":"LS Trail Shaderについて","content":"それらしい残像を描画するために付属しているシェーダーです。\n最大8フレーム前までのブレードの座標を記録し、その座標までポリゴンを伸ばします。\nシェーダー群、メッシュ、RenderTexture、カメラ、設定支援スクリプトで構成されています。\n\n基本的にprefabそのままで使用できるようになっていますが、モデルのスケールを変更した場合カメラの領域が合わなくなるので設定支援スクリプトを使用します。\nアバター等にスケールをあわせた後、Unity上部のツールバーからTsutsuji/SetupSaberTrailを選択し、表示されたウィンドウにセーバーのルートオブジェクト(ls○○○_v2)をドラッグアンドドロップし、SetupCameraボタンを押すとカメラサイズが自動で設定されます。\n\nカメラとRenderTextureを使用していますので、アバターアップロード時にTexCamA･BのカメラコンポーネントとTrailオブジェクトを非アクティブにした状態でアップロードします。(カメラがアクティブのままだと自分だけに見えるローカル扱いになるため)\n\nトレイルを表示したい場合はアニメーション等でこれらをアクティブにします。"},{"type":"text","title":"LS Trail Shaderの構成とパラメータ","content":"※分かる人むけ\n\n・オブジェクト構成\nTrail(トレイル本体)\nHeadPos,BottomPos(ブレードの根本と先端の座標を取得するためのオブジェクト)\nPosTexA･B,TexCamA･B(取得した座標を表示､8フレームまで保存するためのメッシュとカメラ)\nStencilMask(RenderTextureが外から見えないよう隠す)\n\n・LS Trail Shaderのパラメータ\nMainTex:トレイルに貼るテクスチャです\nColor:トレイルのメインカラーです\nOutlineColor:トレイル外側のカラーです\nOutlineWidth:上記のカラーの太さです\nPosTex:座標が保存されたRenderTexture、BladePosAが初期設定されており通常変更する必要はありません\nSampleFrame:描画するトレイルの長さ、最大8フレーム前までを描画し、値を小さくすると短くなります\nFixToFPS,TargetFPS:FixToFPSがチェックされていると、ゲーム内のFPSがTargetFPSより低下した場合にトレイルの後ろを消してもたつきを誤魔化します"},{"type":"text","title":"ライセンス","content":"モデルデータにつきましては、クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際 ライセンス(CC-BY-NC-SA)の下に提供されます。\n但し、VRChatのアバターに使用する場合は著作権表示は必要ありません。\nhttp://creativecommons.org/licenses/by-nc-sa/4.0/\n\nシェーダー及びスクリプトのソースコードにつきましては、MITライセンスの下に提供されます。\nCopyright (c) 2019 Tsutsuji815\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."}]}
-        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
