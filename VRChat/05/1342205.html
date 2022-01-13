@@ -59,9 +59,13 @@
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
     <script src=
+    "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
+    defer="defer" nonce=
+    "Em25l6oEp4QZ6yaYZlUQG8R4UF4Lw9RdfUbynFDEMug="></script>
+    <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "kplZZ/GIGaR8nGDUmt3EeKioHhzcC5e7gSeGngtCM8Y="></script>
+    "Em25l6oEp4QZ6yaYZlUQG8R4UF4Lw9RdfUbynFDEMug="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -74,7 +78,7 @@
     <script src=
     "https://asset.booth.pm/assets/ab357483f48c9496242e.js" defer=
     "defer" nonce=
-    "kplZZ/GIGaR8nGDUmt3EeKioHhzcC5e7gSeGngtCM8Y="></script>
+    "Em25l6oEp4QZ6yaYZlUQG8R4UF4Lw9RdfUbynFDEMug="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"ねこねこさん -オリジナル3Dモデル-","description":"※2021年10月29日からvr非対応アバターとなりましたのでご注意下さい。\n\nBlenderで制作しているため、\n他ソフトでの互換は保障いたしかねますのであらかじめご了承ください。\n\n※※※ご注意※※※\n投げ銭用は返金は対応出来ませんのでご注意ください。\n（無料版と投げ銭用のデータに違いはございません）","url":"https://booth.pm/ja/items/1342205","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"100"},"image":"https://booth.pximg.net/c/620x620/548d512f-1637-4446-a733-90bb12720903/i/1342205/eeef2450-71e9-4324-8a9a-05152cfc2317_base_resized.jpg"}
     </script>
@@ -91,7 +95,7 @@
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "kplZZ/GIGaR8nGDUmt3EeKioHhzcC5e7gSeGngtCM8Y="></script>
+    "Em25l6oEp4QZ6yaYZlUQG8R4UF4Lw9RdfUbynFDEMug="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -100,18 +104,19 @@
         <div class="recaptcha-tag" data-action=
         "booth/checkout_order" data-site-key=
         "6LfF1dcZAAAAAOHQX8v16MX5SktDwmQINVD_6mBF"></div>
-        <div class="market-item-detail u-bg-white"
-        data-ga-tracking-id="UA-51315448-3" data-product-brand=
-        "diagonal45angle" data-product-category="208"
-        data-product-id="1342205" data-product-list="market_show"
-        data-product-price="100"
+        <div class="market" data-ga-tracking-id="UA-51315448-3"
+        data-product-brand="diagonal45angle" data-product-category=
+        "208" data-product-id="1342205" data-product-list=
+        "market_show" data-product-price="100"
         data-shop-tracking-product-category="3D Characters"
         data-shop-tracking-product-id="1342205"
         data-shop-tracking-product-name="ねこねこさん -オリジナル3Dモデル-"
         data-shop-tracking-product-price="100" data-tracking=
-        "detail_item">
+        "detail_item" id="items">
+          <div class="market"></div>
           <nav>
-            <div class="breadcrumbs u-border-b u-border-100">
+            <div class=
+            "market breadcrumbs u-bg-white u-border-b u-border-100">
               <div class="container">
                 <div class="breadcrumb">
                   <a class="label" data-tracking="click"
@@ -133,40 +138,41 @@
           </nav>
           <article>
             <div class=
-            "market-item-detail-article u-d-flex u-flex-column u-align-items-center u-pb-600 u-bg-white">
-              <div class="container">
-                <div class="market-item-detail__exhibition-banner">
-                </div>
-              </div>
-              <div class="u-bg-white u-pt-600 u-px-700">
+            "market market-item-detail item-info-detail u-bg-white">
+              <div class=
+              "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class="u-d-flex">
-                    <div class="u-order-1 l-col-2of5 u-pl-600">
-                      <header>
-                        <div class="u-my-200 u-tpg-title3">
-                          <a class="nav" target="_blank"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" rel="noopener"
-                          href="https://diagonal45angle.booth.pm/">
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
+                  <div class="u-pt-600 u-d-flex">
+                    <div class=
+                    "summary u-order-1 l-col-2of5 u-pl-600">
+                      <div class="mobile-section">
+                        <header>
+                          <div class="u-my-200 u-tpg-title3">
+                            <a class="nav" target="_blank"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" rel="noopener"
+                            href=
+                            "https://diagonal45angle.booth.pm/">
+                            <div class=
+                            "u-d-flex u-align-items-center">
+                              <img alt="45°屋" class=
+                              "user-avatar at-item-summary" src=
+                              "https://booth.pximg.net/c/48x48/users/35392/icon_image/0a8573cd-f060-4b40-ab22-c8f7738d62a5_base_resized.jpg">
+                              <div class="u-text-ellipsis">
+                                45°屋
+                              </div>
+                            </div></a>
+                          </div>
+                          <h2 class=
+                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                            ねこねこさん -オリジナル3Dモデル-
+                          </h2>
                           <div class=
-                          "u-d-flex u-align-items-center">
-                            <img alt="45°屋" class=
-                            "user-avatar at-item-summary" src=
-                            "https://booth.pximg.net/c/48x48/users/35392/icon_image/0a8573cd-f060-4b40-ab22-c8f7738d62a5_base_resized.jpg">
-                            <div class="u-text-ellipsis">
-                              45°屋
-                            </div>
-                          </div></a>
-                        </div>
-                        <h2 class=
-                        "u-text-wrap u-tpg-title1 u-mt-0 u-mb-400">
-                          ねこねこさん -オリジナル3Dモデル-
-                        </h2>
-                        <div class=
-                        "u-text-assertive u-tpg-caption1"></div>
-                      </header>
-                      <section>
+                          "u-text-assertive u-tpg-caption1"></div>
+                        </header>
                         <div class="wish-list-link">
                           <a class="add-to-wish-list"
                           data-tracking="add_to_wishlist"
@@ -272,23 +278,31 @@
                             </li>
                           </ul>
                         </div>
-                      </section>
+                      </div>
                       <section>
                         <div class=
                         "share-btns u-d-flex u-flex-1 u-justify-content-start u-px-200 u-py-400">
-                          <a data-url=
-                          "https://booth.pm/ja/items/1342205"
-                          data-lang="ja" data-hashtags="booth_pm"
-                          data-text="ねこねこさん -オリジナル3Dモデル- | 45°屋"
-                          data-count="none" class=
-                          "twitter-share-button" href=
-                          "https://twitter.com/share">ツイート</a>
-                          <div class="u-ml-300">
+                          <div class="social-btn">
+                            <a data-url=
+                            "https://booth.pm/ja/items/1342205"
+                            data-lang="ja" data-hashtags="booth_pm"
+                            data-text="ねこねこさん -オリジナル3Dモデル- | 45°屋"
+                            data-count="none" class=
+                            "twitter-share-button" href=
+                            "https://twitter.com/share">ツイート</a>
+                          </div>
+                          <div class="social-btn u-ml-300">
                             <div class="fb-like" data-action="like"
                             data-href=
                             "https://booth.pm/ja/items/1342205"
                             data-layout="button_count" data-share=
                             "false" data-show-faces="false"></div>
+                          </div>
+                          <div class="mobile social-btn u-mx-200">
+                            <div class="line-it-button" data-lang=
+                            "ja" data-type="share-a" data-url=
+                            "https://booth.pm/ja/items/1342205"
+                            style="display: none;"></div>
                           </div>
                         </div>
                       </section>
@@ -330,7 +344,7 @@
                         </div>
                       </div>
                       <div class=
-                      "primary-image-thumbnails u-d-sp-none">
+                      "primary-image-thumbnails u-d-sp-none image-list">
                         <a class="pointer">
                         <div class="slick-thumbnail-border">
                           <img src=
@@ -345,9 +359,9 @@
                           "https://booth.pximg.net/c/72x72_a2_g5/548d512f-1637-4446-a733-90bb12720903/i/1342205/9f015c45-f486-4b75-a1f0-001f6df87d17_base_resized.jpg">
                         </div></a>
                       </div>
-                      <section>
+                      <section class="main-info-column">
                         <div class=
-                        "js-market-item-detail-description">
+                        "js-market-item-detail-description description">
                           <p class="autolink u-text-wrap">
                             ※2021年10月29日からvr非対応アバターとなりましたのでご注意下さい。
                             Blenderで制作しているため、
@@ -357,108 +371,115 @@
                           </p>
                         </div>
                       </section>
-                      <section>
-                        <div class="u-text-wrap page_design" id=
-                        "modules"></div>
-                      </section>
+                      <section class="u-text-wrap page_design" id=
+                      "modules"></section>
                     </div>
                   </div>
+                  <section class="container">
+                    <div class="u-border-t u-py-500">
+                      <div class="mobile-section">
+                        <h3 class="u-m-0">
+                          タグ
+                        </h3>
+                      </div>
+                      <div class="search-guide-nav">
+                        <div class="search-guide-slider-wrapper">
+                          <div class="search-guide-slider">
+                            <div class=
+                            "search-guide-slider-container">
+                              <a class="search-guide-tablet"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  オリジナル
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3D%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3Dキャラクター
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3Dモデル
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/FBX">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  FBX
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/Bleder">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  Bleder
+                                </div>
+                              </div></a>
+                            </div>
+                          </div><a class=
+                          "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
+                        </div>
+                      </div>
+                      <div class="mobile-section">
+                        <div class="u-my-500 u-mt-sp-300">
+                          <a class=
+                          "btn btn--default-outline u-tpg-caption1 u-text-wrap"
+                          data-tracking="click" data-product-list=
+                          "from market_show via tag_category_search to search_index"
+                          href=
+                          "https://booth.pm/ja/browse/3D%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC?q=%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB">
+                          オリジナル x 3Dキャラクター で検索</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-                <section class="container">
-                  <div class="u-border-t u-py-500">
-                    <div class="mobile-section">
-                      <h3 class="u-m-0">
-                        タグ
-                      </h3>
-                    </div>
-                    <div class="search-guide-nav">
-                      <div class="search-guide-slider-wrapper">
-                        <div class="search-guide-slider">
-                          <div class=
-                          "search-guide-slider-container">
-                            <a class="search-guide-tablet"
-                            data-tracking="click"
-                            data-product-list="from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                オリジナル
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/3D%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3Dキャラクター
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3Dモデル
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href="https://booth.pm/ja/search/FBX">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                FBX
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/Bleder">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                Bleder
-                              </div>
-                            </div></a>
-                          </div>
-                        </div><a class=
-                        "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
-                      </div>
-                    </div>
-                    <div class="mobile-section">
-                      <div class="u-my-500 u-mt-sp-300">
-                        <a class=
-                        "btn btn--default-outline u-tpg-caption1 u-text-wrap"
-                        data-tracking="click" data-product-list=
-                        "from market_show via tag_category_search to search_index"
-                        href=
-                        "https://booth.pm/ja/browse/3D%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC?q=%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB">
-                        オリジナル x 3Dキャラクター で検索</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
               </div>
             </div>
           </article>
+          <aside>
+            <div class="market">
+              <div class="shoplist-with-items" v-if=
+              "shops &amp;&amp; shops.length &gt; 0"></div>
+            </div>
+          </aside>
+          <script id="json_modules" type="application/json">
+          {"modules":[{"type":"text","title":"■■■利用規約■■■","content":"本データを購入された時点で、本利用規約に同意したものとさせて頂きます。\n\n本利用規約は、いつでも任意に変更する事が出来るものとします。\nまた、変更後の本利用規約は最新のものが効力を生じるものとします。\n\n\n【著作権について】\n\n本データ、及び改変されたデータの著作権は、\n制作者の「45°」に帰属するものとします。\n\n\n【利用範囲について】\n\n改変の有無を問わず、本データを用いての以下の利用を許可致します。\n1.VRChat等のアバターとしての利用\n2.youtuber等動画配信\n3.ゲーム制作。\n4.アニメーション制作。\n5.上記利用範囲内での商用利用可。収益化等も制限致しません。\n\n\n【改変について】\n\n本データの改変は自由にする事が出来ます。\n\n\n【R-18/R-18G表現について】\n\n特に制限はございませんが、法律の範囲内での利用に限ります。\n　\n\n【禁止事項について】\n\n改変の有無を問わず、本データを用いての以下の利用/行為を禁止致します。\n1.購入者以外が本データを自由に利用する事が出来るような行為。\n2.本データ、及び本データに含まれる全てのデータの二次配布（再配付）や販売。\n3.本データを利用して誹謗中傷や政治、宗教活動。\n"},{"type":"text","title":"■■■免責事項■■■","content":"本データは利用者の責任にてご利用ください。\n\n本データを利用することで、利用者が受けるトラブルや損失、損害に対して、\n制作者（45°）は一切責任を負いません。\n\n本データを利用することで、利用者が他者に与えたトラブルや損失、損害に対して、\nその責任および補償の義務は本データ利用者にあるものとし、制作者（45°）は一切責任を負いません。\n\n予告なくアップデートや販売の停止をする場合があります。\n\n本規約において、翻訳により他言語との差異が生じた場合は、\n日本語の利用規約を適用するものと致します。\n\n\n\n制定日：2019年07月20日\n\n\n利用規約やモデルの不具合等、他何か問題がございましたら\nお手数ですが「@diagonal45angle」へダイレクトメッセージをお送りください。\n\n"},{"type":"text","title":"■■■更新履歴■■■","content":"2021/10/29　v1.0.3更新\n　・vrアバター非対応モデルへ変更\n2019/07/20\n　・無料配布版の追加\n2019/05/04　v1.0.2更新\n　・ユニティちゃんトゥーンシェーダーv2.0.7を同梱したものを更新。\n　・ユニティちゃんトゥーンシェーダーv2.0.7のDL先を「利用規約.txt」　に記載。\n\n"}]}
+          </script>
         </div>
-        <aside>
-          <div class="shoplist-with-items" v-if=
-          "shops &amp;&amp; shops.length &gt; 0"></div>
-        </aside>
-        <script id="json_modules" type="application/json">
-        {"modules":[{"type":"text","title":"■■■利用規約■■■","content":"本データを購入された時点で、本利用規約に同意したものとさせて頂きます。\n\n本利用規約は、いつでも任意に変更する事が出来るものとします。\nまた、変更後の本利用規約は最新のものが効力を生じるものとします。\n\n\n【著作権について】\n\n本データ、及び改変されたデータの著作権は、\n制作者の「45°」に帰属するものとします。\n\n\n【利用範囲について】\n\n改変の有無を問わず、本データを用いての以下の利用を許可致します。\n1.VRChat等のアバターとしての利用\n2.youtuber等動画配信\n3.ゲーム制作。\n4.アニメーション制作。\n5.上記利用範囲内での商用利用可。収益化等も制限致しません。\n\n\n【改変について】\n\n本データの改変は自由にする事が出来ます。\n\n\n【R-18/R-18G表現について】\n\n特に制限はございませんが、法律の範囲内での利用に限ります。\n　\n\n【禁止事項について】\n\n改変の有無を問わず、本データを用いての以下の利用/行為を禁止致します。\n1.購入者以外が本データを自由に利用する事が出来るような行為。\n2.本データ、及び本データに含まれる全てのデータの二次配布（再配付）や販売。\n3.本データを利用して誹謗中傷や政治、宗教活動。\n"},{"type":"text","title":"■■■免責事項■■■","content":"本データは利用者の責任にてご利用ください。\n\n本データを利用することで、利用者が受けるトラブルや損失、損害に対して、\n制作者（45°）は一切責任を負いません。\n\n本データを利用することで、利用者が他者に与えたトラブルや損失、損害に対して、\nその責任および補償の義務は本データ利用者にあるものとし、制作者（45°）は一切責任を負いません。\n\n予告なくアップデートや販売の停止をする場合があります。\n\n本規約において、翻訳により他言語との差異が生じた場合は、\n日本語の利用規約を適用するものと致します。\n\n\n\n制定日：2019年07月20日\n\n\n利用規約やモデルの不具合等、他何か問題がございましたら\nお手数ですが「@diagonal45angle」へダイレクトメッセージをお送りください。\n\n"},{"type":"text","title":"■■■更新履歴■■■","content":"2021/10/29　v1.0.3更新\n　・vrアバター非対応モデルへ変更\n2019/07/20\n　・無料配布版の追加\n2019/05/04　v1.0.2更新\n　・ユニティちゃんトゥーンシェーダーv2.0.7を同梱したものを更新。\n　・ユニティちゃんトゥーンシェーダーv2.0.7のDL先を「利用規約.txt」　に記載。\n\n"}]}
-        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
