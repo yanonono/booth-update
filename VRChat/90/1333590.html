@@ -59,9 +59,13 @@
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
     <script src=
+    "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
+    defer="defer" nonce=
+    "5ImshlBZBS1BE8f5kkqtQGprDVFBux9BTTy4Fx+uMVo="></script>
+    <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "AmZFSejx1AcpXbu1c33v0TnpVMLDqFoaeSQ7x5mnw0A="></script>
+    "5ImshlBZBS1BE8f5kkqtQGprDVFBux9BTTy4Fx+uMVo="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -74,7 +78,7 @@
     <script src=
     "https://asset.booth.pm/assets/ab357483f48c9496242e.js" defer=
     "defer" nonce=
-    "AmZFSejx1AcpXbu1c33v0TnpVMLDqFoaeSQ7x5mnw0A="></script>
+    "5ImshlBZBS1BE8f5kkqtQGprDVFBux9BTTy4Fx+uMVo="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"深Vネックサロペットスカート VRoid texture","description":"※こちらのテクスチャは現在VRoid正式版の互換性を確認中です。申し訳ありませんが、ご購入済みの方におかれましては今しばらくお待ちください。\n*This texture is currently being checked for compatibility with the official VRoid version.\n\n上品な印象のサロペットスカートです。\nインナー用にアレンジしたデフォルトワンピース（半袖・長袖）も付属します。\n\n個人的にはスカートの長さを長めにするのが好きです。","url":"https://booth.pm/ja/items/1333590","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"1400"},"image":"https://booth.pximg.net/c/620x620/d7b53162-9fa2-4856-b18d-81e9400489ed/i/1333590/68c259a7-3fb8-485a-a66a-4eca3036e63f_base_resized.jpg"}
     </script>
@@ -91,7 +95,7 @@
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "AmZFSejx1AcpXbu1c33v0TnpVMLDqFoaeSQ7x5mnw0A="></script>
+    "5ImshlBZBS1BE8f5kkqtQGprDVFBux9BTTy4Fx+uMVo="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -100,18 +104,19 @@
         <div class="recaptcha-tag" data-action=
         "booth/checkout_order" data-site-key=
         "6LfF1dcZAAAAAOHQX8v16MX5SktDwmQINVD_6mBF"></div>
-        <div class="market-item-detail u-bg-white"
-        data-ga-tracking-id="UA-136793484-1" data-product-brand=
-        "narukuni" data-product-category="134" data-product-id=
-        "1333590" data-product-list="market_show"
+        <div class="market" data-ga-tracking-id="UA-136793484-1"
+        data-product-brand="narukuni" data-product-category="134"
+        data-product-id="1333590" data-product-list="market_show"
         data-product-price="400"
         data-shop-tracking-product-category="Materials (Other)"
         data-shop-tracking-product-id="1333590"
         data-shop-tracking-product-name="深Vネックサロペットスカート VRoid t..."
         data-shop-tracking-product-price="400" data-tracking=
-        "detail_item">
+        "detail_item" id="items">
+          <div class="market"></div>
           <nav>
-            <div class="breadcrumbs u-border-b u-border-100">
+            <div class=
+            "market breadcrumbs u-bg-white u-border-b u-border-100">
               <div class="container">
                 <div class="breadcrumb">
                   <a class="label" data-tracking="click"
@@ -134,40 +139,40 @@
           </nav>
           <article>
             <div class=
-            "market-item-detail-article u-d-flex u-flex-column u-align-items-center u-pb-600 u-bg-white">
-              <div class="container">
-                <div class="market-item-detail__exhibition-banner">
-                </div>
-              </div>
-              <div class="u-bg-white u-pt-600 u-px-700">
+            "market market-item-detail item-info-detail u-bg-white">
+              <div class=
+              "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class="u-d-flex">
-                    <div class="u-order-1 l-col-2of5 u-pl-600">
-                      <header>
-                        <div class="u-my-200 u-tpg-title3">
-                          <a class="nav" target="_blank"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" rel="noopener"
-                          href="https://narukuni.booth.pm/">
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
+                  <div class="u-pt-600 u-d-flex">
+                    <div class=
+                    "summary u-order-1 l-col-2of5 u-pl-600">
+                      <div class="mobile-section">
+                        <header>
+                          <div class="u-my-200 u-tpg-title3">
+                            <a class="nav" target="_blank"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" rel="noopener"
+                            href="https://narukuni.booth.pm/">
+                            <div class=
+                            "u-d-flex u-align-items-center">
+                              <img alt="7692_shop" class=
+                              "user-avatar at-item-summary" src=
+                              "https://booth.pximg.net/c/48x48/users/4934725/icon_image/4ad3f136-bf02-437e-bf41-b891d02ce9e1_base_resized.jpg">
+                              <div class="u-text-ellipsis">
+                                7692_shop
+                              </div>
+                            </div></a>
+                          </div>
+                          <h2 class=
+                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                            深Vネックサロペットスカート VRoid texture
+                          </h2>
                           <div class=
-                          "u-d-flex u-align-items-center">
-                            <img alt="7692_shop" class=
-                            "user-avatar at-item-summary" src=
-                            "https://booth.pximg.net/c/48x48/users/4934725/icon_image/4ad3f136-bf02-437e-bf41-b891d02ce9e1_base_resized.jpg">
-                            <div class="u-text-ellipsis">
-                              7692_shop
-                            </div>
-                          </div></a>
-                        </div>
-                        <h2 class=
-                        "u-text-wrap u-tpg-title1 u-mt-0 u-mb-400">
-                          深Vネックサロペットスカート VRoid texture
-                        </h2>
-                        <div class=
-                        "u-text-assertive u-tpg-caption1"></div>
-                      </header>
-                      <section>
+                          "u-text-assertive u-tpg-caption1"></div>
+                        </header>
                         <div class="wish-list-link">
                           <a class="add-to-wish-list"
                           data-tracking="add_to_wishlist"
@@ -438,24 +443,32 @@
                             </li>
                           </ul>
                         </div>
-                      </section>
+                      </div>
                       <section>
                         <div class=
                         "share-btns u-d-flex u-flex-1 u-justify-content-start u-px-200 u-py-400">
-                          <a data-url=
-                          "https://booth.pm/ja/items/1333590"
-                          data-lang="ja" data-hashtags="booth_pm"
-                          data-text=
-                          "深Vネックサロペットスカート VRoid texture | 7692_shop"
-                          data-count="none" class=
-                          "twitter-share-button" href=
-                          "https://twitter.com/share">ツイート</a>
-                          <div class="u-ml-300">
+                          <div class="social-btn">
+                            <a data-url=
+                            "https://booth.pm/ja/items/1333590"
+                            data-lang="ja" data-hashtags="booth_pm"
+                            data-text=
+                            "深Vネックサロペットスカート VRoid texture | 7692_shop"
+                            data-count="none" class=
+                            "twitter-share-button" href=
+                            "https://twitter.com/share">ツイート</a>
+                          </div>
+                          <div class="social-btn u-ml-300">
                             <div class="fb-like" data-action="like"
                             data-href=
                             "https://booth.pm/ja/items/1333590"
                             data-layout="button_count" data-share=
                             "false" data-show-faces="false"></div>
+                          </div>
+                          <div class="mobile social-btn u-mx-200">
+                            <div class="line-it-button" data-lang=
+                            "ja" data-type="share-a" data-url=
+                            "https://booth.pm/ja/items/1333590"
+                            style="display: none;"></div>
                           </div>
                         </div>
                       </section>
@@ -541,7 +554,7 @@
                         </div>
                       </div>
                       <div class=
-                      "primary-image-thumbnails u-d-sp-none">
+                      "primary-image-thumbnails u-d-sp-none image-list">
                         <a class="pointer">
                         <div class="slick-thumbnail-border">
                           <img src=
@@ -572,9 +585,9 @@
                           "https://booth.pximg.net/c/72x72_a2_g5/d7b53162-9fa2-4856-b18d-81e9400489ed/i/1333590/d4ced93a-289d-4905-b598-ce7eb9a9f87b_base_resized.jpg">
                         </div></a>
                       </div>
-                      <section>
+                      <section class="main-info-column">
                         <div class=
-                        "js-market-item-detail-description">
+                        "js-market-item-detail-description description">
                           <p class="autolink u-text-wrap">
                             ※こちらのテクスチャは現在VRoid正式版の互換性を確認中です。申し訳ありませんが、ご購入済みの方におかれましては今しばらくお待ちください。
                             *This texture is currently being
@@ -586,131 +599,139 @@
                           </p>
                         </div>
                       </section>
-                      <section>
-                        <div class="u-text-wrap page_design" id=
-                        "modules"></div>
-                      </section>
+                      <section class="u-text-wrap page_design" id=
+                      "modules"></section>
                     </div>
                   </div>
+                  <section class="container">
+                    <div class="u-border-t u-py-500">
+                      <div class="mobile-section">
+                        <h3 class="u-m-0">
+                          タグ
+                        </h3>
+                      </div>
+                      <div class="search-guide-nav">
+                        <div class="search-guide-slider-wrapper">
+                          <div class="search-guide-slider">
+                            <div class=
+                            "search-guide-slider-container">
+                              <a class="search-guide-tablet"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E6%9C%8D">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  服
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRoid">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRoid
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRoid%E7%94%A8%E3%83%86%E3%82%AF%E3%82%B9%E3%83%81%E3%83%A3">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRoid用テクスチャ
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3D%E7%94%A8%E3%83%86%E3%82%AF%E3%82%B9%E3%83%81%E3%83%A3">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3D用テクスチャ
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRoid%20Studio">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRoid Studio
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%82%A2%E3%83%90%E3%82%BF%E3%83%BC%E3%82%A6%E3%82%A7%E3%82%A2">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  アバターウェア
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRoid%E7%94%A8%E8%A1%A3%E8%A3%85">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRoid用衣装
+                                </div>
+                              </div></a>
+                            </div>
+                          </div><a class=
+                          "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
+                        </div>
+                      </div>
+                      <div class="mobile-section">
+                        <div class="u-my-500 u-mt-sp-300">
+                          <a class=
+                          "btn btn--default-outline u-tpg-caption1 u-text-wrap"
+                          data-tracking="click" data-product-list=
+                          "from market_show via tag_category_search to search_index"
+                          href=
+                          "https://booth.pm/ja/browse/%E7%B4%A0%E6%9D%90%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=%E6%9C%8D">
+                          服 x 素材（その他） で検索</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-                <section class="container">
-                  <div class="u-border-t u-py-500">
-                    <div class="mobile-section">
-                      <h3 class="u-m-0">
-                        タグ
-                      </h3>
-                    </div>
-                    <div class="search-guide-nav">
-                      <div class="search-guide-slider-wrapper">
-                        <div class="search-guide-slider">
-                          <div class=
-                          "search-guide-slider-container">
-                            <a class="search-guide-tablet"
-                            data-tracking="click"
-                            data-product-list="from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E6%9C%8D">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                服
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRoid">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRoid
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRoid%E7%94%A8%E3%83%86%E3%82%AF%E3%82%B9%E3%83%81%E3%83%A3">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRoid用テクスチャ
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/3D%E7%94%A8%E3%83%86%E3%82%AF%E3%82%B9%E3%83%81%E3%83%A3">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3D用テクスチャ
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRoid%20Studio">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRoid Studio
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%82%A2%E3%83%90%E3%82%BF%E3%83%BC%E3%82%A6%E3%82%A7%E3%82%A2">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                アバターウェア
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRoid%E7%94%A8%E8%A1%A3%E8%A3%85">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRoid用衣装
-                              </div>
-                            </div></a>
-                          </div>
-                        </div><a class=
-                        "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
-                      </div>
-                    </div>
-                    <div class="mobile-section">
-                      <div class="u-my-500 u-mt-sp-300">
-                        <a class=
-                        "btn btn--default-outline u-tpg-caption1 u-text-wrap"
-                        data-tracking="click" data-product-list=
-                        "from market_show via tag_category_search to search_index"
-                        href=
-                        "https://booth.pm/ja/browse/%E7%B4%A0%E6%9D%90%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=%E6%9C%8D">
-                        服 x 素材（その他） で検索</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
               </div>
             </div>
           </article>
+          <aside>
+            <div class="market">
+              <div class="shoplist-with-items" v-if=
+              "shops &amp;&amp; shops.length &gt; 0"></div>
+            </div>
+          </aside>
+          <script id="json_modules" type="application/json">
+          {"modules":[{"type":"text","title":"ご案内 - Information -","content":"こちらは3Dキャラクター作成ツール「VRoid Studio」で利用されることを想定したテクスチャデータです。\nThis is the texture data that is supposed to be used in the 3D character creation tool \"VRoid Studio\".\n\n◆対応素体（Supported Body）\n推奨：女性\nRecommended: women\n\n◆インポート先のレイヤー（Layer to import）\nワンピース（半袖 または 長袖）\nOnepiece (Short Sleeve or Long Sleeve)"},{"type":"text","title":"内容物 -  Contents -","content":"◆0. 試着版\n・drs_VneckSalopette_sample_v2.1.png\n\n◆1〜5. 各カラー版\n下記のファイルを圧縮したzipファイルをダウンロードいただけます。\n\n・7692_Readme.txt\n・drs_L_nobow_mono.png\n・drs_S_nobow_mono.png\n・drs_VneckSalopette_＊＊_v2.1.png\n（＊＊＊＝1. rd/ 2. bg/ 3. gy/ 4. bk/ 5. gn）\n\n◆6. 全色セット（3.5色分のお値段でお得！）\n下記のファイルを圧縮したzipファイルをダウンロードいただけます。\n\n・7692_Readme.txt\n・drs_L_nobow_mono.png\n・drs_S_nobow_mono.png\n・drs_VneckSalopette_bg_v2.1.png\n・drs_VneckSalopette_bk_v2.1.png\n・drs_VneckSalopette_gn_v2.1.png\n・drs_VneckSalopette_gy_v2.1.png\n・drs_VneckSalopette_rd_v2.1.png\n\n\n===\n※ファイルに「_MACOSX」フォルダや「.DS_Store」ファイルが入っていることがあります。これはMacでファイルを圧縮した際に自動で生成されてしまうファイルのため、Windowsユーザーの方は削除していただいて問題ありません。順次改善の対応をいたします。ご迷惑をおかけいたしますが、なにとぞよろしくお願いいたします。\n==="},{"type":"text","title":"アップデート情報 - Updates -","content":"2020/6/10　v2.1\n・デフォルト半袖ワンピース（ボートネック風、リボンなし）を各セット内に追加しました。\n・バージョン番号は上がっていますが、サロペットの方に変更はありません。\n\n※ ご購入済みの方は、購入した商品＞注文詳細画面から再DLいただけます。"},{"type":"text","title":"利用規約 - Terms of use -","content":"当店の商品データをご購入またはダウンロードいただいた時点で、下記規約に同意されたものとみなしますのでご了承ください。\n\n▼ご確認ください（外部ページ）\n○日本語\nhttps://github.com/narukuni/7692_shop/blob/master/termsofuse/japanese.md\n○English\nhttps://github.com/narukuni/7692_shop/blob/master/termsofuse/english.md"},{"type":"text","title":"","content":"注意事項や価格の変更、データの更新が予告なく行われる場合があります。\n\nお問い合わせ・ご要望などはTwitter（ https://twitter.com/Narukuni ）もしくはBOOTHメッセージまで\n\n\n────────────\nこちらのアイテムを気に入っていただけましたら……\n・本ページの「♡(スキ！）」をPush\n・Twitterで #7692_shop または @Narukuni をつけてツイート\nしていただけると大変制作の励みになります。"}]}
+          </script>
         </div>
-        <aside>
-          <div class="shoplist-with-items" v-if=
-          "shops &amp;&amp; shops.length &gt; 0"></div>
-        </aside>
-        <script id="json_modules" type="application/json">
-        {"modules":[{"type":"text","title":"ご案内 - Information -","content":"こちらは3Dキャラクター作成ツール「VRoid Studio」で利用されることを想定したテクスチャデータです。\nThis is the texture data that is supposed to be used in the 3D character creation tool \"VRoid Studio\".\n\n◆対応素体（Supported Body）\n推奨：女性\nRecommended: women\n\n◆インポート先のレイヤー（Layer to import）\nワンピース（半袖 または 長袖）\nOnepiece (Short Sleeve or Long Sleeve)"},{"type":"text","title":"内容物 -  Contents -","content":"◆0. 試着版\n・drs_VneckSalopette_sample_v2.1.png\n\n◆1〜5. 各カラー版\n下記のファイルを圧縮したzipファイルをダウンロードいただけます。\n\n・7692_Readme.txt\n・drs_L_nobow_mono.png\n・drs_S_nobow_mono.png\n・drs_VneckSalopette_＊＊_v2.1.png\n（＊＊＊＝1. rd/ 2. bg/ 3. gy/ 4. bk/ 5. gn）\n\n◆6. 全色セット（3.5色分のお値段でお得！）\n下記のファイルを圧縮したzipファイルをダウンロードいただけます。\n\n・7692_Readme.txt\n・drs_L_nobow_mono.png\n・drs_S_nobow_mono.png\n・drs_VneckSalopette_bg_v2.1.png\n・drs_VneckSalopette_bk_v2.1.png\n・drs_VneckSalopette_gn_v2.1.png\n・drs_VneckSalopette_gy_v2.1.png\n・drs_VneckSalopette_rd_v2.1.png\n\n\n===\n※ファイルに「_MACOSX」フォルダや「.DS_Store」ファイルが入っていることがあります。これはMacでファイルを圧縮した際に自動で生成されてしまうファイルのため、Windowsユーザーの方は削除していただいて問題ありません。順次改善の対応をいたします。ご迷惑をおかけいたしますが、なにとぞよろしくお願いいたします。\n==="},{"type":"text","title":"アップデート情報 - Updates -","content":"2020/6/10　v2.1\n・デフォルト半袖ワンピース（ボートネック風、リボンなし）を各セット内に追加しました。\n・バージョン番号は上がっていますが、サロペットの方に変更はありません。\n\n※ ご購入済みの方は、購入した商品＞注文詳細画面から再DLいただけます。"},{"type":"text","title":"利用規約 - Terms of use -","content":"当店の商品データをご購入またはダウンロードいただいた時点で、下記規約に同意されたものとみなしますのでご了承ください。\n\n▼ご確認ください（外部ページ）\n○日本語\nhttps://github.com/narukuni/7692_shop/blob/master/termsofuse/japanese.md\n○English\nhttps://github.com/narukuni/7692_shop/blob/master/termsofuse/english.md"},{"type":"text","title":"","content":"注意事項や価格の変更、データの更新が予告なく行われる場合があります。\n\nお問い合わせ・ご要望などはTwitter（ https://twitter.com/Narukuni ）もしくはBOOTHメッセージまで\n\n\n────────────\nこちらのアイテムを気に入っていただけましたら……\n・本ページの「♡(スキ！）」をPush\n・Twitterで #7692_shop または @Narukuni をつけてツイート\nしていただけると大変制作の励みになります。"}]}
-        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
