@@ -59,9 +59,13 @@
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
     <script src=
+    "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
+    defer="defer" nonce=
+    "iJYJcH67wU9TNLjCSomt8PBgDOQawfGJu6fHuAWSCp4="></script>
+    <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "k1IT9j24HWpS9/XP8MyiSSrgT+a6ewF+fZXxCOgwdzM="></script>
+    "iJYJcH67wU9TNLjCSomt8PBgDOQawfGJu6fHuAWSCp4="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -99,7 +103,7 @@
     <script src=
     "https://asset.booth.pm/assets/ab357483f48c9496242e.js" defer=
     "defer" nonce=
-    "k1IT9j24HWpS9/XP8MyiSSrgT+a6ewF+fZXxCOgwdzM="></script>
+    "iJYJcH67wU9TNLjCSomt8PBgDOQawfGJu6fHuAWSCp4="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"オリジナル3Dモデル[クーノ]","description":"※当モデルはSDK2用に作られています。SDK3でアップロードする場合、表情設定などの作業が必要になります。\n\nオリジナル3Dモデル「クーノ」","url":"https://booth.pm/ja/items/1314116","offers":{"priceCurrency":"JPY","@type":"Offer","price":"1000"},"image":"https://booth.pximg.net/c/620x620/77ae779e-8ec7-48ae-89a5-996e86a688f1/i/1314116/93f0092a-6ee0-4ac7-a188-31431e3975c0_base_resized.jpg"}
     </script>
@@ -113,7 +117,7 @@
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "k1IT9j24HWpS9/XP8MyiSSrgT+a6ewF+fZXxCOgwdzM="></script>
+    "iJYJcH67wU9TNLjCSomt8PBgDOQawfGJu6fHuAWSCp4="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -122,13 +126,15 @@
         <div class="recaptcha-tag" data-action=
         "booth/checkout_order" data-site-key=
         "6LfF1dcZAAAAAOHQX8v16MX5SktDwmQINVD_6mBF"></div>
-        <div class="market-item-detail u-bg-white"
-        data-ga-tracking-id="" data-product-brand="koori"
-        data-product-category="127" data-product-id="1314116"
-        data-product-list="market_show" data-product-price="1000"
-        data-tracking="detail_item">
+        <div class="market" data-ga-tracking-id=""
+        data-product-brand="koori" data-product-category="127"
+        data-product-id="1314116" data-product-list="market_show"
+        data-product-price="1000" data-tracking="detail_item" id=
+        "items">
+          <div class="market"></div>
           <nav>
-            <div class="breadcrumbs u-border-b u-border-100">
+            <div class=
+            "market breadcrumbs u-bg-white u-border-b u-border-100">
               <div class="container">
                 <div class="breadcrumb">
                   <a class="label" data-tracking="click"
@@ -150,40 +156,40 @@
           </nav>
           <article>
             <div class=
-            "market-item-detail-article u-d-flex u-flex-column u-align-items-center u-pb-600 u-bg-white">
-              <div class="container">
-                <div class="market-item-detail__exhibition-banner">
-                </div>
-              </div>
-              <div class="u-bg-white u-pt-600 u-px-700">
+            "market market-item-detail item-info-detail u-bg-white">
+              <div class=
+              "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class="u-d-flex">
-                    <div class="u-order-1 l-col-2of5 u-pl-600">
-                      <header>
-                        <div class="u-my-200 u-tpg-title3">
-                          <a class="nav" target="_blank"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" rel="noopener"
-                          href="https://koori.booth.pm/">
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
+                  <div class="u-pt-600 u-d-flex">
+                    <div class=
+                    "summary u-order-1 l-col-2of5 u-pl-600">
+                      <div class="mobile-section">
+                        <header>
+                          <div class="u-my-200 u-tpg-title3">
+                            <a class="nav" target="_blank"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" rel="noopener"
+                            href="https://koori.booth.pm/">
+                            <div class=
+                            "u-d-flex u-align-items-center">
+                              <img alt="甘氷シロップ" class=
+                              "user-avatar at-item-summary" src=
+                              "https://booth.pximg.net/c/48x48/users/230998/icon_image/cf188d10-6372-49d9-b353-31af5ed8039f_base_resized.jpg">
+                              <div class="u-text-ellipsis">
+                                甘氷シロップ
+                              </div>
+                            </div></a>
+                          </div>
+                          <h2 class=
+                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                            オリジナル3Dモデル[クーノ]
+                          </h2>
                           <div class=
-                          "u-d-flex u-align-items-center">
-                            <img alt="甘氷シロップ" class=
-                            "user-avatar at-item-summary" src=
-                            "https://booth.pximg.net/c/48x48/users/230998/icon_image/cf188d10-6372-49d9-b353-31af5ed8039f_base_resized.jpg">
-                            <div class="u-text-ellipsis">
-                              甘氷シロップ
-                            </div>
-                          </div></a>
-                        </div>
-                        <h2 class=
-                        "u-text-wrap u-tpg-title1 u-mt-0 u-mb-400">
-                          オリジナル3Dモデル[クーノ]
-                        </h2>
-                        <div class=
-                        "u-text-assertive u-tpg-caption1"></div>
-                      </header>
-                      <section>
+                          "u-text-assertive u-tpg-caption1"></div>
+                        </header>
                         <div class="wish-list-link">
                           <a class="add-to-wish-list"
                           data-tracking="add_to_wishlist"
@@ -236,23 +242,31 @@
                             </li>
                           </ul>
                         </div>
-                      </section>
+                      </div>
                       <section>
                         <div class=
                         "share-btns u-d-flex u-flex-1 u-justify-content-start u-px-200 u-py-400">
-                          <a data-url=
-                          "https://booth.pm/ja/items/1314116"
-                          data-lang="ja" data-hashtags="booth_pm"
-                          data-text="オリジナル3Dモデル[クーノ] | 甘氷シロップ"
-                          data-count="none" class=
-                          "twitter-share-button" href=
-                          "https://twitter.com/share">ツイート</a>
-                          <div class="u-ml-300">
+                          <div class="social-btn">
+                            <a data-url=
+                            "https://booth.pm/ja/items/1314116"
+                            data-lang="ja" data-hashtags="booth_pm"
+                            data-text="オリジナル3Dモデル[クーノ] | 甘氷シロップ"
+                            data-count="none" class=
+                            "twitter-share-button" href=
+                            "https://twitter.com/share">ツイート</a>
+                          </div>
+                          <div class="social-btn u-ml-300">
                             <div class="fb-like" data-action="like"
                             data-href=
                             "https://booth.pm/ja/items/1314116"
                             data-layout="button_count" data-share=
                             "false" data-show-faces="false"></div>
+                          </div>
+                          <div class="mobile social-btn u-mx-200">
+                            <div class="line-it-button" data-lang=
+                            "ja" data-type="share-a" data-url=
+                            "https://booth.pm/ja/items/1314116"
+                            style="display: none;"></div>
                           </div>
                         </div>
                       </section>
@@ -305,7 +319,7 @@
                         </div>
                       </div>
                       <div class=
-                      "primary-image-thumbnails u-d-sp-none">
+                      "primary-image-thumbnails u-d-sp-none image-list">
                         <a class="pointer">
                         <div class="slick-thumbnail-border">
                           <img src=
@@ -324,106 +338,112 @@
                           "https://booth.pximg.net/c/72x72_a2_g5/77ae779e-8ec7-48ae-89a5-996e86a688f1/i/1314116/99271967-63f7-4a0a-bd51-9acdbe642e04_base_resized.jpg">
                         </div></a>
                       </div>
-                      <section>
+                      <section class="main-info-column">
                         <div class=
-                        "js-market-item-detail-description">
+                        "js-market-item-detail-description description">
                           <p class="autolink u-text-wrap">
                             ※当モデルはSDK2用に作られています。SDK3でアップロードする場合、表情設定などの作業が必要になります。
                             オリジナル3Dモデル「クーノ」
                           </p>
                         </div>
                       </section>
-                      <section>
-                        <div class="u-text-wrap page_design" id=
-                        "modules"></div>
-                      </section>
+                      <section class="u-text-wrap page_design" id=
+                      "modules"></section>
                     </div>
                   </div>
+                  <section class="container">
+                    <div class="u-border-t u-py-500">
+                      <div class="mobile-section">
+                        <h3 class="u-m-0">
+                          タグ
+                        </h3>
+                      </div>
+                      <div class="search-guide-nav">
+                        <div class="search-guide-slider-wrapper">
+                          <div class="search-guide-slider">
+                            <div class=
+                            "search-guide-slider-container">
+                              <a class="search-guide-tablet"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3D%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3Dキャラクター
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3Dモデル
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/FBX">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  FBX
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat
+                                </div>
+                              </div></a>
+                            </div>
+                          </div><a class=
+                          "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
+                        </div>
+                      </div>
+                      <div class="mobile-section">
+                        <div class="u-my-500 u-mt-sp-300">
+                          <a class=
+                          "btn btn--default-outline u-tpg-caption1 u-text-wrap"
+                          data-tracking="click" data-product-list=
+                          "from market_show via tag_category_search to search_index"
+                          href=
+                          "https://booth.pm/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=3D%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC">
+                          3Dキャラクター x 3Dモデル（その他） で検索</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-                <section class="container">
-                  <div class="u-border-t u-py-500">
-                    <div class="mobile-section">
-                      <h3 class="u-m-0">
-                        タグ
-                      </h3>
-                    </div>
-                    <div class="search-guide-nav">
-                      <div class="search-guide-slider-wrapper">
-                        <div class="search-guide-slider">
-                          <div class=
-                          "search-guide-slider-container">
-                            <a class="search-guide-tablet"
-                            data-tracking="click"
-                            data-product-list="from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/3D%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3Dキャラクター
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3Dモデル
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href="https://booth.pm/ja/search/FBX">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                FBX
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat
-                              </div>
-                            </div></a>
-                          </div>
-                        </div><a class=
-                        "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
-                      </div>
-                    </div>
-                    <div class="mobile-section">
-                      <div class="u-my-500 u-mt-sp-300">
-                        <a class=
-                        "btn btn--default-outline u-tpg-caption1 u-text-wrap"
-                        data-tracking="click" data-product-list=
-                        "from market_show via tag_category_search to search_index"
-                        href=
-                        "https://booth.pm/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=3D%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC">
-                        3Dキャラクター x 3Dモデル（その他） で検索</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
               </div>
             </div>
           </article>
+          <aside>
+            <div class="market">
+              <div class="shoplist-with-items" v-if=
+              "shops &amp;&amp; shops.length &gt; 0"></div>
+            </div>
+          </aside>
+          <script id="json_modules" type="application/json">
+          {"modules":[{"type":"text","title":"概要","content":"素体追加しました。ウェイトなど不具合もあるかもしれないので前のバージョンも残してます。\n女体化する体質、水色髪の男の子。\nUnityのHumanoidに対応した、fbx形式の3Dモデルです。\nVRChatでの使用を想定していますが、\nその他のゲームや動画配信等（収益化配信含む）のご利用も可能です。\n\n\n〇ポリゴン数　基本セット△19901　素体のみ△14898　バスタオル△5564\n・表情5種\n・表情とは別に男性から女性へと変化するシェイプキー\n〇リップシンク対応\n〇ダイナミックボーン対応（髪の毛と胸）\n〇フルトラッキング対応\n×アイトラッキング非対応\n×quest非対応\n\n内容物\n・３Dモデル(UnityPackageとblend）\n・改変用のテクスチャ（PSD）\n・readme.txt\n\n女体化した状態で移動したり表情変化させたりできます。\nVRでは右のコントローラーで女体化、左で表情変化させます\nデスクトップでは右のshift＋ファンクションキーで女体化、左で表情変化させます\nハンドオープンでリセットになっています。\nVR、デスクトップ共に女体化したまま椅子に座ることはできません。\nVRの場合、女体化したままの移動にはコツが必要です。\n（右手で女体化させて左手で移動するなど）\n\n2019/4/13 blueprintidが入ったままだったのを修正\n2019/7/22 フルトラ対応、ダイナミックボーンが荒ぶる不具合修正、顔修正\n2019/9/7  フルトラ時の腕まわりの動作がおかしい問題を修正\n\t　表情のフィンガーポイントとサムズアップが逆になってた問題修正\n\t　首を動かしたときに口が出てしまう問題を修正\n2020/5/17 素体を追加、バスタオル追加、オブジェクトを分離、一部メッシュ修正、ウェイト修正"},{"type":"text","title":"【利用規約】","content":"本モデルの著作権は甘野氷に帰属します。\n本モデルを購入した時点で利用規約に同意したものとします。\n利用規約の内容は変更する場合があり、最新のものが適用されます。\n\n本モデルはVRChatやその他アプリ、サービスでの使用が可能です。\n暴力表現、性的表現の制限は致しません。\n商用利用も可能です。\n本モデルを改変して個人の範囲で使用することを許可します。\n\n・禁止事項\n改変の有無に関わらず、当モデルやテクスチャ等のデータを再配布、販売する行為\n（VRChatで使用する際、購入者以外がアバターを使用できないよう設定してください）\n公序良俗に反する行為、政治・宗教活動、誹謗中傷目的での利用\n\n・免責事項\nこの製品を利用して発生したトラブルに関しては、一切の責任を負いません。\n\n"},{"type":"text","title":"【使い方】","content":"・VRChatで使用する為の方法です\nUnity 2017.4.28f1にて3Dの新しいプロジェクトを作成、VRCSDKをインポートしておいてください。\nダイナミックボーンを使いたい方は、ダイナミックボーンも事前にインポートしてください。\ntskun1.1.UnityPackageをダブルクリックでインポートしてください。\nProjectタブのtskun.prefabをHierarchyにドラッグアンドドロップ、\ninspectorタブのTransform内のpositionの値を、X、Y、Z共に全て0にしてください。\nアップロードする際、SharingのチェックはPrivateに入れてください。Publicには入れないでください。\n、\nVRChatにアップロードして完了です。\n\nダイナミックボーンの設定はGameObject内に、\nダイナミックボーンコライダーはArmatureのheadに入っています\n\nシェーダーにはArktoon-Shaders v1.0.2.4を使用しています。\nシェーダーはMIT Licenseを用いてGithubで公開されています。\nhttps://github.com/synqark/Arktoon-Shaders\n\nMITライセンスについて\nhttps://opensource.org/licenses/mit-license.php\n\n\n甘野氷\nTwitter：https://twitter.com/koori2nd\nbooth：https://koori.booth.pm/"}]}
+          </script>
         </div>
-        <aside>
-          <div class="shoplist-with-items" v-if=
-          "shops &amp;&amp; shops.length &gt; 0"></div>
-        </aside>
-        <script id="json_modules" type="application/json">
-        {"modules":[{"type":"text","title":"概要","content":"素体追加しました。ウェイトなど不具合もあるかもしれないので前のバージョンも残してます。\n女体化する体質、水色髪の男の子。\nUnityのHumanoidに対応した、fbx形式の3Dモデルです。\nVRChatでの使用を想定していますが、\nその他のゲームや動画配信等（収益化配信含む）のご利用も可能です。\n\n\n〇ポリゴン数　基本セット△19901　素体のみ△14898　バスタオル△5564\n・表情5種\n・表情とは別に男性から女性へと変化するシェイプキー\n〇リップシンク対応\n〇ダイナミックボーン対応（髪の毛と胸）\n〇フルトラッキング対応\n×アイトラッキング非対応\n×quest非対応\n\n内容物\n・３Dモデル(UnityPackageとblend）\n・改変用のテクスチャ（PSD）\n・readme.txt\n\n女体化した状態で移動したり表情変化させたりできます。\nVRでは右のコントローラーで女体化、左で表情変化させます\nデスクトップでは右のshift＋ファンクションキーで女体化、左で表情変化させます\nハンドオープンでリセットになっています。\nVR、デスクトップ共に女体化したまま椅子に座ることはできません。\nVRの場合、女体化したままの移動にはコツが必要です。\n（右手で女体化させて左手で移動するなど）\n\n2019/4/13 blueprintidが入ったままだったのを修正\n2019/7/22 フルトラ対応、ダイナミックボーンが荒ぶる不具合修正、顔修正\n2019/9/7  フルトラ時の腕まわりの動作がおかしい問題を修正\n\t　表情のフィンガーポイントとサムズアップが逆になってた問題修正\n\t　首を動かしたときに口が出てしまう問題を修正\n2020/5/17 素体を追加、バスタオル追加、オブジェクトを分離、一部メッシュ修正、ウェイト修正"},{"type":"text","title":"【利用規約】","content":"本モデルの著作権は甘野氷に帰属します。\n本モデルを購入した時点で利用規約に同意したものとします。\n利用規約の内容は変更する場合があり、最新のものが適用されます。\n\n本モデルはVRChatやその他アプリ、サービスでの使用が可能です。\n暴力表現、性的表現の制限は致しません。\n商用利用も可能です。\n本モデルを改変して個人の範囲で使用することを許可します。\n\n・禁止事項\n改変の有無に関わらず、当モデルやテクスチャ等のデータを再配布、販売する行為\n（VRChatで使用する際、購入者以外がアバターを使用できないよう設定してください）\n公序良俗に反する行為、政治・宗教活動、誹謗中傷目的での利用\n\n・免責事項\nこの製品を利用して発生したトラブルに関しては、一切の責任を負いません。\n\n"},{"type":"text","title":"【使い方】","content":"・VRChatで使用する為の方法です\nUnity 2017.4.28f1にて3Dの新しいプロジェクトを作成、VRCSDKをインポートしておいてください。\nダイナミックボーンを使いたい方は、ダイナミックボーンも事前にインポートしてください。\ntskun1.1.UnityPackageをダブルクリックでインポートしてください。\nProjectタブのtskun.prefabをHierarchyにドラッグアンドドロップ、\ninspectorタブのTransform内のpositionの値を、X、Y、Z共に全て0にしてください。\nアップロードする際、SharingのチェックはPrivateに入れてください。Publicには入れないでください。\n、\nVRChatにアップロードして完了です。\n\nダイナミックボーンの設定はGameObject内に、\nダイナミックボーンコライダーはArmatureのheadに入っています\n\nシェーダーにはArktoon-Shaders v1.0.2.4を使用しています。\nシェーダーはMIT Licenseを用いてGithubで公開されています。\nhttps://github.com/synqark/Arktoon-Shaders\n\nMITライセンスについて\nhttps://opensource.org/licenses/mit-license.php\n\n\n甘野氷\nTwitter：https://twitter.com/koori2nd\nbooth：https://koori.booth.pm/"}]}
-        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
