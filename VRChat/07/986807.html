@@ -59,9 +59,13 @@
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
     <script src=
+    "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
+    defer="defer" nonce=
+    "QHQZCbxG5SgxWpw1dJBw+l5EPOT8fwOdmKtpKu1p8gU="></script>
+    <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "BDmT3p99QCSZlngCuZw4QlOYw52auVesHXesjoxTj0g="></script>
+    "QHQZCbxG5SgxWpw1dJBw+l5EPOT8fwOdmKtpKu1p8gU="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -74,7 +78,7 @@
     <script src=
     "https://asset.booth.pm/assets/ab357483f48c9496242e.js" defer=
     "defer" nonce=
-    "BDmT3p99QCSZlngCuZw4QlOYw52auVesHXesjoxTj0g="></script>
+    "QHQZCbxG5SgxWpw1dJBw+l5EPOT8fwOdmKtpKu1p8gU="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"工事セット 工事看板\u0026カラーコーン","description":"ワールドに置く案内表示として\n区画を整理するための仕切りとして\nアバターアクセサリーとして\n\n様々な利用用途が見込める看板とカラーコーンのモデルセットです\n\n各モデルはほぼ実寸で作成しています。\n\n\n※使用例に表示されている素体モデルはデータに含まれません。","url":"https://booth.pm/ja/items/986807","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"300"},"image":"https://booth.pximg.net/c/620x620/b0506462-fc0b-413c-a56a-992b92221fc5/i/986807/76f03d58-df78-43aa-a4f3-916cbc7919f5_base_resized.jpg"}
     </script>
@@ -91,7 +95,7 @@
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "BDmT3p99QCSZlngCuZw4QlOYw52auVesHXesjoxTj0g="></script>
+    "QHQZCbxG5SgxWpw1dJBw+l5EPOT8fwOdmKtpKu1p8gU="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -100,13 +104,15 @@
         <div class="recaptcha-tag" data-action=
         "booth/checkout_order" data-site-key=
         "6LfF1dcZAAAAAOHQX8v16MX5SktDwmQINVD_6mBF"></div>
-        <div class="market-item-detail u-bg-white"
-        data-ga-tracking-id="" data-product-brand="onisawa"
-        data-product-category="127" data-product-id="986807"
-        data-product-list="market_show" data-product-price="300"
-        data-tracking="detail_item">
+        <div class="market" data-ga-tracking-id=""
+        data-product-brand="onisawa" data-product-category="127"
+        data-product-id="986807" data-product-list="market_show"
+        data-product-price="300" data-tracking="detail_item" id=
+        "items">
+          <div class="market"></div>
           <nav>
-            <div class="breadcrumbs u-border-b u-border-100">
+            <div class=
+            "market breadcrumbs u-bg-white u-border-b u-border-100">
               <div class="container">
                 <div class="breadcrumb">
                   <a class="label" data-tracking="click"
@@ -128,40 +134,40 @@
           </nav>
           <article>
             <div class=
-            "market-item-detail-article u-d-flex u-flex-column u-align-items-center u-pb-600 u-bg-white">
-              <div class="container">
-                <div class="market-item-detail__exhibition-banner">
-                </div>
-              </div>
-              <div class="u-bg-white u-pt-600 u-px-700">
+            "market market-item-detail item-info-detail u-bg-white">
+              <div class=
+              "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class="u-d-flex">
-                    <div class="u-order-1 l-col-2of5 u-pl-600">
-                      <header>
-                        <div class="u-my-200 u-tpg-title3">
-                          <a class="nav" target="_blank"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" rel="noopener"
-                          href="https://onisawa.booth.pm/">
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
+                  <div class="u-pt-600 u-d-flex">
+                    <div class=
+                    "summary u-order-1 l-col-2of5 u-pl-600">
+                      <div class="mobile-section">
+                        <header>
+                          <div class="u-my-200 u-tpg-title3">
+                            <a class="nav" target="_blank"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" rel="noopener"
+                            href="https://onisawa.booth.pm/">
+                            <div class=
+                            "u-d-flex u-align-items-center">
+                              <img alt="おにさわランド公式オンラインストア" class=
+                              "user-avatar at-item-summary" src=
+                              "https://booth.pximg.net/c/48x48/users/5277668/icon_image/9ab82726-35ef-4332-93ef-eee7f2e9bae0_base_resized.jpg">
+                              <div class="u-text-ellipsis">
+                                おにさわランド公式オンラインストア
+                              </div>
+                            </div></a>
+                          </div>
+                          <h2 class=
+                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                            工事セット 工事看板&amp;カラーコーン
+                          </h2>
                           <div class=
-                          "u-d-flex u-align-items-center">
-                            <img alt="おにさわランド公式オンラインストア" class=
-                            "user-avatar at-item-summary" src=
-                            "https://booth.pximg.net/c/48x48/users/5277668/icon_image/9ab82726-35ef-4332-93ef-eee7f2e9bae0_base_resized.jpg">
-                            <div class="u-text-ellipsis">
-                              おにさわランド公式オンラインストア
-                            </div>
-                          </div></a>
-                        </div>
-                        <h2 class=
-                        "u-text-wrap u-tpg-title1 u-mt-0 u-mb-400">
-                          工事セット 工事看板&amp;カラーコーン
-                        </h2>
-                        <div class=
-                        "u-text-assertive u-tpg-caption1"></div>
-                      </header>
-                      <section>
+                          "u-text-assertive u-tpg-caption1"></div>
+                        </header>
                         <div class="wish-list-link">
                           <a class="add-to-wish-list"
                           data-tracking="add_to_wishlist"
@@ -268,24 +274,32 @@
                             </li>
                           </ul>
                         </div>
-                      </section>
+                      </div>
                       <section>
                         <div class=
                         "share-btns u-d-flex u-flex-1 u-justify-content-start u-px-200 u-py-400">
-                          <a data-url=
-                          "https://booth.pm/ja/items/986807"
-                          data-lang="ja" data-hashtags="booth_pm"
-                          data-text=
-                          "工事セット 工事看板&amp;カラーコーン | おにさわランド公式オンラインストア"
-                          data-count="none" class=
-                          "twitter-share-button" href=
-                          "https://twitter.com/share">ツイート</a>
-                          <div class="u-ml-300">
+                          <div class="social-btn">
+                            <a data-url=
+                            "https://booth.pm/ja/items/986807"
+                            data-lang="ja" data-hashtags="booth_pm"
+                            data-text=
+                            "工事セット 工事看板&amp;カラーコーン | おにさわランド公式オンラインストア"
+                            data-count="none" class=
+                            "twitter-share-button" href=
+                            "https://twitter.com/share">ツイート</a>
+                          </div>
+                          <div class="social-btn u-ml-300">
                             <div class="fb-like" data-action="like"
                             data-href=
                             "https://booth.pm/ja/items/986807"
                             data-layout="button_count" data-share=
                             "false" data-show-faces="false"></div>
+                          </div>
+                          <div class="mobile social-btn u-mx-200">
+                            <div class="line-it-button" data-lang=
+                            "ja" data-type="share-a" data-url=
+                            "https://booth.pm/ja/items/986807"
+                            style="display: none;"></div>
                           </div>
                         </div>
                       </section>
@@ -327,7 +341,7 @@
                         </div>
                       </div>
                       <div class=
-                      "primary-image-thumbnails u-d-sp-none">
+                      "primary-image-thumbnails u-d-sp-none image-list">
                         <a class="pointer">
                         <div class="slick-thumbnail-border">
                           <img src=
@@ -342,9 +356,9 @@
                           "https://booth.pximg.net/c/72x72_a2_g5/b0506462-fc0b-413c-a56a-992b92221fc5/i/986807/1513acba-35c2-4310-9e8b-63af165989bb_base_resized.jpg">
                         </div></a>
                       </div>
-                      <section>
+                      <section class="main-info-column">
                         <div class=
-                        "js-market-item-detail-description">
+                        "js-market-item-detail-description description">
                           <p class="autolink u-text-wrap">
                             ワールドに置く案内表示として 区画を整理するための仕切りとして
                             アバターアクセサリーとして
@@ -354,108 +368,114 @@
                           </p>
                         </div>
                       </section>
-                      <section>
-                        <div class="u-text-wrap page_design" id=
-                        "modules"></div>
-                      </section>
+                      <section class="u-text-wrap page_design" id=
+                      "modules"></section>
                     </div>
                   </div>
+                  <section class="container">
+                    <div class="u-border-t u-py-500">
+                      <div class="mobile-section">
+                        <h3 class="u-m-0">
+                          タグ
+                        </h3>
+                      </div>
+                      <div class="search-guide-nav">
+                        <div class="search-guide-slider-wrapper">
+                          <div class="search-guide-slider">
+                            <div class=
+                            "search-guide-slider-container">
+                              <a class="search-guide-tablet"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href="https://booth.pm/ja/search/3D">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3D
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3Dモデル
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3D%E7%B4%A0%E6%9D%90">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3D素材
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%81%B2%E3%81%A8%E3%82%8A%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%83%E3%83%88">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  ひとりバーチャルマーケット
+                                </div>
+                              </div></a>
+                            </div>
+                          </div><a class=
+                          "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
+                        </div>
+                      </div>
+                      <div class="mobile-section">
+                        <div class="u-my-500 u-mt-sp-300">
+                          <a class=
+                          "btn btn--default-outline u-tpg-caption1 u-text-wrap"
+                          data-tracking="click" data-product-list=
+                          "from market_show via tag_category_search to search_index"
+                          href=
+                          "https://booth.pm/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=3D">
+                          3D x 3Dモデル（その他） で検索</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-                <section class="container">
-                  <div class="u-border-t u-py-500">
-                    <div class="mobile-section">
-                      <h3 class="u-m-0">
-                        タグ
-                      </h3>
-                    </div>
-                    <div class="search-guide-nav">
-                      <div class="search-guide-slider-wrapper">
-                        <div class="search-guide-slider">
-                          <div class=
-                          "search-guide-slider-container">
-                            <a class="search-guide-tablet"
-                            data-tracking="click"
-                            data-product-list="from market_show via tag_list to search_index"
-                            href="https://booth.pm/ja/search/3D">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3D
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3Dモデル
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/3D%E7%B4%A0%E6%9D%90">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3D素材
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%81%B2%E3%81%A8%E3%82%8A%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%83%E3%83%88">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                ひとりバーチャルマーケット
-                              </div>
-                            </div></a>
-                          </div>
-                        </div><a class=
-                        "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
-                      </div>
-                    </div>
-                    <div class="mobile-section">
-                      <div class="u-my-500 u-mt-sp-300">
-                        <a class=
-                        "btn btn--default-outline u-tpg-caption1 u-text-wrap"
-                        data-tracking="click" data-product-list=
-                        "from market_show via tag_category_search to search_index"
-                        href=
-                        "https://booth.pm/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=3D">
-                        3D x 3Dモデル（その他） で検索</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
               </div>
             </div>
           </article>
+          <aside>
+            <div class="market">
+              <div class="shoplist-with-items" v-if=
+              "shops &amp;&amp; shops.length &gt; 0"></div>
+            </div>
+          </aside>
+          <script id="json_modules" type="application/json">
+          {"modules":[{"type":"text","title":"内容物","content":"ダウンロードデータはzipファイル形式での提供となります。\nモデルデータはunitypackage形式で提供いたします。\n\n\n■モデルデータ\n\n工事看板\n72△ポリゴン\n\nカラーコーン\n608△ポリゴン\n\nカラーコーン (縞模様)\n800△ポリゴン\n\nカラーコーン (ベッド有)\n752△ポリゴン\n\nカラーコーン (縞模様・ベッド有)\n944△ポリゴン\n\nカラーコーン用バー\n960△ポリゴン\n\n※「ベッド」はおもりのことです\n\n\n\n■マテリアル\n\nカラーコーン標準マテリアル\nカラーコーン色変更用マテリアル(青・緑・黄色)\n\n工事看板用マテリアル"},{"type":"text","title":"利用規約","content":"本モデルは主にVRChat内での利用を想定したもので、ワールドへの設置、アバター、パーティクル等にご利用いただけます。\n今のところ、VRChat以外での利用についても制限する予定はありません。再配布を除き、自由にお使いください。\n\n楽しいVRChatライフを！\n\n\n■禁止事項\n・本データを含む物品、データの配布や販売\n　　- ワールドとしてのVRChatへのアップロードは可能です\n・その他、本データを利用した作者に不利益を与える行為\n\n\n■利用許可範囲\n・VRChatでの利用\n　　- ワールド内への設置(ワールドのPublic, Privateは問いません)\n　　- アバターモデル、アクセサリー\n　　- その他、パーティクル等VRChatシステム内での利用\n\n・その他\n　　- 自作ゲーム、映像、その他コンテンツ等での利用\n\n\n■免責事項\n当データの利用により生じたいかなる不利益についても作者は一切の責任を負いません。\n\n■注意事項\n　　事前告知なく、以下が実施される場合があります。\n\n　　　　・価格、内容物の変更\n　　　　・モデルデータの提供終了\n　　　　・規約変更\n\n　　利用規約は最新の物が優先されます。"},{"type":"text","title":"更新履歴","content":"2018/08/25 Ver.1.00 新規作成\n"}]}
+          </script>
         </div>
-        <aside>
-          <div class="shoplist-with-items" v-if=
-          "shops &amp;&amp; shops.length &gt; 0"></div>
-        </aside>
-        <script id="json_modules" type="application/json">
-        {"modules":[{"type":"text","title":"内容物","content":"ダウンロードデータはzipファイル形式での提供となります。\nモデルデータはunitypackage形式で提供いたします。\n\n\n■モデルデータ\n\n工事看板\n72△ポリゴン\n\nカラーコーン\n608△ポリゴン\n\nカラーコーン (縞模様)\n800△ポリゴン\n\nカラーコーン (ベッド有)\n752△ポリゴン\n\nカラーコーン (縞模様・ベッド有)\n944△ポリゴン\n\nカラーコーン用バー\n960△ポリゴン\n\n※「ベッド」はおもりのことです\n\n\n\n■マテリアル\n\nカラーコーン標準マテリアル\nカラーコーン色変更用マテリアル(青・緑・黄色)\n\n工事看板用マテリアル"},{"type":"text","title":"利用規約","content":"本モデルは主にVRChat内での利用を想定したもので、ワールドへの設置、アバター、パーティクル等にご利用いただけます。\n今のところ、VRChat以外での利用についても制限する予定はありません。再配布を除き、自由にお使いください。\n\n楽しいVRChatライフを！\n\n\n■禁止事項\n・本データを含む物品、データの配布や販売\n　　- ワールドとしてのVRChatへのアップロードは可能です\n・その他、本データを利用した作者に不利益を与える行為\n\n\n■利用許可範囲\n・VRChatでの利用\n　　- ワールド内への設置(ワールドのPublic, Privateは問いません)\n　　- アバターモデル、アクセサリー\n　　- その他、パーティクル等VRChatシステム内での利用\n\n・その他\n　　- 自作ゲーム、映像、その他コンテンツ等での利用\n\n\n■免責事項\n当データの利用により生じたいかなる不利益についても作者は一切の責任を負いません。\n\n■注意事項\n　　事前告知なく、以下が実施される場合があります。\n\n　　　　・価格、内容物の変更\n　　　　・モデルデータの提供終了\n　　　　・規約変更\n\n　　利用規約は最新の物が優先されます。"},{"type":"text","title":"更新履歴","content":"2018/08/25 Ver.1.00 新規作成\n"}]}
-        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
