@@ -59,9 +59,13 @@
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
     <script src=
+    "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
+    defer="defer" nonce=
+    "tHXgevOi7jBW6qnzr37fdlFyLOn8LBrg17DPPhbA+Io="></script>
+    <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "QZa5zr5VkF8o1/OOyZmFzR5BzmWzeh/WeGnRlfGWgfE="></script>
+    "tHXgevOi7jBW6qnzr37fdlFyLOn8LBrg17DPPhbA+Io="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -74,7 +78,7 @@
     <script src=
     "https://asset.booth.pm/assets/ab357483f48c9496242e.js" defer=
     "defer" nonce=
-    "QZa5zr5VkF8o1/OOyZmFzR5BzmWzeh/WeGnRlfGWgfE="></script>
+    "tHXgevOi7jBW6qnzr37fdlFyLOn8LBrg17DPPhbA+Io="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"VRChat向け3Dモデル「レムリカ」","description":"VRChat向けオリジナル３Dモデル「レムリカ」\n制作者：YUU_0w0（白星Vトリエ）\n\n本モデルはUnityのHumanoid形式に対応したオリジナルモデルです。\n下に利用規約が記載されていますので、ご了承の上での購入をお願いします。\n\n本モデルを使った写真など、もしよければ　#白星Vトリエ　を付けてツイートすると嬉しいです！\n\n【HAKUSEI AVATARS TESTING 白星アバター試着ワールド】： https://vrchat.com/home/world/wrld_5366b1ab-e4e0-4047-adfd-641f8a39a836","url":"https://booth.pm/ja/items/1323709","offers":{"priceCurrency":"JPY","@type":"Offer","price":"5000"},"image":"https://booth.pximg.net/c/620x620/53a255d6-2b15-47c4-b89d-927a3c9564c4/i/1323709/ec08c9d1-5f3c-46d0-982f-ba4aa5261ad3_base_resized.jpg"}
     </script>
@@ -91,7 +95,7 @@
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "QZa5zr5VkF8o1/OOyZmFzR5BzmWzeh/WeGnRlfGWgfE="></script>
+    "tHXgevOi7jBW6qnzr37fdlFyLOn8LBrg17DPPhbA+Io="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -100,18 +104,19 @@
         <div class="recaptcha-tag" data-action=
         "booth/checkout_order" data-site-key=
         "6LfF1dcZAAAAAOHQX8v16MX5SktDwmQINVD_6mBF"></div>
-        <div class="market-item-detail u-bg-white"
-        data-ga-tracking-id="UA-133588048-2" data-product-brand=
-        "hakusei-avatar" data-product-category="208"
-        data-product-id="1323709" data-product-list="market_show"
-        data-product-price="5000"
+        <div class="market" data-ga-tracking-id="UA-133588048-2"
+        data-product-brand="hakusei-avatar" data-product-category=
+        "208" data-product-id="1323709" data-product-list=
+        "market_show" data-product-price="5000"
         data-shop-tracking-product-category="3D Characters"
         data-shop-tracking-product-id="1323709"
         data-shop-tracking-product-name="VRChat向け3Dモデル「レムリカ」"
         data-shop-tracking-product-price="5000" data-tracking=
-        "detail_item">
+        "detail_item" id="items">
+          <div class="market"></div>
           <nav>
-            <div class="breadcrumbs u-border-b u-border-100">
+            <div class=
+            "market breadcrumbs u-bg-white u-border-b u-border-100">
               <div class="container">
                 <div class="breadcrumb">
                   <a class="label" data-tracking="click"
@@ -133,40 +138,41 @@
           </nav>
           <article>
             <div class=
-            "market-item-detail-article u-d-flex u-flex-column u-align-items-center u-pb-600 u-bg-white">
-              <div class="container">
-                <div class="market-item-detail__exhibition-banner">
-                </div>
-              </div>
-              <div class="u-bg-white u-pt-600 u-px-700">
+            "market market-item-detail item-info-detail u-bg-white">
+              <div class=
+              "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class="u-d-flex">
-                    <div class="u-order-1 l-col-2of5 u-pl-600">
-                      <header>
-                        <div class="u-my-200 u-tpg-title3">
-                          <a class="nav" target="_blank"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" rel="noopener"
-                          href="https://hakusei-avatar.booth.pm/">
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
+                  <div class="u-pt-600 u-d-flex">
+                    <div class=
+                    "summary u-order-1 l-col-2of5 u-pl-600">
+                      <div class="mobile-section">
+                        <header>
+                          <div class="u-my-200 u-tpg-title3">
+                            <a class="nav" target="_blank"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" rel="noopener"
+                            href=
+                            "https://hakusei-avatar.booth.pm/">
+                            <div class=
+                            "u-d-flex u-align-items-center">
+                              <img alt="白星Vトリエ" class=
+                              "user-avatar at-item-summary" src=
+                              "https://booth.pximg.net/c/48x48/users/5268328/icon_image/1b3782dc-0954-4258-8584-3ff327c5417d_base_resized.jpg">
+                              <div class="u-text-ellipsis">
+                                白星Vトリエ
+                              </div>
+                            </div></a>
+                          </div>
+                          <h2 class=
+                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                            VRChat向け3Dモデル「レムリカ」
+                          </h2>
                           <div class=
-                          "u-d-flex u-align-items-center">
-                            <img alt="白星Vトリエ" class=
-                            "user-avatar at-item-summary" src=
-                            "https://booth.pximg.net/c/48x48/users/5268328/icon_image/1b3782dc-0954-4258-8584-3ff327c5417d_base_resized.jpg">
-                            <div class="u-text-ellipsis">
-                              白星Vトリエ
-                            </div>
-                          </div></a>
-                        </div>
-                        <h2 class=
-                        "u-text-wrap u-tpg-title1 u-mt-0 u-mb-400">
-                          VRChat向け3Dモデル「レムリカ」
-                        </h2>
-                        <div class=
-                        "u-text-assertive u-tpg-caption1"></div>
-                      </header>
-                      <section>
+                          "u-text-assertive u-tpg-caption1"></div>
+                        </header>
                         <div class="wish-list-link">
                           <a class="add-to-wish-list"
                           data-tracking="add_to_wishlist"
@@ -219,23 +225,32 @@
                             </li>
                           </ul>
                         </div>
-                      </section>
+                      </div>
                       <section>
                         <div class=
                         "share-btns u-d-flex u-flex-1 u-justify-content-start u-px-200 u-py-400">
-                          <a data-url=
-                          "https://booth.pm/ja/items/1323709"
-                          data-lang="ja" data-hashtags="booth_pm"
-                          data-text="VRChat向け3Dモデル「レムリカ」 | 白星Vトリエ"
-                          data-count="none" class=
-                          "twitter-share-button" href=
-                          "https://twitter.com/share">ツイート</a>
-                          <div class="u-ml-300">
+                          <div class="social-btn">
+                            <a data-url=
+                            "https://booth.pm/ja/items/1323709"
+                            data-lang="ja" data-hashtags="booth_pm"
+                            data-text=
+                            "VRChat向け3Dモデル「レムリカ」 | 白星Vトリエ"
+                            data-count="none" class=
+                            "twitter-share-button" href=
+                            "https://twitter.com/share">ツイート</a>
+                          </div>
+                          <div class="social-btn u-ml-300">
                             <div class="fb-like" data-action="like"
                             data-href=
                             "https://booth.pm/ja/items/1323709"
                             data-layout="button_count" data-share=
                             "false" data-show-faces="false"></div>
+                          </div>
+                          <div class="mobile social-btn u-mx-200">
+                            <div class="line-it-button" data-lang=
+                            "ja" data-type="share-a" data-url=
+                            "https://booth.pm/ja/items/1323709"
+                            style="display: none;"></div>
                           </div>
                         </div>
                       </section>
@@ -354,7 +369,7 @@
                         </div>
                       </div>
                       <div class=
-                      "primary-image-thumbnails u-d-sp-none">
+                      "primary-image-thumbnails u-d-sp-none image-list">
                         <a class="pointer">
                         <div class="slick-thumbnail-border">
                           <img src=
@@ -397,9 +412,9 @@
                           "https://booth.pximg.net/c/72x72_a2_g5/53a255d6-2b15-47c4-b89d-927a3c9564c4/i/1323709/5d3313a8-af39-4eec-87c7-766cb3735a96_base_resized.jpg">
                         </div></a>
                       </div>
-                      <section>
+                      <section class="main-info-column">
                         <div class=
-                        "js-market-item-detail-description">
+                        "js-market-item-detail-description description">
                           <p class="autolink u-text-wrap">
                             VRChat向けオリジナル３Dモデル「レムリカ」
                             制作者：YUU_0w0（白星Vトリエ）
@@ -411,163 +426,175 @@
                           </p>
                         </div>
                       </section>
-                      <section>
-                        <div class="u-text-wrap page_design" id=
-                        "modules"></div>
-                      </section>
+                      <section class="u-text-wrap page_design" id=
+                      "modules"></section>
                     </div>
                   </div>
+                  <section class="container">
+                    <div class="u-border-t u-py-500">
+                      <div class="mobile-section">
+                        <h3 class="u-m-0">
+                          タグ
+                        </h3>
+                      </div>
+                      <div class="search-guide-nav">
+                        <div class="search-guide-slider-wrapper">
+                          <div class="search-guide-slider">
+                            <div class=
+                            "search-guide-slider-container">
+                              <a class="search-guide-tablet"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3D%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3Dキャラクター
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3Dモデル
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%82%A2%E3%83%90%E3%82%BF%E3%83%BC">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  アバター
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/FBX">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  FBX
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRC%E6%83%B3%E5%AE%9A%E3%83%A2%E3%83%87%E3%83%AB">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRC想定モデル
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRC%E6%83%B3%E5%AE%9A%E3%83%A2%E3%83%87%E3%83%AB(%E3%82%A2%E3%83%90%E3%82%BF%E3%83%BC)">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRC想定モデル(アバター)
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/avatar">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  avatar
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat%203D%E3%83%A2%E3%83%87%E3%83%AB">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat 3Dモデル
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/vrchat%E3%82%A2%E3%83%90%E3%82%BF%E3%83%BC">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  vrchatアバター
+                                </div>
+                              </div></a>
+                            </div>
+                          </div><a class=
+                          "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
+                        </div>
+                      </div>
+                      <div class="mobile-section">
+                        <div class="u-my-500 u-mt-sp-300">
+                          <a class=
+                          "btn btn--default-outline u-tpg-caption1 u-text-wrap"
+                          data-tracking="click" data-product-list=
+                          "from market_show via tag_category_search to search_index"
+                          href=
+                          "https://booth.pm/ja/browse/3D%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC?q=3D%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC">
+                          3Dキャラクター x 3Dキャラクター で検索</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-                <section class="container">
-                  <div class="u-border-t u-py-500">
-                    <div class="mobile-section">
-                      <h3 class="u-m-0">
-                        タグ
-                      </h3>
-                    </div>
-                    <div class="search-guide-nav">
-                      <div class="search-guide-slider-wrapper">
-                        <div class="search-guide-slider">
-                          <div class=
-                          "search-guide-slider-container">
-                            <a class="search-guide-tablet"
-                            data-tracking="click"
-                            data-product-list="from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/3D%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3Dキャラクター
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3Dモデル
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%82%A2%E3%83%90%E3%82%BF%E3%83%BC">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                アバター
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href="https://booth.pm/ja/search/FBX">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                FBX
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRC%E6%83%B3%E5%AE%9A%E3%83%A2%E3%83%87%E3%83%AB">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRC想定モデル
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRC%E6%83%B3%E5%AE%9A%E3%83%A2%E3%83%87%E3%83%AB(%E3%82%A2%E3%83%90%E3%82%BF%E3%83%BC)">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRC想定モデル(アバター)
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/avatar">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                avatar
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat%203D%E3%83%A2%E3%83%87%E3%83%AB">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat 3Dモデル
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/vrchat%E3%82%A2%E3%83%90%E3%82%BF%E3%83%BC">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                vrchatアバター
-                              </div>
-                            </div></a>
-                          </div>
-                        </div><a class=
-                        "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
-                      </div>
-                    </div>
-                    <div class="mobile-section">
-                      <div class="u-my-500 u-mt-sp-300">
-                        <a class=
-                        "btn btn--default-outline u-tpg-caption1 u-text-wrap"
-                        data-tracking="click" data-product-list=
-                        "from market_show via tag_category_search to search_index"
-                        href=
-                        "https://booth.pm/ja/browse/3D%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC?q=3D%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC">
-                        3Dキャラクター x 3Dキャラクター で検索</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
               </div>
             </div>
           </article>
+          <aside>
+            <div class="market">
+              <div class="shoplist-with-items" v-if=
+              "shops &amp;&amp; shops.length &gt; 0"></div>
+            </div>
+          </aside>
+          <script id="json_modules" type="application/json">
+          {"modules":[{"type":"text","title":"✪ 概要","content":"● △ポリゴン数：43692\n● マテリアル数：5\n● メッシュ数：4\n● 素体あり\n● リップシンク：○対応\n● フルボディトラッキング：○対応\n● アイトラッキング：×非対応\n● 自動瞬き：○対応\n● Dynamic Bone：○設定済み\n● 使用シェーダー：Arktoon-Shaders（https://booth.pm/ja/items/1027997）"},{"type":"text","title":"✪ 商品内容","content":"● Unityパッケージ\n（設定済みのモデルデータ）\n\n● FBXファイル\n※メタセコイアで制作した物なので、他ソフトでの互換は保障出来ません、ご了承ください。\n※Blenderに入れると問題が出るです、現在は対応できませんので、予めご了承ください！\n（It has issues if import into Blender and I'm not able to solve it now, please bear in mind before purchase! No problem if you only use it within Unity）\n\n● PNGテクスチャ（12枚）\n\n● PSDファイル（5個）\n（レイヤー分けのテクスチャPSD）"},{"type":"text","title":"✪ 導入手順","content":"① VRChat現在対応しているバージョンのUnityで新規プロジェクトを作成（バージョンが重要です） 詳細: https://docs.vrchat.com/docs/setting-up-the-sdk\n②VRCSDK ( https://vrchat.com/home/download ) とDynamic Bone（任意）をAssetフォルダにインポート。\n➂ Unityパッケージ（Lemricca_vX.XX.unitypackage）をAssetフォルダにインポート。\n④ ダブルクリックでLemricca_vX.XX.unityを開けて、アバターが既に設定済みの状態になります、そしてメニューのVRChat SDKでアップロードしてください。\n\n※Dynamic Boneは別途購入が必要で、無くてもアバターの使用は可能ですが、その場合揺れものは揺れません。https://assetstore.unity.com/packages/tools/animation/dynamic-bone-16743\n\n※表情作成する時にはVRCAvatarEditor betaを使用することがおすすめです: https://gatosyocora.booth.pm/items/1258744"},{"type":"text","title":"✪ 利用規約","content":"本モデルを購入した時点で本利用規約に同意したものとします。\n利用規約の内容は変更する場合があり、最新のものが適用されます。\n\n\n★利用可能範囲\n・購入者のみが使える前提としてあらゆるサービスへのアップロード(VRChat、バーチャルキャスト、cluster等々)\n・モデルを改変しての利用\n・モデルの一部だけ他のモデルと組み合わせること\n・データを別のフォーマットに変換して使用すること（VRM、MMD PMX等々）\n・間接的な個人範囲内での商用利用は可能です（配信やゲームの一部として）（法人の方は別途お問い合わせください）\n\n★禁止事項\n・本モデル（改変の有無を問わず）の再配布、販売を禁止します。\n・購入者本人以外がアバターを使用できるようにする行為を禁止します。\n・政治、宗教活動、他者に対する誹謗中傷目的での使用を禁止します。\n\n★著作権\n本モデルの著作権は改変の有無を問わずモデル制作者の「YUU_0w0」（白星Vトリエ）に帰属します\n\n★免責事項\n本モデルデータを使用して発生したいかなる損害・損失・その他不利益等には、当方は一切の責任を負いません。\n\n\n-----------------------------------------------------------------------------\nその他不明点、不具合、ご要望などがありましたら以下にご連絡ください。\n（不具合報告はとてもありがたいので、ご遠慮なくしてください）\n\nTwitter: https://twitter.com/YUU_0w0w0\nEmail: yuu0w0w0@gmail.com"},{"type":"text","title":"✪ 更新履歴","content":"※バージョンアップはデータの上書きが行うので、改変済みのデータは必ずバックアップしてください。\n\n2021/5/18 v3.03\n・【修正】表情が消えた問題\n\n2020/11/17 v3.01\n・【追加】人の手の素体に貫通対策の肩やひじ、足を隠すシェープキー\n・【追加】PSDファイルに目のテクスチャType C\n・【修正】VRモードで左足が曲がる問題\n・【修正】強いPoint Lightに当てた状態で左手の明るさがおかしくなる問題\n・【修正】Bodyのリムライトの明るさ調整（下げた）\n\n2020/10/13 v3.00\n・【修正】Avatars3.0対応\n・【追加】BodyのテクスチャPSDの中にパンツを隠す為のブラックホールレイヤー\n・【修正】Armatureボーンの位置を全て0に移動\n・【修正】白星アバター共通用のアニメーション置き場所としてAssets/Avatar/Hakusei_Animationsというフォルダを追加（中のアニメーションファイルは共通用なので個別のアバターに違う表情を付けたい場合は各アバターフォルダ内のAnimations_Controllersを使ってください）\n\n2020/2/6 v1.40\n・【追加】前髪がシェープキーで調整出来るようになりました\n・【追加】前髪ボーンを増加\n・【追加】顔のシェープキーを増加\n・【追加】縞パンテクスチャ（PSD内）\n・【修正】改変しやすいように顔と体のテクスチャを統合しました\n・【修正】手のひら・指の形/スムージングを改善\n・【修正】前髪の一部だけが発光みたいな現象\n・【修正】PSDテクスチャをGIMPとフォトショップに対応\n・【修正】顔の法線\n・【修正】ツインテールのウェイト\n\n2019/12/17 v1.31\n【追加】\n・岩の腕単体のモデル（ボーン付き、サブアーム用）\n・岩ごとにパーツ分けしたモデル（ボーンなし、オブジェクト用）\n\n2019/12/11 v1.30\n・【追加】ニーハイのテクスチャと食い込みシェープキー\n・【修正】顔の輪郭を調整\n・【修正】素体の改善\n・【修正】身体のテクスチャを改善\n・【修正】改変しやすい為に各パーツをもっと分けた\n・【修正】ボーンの構造がちょっと変わった（Blender対応）\n・【修正】顎の下のバグ（多分v1.20からの問題）\n\n2019/11/13 v1.21\n・【追加】Blenderに対応したFbxとその説明画像を別に追加、本体のFbxは変わってません（ベータ版）\n\n2019/10/26 v1.20\n・【修正】フルトラの不具合\n・【修正】フルトラの修正に影響されて、スカートの足に追従する仕組みが壊れたので、一旦一般的な足が貫通する仕組みにしました。\n・【修正】リアルタイム陰影はワールドのライティングによる見た目が不安定になるため、デフォルトはオフにしました。付けたい方はMaterialの中のShadowの項目内のStrength \u0026 Maskの数値を1にしてください、ほかの項目は設定済みです。\n\n2019/10/9 v1.10\n・【追加】表情とリップシンクが干渉しない仕様\n・【追加】輪郭線とリアルタイム陰影\n・【追加】両手人型バージョン\n・【追加】目のemission\n・【追加】PSD内に白い肌色テクスチャ\n・【修正】全体的にボーンがちょっとずれてること\n・【修正】脇辺りのウェイト\n・【修正】小さい不具合\n・【修正】テクスチャPSD\n\n2019/9/26 v1.03\n・【追加】へそ出し改変テクスチャ\n・【追加】内股待機モーション\n・【追加】テクスチャPSD内の髪色のバリエーション\n・【修正】Victory,Fingerpoint,Rocknroll時の親指が曲がりすぎる問題\n\n2019/9/22 v1.02\n・【修正】Blueprint IDを消した\n\n2019/9/22 v1.01\n・【修正】シェーダーの不具合\n\n2019/9/15 v1.00"}]}
+          </script>
         </div>
-        <aside>
-          <div class="shoplist-with-items" v-if=
-          "shops &amp;&amp; shops.length &gt; 0"></div>
-        </aside>
-        <script id="json_modules" type="application/json">
-        {"modules":[{"type":"text","title":"✪ 概要","content":"● △ポリゴン数：43692\n● マテリアル数：5\n● メッシュ数：4\n● 素体あり\n● リップシンク：○対応\n● フルボディトラッキング：○対応\n● アイトラッキング：×非対応\n● 自動瞬き：○対応\n● Dynamic Bone：○設定済み\n● 使用シェーダー：Arktoon-Shaders（https://booth.pm/ja/items/1027997）"},{"type":"text","title":"✪ 商品内容","content":"● Unityパッケージ\n（設定済みのモデルデータ）\n\n● FBXファイル\n※メタセコイアで制作した物なので、他ソフトでの互換は保障出来ません、ご了承ください。\n※Blenderに入れると問題が出るです、現在は対応できませんので、予めご了承ください！\n（It has issues if import into Blender and I'm not able to solve it now, please bear in mind before purchase! No problem if you only use it within Unity）\n\n● PNGテクスチャ（12枚）\n\n● PSDファイル（5個）\n（レイヤー分けのテクスチャPSD）"},{"type":"text","title":"✪ 導入手順","content":"① VRChat現在対応しているバージョンのUnityで新規プロジェクトを作成（バージョンが重要です） 詳細: https://docs.vrchat.com/docs/setting-up-the-sdk\n②VRCSDK ( https://vrchat.com/home/download ) とDynamic Bone（任意）をAssetフォルダにインポート。\n➂ Unityパッケージ（Lemricca_vX.XX.unitypackage）をAssetフォルダにインポート。\n④ ダブルクリックでLemricca_vX.XX.unityを開けて、アバターが既に設定済みの状態になります、そしてメニューのVRChat SDKでアップロードしてください。\n\n※Dynamic Boneは別途購入が必要で、無くてもアバターの使用は可能ですが、その場合揺れものは揺れません。https://assetstore.unity.com/packages/tools/animation/dynamic-bone-16743\n\n※表情作成する時にはVRCAvatarEditor betaを使用することがおすすめです: https://gatosyocora.booth.pm/items/1258744"},{"type":"text","title":"✪ 利用規約","content":"本モデルを購入した時点で本利用規約に同意したものとします。\n利用規約の内容は変更する場合があり、最新のものが適用されます。\n\n\n★利用可能範囲\n・購入者のみが使える前提としてあらゆるサービスへのアップロード(VRChat、バーチャルキャスト、cluster等々)\n・モデルを改変しての利用\n・モデルの一部だけ他のモデルと組み合わせること\n・データを別のフォーマットに変換して使用すること（VRM、MMD PMX等々）\n・間接的な個人範囲内での商用利用は可能です（配信やゲームの一部として）（法人の方は別途お問い合わせください）\n\n★禁止事項\n・本モデル（改変の有無を問わず）の再配布、販売を禁止します。\n・購入者本人以外がアバターを使用できるようにする行為を禁止します。\n・政治、宗教活動、他者に対する誹謗中傷目的での使用を禁止します。\n\n★著作権\n本モデルの著作権は改変の有無を問わずモデル制作者の「YUU_0w0」（白星Vトリエ）に帰属します\n\n★免責事項\n本モデルデータを使用して発生したいかなる損害・損失・その他不利益等には、当方は一切の責任を負いません。\n\n\n-----------------------------------------------------------------------------\nその他不明点、不具合、ご要望などがありましたら以下にご連絡ください。\n（不具合報告はとてもありがたいので、ご遠慮なくしてください）\n\nTwitter: https://twitter.com/YUU_0w0w0\nEmail: yuu0w0w0@gmail.com"},{"type":"text","title":"✪ 更新履歴","content":"※バージョンアップはデータの上書きが行うので、改変済みのデータは必ずバックアップしてください。\n\n2021/5/18 v3.03\n・【修正】表情が消えた問題\n\n2020/11/17 v3.01\n・【追加】人の手の素体に貫通対策の肩やひじ、足を隠すシェープキー\n・【追加】PSDファイルに目のテクスチャType C\n・【修正】VRモードで左足が曲がる問題\n・【修正】強いPoint Lightに当てた状態で左手の明るさがおかしくなる問題\n・【修正】Bodyのリムライトの明るさ調整（下げた）\n\n2020/10/13 v3.00\n・【修正】Avatars3.0対応\n・【追加】BodyのテクスチャPSDの中にパンツを隠す為のブラックホールレイヤー\n・【修正】Armatureボーンの位置を全て0に移動\n・【修正】白星アバター共通用のアニメーション置き場所としてAssets/Avatar/Hakusei_Animationsというフォルダを追加（中のアニメーションファイルは共通用なので個別のアバターに違う表情を付けたい場合は各アバターフォルダ内のAnimations_Controllersを使ってください）\n\n2020/2/6 v1.40\n・【追加】前髪がシェープキーで調整出来るようになりました\n・【追加】前髪ボーンを増加\n・【追加】顔のシェープキーを増加\n・【追加】縞パンテクスチャ（PSD内）\n・【修正】改変しやすいように顔と体のテクスチャを統合しました\n・【修正】手のひら・指の形/スムージングを改善\n・【修正】前髪の一部だけが発光みたいな現象\n・【修正】PSDテクスチャをGIMPとフォトショップに対応\n・【修正】顔の法線\n・【修正】ツインテールのウェイト\n\n2019/12/17 v1.31\n【追加】\n・岩の腕単体のモデル（ボーン付き、サブアーム用）\n・岩ごとにパーツ分けしたモデル（ボーンなし、オブジェクト用）\n\n2019/12/11 v1.30\n・【追加】ニーハイのテクスチャと食い込みシェープキー\n・【修正】顔の輪郭を調整\n・【修正】素体の改善\n・【修正】身体のテクスチャを改善\n・【修正】改変しやすい為に各パーツをもっと分けた\n・【修正】ボーンの構造がちょっと変わった（Blender対応）\n・【修正】顎の下のバグ（多分v1.20からの問題）\n\n2019/11/13 v1.21\n・【追加】Blenderに対応したFbxとその説明画像を別に追加、本体のFbxは変わってません（ベータ版）\n\n2019/10/26 v1.20\n・【修正】フルトラの不具合\n・【修正】フルトラの修正に影響されて、スカートの足に追従する仕組みが壊れたので、一旦一般的な足が貫通する仕組みにしました。\n・【修正】リアルタイム陰影はワールドのライティングによる見た目が不安定になるため、デフォルトはオフにしました。付けたい方はMaterialの中のShadowの項目内のStrength \u0026 Maskの数値を1にしてください、ほかの項目は設定済みです。\n\n2019/10/9 v1.10\n・【追加】表情とリップシンクが干渉しない仕様\n・【追加】輪郭線とリアルタイム陰影\n・【追加】両手人型バージョン\n・【追加】目のemission\n・【追加】PSD内に白い肌色テクスチャ\n・【修正】全体的にボーンがちょっとずれてること\n・【修正】脇辺りのウェイト\n・【修正】小さい不具合\n・【修正】テクスチャPSD\n\n2019/9/26 v1.03\n・【追加】へそ出し改変テクスチャ\n・【追加】内股待機モーション\n・【追加】テクスチャPSD内の髪色のバリエーション\n・【修正】Victory,Fingerpoint,Rocknroll時の親指が曲がりすぎる問題\n\n2019/9/22 v1.02\n・【修正】Blueprint IDを消した\n\n2019/9/22 v1.01\n・【修正】シェーダーの不具合\n\n2019/9/15 v1.00"}]}
-        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
