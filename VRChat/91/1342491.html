@@ -59,9 +59,13 @@
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
     <script src=
+    "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
+    defer="defer" nonce=
+    "9Opm/8lO0j1RWPkRveG8VMhWtTBlHNmHgH3m7ODA97Q="></script>
+    <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "qNtyBAMkBZMfI/9YnenUW7u4bLwE0WJdyj9pLiLTB2s="></script>
+    "9Opm/8lO0j1RWPkRveG8VMhWtTBlHNmHgH3m7ODA97Q="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -99,7 +103,7 @@
     <script src=
     "https://asset.booth.pm/assets/ab357483f48c9496242e.js" defer=
     "defer" nonce=
-    "qNtyBAMkBZMfI/9YnenUW7u4bLwE0WJdyj9pLiLTB2s="></script>
+    "9Opm/8lO0j1RWPkRveG8VMhWtTBlHNmHgH3m7ODA97Q="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"こいのぼり Ver1.1","description":"こいのぼりの3Dモデルです。\n\nワールドやアバターの飾りとして使うことを想定しています。\nダイナミックボーンまたは同梱のアニメーションにて揺らせるほか、シェイプキーによりポールの長さを変更することが可能です。\nUnity及びVRChatでの使用を想定していますが、fbxファイルおよびテクスチャファイルを同梱していますので、他の3Dモデルやゲームソフト等に組み込んで使用することも可能です。","url":"https://booth.pm/ja/items/1342491","offers":{"priceCurrency":"JPY","@type":"Offer","price":"300"},"image":"https://booth.pximg.net/c/620x620/64255878-1532-4d6c-abdb-a9cf35ee4a39/i/1342491/288e988e-f457-41c3-a57f-a81e7d8efe18_base_resized.jpg"}
     </script>
@@ -113,7 +117,7 @@
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "qNtyBAMkBZMfI/9YnenUW7u4bLwE0WJdyj9pLiLTB2s="></script>
+    "9Opm/8lO0j1RWPkRveG8VMhWtTBlHNmHgH3m7ODA97Q="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -122,13 +126,15 @@
         <div class="recaptcha-tag" data-action=
         "booth/checkout_order" data-site-key=
         "6LfF1dcZAAAAAOHQX8v16MX5SktDwmQINVD_6mBF"></div>
-        <div class="market-item-detail u-bg-white"
-        data-ga-tracking-id="" data-product-brand="oyasumisan"
-        data-product-category="127" data-product-id="1342491"
-        data-product-list="market_show" data-product-price="300"
-        data-tracking="detail_item">
+        <div class="market" data-ga-tracking-id=""
+        data-product-brand="oyasumisan" data-product-category="127"
+        data-product-id="1342491" data-product-list="market_show"
+        data-product-price="300" data-tracking="detail_item" id=
+        "items">
+          <div class="market"></div>
           <nav>
-            <div class="breadcrumbs u-border-b u-border-100">
+            <div class=
+            "market breadcrumbs u-bg-white u-border-b u-border-100">
               <div class="container">
                 <div class="breadcrumb">
                   <a class="label" data-tracking="click"
@@ -150,40 +156,40 @@
           </nav>
           <article>
             <div class=
-            "market-item-detail-article u-d-flex u-flex-column u-align-items-center u-pb-600 u-bg-white">
-              <div class="container">
-                <div class="market-item-detail__exhibition-banner">
-                </div>
-              </div>
-              <div class="u-bg-white u-pt-600 u-px-700">
+            "market market-item-detail item-info-detail u-bg-white">
+              <div class=
+              "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class="u-d-flex">
-                    <div class="u-order-1 l-col-2of5 u-pl-600">
-                      <header>
-                        <div class="u-my-200 u-tpg-title3">
-                          <a class="nav" target="_blank"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" rel="noopener"
-                          href="https://oyasumisan.booth.pm/">
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
+                  <div class="u-pt-600 u-d-flex">
+                    <div class=
+                    "summary u-order-1 l-col-2of5 u-pl-600">
+                      <div class="mobile-section">
+                        <header>
+                          <div class="u-my-200 u-tpg-title3">
+                            <a class="nav" target="_blank"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" rel="noopener"
+                            href="https://oyasumisan.booth.pm/">
+                            <div class=
+                            "u-d-flex u-align-items-center">
+                              <img alt="お休みさんの作ったもの" class=
+                              "user-avatar at-item-summary" src=
+                              "https://booth.pximg.net/c/48x48/users/3598247/icon_image/51527b13-a01a-4cb2-857d-abb4285536bc_base_resized.jpg">
+                              <div class="u-text-ellipsis">
+                                お休みさんの作ったもの
+                              </div>
+                            </div></a>
+                          </div>
+                          <h2 class=
+                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                            こいのぼり Ver1.1
+                          </h2>
                           <div class=
-                          "u-d-flex u-align-items-center">
-                            <img alt="お休みさんの作ったもの" class=
-                            "user-avatar at-item-summary" src=
-                            "https://booth.pximg.net/c/48x48/users/3598247/icon_image/51527b13-a01a-4cb2-857d-abb4285536bc_base_resized.jpg">
-                            <div class="u-text-ellipsis">
-                              お休みさんの作ったもの
-                            </div>
-                          </div></a>
-                        </div>
-                        <h2 class=
-                        "u-text-wrap u-tpg-title1 u-mt-0 u-mb-400">
-                          こいのぼり Ver1.1
-                        </h2>
-                        <div class=
-                        "u-text-assertive u-tpg-caption1"></div>
-                      </header>
-                      <section>
+                          "u-text-assertive u-tpg-caption1"></div>
+                        </header>
                         <div class="wish-list-link">
                           <a class="add-to-wish-list"
                           data-tracking="add_to_wishlist"
@@ -236,23 +242,31 @@
                             </li>
                           </ul>
                         </div>
-                      </section>
+                      </div>
                       <section>
                         <div class=
                         "share-btns u-d-flex u-flex-1 u-justify-content-start u-px-200 u-py-400">
-                          <a data-url=
-                          "https://booth.pm/ja/items/1342491"
-                          data-lang="ja" data-hashtags="booth_pm"
-                          data-text="こいのぼり Ver1.1 | お休みさんの作ったもの"
-                          data-count="none" class=
-                          "twitter-share-button" href=
-                          "https://twitter.com/share">ツイート</a>
-                          <div class="u-ml-300">
+                          <div class="social-btn">
+                            <a data-url=
+                            "https://booth.pm/ja/items/1342491"
+                            data-lang="ja" data-hashtags="booth_pm"
+                            data-text="こいのぼり Ver1.1 | お休みさんの作ったもの"
+                            data-count="none" class=
+                            "twitter-share-button" href=
+                            "https://twitter.com/share">ツイート</a>
+                          </div>
+                          <div class="social-btn u-ml-300">
                             <div class="fb-like" data-action="like"
                             data-href=
                             "https://booth.pm/ja/items/1342491"
                             data-layout="button_count" data-share=
                             "false" data-show-faces="false"></div>
+                          </div>
+                          <div class="mobile social-btn u-mx-200">
+                            <div class="line-it-button" data-lang=
+                            "ja" data-type="share-a" data-url=
+                            "https://booth.pm/ja/items/1342491"
+                            style="display: none;"></div>
                           </div>
                         </div>
                       </section>
@@ -325,7 +339,7 @@
                         </div>
                       </div>
                       <div class=
-                      "primary-image-thumbnails u-d-sp-none">
+                      "primary-image-thumbnails u-d-sp-none image-list">
                         <a class="pointer">
                         <div class=
                         "embedded-content-thumbnail slick-thumbnail-border">
@@ -350,9 +364,9 @@
                           "https://booth.pximg.net/c/72x72_a2_g5/64255878-1532-4d6c-abdb-a9cf35ee4a39/i/1342491/cae93c72-62ac-4464-813b-c4c3810ce02b_base_resized.jpg">
                         </div></a>
                       </div>
-                      <section>
+                      <section class="main-info-column">
                         <div class=
-                        "js-market-item-detail-description">
+                        "js-market-item-detail-description description">
                           <p class="autolink u-text-wrap">
                             こいのぼりの3Dモデルです。
                             ワールドやアバターの飾りとして使うことを想定しています。
@@ -361,152 +375,163 @@
                           </p>
                         </div>
                       </section>
-                      <section>
-                        <div class="u-text-wrap page_design" id=
-                        "modules"></div>
-                      </section>
+                      <section class="u-text-wrap page_design" id=
+                      "modules"></section>
                     </div>
                   </div>
+                  <section class="container">
+                    <div class="u-border-t u-py-500">
+                      <div class="mobile-section">
+                        <h3 class="u-m-0">
+                          タグ
+                        </h3>
+                      </div>
+                      <div class="search-guide-nav">
+                        <div class="search-guide-slider-wrapper">
+                          <div class="search-guide-slider">
+                            <div class=
+                            "search-guide-slider-container">
+                              <a class="search-guide-tablet"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E5%92%8C%E9%A2%A8">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  和風
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E9%AF%89%E3%81%AE%E3%81%BC%E3%82%8A">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  鯉のぼり
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/Unity">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  Unity
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3Dモデル
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%81%93%E3%81%84%E3%81%AE%E3%81%BC%E3%82%8A">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  こいのぼり
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%81%93%E3%81%A9%E3%82%82%E3%81%AE%E6%97%A5">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  こどもの日
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/FBX">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  FBX
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E7%AB%AF%E5%8D%88%E3%81%AE%E7%AF%80%E5%8F%A5">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  端午の節句
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat
+                                </div>
+                              </div></a>
+                            </div>
+                          </div><a class=
+                          "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
+                        </div>
+                      </div>
+                      <div class="mobile-section">
+                        <div class="u-my-500 u-mt-sp-300">
+                          <a class=
+                          "btn btn--default-outline u-tpg-caption1 u-text-wrap"
+                          data-tracking="click" data-product-list=
+                          "from market_show via tag_category_search to search_index"
+                          href=
+                          "https://booth.pm/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=%E5%92%8C%E9%A2%A8">
+                          和風 x 3Dモデル（その他） で検索</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-                <section class="container">
-                  <div class="u-border-t u-py-500">
-                    <div class="mobile-section">
-                      <h3 class="u-m-0">
-                        タグ
-                      </h3>
-                    </div>
-                    <div class="search-guide-nav">
-                      <div class="search-guide-slider-wrapper">
-                        <div class="search-guide-slider">
-                          <div class=
-                          "search-guide-slider-container">
-                            <a class="search-guide-tablet"
-                            data-tracking="click"
-                            data-product-list="from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E5%92%8C%E9%A2%A8">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                和風
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E9%AF%89%E3%81%AE%E3%81%BC%E3%82%8A">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                鯉のぼり
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/Unity">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                Unity
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/3D%E3%83%A2%E3%83%87%E3%83%AB">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3Dモデル
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%81%93%E3%81%84%E3%81%AE%E3%81%BC%E3%82%8A">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                こいのぼり
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%81%93%E3%81%A9%E3%82%82%E3%81%AE%E6%97%A5">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                こどもの日
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href="https://booth.pm/ja/search/FBX">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                FBX
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E7%AB%AF%E5%8D%88%E3%81%AE%E7%AF%80%E5%8F%A5">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                端午の節句
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat
-                              </div>
-                            </div></a>
-                          </div>
-                        </div><a class=
-                        "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
-                      </div>
-                    </div>
-                    <div class="mobile-section">
-                      <div class="u-my-500 u-mt-sp-300">
-                        <a class=
-                        "btn btn--default-outline u-tpg-caption1 u-text-wrap"
-                        data-tracking="click" data-product-list=
-                        "from market_show via tag_category_search to search_index"
-                        href=
-                        "https://booth.pm/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=%E5%92%8C%E9%A2%A8">
-                        和風 x 3Dモデル（その他） で検索</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
               </div>
             </div>
           </article>
+          <aside>
+            <div class="market">
+              <div class="shoplist-with-items" v-if=
+              "shops &amp;&amp; shops.length &gt; 0"></div>
+            </div>
+          </aside>
+          <script id="json_modules" type="application/json">
+          {"modules":[{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/5G6X-TAdW9U\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/TlTdM_1JWt0\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"内容","content":"◆ポリゴン数：2939ポリゴン\n◆ボーン数：43個\n◆マテリアル：1\n◆テクスチャ:2048x2048 ノーマルマップ、メタリックマップ、陰影ベイク済みマップあり\n◆推奨シェーダ:Standard(同梱の両面描画対応版)、その他両面描画に対応したシェーダ\n\n◆シェイプキーにて、ポールの長さを変更することができます。\n\n◆Standard(同梱の両面描画対応版)シェーダーにてセットアップしたPrefabが同梱されています。\n\n◆UnityPackage内のフォルダ構成\n■Items\n┗■Oyasumisan_Koinobori\n　┣■Animations\tアニメーション\n　┣■Materials\t\tマテリアル\n　┣■Models\t\tFBXファイル\n　┣■Shaders\t\tシェーダ\n　┗■Textures\t\tテクスチャ"},{"type":"text","title":"インストール及び使い方","content":"1)まずUnityプロジェクトを開き、Oyasumisan_Koinobori.unitypackageをインポートしてください。\n\n2)こいのぼりを手に持つなどして揺らしたい場合は、ダイナミックボーン(Dynamic Bone)をインポートしてください。\n\n3)次に、以下のいずれかのprefabファイルを、ヒエラルキーウインドウにドラッグ\u0026ドロップしてください。\n　Oyasumisan_Koinobori.prefab　　ダイナミックボーンにて揺れる仕様\n　Oyasumisan_Koinobori_FixedAnimation.prefab\t同梱のアニメーションにて揺れる仕様(ダイナミックボーン不使用)\n\n4)ポールを伸ばす場合、ヒエラルキーウインドウにてOyasumisan_Koinoboriを選択し、Skinned Mesh RenderrerのBlend ShapesにてPoleの値を変更してください。0で標準(1メートル)、100で最長(3メートル)です。\n\n5)必要に応じて質感をカスタマイズする場合は、Texturesフォルダ内の画像を適宜使用してみてください。\n\nなお、アニメーションファイルは以下の2つがありますが、通常はOyasumisan_Koinobori.animを使用します。\n　Oyasumisan_Koinobori_base.anim\t吹き流し及び3つのこいのぼりについて、根元のボーンのみを揺らしたもの(8秒)\n　Oyasumisan_Koinobori.anim\tダイナミックボーンをセットアップ済みのモデルにて、上記アニメーションを再生した結果を記録したもの(47.55秒)"},{"type":"text","title":"ライセンスおよび規約","content":"本データの著作権は作者であるお休みさんに帰属します。\n\n可能なこと：\n◆VRChatその他で使用するアバターやワールドなど、3Dモデルの一部に組み込んでの個人的な利用\n◆モデル、テクスチャ等の改変\n◆このモデルが映る状態での収益化動画の撮影、公開\n◆VRChatにおけるアバターペデスタル、パブリックアバターへの使用\n◆ゲームソフト等の一部として、このパッケージのモデルデータを編集不可能な形態での再配布や販売\n\n禁止すること：\n◆このパッケージのモデルデータを編集可能な状態での再配布\nただし、製作者まで連絡いただければ個別に可否を判断します。\n◆改変の有無にかかわらず作者を名乗る行為\n◆政治、宗教活動、他者に対する誹謗中傷目的での使用\n◆その他、製作者お休みさんが不適切な使用と判断した際には利用の停止を求める場合があります。\n\nその他不明点がありましたら私まで問い合わせをお願いします。\nCopyright (c) Oyasumisan(お休みさん)\n\nまた、同梱しているシェーダー「StandardCullOffs.shader」はUnity 5.6.3f1に含まれるStandard Shaderの改変物であり、ライセンスはMITライセンスとなります。\nShadersフォルダ内のLICENSE.TXTを参照してください。\n\"StandardCullOffs.shader\" is released under the MIT License, see LICENSE.txt.\nCopyright (c) 2016 Unity Technologies."},{"type":"text","title":"更新履歴","content":"＜更新履歴＞\nVer 1.1\n固定アニメーション及びプレハブを追加\n\nVer 1.0\n初版\n\nお休みさん(twitter:@0yasum13)"}]}
+          </script>
         </div>
-        <aside>
-          <div class="shoplist-with-items" v-if=
-          "shops &amp;&amp; shops.length &gt; 0"></div>
-        </aside>
-        <script id="json_modules" type="application/json">
-        {"modules":[{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/5G6X-TAdW9U\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/TlTdM_1JWt0\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"内容","content":"◆ポリゴン数：2939ポリゴン\n◆ボーン数：43個\n◆マテリアル：1\n◆テクスチャ:2048x2048 ノーマルマップ、メタリックマップ、陰影ベイク済みマップあり\n◆推奨シェーダ:Standard(同梱の両面描画対応版)、その他両面描画に対応したシェーダ\n\n◆シェイプキーにて、ポールの長さを変更することができます。\n\n◆Standard(同梱の両面描画対応版)シェーダーにてセットアップしたPrefabが同梱されています。\n\n◆UnityPackage内のフォルダ構成\n■Items\n┗■Oyasumisan_Koinobori\n　┣■Animations\tアニメーション\n　┣■Materials\t\tマテリアル\n　┣■Models\t\tFBXファイル\n　┣■Shaders\t\tシェーダ\n　┗■Textures\t\tテクスチャ"},{"type":"text","title":"インストール及び使い方","content":"1)まずUnityプロジェクトを開き、Oyasumisan_Koinobori.unitypackageをインポートしてください。\n\n2)こいのぼりを手に持つなどして揺らしたい場合は、ダイナミックボーン(Dynamic Bone)をインポートしてください。\n\n3)次に、以下のいずれかのprefabファイルを、ヒエラルキーウインドウにドラッグ\u0026ドロップしてください。\n　Oyasumisan_Koinobori.prefab　　ダイナミックボーンにて揺れる仕様\n　Oyasumisan_Koinobori_FixedAnimation.prefab\t同梱のアニメーションにて揺れる仕様(ダイナミックボーン不使用)\n\n4)ポールを伸ばす場合、ヒエラルキーウインドウにてOyasumisan_Koinoboriを選択し、Skinned Mesh RenderrerのBlend ShapesにてPoleの値を変更してください。0で標準(1メートル)、100で最長(3メートル)です。\n\n5)必要に応じて質感をカスタマイズする場合は、Texturesフォルダ内の画像を適宜使用してみてください。\n\nなお、アニメーションファイルは以下の2つがありますが、通常はOyasumisan_Koinobori.animを使用します。\n　Oyasumisan_Koinobori_base.anim\t吹き流し及び3つのこいのぼりについて、根元のボーンのみを揺らしたもの(8秒)\n　Oyasumisan_Koinobori.anim\tダイナミックボーンをセットアップ済みのモデルにて、上記アニメーションを再生した結果を記録したもの(47.55秒)"},{"type":"text","title":"ライセンスおよび規約","content":"本データの著作権は作者であるお休みさんに帰属します。\n\n可能なこと：\n◆VRChatその他で使用するアバターやワールドなど、3Dモデルの一部に組み込んでの個人的な利用\n◆モデル、テクスチャ等の改変\n◆このモデルが映る状態での収益化動画の撮影、公開\n◆VRChatにおけるアバターペデスタル、パブリックアバターへの使用\n◆ゲームソフト等の一部として、このパッケージのモデルデータを編集不可能な形態での再配布や販売\n\n禁止すること：\n◆このパッケージのモデルデータを編集可能な状態での再配布\nただし、製作者まで連絡いただければ個別に可否を判断します。\n◆改変の有無にかかわらず作者を名乗る行為\n◆政治、宗教活動、他者に対する誹謗中傷目的での使用\n◆その他、製作者お休みさんが不適切な使用と判断した際には利用の停止を求める場合があります。\n\nその他不明点がありましたら私まで問い合わせをお願いします。\nCopyright (c) Oyasumisan(お休みさん)\n\nまた、同梱しているシェーダー「StandardCullOffs.shader」はUnity 5.6.3f1に含まれるStandard Shaderの改変物であり、ライセンスはMITライセンスとなります。\nShadersフォルダ内のLICENSE.TXTを参照してください。\n\"StandardCullOffs.shader\" is released under the MIT License, see LICENSE.txt.\nCopyright (c) 2016 Unity Technologies."},{"type":"text","title":"更新履歴","content":"＜更新履歴＞\nVer 1.1\n固定アニメーション及びプレハブを追加\n\nVer 1.0\n初版\n\nお休みさん(twitter:@0yasum13)"}]}
-        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
