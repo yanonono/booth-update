@@ -59,9 +59,13 @@
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
     <script src=
+    "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
+    defer="defer" nonce=
+    "T6mSosUW48HJ1EqXVl4kxquf+BysBhOepq58AaOBsYo="></script>
+    <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "DVoR2hfzbqbWWp2MUjsFkQ1iYxhgcA27EpX+MKdjjHk="></script>
+    "T6mSosUW48HJ1EqXVl4kxquf+BysBhOepq58AaOBsYo="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -74,7 +78,7 @@
     <script src=
     "https://asset.booth.pm/assets/ab357483f48c9496242e.js" defer=
     "defer" nonce=
-    "DVoR2hfzbqbWWp2MUjsFkQ1iYxhgcA27EpX+MKdjjHk="></script>
+    "T6mSosUW48HJ1EqXVl4kxquf+BysBhOepq58AaOBsYo="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"Skybox回転シェーダー","description":"Skyboxを回転させるShaderです。\n星空や太陽を回転させるなど、現実世界のような空をSkyboxで再現することに適しています。\n画像の通り、X軸回転、Y軸回転、Z軸回転ができます。\nX\u0026Y軸回転やX\u0026Y\u0026Z軸回転などの組み合わせで回転させることもできます。\n回転速度や初期状態(VRChatにおけるワールド読み込み直後)の回転角度や回転方向の指定もできます。\n\np.s. ギルティがBOOTHで公開しているShaderはすべて無料のため、BOOSTしてくれる人があまりいません。そのため、今後の個人開発のために開発支援版の購入やBOOSTをしていただけると幸いです。開発支援版の購入やBOOSTをしたことをギルティのTwitterにお知らせいただいた方のお名前は、この商品紹介文に載させていただきます。","url":"https://booth.pm/ja/items/1309650","offers":{"priceCurrency":"JPY","@type":"Offer","price":"0"},"image":"https://booth.pximg.net/c/620x620/4b1b28d8-4063-43f5-b63f-17e05ceab52f/i/1309650/c060f950-506d-4cc6-8d58-cfc01cd7d188_base_resized.jpg"}
     </script>
@@ -91,7 +95,7 @@
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "DVoR2hfzbqbWWp2MUjsFkQ1iYxhgcA27EpX+MKdjjHk="></script>
+    "T6mSosUW48HJ1EqXVl4kxquf+BysBhOepq58AaOBsYo="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -100,13 +104,15 @@
         <div class="recaptcha-tag" data-action=
         "booth/checkout_order" data-site-key=
         "6LfF1dcZAAAAAOHQX8v16MX5SktDwmQINVD_6mBF"></div>
-        <div class="market-item-detail u-bg-white"
-        data-ga-tracking-id="" data-product-brand="guilty-vrchat"
-        data-product-category="134" data-product-id="1309650"
-        data-product-list="market_show" data-product-price="0"
-        data-tracking="detail_item">
+        <div class="market" data-ga-tracking-id=""
+        data-product-brand="guilty-vrchat" data-product-category=
+        "134" data-product-id="1309650" data-product-list=
+        "market_show" data-product-price="0" data-tracking=
+        "detail_item" id="items">
+          <div class="market"></div>
           <nav>
-            <div class="breadcrumbs u-border-b u-border-100">
+            <div class=
+            "market breadcrumbs u-bg-white u-border-b u-border-100">
               <div class="container">
                 <div class="breadcrumb">
                   <a class="label" data-tracking="click"
@@ -129,40 +135,40 @@
           </nav>
           <article>
             <div class=
-            "market-item-detail-article u-d-flex u-flex-column u-align-items-center u-pb-600 u-bg-white">
-              <div class="container">
-                <div class="market-item-detail__exhibition-banner">
-                </div>
-              </div>
-              <div class="u-bg-white u-pt-600 u-px-700">
+            "market market-item-detail item-info-detail u-bg-white">
+              <div class=
+              "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class="u-d-flex">
-                    <div class="u-order-1 l-col-2of5 u-pl-600">
-                      <header>
-                        <div class="u-my-200 u-tpg-title3">
-                          <a class="nav" target="_blank"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" rel="noopener"
-                          href="https://guilty-vrchat.booth.pm/">
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
+                  <div class="u-pt-600 u-d-flex">
+                    <div class=
+                    "summary u-order-1 l-col-2of5 u-pl-600">
+                      <div class="mobile-section">
+                        <header>
+                          <div class="u-my-200 u-tpg-title3">
+                            <a class="nav" target="_blank"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" rel="noopener"
+                            href="https://guilty-vrchat.booth.pm/">
+                            <div class=
+                            "u-d-flex u-align-items-center">
+                              <img alt="おとや" class=
+                              "user-avatar at-item-summary" src=
+                              "https://booth.pximg.net/c/48x48/users/4867283/icon_image/b60ef411-3de9-4597-80f9-e8eed63d8f39_base_resized.jpg">
+                              <div class="u-text-ellipsis">
+                                おとや
+                              </div>
+                            </div></a>
+                          </div>
+                          <h2 class=
+                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                            Skybox回転シェーダー
+                          </h2>
                           <div class=
-                          "u-d-flex u-align-items-center">
-                            <img alt="おとや" class=
-                            "user-avatar at-item-summary" src=
-                            "https://booth.pximg.net/c/48x48/users/4867283/icon_image/b60ef411-3de9-4597-80f9-e8eed63d8f39_base_resized.jpg">
-                            <div class="u-text-ellipsis">
-                              おとや
-                            </div>
-                          </div></a>
-                        </div>
-                        <h2 class=
-                        "u-text-wrap u-tpg-title1 u-mt-0 u-mb-400">
-                          Skybox回転シェーダー
-                        </h2>
-                        <div class=
-                        "u-text-assertive u-tpg-caption1"></div>
-                      </header>
-                      <section>
+                          "u-text-assertive u-tpg-caption1"></div>
+                        </header>
                         <div class="wish-list-link">
                           <a class="add-to-wish-list"
                           data-tracking="add_to_wishlist"
@@ -232,23 +238,31 @@
                             </li>
                           </ul>
                         </div>
-                      </section>
+                      </div>
                       <section>
                         <div class=
                         "share-btns u-d-flex u-flex-1 u-justify-content-start u-px-200 u-py-400">
-                          <a data-url=
-                          "https://booth.pm/ja/items/1309650"
-                          data-lang="ja" data-hashtags="booth_pm"
-                          data-text="Skybox回転シェーダー | おとや"
-                          data-count="none" class=
-                          "twitter-share-button" href=
-                          "https://twitter.com/share">ツイート</a>
-                          <div class="u-ml-300">
+                          <div class="social-btn">
+                            <a data-url=
+                            "https://booth.pm/ja/items/1309650"
+                            data-lang="ja" data-hashtags="booth_pm"
+                            data-text="Skybox回転シェーダー | おとや"
+                            data-count="none" class=
+                            "twitter-share-button" href=
+                            "https://twitter.com/share">ツイート</a>
+                          </div>
+                          <div class="social-btn u-ml-300">
                             <div class="fb-like" data-action="like"
                             data-href=
                             "https://booth.pm/ja/items/1309650"
                             data-layout="button_count" data-share=
                             "false" data-show-faces="false"></div>
+                          </div>
+                          <div class="mobile social-btn u-mx-200">
+                            <div class="line-it-button" data-lang=
+                            "ja" data-type="share-a" data-url=
+                            "https://booth.pm/ja/items/1309650"
+                            style="display: none;"></div>
                           </div>
                         </div>
                       </section>
@@ -279,7 +293,7 @@
                         </div>
                       </div>
                       <div class=
-                      "primary-image-thumbnails u-d-sp-none">
+                      "primary-image-thumbnails u-d-sp-none image-list">
                         <a class="pointer">
                         <div class="slick-thumbnail-border">
                           <img src=
@@ -290,9 +304,9 @@
                           "https://booth.pximg.net/c/72x72_a2_g5/4b1b28d8-4063-43f5-b63f-17e05ceab52f/i/1309650/4261b973-b281-4a58-8702-85947b589a10_base_resized.jpg">
                         </div></a>
                       </div>
-                      <section>
+                      <section class="main-info-column">
                         <div class=
-                        "js-market-item-detail-description">
+                        "js-market-item-detail-description description">
                           <p class="autolink u-text-wrap">
                             Skyboxを回転させるShaderです。
                             星空や太陽を回転させるなど、現実世界のような空をSkyboxで再現することに適しています。
@@ -304,120 +318,127 @@
                           </p>
                         </div>
                       </section>
-                      <section>
-                        <div class="u-text-wrap page_design" id=
-                        "modules"></div>
-                      </section>
+                      <section class="u-text-wrap page_design" id=
+                      "modules"></section>
                     </div>
                   </div>
+                  <section class="container">
+                    <div class="u-border-t u-py-500">
+                      <div class="mobile-section">
+                        <h3 class="u-m-0">
+                          タグ
+                        </h3>
+                      </div>
+                      <div class="search-guide-nav">
+                        <div class="search-guide-slider-wrapper">
+                          <div class="search-guide-slider">
+                            <div class=
+                            "search-guide-slider-container">
+                              <a class="search-guide-tablet"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/Shader">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  Shader
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%82%B7%E3%82%A7%E3%83%BC%E3%83%80%E3%83%BC">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  シェーダー
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat%E5%8F%AF">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat可
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat%E6%83%B3%E5%AE%9A">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat想定
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/Skybox">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  Skybox
+                                </div>
+                              </div></a>
+                            </div>
+                          </div><a class=
+                          "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
+                        </div>
+                      </div>
+                      <div class="mobile-section">
+                        <div class="u-my-500 u-mt-sp-300">
+                          <a class=
+                          "btn btn--default-outline u-tpg-caption1 u-text-wrap"
+                          data-tracking="click" data-product-list=
+                          "from market_show via tag_category_search to search_index"
+                          href=
+                          "https://booth.pm/ja/browse/%E7%B4%A0%E6%9D%90%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=VRChat">
+                          VRChat x 素材（その他） で検索</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-                <section class="container">
-                  <div class="u-border-t u-py-500">
-                    <div class="mobile-section">
-                      <h3 class="u-m-0">
-                        タグ
-                      </h3>
-                    </div>
-                    <div class="search-guide-nav">
-                      <div class="search-guide-slider-wrapper">
-                        <div class="search-guide-slider">
-                          <div class=
-                          "search-guide-slider-container">
-                            <a class="search-guide-tablet"
-                            data-tracking="click"
-                            data-product-list="from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/Shader">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                Shader
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%82%B7%E3%82%A7%E3%83%BC%E3%83%80%E3%83%BC">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                シェーダー
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat%E5%8F%AF">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat可
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat%E6%83%B3%E5%AE%9A">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat想定
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/Skybox">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                Skybox
-                              </div>
-                            </div></a>
-                          </div>
-                        </div><a class=
-                        "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
-                      </div>
-                    </div>
-                    <div class="mobile-section">
-                      <div class="u-my-500 u-mt-sp-300">
-                        <a class=
-                        "btn btn--default-outline u-tpg-caption1 u-text-wrap"
-                        data-tracking="click" data-product-list=
-                        "from market_show via tag_category_search to search_index"
-                        href=
-                        "https://booth.pm/ja/browse/%E7%B4%A0%E6%9D%90%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=VRChat">
-                        VRChat x 素材（その他） で検索</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
               </div>
             </div>
           </article>
+          <aside>
+            <div class="market">
+              <div class="shoplist-with-items" v-if=
+              "shops &amp;&amp; shops.length &gt; 0"></div>
+            </div>
+          </aside>
+          <script id="json_modules" type="application/json">
+          {"modules":[{"type":"text","title":"内容一覧","content":"・UnityPackageファイル(RotateSkybox_v2.00.unitypackage)\n・PNGファイル(Thumbnail.png, Thumbnail2.png)\n・TXTファイル(Readme_JP.txt, Readme_EN.txt, LICENSE.txt)"},{"type":"text","title":"ライセンス","content":"MIT"},{"type":"text","title":"使い方","content":"1.Skyboxに使用するマテリアルのShaderとして選択する\n2.RotationやSpeedなどのパラメーターを調整する\n  Rotation : Skyboxのデフォルトの回転角度\n  Speed : Skyboxの回転速度"},{"type":"text","title":"動作想定環境","content":"Unity 2019.4.29f1 (64-bit)"},{"type":"text","title":"更新履歴","content":"2021/08/09 ver2.00 インスペクターの追加、リファクタリング、サムネイルの追加と更新、Unityのバージョンアップ\n2020/01/05 ver1.10 微調整\n2020/01/05 ver1.09 微調整\n2020/01/04 ver1.08 回転方向反転機能を廃止、回転スピードを-100から100に設定\n2019/07/27 ver1.07 ローカル座標軸回転に変更、アセットをUnityPackage化\n2019/06/07 ver1.06 RotateCubedSkybox.shaderを追加\n2019/05/24 ver1.05 バグの修正\n2019/05/22 ver1.04 Skyboxが回転しないバグの修正、説明文と[使い方]の更新\n2019/05/01 ver1.03 微調整及び最適化\n2019/04/30 ver1.02 微調整及び最適化\n2019/04/22 ver1.01 Unity上で表示されるShader名の変更\n2019/04/xx ver1.00"},{"type":"text","title":"連絡先","content":"GitHub : https://github.com/GuiltyWorks\nTwitter : @GuiltyWorks_VRC\nEMail : guiltyworks@protonmail.com\n\nCopyright (c) 2021 Guilty"}]}
+          </script>
         </div>
-        <aside>
-          <div class="shoplist-with-items" v-if=
-          "shops &amp;&amp; shops.length &gt; 0"></div>
-        </aside>
-        <script id="json_modules" type="application/json">
-        {"modules":[{"type":"text","title":"内容一覧","content":"・UnityPackageファイル(RotateSkybox_v2.00.unitypackage)\n・PNGファイル(Thumbnail.png, Thumbnail2.png)\n・TXTファイル(Readme_JP.txt, Readme_EN.txt, LICENSE.txt)"},{"type":"text","title":"ライセンス","content":"MIT"},{"type":"text","title":"使い方","content":"1.Skyboxに使用するマテリアルのShaderとして選択する\n2.RotationやSpeedなどのパラメーターを調整する\n  Rotation : Skyboxのデフォルトの回転角度\n  Speed : Skyboxの回転速度"},{"type":"text","title":"動作想定環境","content":"Unity 2019.4.29f1 (64-bit)"},{"type":"text","title":"更新履歴","content":"2021/08/09 ver2.00 インスペクターの追加、リファクタリング、サムネイルの追加と更新、Unityのバージョンアップ\n2020/01/05 ver1.10 微調整\n2020/01/05 ver1.09 微調整\n2020/01/04 ver1.08 回転方向反転機能を廃止、回転スピードを-100から100に設定\n2019/07/27 ver1.07 ローカル座標軸回転に変更、アセットをUnityPackage化\n2019/06/07 ver1.06 RotateCubedSkybox.shaderを追加\n2019/05/24 ver1.05 バグの修正\n2019/05/22 ver1.04 Skyboxが回転しないバグの修正、説明文と[使い方]の更新\n2019/05/01 ver1.03 微調整及び最適化\n2019/04/30 ver1.02 微調整及び最適化\n2019/04/22 ver1.01 Unity上で表示されるShader名の変更\n2019/04/xx ver1.00"},{"type":"text","title":"連絡先","content":"GitHub : https://github.com/GuiltyWorks\nTwitter : @GuiltyWorks_VRC\nEMail : guiltyworks@protonmail.com\n\nCopyright (c) 2021 Guilty"}]}
-        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
