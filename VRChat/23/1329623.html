@@ -59,9 +59,13 @@
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
     <script src=
+    "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
+    defer="defer" nonce=
+    "JeiyQ8wKXB+kai8T8kseyC13pSNh72Z9hpYVxB/LYPc="></script>
+    <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "+Q76F4uUQMNuyx1R6N5nQl3ycGfOWKGaF6sWgqHV6so="></script>
+    "JeiyQ8wKXB+kai8T8kseyC13pSNh72Z9hpYVxB/LYPc="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><follow-btn :ga-params="gaParams" :shop="shop"></follow-btn></div></div></div></div></div>
     </script>
@@ -74,7 +78,7 @@
     <script src=
     "https://asset.booth.pm/assets/ab357483f48c9496242e.js" defer=
     "defer" nonce=
-    "+Q76F4uUQMNuyx1R6N5nQl3ycGfOWKGaF6sWgqHV6so="></script>
+    "JeiyQ8wKXB+kai8T8kseyC13pSNh72Z9hpYVxB/LYPc="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"VKラインストーン","description":"キラキラ輝くのが特徴の宝石（ラインストーン）の3Dモデルパッケージ（unitypackage）です。\n主にVRChatでの利用を想定しています。アバターやワールドの装飾に使って頂ければと思います。\n\n実物を展示しているVRChatワールド「VK Rhinestone demo」を作りましたので、見た目の確認をしたい場合は行ってみてください。\nhttps://www.vrchat.net/home/launch?worldId=wrld_221738a6-59f2-4de5-80f2-668f55731050\n","url":"https://booth.pm/ja/items/1329623","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"1000","highPrice":"1000"},"image":"https://booth.pximg.net/c/620x620/aadf057d-75a6-4934-a7d2-701141567595/i/1329623/97bbe8d7-5434-416b-b18f-4a2e7f137101_base_resized.jpg"}
     </script>
@@ -91,7 +95,7 @@
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "+Q76F4uUQMNuyx1R6N5nQl3ycGfOWKGaF6sWgqHV6so="></script>
+    "JeiyQ8wKXB+kai8T8kseyC13pSNh72Z9hpYVxB/LYPc="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -100,18 +104,19 @@
         <div class="recaptcha-tag" data-action=
         "booth/checkout_order" data-site-key=
         "6LfF1dcZAAAAAOHQX8v16MX5SktDwmQINVD_6mBF"></div>
-        <div class="market-item-detail u-bg-white"
-        data-ga-tracking-id="UA-28612372-14" data-product-brand=
-        "voxelkei" data-product-category="134" data-product-id=
-        "1329623" data-product-list="market_show"
+        <div class="market" data-ga-tracking-id="UA-28612372-14"
+        data-product-brand="voxelkei" data-product-category="134"
+        data-product-id="1329623" data-product-list="market_show"
         data-product-price="1000"
         data-shop-tracking-product-category="Materials (Other)"
         data-shop-tracking-product-id="1329623"
         data-shop-tracking-product-name="VKラインストーン"
         data-shop-tracking-product-price="1000" data-tracking=
-        "detail_item">
+        "detail_item" id="items">
+          <div class="market"></div>
           <nav>
-            <div class="breadcrumbs u-border-b u-border-100">
+            <div class=
+            "market breadcrumbs u-bg-white u-border-b u-border-100">
               <div class="container">
                 <div class="breadcrumb">
                   <a class="label" data-tracking="click"
@@ -134,40 +139,40 @@
           </nav>
           <article>
             <div class=
-            "market-item-detail-article u-d-flex u-flex-column u-align-items-center u-pb-600 u-bg-white">
-              <div class="container">
-                <div class="market-item-detail__exhibition-banner">
-                </div>
-              </div>
-              <div class="u-bg-white u-pt-600 u-px-700">
+            "market market-item-detail item-info-detail u-bg-white">
+              <div class=
+              "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class="u-d-flex">
-                    <div class="u-order-1 l-col-2of5 u-pl-600">
-                      <header>
-                        <div class="u-my-200 u-tpg-title3">
-                          <a class="nav" target="_blank"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" rel="noopener"
-                          href="https://voxelkei.booth.pm/">
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
+                  <div class="u-pt-600 u-d-flex">
+                    <div class=
+                    "summary u-order-1 l-col-2of5 u-pl-600">
+                      <div class="mobile-section">
+                        <header>
+                          <div class="u-my-200 u-tpg-title3">
+                            <a class="nav" target="_blank"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" rel="noopener"
+                            href="https://voxelkei.booth.pm/">
+                            <div class=
+                            "u-d-flex u-align-items-center">
+                              <img alt="ボクスケショップ" class=
+                              "user-avatar at-item-summary" src=
+                              "https://booth.pximg.net/c/48x48/users/4803791/icon_image/d339dac5-1328-4176-bf2c-49148338a978_base_resized.jpg">
+                              <div class="u-text-ellipsis">
+                                ボクスケショップ
+                              </div>
+                            </div></a>
+                          </div>
+                          <h2 class=
+                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                            VKラインストーン
+                          </h2>
                           <div class=
-                          "u-d-flex u-align-items-center">
-                            <img alt="ボクスケショップ" class=
-                            "user-avatar at-item-summary" src=
-                            "https://booth.pximg.net/c/48x48/users/4803791/icon_image/d339dac5-1328-4176-bf2c-49148338a978_base_resized.jpg">
-                            <div class="u-text-ellipsis">
-                              ボクスケショップ
-                            </div>
-                          </div></a>
-                        </div>
-                        <h2 class=
-                        "u-text-wrap u-tpg-title1 u-mt-0 u-mb-400">
-                          VKラインストーン
-                        </h2>
-                        <div class=
-                        "u-text-assertive u-tpg-caption1"></div>
-                      </header>
-                      <section>
+                          "u-text-assertive u-tpg-caption1"></div>
+                        </header>
                         <div class="wish-list-link">
                           <a class="add-to-wish-list"
                           data-tracking="add_to_wishlist"
@@ -323,23 +328,31 @@
                             </li>
                           </ul>
                         </div>
-                      </section>
+                      </div>
                       <section>
                         <div class=
                         "share-btns u-d-flex u-flex-1 u-justify-content-start u-px-200 u-py-400">
-                          <a data-url=
-                          "https://booth.pm/ja/items/1329623"
-                          data-lang="ja" data-hashtags="booth_pm"
-                          data-text="VKラインストーン | ボクスケショップ"
-                          data-count="none" class=
-                          "twitter-share-button" href=
-                          "https://twitter.com/share">ツイート</a>
-                          <div class="u-ml-300">
+                          <div class="social-btn">
+                            <a data-url=
+                            "https://booth.pm/ja/items/1329623"
+                            data-lang="ja" data-hashtags="booth_pm"
+                            data-text="VKラインストーン | ボクスケショップ"
+                            data-count="none" class=
+                            "twitter-share-button" href=
+                            "https://twitter.com/share">ツイート</a>
+                          </div>
+                          <div class="social-btn u-ml-300">
                             <div class="fb-like" data-action="like"
                             data-href=
                             "https://booth.pm/ja/items/1329623"
                             data-layout="button_count" data-share=
                             "false" data-show-faces="false"></div>
+                          </div>
+                          <div class="mobile social-btn u-mx-200">
+                            <div class="line-it-button" data-lang=
+                            "ja" data-type="share-a" data-url=
+                            "https://booth.pm/ja/items/1329623"
+                            style="display: none;"></div>
                           </div>
                         </div>
                       </section>
@@ -380,7 +393,7 @@
                         </div>
                       </div>
                       <div class=
-                      "primary-image-thumbnails u-d-sp-none">
+                      "primary-image-thumbnails u-d-sp-none image-list">
                         <a class="pointer">
                         <div class=
                         "embedded-content-thumbnail slick-thumbnail-border">
@@ -394,9 +407,9 @@
                           "https://booth.pximg.net/c/72x72_a2_g5/aadf057d-75a6-4934-a7d2-701141567595/i/1329623/fcfebbd7-e577-4b60-ad1b-29587af6ece3_base_resized.jpg">
                         </div></a>
                       </div>
-                      <section>
+                      <section class="main-info-column">
                         <div class=
-                        "js-market-item-detail-description">
+                        "js-market-item-detail-description description">
                           <p class="autolink u-text-wrap">
                             キラキラ輝くのが特徴の宝石（ラインストーン）の3Dモデルパッケージ（unitypackage）です。
                             主にVRChatでの利用を想定しています。アバターやワールドの装飾に使って頂ければと思います。
@@ -406,108 +419,114 @@
                           </p>
                         </div>
                       </section>
-                      <section>
-                        <div class="u-text-wrap page_design" id=
-                        "modules"></div>
-                      </section>
+                      <section class="u-text-wrap page_design" id=
+                      "modules"></section>
                     </div>
                   </div>
+                  <section class="container">
+                    <div class="u-border-t u-py-500">
+                      <div class="mobile-section">
+                        <h3 class="u-m-0">
+                          タグ
+                        </h3>
+                      </div>
+                      <div class="search-guide-nav">
+                        <div class="search-guide-slider-wrapper">
+                          <div class="search-guide-slider">
+                            <div class=
+                            "search-guide-slider-container">
+                              <a class="search-guide-tablet"
+                              data-tracking="click"
+                              data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href="https://booth.pm/ja/search/3D">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  3D
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E5%AE%9D%E7%9F%B3">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  宝石
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%83%A9%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%B3">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  ラインストーン
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/VRChat">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  VRChat
+                                </div>
+                              </div></a><a class=
+                              "search-guide-tablet" data-tracking=
+                              "click" data-product-list=
+                              "from market_show via tag_list to search_index"
+                              href=
+                              "https://booth.pm/ja/search/%E3%82%B7%E3%82%A7%E3%83%BC%E3%83%80%E3%83%BC">
+                              <div class=
+                              "search-guide-tablet-label">
+                                <div class=
+                                "search-guide-tablet-label-inner">
+                                  シェーダー
+                                </div>
+                              </div></a>
+                            </div>
+                          </div><a class=
+                          "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
+                        </div>
+                      </div>
+                      <div class="mobile-section">
+                        <div class="u-my-500 u-mt-sp-300">
+                          <a class=
+                          "btn btn--default-outline u-tpg-caption1 u-text-wrap"
+                          data-tracking="click" data-product-list=
+                          "from market_show via tag_category_search to search_index"
+                          href=
+                          "https://booth.pm/ja/browse/%E7%B4%A0%E6%9D%90%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=3D">
+                          3D x 素材（その他） で検索</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
-                <section class="container">
-                  <div class="u-border-t u-py-500">
-                    <div class="mobile-section">
-                      <h3 class="u-m-0">
-                        タグ
-                      </h3>
-                    </div>
-                    <div class="search-guide-nav">
-                      <div class="search-guide-slider-wrapper">
-                        <div class="search-guide-slider">
-                          <div class=
-                          "search-guide-slider-container">
-                            <a class="search-guide-tablet"
-                            data-tracking="click"
-                            data-product-list="from market_show via tag_list to search_index"
-                            href="https://booth.pm/ja/search/3D">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                3D
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E5%AE%9D%E7%9F%B3">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                宝石
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%83%A9%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%B3">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                ラインストーン
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/VRChat">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                VRChat
-                              </div>
-                            </div></a><a class=
-                            "search-guide-tablet" data-tracking=
-                            "click" data-product-list=
-                            "from market_show via tag_list to search_index"
-                            href=
-                            "https://booth.pm/ja/search/%E3%82%B7%E3%82%A7%E3%83%BC%E3%83%80%E3%83%BC">
-                            <div class="search-guide-tablet-label">
-                              <div class=
-                              "search-guide-tablet-label-inner">
-                                シェーダー
-                              </div>
-                            </div></a>
-                          </div>
-                        </div><a class=
-                        "search-guide-slider-nav right"></a><a class="search-guide-slider-nav left"></a>
-                      </div>
-                    </div>
-                    <div class="mobile-section">
-                      <div class="u-my-500 u-mt-sp-300">
-                        <a class=
-                        "btn btn--default-outline u-tpg-caption1 u-text-wrap"
-                        data-tracking="click" data-product-list=
-                        "from market_show via tag_category_search to search_index"
-                        href=
-                        "https://booth.pm/ja/browse/%E7%B4%A0%E6%9D%90%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89?q=3D">
-                        3D x 素材（その他） で検索</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
               </div>
             </div>
           </article>
+          <aside>
+            <div class="market">
+              <div class="shoplist-with-items" v-if=
+              "shops &amp;&amp; shops.length &gt; 0"></div>
+            </div>
+          </aside>
+          <script id="json_modules" type="application/json">
+          {"modules":[{"type":"text","title":"内容物・ファイルの説明","content":"unitypackageの中に下記のデータが入っています。\n\n・Rhinestone-round.FBX（メッシュデータ、248ポリゴン）\n・Ring01.FBX（指輪のメッシュデータ、384ポリゴン）\n\n・VKRhinestone.shader（宝石用シェーダー）\n\n・RefractFake_HDR.exr（疑似屈折用マップ）\n\n・VKRhinestone.mat（クリスタルカラー用マテリアル）\n・VKRhinestone.prefab（クリスタルカラー適用済みプレハブ）\n\n・Ring01.prefab（サンプルの指輪プレハブ）\n\n・その他、アクアマリンやルビーなどのカラー設定済みマテリアルおよびプレハブ（10色分）\n\n"},{"type":"text","title":"使い方","content":"unitypackageインポート後、プレハブを任意のシーンに追加してください。\n\n仕組み上、ストーンを大きなサイズにすると正しく見えませんのでご注意ください。\n"},{"type":"text","title":"シェーダーの説明","content":"・2パスで描画しています。\n・Reflection Probeの影響を受けます。\n・GPUインスタンシング対応。\n\n・パラメータ\n「RefractFakeMap」あらかじめ用意した疑似屈折マップ\n「RefractBright」屈折の煌めきの強さ\n「RefractColor」ベースとなるストーンのカラー\n「ReflectColor」反射成分のカラー\n「Smoothness」ストーン表面の滑らかさ（StandardShaderと同様）\n「Metallic」反射成分のカラーとReflectionProbeから受けるカラーのバランス（StandardShaderと同様）\n\n・シーンによってストーンが眩しすぎるもしくは暗すぎるような場合は、「RefractBright」パラメータを調整してください。\n\n・好きな色に改変する場合は、「RefractColor」「ReflectColor」パラメータを調整してください。\n\n"},{"type":"text","title":"利用規約","content":"対象コンテンツの利用権利の販売となります。コンテンツを改変および任意メディアで利用することができます。\n\nただし下記を禁止します。\n\n他人が利用できるようにし、著作者の販売を阻害すること。\nコンテンツ自体に政治的または宗教的もしくは反社会的なメッセージを持たせること。\n法人利用をすること。\n\nその他\n\nコンテンツあるいは発生した不利益に対して著作者はなんら責任を負いません。\n利用権利は他人に譲渡することができません。\n\nこのライセンスにおける解説情報は下記になります。\nhttps://gitlab.com/towelfunnelvrc/towel-license/wikis/\n（タオルライセンス 販売用 version0.9）\n\n\n＜例外＞　VRChat内でプレゼントとして誰かに贈る（結婚指輪、婚約指輪、その他）目的での購入の場合、贈る相手にライセンス購入してというのも野暮なので、例外的に第三者への譲渡を認めたいと思います。\nその場合、使用する予定の人数分（結婚指輪として2人で使うなら2人分とか）をBoostしてくれると嬉しいなっ\n＜2021.6.8追記＞\n第三者へのプレゼント用のダウンロードバリエーションを作りましたので、そちらを購入＆ご利用ください。\nまた第三者へのプレゼントは3人までとさせて頂きます。\n＜2021.6.8追記ここまで＞"},{"type":"text","title":"2次配布について","content":"再配布・販売は改変の有無を問わず禁止しますが、VKラインストーンを組み込んだアクセサリー等を配布・販売したいというクリエイターの方はご連絡ください。\nhttps://twitter.com/VoxelKei\n\n将来的にいろんな方の作品を展示したアクセサリー専門店のようなワールドが作れたらいいななんて思っています。\n\n\n「VKラインストーン」およびパッケージに含まれているメッシュデータ、シェーダー、テクスチャの著作権はVoxelKeiに帰属します。\nCopyright © 2019 VoxelKei All rights reserved.\n"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/uaXpmiQ1SeM\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"}]}
+          </script>
         </div>
-        <aside>
-          <div class="shoplist-with-items" v-if=
-          "shops &amp;&amp; shops.length &gt; 0"></div>
-        </aside>
-        <script id="json_modules" type="application/json">
-        {"modules":[{"type":"text","title":"内容物・ファイルの説明","content":"unitypackageの中に下記のデータが入っています。\n\n・Rhinestone-round.FBX（メッシュデータ、248ポリゴン）\n・Ring01.FBX（指輪のメッシュデータ、384ポリゴン）\n\n・VKRhinestone.shader（宝石用シェーダー）\n\n・RefractFake_HDR.exr（疑似屈折用マップ）\n\n・VKRhinestone.mat（クリスタルカラー用マテリアル）\n・VKRhinestone.prefab（クリスタルカラー適用済みプレハブ）\n\n・Ring01.prefab（サンプルの指輪プレハブ）\n\n・その他、アクアマリンやルビーなどのカラー設定済みマテリアルおよびプレハブ（10色分）\n\n"},{"type":"text","title":"使い方","content":"unitypackageインポート後、プレハブを任意のシーンに追加してください。\n\n仕組み上、ストーンを大きなサイズにすると正しく見えませんのでご注意ください。\n"},{"type":"text","title":"シェーダーの説明","content":"・2パスで描画しています。\n・Reflection Probeの影響を受けます。\n・GPUインスタンシング対応。\n\n・パラメータ\n「RefractFakeMap」あらかじめ用意した疑似屈折マップ\n「RefractBright」屈折の煌めきの強さ\n「RefractColor」ベースとなるストーンのカラー\n「ReflectColor」反射成分のカラー\n「Smoothness」ストーン表面の滑らかさ（StandardShaderと同様）\n「Metallic」反射成分のカラーとReflectionProbeから受けるカラーのバランス（StandardShaderと同様）\n\n・シーンによってストーンが眩しすぎるもしくは暗すぎるような場合は、「RefractBright」パラメータを調整してください。\n\n・好きな色に改変する場合は、「RefractColor」「ReflectColor」パラメータを調整してください。\n\n"},{"type":"text","title":"利用規約","content":"対象コンテンツの利用権利の販売となります。コンテンツを改変および任意メディアで利用することができます。\n\nただし下記を禁止します。\n\n他人が利用できるようにし、著作者の販売を阻害すること。\nコンテンツ自体に政治的または宗教的もしくは反社会的なメッセージを持たせること。\n法人利用をすること。\n\nその他\n\nコンテンツあるいは発生した不利益に対して著作者はなんら責任を負いません。\n利用権利は他人に譲渡することができません。\n\nこのライセンスにおける解説情報は下記になります。\nhttps://gitlab.com/towelfunnelvrc/towel-license/wikis/\n（タオルライセンス 販売用 version0.9）\n\n\n＜例外＞　VRChat内でプレゼントとして誰かに贈る（結婚指輪、婚約指輪、その他）目的での購入の場合、贈る相手にライセンス購入してというのも野暮なので、例外的に第三者への譲渡を認めたいと思います。\nその場合、使用する予定の人数分（結婚指輪として2人で使うなら2人分とか）をBoostしてくれると嬉しいなっ\n＜2021.6.8追記＞\n第三者へのプレゼント用のダウンロードバリエーションを作りましたので、そちらを購入＆ご利用ください。\nまた第三者へのプレゼントは3人までとさせて頂きます。\n＜2021.6.8追記ここまで＞"},{"type":"text","title":"2次配布について","content":"再配布・販売は改変の有無を問わず禁止しますが、VKラインストーンを組み込んだアクセサリー等を配布・販売したいというクリエイターの方はご連絡ください。\nhttps://twitter.com/VoxelKei\n\n将来的にいろんな方の作品を展示したアクセサリー専門店のようなワールドが作れたらいいななんて思っています。\n\n\n「VKラインストーン」およびパッケージに含まれているメッシュデータ、シェーダー、テクスチャの著作権はVoxelKeiに帰属します。\nCopyright © 2019 VoxelKei All rights reserved.\n"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/uaXpmiQ1SeM\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"}]}
-        </script>
       </main>
     </div>
     <div class="booth-overlay"></div>
