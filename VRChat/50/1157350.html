@@ -62,11 +62,11 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "yJrwmbfRid1zhbGuVXj+SCQgW94B7vxtN9qppDgkewE="></script>
+    "MRaKXV7EO7PFGMoukBIRNXdrSinmzdBRcf61B9s8f58="></script>
     <script src=
     "https://asset.booth.pm/assets/642489fdaa712cea9e91.js" defer=
     "defer" nonce=
-    "yJrwmbfRid1zhbGuVXj+SCQgW94B7vxtN9qppDgkewE="></script>
+    "MRaKXV7EO7PFGMoukBIRNXdrSinmzdBRcf61B9s8f58="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -76,30 +76,52 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
     "https://asset.booth.pm/assets/67a3396b75a71fbcd2cd.js" defer=
     "defer" nonce=
-    "yJrwmbfRid1zhbGuVXj+SCQgW94B7vxtN9qppDgkewE="></script>
+    "MRaKXV7EO7PFGMoukBIRNXdrSinmzdBRcf61B9s8f58="></script>
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"Product","name":"【個人商用ライセンス版】ドロレス・レイズ","description":"【重要】通常版、UPG版販売終了のお知らせ\nhttps://fantia.jp/posts/1015024\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n利用規約にご同意いただける方のみご購入ください。\nまた、日本語以外でのご質問にはお答えしかねます。ご了承ください。\n\n日本国外のサイトで販売されているものは非正規品です。\nマルウェアが含まれる可能性があるので購入しないでください。\nThose sold at sites outside of Japan are non-genuine.\nDo not purchase as it may contain malware.\n在日本以外的地方销售的产品是非正品的。\n不要购买，因为它可能包含恶意软件。\n일본 외 사이트에서 판매/배포되는 것은 정품이 아닙니다. 랜섬웨어 혹은 멀웨어 등의 악성 코드가 포함되어 있을 수 있으므로 구입하지 마세요.","url":"https://booth.pm/ja/items/1157350","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"3000","highPrice":"3500"},"image":"https://booth.pximg.net/c/620x620/5260429d-7507-47d3-9a6c-73fe7e29ce1a/i/1157350/a0802cb7-3826-423c-a0c5-f60ac0c7bb49_base_resized.jpg"}
+    {"@context":"https://schema.org","@type":"Product","name":"【個人商用ライセンス版】ドロレス・レイズ","description":"【重要】通常版、UPG版販売終了のお知らせ\nhttps://fantia.jp/posts/1015024\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n利用規約にご同意いただける方のみご購入ください。\nまた、日本語以外でのご質問にはお答えしかねます。ご了承ください。\n\n日本国外のサイトで販売されているものは非正規品です。\nマルウェアが含まれる可能性があるので購入しないでください。\nThose sold at sites outside of Japan are non-genuine.\nDo not purchase as it may contain malware.\n在日本以外的地方销售的产品是非正品的。\n不要购买，因为它可能包含恶意软件。\n일본 외 사이트에서 판매/배포되는 것은 정품이 아닙니다. 랜섬웨어 혹은 멀웨어 등의 악성 코드가 포함되어 있을 수 있으므로 구입하지 마세요.","url":"https://booth.pm/ja/items/1157350","offers":{"priceCurrency":"JPY","@type":"Offer","price":"3500"},"image":"https://booth.pximg.net/c/620x620/5260429d-7507-47d3-9a6c-73fe7e29ce1a/i/1157350/a0802cb7-3826-423c-a0c5-f60ac0c7bb49_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href=
     "https://asset.booth.pm/assets/apple-touch-icon-precomposed-f7358b936e9404f3e499e1bf3c9f0967366212144a16374ebc7558b391eeafe1.png"
-    rel="apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src=
     "https://asset.booth.pm/assets/968e98f61f1661ce0966.js" defer=
     "defer" nonce=
-    "yJrwmbfRid1zhbGuVXj+SCQgW94B7vxtN9qppDgkewE="></script>
+    "MRaKXV7EO7PFGMoukBIRNXdrSinmzdBRcf61B9s8f58="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -111,7 +133,7 @@
         <div class="market" data-ga-tracking-id=""
         data-product-brand="kuroyuzu" data-product-category="208"
         data-product-id="1157350" data-product-list="market_show"
-        data-product-price="3000" data-tracking="detail_item" id=
+        data-product-price="3500" data-tracking="detail_item" id=
         "items">
           <div class="market"></div>
           <nav>
@@ -200,10 +222,6 @@
                                     <div class=
                                     "u-flex-1 u-min-w-0 u-d-flex u-flex-column u-mr-500">
                                       <div class=
-                                      "variation-name u-text-wrap">
-                                        個人商用ライセンス版
-                                      </div>
-                                      <div class=
                                       "u-tpg-caption1 u-text-gray-300">
                                         ダウンロード商品
                                       </div>
@@ -211,39 +229,6 @@
                                     <div class=
                                     "variation-price u-text-right">
                                       ¥ 3,500
-                                    </div>
-                                  </div>
-                                  <div class="variation-cart">
-                                    <div class="cart-button-wrap">
-                                      <form class="button_to"
-                                      method="post" action=
-                                      "https://kuroyuzu.booth.pm/cart?added_to_cart=true&amp;via=market">
-                                        <input type="hidden" name=
-                                        "_method" value="patch">
-                                      </form>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="variation-item u-border-t">
-                              <div class="u-d-flex">
-                                <div class="u-flex-1 u-min-w-0">
-                                  <div class="u-d-flex">
-                                    <div class=
-                                    "u-flex-1 u-min-w-0 u-d-flex u-flex-column u-mr-500">
-                                      <div class=
-                                      "variation-name u-text-wrap">
-                                        個人商用ライセンスUPG版（通常版からのアップグレード）
-                                      </div>
-                                      <div class=
-                                      "u-tpg-caption1 u-text-gray-300">
-                                        ダウンロード商品
-                                      </div>
-                                    </div>
-                                    <div class=
-                                    "variation-price u-text-right">
-                                      ¥ 3,000
                                     </div>
                                   </div>
                                   <div class="variation-cart">
@@ -645,7 +630,7 @@
             </div>
           </aside>
           <script id="json_modules" type="application/json">
-          {"modules":[{"type":"text","title":"","content":"┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \n┃■概要 「個人商用ライセンス版」\n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \nオリジナルキャラクター「ドロレス・レイズ」のMikuMikuDance/Unity/VRChat/VRM用モデルの個人向け商用ライセンス版です。 \n\n当商品は下記内容のセット商品です。\n　　1.ドロレス・レイズ 通常ライセンス版（非商用版）\n　　2.ドロレス・レイズ 個人商用ライセンスUPG版\n\nモデルデータには下記内容が含まれます\n　　1.PMXファイル（約140,000ポリゴン） \n　　2.FBXファイル（約46,000ポリゴン以下に削減済み） \n　　3.VRMファイル（約46,000ポリゴン以下に削減済み） \n　　4.unitypackageファイル（約46,000ポリゴン以下に削減済み） \n　　5.テクスチャー\n　　6.色分けされたテクスチャーのPSDファイル\n\n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \n┃■概要 「個人商用ライセンスUPG版」\n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \n「【通常ライセンス版】ドロレス・レイズ」（https://kuroyuzu.booth.pm/items/1137622）をお持ちの方向けの、個人商用ライセンス版へのアップグレード版（追加データ）です。\n\n\nモデルデータには下記内容が含まれます\n　　1.FBXファイル（約46,000ポリゴン以下に削減済み） \n　　2.VRMファイル（約46,000ポリゴン以下に削減済み） \n　　3.unitypackageファイル（約46,000ポリゴン以下に削減済み） \n　　4.色分けされたテクスチャーのPSDファイル\n\n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \n┃■PMX版について\n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \nMikuMikuDance用のモデルデータです。\n\nMikuMikuMovingでは足の変形補助用のボーンが正常に動作しないため、まともに動かすことができません。 \nMikuMikuMovingで使用する場合は各自で調整をお願いします。\n\n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \n┃■FBX版について \n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \nVRM版とunitypackage版の元になったデータです。 \n動作軽量化のためにPMX版からポリゴンやボーン、モーフを削減してあります。 \nUnityのHumanoidの構造に対応し、VRChat向けに若干の調整がされています。\n\nテクスチャーは「【通常ライセンス版】ドロレス・レイズ」のものを使用します。 \n通常ライセンス版のPMXファイルがあるフォルダにFBXファイルをコピーすることで、FBXファイルからテクスチャーが参照できるようになります。\n\n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \n┃■VRM版について \n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \nバーチャルキャスト（https://virtualcast.jp/）などでご利用いただけます。 \n動作軽量化のためにPMX版からポリゴンやボーン、モーフを削減してあります。\n\n利用に関する細かい規定は下記ページをご覧ください。 \nhttp://black-yuzunyan.lolipop.jp/mmd_models_acceptable_use_policy\n\n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \n┃■unitypackage版について \n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \nVRChat向けに調整、設定したデータです。 \n動作軽量化のためにPMX版からポリゴンやボーン、モーフを削減してあります。\n\nunityにインポートすることで細かい設定をしなくてもアバターとしてアップロードできる状態にしてあります。 \nアイトラッキング、フルボディトラッキングに対応していますが、動作自体は補償できかねますのでご注意ください。\n\n下記アセットを使用しています。 \nご利用の際は当unitypackageをインポートする前に必要なアセットをインポートしてください。 \n　　1.VRCSDK-2019.06.25.21.13_Public\n　　2.CubedsShaders 0.26 \n　　3.DynamicBone 1.2.0 ※無くても動作します\n\n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \n┃■利用規約 \n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \n本規約およびモデルデータの利用に係る契約の成立、効力、履行及び解釈に関しては、日本国法が適用されるものとします。\n\nモデルデータ本体および付属物を使用して、画像、動画を作成し、公開することができます。 \n公序良俗に反しない範囲でご利用ください。\n\n当モデルデータに関するモデルデータ個別の規定は下記の通りです。\n\n　・著作表示：必須 \n　・モデルデータの再配布：不可  ※1\n　・モデルデータの改変：可 \n　・改変したモデルデータの再配布：不可 ※1 \n　・商用利用：個人のみ可能\n\n 　※1：個人商用ライセンスによる例外あり。\n\nその他、利用に関する細かい規定は下記ページをご覧ください。 \n内容は常に最新のものが適用されます。 \nまた、予告なしに内容を変更する事があります。 \nhttp://black-yuzunyan.lolipop.jp/mmd_models_acceptable_use_policy\n\n個人商用ライセンス、アバターとしての利用については下記ページをご覧ください。\nhttp://black-yuzunyan.lolipop.jp/terms-pcl\n\nニコニコ動画でご利用の際は下記作品をコンテンツツリーの親作品として登録してください。 \nツリー登録が著作表示となります。 \nhttp://3d.nicovideo.jp/works/td48941\n\n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \n┃■免責事項 \n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \n当モデルデータを使用したことによる如何なる損害も神楽坂柚は責任を負わないものとします。\n\n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \n┃■更新履歴\n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \nVersion 1.04　(2019/7/13)\n　・「効果パーツ.unitypackage」を追加\n　・FBX版、unitypackage版：VRChatでフルボディトラッキングを使用した際、右腕の付け根が移動する不具合を修正\n\nVersion 1.03　(2019/4/21) ※個人商用ライセンス版のみ\n　・「黒柚式 ドロレス・レイズ.pmx」の右足の指のウェイトを修正\n\nVersion 1.02　(2019/1/7)\n　・「ドロレス-vrc.unitypackage」の瞳がまぶたを貫通しないように修正\n\nVersion 1.01　(2019/1/6)\n　・「ドロレス-vrc.fbx」と「ドロレス-vrc.unitypackage」のボーンをVRChatのフルボディトラッキング向けに調整\n　　VRM版と管理共通化のためにメッシュを分割\n\nVersion 1.00a　(2019/1/5)\n　・「ドロレス-vrc.unitypackage」内に残っていた不要な Blueprint ID を削除\n\nVersion 1.00　(2019/1/1)\n　・正式版公開"},{"type":"text","title":"","content":"●当モデルを使用して作成した作品や、アバターを使用している様子のスクリーンショット等を #黒柚式 のハッシュタグを付けてツイートしていただけると嬉しいです！\n\n●Twitterでモデル制作の様子などをつぶやいてます。\n興味のある方はフォローよろしくお願いします！\nhttps://twitter.com/k1468"},{"type":"media","content":"\u003ciframe width=\"500\" height=\"500\" src=\"https://hub.vroid.com/characters/6680716448351321763/models/5599788320025703341/embed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\" allow=\"xr-spatial-tracking\"\u003e\u003c/iframe\u003e"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/gE76PqI7r7Q\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"}]}
+          {"modules":[{"type":"text","title":"","content":"┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \n┃■概要 「個人商用ライセンス版」\n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \nオリジナルキャラクター「ドロレス・レイズ」のMikuMikuDance/Unity/VRChat/VRM用モデルの個人向け商用ライセンス版です。 \n\n当商品は下記内容のセット商品です。\n　　1.ドロレス・レイズ 通常ライセンス版（非商用版）\n　　2.ドロレス・レイズ 個人商用ライセンスUPG版\n\nモデルデータには下記内容が含まれます\n　　1.PMXファイル（約140,000ポリゴン） \n　　2.FBXファイル（約46,000ポリゴン以下に削減済み） \n　　3.VRMファイル（約46,000ポリゴン以下に削減済み） \n　　4.unitypackageファイル（約46,000ポリゴン以下に削減済み） \n　　5.テクスチャー\n　　6.色分けされたテクスチャーのPSDファイル\n\n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \n┃■PMX版について\n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \nMikuMikuDance用のモデルデータです。\n\nMikuMikuMovingでは足の変形補助用のボーンが正常に動作しないため、まともに動かすことができません。 \nMikuMikuMovingで使用する場合は各自で調整をお願いします。\n\n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \n┃■FBX版について \n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \nVRM版とunitypackage版の元になったデータです。 \n動作軽量化のためにPMX版からポリゴンやボーン、モーフを削減してあります。 \nUnityのHumanoidの構造に対応し、VRChat向けに若干の調整がされています。\n\nテクスチャーは「【通常ライセンス版】ドロレス・レイズ」のものを使用します。 \n通常ライセンス版のPMXファイルがあるフォルダにFBXファイルをコピーすることで、FBXファイルからテクスチャーが参照できるようになります。\n\n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \n┃■VRM版について \n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \nバーチャルキャスト（https://virtualcast.jp/）などでご利用いただけます。 \n動作軽量化のためにPMX版からポリゴンやボーン、モーフを削減してあります。\n\n利用に関する細かい規定は下記ページをご覧ください。 \nhttp://black-yuzunyan.lolipop.jp/mmd_models_acceptable_use_policy\n\n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \n┃■unitypackage版について \n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \nVRChat向けに調整、設定したデータです。 \n動作軽量化のためにPMX版からポリゴンやボーン、モーフを削減してあります。\n\nunityにインポートすることで細かい設定をしなくてもアバターとしてアップロードできる状態にしてあります。 \nアイトラッキング、フルボディトラッキングに対応していますが、動作自体は補償できかねますのでご注意ください。\n\n下記アセットを使用しています。 \nご利用の際は当unitypackageをインポートする前に必要なアセットをインポートしてください。 \n　　1.VRCSDK-2019.06.25.21.13_Public\n　　2.CubedsShaders 0.26 \n　　3.DynamicBone 1.2.0 ※無くても動作します\n\n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \n┃■利用規約 \n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \n本規約およびモデルデータの利用に係る契約の成立、効力、履行及び解釈に関しては、日本国法が適用されるものとします。\n\nモデルデータ本体および付属物を使用して、画像、動画を作成し、公開することができます。 \n公序良俗に反しない範囲でご利用ください。\n\n当モデルデータに関するモデルデータ個別の規定は下記の通りです。\n\n　・著作表示：必須 \n　・モデルデータの再配布：不可  ※1\n　・モデルデータの改変：可 \n　・改変したモデルデータの再配布：不可 ※1 \n　・商用利用：個人のみ可能\n\n 　※1：個人商用ライセンスによる例外あり。\n\nその他、利用に関する細かい規定は下記ページをご覧ください。 \n内容は常に最新のものが適用されます。 \nまた、予告なしに内容を変更する事があります。 \nhttp://black-yuzunyan.lolipop.jp/mmd_models_acceptable_use_policy\n\n個人商用ライセンス、アバターとしての利用については下記ページをご覧ください。\nhttp://black-yuzunyan.lolipop.jp/terms-pcl\n\nニコニコ動画でご利用の際は下記作品をコンテンツツリーの親作品として登録してください。 \nツリー登録が著作表示となります。 \nhttp://3d.nicovideo.jp/works/td48941\n\n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \n┃■免責事項 \n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \n当モデルデータを使用したことによる如何なる損害も神楽坂柚は責任を負わないものとします。\n\n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \n┃■更新履歴\n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ \nVersion 1.04　(2019/7/13)\n　・「効果パーツ.unitypackage」を追加\n　・FBX版、unitypackage版：VRChatでフルボディトラッキングを使用した際、右腕の付け根が移動する不具合を修正\n\nVersion 1.03　(2019/4/21) ※個人商用ライセンス版のみ\n　・「黒柚式 ドロレス・レイズ.pmx」の右足の指のウェイトを修正\n\nVersion 1.02　(2019/1/7)\n　・「ドロレス-vrc.unitypackage」の瞳がまぶたを貫通しないように修正\n\nVersion 1.01　(2019/1/6)\n　・「ドロレス-vrc.fbx」と「ドロレス-vrc.unitypackage」のボーンをVRChatのフルボディトラッキング向けに調整\n　　VRM版と管理共通化のためにメッシュを分割\n\nVersion 1.00a　(2019/1/5)\n　・「ドロレス-vrc.unitypackage」内に残っていた不要な Blueprint ID を削除\n\nVersion 1.00　(2019/1/1)\n　・正式版公開"},{"type":"text","title":"","content":"●当モデルを使用して作成した作品や、アバターを使用している様子のスクリーンショット等を #黒柚式 のハッシュタグを付けてツイートしていただけると嬉しいです！\n\n●Twitterでモデル制作の様子などをつぶやいてます。\n興味のある方はフォローよろしくお願いします！\nhttps://twitter.com/k1468"},{"type":"media","content":"\u003ciframe width=\"500\" height=\"500\" src=\"https://hub.vroid.com/characters/6680716448351321763/models/5599788320025703341/embed\" frameborder=\"0\" allowfullscreen=\"\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\" allow=\"xr-spatial-tracking\"\u003e\u003c/iframe\u003e"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/gE76PqI7r7Q\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"}]}
           </script>
         </div>
       </main>
