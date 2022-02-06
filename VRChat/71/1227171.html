@@ -62,11 +62,11 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "aQ3NpYM/qijM0FfEIOgqXeKF92Mwn2dfTfQZxuIFg0M="></script>
+    "TKH2yiYTo77xmPlT3gzD1YyuiZQCH7f+CiAy1UBAQgA="></script>
     <script src=
     "https://asset.booth.pm/assets/ab4aab42d6f6623cc9aa.js" defer=
     "defer" nonce=
-    "aQ3NpYM/qijM0FfEIOgqXeKF92Mwn2dfTfQZxuIFg0M="></script>
+    "TKH2yiYTo77xmPlT3gzD1YyuiZQCH7f+CiAy1UBAQgA="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -76,38 +76,13 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
-  </head>
-  <body>
-    <div class="mini-player-controller" style="display: none;">
-      <a class="scroller" data-smooth-scroll="true"><img class=
-      "mini-player-controller__image" src=
-      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
-      data-smooth-scroll="true">
-      <div class="mini-player-information__item-name"></div>
-      <div class="mini-player-information__shop-name"></div>
-      <div class="mini-player-information__navigation">
-        試聴中の商品へスクロール
-      </div></a>
-      <div class="mini-player-controls">
-        <div class="mini-player-mode-ui">
-          <div class="mini-player-mode-ui__knob"></div>
-          <div class="mini-player-mode-ui__short">
-            15秒
-          </div>
-          <div class="mini-player-mode-ui__full">
-            フル
-          </div>
-        </div>
-        <div class="mini-player-play-ui"></div>
-      </div>
-    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
     "https://asset.booth.pm/assets/a5a1adf8d24b2053e4d1.js" defer=
     "defer" nonce=
-    "aQ3NpYM/qijM0FfEIOgqXeKF92Mwn2dfTfQZxuIFg0M="></script>
+    "TKH2yiYTo77xmPlT3gzD1YyuiZQCH7f+CiAy1UBAQgA="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"手作りチョコレート","description":"Happy Valentine♪\n迷宮図書館　Astraia Filleから皆さんへチョコレートのプレゼントです♪\n\n\n本モデルに限り特例として、改変したものを第三者への直接配布を許可します。\n但し、不特定多数が自由に利用できるようにすることは禁じます。（例：パスワードを使用しないアップローダーへのアップロード、Discordなどのファイル共有が可能なサービスでダイレクトメール機能を使用せずファイルをアップロードすること。Booth等の販売代行サービスを利用し製作者（Astraia_Fille）以外が配布・販売を行うこと等）","url":"https://booth.pm/ja/items/1227171","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"100"},"image":"https://booth.pximg.net/c/620x620/d3d523d1-e84d-4b41-911c-4b8144839726/i/1227171/309edf3a-6339-4d32-b84b-e36ee5c77292_base_resized.jpg"}
     </script>
@@ -115,13 +90,16 @@
     "https://asset.booth.pm/favicon.ico">
     <link href=
     "https://asset.booth.pm/assets/apple-touch-icon-precomposed-f7358b936e9404f3e499e1bf3c9f0967366212144a16374ebc7558b391eeafe1.png"
-    rel="apple-touch-icon-precomposed"><noscript><iframe height="0"
-    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    rel="apple-touch-icon-precomposed">
+  </head>
+  <body>
+    <noscript><iframe height="0" src=
+    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src=
     "https://asset.booth.pm/assets/e88e9e922aaf60c599bd.js" defer=
     "defer" nonce=
-    "aQ3NpYM/qijM0FfEIOgqXeKF92Mwn2dfTfQZxuIFg0M="></script>
+    "TKH2yiYTo77xmPlT3gzD1YyuiZQCH7f+CiAy1UBAQgA="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
