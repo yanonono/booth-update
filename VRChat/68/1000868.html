@@ -63,11 +63,11 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "juGxUXGD/JpRWMBpXagYMZ2LvozhsVCV4ut+CJ276z4="></script>
+    "tzSysfeOYfeLK3KVabLV9CeMPNxCaBAHPD6vgyC7h/Y="></script>
     <script src=
     "https://asset.booth.pm/assets/e1b510d082b3424c92db.js" defer=
     "defer" nonce=
-    "juGxUXGD/JpRWMBpXagYMZ2LvozhsVCV4ut+CJ276z4="></script>
+    "tzSysfeOYfeLK3KVabLV9CeMPNxCaBAHPD6vgyC7h/Y="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -77,51 +77,29 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
-  </head>
-  <body>
-    <div class="mini-player-controller" style="display: none;">
-      <a class="scroller" data-smooth-scroll="true"><img class=
-      "mini-player-controller__image" src=
-      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
-      data-smooth-scroll="true">
-      <div class="mini-player-information__item-name"></div>
-      <div class="mini-player-information__shop-name"></div>
-      <div class="mini-player-information__navigation">
-        試聴中の商品へスクロール
-      </div></a>
-      <div class="mini-player-controls">
-        <div class="mini-player-mode-ui">
-          <div class="mini-player-mode-ui__knob"></div>
-          <div class="mini-player-mode-ui__short">
-            15秒
-          </div>
-          <div class="mini-player-mode-ui__full">
-            フル
-          </div>
-        </div>
-        <div class="mini-player-play-ui"></div>
-      </div>
-    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
     "https://asset.booth.pm/assets/88a45d706dca19356bfb.js" defer=
     "defer" nonce=
-    "juGxUXGD/JpRWMBpXagYMZ2LvozhsVCV4ut+CJ276z4="></script>
+    "tzSysfeOYfeLK3KVabLV9CeMPNxCaBAHPD6vgyC7h/Y="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"El Eace(分離統合型双短直剣）","description":"\u003c概要\u003e\n白と金を基調とした双剣になる直剣です。直剣から短剣をパージするためのアンロックアニメーションがあります。因みに直剣がeaceで短剣がelです。本物が見たい方はshop概要欄からお店に飛べるので、そちらからどうぞ。\n\n\u003c中身\u003e\n・unitypackage(prefab,fbx,texture,material,animation,animatorなど)\n・read me\n\n\u003cアニメーションの使い方(VRchat向け)\u003e\nanimatorで管理されているので、同封されているprefab自体をenabledするとanimationが勝手に再生されます。つまり、animation overrideで直接親をenabledさせてください。\n\n\u003cアニメーション\u003e\n＊動画ではパーティクルがでていますが、付属しておりません。また、テクスチャが一部違います。アニメーション確認としてご覧ください。\nhttps://twitter.com/AcysShiaruReus/status/1036881905264746496\n\n\u003c規約の目安\u003e\n規約は同封のread meに書いてあります。これは目安としてください。これは規約ではありません。\n・商業利用可\n・二次配布、3Dモデルとしての販売の禁止\n・著作権はすべてAcysShiaruReusに帰属する","url":"https://booth.pm/ja/items/1000868","offers":{"priceCurrency":"JPY","@type":"Offer","price":"800"},"image":"https://booth.pximg.net/c/620x620/2d13a0c0-2756-4fa9-b3b6-77f3f8714856/i/1000868/655734d5-f57a-4b8f-9ab7-0f590548d4d4_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed"><noscript><iframe height="0"
-    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed">
+  </head>
+  <body>
+    <noscript><iframe height="0" src=
+    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src=
     "https://asset.booth.pm/assets/cb7df245d2b6d0619d36.js" defer=
     "defer" nonce=
-    "juGxUXGD/JpRWMBpXagYMZ2LvozhsVCV4ut+CJ276z4="></script>
+    "tzSysfeOYfeLK3KVabLV9CeMPNxCaBAHPD6vgyC7h/Y="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
