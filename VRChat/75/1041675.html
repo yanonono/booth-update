@@ -63,11 +63,11 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "aGy9JVQhzlreJB+i6s779znkQMb1lc8XLz6g05GpkTU="></script>
+    "kD0RmUXK8P3/eiQF+Hsp/Awlo2uXSMcubMRFKIll2no="></script>
     <script src=
     "https://asset.booth.pm/assets/b89ad00aa3c9b8782222.js" defer=
     "defer" nonce=
-    "aGy9JVQhzlreJB+i6s779znkQMb1lc8XLz6g05GpkTU="></script>
+    "kD0RmUXK8P3/eiQF+Hsp/Awlo2uXSMcubMRFKIll2no="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -77,51 +77,29 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
-  </head>
-  <body>
-    <div class="mini-player-controller" style="display: none;">
-      <a class="scroller" data-smooth-scroll="true"><img class=
-      "mini-player-controller__image" src=
-      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
-      data-smooth-scroll="true">
-      <div class="mini-player-information__item-name"></div>
-      <div class="mini-player-information__shop-name"></div>
-      <div class="mini-player-information__navigation">
-        試聴中の商品へスクロール
-      </div></a>
-      <div class="mini-player-controls">
-        <div class="mini-player-mode-ui">
-          <div class="mini-player-mode-ui__knob"></div>
-          <div class="mini-player-mode-ui__short">
-            15秒
-          </div>
-          <div class="mini-player-mode-ui__full">
-            フル
-          </div>
-        </div>
-        <div class="mini-player-play-ui"></div>
-      </div>
-    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
     "https://asset.booth.pm/assets/7885eaa16cc0b3855ec4.js" defer=
     "defer" nonce=
-    "aGy9JVQhzlreJB+i6s779znkQMb1lc8XLz6g05GpkTU="></script>
+    "kD0RmUXK8P3/eiQF+Hsp/Awlo2uXSMcubMRFKIll2no="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"試験管、瓶、試験管立て・瓶立て【オリジナル3Dモデル】","description":"試験管立て・瓶立て、試験管、瓶の3Dモデルです。\nunitypakageにはPrefab8種、画像を撮影するために使ったサンプルシーン入り。\n\n・試験管立てと瓶立てを組み合わせ、引き出しを付けた3Dモデル、引き出しは開閉可（△831ポリゴン）\n・試験管1種、液体部分と試験管本体は別々に大きさ設定可（あわせて△158ポリゴン）\n・瓶2種、同じく別々に大きさ設定可（あわせて△254ポリゴン）\n・コルク、別モデルなので取り外し可（△28ポリゴン）\n\n画像の通りに配置すると合計△2325ポリゴンです。\n\nVRChatのアバター、ワールドでの使用を想定して制作しました。\n化学実験室、治療薬の作成、魔法薬の研究や錬金術の工房など、様々な場面で使うことができると思います。\n\n---------------------------------------------------------------\nファイルの中身\n・BinTate.unitypackage\n・BinTate.fbx（△831ポリゴン）\n・BinTate_Shikenkan.fbx（△158ポリゴン）\n・BinTate_Bin1.fbx（△254ポリゴン）\n・BinTate_Bin2.fbx（△254ポリゴン）\n・BinTate_Cork.fbx（△28ポリゴン）\n・テクスチャ18枚\n - 試験管立て・瓶立て本体\n - 引き出し部分\n - 引き出しの持ち手\n - 試験管・瓶本体\n - 試験管・瓶の液体部分\n - コルク\nそれぞれベース部分、ノーマルマップ、メタリックの3種。合計18枚。\n\nテクスチャデータはサイズ2048で制作しました。\n圧縮前のデータをzipに入れてあります。\nファイルサイズが大きいので、unityで使う際に圧縮をしてください。\nunitypackage内のテクスチャは、サイズを1024に設定し圧縮をしてあります。\n\nsampleシーンはunity version 5.6.3p1で制作しました。\n\n改変自由。\n3Dモデルデータとして使える状態での再配布禁止。\nゲーム、映像作品などで使うことができます。商用可。\n誹謗中傷、違法行為、または国防に関する法律に違反する行為への使用を禁止します。","url":"https://booth.pm/ja/items/1041675","offers":{"priceCurrency":"JPY","@type":"Offer","price":"500"},"image":"https://booth.pximg.net/c/620x620/ba1632d1-d7a2-47bf-b5c7-b1b4c83290fc/i/1041675/1fedc749-e10f-41d6-aed8-3b0df20a8f6f_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed"><noscript><iframe height="0"
-    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed">
+  </head>
+  <body>
+    <noscript><iframe height="0" src=
+    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src=
     "https://asset.booth.pm/assets/190e482341b44266ab67.js" defer=
     "defer" nonce=
-    "aGy9JVQhzlreJB+i6s779znkQMb1lc8XLz6g05GpkTU="></script>
+    "kD0RmUXK8P3/eiQF+Hsp/Awlo2uXSMcubMRFKIll2no="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
