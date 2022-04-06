@@ -64,9 +64,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "wFIwTKjl9oWVAunFfZh0BkrURRQkHTjecf5tts7gY8Q="></script>
+    "y+io5MFvKJkI3sicpE6TIYz3NNqNdZXchY3CiCVVW/U="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="wFIwTKjl9oWVAunFfZh0BkrURRQkHTjecf5tts7gY8Q="></script>
+    nonce="y+io5MFvKJkI3sicpE6TIYz3NNqNdZXchY3CiCVVW/U="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -76,27 +76,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
     "https://asset.booth.pm/assets/11fbe55318736dfa116e.js" defer=
     "defer" nonce=
-    "wFIwTKjl9oWVAunFfZh0BkrURRQkHTjecf5tts7gY8Q="></script>
+    "y+io5MFvKJkI3sicpE6TIYz3NNqNdZXchY3CiCVVW/U="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"【羽鳥ぽぽぽType】激カワ！レース鳩アバター(5種 x マフラー＆脚環3色)【￥８１０版】","description":"VR羽鳥鳩舎作出、バーチャル鳩tuber「羽鳥ぽぽぽ」を生み出した鳩舎が作出したバーチャルレース鳩のアバターです。\nみんなで鳩になろう！！\n\n【収録されている翼の柄】\n・灰二引き（B)\n・灰ごま（BC)\n・栗（R）\n・栗ごま（RC)\n・白（W)\n\n+各々にマフラー・脚環それぞれ3色のマテリアルが付いています。\n\n\n（※当モデルの売り上げおよびカンパはモデルの質の向上とvtuber羽鳥ぽぽぽの運営に充てられます）\n\n【仕様】\n・unity2017.4でunitypackage化されています。\n・そのままVRChatなどに持ち込めるポリゴン数です。\n・口パクもあります。\n・ただし、VRChat専用に作られたモデルではないので、ウェイトやリギングなど、色々と調子の悪い部分があります、必要に応じて鳩の面倒を見れる人推奨です。\n\n【規約】\n・テクスチャ等の素材を含む当モデル、またはその改変物の再配布、並びにデータを元に制作されたグッズなどの許可なき販売はかたくお断りいたします。\n・公序良俗に反する使用をしてはいけません。\n・「羽鳥ぽぽぽ」になりすますのはやめましょう。\n・鳩をいじめる目的で利用してはいけません。\n・レース鳩の普及に努めましょう。","url":"https://booth.pm/ja/items/1264634","offers":{"priceCurrency":"JPY","@type":"Offer","price":"810"},"image":"https://booth.pximg.net/c/620x620/d1def8d0-8300-4cb0-92c4-7d478075a721/i/1264634/6ac85b50-c6f4-404b-8800-f403787cd809_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="wFIwTKjl9oWVAunFfZh0BkrURRQkHTjecf5tts7gY8Q="></script>
+    nonce="y+io5MFvKJkI3sicpE6TIYz3NNqNdZXchY3CiCVVW/U="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
