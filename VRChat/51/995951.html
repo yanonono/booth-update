@@ -63,9 +63,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "yHLHxWHROBCc6lGxl/wBIRQBSiCLSLOTF6KXMbNurio="></script>
+    "zlIk3Jk4KQu8V2ROlbjEN+cfmvcIqvpyh6MBdfdHT4k="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="yHLHxWHROBCc6lGxl/wBIRQBSiCLSLOTF6KXMbNurio="></script>
+    nonce="zlIk3Jk4KQu8V2ROlbjEN+cfmvcIqvpyh6MBdfdHT4k="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -75,27 +75,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
     "https://asset.booth.pm/assets/11fbe55318736dfa116e.js" defer=
     "defer" nonce=
-    "yHLHxWHROBCc6lGxl/wBIRQBSiCLSLOTF6KXMbNurio="></script>
+    "zlIk3Jk4KQu8V2ROlbjEN+cfmvcIqvpyh6MBdfdHT4k="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"SuperRealLoveDistModeCheckシェーダー","description":"主にVRChatで超ガチ恋距離モードが適用されているワールドか判定するために作りました。\n超ガチ恋距離モードが適用されているとこのシェーダーを割り振ったオブジェクトが表示されます。\n各ワールドの調査やかわいい動きをするときの目安になるかもしれないです。\n\n使用例↓\nhttps://twitter.com/gatosyocora/status/1034047282281238529\n(商品紹介の画像や使用例に写っている右近ちゃん(キツネツキ(kitsune_tsuki)様作)は同封しておりません)\n\n設定可能なパラメータは以下の通りです。\n・Texture : 表示されるテクスチャ\n・Editing : 編集中に位置調整するために使います\n\nCC0ライセンスですので商用利用・改変・再配布など可能です。\n\nBoost用もありますが、内容物は変わりません。","url":"https://booth.pm/ja/items/995951","offers":{"priceCurrency":"JPY","@type":"Offer","price":"0"},"image":"https://booth.pximg.net/c/620x620/5daaaeb1-43fa-4c89-8da3-e7e44093dddb/i/995951/7f3116d9-c81b-4ee3-bd12-c6ea231846ec_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="yHLHxWHROBCc6lGxl/wBIRQBSiCLSLOTF6KXMbNurio="></script>
+    nonce="zlIk3Jk4KQu8V2ROlbjEN+cfmvcIqvpyh6MBdfdHT4k="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
