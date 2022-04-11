@@ -63,9 +63,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "S7ZYeGU3jHafyGIGC4rl6KELRGKpcqpqnk9M8h9/tcQ="></script>
+    "euwGjRTD7Mrv22l1VxgwHCrEI5gEmNpPV/2s9y24/NA="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="S7ZYeGU3jHafyGIGC4rl6KELRGKpcqpqnk9M8h9/tcQ="></script>
+    nonce="euwGjRTD7Mrv22l1VxgwHCrEI5gEmNpPV/2s9y24/NA="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -75,27 +75,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/11fbe55318736dfa116e.js" defer=
+    "https://asset.booth.pm/assets/4f0effb730da0c8743c7.js" defer=
     "defer" nonce=
-    "S7ZYeGU3jHafyGIGC4rl6KELRGKpcqpqnk9M8h9/tcQ="></script>
+    "euwGjRTD7Mrv22l1VxgwHCrEI5gEmNpPV/2s9y24/NA="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"【VRC用】少年型アバター","description":"VRChat用アバター\n\n■仕様\n少年型アバター：\n　14828ポリゴン\n　リップシンク有り\n　アイトラッキング有り\n　表情用シェイプキー有り\n　（表情用animファイル通常11種類、ゲス顔6種類）\n　素体有\n　Arktoon-Shaders v1.0.2.4使用\n　VRM版有\n\nVroid Hubにも公開しているので、全身グリグリ見たい方はこちらから。\nhttps://hub.vroid.com/characters/4505487392003036662/models/1149675935460637457\n\n■利用規約\n・収録されているデータについて権利は配布元が有しております。\n・改変しての利用可です。\n・VRCHATでの利用でクレジット表記などの必要はありません。\n・VRCHAT内での利用、商用配信に映る場合に制限は設けません。\n・コンテンツ作成で商用非商用、全年齢・R18問わず使用可です。\n・許可なく再配布することは禁止です。\n・政治的パフォーマンス、宗教活動、ヘイトスピーチ、他者への嫌がらせ行為、その他公序良俗に反する目的で使用することを禁止します\n・本データを使用したことにより発生した問題、損失について配布元は一切の責任を負いません\n　","url":"https://booth.pm/ja/items/1346847","offers":{"priceCurrency":"JPY","@type":"Offer","price":"2500"},"image":"https://booth.pximg.net/c/620x620/0adee944-20a4-4964-9f9d-2490cbfecd89/i/1346847/541b7b6a-621f-4567-bf62-edfae0024175_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="S7ZYeGU3jHafyGIGC4rl6KELRGKpcqpqnk9M8h9/tcQ="></script>
+    nonce="euwGjRTD7Mrv22l1VxgwHCrEI5gEmNpPV/2s9y24/NA="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
