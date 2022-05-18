@@ -61,9 +61,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "wwRgKH8RYv/D5TifVOveSwI01y+P/adxhIA9nTxbNN0="></script>
+    "kHSzPID0GDnlmF4CT9//I24q6pyanXkJbesfQU6CL74="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="wwRgKH8RYv/D5TifVOveSwI01y+P/adxhIA9nTxbNN0="></script>
+    nonce="kHSzPID0GDnlmF4CT9//I24q6pyanXkJbesfQU6CL74="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -77,9 +77,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/bf577d7b1e24660ac425.js" defer=
+    "https://asset.booth.pm/assets/8783bf43601e4eec0f97.js" defer=
     "defer" nonce=
-    "wwRgKH8RYv/D5TifVOveSwI01y+P/adxhIA9nTxbNN0="></script>
+    "kHSzPID0GDnlmF4CT9//I24q6pyanXkJbesfQU6CL74="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"VRC花札システム","description":"VRCにアップした花札システムです。\nゲームワールド増えろ！\n単機能にまとめる(シャッフル機構だけとか)めんどくさいので、配布ダメそうなのを除いてそのままupした手抜きです。\n適当に使ってください。\n\n●以下の機能が含まれます。\n・こいこいの役/バカッ花の絵札点の計算シェーダー\n・シェーダーへカード48枚を見分けて値設定可能な VRCトリガー/アニメーション･アニメーターレイヤー･パラメータ･ステート設定/シャッフル機構\n・上記48枚見分けるやつは非常に改変しづらいので利用は覚悟すること(ちょっとだれかもっと賢い方法あったら教えて)\n・3D花札カード。それに使ってる、重なっても半透明特有の前後入れ替わりが起きずZバッファ計算するために、ワールド用にバカっぽい感じでやっつけた窓枠シェーダー\n・各場カメラの設定\n・寛永通宝と丁銀(ワンドロ)\n\n●以下の機能は含まれません\n・カード内の動物(アセットストアのものとかのため)\n・背景画像(あの金色屏風)\n・説明ボード画像\n・その他VRCSDKとか標準アセットとか系諸々","url":"https://booth.pm/ja/items/1095079","offers":{"priceCurrency":"JPY","@type":"Offer","price":"0"},"image":"https://booth.pximg.net/c/620x620/55e0ade6-1a8a-42bf-b4f4-91cc5bdbb5ca/i/1095079/fe460618-2685-4853-9bbb-501fb3072ba7_base_resized.jpg"}
     </script>
@@ -93,7 +93,7 @@
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="wwRgKH8RYv/D5TifVOveSwI01y+P/adxhIA9nTxbNN0="></script>
+    nonce="kHSzPID0GDnlmF4CT9//I24q6pyanXkJbesfQU6CL74="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -444,9 +444,9 @@
         </div>
       </main>
     </div>
-    <footer class="footer__menu">
+    <footer class="footer__menu bg-white">
       <div class=
-      "desktop:flex desktop:justify-between desktop:mx-auto desktop:text-center desktop:w-[1224px] desktop:my-24 mobile:gap-16 mobile:grid mobile:grid-cols-2 mobile:m-16">
+      "desktop:flex desktop:justify-between desktop:mx-auto desktop:text-center desktop:max-w-[1224px] desktop:my-24 desktop:px-16 mobile:gap-16 mobile:grid mobile:grid-cols-2 mobile:m-16">
         <a href=
         "https://booth.pm/anshin_booth_pack_guides"><img srcset=
         "https://asset.booth.pm/assets/banner-anshin_booth_pack@2x-fcabcd0e43382f4dc4a297dd15a695c9a7041541c945b15d5d8da6315952095a.png 2x"
@@ -466,7 +466,8 @@
         "https://asset.booth.pm/assets/banner-pixivfactory-b023063726ec8cb4995b34f1d102bc864d2b999df28e76ca8d45231b2b961d3b.png"></a>
       </div>
       <div class="border-b border-border300"></div>
-      <div class="desktop:mx-auto desktop:w-[1224px]">
+      <div class=
+      "desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
         <div class=
         "desktop:gap-fixed desktop:grid desktop:grid-cols-4 desktop:my-40 mobile:border-b mobile:border-border300 mobile:divide-y mobile:divide-border300">
           <nav class=
@@ -510,12 +511,18 @@
               "grid desktop:gap-16 mobile:gap-[32px] pb-8">
                 <a class=
                 "no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
+                href="https://booth.pm/about">BOOTHとは</a><a class=
+                "no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
                 href=
                 "https://booth.pm/customer_guide">お買い物ガイド</a><a class="no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
                 href="https://booth.pm/payment">お支払い方法</a><a class=
                 "no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
                 href=
-                "https://booth.pm/warehouse_group_shipments">倉庫おまとめ発送</a>
+                "https://booth.pm/trading_flowchart">取引の流れ</a><a class="no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
+                href=
+                "https://booth.pm/warehouse_group_shipments">倉庫おまとめ発送</a><a class="no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
+                href=
+                "https://booth.pm/ja/exhibitions">BOOTH主催のWeb即売会</a>
               </div>
             </div>
           </nav>
@@ -536,6 +543,8 @@
                 href=
                 "https://booth.pixiv.help/hc/">よくある質問</a><a class=
                 "no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
+                href=
+                "https://booth.karakuri.ai/embed/">チャットで質問（24時間対応）</a><a class="no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
                 href=
                 "https://booth.pm/support">BOOTH事務局へのお問い合わせ</a>
               </div>
@@ -559,13 +568,14 @@
           </nav>
         </div>
       </div>
-      <div class="desktop:mx-auto desktop:w-[1224px]">
+      <div class=
+      "desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
         <div class="desktop:mb-24 mobile:m-16">
           <div class="locales_menu">
             <div class="pulldown">
               <a class="btn negative small trigger js-tooltip"
               data-tippy-content=
-              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1095079&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;TKsxB75fHNf767c01uu3RjwLIxI5aO0S_ZQOY1tcGu4BZqPiKLgEmiAlBnOhN8yFKV0CiO7SHP8FEOj42Mfgxg&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1095079&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;zNhxTfrBefUMHf3Q9vR1b-QiiEd-3qoTGKpkc12TQJmBFeOobCZhuNfTTJeBKA6s8XSp3alkW_7gLoLo3gi6sQ&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1095079&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;4Qg6kAxqzP64ym4LZWd8d_eKaHIp5HWKKdMXUqSFyeusxah1mo3Us2ME30wSuwe04txJ6P5ehGfRV_HJJx4zww&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1095079&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;Z4sfT_Oiv0d8dYnyJ0dplsHOYGz9eL9ajndOV_LDAWUqRo2qZUWnCqe7OLVQmxJV1JhB9irCTrd286jMcVj7TQ&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
+              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1095079&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;OaQ3K7DjG2nt_QKUK7yRDRkdE6r11phxgiAliyg4gYI7_K3ilnn9Nkl8YH8o81Sr7lDvOkqjOPXuziX6euyVmQ&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1095079&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;QfK95LRojc_IRkPfpSErFPutPqwQmZFz-euUegs32plDqictkvJrkGzHITSmbu6yDODCPK_sMfeVBZQLWePOgg&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1095079&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;ZOtzRVKycJOlop_abjU7LN8SaUQPGAB0nUTHHP0st7tms-mMdCiWzAEj_TFtev6KKF-V1LBtoPDxqsdtr_ijoA&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1095079&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;g8PfkpLYbnN3TllLdcIP7rNl6ugKKyR-FS7Woy1LfPOBm0VbtEKILNPPO6B2jcpIRCgWeLVehPp5wNbSf59o6A&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
               data-tippy-trigger="click" data-tippy-interactive=
               "true" data-tippy-theme="locale" data-tippy-appendto=
               "parent" href="#"><img width="20" height="20" alt=
@@ -579,7 +589,8 @@
         </div>
       </div>
       <div class="border-b border-border300"></div>
-      <div class="desktop:mx-auto desktop:w-[1224px]">
+      <div class=
+      "desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
         <div class=
         "my-24 desktop:flex desktop:items-center mobile:mx-16">
           <a data-tracking="click" data-product-list=
