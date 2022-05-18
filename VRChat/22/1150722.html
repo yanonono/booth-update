@@ -63,9 +63,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "WsFXcZyJx1gQzRYLi/k1T97xJDiVIjBlA0g1L26qxU0="></script>
+    "NQ9+Y6RZUwmwqYKA9py+ECvQVXxhgtBj/pKzv3qjsqU="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="WsFXcZyJx1gQzRYLi/k1T97xJDiVIjBlA0g1L26qxU0="></script>
+    nonce="NQ9+Y6RZUwmwqYKA9py+ECvQVXxhgtBj/pKzv3qjsqU="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -75,49 +75,27 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
-  </head>
-  <body>
-    <div class="mini-player-controller" style="display: none;">
-      <a class="scroller" data-smooth-scroll="true"><img class=
-      "mini-player-controller__image" src=
-      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
-      data-smooth-scroll="true">
-      <div class="mini-player-information__item-name"></div>
-      <div class="mini-player-information__shop-name"></div>
-      <div class="mini-player-information__navigation">
-        試聴中の商品へスクロール
-      </div></a>
-      <div class="mini-player-controls">
-        <div class="mini-player-mode-ui">
-          <div class="mini-player-mode-ui__knob"></div>
-          <div class="mini-player-mode-ui__short">
-            15秒
-          </div>
-          <div class="mini-player-mode-ui__full">
-            フル
-          </div>
-        </div>
-        <div class="mini-player-play-ui"></div>
-      </div>
-    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/bf577d7b1e24660ac425.js" defer=
+    "https://asset.booth.pm/assets/8783bf43601e4eec0f97.js" defer=
     "defer" nonce=
-    "WsFXcZyJx1gQzRYLi/k1T97xJDiVIjBlA0g1L26qxU0="></script>
+    "NQ9+Y6RZUwmwqYKA9py+ECvQVXxhgtBj/pKzv3qjsqU="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"VRChatグッズ「モザイクパネル化」","description":"紹介文\nお好きなメッシュをモザイクパネルにすることができるシェーダです","url":"https://booth.pm/ja/items/1150722","offers":{"priceCurrency":"JPY","@type":"Offer","price":"500"},"image":"https://booth.pximg.net/c/620x620/45fea9e3-cbe9-42ea-9b39-2cc04d32bc40/i/1150722/f6129248-c136-40b1-b370-4db645421292_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed"><noscript><iframe height="0"
-    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed">
+  </head>
+  <body>
+    <noscript><iframe height="0" src=
+    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="WsFXcZyJx1gQzRYLi/k1T97xJDiVIjBlA0g1L26qxU0="></script>
+    nonce="NQ9+Y6RZUwmwqYKA9py+ECvQVXxhgtBj/pKzv3qjsqU="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -510,9 +488,9 @@
         </div>
       </main>
     </div>
-    <footer class="footer__menu">
+    <footer class="footer__menu bg-white">
       <div class=
-      "desktop:flex desktop:justify-between desktop:mx-auto desktop:text-center desktop:w-[1224px] desktop:my-24 mobile:gap-16 mobile:grid mobile:grid-cols-2 mobile:m-16">
+      "desktop:flex desktop:justify-between desktop:mx-auto desktop:text-center desktop:max-w-[1224px] desktop:my-24 desktop:px-16 mobile:gap-16 mobile:grid mobile:grid-cols-2 mobile:m-16">
         <a href=
         "https://booth.pm/anshin_booth_pack_guides"><img srcset=
         "https://asset.booth.pm/assets/banner-anshin_booth_pack@2x-fcabcd0e43382f4dc4a297dd15a695c9a7041541c945b15d5d8da6315952095a.png 2x"
@@ -532,7 +510,8 @@
         "https://asset.booth.pm/assets/banner-pixivfactory-b023063726ec8cb4995b34f1d102bc864d2b999df28e76ca8d45231b2b961d3b.png"></a>
       </div>
       <div class="border-b border-border300"></div>
-      <div class="desktop:mx-auto desktop:w-[1224px]">
+      <div class=
+      "desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
         <div class=
         "desktop:gap-fixed desktop:grid desktop:grid-cols-4 desktop:my-40 mobile:border-b mobile:border-border300 mobile:divide-y mobile:divide-border300">
           <nav class=
@@ -576,12 +555,18 @@
               "grid desktop:gap-16 mobile:gap-[32px] pb-8">
                 <a class=
                 "no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
+                href="https://booth.pm/about">BOOTHとは</a><a class=
+                "no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
                 href=
                 "https://booth.pm/customer_guide">お買い物ガイド</a><a class="no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
                 href="https://booth.pm/payment">お支払い方法</a><a class=
                 "no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
                 href=
-                "https://booth.pm/warehouse_group_shipments">倉庫おまとめ発送</a>
+                "https://booth.pm/trading_flowchart">取引の流れ</a><a class="no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
+                href=
+                "https://booth.pm/warehouse_group_shipments">倉庫おまとめ発送</a><a class="no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
+                href=
+                "https://booth.pm/ja/exhibitions">BOOTH主催のWeb即売会</a>
               </div>
             </div>
           </nav>
@@ -602,6 +587,8 @@
                 href=
                 "https://booth.pixiv.help/hc/">よくある質問</a><a class=
                 "no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
+                href=
+                "https://booth.karakuri.ai/embed/">チャットで質問（24時間対応）</a><a class="no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
                 href=
                 "https://booth.pm/support">BOOTH事務局へのお問い合わせ</a>
               </div>
@@ -625,13 +612,14 @@
           </nav>
         </div>
       </div>
-      <div class="desktop:mx-auto desktop:w-[1224px]">
+      <div class=
+      "desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
         <div class="desktop:mb-24 mobile:m-16">
           <div class="locales_menu">
             <div class="pulldown">
               <a class="btn negative small trigger js-tooltip"
               data-tippy-content=
-              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1150722&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;tAklJXrqH12IXJIdILCh_OegSktlc5FVYl2bHKLgLPLHayOYlPZ6h2ohYv7OpYJ9V4WOpMmxIhFiUbIdkMOUcw&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1150722&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;SiFz0aM00H1qBdRa8XkIh0jp71hMi-6HcIcKiJLloos5Q3VsTSi1p4h4JLkfbCsG-Mwrt-BJXcNwiyOJoMYaCg&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1150722&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;_qXDQ3m-WSFG14P8jQ6_DnO-FgBYU-leIwgleyO8AHKNx8X-l6I8-6Sqcx9jG5yPw5vS7_SRWhojBAx6EZ-48w&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1150722&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;DZ4XHnn79rzf-91Ihw94c1aZmM1LToyKkE94mVHSV3p-_BGjl-eTZj2GLatpGlvy5rxcIueMP86QQ1GYY_Hv-w&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
+              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1150722&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;lnOeX1aZQYI81QF8WpxPE-JcGLAFRX7mMwsh2Cpc5eq33KQlLsurvQqxLHHZuMvGd2Z6UUOriXFZqfk0jB1IRQ&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1150722&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;bxhh0nmJ5ruBsxD6YJOXUrAKbMWVgxJC13pdi0o1QVJOt1uoAdsMhLfXPffjtxOHJTAOJNNt5dW92IVn7HTs_Q&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1150722&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;LOAj5GanKJrjMxhrPF5BYXzG2bXsiUwYHZgoDLIPBu8NTxmeHvXCpdVXNWa_esW06fy7VKpnu493OvDgFE6rQA&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1150722&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;OmX5Iiwb9UBhJHWrTMsiiYJHR9jyuvRyXRspGTlHJ-0bysNYVEkff1dAWKbP76ZcF30lObRUA-U3ufH1nwaKQg&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
               data-tippy-trigger="click" data-tippy-interactive=
               "true" data-tippy-theme="locale" data-tippy-appendto=
               "parent" href="#"><img width="20" height="20" alt=
@@ -645,7 +633,8 @@
         </div>
       </div>
       <div class="border-b border-border300"></div>
-      <div class="desktop:mx-auto desktop:w-[1224px]">
+      <div class=
+      "desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
         <div class=
         "my-24 desktop:flex desktop:items-center mobile:mx-16">
           <a data-tracking="click" data-product-list=
