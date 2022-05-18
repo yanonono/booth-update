@@ -61,9 +61,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "z246dCCnmYUmcyJWXik6PUd8D70lRAG50iks7CrKoWg="></script>
+    "59BUkTr8xEg9nZM5YBm0amz0DhjZbIC9+YP+40ShMN0="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="z246dCCnmYUmcyJWXik6PUd8D70lRAG50iks7CrKoWg="></script>
+    nonce="59BUkTr8xEg9nZM5YBm0amz0DhjZbIC9+YP+40ShMN0="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -77,9 +77,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/bf577d7b1e24660ac425.js" defer=
+    "https://asset.booth.pm/assets/8783bf43601e4eec0f97.js" defer=
     "defer" nonce=
-    "z246dCCnmYUmcyJWXik6PUd8D70lRAG50iks7CrKoWg="></script>
+    "59BUkTr8xEg9nZM5YBm0amz0DhjZbIC9+YP+40ShMN0="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"CardHeider","description":"Unityでボードゲームを作るときに手元を隠すのに使えるかもしれないシェーダーとプレファブです\n\n●以下の機能が含まれます。\nスタンダードのキューを変更したシェーダー\n台座っぽい形に配置したボックスとカードのプレファブ\n\n●使い方\nzipの中身をインポート\nカード別に用意するならそれのシェーダーをカードと同じものに変更\n\n●その他\n○Propertiesに以下足して\n_Mask (\"Mask\", Int) = 1\n[Enum(UnityEngine.Rendering.CompareFunction)] _Comp (\"Comp\", Int) = 8\n[Enum(UnityEngine.Rendering.StencilOp)] _Pass (\"Pass\", Int) = 2\n[Enum(UnityEngine.Rendering.StencilOp)] _Fail (\"Fail\", Int) = 0\n[Enum(UnityEngine.Rendering.StencilOp)] _ZFail (\"ZFail\", Int) = 0\n○SubShaderに以下足したら\nStencil \n{\n\tRef [_Mask]\n\tComp [_Comp]\n\tPass [_Pass]\n\tFail [_Fail]\n\tZFail [_ZFail]\n}\n○Queueの番号変えてたいてい窓枠シェーダーになるので試してみては？\n\n[2019/05/21]\n→Stencilいらなかったので消しました。\nバグってた。\nキュー番号変えただけ(3001と3002)でできたっぽいのでそれに変更","url":"https://booth.pm/ja/items/1374598","offers":{"priceCurrency":"JPY","@type":"Offer","price":"0"},"image":"https://booth.pximg.net/c/620x620/55e0ade6-1a8a-42bf-b4f4-91cc5bdbb5ca/i/1374598/d3d884b3-6d8b-444d-9165-e77dea8ccb0a_base_resized.jpg"}
     </script>
@@ -93,7 +93,7 @@
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="z246dCCnmYUmcyJWXik6PUd8D70lRAG50iks7CrKoWg="></script>
+    nonce="59BUkTr8xEg9nZM5YBm0amz0DhjZbIC9+YP+40ShMN0="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -412,9 +412,9 @@
         </div>
       </main>
     </div>
-    <footer class="footer__menu">
+    <footer class="footer__menu bg-white">
       <div class=
-      "desktop:flex desktop:justify-between desktop:mx-auto desktop:text-center desktop:w-[1224px] desktop:my-24 mobile:gap-16 mobile:grid mobile:grid-cols-2 mobile:m-16">
+      "desktop:flex desktop:justify-between desktop:mx-auto desktop:text-center desktop:max-w-[1224px] desktop:my-24 desktop:px-16 mobile:gap-16 mobile:grid mobile:grid-cols-2 mobile:m-16">
         <a href=
         "https://booth.pm/anshin_booth_pack_guides"><img srcset=
         "https://asset.booth.pm/assets/banner-anshin_booth_pack@2x-fcabcd0e43382f4dc4a297dd15a695c9a7041541c945b15d5d8da6315952095a.png 2x"
@@ -434,7 +434,8 @@
         "https://asset.booth.pm/assets/banner-pixivfactory-b023063726ec8cb4995b34f1d102bc864d2b999df28e76ca8d45231b2b961d3b.png"></a>
       </div>
       <div class="border-b border-border300"></div>
-      <div class="desktop:mx-auto desktop:w-[1224px]">
+      <div class=
+      "desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
         <div class=
         "desktop:gap-fixed desktop:grid desktop:grid-cols-4 desktop:my-40 mobile:border-b mobile:border-border300 mobile:divide-y mobile:divide-border300">
           <nav class=
@@ -478,12 +479,18 @@
               "grid desktop:gap-16 mobile:gap-[32px] pb-8">
                 <a class=
                 "no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
+                href="https://booth.pm/about">BOOTHとは</a><a class=
+                "no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
                 href=
                 "https://booth.pm/customer_guide">お買い物ガイド</a><a class="no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
                 href="https://booth.pm/payment">お支払い方法</a><a class=
                 "no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
                 href=
-                "https://booth.pm/warehouse_group_shipments">倉庫おまとめ発送</a>
+                "https://booth.pm/trading_flowchart">取引の流れ</a><a class="no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
+                href=
+                "https://booth.pm/warehouse_group_shipments">倉庫おまとめ発送</a><a class="no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
+                href=
+                "https://booth.pm/ja/exhibitions">BOOTH主催のWeb即売会</a>
               </div>
             </div>
           </nav>
@@ -504,6 +511,8 @@
                 href=
                 "https://booth.pixiv.help/hc/">よくある質問</a><a class=
                 "no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
+                href=
+                "https://booth.karakuri.ai/embed/">チャットで質問（24時間対応）</a><a class="no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
                 href=
                 "https://booth.pm/support">BOOTH事務局へのお問い合わせ</a>
               </div>
@@ -527,13 +536,14 @@
           </nav>
         </div>
       </div>
-      <div class="desktop:mx-auto desktop:w-[1224px]">
+      <div class=
+      "desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
         <div class="desktop:mb-24 mobile:m-16">
           <div class="locales_menu">
             <div class="pulldown">
               <a class="btn negative small trigger js-tooltip"
               data-tippy-content=
-              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1374598&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;QwugFBkzJjtxbnTb3xqAeYnbXpcCKeYfFNk2qG0PvptzBJcwHu2kBvv9OtEEnY3tejJ2kqGUA0c0DTqOeUtRVw&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1374598&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;tILCYDLl0QDHDiFY7ENwq2cU1l3p8K6x0F3fvOgCSWOEjfVENTtTPU2db1I3xH0_lP3-WEpNS-nwidOa_Eamrw&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1374598&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;nj1T1eVC1wNealGeK6D3WuxdUV8l3JB-UiRTsThxW-auMmTx4pxVPtT5H5TwJ_rOH7R5WoZhdSZy8F-XLDW0Kg&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1374598&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;bi1362x2exfbo0QcvKmrAyoQ9IOK-nDZYMguwx1B5GVeIkDPa6j5KlEwChZnLqaX2fnchilHlYFAHCLlCQULqQ&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
+              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1374598&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;7pxgWxENcXvz4z2PFSU6KlW7IPsuL0SZhHdHHmjm78ovklFi6RIDZLj951oiYhWSr0nX3JbxQhcBOXfRTe9i6g&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1374598&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;qg4csEc3yOVFjddHij8Dtd2AddGbsIij99kJTVs8sg5rAC2Jvyi6-g6TDZK9eCwNJ3KC9iNuji1ylzmCfjU_Lg&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1374598&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;ivwMK1qNwvzpLzjLs0H28Zqi7SFfU8Qnzaq7ZmDx8MZL8j0SopKw46Ix4h6EBtlJYFAaBueNwqlI5IupRfh95g&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1374598&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;HUFUIBEKhUhiEoGOTvlYh5HM9b0NUEijLkTfiC5lZfzcT2UZ6RX3VykMW1t5vnc_az4CmrWOTi2rCu9HC2zo3A&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
               data-tippy-trigger="click" data-tippy-interactive=
               "true" data-tippy-theme="locale" data-tippy-appendto=
               "parent" href="#"><img width="20" height="20" alt=
@@ -547,7 +557,8 @@
         </div>
       </div>
       <div class="border-b border-border300"></div>
-      <div class="desktop:mx-auto desktop:w-[1224px]">
+      <div class=
+      "desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
         <div class=
         "my-24 desktop:flex desktop:items-center mobile:mx-16">
           <a data-tracking="click" data-product-list=
