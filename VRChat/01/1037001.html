@@ -63,9 +63,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "KJ5JzL9Cq/KfJdsK1lzw5OohIVJpApIyDw0jHeJKF2Q="></script>
+    "dkvIin2xL5LujmPctcnx2L8hUFxK/ZzwT3ONJUkGwZc="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="KJ5JzL9Cq/KfJdsK1lzw5OohIVJpApIyDw0jHeJKF2Q="></script>
+    nonce="dkvIin2xL5LujmPctcnx2L8hUFxK/ZzwT3ONJUkGwZc="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -75,27 +75,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/6f935c7c7ec228e95a1f.js" defer=
+    "https://asset.booth.pm/assets/a7c206d70b4a6ba6b0ac.js" defer=
     "defer" nonce=
-    "KJ5JzL9Cq/KfJdsK1lzw5OohIVJpApIyDw0jHeJKF2Q="></script>
+    "dkvIin2xL5LujmPctcnx2L8hUFxK/ZzwT3ONJUkGwZc="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"武器/装備セット3","description":"■VRChat向けの武器セット第3弾\n・CIWS-01C(近接戦闘用高周波ブレード)\n　CIWS-01Aを改良、取り回しを重視した小型ブレード\n　鞘は展開可能。連結ジョイントが同梱されており、他の高周波ブレードの鞘と連結できます\n\n・PDW Mark1\nケースレス弾を採用したサブマシンガン。\n\n・サブアーム・ユニット\n単腕バージョンの武装懸架アーム。一部の関節はスイング機構で伸縮できます\n\n・ブースター・ユニット\n偏向ノズル(ボーンで可動します)方式のブースター。\n\n・汎用装甲4種：アバターの手足に装備することを想定したアーマーパーツ第2弾\n\n　UTS2.0対応(Packageを使用する際は予めUTS2.0を入れてください) Packageを導入することでマテリアル設定済になったものが取り込めます\n\n■ポリゴン数\n　CIWS-01C(小型高周波ブレード)：590\n　CIWS-01C(鞘)：563\n　PDW Mark1(個人防衛火器):2,792\n\n　ブースター・ユニット2：600\n　ブースター・ユニット3：380\n\n　武装連結パーツ：608\n　サブアーム・ユニット：778\n\n　装甲4：320\n　装甲5：200\n　装甲6：184\n　装甲7：336\n　(ポリゴン数が多いためAnimation Overrideでの表示を推奨します)\n\n■禁止事項：再配布、自作発言","url":"https://booth.pm/ja/items/1037001","offers":{"priceCurrency":"JPY","@type":"Offer","price":"500"},"image":"https://booth.pximg.net/c/620x620/4c0b8e4e-23ce-4b6b-91ae-c803cad67328/i/1037001/aaab6422-22cb-415d-a45a-b29d262d4b8c_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="KJ5JzL9Cq/KfJdsK1lzw5OohIVJpApIyDw0jHeJKF2Q="></script>
+    nonce="dkvIin2xL5LujmPctcnx2L8hUFxK/ZzwT3ONJUkGwZc="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -459,7 +481,7 @@
         </div>
       </main>
     </div>
-    <footer class="footer__menu">
+    <footer class="footer__menu bg-white">
       <div class=
       "desktop:flex desktop:justify-between desktop:mx-auto desktop:text-center desktop:max-w-[1224px] desktop:my-24 desktop:px-16 mobile:gap-16 mobile:grid mobile:grid-cols-2 mobile:m-16">
         <a href=
@@ -590,7 +612,7 @@
             <div class="pulldown">
               <a class="btn negative small trigger js-tooltip"
               data-tippy-content=
-              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1037001&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;2pvtEkv7C5rPLubX_IUhYEvzD0eX5eA6FbcKy2CUyn_Q7x2JfriCAs4k1GpfdwPqKcHU05_W9oWzlKqRDJ9G4Q&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1037001&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;POpWsqsmAy2drty8DbxPwdvg_EFcvuM3yeMTewhL0B82nqYpnmWKtZyk7gGuTm1LudIn1VSN9YhvwLMhZEBcgQ&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1037001&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;AH0n5IOlDN7xbN1Qz9AJQkfbKTIqXrK-5fcWFiTQqxsKCdd_tuaFRvBm7-1sIivIJenypiJtpAFD1LZMSNsnhQ&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1037001&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;l_gHmLnDB0AwL-LIHkVobbsc0DYg92iu3QvSfSj5dBydjPcDjICO2DEl0HW9t0rn2S4LoijEfhF7KHInRPL4gg&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
+              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1037001&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;OxqMk_c4SCHcMnJ6Kxa9RbYLIfcbWhZ_r0xZK1fvJ1_dQF1RCBA60iL9h_ap805uNGtrFiK3GsWGhTPP-1BYwg&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1037001&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;mSXvZmVRYjDTBKJCmFjitrPSqRIV60AqLVtgOCPy2b9_fz6kmnkQwy3LV84avRGdMbLj8ywGTJAEkgrcj02mIg&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1037001&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;SE1gHftJTtubTjcNno6CGEUij-FnvFuRVwtj7c_wjPmuF7HfBGE8KGWBwoEca3Ezx0LFAF5RVyt-wgkJY0_zZA&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1037001&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;cLLpZ3gpg7a43cCIk4gMJFlSq5wFX7uYUGIwMfk46piW6DilhwHxRUYSNQQRbf8P2zLhfTyytyJ5q1rVVYeVBQ&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
               data-tippy-trigger="click" data-tippy-interactive=
               "true" data-tippy-theme="locale" data-tippy-appendto=
               "parent" href="#"><img width="20" height="20" alt=
