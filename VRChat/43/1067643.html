@@ -63,9 +63,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "lWVFOw9vdm5qW8Z4EkY8zSOM7gRCxWPzOLOvtlKp2sE="></script>
+    "+/Bl3JvDcLbu4zXmNbG36tznik6qCtr6477geqgYvqE="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="lWVFOw9vdm5qW8Z4EkY8zSOM7gRCxWPzOLOvtlKp2sE="></script>
+    nonce="+/Bl3JvDcLbu4zXmNbG36tznik6qCtr6477geqgYvqE="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -75,27 +75,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/6f935c7c7ec228e95a1f.js" defer=
+    "https://asset.booth.pm/assets/a7c206d70b4a6ba6b0ac.js" defer=
     "defer" nonce=
-    "lWVFOw9vdm5qW8Z4EkY8zSOM7gRCxWPzOLOvtlKp2sE="></script>
+    "+/Bl3JvDcLbu4zXmNbG36tznik6qCtr6477geqgYvqE="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"3Dモデル　PP-02 パルスレーザーピストル","description":"□コンパクトなパルスレーザーピストルの3Dモデルです。\n954△ポリゴン。\nカラーリング11種類、発光色4種類のテクスチャが付属。\n\n\n□内容\n・PP-02.fbx　本体\n\n・PP-02.unitypackage　本体2\n\n・texフォルダ　各種テクスチャ・マップ\n\n・readme.txt これ\n\n・サムネ類フォルダ　サムネ類画像\n\n\n□使用方法\n\nfbxデータやunitypackageを各種ソフトにインポートしてご利用下さい。\nunitypackageの場合、ファイルはAssets/weapon/PP-02フォルダに作成されます。\n\nレーザーサイト風のオブジェクトが付属しています。\n使用する際は、PP-02.prefabをHierarchy上に配置した後、PP-02の子にあるLaserSightオブジェクトの中に、\n更にLaserSight.prefabを配置して下さい。\nかなり長いので注意。\n\n\n□設定等\n\n　護身用、或いは非常用等の用途を主眼に設計された小型のパルスレーザー発射装置。\n内蔵式のバッテリーを備え、満充電で30発の発射が可能。\nバッテリーを固定化した事や、レーザー照準器以外の照準器の省略、安全装置を旧来の握り込み式グリップセーフティに\n絞った事等により、安価でありつつも粗悪な護身用火器などより遥かに信頼出来る製品となっている。\n　外見上は、通常火器であれば銃口にあたる部分にレーザー照準器を設置し、その下にパルスレーザー照射部が位置する\n上下逆転配置が特徴的。\n\n\n\n\n□利用規約\n\n配布行為そのものを目的とした再配布を禁じます。\n\nVRchat、改変、動画、同人、移植、商用などにどうぞ。\n\n\n\n\n\n□連絡先\n\nTwitter： @mabo_to_fu\nメール： stanag2324@gmail.com\n\n\n□更新履歴\n\n2018/10/25：販売開始","url":"https://booth.pm/ja/items/1067643","offers":{"priceCurrency":"JPY","@type":"Offer","price":"300"},"image":"https://booth.pximg.net/c/620x620/dd09d57d-ff0e-4d48-b34c-08c891168638/i/1067643/6c0519c3-7c81-4c75-b625-8b9c01a0ac72_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="lWVFOw9vdm5qW8Z4EkY8zSOM7gRCxWPzOLOvtlKp2sE="></script>
+    nonce="+/Bl3JvDcLbu4zXmNbG36tznik6qCtr6477geqgYvqE="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -678,7 +700,7 @@
         </div>
       </main>
     </div>
-    <footer class="footer__menu">
+    <footer class="footer__menu bg-white">
       <div class=
       "desktop:flex desktop:justify-between desktop:mx-auto desktop:text-center desktop:max-w-[1224px] desktop:my-24 desktop:px-16 mobile:gap-16 mobile:grid mobile:grid-cols-2 mobile:m-16">
         <a href=
@@ -745,12 +767,18 @@
               "grid desktop:gap-16 mobile:gap-[32px] pb-8">
                 <a class=
                 "no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
+                href="https://booth.pm/about">BOOTHとは</a><a class=
+                "no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
                 href=
                 "https://booth.pm/customer_guide">お買い物ガイド</a><a class="no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
                 href="https://booth.pm/payment">お支払い方法</a><a class=
                 "no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
                 href=
-                "https://booth.pm/warehouse_group_shipments">倉庫おまとめ発送</a>
+                "https://booth.pm/trading_flowchart">取引の流れ</a><a class="no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
+                href=
+                "https://booth.pm/warehouse_group_shipments">倉庫おまとめ発送</a><a class="no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
+                href=
+                "https://booth.pm/ja/exhibitions">BOOTH主催のWeb即売会</a>
               </div>
             </div>
           </nav>
@@ -771,6 +799,8 @@
                 href=
                 "https://booth.pixiv.help/hc/">よくある質問</a><a class=
                 "no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
+                href=
+                "https://booth.karakuri.ai/embed/">チャットで質問（24時間対応）</a><a class="no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
                 href=
                 "https://booth.pm/support">BOOTH事務局へのお問い合わせ</a>
               </div>
@@ -801,7 +831,7 @@
             <div class="pulldown">
               <a class="btn negative small trigger js-tooltip"
               data-tippy-content=
-              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1067643&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;F0WTafU_RK5toR39g4sx-M1idWWwcLAE9qW3W1o8Ud2h3kQkV9exCD4Pk9jXqOo_qt0SYx0gNY4qSSvKceXiwg&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1067643&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;MvhPSwi0NB_cnvB6cswNEUQXXoYHBe5-HqUh4e8dW0GEY5gGqlzBuY8wfl8m79bWI6g5gKpVa_TCSb1wxMToXg&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1067643&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;g1j6oeJQRDc2-Axnaxj1vJSs1YT32J6XpNEQmH1CtJk1wy3sQLixkWVWgkI_Oy578xOyglqIGx14PYwJVpsHhg&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1067643&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;H7jWi3w1IXi9LzCyP5JLxTeetMdwvAmwhp050vyxlBupIwHG3t3U3u6BvpdrsZACUCHTwd3sjDpacaVD12gnBA&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
+              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1067643&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;OOLiUCOgxju7VlWdEJ2jqLIzeRwbDm_aLSghouB6_4nw8npyiwgSyDRZsjiYcGp2aCftq1tUaywIzKpjwHY8tQ&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1067643&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;ihW1oL8zjAi8slVylYJHUClTyzySKKlQU0jUyBmszmdCBS2CF5tY-zO9stcdb46O80dfi9JyraZ2rF8JOaANWw&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1067643&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;V7L1n9RcGPx3n4QG-nkR9jfJTaTS0Yjz9siGEC_FC-2fom29fPTMD_iQY6NylNgo7d3ZE5KLjAXTLA3RD8nI0Q&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1067643&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;D92QBWPCyNVmAfjH5Jj8JQxDI2R9k-1m3FSBqJlK0jLHzQgny2ocJukOH2JsdTX71le30z3J6ZD5sAppuUYRDg&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
               data-tippy-trigger="click" data-tippy-interactive=
               "true" data-tippy-theme="locale" data-tippy-appendto=
               "parent" href="#"><img width="20" height="20" alt=
