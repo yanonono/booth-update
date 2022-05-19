@@ -63,9 +63,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "9ITj0yxnpOPU+ZrmgMo3q6j8jX3m6p3cx+v51l2f4cs="></script>
+    "ZrZ/CH20GQ/go+NpV6snt5JN/asTa5eqlruMKE5PvtY="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="9ITj0yxnpOPU+ZrmgMo3q6j8jX3m6p3cx+v51l2f4cs="></script>
+    nonce="ZrZ/CH20GQ/go+NpV6snt5JN/asTa5eqlruMKE5PvtY="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -75,27 +75,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/8783bf43601e4eec0f97.js" defer=
+    "https://asset.booth.pm/assets/a7c206d70b4a6ba6b0ac.js" defer=
     "defer" nonce=
-    "9ITj0yxnpOPU+ZrmgMo3q6j8jX3m6p3cx+v51l2f4cs="></script>
+    "ZrZ/CH20GQ/go+NpV6snt5JN/asTa5eqlruMKE5PvtY="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"【HTC ベースステーション用】 ベースステーションアンカー","description":"HTCベースステーションを径の小さな釘で壁に固定できるアタッチメントです。\n壁に大きなネジ穴を空けられない賃貸等で役に立ちます。\n\n梱包物\n・ベースステーションアンカー×2\n・隠し釘×7\n\n--------------------------------------------------------------------------------------\n個数は1個単位ではなく、最低限のトラッキングに必要な台数を想定した1セット（2個入り）単位ですので入力間違えに注意してください。\n\nベースステーション2.0にも対応可。\n\nベースステーションアンカー本体は3Dプリンタで造形しております。\n熱溶解積層方式であるため、若干の積層痕や精度不良などが出る場合がございます。\n\nHTCベースステーション以外の物に使用しないでください。\n\n十分なテストは行っておりますが、取り付ける壁の材質、厚みによっては取り付けられなかったり、不安定になる場合がございます。\n異常を感じた場合はすぐに使用を中止してください。\n\nベースステーションアンカー本体の色をお選びすることはできません。\n商品イメージ画像と異なる場合がございますが、ご了承ください。\n\n商品の使用により発生した損失は、いかなる理由であっても当方は責任を負いません。\n\n返品不可。\n\n3Dスキャン禁止。\n\n転売禁止。\n--------------------------------------------------------------------------------------","url":"https://booth.pm/ja/items/1148163","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"1050","highPrice":"2050"},"image":"https://booth.pximg.net/c/620x620/7a3c4c8e-a5f1-4c8c-82de-de510a621651/i/1148163/6287d950-2c05-41f8-8658-d51b6d6ed0d4_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="9ITj0yxnpOPU+ZrmgMo3q6j8jX3m6p3cx+v51l2f4cs="></script>
+    nonce="ZrZ/CH20GQ/go+NpV6snt5JN/asTa5eqlruMKE5PvtY="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -737,7 +759,7 @@
             <div class="pulldown">
               <a class="btn negative small trigger js-tooltip"
               data-tippy-content=
-              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1148163&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;nuG7VKtIfVLkzD33x_gXfKxTKeugRAhaoDAiJNfDAiQS5HxQDFQysnjLuCI0f0tsYbuIX9RPVLxwJYLwYntG-Q&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1148163&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;vd7o2BgvG3EbBpylG2p35lDAkcXVKt_mu7-GvmdrS0Ux2y_cvzNUkYcBGXDo7Sv2nSgwcaEhgwBrqiZq0tMPmA&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1148163&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;HT97vihLcffZWz6zpS1S_Ia5nlirkjWhibF1EbHHDA2ROry6j1c-F0Vcu2ZWqg7sS1E_7N-ZaUdZpNXFBH9I0A&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1148163&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;gaR8fTTBXFZ7YaHHHyCEFZ_dRHYz8IiEFs56LrFA_d4Nobt5k90TtudmJBLsp9gFUjXlwkf71GLG29r6BPi5Aw&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
+              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1148163&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;FrljLIX4i9TLnY5Chv_RaSKtshKRW57olHuZ6RjvZXE_3Z2DoH5IuiivyJytowsSkv1q9tw_1lPhDbJ1J6exjQ&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1148163&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;Xn23xqUPp46Mjtf616ZcKTUUkWzoqxzAkGKPRwI5z5Z3GUlpgIlk4G-8kST8-oZShURJiKXPVHvlFKTbPXEbag&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1148163&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;1rhzx8UUe-3lqaHYLRPLCIXzSCuYwC0LS4g0Y7wjca7_3I1o4JK4gwab5wYGTxFzNaOQz9WkZbA-_h__g2ulUg&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1148163&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;OKlT-FJihX-gKKgl2hnrHXsHGziGfb5fDUHsyZD5qaARza1Xd-RGEUMa7vvxRTFmy1fD3MsZ9uR4N8dVr7F9XA&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
               data-tippy-trigger="click" data-tippy-interactive=
               "true" data-tippy-theme="locale" data-tippy-appendto=
               "parent" href="#"><img width="20" height="20" alt=
