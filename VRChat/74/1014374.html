@@ -63,9 +63,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "3uMquaA2qttzKTlA120BfDNbKsleW8BSs+wfLLgtyY8="></script>
+    "93EJpcbpR08NhpuGtEJmFaEYFHXEVy+ihUTBEW8I7p0="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="3uMquaA2qttzKTlA120BfDNbKsleW8BSs+wfLLgtyY8="></script>
+    nonce="93EJpcbpR08NhpuGtEJmFaEYFHXEVy+ihUTBEW8I7p0="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -75,27 +75,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
     "https://asset.booth.pm/assets/a7c206d70b4a6ba6b0ac.js" defer=
     "defer" nonce=
-    "3uMquaA2qttzKTlA120BfDNbKsleW8BSs+wfLLgtyY8="></script>
+    "93EJpcbpR08NhpuGtEJmFaEYFHXEVy+ihUTBEW8I7p0="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"【HTC VIVE トラッカー用】 素足固定マウント","description":"VIVEトラッカーを素足に直接固定できるアタッチメントです。\nスリッパを履かない事により、フローリング等でも軽快にステップやターンを行えるように設計しております。\n素足と書いてありますが、厚手の靴下を履いた上に装着することをオススメします。\n\n梱包物\n・素足固定マウントＲ\n・素足固定マウントＬ\n・M1/4ネジ×2\n・M1/4ワッシャー×2\n・バックル付きバンド×2\n\n--------------------------------------------------------------------------------------\n個数は1個単位ではなく、両足を想定した1セット（2個入り）単位ですので入力間違えに注意してください。\n\n開封後、すぐ装着できるよう、組み立てた状態で梱包しています。\n\n素足固定マウント本体は3Dプリンタで造形しております。\n熱溶解積層方式のであるため、若干の積層痕や精度不良などが出る場合がございます。\n\n十分なテストは行っておりますが、ベルトを締めすぎると痛みを感じることがあります。\n異常を感じた場合はすぐに使用を中止してください。\n\n素足固定マウントおよびバンドの色をお選びすることはできません。\n商品イメージ画像と異なる場合がございますが、ご了承ください。\n\n商品の使用により発生した損失は、いかなる理由であっても当方は責任を負いません。\n\n返品不可。\n\n3Dスキャン禁止。\n\n転売禁止。\n--------------------------------------------------------------------------------------","url":"https://booth.pm/ja/items/1014374","offers":{"priceCurrency":"JPY","@type":"Offer","price":"2050"},"image":"https://booth.pximg.net/c/620x620/7a3c4c8e-a5f1-4c8c-82de-de510a621651/i/1014374/48c58b4b-706d-4a0d-8f17-127d7615a5ce_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="3uMquaA2qttzKTlA120BfDNbKsleW8BSs+wfLLgtyY8="></script>
+    nonce="93EJpcbpR08NhpuGtEJmFaEYFHXEVy+ihUTBEW8I7p0="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -665,7 +687,7 @@
             <div class="pulldown">
               <a class="btn negative small trigger js-tooltip"
               data-tippy-content=
-              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1014374&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;VfoAuADqlTpthiVc_okBRELag-UpbDQlxIp-v2zBpznqC_fONdNwalXHPFTWZ4CyyFf4XrwjCZcGaF8ObMFS2A&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1014374&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;KEe3Np8hxyJlAlmzbWS3fwvrJ-SnI56vMLpenbPEdJqXtkBAqhgicl1DQLtFijaJgWZcXzJsox3yWH8ss8SBew&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1014374&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;8gVUhVRVWE8C4WNwY9QLoYqLvFPRJfpJ4pmCSyzMrTZN9KPzYWy9HzqgenhLOopXAAbH6ERqx_sge6P6LMxY1w&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1014374&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;PXhL4HKi_cAbprK33s75bpWnpAg6VS8zcmHDW3_jJpSCibyWR5sYkCPnq7_2IHiYHyrfs68aEoGwg-Lqf-PTdQ&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
+              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1014374&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;KldfnZ4qCV3kcHwZpoXSMs9b7CRmxZZv2z3jt91lf4VBVMSQpLQ5HI376jmTzTJ6nQRGFtUVsKVqQ47tSi_jQQ&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1014374&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;mUHcl0bIyPvkVGHVjS9B1Km9BSkXIpli7JVG0sExqsTyQkeafFb4uo3f9_W4Z6Gc--KvG6Tyv6hd6yuIVns2AA&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1014374&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;PRczgp2pEhNYF_CkpSUkAWBq8TgT2DE8Oi9XDPqKsNdWFKiPpzciUjGcZoSQbcRJMjVbCqAIF_aLUTpWbcAsEw&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1014374&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;spUJK2S5T6j2WeZnhwWpE72g9Jo3M8_yK4P2cAsDRJbZlpImXid_6Z_ScEeyTUlb7_9eqITj6Tia_ZsqnEnYUg&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
               data-tippy-trigger="click" data-tippy-interactive=
               "true" data-tippy-theme="locale" data-tippy-appendto=
               "parent" href="#"><img width="20" height="20" alt=
