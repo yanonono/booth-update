@@ -64,9 +64,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "B5j8jdBT+ht9AYA4zzmak2bBFG20efsXFJvgTSA5AyI="></script>
+    "j8coecq+uD92+LlcNYdZTrjwx8ovQ9Xud+3UjVfvB/s="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="B5j8jdBT+ht9AYA4zzmak2bBFG20efsXFJvgTSA5AyI="></script>
+    nonce="j8coecq+uD92+LlcNYdZTrjwx8ovQ9Xud+3UjVfvB/s="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -76,27 +76,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/8783bf43601e4eec0f97.js" defer=
+    "https://asset.booth.pm/assets/a7c206d70b4a6ba6b0ac.js" defer=
     "defer" nonce=
-    "B5j8jdBT+ht9AYA4zzmak2bBFG20efsXFJvgTSA5AyI="></script>
+    "j8coecq+uD92+LlcNYdZTrjwx8ovQ9Xud+3UjVfvB/s="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"【VRchat向け少年3Dモデル】Lei-Lei【オキュラスクエスト対応】","description":"※2019年3月30日更新\n表情追加（眉上・眉下・眉怒り・眉困り）blenderで編集する際シェイプキーが読み込まれない問題を修正しました\n\n※2020年4月14日更新\n表情が一部追加されていなかった問題の修正\nshaderをまんまるしぇーだー3への更新\n一部ボーンの修正\nオキュラスクエスト対応\n\n※2020年4月16日更新\n4月14日に大幅なアップデートを加えたため、価格を変更\n\n※2020年7月2日更新\n缶バッジのウェイトを修正\n\nVRchat用のモデルとなります。\nフルトラでもそれなりに動きます。\n\n■入っている物\nunityPackage形式となっています\n・Materialセットアップ済のモデル\n※VRChatSDKを入れたプロジェクトに入れればすぐにアップロードできます。\n・表情ファイル\n※色は2パターン入っています。\n\n■やっていい事\n・VRchatでの使用\n・VRchatを使用した生放送の出演・撮影など\n・改変\n\n■禁止事項\n・モデル再配布（改造・未改造問わず）\n※アバターペデスタルへの使用も再配布にあたります\n・政治的利用\n・他者を侮辱するような利用\n・他人を不快にさせる行為\n・本商品に含まれるデータを元にした商品を作る事\n・その他製作者が不適切と判断したもの\n※上記以外の使用については作者にお問い合わせください。\n\n\nこのモデルには @Mini_9321_VR 様作 まんまるしぇーだー3\n配布先：  https://miniscape.booth.pm/items/1627422 が使用されています。","url":"https://booth.pm/ja/items/1184866","offers":{"priceCurrency":"JPY","@type":"Offer","price":"1500"},"image":"https://booth.pximg.net/c/620x620/9585a184-fff0-488e-8a9d-612c758951c2/i/1184866/174717f9-e648-4ac9-b750-d9f1ef40facc_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="B5j8jdBT+ht9AYA4zzmak2bBFG20efsXFJvgTSA5AyI="></script>
+    nonce="j8coecq+uD92+LlcNYdZTrjwx8ovQ9Xud+3UjVfvB/s="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -678,7 +700,7 @@
             <div class="pulldown">
               <a class="btn negative small trigger js-tooltip"
               data-tippy-content=
-              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1184866&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;GsFGWM9r6oiakqVma868Dl-NFF_Ae_7K55AbFBcIOE8eGX0sSgI71nV1VDRlgb6aoZjyq2cvhukVsI59Qf3OAA&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1184866&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;CM2G7KmcQEAUAmV_xHY2UA180KzprpdZOix7AZJJK0wMFb2YLPWRHvvllC3KOTTE82k2WE7673rIDO5oxLzdAw&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1184866&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;L2AsXOY7ar9asesHa4udWF1mR-3kR6PyVKiYs8Ma6ZMruBcoY1K74bVWGlVlxJ_Mo3OhGUMT29GmiA3ale8f3A&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1184866&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;OIVq0UWK3CVHkUDdy5kTbTnBEHOL39eyNj1vocDiZ1Y8XVGlwOMNe6h2sY_F1hH5x9T2hyyLr5HEHfrIlheRGQ&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
+              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1184866&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;9eFzq6r013iV54WQvd68H6mhZxETXCf9n59MYEEAF9gFMoSmUOZyGHHuobl2No8pbP15sND81JzQU7SfHl3HpA&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1184866&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;GfDFQ-qRldfCqE3qdvRcoUVia57cTpXbnRYXZPTZnQDpIzJOEIMwtyahacO9HG-XgD51Px_uZrrS2u-bq4RNfA&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1184866&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;uRQfvsy20obUcLU_-XFRkyPhP7fv2fcBShKN0qHRXUpJx-izNqR35jB5kRYymWKl5r0hFix5BGAF3nUt_oyNNg&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1184866&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;-8c6uNoeezNn5IzEKICZLFTEPKk9q17u0U9Qj5M2gHoLFM21IAzeU4PtqO3jaKoakZgiCP4LrY-eg6hwzGtQBg&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
               data-tippy-trigger="click" data-tippy-interactive=
               "true" data-tippy-theme="locale" data-tippy-appendto=
               "parent" href="#"><img width="20" height="20" alt=
