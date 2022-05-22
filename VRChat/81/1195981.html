@@ -64,9 +64,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "2BRi0O+QlPApPHfk8ogQ/T9skt8KCi9iSVJAs9sfxdo="></script>
+    "3fkQQW0Rcwc8JsOeTFpL8UMljEhqFjMrIXk9nzYE/NU="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="2BRi0O+QlPApPHfk8ogQ/T9skt8KCi9iSVJAs9sfxdo="></script>
+    nonce="3fkQQW0Rcwc8JsOeTFpL8UMljEhqFjMrIXk9nzYE/NU="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -76,27 +76,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
     "https://asset.booth.pm/assets/a7c206d70b4a6ba6b0ac.js" defer=
     "defer" nonce=
-    "2BRi0O+QlPApPHfk8ogQ/T9skt8KCi9iSVJAs9sfxdo="></script>
+    "3fkQQW0Rcwc8JsOeTFpL8UMljEhqFjMrIXk9nzYE/NU="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"【VRChat】Gear necklace ギア・ネックレス","description":"【お知らせ（8月11日）】\n・軽量版チェーン(ポリゴン数が約1/10、シェイプキーなし版）‬を追加してVer 1.5にしました。\n・同時に価格を100円値上げしました。\n‪・既にご購入いただいた方はアップデート版も無料で再DLできます。\n——\n\nVRChat・Unityでの使用を想定した歯車モチーフのネックレスです。\n(Questでの挙動は検証できていません)\n特徴\n・Animatorによってギアが回転します。\n・曲がり具合を調節するシェイプキー付きのチェーンが同梱されています。\n・シェーダーの異なる二種のプレハブが同梱されています。\n・少し重めのデータになります。購入前に仕様をご確認ください。\n\n【モデルの使用条件】\n　改変：OK   商用利用：OK\n　性的・暴力的コンテンツでの使用：NG\n　※詳細は利用規約をご確認ください。","url":"https://booth.pm/ja/items/1195981","offers":{"priceCurrency":"JPY","@type":"Offer","price":"600"},"image":"https://booth.pximg.net/c/620x620/d4226d01-b958-4710-a35d-de900bd2a76a/i/1195981/dfb10ea7-81c5-4a87-a4e4-8c3608e5148a_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="2BRi0O+QlPApPHfk8ogQ/T9skt8KCi9iSVJAs9sfxdo="></script>
+    nonce="3fkQQW0Rcwc8JsOeTFpL8UMljEhqFjMrIXk9nzYE/NU="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -675,7 +697,7 @@
             <div class="pulldown">
               <a class="btn negative small trigger js-tooltip"
               data-tippy-content=
-              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1195981&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;jYkW2NJXTtOFomphsjodMi74GDo6NWHuCwSBSEWbgRI1bXzrVTCwoTPUP9oKYwmnSW2twQMDn5mOAKScbRtoPQ&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1195981&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;y4SlJnxzML8Ys6tr3wpuQ3HkjRpHU-cLBp-C02gzz3BzYM8V-xTOza7F_tBnU3rWFnE44X5lGXyDm6cHQLMmXw&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1195981&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;uxHGZYnRS0UdV5pm9dLACJiQgzLpkKeHxNU2Ptd6pW0D9axWDra1N6shz91Ni9Sd_wU2ydCmWfBB0RPq__pMQg&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1195981&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;o_Lt8g8XvBlX_z4xtA7TafxekqJvNgYCAPe1tNODATMbFofBiHBCa-GJa4oMV8f8m8snWVYA-HWF85Bg-wPoHA&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
+              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1195981&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;4jMwlGzZtqMLmBwLjWwG92maGUp0mzM_LYBY6Li-IlUyLz4vb3WTTXOkibUf39mEzsWJJcYFCrU1hzz6F6Y-lQ&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1195981&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;hl-tWNh7Ci47OuuT77OJsRaDcdLwt1mzezOnYXWlQi5WQ6Pj29cvwEMGfi19AFbCsdzhvUIpYDljNMNz2r1e7g&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1195981&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;7o_fOUA-hfi-2dr-BpAKuhtpoVgGgutE5euFMIbPeag-k9GCQ5KgFsblT0CUI9XJvDYxN7Qc0s797OEiKddlaA&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1195981&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;eQxlRTdL_lobk6RposXSPc2DjA4lIFTIUzhsfliAgi2pEGv-NOfbtGOvMdcwdg1OatwcYZe-bUJLPwhs95ie7Q&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
               data-tippy-trigger="click" data-tippy-interactive=
               "true" data-tippy-theme="locale" data-tippy-appendto=
               "parent" href="#"><img width="20" height="20" alt=
