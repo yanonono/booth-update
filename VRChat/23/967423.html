@@ -39,6 +39,11 @@
     "js_const_base_domain">
     <meta content="false" name="js_const_user_signed_in">
     <meta content="&quot;ja&quot;" name="js_const_user_locale">
+    <meta content="false" name=
+    "js_const_user_locale_redirect_confirm">
+    <meta content=
+    "{&quot;ja&quot;:&quot;https://booth.pm/locale?locale=ja\u0026return_to=https%3A%2F%2Fbooth.pm%2Fja%2Fitems%2F967423&quot;,&quot;en&quot;:&quot;https://booth.pm/locale?locale=en\u0026return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F967423&quot;,&quot;ko&quot;:&quot;https://booth.pm/locale?locale=ko\u0026return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F967423&quot;,&quot;zh-cn&quot;:&quot;https://booth.pm/locale?locale=zh-cn\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F967423&quot;,&quot;zh-tw&quot;:&quot;https://booth.pm/locale?locale=zh-tw\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F967423&quot;}"
+    name="js_const_user_locale_redirect_urls">
     <meta content="false" name="js_const_user_adult">
     <meta content=
     "&quot;https://accounts.booth.pm/wish_lists.json&quot;" name=
@@ -63,9 +68,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "Kz2ZAeh0jX1xJVM+lrk7YLEKJD9k64r9Ll98YsEHMvI="></script>
+    "fe18GcQG/qDy+kA2tOu+IuDz0CYmElmwrsmsFOEdcQI="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="Kz2ZAeh0jX1xJVM+lrk7YLEKJD9k64r9Ll98YsEHMvI="></script>
+    nonce="fe18GcQG/qDy+kA2tOu+IuDz0CYmElmwrsmsFOEdcQI="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -79,9 +84,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/bf30e84e8240ffac88c0.js" defer=
+    "https://asset.booth.pm/assets/226bec842b0148e64ebd.js" defer=
     "defer" nonce=
-    "Kz2ZAeh0jX1xJVM+lrk7YLEKJD9k64r9Ll98YsEHMvI="></script>
+    "fe18GcQG/qDy+kA2tOu+IuDz0CYmElmwrsmsFOEdcQI="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"Saikin Hutotta(Rebound)","description":"8/26　バグが潰せず無念のダウングレード（足や腕などの長さを弄る機能が現状正常に動作しないのでオフに）\n8/21　Rebound版にアップデート\n\nUnityでHumanoid対応モデルに追加する事で体型をスライダーで変更する事ができます。\nVRchatにアップロードする際は本コンポーネントを削除してください。（スクリプトは弾かれるため）\n詳しい使用法は同梱されたヘルプファイルを参照してください。\n\n\n・sentz-Aデータ利用規約（2018/08/26）\n本データを利用した場合、利用者は本規約に同意したものとみなされます。\n本データの利用により発生した損害、損失等について著作者は一切の責任を負わないものとします。\n1.著作者の特別の許可がない限り、不特定多数が現状のまま利用可能な状態での再配布を禁じます。","url":"https://booth.pm/ja/items/967423","offers":{"priceCurrency":"JPY","@type":"Offer","price":"200"},"image":"https://booth.pximg.net/c/620x620/e187f0d4-84c9-40b6-8fed-dae784ce6815/i/967423/6942f9c5-b6de-402f-b417-10d9f4eff9a7_base_resized.jpg"}
     </script>
@@ -95,7 +100,7 @@
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="Kz2ZAeh0jX1xJVM+lrk7YLEKJD9k64r9Ll98YsEHMvI="></script>
+    nonce="fe18GcQG/qDy+kA2tOu+IuDz0CYmElmwrsmsFOEdcQI="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -493,23 +498,9 @@
         </div>
       </div>
       <div class=
-      "desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
-        <div class="desktop:mb-24 mobile:m-16">
-          <div class="locales_menu">
-            <div class="pulldown">
-              <a class="btn negative small trigger js-tooltip"
-              data-tippy-content=
-              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F967423&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;4zGV00vWTXEhAqlmM0_txhgZw3Xyy5qRgsAkLVTE2Yq78aReS14iLBd4aPxvOzRxQLMTrYxWV190fCtv4k12sQ&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F967423&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;AaEmVRTsd9ADfXW8GWeU7qukf2zeJItL2xZ8OiOOhsNZYRfYFGQYjTUHtCZFE01Z8w6vtKC5RoUtqnN4lQcp-A&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F967423&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;sLWLgv8Ve3JFd3VQIgrBBhtJpGK-96ovWOQJFZbNudTodboP_50UL3MNtMp-fhixQ-N0usBqZ-GuWAZXIEQW7w&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F967423&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;JWJ08P4faH-dnnsOkAcjfn4i96WPc-rQ4vnAXLRH7lZ9okV9_pcHIqvkupTMc_rJJognffHuJx4URc8eAs5BbQ&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
-              data-tippy-trigger="click" data-tippy-interactive=
-              "true" data-tippy-theme="locale" data-tippy-appendto=
-              "parent" href="#"><img width="20" height="20" alt=
-              "locale" src=
-              "https://asset.booth.pm/assets/icons/locale-a6b3e536959c11bfbc9e22f2ecaff8bd9ea3fc969cccda64e7e77b2b2c52994f.svg">
-              <div class="current-locale u-ml-200">
-                <span>日本語</span>
-              </div></a>
-            </div>
-          </div>
+      "flex desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
+        <div class=
+        "js-locale-switcher mr-auto desktop:mb-24 mobile:m-16">
         </div>
       </div>
       <div class="border-b border-border300"></div>
