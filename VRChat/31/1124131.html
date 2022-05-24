@@ -39,6 +39,11 @@
     "js_const_base_domain">
     <meta content="false" name="js_const_user_signed_in">
     <meta content="&quot;ja&quot;" name="js_const_user_locale">
+    <meta content="false" name=
+    "js_const_user_locale_redirect_confirm">
+    <meta content=
+    "{&quot;ja&quot;:&quot;https://booth.pm/locale?locale=ja\u0026return_to=https%3A%2F%2Fbooth.pm%2Fja%2Fitems%2F1124131&quot;,&quot;en&quot;:&quot;https://booth.pm/locale?locale=en\u0026return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1124131&quot;,&quot;ko&quot;:&quot;https://booth.pm/locale?locale=ko\u0026return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1124131&quot;,&quot;zh-cn&quot;:&quot;https://booth.pm/locale?locale=zh-cn\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1124131&quot;,&quot;zh-tw&quot;:&quot;https://booth.pm/locale?locale=zh-tw\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1124131&quot;}"
+    name="js_const_user_locale_redirect_urls">
     <meta content="false" name="js_const_user_adult">
     <meta content=
     "&quot;https://accounts.booth.pm/wish_lists.json&quot;" name=
@@ -63,9 +68,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "q44Cj6/vTs7FwhlFtHCatartBEHeHaaxBfSJdbanodQ="></script>
+    "F4NYZewClmRNGTGfcTrtmadLPJGhtf4FioGqnUdPOmU="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="q44Cj6/vTs7FwhlFtHCatartBEHeHaaxBfSJdbanodQ="></script>
+    nonce="F4NYZewClmRNGTGfcTrtmadLPJGhtf4FioGqnUdPOmU="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -79,9 +84,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/bf30e84e8240ffac88c0.js" defer=
+    "https://asset.booth.pm/assets/226bec842b0148e64ebd.js" defer=
     "defer" nonce=
-    "q44Cj6/vTs7FwhlFtHCatartBEHeHaaxBfSJdbanodQ="></script>
+    "F4NYZewClmRNGTGfcTrtmadLPJGhtf4FioGqnUdPOmU="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"表情＆動作確認用カメラモニター「KawaiiCameraV2」","description":"いつも可愛いあなたでいて欲しいから！\n\n自分の表情や仕草を確認できる、他の人からは見えないカメラ＆モニターです。アバターにつけて使います。\n\nVR上では、自分の表情を確認する方法が限られています。\n鏡を見る、カメラを常に自分に向けておくなど…。\nところが、鏡はどのワールドにもあるわけではありませんし、\nカメラをずっと出しておくと描画負荷が高まります。\n\nKawaiiCameraは、アバターにセットするカメラ＆モニターです。\nどんなワールドでも、どこにいても、自分がどんな表情をしているか確認できます。\nKawaiiCameraは、2018年9月に「表情がバグってる瞬間を極力減らしたい」つまり「Kawaii状態をなるべくキープしたい！」という想いから制作したギミックです。\nこれまで、累計1400名以上の方に導入頂いています。\n\n以下の機能を含みます。\n・表情と全身を映すカメラ\n・頭に追尾するモニター　※自分からしか見えない\n・透明度を調整できて、Cameraに映り込まないKawaiiCameraShader\n・（ver1.4以前で対応）エモートで出し入れ可能　※元怒さんのEmoteSwitchV3を使用しています\n\n◆使用可能環境\n・VRモード\n・デスクトップモード\nいずれも可\n\n実際に動いているところは、こちらの動画をご覧下さい。\n(動画はver1.0のものなので少し古いですが、挙動はほとんど変わりません)\nhttps://youtu.be/u5SyiAHGQqM\n\n2020/8/28【KawaiiCameraV2】をリリース！\n　　　　　Avatar3.0に対応\n　　　　　KawaiiCameraShaderを採用し、PhotoCamera・StreamCamera・スクリーンショット(写真)に、KawaiiCameraのモニターが映り込まなくなりました。\n\n2018/12/27　レイヤーセットアップについて追記\n　　　　　　prefabを配置すると、アバターから離れた場所にカメラが配置されてしまう問題を解消\n\n2018/12/23　最新SDKに対応（MeshColliderを含むとアップロードできない問題に対応）。EmoteSwitchをV3にアップグレード（１ワールドに長く滞在すると重くなる問題を解決）\n\n2019/3/22　EmoteSwitchのOn/Offが動作していない問題を解消\n\n2018/12/2　KawaiiCamera発売\n\n2018/9　KawaiiCameraの前身となるFaceChecker配布開始\n\n【利用規約】\n本モデルはUVライセンスで公開されています。\n本モデルでは基礎条項に加え、個別条項をもとに以下の行為を許可します。\n\n・個人の商用利用の許可\n・法人の利用の許可\n規約全文は下記URLを参照してください。\nhttps://uv-license.com/ja/license?utf8=%E2%9C%93\u0026pcu=true\u0026ccu=true\n\n【Terms of Use】\nThis model is released under UV license.\nThis model allows the following actions based on Individual terms in addition to the Basic Terms.\n\n・Personal Commercial Use\n・Corporate Commercial Use\nFor the full text of the rules, please refer to the following URL.\nhttps://uv-license.com/en/license?utf8=%E2%9C%93\u0026pcu=true\u0026ccu=true","url":"https://booth.pm/ja/items/1124131","offers":{"priceCurrency":"JPY","@type":"Offer","price":"300"},"image":"https://booth.pximg.net/c/620x620/b8436563-0482-416d-9916-413cde8a8c6b/i/1124131/ede65f35-4682-4a7d-84a9-8faa1867b3eb_base_resized.jpg"}
     </script>
@@ -95,7 +100,7 @@
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="q44Cj6/vTs7FwhlFtHCatartBEHeHaaxBfSJdbanodQ="></script>
+    nonce="F4NYZewClmRNGTGfcTrtmadLPJGhtf4FioGqnUdPOmU="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -611,23 +616,9 @@
         </div>
       </div>
       <div class=
-      "desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
-        <div class="desktop:mb-24 mobile:m-16">
-          <div class="locales_menu">
-            <div class="pulldown">
-              <a class="btn negative small trigger js-tooltip"
-              data-tippy-content=
-              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1124131&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;qc-A3PE08HTsUK_BO7YkcReJ7EZj5ueANYXcD6qvpPSALTUWE5U9Z2hkXCY_a2jj9YJwVaGc6w0dahtjyuTyNg&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1124131&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;VKss3SNYPSYvtiDk68XVwkBREI7Uart70NwvuNc7KmF9SZkXwfnwNauC0wPvGJlQolqMnRYQt_b4M-jUt3B8ow&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1124131&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;QSa-ASi4FPg_kGWZ77ntJ4tZZSVm3ao2dX4_yfK3q2FoxAvLyhnZ67ukln7rZKG1aVL5NqSnprtdkfilkvz9ow&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1124131&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;Apjj2Oiy3SpUEwiCs8ypop4hX_1ck_pLG5y75jEXPwErelYSChMQOdAn-2W3EeUwfCrD7p7p9sYzc3yKUVxpww&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
-              data-tippy-trigger="click" data-tippy-interactive=
-              "true" data-tippy-theme="locale" data-tippy-appendto=
-              "parent" href="#"><img width="20" height="20" alt=
-              "locale" src=
-              "https://asset.booth.pm/assets/icons/locale-a6b3e536959c11bfbc9e22f2ecaff8bd9ea3fc969cccda64e7e77b2b2c52994f.svg">
-              <div class="current-locale u-ml-200">
-                <span>日本語</span>
-              </div></a>
-            </div>
-          </div>
+      "flex desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
+        <div class=
+        "js-locale-switcher mr-auto desktop:mb-24 mobile:m-16">
         </div>
       </div>
       <div class="border-b border-border300"></div>
