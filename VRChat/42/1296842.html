@@ -39,6 +39,11 @@
     "js_const_base_domain">
     <meta content="false" name="js_const_user_signed_in">
     <meta content="&quot;ja&quot;" name="js_const_user_locale">
+    <meta content="false" name=
+    "js_const_user_locale_redirect_confirm">
+    <meta content=
+    "{&quot;ja&quot;:&quot;https://booth.pm/locale?locale=ja\u0026return_to=https%3A%2F%2Fbooth.pm%2Fja%2Fitems%2F1296842&quot;,&quot;en&quot;:&quot;https://booth.pm/locale?locale=en\u0026return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1296842&quot;,&quot;ko&quot;:&quot;https://booth.pm/locale?locale=ko\u0026return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1296842&quot;,&quot;zh-cn&quot;:&quot;https://booth.pm/locale?locale=zh-cn\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1296842&quot;,&quot;zh-tw&quot;:&quot;https://booth.pm/locale?locale=zh-tw\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1296842&quot;}"
+    name="js_const_user_locale_redirect_urls">
     <meta content="false" name="js_const_user_adult">
     <meta content=
     "&quot;https://accounts.booth.pm/wish_lists.json&quot;" name=
@@ -63,9 +68,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "eK5R9fYOwYg9Z55Yv7E2zHLMNVCcB7BNB1EkNbackHo="></script>
+    "I9CVwaJ2Qpc0NGUCFZI/0CjFDsmCC896mQdXnzNMzQY="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="eK5R9fYOwYg9Z55Yv7E2zHLMNVCcB7BNB1EkNbackHo="></script>
+    nonce="I9CVwaJ2Qpc0NGUCFZI/0CjFDsmCC896mQdXnzNMzQY="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -79,9 +84,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/bf30e84e8240ffac88c0.js" defer=
+    "https://asset.booth.pm/assets/226bec842b0148e64ebd.js" defer=
     "defer" nonce=
-    "eK5R9fYOwYg9Z55Yv7E2zHLMNVCcB7BNB1EkNbackHo="></script>
+    "I9CVwaJ2Qpc0NGUCFZI/0CjFDsmCC896mQdXnzNMzQY="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"VRCCamController","description":"# VRCCamController\nVRChat にアバターをアップロードするときの Upload Image に指定した画像を表示させるのを簡単にするスクリプトと、そのスクリプトをくっつけたプレハブです。\n\n## 使い方\n1. ダウンロードした zip ファイルを解凍して出てくる `VRCCamController.unitypackage` を実行して、 Unity へファイルを読み込んでください\n2. 読み込まれた `Assets/Plugins/KmnkTools/VRCCamController/VRCCamController` のプレハブ（青い立方体のアイコン）をアップロード用のモデルを設定しているシーンにドラッグアンドドロップしてください\n3. 表示したい画像を用意して、 Unity の `Project` タブのどこかに放り込んで読み込ませてください\n4. 読み込まれた画像を選択すると `Inspector` タブに詳細設定が表示されるので、 `Texture Type` を `Sprite (2D and UI)` に設定して、 `Apply` を押して適用してください\n5. `Hierarchy` タブで 2 でシーンに置いた `VRCCamController` を選択して `Inspector` タブの `Image Sprite` に準備した画像をドラッグアンドロップしてください \n6. 普段モデルをアップロードする時のように `VRChat` タブの `Buld \u0026 Publish` を押して、 `Game` タブに表示される UI の `Upload Image` にチェックを入れると、指定した画像が表示されるはずなので、 `VRCCamController` の `Size` で大きさを調整してください\n7. 良い感じになったら、いつもどおりアップロードしてください\n\n## 何をしているのか\nアップロード用のスクリーンショットを撮るカメラ（ `VRCCam` ）を探して、ちょっとそれっぽく設定をいじっているだけです。  \nですので、手動でも同じことはできます。あくまで、簡単化のスクリプトです。\n\n## その他\n- もしご要望があれば、お知らせいただければできる範囲で対応します\n- 簡単なことしかやっていないので、適当に改造して使ってみてください\n- もし追加したい機能差分があれば [Github リポジトリ](https://github.com/kmnk/VRCCamController) に PullRequest して頂ければ確認します\n\n## License\nMIT License","url":"https://booth.pm/ja/items/1296842","offers":{"priceCurrency":"JPY","@type":"Offer","price":"0"},"image":"https://booth.pximg.net/c/620x620/5732517f-498d-45e3-b6b7-fd8ead6991fd/i/1296842/a9972edc-a6d8-45e3-bef4-7682ed4c368a_base_resized.jpg"}
     </script>
@@ -95,7 +100,7 @@
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="eK5R9fYOwYg9Z55Yv7E2zHLMNVCcB7BNB1EkNbackHo="></script>
+    nonce="I9CVwaJ2Qpc0NGUCFZI/0CjFDsmCC896mQdXnzNMzQY="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -542,23 +547,9 @@
         </div>
       </div>
       <div class=
-      "desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
-        <div class="desktop:mb-24 mobile:m-16">
-          <div class="locales_menu">
-            <div class="pulldown">
-              <a class="btn negative small trigger js-tooltip"
-              data-tippy-content=
-              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1296842&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;xotI2kuqojkb0L_nrvzGPWwW8HiYwzFWxVT8Ld_VGBikVbJh8fbf5il4d2r87hA6HgVqtcncEAM-KL84r0N0vw&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1296842&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;PRcncqmka64IXHGGGow57h-AxW7xxMJOhrmolrudSgpfyd3JE_gWcTr0uQtInu_pbZNfo6Db4xt9xeuDywsmrQ&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1296842&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;LR2aHuKjau-pACa0aoEMwQPTJcqZX35F7XOo2dgISBZPw2ClWP8XMJuo7jk4k9rGccC_B8hAXxAWD-vMqJ4ksQ&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1296842&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;NYWSJieqRdy8bRMTbioB7u0nBbyfU89c82Kmpf4EUPNXW2idnfY4A47F2548ONfpnzSfcc5M7gkIHuWwjpI8VA&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
-              data-tippy-trigger="click" data-tippy-interactive=
-              "true" data-tippy-theme="locale" data-tippy-appendto=
-              "parent" href="#"><img width="20" height="20" alt=
-              "locale" src=
-              "https://asset.booth.pm/assets/icons/locale-a6b3e536959c11bfbc9e22f2ecaff8bd9ea3fc969cccda64e7e77b2b2c52994f.svg">
-              <div class="current-locale u-ml-200">
-                <span>日本語</span>
-              </div></a>
-            </div>
-          </div>
+      "flex desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
+        <div class=
+        "js-locale-switcher mr-auto desktop:mb-24 mobile:m-16">
         </div>
       </div>
       <div class="border-b border-border300"></div>
