@@ -39,6 +39,11 @@
     "js_const_base_domain">
     <meta content="false" name="js_const_user_signed_in">
     <meta content="&quot;ja&quot;" name="js_const_user_locale">
+    <meta content="false" name=
+    "js_const_user_locale_redirect_confirm">
+    <meta content=
+    "{&quot;ja&quot;:&quot;https://booth.pm/locale?locale=ja\u0026return_to=https%3A%2F%2Fbooth.pm%2Fja%2Fitems%2F1064964&quot;,&quot;en&quot;:&quot;https://booth.pm/locale?locale=en\u0026return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1064964&quot;,&quot;ko&quot;:&quot;https://booth.pm/locale?locale=ko\u0026return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1064964&quot;,&quot;zh-cn&quot;:&quot;https://booth.pm/locale?locale=zh-cn\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1064964&quot;,&quot;zh-tw&quot;:&quot;https://booth.pm/locale?locale=zh-tw\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1064964&quot;}"
+    name="js_const_user_locale_redirect_urls">
     <meta content="false" name="js_const_user_adult">
     <meta content=
     "&quot;https://accounts.booth.pm/wish_lists.json&quot;" name=
@@ -63,9 +68,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "TXo6RYg79VMrX40hkxZWbAYbVynaWGPl5NRivA4qmfA="></script>
+    "RQTMVRi9b5l2WJi2Vi91J/eSZtLdbNvP2Xl+ZYbx55M="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="TXo6RYg79VMrX40hkxZWbAYbVynaWGPl5NRivA4qmfA="></script>
+    nonce="RQTMVRi9b5l2WJi2Vi91J/eSZtLdbNvP2Xl+ZYbx55M="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -104,9 +109,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/bf30e84e8240ffac88c0.js" defer=
+    "https://asset.booth.pm/assets/226bec842b0148e64ebd.js" defer=
     "defer" nonce=
-    "TXo6RYg79VMrX40hkxZWbAYbVynaWGPl5NRivA4qmfA="></script>
+    "RQTMVRi9b5l2WJi2Vi91J/eSZtLdbNvP2Xl+ZYbx55M="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"AnimationTimeController 音にあわせてアニメーションを調整","description":"VRChatでパーティクルライブ作成時など、Unityでの再生中に音とアニメーションの時間をいじる、簡単なコンポーネントだよ。\n\nバチャフェスとかVRストリートライブのパーティクルライブアニメーションを作るときに使いました。\n\n当時、オノッチさんが作ってくれたものや、他で公開されていたパーティクル、専用シェーダー付きのメッシュの位置や大きさ、表示タイミングなどを、わたしが時間に追われながら、アニメーション制作してたのです。ぐふふ。\n\n\n＜使い方＞\n\nパーティクルのメインAnimatorのあるオブジェクトにくっつけて、audioも設定、Unity実行中にエディタ側でanimTimeをいじりつつ、Animationを編集したりしてね。\n\nAnimation録画編集中にこのコンポーネントのanimTimeを変えるとその時間も記録されちゃうので、animTimeいじるときは録画ボタンをオフにするか、間違えて記録されたanimTimeのアニメーションをあとで削除してね。\n\n※パーティクル側のStartDelayなどで出現時間を全コントロールしているときにはこれだと無理です。\n\n※VRChatアップロード時には、このコンポーネントを外してください。\n\n※なお、パーティクルライブの表示、非表示についてはこのコンポーネントは無関係です。VRChatアバターのアニメーションオーバーライドもしくは、いわゆるEmoteSwitchを使ったりすると表示できます。でも、その仕組みを変に使うとみんなの邪魔、迷惑行為になっちゃうので（そうすると禁止されたりする可能性もあるし）、使うときはくれぐれもご注意を！","url":"https://booth.pm/ja/items/1064964","offers":{"priceCurrency":"JPY","@type":"Offer","price":"0"},"image":"https://booth.pximg.net/c/620x620/00e145f9-56bb-4d61-a781-aec554e36161/i/1064964/d83780e1-98ae-4175-8387-a902dd5fe18f_base_resized.jpg"}
     </script>
@@ -117,7 +122,7 @@
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="TXo6RYg79VMrX40hkxZWbAYbVynaWGPl5NRivA4qmfA="></script>
+    nonce="RQTMVRi9b5l2WJi2Vi91J/eSZtLdbNvP2Xl+ZYbx55M="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -568,23 +573,9 @@
         </div>
       </div>
       <div class=
-      "desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
-        <div class="desktop:mb-24 mobile:m-16">
-          <div class="locales_menu">
-            <div class="pulldown">
-              <a class="btn negative small trigger js-tooltip"
-              data-tippy-content=
-              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1064964&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;2Kniwlq2yda5h3SC8S-VI99nSTmF6pghA-ni594KrzNBNL8nuF_X7JqmcIQ_OyGMP-gl8UsEi7eUFRDsI45oxg&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1064964&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;UPa7SrRPedqrlSz5bxZQNk7TTmHexqAIQa9x8pnTl4nJa-avVqZn4Ii0KP-hAuSZrlwiqRAos57WU4P5ZFdQfA&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1064964&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;uMiHhDabJ7X3hr119vrK3LYKBg0RSVDIZIFArfPQ_ZQhVdph1HI5j9SnuXM47n5zVoVqxd-nQ17zfbKmDlQ6YQ&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1064964&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;ooAn851bn2KK3OxLN0_ekvFY0B0CEgSVdoPHIm-AeK47HXoWf7KBWKn96E35W2o9Ede81cz8FwPhfzUpkgS_Ww&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
-              data-tippy-trigger="click" data-tippy-interactive=
-              "true" data-tippy-theme="locale" data-tippy-appendto=
-              "parent" href="#"><img width="20" height="20" alt=
-              "locale" src=
-              "https://asset.booth.pm/assets/icons/locale-a6b3e536959c11bfbc9e22f2ecaff8bd9ea3fc969cccda64e7e77b2b2c52994f.svg">
-              <div class="current-locale u-ml-200">
-                <span>日本語</span>
-              </div></a>
-            </div>
-          </div>
+      "flex desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
+        <div class=
+        "js-locale-switcher mr-auto desktop:mb-24 mobile:m-16">
         </div>
       </div>
       <div class="border-b border-border300"></div>
