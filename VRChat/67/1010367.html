@@ -38,6 +38,11 @@
     "js_const_base_domain">
     <meta content="false" name="js_const_user_signed_in">
     <meta content="&quot;ja&quot;" name="js_const_user_locale">
+    <meta content="false" name=
+    "js_const_user_locale_redirect_confirm">
+    <meta content=
+    "{&quot;ja&quot;:&quot;https://booth.pm/locale?locale=ja\u0026return_to=https%3A%2F%2Fbooth.pm%2Fja%2Fitems%2F1010367&quot;,&quot;en&quot;:&quot;https://booth.pm/locale?locale=en\u0026return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1010367&quot;,&quot;ko&quot;:&quot;https://booth.pm/locale?locale=ko\u0026return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1010367&quot;,&quot;zh-cn&quot;:&quot;https://booth.pm/locale?locale=zh-cn\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1010367&quot;,&quot;zh-tw&quot;:&quot;https://booth.pm/locale?locale=zh-tw\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1010367&quot;}"
+    name="js_const_user_locale_redirect_urls">
     <meta content="false" name="js_const_user_adult">
     <meta content=
     "&quot;https://accounts.booth.pm/wish_lists.json&quot;" name=
@@ -62,9 +67,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "JRN8DzCodgvv6Ymsu+O5n4R3ldtrbYZPWVfd+5eb9jg="></script>
+    "KfGZG3E6JeRLhNBLVvoqEPz6L5g1TnUnxrR8a4WaFm4="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="JRN8DzCodgvv6Ymsu+O5n4R3ldtrbYZPWVfd+5eb9jg="></script>
+    nonce="KfGZG3E6JeRLhNBLVvoqEPz6L5g1TnUnxrR8a4WaFm4="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -78,9 +83,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/bf30e84e8240ffac88c0.js" defer=
+    "https://asset.booth.pm/assets/226bec842b0148e64ebd.js" defer=
     "defer" nonce=
-    "JRN8DzCodgvv6Ymsu+O5n4R3ldtrbYZPWVfd+5eb9jg="></script>
+    "KfGZG3E6JeRLhNBLVvoqEPz6L5g1TnUnxrR8a4WaFm4="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"BoxShader","description":"ポリゴンをBoxに置き換えるシェーダーです。\nいろいろ出来ます(無駄機能も多々)。\n\n通常版とテッセレーション可能版があります。特別な理由がない限りは通常版で十分です。\n\n①Texture:メインのテクスチャです。普通に指定してください。\n②BoXSize:BOXのサイズの補正です。\n　BOXSizeChange:BOXサイズの補正です。0であれば一定、0より大きければポリゴンサイズによって補正されます。\n\nここから下は指定しなくても問題ありません。\n\n③RimEffect:Rimの強度を指定します。\n④RimColor:Rimの色を指定できます。\n\n⑤LegasyPoly:Box化前のメッシュを表示します。数値で大きさを変えられます。\n\n⑥NormalExtrusion:Boxを元ポリゴンの法線方向に爆発させられます。\n⑦Gravity:⑥で飛ばした後に受ける重力の方向を指定できます。\n⑧FloorHight:⑥で飛ばした後の床の高さを指定できます。(たいていY=-1くらいでいい感じになります。)\n\n⑨RotationMap:Boxを回転させる場合の回転軸をテクスチャで指定できます。赤成分がX軸,緑成分がY軸,青成分がZ軸です。\n⑩RotationUSpeed:⑨を時間でスクロールさせます。\n⑪RotationAxis:Boxを回転させる回転軸を指定できます。\n⑫RotationSpeed:回転速度を指定できます。\n\n⑬VoxelSizeMap:Boxのサイズをテクスチャで指定できます。より白い部分のBoxが大きくなります。\n⑭VoxelSizeUV:⑬を時間でスクロールさせます。\n⑮VoxSizePower:大きさの変化の強さを指定できます。\n\n⑯PolygonExtrusion:ここにマップを指定するとBoxの面を法線方向に飛ばせます。より白い部分がより遠くに飛びます。\n⑰PolyUVSpeed:⑯を時間でスクロールさせます。\n⑱ExtrusionPower:法線方向に飛ばす力を指定できます。\n\n⑲ShadowMap:ここにBOXの影側の色のマップを指定できます。\n⑳ShadowUVSpeed：⑲を時間でをスクロールさせます。\n㉑ShadowColor:ここで影の色を指定できます。\n㉒ShadowPower:影の強さを指定します。\n\n㉓SubTexture:個々のVoxの面に貼るテクスチャを指定できます。\n㉔SubTexturePower:㉓の濃度に補正をかけます。\n\n㉕:AutoMaticTessellation:わからない人はさわらないこと！かなり重くなる設定です。\n\tポリゴンの面積に応じてテッセレーションをかけてVoxを増やします。上限はtess_factor=InsideTessFactor=2ですが、[HideInInspector] _TessFactorで上限を増やせます。\n\n\nhttps://twitter.com/HHOTATEA_VRC/status/1039893839924752385\nhttps://twitter.com/HHOTATEA_VRC/status/1040318333319430145\n\n\n*\n* Date: 2018-09-12 開始\n* Date: 2018-09-14 更新\n* Date: 2018-09-15 更新\n* Date: 2018-09-16 バグ修正\n* Date: 2018-09-18 バグ修正\n* Date: 2018-10-13 機能改善:ボックスの中心がポリゴンの中心になるように\n* Date: 2019/01/29 大幅変更、ライティングが設定できるようになりました。","url":"https://booth.pm/ja/items/1010367","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"500"},"image":"https://booth.pximg.net/c/620x620/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1010367/4d84ff6c-b7f6-4bcc-9d86-f8dc6cc1994f_base_resized.jpg"}
     </script>
@@ -94,7 +99,7 @@
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="JRN8DzCodgvv6Ymsu+O5n4R3ldtrbYZPWVfd+5eb9jg="></script>
+    nonce="KfGZG3E6JeRLhNBLVvoqEPz6L5g1TnUnxrR8a4WaFm4="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -688,23 +693,9 @@
         </div>
       </div>
       <div class=
-      "desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
-        <div class="desktop:mb-24 mobile:m-16">
-          <div class="locales_menu">
-            <div class="pulldown">
-              <a class="btn negative small trigger js-tooltip"
-              data-tippy-content=
-              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1010367&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;11TwGodQAPOu2yJco-irIGNY2IDPFfX6PW6ilEjsc2SeFGagGhfubw8XndR8rzvoLVNDFubLteIy1qWJ0shZ-A&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1010367&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;ivDJrWG6S_ohxvti3kiagnNkRjKfsNkAs1HSuvQn-b7DsF8X_P2lZoAKROoBDwpKPW_dpLZumRi86dWnbgPTIg&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1010367&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;6RoVXAsTxYOTJtJyIdgSmhID2PNzJ7EpzVLq8LGiJyGgWoPmllQrHzLqbfr-n4JSXAhDZVr58THC6u3tK4YNvQ&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1010367&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;cx00P90bpGRcCRIqsJEPRRYldXSZTqkk2n4lgE6FAxE6XaKFQFxK-P3FraJv1p-NWC7u4rCQ6TzVxiKd1KEpjQ&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
-              data-tippy-trigger="click" data-tippy-interactive=
-              "true" data-tippy-theme="locale" data-tippy-appendto=
-              "parent" href="#"><img width="20" height="20" alt=
-              "locale" src=
-              "https://asset.booth.pm/assets/icons/locale-a6b3e536959c11bfbc9e22f2ecaff8bd9ea3fc969cccda64e7e77b2b2c52994f.svg">
-              <div class="current-locale u-ml-200">
-                <span>日本語</span>
-              </div></a>
-            </div>
-          </div>
+      "flex desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
+        <div class=
+        "js-locale-switcher mr-auto desktop:mb-24 mobile:m-16">
         </div>
       </div>
       <div class="border-b border-border300"></div>
