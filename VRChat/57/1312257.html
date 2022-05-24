@@ -39,6 +39,11 @@
     "js_const_base_domain">
     <meta content="false" name="js_const_user_signed_in">
     <meta content="&quot;ja&quot;" name="js_const_user_locale">
+    <meta content="false" name=
+    "js_const_user_locale_redirect_confirm">
+    <meta content=
+    "{&quot;ja&quot;:&quot;https://booth.pm/locale?locale=ja\u0026return_to=https%3A%2F%2Fbooth.pm%2Fja%2Fitems%2F1312257&quot;,&quot;en&quot;:&quot;https://booth.pm/locale?locale=en\u0026return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1312257&quot;,&quot;ko&quot;:&quot;https://booth.pm/locale?locale=ko\u0026return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1312257&quot;,&quot;zh-cn&quot;:&quot;https://booth.pm/locale?locale=zh-cn\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1312257&quot;,&quot;zh-tw&quot;:&quot;https://booth.pm/locale?locale=zh-tw\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1312257&quot;}"
+    name="js_const_user_locale_redirect_urls">
     <meta content="false" name="js_const_user_adult">
     <meta content=
     "&quot;https://accounts.booth.pm/wish_lists.json&quot;" name=
@@ -63,9 +68,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "YDKdRamBoDAdQyffjJf4J2oT+10lkGMaIB7cZxoaNNg="></script>
+    "qJ3JAHp0t20ozc6268phwPGtbQzlA2LHZiyHxiq1V3I="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="YDKdRamBoDAdQyffjJf4J2oT+10lkGMaIB7cZxoaNNg="></script>
+    nonce="qJ3JAHp0t20ozc6268phwPGtbQzlA2LHZiyHxiq1V3I="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -79,9 +84,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/bf30e84e8240ffac88c0.js" defer=
+    "https://asset.booth.pm/assets/226bec842b0148e64ebd.js" defer=
     "defer" nonce=
-    "YDKdRamBoDAdQyffjJf4J2oT+10lkGMaIB7cZxoaNNg="></script>
+    "qJ3JAHp0t20ozc6268phwPGtbQzlA2LHZiyHxiq1V3I="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"【Vroid】水着＆濡れたTシャツセット","description":"内容\n・水着1種（body.png)\n・Tシャツ１種（one_piece.png)\n\n支援版\n…上記に加え、TOPで使用している背景イラストの追加\n（画像サイズ…1254*1771　72dpi）\n\n見本はこちら\nhttps://hub.vroid.com/characters/3090908678367339307/models/8042156816268165897\n\n※Tシャツから透けている肌は\n「肌テクスチャセット２（https://arin-vr-make.booth.pm/items/1295426）」に合わせてあります。\nその他のテクスチャに合わせるとイメージが変わり場合がありますのでご了承ください。\n\n購入前に利用規約をお読みください\nhttps://arinpv0v0.wixsite.com/makevroid/about\n\n※背景イラストを使用したものの場合、公開などは自由ですが無償の範囲でお願いします。","url":"https://booth.pm/ja/items/1312257","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"200","highPrice":"700"},"image":"https://booth.pximg.net/c/620x620/a52bc9c8-f676-4539-98be-e65fe87af193/i/1312257/9b14e96d-ec85-4a11-a606-802af77a3394_base_resized.jpg"}
     </script>
@@ -95,7 +100,7 @@
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="YDKdRamBoDAdQyffjJf4J2oT+10lkGMaIB7cZxoaNNg="></script>
+    nonce="qJ3JAHp0t20ozc6268phwPGtbQzlA2LHZiyHxiq1V3I="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -588,23 +593,9 @@
         </div>
       </div>
       <div class=
-      "desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
-        <div class="desktop:mb-24 mobile:m-16">
-          <div class="locales_menu">
-            <div class="pulldown">
-              <a class="btn negative small trigger js-tooltip"
-              data-tippy-content=
-              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1312257&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;VErrL8LDOsxTqii9vdmxVmoz0cfvSHRkz0beP7NAos6Db3K5Y_L8uWYhMtgOoRkOsqmj6CceJwj91Uv0yfCNMQ&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1312257&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;ALI0seAUcD1BVrNH54Wj_A_H7xlwOntgqYasuJLOYDHXl60nQSW2SHTdqSJU_Quk112dNrhsKAybFTlz6H5Pzg&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1312257&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;5_bzg0DsRVHw46A1iBGJawWx3awXrLBttnaf38worBow02oV4d2DJMVoulA7aSEz3Suvg9_64wGE5QoUtpiD5Q&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1312257&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;DlbcLJ2qF26uUr0q5EwPL0vheu80RGrO-N4fwovb4FzZc0W6PJvRG5vZp09XNKd3k3sIwPwSOaLKTYoJ8WvPow&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
-              data-tippy-trigger="click" data-tippy-interactive=
-              "true" data-tippy-theme="locale" data-tippy-appendto=
-              "parent" href="#"><img width="20" height="20" alt=
-              "locale" src=
-              "https://asset.booth.pm/assets/icons/locale-a6b3e536959c11bfbc9e22f2ecaff8bd9ea3fc969cccda64e7e77b2b2c52994f.svg">
-              <div class="current-locale u-ml-200">
-                <span>日本語</span>
-              </div></a>
-            </div>
-          </div>
+      "flex desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
+        <div class=
+        "js-locale-switcher mr-auto desktop:mb-24 mobile:m-16">
         </div>
       </div>
       <div class="border-b border-border300"></div>
