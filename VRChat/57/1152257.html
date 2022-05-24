@@ -39,6 +39,11 @@
     "js_const_base_domain">
     <meta content="false" name="js_const_user_signed_in">
     <meta content="&quot;ja&quot;" name="js_const_user_locale">
+    <meta content="false" name=
+    "js_const_user_locale_redirect_confirm">
+    <meta content=
+    "{&quot;ja&quot;:&quot;https://booth.pm/locale?locale=ja\u0026return_to=https%3A%2F%2Fbooth.pm%2Fja%2Fitems%2F1152257&quot;,&quot;en&quot;:&quot;https://booth.pm/locale?locale=en\u0026return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1152257&quot;,&quot;ko&quot;:&quot;https://booth.pm/locale?locale=ko\u0026return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1152257&quot;,&quot;zh-cn&quot;:&quot;https://booth.pm/locale?locale=zh-cn\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1152257&quot;,&quot;zh-tw&quot;:&quot;https://booth.pm/locale?locale=zh-tw\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1152257&quot;}"
+    name="js_const_user_locale_redirect_urls">
     <meta content="false" name="js_const_user_adult">
     <meta content=
     "&quot;https://accounts.booth.pm/wish_lists.json&quot;" name=
@@ -63,9 +68,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "o7ag+ek5v+4zE2hBpkAoL21VMTI4yNYsTuA8pbJouzg="></script>
+    "6gR6gNiOzRM6VUbjJyethHk5a7FmjMf6cDdULCCQBDA="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="o7ag+ek5v+4zE2hBpkAoL21VMTI4yNYsTuA8pbJouzg="></script>
+    nonce="6gR6gNiOzRM6VUbjJyethHk5a7FmjMf6cDdULCCQBDA="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -79,9 +84,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/bf30e84e8240ffac88c0.js" defer=
+    "https://asset.booth.pm/assets/226bec842b0148e64ebd.js" defer=
     "defer" nonce=
-    "o7ag+ek5v+4zE2hBpkAoL21VMTI4yNYsTuA8pbJouzg="></script>
+    "6gR6gNiOzRM6VUbjJyethHk5a7FmjMf6cDdULCCQBDA="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"Unity2017対応VRC想定Clothスカートサンプル","description":"SelfCollisionを使用しているため、使用しない場合より4倍以上の負荷がかかります。\n2021年現在、この方法は古いため、販売を停止します。\n購入済みの方向けに価格を引き上げて再ダウンロード可能な状態にします。(500円→50000円)\n\nUnity2017にアップデートされたVRChatで使用想定のCloth設定のサンプルです。\nセルフコリジョンの調整により、多少の貫通を許容すれば150度まで足を上げても落ちてこないこともあります。\n頂点数削減により、分割版は96頂点、一体版も192頂点で\nAvatar Performance Ranking Systemに対応しています。\nセルフコリジョンの設定もしています。\nあまり理解せず乱用されると頂点数が少なくても重くなりますので、有償配布にします。\n何も無しにClothコンポーネントを1時間触るよりは得るものがあると思います...たぶん......\n\nライセンスなど:\n商用利用・再配布・改変など、自由に使用していただいて構いません。\nクレジット表記は不要ですが、報告貰えると嬉しいです。\nCloth全体のイメージにかかわりますので、無料ばら撒きは禁止します。\n\nその他不明瞭な点がございましたらご気軽にお問い合わせください。 \n本モデルデータの使用による損失・損害等は一切責任を負いかねます。\n\nTwitter：@Yuzuki_Tatikawa\n\n内容物:\nSkirtSample02.Unitypackage\nSkirtSample02.fbx\nSkirtSample02.png(使っているのは300*30px程度)\nライセンスなど.txt\n\n色々説明:\nサンプルで入れている、32ヒダプリーツスカートのUVは一致させており、1ヒダ分のテクスチャで割り当てていて、裾のヒダはα値で抜いています。\n分割版は殆ど動かないベルト部分を別オブジェクトにし、無理やり100頂点に収めているものですが、すべての姿勢において一体型に劣っているわけではなく、\n分割されていることにより貫通しない姿勢なども存在します。\n上記のスカートに対してClothのパラメータを独自に調整したものです。\n\nコライダーは3つ使用しています。\n\nVRCでは読み込み時のスカートの初期位置が謎挙動のため、\nスカートのClothコンポーネントを非アクティブにするアニメーションで足のウェイト位置にスカートをリセットするなどして、\n自身の入室時、新しい人が入室したときなど、リセットしてあげてください。\n\n絶対に貫通しないことは絶対に無いので、各自、ショートパンツ・ブルマ・タイツなど貫通しても目立たない衣服の併用をオススメします。\n\nパスワード:\nmeronpan\n\n2018.12.27 制定\n2021.03.15 販売停止(価格改定)","url":"https://booth.pm/ja/items/1152257","offers":{"priceCurrency":"JPY","@type":"Offer","price":"50000"},"image":"https://booth.pximg.net/c/620x620/398453f0-c317-488e-9f19-c38eb6274343/i/1152257/110fd6d8-4adb-474f-9ecb-179df949f30c_base_resized.jpg"}
     </script>
@@ -95,7 +100,7 @@
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="o7ag+ek5v+4zE2hBpkAoL21VMTI4yNYsTuA8pbJouzg="></script>
+    nonce="6gR6gNiOzRM6VUbjJyethHk5a7FmjMf6cDdULCCQBDA="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -617,23 +622,9 @@
         </div>
       </div>
       <div class=
-      "desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
-        <div class="desktop:mb-24 mobile:m-16">
-          <div class="locales_menu">
-            <div class="pulldown">
-              <a class="btn negative small trigger js-tooltip"
-              data-tippy-content=
-              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1152257&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;VgysrydPYXjit9r9EvwSg0_nI6B2D1_k2n9x64MQFxUDVr3_y69YRoqfbz0cNw5dwm19F2rc2ZiPzObD6jHKvw&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1152257&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;naePHUcl7mbGPPYjf7zpAz-Y19NW8aFGqSoRb936QePI_Z5Nq8XXWK4UQ-Nxd_XdshKJZEoiJzr8mYZHtNucSQ&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1152257&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;np1_4AFxFcNEjdvNQvzJx-V3b-yh903-Ia1vVpYk247Lx26w7ZEs_Sylbg1MN9UZaP0xW70ky4J0Hvh-_wUGJA&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1152257&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;e7_5qenKA2LFooFH-gJoeNmKCOPlco-bw3q0oEpKtL0u5ej5BSo6XK2KNIf0yXSmVABWVPmhCeeWySOII2tpFw&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
-              data-tippy-trigger="click" data-tippy-interactive=
-              "true" data-tippy-theme="locale" data-tippy-appendto=
-              "parent" href="#"><img width="20" height="20" alt=
-              "locale" src=
-              "https://asset.booth.pm/assets/icons/locale-a6b3e536959c11bfbc9e22f2ecaff8bd9ea3fc969cccda64e7e77b2b2c52994f.svg">
-              <div class="current-locale u-ml-200">
-                <span>日本語</span>
-              </div></a>
-            </div>
-          </div>
+      "flex desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
+        <div class=
+        "js-locale-switcher mr-auto desktop:mb-24 mobile:m-16">
         </div>
       </div>
       <div class="border-b border-border300"></div>
