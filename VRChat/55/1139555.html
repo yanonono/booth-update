@@ -39,6 +39,11 @@
     "js_const_base_domain">
     <meta content="false" name="js_const_user_signed_in">
     <meta content="&quot;ja&quot;" name="js_const_user_locale">
+    <meta content="false" name=
+    "js_const_user_locale_redirect_confirm">
+    <meta content=
+    "{&quot;ja&quot;:&quot;https://booth.pm/locale?locale=ja\u0026return_to=https%3A%2F%2Fbooth.pm%2Fja%2Fitems%2F1139555&quot;,&quot;en&quot;:&quot;https://booth.pm/locale?locale=en\u0026return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1139555&quot;,&quot;ko&quot;:&quot;https://booth.pm/locale?locale=ko\u0026return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1139555&quot;,&quot;zh-cn&quot;:&quot;https://booth.pm/locale?locale=zh-cn\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1139555&quot;,&quot;zh-tw&quot;:&quot;https://booth.pm/locale?locale=zh-tw\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1139555&quot;}"
+    name="js_const_user_locale_redirect_urls">
     <meta content="false" name="js_const_user_adult">
     <meta content=
     "&quot;https://accounts.booth.pm/wish_lists.json&quot;" name=
@@ -63,9 +68,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "qgGiy03/KdU6NFOh89Q8hNpcos8QHci5EnC4jlRkyEQ="></script>
+    "FVsvJXUwxg1q3BCaBqb+ePDTjw9jRf0UuYEbz9HkV4g="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="qgGiy03/KdU6NFOh89Q8hNpcos8QHci5EnC4jlRkyEQ="></script>
+    nonce="FVsvJXUwxg1q3BCaBqb+ePDTjw9jRf0UuYEbz9HkV4g="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -79,9 +84,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/bf30e84e8240ffac88c0.js" defer=
+    "https://asset.booth.pm/assets/226bec842b0148e64ebd.js" defer=
     "defer" nonce=
-    "qgGiy03/KdU6NFOh89Q8hNpcos8QHci5EnC4jlRkyEQ="></script>
+    "FVsvJXUwxg1q3BCaBqb+ePDTjw9jRf0UuYEbz9HkV4g="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"FakeLightToonShader","description":"Unity用のUnlitシェーダです。\nシーンのライティングに関わらずシェーダで設定したライティングになります。\n\n通常DL版と支援版の内容物は同一です。\n\nこのシェーダはShader Forge（ http://www.acegikmo.com/shaderforge/ ）を使用して作成されました。\n\nReleased under the MIT license.\nhttps://opensource.org/licenses/mit-license.php\n\n導入方法\n１．「FakeLightToon_v1.0.shader」ファイルをUnityの「Assets」フォルダ以下の任意の位置に追加してください。\n２．マテリアルのShaderタブに「FakeLightShader/FakeLightToon_v1.0」が追加されているので選択することで導入が完了します。\n(v1.0はその時のバージョンによって数字が変わります。)\n\nプロパティの説明\n・normal\nノーマルマップを設定できます。使わない場合はNoneのままで大丈夫です。\n\n・step_level\n光の強さに対する影の付け方のしきい値です。値を大きくするほど影の領域が多くなります。\n\n・Albedo\nモデルのカラー情報です。モデルに適用するテクスチャを設定してください。\n\n・Albedo_Color\nAlbedoテクスチャに乗算する色情報です。色味を調整したい場合以外は白にしてください。\n\n・use_Shadow_Albedo\n影色に別のテクスチャを使う場合はチェックを入れてください。\n\n・shadow_Albedo\n影色に使うモデルのカラー情報です。使用する場合はuse_Shadow_Albedoにチェックを入れてください。\n\n・Shadow_Color\n影色に乗算する色情報です。\nuse_Shadow_Albedoにチェックが入ってない場合：\nAlbedoの影部分に色が乗算されます。\nuse_Shadow_Albedoにチェックが入っている場合：\nshadow_Albedoに色が乗算されます。\n\n・Outline_Width\nアウトラインの太さの値です。\n\n・Color_Outline\nアウトラインの色です。\n\n・fake_light_position\n偽の光源の位置情報です。X,Y,Zの値を調節してちょうどよい位置に移動させてください。\n\n・use_rimlight\nリムライトを使う場合はチェックを入れてください。\n\n・rimlight_power\nリムライトの強さの値です。\n\n・rimlight_color\nリムライトの色です。","url":"https://booth.pm/ja/items/1139555","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"100"},"image":"https://booth.pximg.net/c/620x620/e1cb2816-75d6-4f1f-9f88-6087b87ed648/i/1139555/00034ca6-4442-4c17-8151-4ec10ec32fd9_base_resized.jpg"}
     </script>
@@ -95,7 +100,7 @@
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="qgGiy03/KdU6NFOh89Q8hNpcos8QHci5EnC4jlRkyEQ="></script>
+    nonce="FVsvJXUwxg1q3BCaBqb+ePDTjw9jRf0UuYEbz9HkV4g="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -612,23 +617,9 @@
         </div>
       </div>
       <div class=
-      "desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
-        <div class="desktop:mb-24 mobile:m-16">
-          <div class="locales_menu">
-            <div class="pulldown">
-              <a class="btn negative small trigger js-tooltip"
-              data-tippy-content=
-              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1139555&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;3BLyIWjVFfaN2tgszOkFuPNk932kdPtgsOcxaPTOQd4uc_F6wmeDBWXhCMlpWaIPoXFe5PIoc9G2eykWZ_vQEg&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1139555&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;aBB_3u47Y_aGGQTLCq0JfTDVYLhRMXKS_uQolJjPItWacXyFRIn1BW4i1C6vHa7KYsDJIQdt-iP4eDDqC_qzGQ&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1139555&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;4xXKIW8U9KjIRkJAnHCETFGFxiMdHzfbPZ-COav0jtMRdMl6xaZiWyB9kqU5wCP7A5BvuktDv2o7A5pHOMEfHw&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1139555&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;6ond2UJ77QnpgAG1tMTCXYfnUZYXSm8p0MZjq3UrTc0Y6N6C6Ml7-gG70VARdGXq1fL4D0EW55jWWnvV5h7cAQ&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
-              data-tippy-trigger="click" data-tippy-interactive=
-              "true" data-tippy-theme="locale" data-tippy-appendto=
-              "parent" href="#"><img width="20" height="20" alt=
-              "locale" src=
-              "https://asset.booth.pm/assets/icons/locale-a6b3e536959c11bfbc9e22f2ecaff8bd9ea3fc969cccda64e7e77b2b2c52994f.svg">
-              <div class="current-locale u-ml-200">
-                <span>日本語</span>
-              </div></a>
-            </div>
-          </div>
+      "flex desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
+        <div class=
+        "js-locale-switcher mr-auto desktop:mb-24 mobile:m-16">
         </div>
       </div>
       <div class="border-b border-border300"></div>
