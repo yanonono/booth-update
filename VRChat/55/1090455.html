@@ -39,6 +39,11 @@
     "js_const_base_domain">
     <meta content="false" name="js_const_user_signed_in">
     <meta content="&quot;ja&quot;" name="js_const_user_locale">
+    <meta content="false" name=
+    "js_const_user_locale_redirect_confirm">
+    <meta content=
+    "{&quot;ja&quot;:&quot;https://booth.pm/locale?locale=ja\u0026return_to=https%3A%2F%2Fbooth.pm%2Fja%2Fitems%2F1090455&quot;,&quot;en&quot;:&quot;https://booth.pm/locale?locale=en\u0026return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1090455&quot;,&quot;ko&quot;:&quot;https://booth.pm/locale?locale=ko\u0026return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1090455&quot;,&quot;zh-cn&quot;:&quot;https://booth.pm/locale?locale=zh-cn\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1090455&quot;,&quot;zh-tw&quot;:&quot;https://booth.pm/locale?locale=zh-tw\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1090455&quot;}"
+    name="js_const_user_locale_redirect_urls">
     <meta content="false" name="js_const_user_adult">
     <meta content=
     "&quot;https://accounts.booth.pm/wish_lists.json&quot;" name=
@@ -63,9 +68,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "QV9arfMBmh0wR/F3xrbe9CQ2JNMIR7wwSuAaUTkYuHs="></script>
+    "Zd0XICKXxDGPbYHJ6AU5H+Fd/17wCrLR/kcq/bgwcBs="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="QV9arfMBmh0wR/F3xrbe9CQ2JNMIR7wwSuAaUTkYuHs="></script>
+    nonce="Zd0XICKXxDGPbYHJ6AU5H+Fd/17wCrLR/kcq/bgwcBs="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -75,49 +80,27 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
-  </head>
-  <body>
-    <div class="mini-player-controller" style="display: none;">
-      <a class="scroller" data-smooth-scroll="true"><img class=
-      "mini-player-controller__image" src=
-      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
-      data-smooth-scroll="true">
-      <div class="mini-player-information__item-name"></div>
-      <div class="mini-player-information__shop-name"></div>
-      <div class="mini-player-information__navigation">
-        試聴中の商品へスクロール
-      </div></a>
-      <div class="mini-player-controls">
-        <div class="mini-player-mode-ui">
-          <div class="mini-player-mode-ui__knob"></div>
-          <div class="mini-player-mode-ui__short">
-            15秒
-          </div>
-          <div class="mini-player-mode-ui__full">
-            フル
-          </div>
-        </div>
-        <div class="mini-player-play-ui"></div>
-      </div>
-    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/bf30e84e8240ffac88c0.js" defer=
+    "https://asset.booth.pm/assets/226bec842b0148e64ebd.js" defer=
     "defer" nonce=
-    "QV9arfMBmh0wR/F3xrbe9CQ2JNMIR7wwSuAaUTkYuHs="></script>
+    "Zd0XICKXxDGPbYHJ6AU5H+Fd/17wCrLR/kcq/bgwcBs="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"【オリジナル3Dモデル】打刀（合計△1086ポリゴン）","description":"打刀、オリジナル3Dモデルです。\nVRChatなどでの使用を想定して制作しました。\n全体で△1086ポリゴンなので扱いやすいと思います。\n\nメッシュは5個に分かれています。\n・刀身△110ポリゴン\n・鍔△428ポリゴン\n・柄△40ポリゴン\n・鞘△236ポリゴン\n・下緒△272ポリゴン\n\n設定次第で鞘を腰に残したまま抜刀することもできます。\n\nVRChatでこの3Dモデルを使うときにできる、抜刀時の設定の一例を書いておきます。\n１．腰に刀と鞘を装備します。\n２．手に刀のみを持ち、非表示にしておきます。\n３．アニメーションで腰の刀部分を非表示にします。\n４．同時に手に持った刀を表示させます。\n５．そのまま好きなように動きます。\n\n利き手と反対の手で鞘を持っても良さそうです。\n\n※アニメーションファイルや詳細な設定方法は、今回のファイルに含まれません。\n※コントローラーや部屋の物を壊さないようご注意ください。\n\n---------------------------------------------------------------\nファイルの中身\n・KATANA.unitypackage\n・Uchigatana.fbx\n・texture（Albedo、Metallic、Normal）各1枚\n\ntextureファイルは解像度1024で制作しました。\n各1枚にまとめてあります。\nマテリアルは5個、別々に設定しました。\n個別に色の変更や質感調整もできます。\n\n改変自由。\n3Dモデルデータとして使える状態での再配布禁止。\nゲーム、映像作品などで使うことができます。商用可。\nwakamaru shop","url":"https://booth.pm/ja/items/1090455","offers":{"priceCurrency":"JPY","@type":"Offer","price":"300"},"image":"https://booth.pximg.net/c/620x620/ba1632d1-d7a2-47bf-b5c7-b1b4c83290fc/i/1090455/a26d8b78-dc8a-4f9b-94fd-d293c89f3973_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed"><noscript><iframe height="0"
-    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed">
+  </head>
+  <body>
+    <noscript><iframe height="0" src=
+    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="QV9arfMBmh0wR/F3xrbe9CQ2JNMIR7wwSuAaUTkYuHs="></script>
+    nonce="Zd0XICKXxDGPbYHJ6AU5H+Fd/17wCrLR/kcq/bgwcBs="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -656,23 +639,9 @@
         </div>
       </div>
       <div class=
-      "desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
-        <div class="desktop:mb-24 mobile:m-16">
-          <div class="locales_menu">
-            <div class="pulldown">
-              <a class="btn negative small trigger js-tooltip"
-              data-tippy-content=
-              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1090455&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;04ul-Wk0o3zS-yhSlEmGFe-PDtNY8fZ46RidaT6snPTbteTAX7-V8DYqKX7VXiWWC9xB4u99eXXDp3sFacG9oA&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1090455&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;IuC6x9aepY7bj8TosznemNTamu3u9jWabj-o_GVVD9wq3vv-4BWTAj9excTyLn0bMInV3Fl6updEgE6QMjguiA&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1090455&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;CFmDmJp6Dn8bKaMJxQR7ftajW15-s8qdIAXCQLF3NpMAZ8KhrPE48__4oiWEE9j9MvAUb8k_RZAKuiQs5hoXxw&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1090455&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;CDE23SHXtK15VB6wNXCE3UUwrrXbXViWvmJzKylmirAAD3fkF1yCIZ2FH5x0ZydeoWPhhGzR15uU3ZVHfgur5A&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
-              data-tippy-trigger="click" data-tippy-interactive=
-              "true" data-tippy-theme="locale" data-tippy-appendto=
-              "parent" href="#"><img width="20" height="20" alt=
-              "locale" src=
-              "https://asset.booth.pm/assets/icons/locale-a6b3e536959c11bfbc9e22f2ecaff8bd9ea3fc969cccda64e7e77b2b2c52994f.svg">
-              <div class="current-locale u-ml-200">
-                <span>日本語</span>
-              </div></a>
-            </div>
-          </div>
+      "flex desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
+        <div class=
+        "js-locale-switcher mr-auto desktop:mb-24 mobile:m-16">
         </div>
       </div>
       <div class="border-b border-border300"></div>
