@@ -40,6 +40,11 @@
     "js_const_base_domain">
     <meta content="false" name="js_const_user_signed_in">
     <meta content="&quot;ja&quot;" name="js_const_user_locale">
+    <meta content="false" name=
+    "js_const_user_locale_redirect_confirm">
+    <meta content=
+    "{&quot;ja&quot;:&quot;https://booth.pm/locale?locale=ja\u0026return_to=https%3A%2F%2Fbooth.pm%2Fja%2Fitems%2F1013623&quot;,&quot;en&quot;:&quot;https://booth.pm/locale?locale=en\u0026return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1013623&quot;,&quot;ko&quot;:&quot;https://booth.pm/locale?locale=ko\u0026return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1013623&quot;,&quot;zh-cn&quot;:&quot;https://booth.pm/locale?locale=zh-cn\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1013623&quot;,&quot;zh-tw&quot;:&quot;https://booth.pm/locale?locale=zh-tw\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1013623&quot;}"
+    name="js_const_user_locale_redirect_urls">
     <meta content="false" name="js_const_user_adult">
     <meta content=
     "&quot;https://accounts.booth.pm/wish_lists.json&quot;" name=
@@ -64,9 +69,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "C7XPcR6QA1lVy3XaZfmQbMZair9nG0z4dCHAuFNU79g="></script>
+    "XGi7LOBvusqdVT5ihaV9QwGkQ0CWuF65wtUNBjYkJ+M="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="C7XPcR6QA1lVy3XaZfmQbMZair9nG0z4dCHAuFNU79g="></script>
+    nonce="XGi7LOBvusqdVT5ihaV9QwGkQ0CWuF65wtUNBjYkJ+M="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -80,9 +85,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/bf30e84e8240ffac88c0.js" defer=
+    "https://asset.booth.pm/assets/226bec842b0148e64ebd.js" defer=
     "defer" nonce=
-    "C7XPcR6QA1lVy3XaZfmQbMZair9nG0z4dCHAuFNU79g="></script>
+    "XGi7LOBvusqdVT5ihaV9QwGkQ0CWuF65wtUNBjYkJ+M="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"【VRChat向けアバターフルトラ対応】ケモアバター「ニコ」v2.0【SDK2】","description":"【VRChat向けアバター】ケモアバター「ニコ」v2.0\n■モデル概要\n※【SDK2】SDK3ではないのでご自身で設定する必要がございます。\nVRchat向けのUnity上ですでに設定されている3Dモデルです。\nワールド滞在時間がわかる時計やライトが設定されているガラケを同梱！\nまたストラップもあるので好きな物を付けたり好きな画像を設定しよう！\nガラケカラー4種類白・黒・ピンク・Nikkei\n\n後ろ姿がとてもかわいいパンツがなんと4種類ご用意しました。\nパンツカラー4種類しましまグレー・ピンク・青/白\n\n各所に揺れ設定されています。\n※揺らす場合はDynamicボーンが導入されている必要があります。\n※ストラップの紐は重力設定がされていますがDynamicボーンが導入されてないと動きません。\n\n【更新履歴】\n・メッシュの髪型ロング追加\n・メッシュの髪型アミアミ追加\n・メガネシェイプキー追加\n・Sceneの追加Nikov2.0\n・2.0用FBX\n・マテリアル分割を細かくしました。\n　☆パンツ・靴下・セーター・スカートエリアを作りマテリアルやShaderの変更が部分的にしやすくしました。\n\n\n●はじめての導入する方向け\n\n 1.まずはじめに事前にCubedParadoxShaderを導入してください。導入方法は同梱のCubedParadox導入方法を御覧ください。\n   CubedParadoxダウンロード先リンク\n　　https://github.com/cubedparadox/Cubeds-Unity-Shaders\n\n 2.Niko.unitypackageをダブルクリックすると一括で設定ファイルごと読み込まれます。\n\n 3.Uploadすればすぐに使用できます。\n\nDynamicボーンが入っていない場合はストラップが揺れないのでメッシュを非表示にすることでストラップなしにも設定ができます。\n\n■同梱データ\n○一括導入用パッケージ(UnityPackage)＋（ガラケの時計専用のShader）\n○FBX（モデルデータ）\n○Tex（画像データ）\n○Readme\n○Clock（時計Shader）\n◎v2.0導入方法すでにご購入様向け（テキストファイル）\n◎v2.0の髪型のメッシュ場所とメガネのシェイプキーの場所\n◎v2.0マテリアル分割エリア説明と適用方法\n\n■データ詳細\n・髪型ロング\n・髪型アミアミ\n・モーフ全39種VRChat用アニメーション12種類\n(Lip Sync一式・くの字目・笑顔・目閉じ・ゴミを見る目・ハート目・しいたけ目・舌・はわわなど)\n\n■利用規約について\n・著作権は放棄していません。\n・VR空間、配信、動画媒体での商用利用は個人、法人に限らず可能。\n・改変、改造は可能。\n・未改変、未改造、さらに改変後、改造後での再配布、転売は禁止。\n・宗教的、政治的に使用禁止。\n・同梱されている時計Shaderについて、使用しているShaderは「Reflex」様からご提供いただきました。\n【Shader提供Reflex様のBoothアドレス】https://reflex.booth.pm/items/1012662\n\n■Shaderのライセンス\nMIT License\nCopyright (c) 2018 RefleX\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n\nThis software uses a part of Cubeds Unity Shader.\n\nMIT License\n\nCopyright (c) 2017 Nicholas Benge\n\nhttps://raw.githubusercontent.com/cubedparadox/Cubeds-Unity-Shaders/master/LICENSE\n\n■免責事項 \n・本データの利用において、何らかのトラブル、\n　損失が生じたとしても当方は一切の責任を負いません。\n\n・利用規約についての内容は予告なく変更する場合があります。\n\n■バージョン履歴\n2018/09/16 1.0公開。\n2018/12/02 2.0公開。","url":"https://booth.pm/ja/items/1013623","offers":{"priceCurrency":"JPY","@type":"Offer","price":"2000"},"image":"https://booth.pximg.net/c/620x620/985386bb-bc6d-41c5-b70d-4286e61a3033/i/1013623/a1baefdd-736b-4926-9a9e-4b98af757682_base_resized.jpg"}
     </script>
@@ -96,7 +101,7 @@
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="C7XPcR6QA1lVy3XaZfmQbMZair9nG0z4dCHAuFNU79g="></script>
+    nonce="XGi7LOBvusqdVT5ihaV9QwGkQ0CWuF65wtUNBjYkJ+M="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -656,23 +661,9 @@
         </div>
       </div>
       <div class=
-      "desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
-        <div class="desktop:mb-24 mobile:m-16">
-          <div class="locales_menu">
-            <div class="pulldown">
-              <a class="btn negative small trigger js-tooltip"
-              data-tippy-content=
-              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1013623&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;ieLp3L7L_gBKD5Yso1GH1ACmPQtPO_2Is5DEnTdZIoCyIkimF_R_e71tan2dxoJRdzZtERtRlsapWtNwusJvwQ&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1013623&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;ndCIBjnA8g53Yj4ehodCYMs29hx136DzKwY-t74eEpqmECl8kP9zdYAAwk-4EEflvKamBiG1y70xzClaM4Vf2w&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1013623&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;wsPddRzF90SiW8IVHxGh089Vl2YUZfyjwNBQ8y2y-WX5A3wPtfp2P1U5PkQhhqRWuMXHfEAPl-3aGkceoCm0JA&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1013623&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;yuoYzjtMbSriPwO0tzy3d9dJH2jA6lxnsdFKc31y5GfxKrm0knPsURVd_-WJq7LyoNlPcpSANymrG12e8OmpJg&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
-              data-tippy-trigger="click" data-tippy-interactive=
-              "true" data-tippy-theme="locale" data-tippy-appendto=
-              "parent" href="#"><img width="20" height="20" alt=
-              "locale" src=
-              "https://asset.booth.pm/assets/icons/locale-a6b3e536959c11bfbc9e22f2ecaff8bd9ea3fc969cccda64e7e77b2b2c52994f.svg">
-              <div class="current-locale u-ml-200">
-                <span>日本語</span>
-              </div></a>
-            </div>
-          </div>
+      "flex desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
+        <div class=
+        "js-locale-switcher mr-auto desktop:mb-24 mobile:m-16">
         </div>
       </div>
       <div class="border-b border-border300"></div>
