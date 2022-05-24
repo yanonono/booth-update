@@ -39,6 +39,11 @@
     "js_const_base_domain">
     <meta content="false" name="js_const_user_signed_in">
     <meta content="&quot;ja&quot;" name="js_const_user_locale">
+    <meta content="false" name=
+    "js_const_user_locale_redirect_confirm">
+    <meta content=
+    "{&quot;ja&quot;:&quot;https://booth.pm/locale?locale=ja\u0026return_to=https%3A%2F%2Fbooth.pm%2Fja%2Fitems%2F893612&quot;,&quot;en&quot;:&quot;https://booth.pm/locale?locale=en\u0026return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F893612&quot;,&quot;ko&quot;:&quot;https://booth.pm/locale?locale=ko\u0026return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F893612&quot;,&quot;zh-cn&quot;:&quot;https://booth.pm/locale?locale=zh-cn\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F893612&quot;,&quot;zh-tw&quot;:&quot;https://booth.pm/locale?locale=zh-tw\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F893612&quot;}"
+    name="js_const_user_locale_redirect_urls">
     <meta content="false" name="js_const_user_adult">
     <meta content=
     "&quot;https://accounts.booth.pm/wish_lists.json&quot;" name=
@@ -63,9 +68,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "k0g5XX9T/HiLtAMy02FgrpN1IMX+rILM4vqM+yjnnJc="></script>
+    "akxhAtgBmO5JmNXNiPxfg4xVkpg6cLje2+YdW8Eu0cg="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="k0g5XX9T/HiLtAMy02FgrpN1IMX+rILM4vqM+yjnnJc="></script>
+    nonce="akxhAtgBmO5JmNXNiPxfg4xVkpg6cLje2+YdW8Eu0cg="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -79,9 +84,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/bf30e84e8240ffac88c0.js" defer=
+    "https://asset.booth.pm/assets/226bec842b0148e64ebd.js" defer=
     "defer" nonce=
-    "k0g5XX9T/HiLtAMy02FgrpN1IMX+rILM4vqM+yjnnJc="></script>
+    "akxhAtgBmO5JmNXNiPxfg4xVkpg6cLje2+YdW8Eu0cg="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"VRChat用ボクセルアバターを作ろう","description":"形式　　　：PDF\nボリューム：243ページ、約47000字\n※説明用の図を多用しているため、ページ数が多くなっています。\n\nVRChatで自分だけのアバターが欲しいという方へ\nボクセルを使うという選択肢を紹介したくて作成しました。\nMagicaVoxelの使い方、モデリングにはじまって、\nBlenderで一からボーン作成、ウェイト設定、\nUnityによるアバターアップロードまでを\n実際に自分が作業した画像記録とともに説明します。\n初めての方にもわかりやすいように、次にどこを触るか等は\n赤枠・赤字で明示しました。\n\n更新履歴\n2018/06/07 Ver.1.0 初版作成・公開\n2018/06/09 Ver.1.1 Appendix、一度作成したアーマチュアを使いまわすを追加\n2018/06/19 Ver.1.2 Appendix、MagicaVoxel:Editの詳細を追加\n2018/06/28 Ver.1.3 Appendix、アバターにまばたきをさせるを追加\n2018/08/07 Ver.1.4 購入された方からのフィードバックを反映\n                   ・Blenderはzip版ではなくインストーラ版を使用してPCにインストールすること\n                   ・「モデルをUnityに取り込む」にて、UnityがD\u0026Dを受け付けない場合の注意書きを追加\n                   ・誤字の修正\n2018/12/20 Ver.1.5 VRChatがUnity2017.4.15f1に移行したことにより全体を見直し\n                   VRChatの仕様変更によりAppendix アバターにまばたきをさせるを削除\n2019/04/14 Ver.1.6 ポリゴンの上限の記述を70000に修正\n                   Appendix、Blenderでボクセルモデルを作ってみるを追加\n2019/10/18 Ver.1.7 VRChatがUnity 2017.4.28f1に移行したことにより全体を見直し\n                   MagicaVoxelのUI変更、エクスポート仕様変更による作業工程の変更に対応\n2020/04/12 Ver.1.8 Blender2.8移行に伴い、関連する部分の記述を見直し\n2021/07/21 Ver.1.9 MagicaVoxel 0.99.6.2、VRChat SDK3に対応するため全体を見直し\n\n※購入いただいた方は過去バージョンもDLできるので、削除したコンテンツも閲覧は可能です","url":"https://booth.pm/ja/items/893612","offers":{"priceCurrency":"JPY","@type":"Offer","price":"800"},"image":"https://booth.pximg.net/c/620x620/46ced292-d0fc-402a-bc59-ac3d2f44e6b7/i/893612/b96d08f7-25eb-4164-bca9-1dfa24f2871f_base_resized.jpg"}
     </script>
@@ -95,7 +100,7 @@
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="k0g5XX9T/HiLtAMy02FgrpN1IMX+rILM4vqM+yjnnJc="></script>
+    nonce="akxhAtgBmO5JmNXNiPxfg4xVkpg6cLje2+YdW8Eu0cg="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -743,23 +748,9 @@
         </div>
       </div>
       <div class=
-      "desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
-        <div class="desktop:mb-24 mobile:m-16">
-          <div class="locales_menu">
-            <div class="pulldown">
-              <a class="btn negative small trigger js-tooltip"
-              data-tippy-content=
-              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F893612&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;x0qPxpDEdgdkHvkPo0JbvlreGW5x060VF38T46pHhMX6EEUUtKMVDKykVuEYVXLBaR9Lz4bN8SF2ZDKrbtHTYw&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F893612&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;-xcb6PXt_scxfj6k8XGpXEC6GSmcsMy7mD967JW5TarGTdE60YqdzPnEkUpKZoAjc3tLiGuukI_5JFukUS8aDA&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F893612&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;NLZVTzUzIK91SlkwkqEJ5UdBsUqlCRZRAb7BdrZ5WtsJ7J-dEVRDpL3w9t4ptiCadIDj61IXSmVgpeA-cu8NfQ&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F893612&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;PUDGlUE0QYcV8k6BF-tMfACJQs3svk3-yjL4dYl13kUAGgxHZVMijN1I4W-s_GUDM0gQbBugEcqrKdk9TeOJ4w&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
-              data-tippy-trigger="click" data-tippy-interactive=
-              "true" data-tippy-theme="locale" data-tippy-appendto=
-              "parent" href="#"><img width="20" height="20" alt=
-              "locale" src=
-              "https://asset.booth.pm/assets/icons/locale-a6b3e536959c11bfbc9e22f2ecaff8bd9ea3fc969cccda64e7e77b2b2c52994f.svg">
-              <div class="current-locale u-ml-200">
-                <span>日本語</span>
-              </div></a>
-            </div>
-          </div>
+      "flex desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
+        <div class=
+        "js-locale-switcher mr-auto desktop:mb-24 mobile:m-16">
         </div>
       </div>
       <div class="border-b border-border300"></div>
