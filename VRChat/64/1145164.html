@@ -39,6 +39,11 @@
     "js_const_base_domain">
     <meta content="false" name="js_const_user_signed_in">
     <meta content="&quot;ja&quot;" name="js_const_user_locale">
+    <meta content="false" name=
+    "js_const_user_locale_redirect_confirm">
+    <meta content=
+    "{&quot;ja&quot;:&quot;https://booth.pm/locale?locale=ja\u0026return_to=https%3A%2F%2Fbooth.pm%2Fja%2Fitems%2F1145164&quot;,&quot;en&quot;:&quot;https://booth.pm/locale?locale=en\u0026return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1145164&quot;,&quot;ko&quot;:&quot;https://booth.pm/locale?locale=ko\u0026return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1145164&quot;,&quot;zh-cn&quot;:&quot;https://booth.pm/locale?locale=zh-cn\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1145164&quot;,&quot;zh-tw&quot;:&quot;https://booth.pm/locale?locale=zh-tw\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1145164&quot;}"
+    name="js_const_user_locale_redirect_urls">
     <meta content="false" name="js_const_user_adult">
     <meta content=
     "&quot;https://accounts.booth.pm/wish_lists.json&quot;" name=
@@ -63,9 +68,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "APrdRQcJ8+PTkhvtLpoUI5G8JlpkXLND6Z9By9T2lak="></script>
+    "C2tscDYidW31mfqzAwob6VxCxVHIBewDfyiaHKaqK48="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="APrdRQcJ8+PTkhvtLpoUI5G8JlpkXLND6Z9By9T2lak="></script>
+    nonce="C2tscDYidW31mfqzAwob6VxCxVHIBewDfyiaHKaqK48="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -79,9 +84,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/bf30e84e8240ffac88c0.js" defer=
+    "https://asset.booth.pm/assets/226bec842b0148e64ebd.js" defer=
     "defer" nonce=
-    "APrdRQcJ8+PTkhvtLpoUI5G8JlpkXLND6Z9By9T2lak="></script>
+    "C2tscDYidW31mfqzAwob6VxCxVHIBewDfyiaHKaqK48="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"【VRC想定】EasyColorChangeシェーダー","description":"簡単な色改変がUnity内で完結してできるシェーダーです。\nUnlit版とFlatLitToon版がありますが、どんなシェーダーでも比較的簡単に対応させることができると思います。\n\n\nなにかあればこちらまで\nTwitter : @HhotateA\nDiscord : hhotatea#0333\n\n【追加プロパティ】\n\n通常版-テクスチャをモノクロに戻してから色を付けなおす処理をしています。\n①BlackColor\t:テクスチャの濃いところの色です。\n②WhiteColor\t:テクスチャの薄いところの色です。\n\nAdvance版\n①RedColor0\t:赤色成分の高いところの色です。\n②RedColor1\t:赤色成分の低いところの色です。\n③GreenColor0\t:緑色成分の高いところの色です。\n④GreenColor1\t:緑色成分の低いところの色です。\n⑤BlueColor0\t:青色成分の高いところの色です。\n⑥BlueColor1\t:青色成分の低いところの色です。\n⑦明るさの補正\t:まんまです。任意に調節してください。\n\n\n【他のシェーダーに機能を追加する場合】\n\n通常版\n①機能を追加したいシェーダーファイルをEasyColorChangeフォルダに入れる。\n②シェーダーを開きプロパティ内に\n\n\t\t_color1 (\"BlackColor\",color) = (0.0,0.0,0.0,1.0)\n\t\t_color2 (\"WhiteColor\",color) = (1.0,1.0,1.0,1.0)\n\n　と追加する\n③CGPROGRAMと書いてある行をすべて探して、改行した次の行に\n\n\t\t#include \"ColorChange.cginc\"\n\n　と追加する。\n④tex2D(_MainTex　みたいなことが書いてある行をすべて探して、改行した次の行で\n\n\t\t_MainTex_var = colchange1(_MainTex_var);\n\n　と追加する。(変数名は変える)\n\nAdvance版\n①機能を追加したいシェーダーファイルをEasyColorChangeフォルダに入れる。\n②シェーダーを開きプロパティ内に\n\n\t\t_colorR1 (\"RedColor0\",color) = (0.0,0.0,0.0,1.0)\n\t\t_colorR2 (\"RedColor1\",color) = (1.0,0.0,0.0,1.0)\n\t\t_colorG1 (\"GreenColor0\",color) = (0.0,0.0,0.0,1.0)\n\t\t_colorG2 (\"GreenColor1\",color) = (0.0,1.0,0.0,1.0)\n\t\t_colorB1 (\"BlueColor0\",color) = (0.0,0.0,0.0,1.0)\n\t\t_colorB2 (\"BlueColor1\",color) = (0.0,0.0,1.0,1.0)\n\t\t_emis (\"明るさ補正\",Range(1,3)) = 1\n\n　と追加する\n③CGPROGRAMと書いてある行をすべて探して、改行した次の行に\n\n\t\t#include \"ColorChange.cginc\"\n\n　と追加する。\n④tex2D(_MainTex　みたいなことが書いてある行をすべて探して、改行した次の行で\n\n\t\t_MainTex_var = colchange2(_MainTex_var);\n\n　と追加する。(変数名は変える)\n","url":"https://booth.pm/ja/items/1145164","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"100"},"image":"https://booth.pximg.net/c/620x620/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1145164/f4107560-2b5f-4a76-a491-b0ceefb71be0_base_resized.jpg"}
     </script>
@@ -95,7 +100,7 @@
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="APrdRQcJ8+PTkhvtLpoUI5G8JlpkXLND6Z9By9T2lak="></script>
+    nonce="C2tscDYidW31mfqzAwob6VxCxVHIBewDfyiaHKaqK48="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -637,23 +642,9 @@
         </div>
       </div>
       <div class=
-      "desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
-        <div class="desktop:mb-24 mobile:m-16">
-          <div class="locales_menu">
-            <div class="pulldown">
-              <a class="btn negative small trigger js-tooltip"
-              data-tippy-content=
-              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1145164&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;Id4vhZJa8v-S-i8Cq6_Kp8DIHN1Tq0RRt-U41IGDwbizZJsY0eq7VqcknWIrrDm4hhJ_2idaGG1aD1MCbaGRtw&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1145164&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;LvT1RBpXa41z9kS1GJCdO39c2xU9tKJTLFwAHsMsdFa8TkHZWeciJEYo9tWYk24kOYa4EklF_m_BtmvILw4kWQ&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1145164&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;-q_WX5jOfC0DYQkcdZ_BhTDzgaZHkP5sPycGIoxR3n5oFWLC2341hDa_u3z1nDKadinioTNholDSzW30YHOOcQ&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1145164&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;IbwpEz2kQ_rpYJyEOuZOHezFAzWNirY4XvoYrVg8YkyzBp2OfhQKU9y-LuS65b0Cqh9gMvl76gSzEHN7tB4yQw&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
-              data-tippy-trigger="click" data-tippy-interactive=
-              "true" data-tippy-theme="locale" data-tippy-appendto=
-              "parent" href="#"><img width="20" height="20" alt=
-              "locale" src=
-              "https://asset.booth.pm/assets/icons/locale-a6b3e536959c11bfbc9e22f2ecaff8bd9ea3fc969cccda64e7e77b2b2c52994f.svg">
-              <div class="current-locale u-ml-200">
-                <span>日本語</span>
-              </div></a>
-            </div>
-          </div>
+      "flex desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
+        <div class=
+        "js-locale-switcher mr-auto desktop:mb-24 mobile:m-16">
         </div>
       </div>
       <div class="border-b border-border300"></div>
