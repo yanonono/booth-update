@@ -39,6 +39,11 @@
     "js_const_base_domain">
     <meta content="false" name="js_const_user_signed_in">
     <meta content="&quot;ja&quot;" name="js_const_user_locale">
+    <meta content="false" name=
+    "js_const_user_locale_redirect_confirm">
+    <meta content=
+    "{&quot;ja&quot;:&quot;https://booth.pm/locale?locale=ja\u0026return_to=https%3A%2F%2Fbooth.pm%2Fja%2Fitems%2F1035152&quot;,&quot;en&quot;:&quot;https://booth.pm/locale?locale=en\u0026return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1035152&quot;,&quot;ko&quot;:&quot;https://booth.pm/locale?locale=ko\u0026return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1035152&quot;,&quot;zh-cn&quot;:&quot;https://booth.pm/locale?locale=zh-cn\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1035152&quot;,&quot;zh-tw&quot;:&quot;https://booth.pm/locale?locale=zh-tw\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1035152&quot;}"
+    name="js_const_user_locale_redirect_urls">
     <meta content="false" name="js_const_user_adult">
     <meta content=
     "&quot;https://accounts.booth.pm/wish_lists.json&quot;" name=
@@ -63,9 +68,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "3EE6RXvucHxOsx8WNtdkpBzwgfpPecjfd5CafQYCq/k="></script>
+    "auEFy27UoV/O8boxJljla9D8+8SQYkL5WIQZ3X00d2s="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="3EE6RXvucHxOsx8WNtdkpBzwgfpPecjfd5CafQYCq/k="></script>
+    nonce="auEFy27UoV/O8boxJljla9D8+8SQYkL5WIQZ3X00d2s="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -79,9 +84,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/bf30e84e8240ffac88c0.js" defer=
+    "https://asset.booth.pm/assets/226bec842b0148e64ebd.js" defer=
     "defer" nonce=
-    "3EE6RXvucHxOsx8WNtdkpBzwgfpPecjfd5CafQYCq/k="></script>
+    "auEFy27UoV/O8boxJljla9D8+8SQYkL5WIQZ3X00d2s="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"メガネ向けガラスシェーダー Ver.2.2","description":"メガネなどの薄いガラスをイメージした表現の透過シェーダです。\n\n表面の反射やMatcapが球面状に見え、ローポリや板ポリのモデルでもメガネらしさを向上できる効果を追加しています。\nをたぱちさん(https://wotapacchin.booth.pm/)の公開されている丸メガネなど、レンズ部分が平面のモデルにもおすすめです。\n\n更新履歴：\nVer 2.2 2022.03.11\nVRChatのアップデート(リリース時点ではOpen Beta)に対応し、シングルパスインスタンシングレンダリング(Single Pass Instancing)をサポートするようシェーダのコードを変更\nまた、Unity 2020.3.30f1にて動作確認\nこの対応により、Shader Forgeでの再編集は非対応となります\n\nVer 2.11\nVRChatの現時点のシェーダフォールバックの仕組みに対応し、フォールバック先を非表示(Hidden)に変更\nこれに伴いシェーダの名称を変更\n\nVer 2.1\nUnitypackageを追加。\nシェーダ自体に変更はありません。\n\nVer 2.0 2018.11.24\nレンズ効果およびノーマルマップ対応を追加。\nMatcapの仕様を変更。\nDistortionを無効化できる設定を追加。\nレンズ効果対応のため、添付メガネのUVを変更。\n\nVer 1.3 2018.10.14\n色付き版(oy_Glass_Color)で実施した変更に合わせた対応。\n入射光に対する色味を「Incident_Color」として分離したほか、\n「Matcap_Saturation_Range」の名称を「Matcap_Hue_Range」に修正、\nReadMeの誤記修正など。。\n\nVer 1.2 2018.10.10\nVRChatにてセーフティ設定によりシェーダを無効化された際、半透明のシェーダ(Particles)としてふるまうため、シェーダ名を変更。\nまた、ダミーパラメータを追加。\n\nVer 1.1 2018.10.06\nMatcapに対応。リアルタイムライトの無い/弱いワールドでもメガネの存在を主張できるように。\nこれに伴い設定項目追加、名称変更。\n\nVer 1.0 2018.10.03\n初版","url":"https://booth.pm/ja/items/1035152","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"100"},"image":"https://booth.pximg.net/c/620x620/64255878-1532-4d6c-abdb-a9cf35ee4a39/i/1035152/e7304955-e195-4546-bb44-77a8e2a81da8_base_resized.jpg"}
     </script>
@@ -95,7 +100,7 @@
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="3EE6RXvucHxOsx8WNtdkpBzwgfpPecjfd5CafQYCq/k="></script>
+    nonce="auEFy27UoV/O8boxJljla9D8+8SQYkL5WIQZ3X00d2s="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -931,23 +936,9 @@
         </div>
       </div>
       <div class=
-      "desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
-        <div class="desktop:mb-24 mobile:m-16">
-          <div class="locales_menu">
-            <div class="pulldown">
-              <a class="btn negative small trigger js-tooltip"
-              data-tippy-content=
-              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1035152&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;fgF3csiPizJy3jHZKkt3ZfiYMtj9XNqcNNwLNApqcN-CcLzSgoy78bVxxck50p_EV30zb6aB9KfWLfJRa5nGQg&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1035152&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;RgoEXuZgIp4aDzYgEYLPHfq7s8bzHjG2FbZ1yKsnbUK6e8_-rGMSXd2gwjACGye8VV6ycajDH433R4ytytTb3w&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1035152&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;cNsHTIHIceqkg_pVSWez4VB0SRom1vYBZP8vFf5G5meMqszsy8tBKWMsDkVa_ltA_5FIrX0L2DqGDtZwn7VQ-g&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1035152&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;BajSTJArz3Ub9UgqDhKfQPKtIqeed2SdoCwSBMJ0C6v52Rns2ij_ttxavDodi3fhXUgjEMWqSqZC3etho4e9Ng&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
-              data-tippy-trigger="click" data-tippy-interactive=
-              "true" data-tippy-theme="locale" data-tippy-appendto=
-              "parent" href="#"><img width="20" height="20" alt=
-              "locale" src=
-              "https://asset.booth.pm/assets/icons/locale-a6b3e536959c11bfbc9e22f2ecaff8bd9ea3fc969cccda64e7e77b2b2c52994f.svg">
-              <div class="current-locale u-ml-200">
-                <span>日本語</span>
-              </div></a>
-            </div>
-          </div>
+      "flex desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
+        <div class=
+        "js-locale-switcher mr-auto desktop:mb-24 mobile:m-16">
         </div>
       </div>
       <div class="border-b border-border300"></div>
