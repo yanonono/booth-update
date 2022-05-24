@@ -39,6 +39,11 @@
     "js_const_base_domain">
     <meta content="false" name="js_const_user_signed_in">
     <meta content="&quot;ja&quot;" name="js_const_user_locale">
+    <meta content="false" name=
+    "js_const_user_locale_redirect_confirm">
+    <meta content=
+    "{&quot;ja&quot;:&quot;https://booth.pm/locale?locale=ja\u0026return_to=https%3A%2F%2Fbooth.pm%2Fja%2Fitems%2F1324963&quot;,&quot;en&quot;:&quot;https://booth.pm/locale?locale=en\u0026return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1324963&quot;,&quot;ko&quot;:&quot;https://booth.pm/locale?locale=ko\u0026return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1324963&quot;,&quot;zh-cn&quot;:&quot;https://booth.pm/locale?locale=zh-cn\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1324963&quot;,&quot;zh-tw&quot;:&quot;https://booth.pm/locale?locale=zh-tw\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1324963&quot;}"
+    name="js_const_user_locale_redirect_urls">
     <meta content="false" name="js_const_user_adult">
     <meta content=
     "&quot;https://accounts.booth.pm/wish_lists.json&quot;" name=
@@ -63,9 +68,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "MNh4ybBbhWTuY4W1ActcdGamz4iwnt5EeAC4XE0Vfe4="></script>
+    "gI9e25+e+0MfXqqqDj4RPN5bWVqk6JUhcaqSAmcE8LI="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="MNh4ybBbhWTuY4W1ActcdGamz4iwnt5EeAC4XE0Vfe4="></script>
+    nonce="gI9e25+e+0MfXqqqDj4RPN5bWVqk6JUhcaqSAmcE8LI="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -79,9 +84,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/bf30e84e8240ffac88c0.js" defer=
+    "https://asset.booth.pm/assets/226bec842b0148e64ebd.js" defer=
     "defer" nonce=
-    "MNh4ybBbhWTuY4W1ActcdGamz4iwnt5EeAC4XE0Vfe4="></script>
+    "gI9e25+e+0MfXqqqDj4RPN5bWVqk6JUhcaqSAmcE8LI="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"[VRCSDK2]Non intrusive snail marker","description":"IMPORTANT NOTE: This is for 2.0 avatars and kinda outdated with 3.0 avatars now. I recommend using some other prefab if you're using a 3.0 avatar. For example https://booth.pm/en/items/2861625\n\n\nSimple snail marker to draw with your finger\n\nAllows you to draw with your finger by combining two gestures(and not dissapear when you stop doing the gestures)\n\nPut the prefab under Right wrist/IndexFinger1_R/IndexFinger2_R/IndexFinger3_R and position TrailMarker it to be more or less on front your index finger(wherever you position it is where it will start drawing from)\n\n\nCopy the frames from the RocknRoll, Point and ThumbsUp animations into your own Fist, Point and RocknRoll animations.\n\nDraw by combining rockNRoll and fingerPoint. Erase by doing ThumbsUp\n\n\nVideo about simple instalation: https://www.youtube.com/watch?v=j-HQVjfJsM4\nVideo about how it works inside VRChat:\nhttps://youtu.be/zKWV1kPe4dM\n\nThis is a simple modification of the prefab: https://github.com/theepicsnail/Marker so that the snail only draws when you combine two gestures rather than one\n\n--Livb\n\n\nCommon issues/Questions: \n\n\"I don't have any hand animations myself / I don't know what a hand animation is?\": Simply drag \"Avatar pen override\" to your avatar description\n\n\"I'm in oculus and ink drifts when I go from fingerpoint to victory!\": Just set your index finger animation to be the same as victory like in the default animations from the prefab\n\n\"It doesn't work..\": There could be a whole lot of reasons for this. The three most common ones that come to the top of my mind are: you didn't set the prefab as a child of the last finger bone, you forgot to set the override to your avatar description or your avatar has different bone names than the standard ones(for this you'd need to remake the animation frames based on the existing ones or rename your bones)\n\nFor any other issue feel free to message me on Discord: Livb#4080\n\n\n----------------------------------------\n\n重要な注意：これは2.0アバター用で、3.0アバターでは少し時代遅れになっています。 3.0アバターを使用している場合は、他のプレハブを使用することをお勧めします。 例：https：//booth.pm/en/items/2861625 \n\n指で描くシンプルなカタツムリマーカー\n\n2つのジェスチャーを組み合わせて指で描くことができます（ジェスチャーをやめても消えません）\n\nプレハブを右手首/ IndexFinger1_R / IndexFinger2_R / IndexFinger3_Rの下に置き、TrailMarkerを人差し指の前面に多かれ少なかれ配置します（どこから描画を開始するかということです）\n\n\nフレームをRocknRoll、Point、およびThumbsUpアニメーションから独自のFist、Point、およびRocknRollアニメーションにコピーします。\n\nrockNRollとfingerPointを組み合わせて描画します。 ThumbsUpを実行して消去する\n\n\n簡単なインスタレーションに関する動画：https://www.youtube.com/watch?v=j-HQVjfJsM4\nVRChat内でどのように機能するかについてのビデオ：\nhttps://youtu.be/zKWV1kPe4dM\n\nこれはプレハブの簡単な変更です：https://github.com/theepicsnail/Markerでカタツムリは1つのジェスチャーではなく2つのジェスチャーを組み合わせたときにのみ描画されます\n\n--Livb\n\n\n一般的な問題/質問：\n\n「自分でハンドアニメーションを持っていない/ハンドアニメーションがわからない」：「アバターペンオーバーライド」をアバターの説明にドラッグするだけ\n\n「私は指先から勝利に移るとオクルスになり、インクがドリフトします！」：プレハブのデフォルトのアニメーションのように、人差し指のアニメーションを勝利と同じに設定するだけです\n\n「動作しません。」：これには多くの理由が考えられます。私の頭の中で浮かぶ3つの最も一般的なものは、プレハブを最後の指のボーンの子として設定しなかった、アバターの説明にオーバーライドを設定するのを忘れた、またはアバターのボーン名が標準のもの（このためには、既存のものに基づいてアニメーションフレームを再作成するか、ボーンの名前を変更する必要があります）\n\nその他の問題については、Discord：Livb＃4080で私にメッセージを送ってください。","url":"https://booth.pm/ja/items/1324963","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"0"},"image":"https://booth.pximg.net/c/620x620/9a674ece-06ac-4040-81cb-4ec7086305cd/i/1324963/9c89ec97-ed5e-4a10-9b64-3cfe9817328a_base_resized.jpg"}
     </script>
@@ -95,7 +100,7 @@
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="MNh4ybBbhWTuY4W1ActcdGamz4iwnt5EeAC4XE0Vfe4="></script>
+    nonce="gI9e25+e+0MfXqqqDj4RPN5bWVqk6JUhcaqSAmcE8LI="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -669,23 +674,9 @@
         </div>
       </div>
       <div class=
-      "desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
-        <div class="desktop:mb-24 mobile:m-16">
-          <div class="locales_menu">
-            <div class="pulldown">
-              <a class="btn negative small trigger js-tooltip"
-              data-tippy-content=
-              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1324963&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;ZZ5olEO-1R08lJaH6NUQXS21ou1Fb765jO9_ejQ1BC0PGpjUcLEnFxa9bk52UDqsF-Hy4WnsCd4ydPXSJ9ulKQ&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1324963&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;qKccL2s_7MUZWrCG9lLwoFdJ40skfAAdGq8uR3U7hlLCI-xvWDAezzNzSE9o19pRbR2zRwj_t3qkNKTvZtUnVg&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1324963&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;pCnMHiVkoWEUaVy2dbF_4NzHebxb9-pJ1BO92G3fcdvOrTxeFmtTaz5ApH_rNFUR5pMpsHd0XS5qiDdwfjHQ3w&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1324963&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;-3UGVtXO1pHMMLOT4MJozDyw4HJGpoKI7gpERUocBlmR8fYW5sEkm-YZS1p-R0I9BuSwfmolNe9Qkc7tWfKnXQ&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
-              data-tippy-trigger="click" data-tippy-interactive=
-              "true" data-tippy-theme="locale" data-tippy-appendto=
-              "parent" href="#"><img width="20" height="20" alt=
-              "locale" src=
-              "https://asset.booth.pm/assets/icons/locale-a6b3e536959c11bfbc9e22f2ecaff8bd9ea3fc969cccda64e7e77b2b2c52994f.svg">
-              <div class="current-locale u-ml-200">
-                <span>日本語</span>
-              </div></a>
-            </div>
-          </div>
+      "flex desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
+        <div class=
+        "js-locale-switcher mr-auto desktop:mb-24 mobile:m-16">
         </div>
       </div>
       <div class="border-b border-border300"></div>
