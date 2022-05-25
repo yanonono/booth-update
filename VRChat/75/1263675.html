@@ -39,6 +39,11 @@
     "js_const_base_domain">
     <meta content="false" name="js_const_user_signed_in">
     <meta content="&quot;ja&quot;" name="js_const_user_locale">
+    <meta content="false" name=
+    "js_const_user_locale_redirect_confirm">
+    <meta content=
+    "{&quot;ja&quot;:&quot;https://booth.pm/locale?locale=ja\u0026return_to=https%3A%2F%2Fbooth.pm%2Fja%2Fitems%2F1263675&quot;,&quot;en&quot;:&quot;https://booth.pm/locale?locale=en\u0026return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1263675&quot;,&quot;ko&quot;:&quot;https://booth.pm/locale?locale=ko\u0026return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1263675&quot;,&quot;zh-cn&quot;:&quot;https://booth.pm/locale?locale=zh-cn\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1263675&quot;,&quot;zh-tw&quot;:&quot;https://booth.pm/locale?locale=zh-tw\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1263675&quot;}"
+    name="js_const_user_locale_redirect_urls">
     <meta content="false" name="js_const_user_adult">
     <meta content=
     "&quot;https://accounts.booth.pm/wish_lists.json&quot;" name=
@@ -63,9 +68,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "F23CiKBZHxrz4tS3f2KlU2iAUSq0L12LBJVMpr4e8I4="></script>
+    "sbYxRIhacZcxa2mGT5tVTwfQSXU1ZEWuW6Q7YqBKisk="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="F23CiKBZHxrz4tS3f2KlU2iAUSq0L12LBJVMpr4e8I4="></script>
+    nonce="sbYxRIhacZcxa2mGT5tVTwfQSXU1ZEWuW6Q7YqBKisk="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -79,9 +84,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/bf30e84e8240ffac88c0.js" defer=
+    "https://asset.booth.pm/assets/226bec842b0148e64ebd.js" defer=
     "defer" nonce=
-    "F23CiKBZHxrz4tS3f2KlU2iAUSq0L12LBJVMpr4e8I4="></script>
+    "sbYxRIhacZcxa2mGT5tVTwfQSXU1ZEWuW6Q7YqBKisk="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"円柱タイプで灰皿のあるゴミ箱","description":"灰皿付きのゴミ箱です。\nサブスタンスを使って錆と汚さを頑張って表現しました。\nポリゴン数は1034になります。\n\n☆中身\n・Dbfix.fbx\n-ゴミ箱のモデルです。\n・gomibako1_AlbedoTransparency.png\n-テクスチャーです\n・gomibako1_MetallicSmoothness.png\n-なんかメタルな表現をするテクスチャーです\n・gomibako1_Normal.png\n-ノーマルマップです\n・dustbox.mat\n-Arktoon-Shaderを使用し、上記のテクスチャを適用させた状態です。\n・UV.png\n-UVマップになるので、こちらを参考に改変（ステッカーを貼ったり）お願いします。\n\n細かいサイズやアウトラインなどはお好みにカスタマイズしてもらえると良いかと思います。","url":"https://booth.pm/ja/items/1263675","offers":{"priceCurrency":"JPY","@type":"Offer","price":"300"},"image":"https://booth.pximg.net/c/620x620/2125b34d-92c8-47c6-8e33-ce2a455e9d32/i/1263675/70fb75ff-af6a-48a3-9edb-5b882e504621_base_resized.jpg"}
     </script>
@@ -95,7 +100,7 @@
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="F23CiKBZHxrz4tS3f2KlU2iAUSq0L12LBJVMpr4e8I4="></script>
+    nonce="sbYxRIhacZcxa2mGT5tVTwfQSXU1ZEWuW6Q7YqBKisk="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -583,23 +588,9 @@
         </div>
       </div>
       <div class=
-      "desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
-        <div class="desktop:mb-24 mobile:m-16">
-          <div class="locales_menu">
-            <div class="pulldown">
-              <a class="btn negative small trigger js-tooltip"
-              data-tippy-content=
-              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1263675&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;h83B1EPmtHdYBU3PwdpjVaMkKPCO874h1nLBnYFYiBkkaCOpA4_opW4em69HBIEn3llJz_mc3FE2MX5oyhHEhg&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1263675&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;PA_DwMPxpdlaqJ2wpKsDdMhNhsnw6FwxXfe8zJPR4LmfqiG9g5j5C2yzS9AideEGtTDn9oeHPkG9tAM52JisJg&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1263675&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;Ztuc8-d3fxhQ6bt6vb4cy3b1Qm4Ukow5W_8btRsOCQHFfn6Opx4jymbybRo7YP65C4gjUWP97km7vKRAUEdFng&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1263675&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;17k2cCNDwDjzC-5xNCi3g6wfdycVexBAO6R2ZVQgjUx0HNQNYyqc6sUQOBGy9lXx0WIWGGIUcjDb58mQH2nB0w&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
-              data-tippy-trigger="click" data-tippy-interactive=
-              "true" data-tippy-theme="locale" data-tippy-appendto=
-              "parent" href="#"><img width="20" height="20" alt=
-              "locale" src=
-              "https://asset.booth.pm/assets/icons/locale-a6b3e536959c11bfbc9e22f2ecaff8bd9ea3fc969cccda64e7e77b2b2c52994f.svg">
-              <div class="current-locale u-ml-200">
-                <span>日本語</span>
-              </div></a>
-            </div>
-          </div>
+      "flex desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
+        <div class=
+        "js-locale-switcher mr-auto desktop:mb-24 mobile:m-16">
         </div>
       </div>
       <div class="border-b border-border300"></div>
