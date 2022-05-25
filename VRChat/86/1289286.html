@@ -39,6 +39,11 @@
     "js_const_base_domain">
     <meta content="false" name="js_const_user_signed_in">
     <meta content="&quot;ja&quot;" name="js_const_user_locale">
+    <meta content="false" name=
+    "js_const_user_locale_redirect_confirm">
+    <meta content=
+    "{&quot;ja&quot;:&quot;https://booth.pm/locale?locale=ja\u0026return_to=https%3A%2F%2Fbooth.pm%2Fja%2Fitems%2F1289286&quot;,&quot;en&quot;:&quot;https://booth.pm/locale?locale=en\u0026return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1289286&quot;,&quot;ko&quot;:&quot;https://booth.pm/locale?locale=ko\u0026return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1289286&quot;,&quot;zh-cn&quot;:&quot;https://booth.pm/locale?locale=zh-cn\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1289286&quot;,&quot;zh-tw&quot;:&quot;https://booth.pm/locale?locale=zh-tw\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1289286&quot;}"
+    name="js_const_user_locale_redirect_urls">
     <meta content="false" name="js_const_user_adult">
     <meta content=
     "&quot;https://accounts.booth.pm/wish_lists.json&quot;" name=
@@ -63,9 +68,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "AlcE1Jat5wgUnH5G1v+l8CPo/FxtW3AbYdUJWxv5JgE="></script>
+    "0vlYkQEBgnqN2smSL+mAdDo3eS3UUkFFLih9Jj9y+ew="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="AlcE1Jat5wgUnH5G1v+l8CPo/FxtW3AbYdUJWxv5JgE="></script>
+    nonce="0vlYkQEBgnqN2smSL+mAdDo3eS3UUkFFLih9Jj9y+ew="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -79,9 +84,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/bf30e84e8240ffac88c0.js" defer=
+    "https://asset.booth.pm/assets/226bec842b0148e64ebd.js" defer=
     "defer" nonce=
-    "AlcE1Jat5wgUnH5G1v+l8CPo/FxtW3AbYdUJWxv5JgE="></script>
+    "0vlYkQEBgnqN2smSL+mAdDo3eS3UUkFFLih9Jj9y+ew="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"(無料版あり)VRChatSSmemo","description":"■VRChatSSmemo\n※本アプリは開発を終了しました。今後、機能が追加されることはありません。\n本アプリの改良版であるVRChatSSUsersList( https://nyaho.booth.pm/items/2749817 )の利用を検討ください。\n\n■概要\nVRChatのスクリーンショットを撮影したとき、同じワールドへ誰が居たか後から簡単に確認できます。\nデスクトップモード(F12キー)、VRモード(VRChat内のCamera)によるスクリーンショットの撮影へ対応しています。\n\n■動作確認環境\n・Windows 10(64bit)\n└VRChat(Steam版)\n....├デスクトップモード\n....└VRモード\n※Oculus Store版VRChatは動作未確認です。\n※Oculus Questは非対応です。\n\nインストール手順、アプリの使い方は以下のURLから確認ください。\nhttps://docs.google.com/document/d/1iTxojWewFoTI7Nc0aU9fNayt7zBghLiP4mUj68b2LDI/edit?usp=sharing\n\n■その他\n作者：NyaHo( https://twitter.com/NyaHo_vrc )\n\nご意見や感想、不具合の報告などのご連絡は上記のTwitterアカウントへお願いします。\n\n■免責事項\n本アプリケーションを使用したことにより発生したいかなるトラブルについて、作者は責任を負わないものとします。\n\n■更新履歴\n2019/3/27 v1 初版リリース\n2019/4/16 v1.1 スクリーンショットの日付フォルダ分け機能を追加\n2019/6/1  v1.2 VRChat APIの仕様変更へ対応。\n2019/6/22 v1.21 名前がハイフンで始まるユーザを検索できない不具合を修正。\n2019/7/29 v1.22 ログインエラー時の処理を改善。VRChatログ、スクリーンショットフォルダ指定機能を追加。\n2019/12/14 v1.23 アプリ起動時、ログインエラーが発生しアプリを使用できない不具合を修正。\n2020/4/8 v1.24 二段階認証へ対応、スクリーンショットの日付分類ボタンを追加。\n2021/2/14 v1.25 VRChatログファイルの文字化けにより本アプリが正常に動作しない不具合へ対応。","url":"https://booth.pm/ja/items/1289286","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"100"},"image":"https://booth.pximg.net/c/620x620/030f9ffc-6c5f-4905-a203-71e35f0d118a/i/1289286/37e33762-3a82-45bb-95b2-45f47f00d481_base_resized.jpg"}
     </script>
@@ -95,7 +100,7 @@
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="AlcE1Jat5wgUnH5G1v+l8CPo/FxtW3AbYdUJWxv5JgE="></script>
+    nonce="0vlYkQEBgnqN2smSL+mAdDo3eS3UUkFFLih9Jj9y+ew="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -613,23 +618,9 @@
         </div>
       </div>
       <div class=
-      "desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
-        <div class="desktop:mb-24 mobile:m-16">
-          <div class="locales_menu">
-            <div class="pulldown">
-              <a class="btn negative small trigger js-tooltip"
-              data-tippy-content=
-              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1289286&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;g_Kj-sKmypl66XCBiGOwI7PHG5D_V269l-aA7UF76b8DSjwwGfBQAgyGdAholSPeAW9Qpc0WgyTDOTnLT-E9iA&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1289286&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;hK6eHah_1yPPZe4k8FGhfR1sdnhBId7u8akufjA4dJsEFgHXcylNuLkK6q0QpzKAr8Q9TXNgM3eldpdYPqKgrA&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1289286&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;mvKeTMhQHNHEiQoku0YMKHrP8rVILfUu6o3_zS9j22saSgGGEwaGSrLmDq1bsJ_VyGe5gHpsGLe-UkbrIfkPXA&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1289286&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;kxX012gMwbPev9I7GAi_sPNS8NeeVdnmlGQjp5wHmjUTrWsds1pbKKjQ1rL4_ixNQfq74qwUNH_Au5qBkp1OAg&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
-              data-tippy-trigger="click" data-tippy-interactive=
-              "true" data-tippy-theme="locale" data-tippy-appendto=
-              "parent" href="#"><img width="20" height="20" alt=
-              "locale" src=
-              "https://asset.booth.pm/assets/icons/locale-a6b3e536959c11bfbc9e22f2ecaff8bd9ea3fc969cccda64e7e77b2b2c52994f.svg">
-              <div class="current-locale u-ml-200">
-                <span>日本語</span>
-              </div></a>
-            </div>
-          </div>
+      "flex desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
+        <div class=
+        "js-locale-switcher mr-auto desktop:mb-24 mobile:m-16">
         </div>
       </div>
       <div class="border-b border-border300"></div>
