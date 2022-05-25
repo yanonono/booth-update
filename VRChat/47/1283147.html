@@ -39,6 +39,11 @@
     "js_const_base_domain">
     <meta content="false" name="js_const_user_signed_in">
     <meta content="&quot;ja&quot;" name="js_const_user_locale">
+    <meta content="false" name=
+    "js_const_user_locale_redirect_confirm">
+    <meta content=
+    "{&quot;ja&quot;:&quot;https://booth.pm/locale?locale=ja\u0026return_to=https%3A%2F%2Fbooth.pm%2Fja%2Fitems%2F1283147&quot;,&quot;en&quot;:&quot;https://booth.pm/locale?locale=en\u0026return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1283147&quot;,&quot;ko&quot;:&quot;https://booth.pm/locale?locale=ko\u0026return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1283147&quot;,&quot;zh-cn&quot;:&quot;https://booth.pm/locale?locale=zh-cn\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1283147&quot;,&quot;zh-tw&quot;:&quot;https://booth.pm/locale?locale=zh-tw\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1283147&quot;}"
+    name="js_const_user_locale_redirect_urls">
     <meta content="false" name="js_const_user_adult">
     <meta content=
     "&quot;https://accounts.booth.pm/wish_lists.json&quot;" name=
@@ -63,9 +68,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "MUnlFc6TseZJRjodd7tlh1+/5l2C+cUuPsXe/yjVeI0="></script>
+    "LDLN2Fu93aFiwwMwYvn+NFnFXka7uCq5sXfyxL8oumk="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="MUnlFc6TseZJRjodd7tlh1+/5l2C+cUuPsXe/yjVeI0="></script>
+    nonce="LDLN2Fu93aFiwwMwYvn+NFnFXka7uCq5sXfyxL8oumk="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -79,9 +84,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/bf30e84e8240ffac88c0.js" defer=
+    "https://asset.booth.pm/assets/226bec842b0148e64ebd.js" defer=
     "defer" nonce=
-    "MUnlFc6TseZJRjodd7tlh1+/5l2C+cUuPsXe/yjVeI0="></script>
+    "LDLN2Fu93aFiwwMwYvn+NFnFXka7uCq5sXfyxL8oumk="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"VRChat向けジュエリーボックス付きオルゴール","description":"--- ver 2021.08.02.0\n* VRCSDK3（UDON）サポート\n\n--- ver 2020.4.02.0\n* VRC_SpatialAudioSourceに対応しました\n* ドキュメントにVRC_SpatialAudioSourceの利用方法を追記しました\n* Unity2018LTS対応版VRChat SDK（VRChat 2020.1.1）に対応しました\n\n--- ver 2019.3.28.0\n* 新たにガラスケースタイプのオルゴールを追加（FBX, prefab）\n* 駆動機構のFBX、prefabを追加\n* 途中停止の実装（曲の変更方法が変わり、簡単になりました！）\n---\n\nVRChat専用アニメーション、VRC_Trigger設定済みジュエリーボックス付きオルゴールです。\n現実のオルゴールの動作を \"大体\" 再現しており、歯車の数や速度も噛み合うように設計されています（シリンダは30秒で1回転するようになっています）。\n再現されていない部分として、ゼンマイを巻く部分、蓋が閉じられる際のウィンドカッターを止めるためのピン、ギアボックスの中身がありますのでそこはご了承くださいませ。\nアニメーションは、開閉および駆動の3種類あります。\n\nサンプル曲として\n* G線上のアリア\n* オリジナル曲 1曲\n\nのオーディオソースをパッケージに含めています（わたしが弾いたものを録音してクォンタイズかけたものです）。\n曲はこのページの下部にてSoundCloudを通して聴くことができます。\n\nまた、ゼンマイを巻く際の駆動音も同梱されており、これもまたトリガーを設定済みのため、\n自分の好きな曲に入れ替えたい場合はオーディオソースの取り替えとパラメータ2箇所の変更で済みます。\nオーディオソースの用意や軽量化、トリガーパラメータの変更については別途資料をパッケージ内に含めていますので、そちらをご覧ください。\n\nそのままprefabをHierarchyに置くだけで使えるようになる※ので、ワールドの片隅にでも置いてあげてください。\n（トリガーに関してはVRChat SDKに依存する仕様上、完璧な状態遷移が行われると保証できないため、できるだけ慎重にお扱いくださいませ）\n\n各コンポーネントが設定されている都合上VRChat専用ではありますが、規約にありますように、\nモデル、テクスチャ、アニメーションデータは他コンテンツでもご利用頂けます（…がコンポーネントが設定されているのでそのまま扱うことを推奨致します）\n\n※事前にVRChat SDKのインポートを行う必要があります（インポート前に導入するとコンポーネントが壊れる可能性があります）","url":"https://booth.pm/ja/items/1283147","offers":{"priceCurrency":"JPY","@type":"Offer","price":"300"},"image":"https://booth.pximg.net/c/620x620/6bdf2df7-47d0-4756-8dfe-1337da79c2a3/i/1283147/c0848392-911b-47b5-8eb6-19e03600874d_base_resized.jpg"}
     </script>
@@ -95,7 +100,7 @@
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="MUnlFc6TseZJRjodd7tlh1+/5l2C+cUuPsXe/yjVeI0="></script>
+    nonce="LDLN2Fu93aFiwwMwYvn+NFnFXka7uCq5sXfyxL8oumk="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -596,23 +601,9 @@
         </div>
       </div>
       <div class=
-      "desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
-        <div class="desktop:mb-24 mobile:m-16">
-          <div class="locales_menu">
-            <div class="pulldown">
-              <a class="btn negative small trigger js-tooltip"
-              data-tippy-content=
-              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1283147&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;gTqO2YTb93ksK6_Q_5Mcnq1Ajh197NJ8gPiiGUm-WD7v0sjpF2pGNtq8OMxebFgfA6JtLXQt0jVNBfvIQ-o0bg&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1283147&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;kFlIbmQbRTTjOlAz_F5QtUrF0kt29NQcuI3mQsNgB33-sQ5e96r0exWtxy9doRQ05Ccxe3811FV1cL-TyTRrLQ&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1283147&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;MVgyEpxOuNnEi34RVADO-ven3BIN8v3Qg8o2dDRPCV9fsHQiD_8JljIc6Q31_4p7WUU_IgQz_ZlON2-lPhtlDw&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1283147&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;8IqsZUEZbY6fcM4IQ7O-fWQrVEUIjRcCXhPF9BVqLMueYupV0qjcwWnnWRTiTPr8ysm3dQFMF0uT7pwlHz5Amw&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
-              data-tippy-trigger="click" data-tippy-interactive=
-              "true" data-tippy-theme="locale" data-tippy-appendto=
-              "parent" href="#"><img width="20" height="20" alt=
-              "locale" src=
-              "https://asset.booth.pm/assets/icons/locale-a6b3e536959c11bfbc9e22f2ecaff8bd9ea3fc969cccda64e7e77b2b2c52994f.svg">
-              <div class="current-locale u-ml-200">
-                <span>日本語</span>
-              </div></a>
-            </div>
-          </div>
+      "flex desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
+        <div class=
+        "js-locale-switcher mr-auto desktop:mb-24 mobile:m-16">
         </div>
       </div>
       <div class="border-b border-border300"></div>
