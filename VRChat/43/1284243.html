@@ -39,6 +39,11 @@
     "js_const_base_domain">
     <meta content="false" name="js_const_user_signed_in">
     <meta content="&quot;ja&quot;" name="js_const_user_locale">
+    <meta content="false" name=
+    "js_const_user_locale_redirect_confirm">
+    <meta content=
+    "{&quot;ja&quot;:&quot;https://booth.pm/locale?locale=ja\u0026return_to=https%3A%2F%2Fbooth.pm%2Fja%2Fitems%2F1284243&quot;,&quot;en&quot;:&quot;https://booth.pm/locale?locale=en\u0026return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1284243&quot;,&quot;ko&quot;:&quot;https://booth.pm/locale?locale=ko\u0026return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1284243&quot;,&quot;zh-cn&quot;:&quot;https://booth.pm/locale?locale=zh-cn\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1284243&quot;,&quot;zh-tw&quot;:&quot;https://booth.pm/locale?locale=zh-tw\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1284243&quot;}"
+    name="js_const_user_locale_redirect_urls">
     <meta content="false" name="js_const_user_adult">
     <meta content=
     "&quot;https://accounts.booth.pm/wish_lists.json&quot;" name=
@@ -63,9 +68,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "tuqgYkXJjhCzRgPhhtB7F+3aDWCuqVRhVotCiQJFY7M="></script>
+    "2w79AOP1YdmguL4v/0D6eYDCTvRurWDC/W1CnYEp70w="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="tuqgYkXJjhCzRgPhhtB7F+3aDWCuqVRhVotCiQJFY7M="></script>
+    nonce="2w79AOP1YdmguL4v/0D6eYDCTvRurWDC/W1CnYEp70w="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -79,9 +84,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/bf30e84e8240ffac88c0.js" defer=
+    "https://asset.booth.pm/assets/226bec842b0148e64ebd.js" defer=
     "defer" nonce=
-    "tuqgYkXJjhCzRgPhhtB7F+3aDWCuqVRhVotCiQJFY7M="></script>
+    "2w79AOP1YdmguL4v/0D6eYDCTvRurWDC/W1CnYEp70w="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"ランドセル","description":"VRChatアバターむけのオリジナルアクセサリ「ランドセル」です。\n8000△ポリゴン程度となります。\n\n☆内容物・仕様\nモデルのFBXファイル\nテクスチャのPSDファイルおよびプリセットカラーpngファイル\n上記と自家製のシェーダを含めたユニティパッケージとなります。\n※VRCにてアバターのアクセサリとして使用することを想定しています。\n見えない・見えにくいところはそこまで作りこんでおりません。\n\n・randsel1.3.fbx　randsel1.3.blend\n　「ランドセル」のfbxおよびblenderファイルです。\n　シェイプキーが3つ用意してありUnity上での肩ひもの調整ができます。\n　「胸」無～そこそこまで変更できます。\n　「肩ひも調整肩」肩の上側の調整です。\n　「肩ひも調整脇」ウェスト側の調整です。\n　また肩部分の肩紐にボーンが入っていてshoulder_target.L shoulder_target.Rをそれぞれアバターの肩に入れると\n　AimConstraintにより追従します。\n\n・randsel1.1.fbx　randsel1.1.blend\n　AAShaderを使わない場合のモデルです。\n\n・randsel.psd\n　上記モデル用のテクスチャファイルです。\n　メインカラーのパターンが何色かプリセットで入ってますので好みの色で保存して使用してください。\n　Unity上ではpsdのまま使用できます。\n　2048サイズと大きめのサイズで入ってますので必要に応じて縮小するなどして使用してください。\n・randselM.psd\n　上記のテクスチャファイルと合わせて使うAAShader用のマテリアルテクスチャです。sRGBのチェックを外して使用してください\n\n・randsel_x.png randselM_x.png\n　上記のファイルのプリセットカラーファイルです。\n\n\n・randsel1.\t3.unitypackage\n　上記をVRChatで使用するためにある程度設定を行ったPrefab入りのユニティパッケージです。\n\n\n\n　\n　導入方法は上記のunitypackageを導入すると\n　/randsel下にrandselのPrefabおよび関連ファイルが展開されます。\n\n\n　①こちらのPrefabがルートにありますのでこちらをHierarchyに入れ\n　②メッシュとボーンをこのモデルのルートに入れたうえで大きさの調整を行い（メッシュを調整しようとしても動かないのでボーンを拡大縮小してください）\n　③Boneをchest下に入れてください。\n　④shoulder_target.L　shoulder_target.Rをそれぞれの肩に入れ位置を調整します。\n　あとはVRChatの各種設定を行って完成です。\n　\n★2022年3月20日 update!\n　シェーダをAAShader3.3～週末の過ごし方～に変更し、SPS-Iに対応しました。\n　肩ひもの追従をAim Constraintに変更しました。\n\n★2020年6月20日 update!\n　AAShader3DENSHOWへの対応を行いました。\n\n★2020年1月2日 update!\n　若干のモデルの修正および同梱のシェーダーをアップデートしました。\n\n\n\n\n☆利用規約\nVRChatアバターむけのオリジナルアクセサリ「ランドセル」\n\n〇本モデルを購入した時点で本利用規約に同意したものとします。\n本規約は内容を変更される場合があり、最新のものが適用されます。\n\n〇改変について。\n他の項目に反しない限り自由に行ってください\n部分的なパーツ取り等も構いません。\n\n〇本モデル、改変モデルをVRChat等モデルデータをアップロードしアバターとして利用できるサービスへの利用を許可します。\nただし、購入者本人以外がアバターとして利用できるようにする行為を禁止します。\n\n〇本モデル、改変モデルの再配布、販売を禁止します。\n\n〇本モデル、改変モデルをモデルデータとして取り出せない状態にして映像、ゲーム、アプリに組み込むことを許可します。\n収益化に関しては制限しません。またクレジットを記載する必要もありません。\n\n〇公序良俗に反する行為や誹謗中傷行為目的に用いることを禁止します。\n\n〇本モデル、改造モデルを利用することによって生じたトラブル損失に関して一切責任を負わないものとします。\n\n〇翻訳等で差異が存在した場合日本語が優先されます。\n\n--------------------------------------------------------------------\n制定日　2019年3月22日\n\n不明点ありましたら以下に連絡してください。\n\nTwitter: @AlbertAtreides\nDISCORD AlbertAtreides#5117","url":"https://booth.pm/ja/items/1284243","offers":{"priceCurrency":"JPY","@type":"Offer","price":"500"},"image":"https://booth.pximg.net/c/620x620/091e5aa4-67bb-479c-8d17-dd9330fc9eeb/i/1284243/2b9ad0ca-3ec8-40e5-acbc-37d427433af9_base_resized.jpg"}
     </script>
@@ -95,7 +100,7 @@
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="tuqgYkXJjhCzRgPhhtB7F+3aDWCuqVRhVotCiQJFY7M="></script>
+    nonce="2w79AOP1YdmguL4v/0D6eYDCTvRurWDC/W1CnYEp70w="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -563,23 +568,9 @@
         </div>
       </div>
       <div class=
-      "desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
-        <div class="desktop:mb-24 mobile:m-16">
-          <div class="locales_menu">
-            <div class="pulldown">
-              <a class="btn negative small trigger js-tooltip"
-              data-tippy-content=
-              "&lt;div class=&quot;locales_menu_pop&quot;&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=en&amp;return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1284243&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;English&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;0TrqfhzDbLR1gX-OyM9Wu9srQ36Ou06O---9ctqJGbN9vP4yTP5qar9N7qe-h2e-lmsiSD2lT267zrcHB_1cXA&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=ko&amp;return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1284243&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;한국어&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;k4beITKljWvP9mUVl1YRj50RrdqME3dIJOWl9SlQwnM_AMptYpiLtQU69DzhHiCK0FHM7D8NdqhkxK-A9CSHnA&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-cn&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1284243&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;简体中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;Xk0a5Pevrf8CTUm1fVS16o__IAQ46hFAuyu_yjwYK__yyw6op5KrIciB2JwLHITvwr9BMov0EKD7CrW_4WxuEA&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;form class=&quot;button_to&quot; method=&quot;post&quot; action=&quot;https://booth.pm/locale?locale=zh-tw&amp;return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1284243&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;patch&quot; autocomplete=&quot;off&quot; /&gt;&lt;input class=&quot;nav-item&quot; type=&quot;submit&quot; value=&quot;繁體中文&quot; /&gt;&lt;input type=&quot;hidden&quot; name=&quot;authenticity_token&quot; value=&quot;IfzRqU1F1uP5qXjSgr5S7dXQAdNQJgcjImlpNQ5Wvu2NesXlHXjQPTNl6fv09mPomJBg5eM4BsNiSGNA0yL7Ag&quot; autocomplete=&quot;off&quot; /&gt;&lt;/form&gt;&lt;/div&gt;"
-              data-tippy-trigger="click" data-tippy-interactive=
-              "true" data-tippy-theme="locale" data-tippy-appendto=
-              "parent" href="#"><img width="20" height="20" alt=
-              "locale" src=
-              "https://asset.booth.pm/assets/icons/locale-a6b3e536959c11bfbc9e22f2ecaff8bd9ea3fc969cccda64e7e77b2b2c52994f.svg">
-              <div class="current-locale u-ml-200">
-                <span>日本語</span>
-              </div></a>
-            </div>
-          </div>
+      "flex desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
+        <div class=
+        "js-locale-switcher mr-auto desktop:mb-24 mobile:m-16">
         </div>
       </div>
       <div class="border-b border-border300"></div>
