@@ -68,9 +68,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "InHMxsq62vyXyC+1iiIfWyyuoypGxuJD0lShudYVr/Q="></script>
+    "uqqis0+myOOYozUIE2vMe8DfuLfVnE7chh11eugsWUY="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="InHMxsq62vyXyC+1iiIfWyyuoypGxuJD0lShudYVr/Q="></script>
+    nonce="uqqis0+myOOYozUIE2vMe8DfuLfVnE7chh11eugsWUY="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -80,27 +80,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
     "https://asset.booth.pm/assets/2a383982a58523c60744.js" defer=
     "defer" nonce=
-    "InHMxsq62vyXyC+1iiIfWyyuoypGxuJD0lShudYVr/Q="></script>
+    "uqqis0+myOOYozUIE2vMe8DfuLfVnE7chh11eugsWUY="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"オリジナル3Dモデル　ハロウィンアイテムセット","description":"◆オリジナル3Dモデル ハロウィンアイテムセット\n\n製作者:Ｋ参鬼(けいさんき）\n\n◆概要\nオリジナル3Dモデル ハロウィンアイテムセットです。\nblenderデータを同梱していますので改造修正等もできます。\n\n◆利用規約\n\n　※当モデルデータを利用された方は下記利用規約すべての内容に同意したものとみなされます。\n\n　・当モデルデータの著作権は「Ｋ参鬼」が所有します。\n　・当モデルデータの使用時に著作権表示の必要はありません。\n　・当モデルデータは営利目的での利用が可能です。\n\n◆禁止事項\n\n　・改変の有無にかかわらず、第三者が利用可能な状態での再配布、アップロード。\n　・本モデルの自作発言\n　・他人を不快にさせる目的での使用\n　・公序良俗に反する行為。\n\n◆同梱データ\n\n　・おばけM.fbx\n　・おばけM.blend\n　・おばけMテクスチャ.png\n　・おばけF.fbx\n　・おばけF.blend\n　・おばけFテクスチャ.png\n　・パンプキン籠.fbx\n　・パンプキン籠.blend\n　・パンプキン籠テクスチャ.png\n　・ハロウィン看板.fbx\n　・ハロウィン看板.blend\n　・ハロウィン看板2.fbx\n　・ハロウィン看板2.blend\n　・ハロウィン看板テクスチャ.png\n　・Readme.txt\n\n◆免責事項\n\n　・モデル製作者は当モデルデータを利用したことにより発生した損害、損失、その他の不利益に対して一切の責任を負いません\n\n◆連絡先\n\n　不具合不明点等がありましたら以下に連絡ください。\n　\n　twitter : @ksanki\n　https://twitter.com/ksanki\n\n\n規約 ver.1.0\n","url":"https://booth.pm/ja/items/1031748","offers":{"priceCurrency":"JPY","@type":"Offer","price":"300"},"image":"https://booth.pximg.net/c/620x620/a17f37a6-c78d-44b0-bc94-21a5a6410ec5/i/1031748/7d9504cb-ab11-4915-9c9c-2c3ab03224fe_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="InHMxsq62vyXyC+1iiIfWyyuoypGxuJD0lShudYVr/Q="></script>
+    nonce="uqqis0+myOOYozUIE2vMe8DfuLfVnE7chh11eugsWUY="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
