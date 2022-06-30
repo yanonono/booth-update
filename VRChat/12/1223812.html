@@ -53,7 +53,7 @@
     <meta content="1024" name=
     "js_const_downloadable_max_file_size">
     <meta content=
-    "[&quot;.jpg&quot;,&quot;.jpeg&quot;,&quot;.gif&quot;,&quot;.png&quot;,&quot;.psd&quot;,&quot;.ai&quot;,&quot;.lip&quot;,&quot;.pdf&quot;,&quot;.mp3&quot;,&quot;.m4a&quot;,&quot;.wav&quot;,&quot;.aiff&quot;,&quot;.flac&quot;,&quot;.epub&quot;,&quot;.mp4&quot;,&quot;.mov&quot;,&quot;.avi&quot;,&quot;.zip&quot;,&quot;.rar&quot;]"
+    "[&quot;.jpg&quot;,&quot;.jpeg&quot;,&quot;.gif&quot;,&quot;.png&quot;,&quot;.psd&quot;,&quot;.ai&quot;,&quot;.lip&quot;,&quot;.pdf&quot;,&quot;.mp3&quot;,&quot;.m4a&quot;,&quot;.wav&quot;,&quot;.aiff&quot;,&quot;.flac&quot;,&quot;.epub&quot;,&quot;.vroid&quot;,&quot;.vroidcustomitem&quot;,&quot;.vrm&quot;,&quot;.mp4&quot;,&quot;.mov&quot;,&quot;.avi&quot;,&quot;.zip&quot;,&quot;.rar&quot;]"
     name="js_const_downloadable_acceptable_file_types">
     <meta content=
     "[&quot;.jpg&quot;,&quot;.jpeg&quot;,&quot;.gif&quot;,&quot;.png&quot;]"
@@ -68,9 +68,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "qN8PTuwtbt4a41WujSWjKUSR44qeVWVr+EwtPIX7CVg="></script>
+    "hSYq/vwuVityrAPw7Rrk6QYBhmkDNA66latqXRYJlPQ="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="qN8PTuwtbt4a41WujSWjKUSR44qeVWVr+EwtPIX7CVg="></script>
+    nonce="hSYq/vwuVityrAPw7Rrk6QYBhmkDNA66latqXRYJlPQ="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -80,27 +80,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/950f8d0492affc359505.js" defer=
+    "https://asset.booth.pm/assets/e66cafde504e510335ed.js" defer=
     "defer" nonce=
-    "qN8PTuwtbt4a41WujSWjKUSR44qeVWVr+EwtPIX7CVg="></script>
+    "hSYq/vwuVityrAPw7Rrk6QYBhmkDNA66latqXRYJlPQ="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"【VRChat向け】椛重工製レシプロソー「MUKUNOKI」","description":"概要\nVRChat向けレシプロソーモデルです。\nゲーム制作、CG制作等にも使用可能です。\nレシプロ・チェーンソーをイメージして作成しています。\n\nアニメーションや追加オプションなど後日追加予定ですので気長にお待ちいただければ幸いです。\n\n\n同梱内容\n1.UnityPackage\n\n\n利用規約\n・商用利用可\n・モデル改変可\n・VRCにおける映像画像使用可\n禁止事項\n・モデルの二次配布禁止\n・自作と表記、発言禁止\n・モデル改変後配布禁止\n・ペデスタル(ワールド設置)禁止\n上記の項目は利用をもって同意とさせていただきます。","url":"https://booth.pm/ja/items/1223812","offers":{"priceCurrency":"JPY","@type":"Offer","price":"300"},"image":"https://booth.pximg.net/c/620x620/5544fd70-c10d-4d88-8dbd-f13e2224733e/i/1223812/61645712-0d37-4b49-8e59-d8bf6691d35b_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="qN8PTuwtbt4a41WujSWjKUSR44qeVWVr+EwtPIX7CVg="></script>
+    nonce="hSYq/vwuVityrAPw7Rrk6QYBhmkDNA66latqXRYJlPQ="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
