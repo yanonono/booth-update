@@ -53,7 +53,7 @@
     <meta content="1024" name=
     "js_const_downloadable_max_file_size">
     <meta content=
-    "[&quot;.jpg&quot;,&quot;.jpeg&quot;,&quot;.gif&quot;,&quot;.png&quot;,&quot;.psd&quot;,&quot;.ai&quot;,&quot;.lip&quot;,&quot;.pdf&quot;,&quot;.mp3&quot;,&quot;.m4a&quot;,&quot;.wav&quot;,&quot;.aiff&quot;,&quot;.flac&quot;,&quot;.epub&quot;,&quot;.mp4&quot;,&quot;.mov&quot;,&quot;.avi&quot;,&quot;.zip&quot;,&quot;.rar&quot;]"
+    "[&quot;.jpg&quot;,&quot;.jpeg&quot;,&quot;.gif&quot;,&quot;.png&quot;,&quot;.psd&quot;,&quot;.ai&quot;,&quot;.lip&quot;,&quot;.pdf&quot;,&quot;.mp3&quot;,&quot;.m4a&quot;,&quot;.wav&quot;,&quot;.aiff&quot;,&quot;.flac&quot;,&quot;.epub&quot;,&quot;.vroid&quot;,&quot;.vroidcustomitem&quot;,&quot;.vrm&quot;,&quot;.mp4&quot;,&quot;.mov&quot;,&quot;.avi&quot;,&quot;.zip&quot;,&quot;.rar&quot;]"
     name="js_const_downloadable_acceptable_file_types">
     <meta content=
     "[&quot;.jpg&quot;,&quot;.jpeg&quot;,&quot;.gif&quot;,&quot;.png&quot;]"
@@ -68,9 +68,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "+Jtsi/xo2qQj4gOK/i5/I53Sp4duHMAIi6IeI1ubOCk="></script>
+    "jqKvg9QnhtDT+pSJiQKILIaL0Elf2lVnHl7Uw5XrXRw="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="+Jtsi/xo2qQj4gOK/i5/I53Sp4duHMAIi6IeI1ubOCk="></script>
+    nonce="jqKvg9QnhtDT+pSJiQKILIaL0Elf2lVnHl7Uw5XrXRw="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -80,27 +80,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/950f8d0492affc359505.js" defer=
+    "https://asset.booth.pm/assets/b5bf7e55f8a86b487c27.js" defer=
     "defer" nonce=
-    "+Jtsi/xo2qQj4gOK/i5/I53Sp4duHMAIi6IeI1ubOCk="></script>
+    "jqKvg9QnhtDT+pSJiQKILIaL0Elf2lVnHl7Uw5XrXRw="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"【VRChatアバター向けオリジナル3Dモデル】EAF-05 アラストール","description":"■EAF-05C1/C2 アラストール\nVRChatでの利用を想定したメカモデルです\n\n初期状態はC2型(増加装甲バージョン)となっており、追加装甲メッシュをOFFにしC1型用頭部をアクティブにすることで軽装甲バージョンのC1型にすることが可能です\n\n■付属品\n・大型シールド(+追加装甲)\n・203mmスナイパー・キャノン\n・120mmEGライフル\n・VLMS(垂直発射ミサイル・システム)\n・ナイフ(連装ラック)\n・サブアームユニット\n\n■テクスチャ改変用のpsdファイル同梱\n\n■Reflex Shader 2.0.1（https://booth.pm/ja/items/1088971）対応\n\n■更新\n2/2：Humanoidボーン設定が正しく機能していなかったためモデルを差し替えました\n\n■フルボディトラッキングについて\n・手足の比率が人間と乖離しているため、フルトラッキング時はアバター読み込み後のキャリブレーション時、VRChatの身長設定を調整する必要があります。\n\n\n■禁止事項\n・本データの再配布は禁止です。\n・自作発言はおやめください。\n\n■許可事項\n・データの改変(パーツ取り含む)\n・営利利用\n・映像制作\n・動画配信\n\n■その他\n・アバターペデスタルへの利用は禁止します。","url":"https://booth.pm/ja/items/1207119","offers":{"priceCurrency":"JPY","@type":"Offer","price":"3000"},"image":"https://booth.pximg.net/c/620x620/4c0b8e4e-23ce-4b6b-91ae-c803cad67328/i/1207119/83509ad3-9971-4aac-b060-cce82f073c94_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="+Jtsi/xo2qQj4gOK/i5/I53Sp4duHMAIi6IeI1ubOCk="></script>
+    nonce="jqKvg9QnhtDT+pSJiQKILIaL0Elf2lVnHl7Uw5XrXRw="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
