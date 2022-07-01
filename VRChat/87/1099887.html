@@ -68,9 +68,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "2i38kVYXjEKANP2ijohSynvIW23B7paIbAcn663LtQI="></script>
+    "eIutCaPYmrr9tTAf6E9eLPcr1IFAHVvvD9qTLc3ByYo="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="2i38kVYXjEKANP2ijohSynvIW23B7paIbAcn663LtQI="></script>
+    nonce="eIutCaPYmrr9tTAf6E9eLPcr1IFAHVvvD9qTLc3ByYo="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -80,27 +80,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/b5bf7e55f8a86b487c27.js" defer=
+    "https://asset.booth.pm/assets/e66cafde504e510335ed.js" defer=
     "defer" nonce=
-    "2i38kVYXjEKANP2ijohSynvIW23B7paIbAcn663LtQI="></script>
+    "eIutCaPYmrr9tTAf6E9eLPcr1IFAHVvvD9qTLc3ByYo="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"3Dモデル　TwinFeather012","description":"□コンパクトなソードオフダブルバレルショットガンの3Dモデルです。\n1080△ポリゴン。\n\n\n\n□内容\n・TF012.fbx　本体\n\n・TF012.unitypackage　本体2\n\n・texフォルダ　各種テクスチャ・マップ\n\n・readme.txt これ\n\n・サムネ類フォルダ　サムネ類画像\n\n\n□使用方法\n\nfbxデータやunitypackageを各種ソフトにインポートしてご利用下さい。\nunitypackageの場合、ファイルはAssets/weapon/TF012フォルダに作成されます。\n\n\n□設定等\n\nTwinFeather012\n\n12ゲージ弾を使用するダブルバレルショットガン。内蔵ハンマー・両引トリガー。大半が樹脂製であり、軽量。\n設計データや出力用3Dデータがフリーソースでばら撒かれており、低所得者層などに人気。\n\n\n□利用規約\n\n原則として再配布を禁じます。\n\nVRchat、改変、動画、同人、移植、商用などにどうぞ。\n\n\n\n\n\n□連絡先\n\nTwitter： @mabo_to_fu\nメール： stanag2324@gmail.com\n\n\n□更新履歴\n\n2018/11/20：販売開始","url":"https://booth.pm/ja/items/1099887","offers":{"priceCurrency":"JPY","@type":"Offer","price":"200"},"image":"https://booth.pximg.net/c/620x620/dd09d57d-ff0e-4d48-b34c-08c891168638/i/1099887/6054b9a4-f80f-498a-8d62-7cdc88381828_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="2i38kVYXjEKANP2ijohSynvIW23B7paIbAcn663LtQI="></script>
+    nonce="eIutCaPYmrr9tTAf6E9eLPcr1IFAHVvvD9qTLc3ByYo="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
