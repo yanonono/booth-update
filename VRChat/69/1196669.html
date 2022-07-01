@@ -68,9 +68,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "+4S7oH73koyl6rFwqLm0WlYJ9JKL2p5Zsi2aHJmN/ro="></script>
+    "mfRtrMeSc8yOfbOhxQboBPIkpyWuBGC6IZHYZ75rmtE="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="+4S7oH73koyl6rFwqLm0WlYJ9JKL2p5Zsi2aHJmN/ro="></script>
+    nonce="mfRtrMeSc8yOfbOhxQboBPIkpyWuBGC6IZHYZ75rmtE="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -84,9 +84,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/b5bf7e55f8a86b487c27.js" defer=
+    "https://asset.booth.pm/assets/e66cafde504e510335ed.js" defer=
     "defer" nonce=
-    "+4S7oH73koyl6rFwqLm0WlYJ9JKL2p5Zsi2aHJmN/ro="></script>
+    "mfRtrMeSc8yOfbOhxQboBPIkpyWuBGC6IZHYZ75rmtE="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"MP4 Animator Unity ツール VRChat","description":"For playing videos in VRChat\nVRChatでビデオを再生する\n\nEnglish: https://pastebin.com/ex2yeMHM\nTranslated using Google Translate\nGoogle Translateで使って翻訳\n\n=================================\n\n# Movie-Material-Animation Tool\nAssetsフォルダに展開\n\n■ 概要\n\nこのパッケージは、Unity 2017内で画像データをAnimation Clip(アニメーションクリップ)に変換する手段を提供します。\n\n■ .mp4 / .mkv（他のソーフト）→（*）jpg / .png → .anim\n\nhttps://i.imgur.com/6lckxDr.gif\n\nサポートされるプラットフォーム：Windows 10、Unity 2017.4.15f1（現在のVRChat推奨バージョンのUnity）\n：Mac、Linux\n\n\nサポートされているビデオの種類：（.mp4 / .mkv）\nサポートされている画像の種類：（.png / .jpg）\nFFmpegに依存します。 他のサポートされているファイルタイプはスクリプトを直接修正することによって得ることができます。\n\n\n完成したデモについては、Assets/Shiggie/MovieTool/Demoを参照してください。\n\n■ 目的\n\nこれにより、Animator Controller(アニメーターコントローラー)に使用できる画像のAnimation Clipが作成されます。 これはつまり、スクリプトなしで（そしてVRChatの中で）映画を再生するために使用できることを意味します、しかし、ファイルサイズは非常に大きいので、すべてのあなたのイメージを圧縮することを忘れないでください。\n\n\n■ 使い方\n \n========================\n0  - ビデオからの画像データ\n========================\n\n\n動画（.mp4 / .mkv）を画像（png / jpg）に変換するには他のソフトウェアが必要です。このReadmeでは、こちらからダウンロードできるフリーソフトウェアFFMPEGを使用して説明します。\n\nhttps://www.ffmpeg.org/download.html\n\nWindowsでコマンドを機能させるには、FFMPEG/binの場所を追加してPATH変数を更新する必要があります。 path変数を登録するには、後でコンピュータを再起動する必要があります。\n\nLinux / Macでは、同様のプロセスを使用する必要があります。\nhttps://i.imgur.com/BZ6Omh0.png\n\n\n------------------------\nスクリプト\n-------------------------\nWindows：\n  \"./CreateImagesFromMovie.bat\"\n  これを実行して、 \"movie.mp4\"を \"frames/\"フォルダ内の \"png\"データに変換します。\n\nLinux / Mac / Windows：\n  \"./Script.txt\"\n  このコマンドを変更してBashで実行し、 \"movie.mp4\"を \"frames/\"フォルダーの \"png\"データに変換します。\n\n* Windowsの場合は.bat、Linuxの場合は直接コマンドを変更します。\n*解像度を調整するためにスケールを設定し、フレームのfps\n*ファイルサイズを小さくするために、最小フレーム数と小さい解像度を使用することをお勧めします。\n\n\nhttps://i.imgur.com/xx4iRHG.png\n\n\n========================\n1  - Materialsを生成する\n========================\n\nデフォルトが変更されていない場合は、次のような構造になります。\n\"%UNITY_PROJECT_DIRECTORY%/Assets/Shiggie/ConvertMP4/frames\"\n\n\n1. Windows  -\u003e Shiggie Image tool\n\n2. ステップ1を解除します。\n\n3. \".png / .jpg\"を含む場所を入力します。 /Materialsが存在する必要はありません。\n\n4. \"Generate Materials\"を押します。\n\n*入力したパスの最後に \"/\"を含める\n*プログラムをテストするには、 \"Maximum Generated Materials\"を小さい値に設定します。\n*警告**大量のMaterialsには長い時間がかかります。このプロセスは、毎秒約2つのMaterialsです。\n\nhttps://i.imgur.com/xx4iRHG.png\n\n========================\n2  - アニメーションを生成する\n========================\n\n1.ステップ2を解除します。\n -  Generate Materialsへのパスが正しいことを確認してください。\n\n2.生成したAnimation Clipの場所を入力します。\n\n3. [Generate .anim]を押します。\n\n*このプロセスは、ハイエンドコンピュータでは多くのMaterialsでも15秒以内で完了します。\n\nhttps://i.imgur.com/bznGlaz.png\n\nhttps://i.imgur.com/gnwmQtX.png\n\n4.その後、アニメーションクリップをAnimationコントローラに追加してゲームオブジェクトに添付します。\n\n\n\n-------------------------\nおすすめ\n-------------------------\n - Crunch Texturesクランチテクスチャ\nhttps://i.imgur.com/lKbI6wy.png\n - 低解像度の画像を使用するか、またはFFmpegのコマンドで（ステップ0）\n -  Mesh Renderer / Skinned / Particleを忘れずに使用する予定のオブジェクトに設定してください。\nhttps://i.imgur.com/RPrQQDg.png\n\n\n=================================\n\n","url":"https://booth.pm/ja/items/1196669","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"200","highPrice":"200"},"image":"https://booth.pximg.net/c/620x620/b72882d0-b5f9-4939-9ce9-2b208235a81e/i/1196669/135874a0-9c74-4766-a618-bf6777b2752d_base_resized.jpg"}
     </script>
@@ -100,7 +100,7 @@
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="+4S7oH73koyl6rFwqLm0WlYJ9JKL2p5Zsi2aHJmN/ro="></script>
+    nonce="mfRtrMeSc8yOfbOhxQboBPIkpyWuBGC6IZHYZ75rmtE="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
