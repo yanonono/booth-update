@@ -68,9 +68,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "i7o/LMnbUbqNnbD1uQuYsm2vG2ig+fE3oivd5Gtz9Dw="></script>
+    "bHku9mAXqIlazm5wpMYfIrlm2IZPt0LkhxAyWFJRBAs="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="i7o/LMnbUbqNnbD1uQuYsm2vG2ig+fE3oivd5Gtz9Dw="></script>
+    nonce="bHku9mAXqIlazm5wpMYfIrlm2IZPt0LkhxAyWFJRBAs="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -80,27 +80,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/b5bf7e55f8a86b487c27.js" defer=
+    "https://asset.booth.pm/assets/e66cafde504e510335ed.js" defer=
     "defer" nonce=
-    "i7o/LMnbUbqNnbD1uQuYsm2vG2ig+fE3oivd5Gtz9Dw="></script>
+    "bHku9mAXqIlazm5wpMYfIrlm2IZPt0LkhxAyWFJRBAs="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"【VRchat向け】アシュケ【オキュラスクエスト対応】","description":"※2019年4月2日更新\nblenderで編集する際シェイプキーが読み込まれない問題を解決しました\n\n※2019年6月26日更新\n・肩回りのウェイトの修正\n・メガネ無し版のFBXの追加\n・材質の統合（目と睫毛のMaterialを統合）\n\n※2019年9月2日更新\n・メガネを消すシェイプキー追加\n・ヘッドホンを消すシェイプキー追加\n・首のウェイトの修正\n・quest対応版Unitypackageを同梱\n\n2021年2月1日\n利用規約（VRMのやっていい事）に\n・VRMが使用できるゲームでの使用\nを追加\n\n\nこのアバターはHimiko Avatar World(publicワールド)にて試着できるようになっております。\n\nVRchat用のモデルとなります。\n\n■入っている物\n・Materialセットアップ済のモデル\n・セットアップ済みprefab（ヘッドホンあり版・ヘッドホン無し版・ヘッドホン眼鏡無し版・メガネ無し版の4種類）\n・表情ファイル\n・体のワイヤーフレーム画像\n\n※色は2パターン入っています。\n\n■中身\n・unityPackage形式となっています\n\n●禁則事項(VRChat用アバターモデル)\n・モデル再配布（改造・未改造問わず）\n※アバターペデスタルへの使用も再配布にあたります\n・政治的利用\n・他者を侮辱するような利用\n・他人を不快にさせる行為\n・本商品に含まれるデータを元にした商品を作る事\n・その他製作者が不適切と判断したもの\n※上記の規約は予告なく変更する場合があります\n\n●やっていい事(VRChat用アバターモデル)\n・VRchatでの使用\n・VRchatを使用した生放送の出演・撮影など\n・改変\n※改変をした後のモデルも「アシュケ」とし、本規約に従ってください。\n\n●禁則事項(VRM)\n・再配布（改造・未改造問わず）\n・アップロード者以外が使える設定でアップロードする事も再配布にあたります。\n・政治的利用\n・他者を侮辱するような利用\n・他人を不快にさせる行為\n・本商品に含まれるデータを元にした商品を作る事\n・その他製作者が不適切と判断したもの\n※上記の規約は予告なく変更する場合があります\n\n●やっていい事(VRM)\n・VRMが使用できるサービスでの使用\n・VRMが使用できるゲームでの使用\n・本商品を使用した放送の出演・撮影など\n・改変\n※改変をした後のモデルも「アシュケ」とし、本規約に従ってください。\n\n※このモデルには、@reflex_1124　様作　Reflex Shader（配布先：https://booth.pm/ja/items/1088971）が利用されています。","url":"https://booth.pm/ja/items/1194277","offers":{"priceCurrency":"JPY","@type":"Offer","price":"1300"},"image":"https://booth.pximg.net/c/620x620/9585a184-fff0-488e-8a9d-612c758951c2/i/1194277/48d1aa17-c2f2-448c-8d03-8f8a3ac0a5e0_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="i7o/LMnbUbqNnbD1uQuYsm2vG2ig+fE3oivd5Gtz9Dw="></script>
+    nonce="bHku9mAXqIlazm5wpMYfIrlm2IZPt0LkhxAyWFJRBAs="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
