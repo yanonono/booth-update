@@ -68,9 +68,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "JKzpJQAm+SOWr42esjA7EioTtXKHLgsw0FNx46nnFi0="></script>
+    "2QLwfDaJVofcKyJFdwoH4nI8Ck9WU77XeWuU56tT/Jw="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="JKzpJQAm+SOWr42esjA7EioTtXKHLgsw0FNx46nnFi0="></script>
+    nonce="2QLwfDaJVofcKyJFdwoH4nI8Ck9WU77XeWuU56tT/Jw="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -80,27 +80,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
     "https://asset.booth.pm/assets/e66cafde504e510335ed.js" defer=
     "defer" nonce=
-    "JKzpJQAm+SOWr42esjA7EioTtXKHLgsw0FNx46nnFi0="></script>
+    "2QLwfDaJVofcKyJFdwoH4nI8Ck9WU77XeWuU56tT/Jw="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"クラッククロック","description":"■クラッククロック（Crack Clock）ver 1.00\n\nAuthor 努武衛門(domuemon)\n\n――――――――――\n\n■モデル概要\n\n1 mesh\n24135～41431 tris\n6 Materials\n\n付属ファイル\n6 fbx\nVRC_Avatar Descripter,DynamicBoneを設定済みのprefab\n11 Animation\n58 PNG\nArktoon-Shader(1.0.2.4Ver)\n編集用のBlendファイル\n\n　・改造、改変自由です。\n　・VRChatでの使用自由です。\n　・動画等への使用自由です。\n\n――――――――――\n\nsynqark様作成のArktoon-Shader(1.0.2.4Ver)を同梱しています。\n最新版はこちらからダウンロードしてください。\n\nhttps://booth.pm/ja/items/1027997\nhttps://github.com/synqark/Arktoon-Shaders/releases\n\n\n――――――――――\n\n■禁止事項\n　・公序良俗に反する行為、反社会的、政治的、宗教を含む行為への使用。\n　・他人を誹謗中傷する目的での使用。\n　・他人への迷惑行為を伴う使用。\n　・自作発言。\n　・改造、未改造関わらず本人以外が自由に取り扱える状態での再配布、販売は禁止です。\n　・VRChatでの使用は自由ですがペデスタル等を使って本人以外が使用できるようにすることは禁止です。\n\n――――――――――\n\n※このモデルを使用して発生したトラブル、損害等に作者は一切の責任を持ちません。\n　自己責任でご使用下さい。\n※著作権は放棄していません。\n※VRCSDK及びDynamicBoneは同梱されていません。別途導入してください。\n※販売開始時のVRChatの仕様でセットアップされています。\n　VRChatのアップデートによる仕様変更には対応しておりませんのでご注意ください。\n\nメール\tdomudomu.emon@gmail.com\ntwitter　Vdomuemon","url":"https://booth.pm/ja/items/1338703","offers":{"priceCurrency":"JPY","@type":"Offer","price":"3000"},"image":"https://booth.pximg.net/c/620x620/94505b00-fd01-42de-9cd2-c4f8cb4a3cf0/i/1338703/7c83f744-2ec3-43a6-acd2-5482eff66492_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="JKzpJQAm+SOWr42esjA7EioTtXKHLgsw0FNx46nnFi0="></script>
+    nonce="2QLwfDaJVofcKyJFdwoH4nI8Ck9WU77XeWuU56tT/Jw="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
