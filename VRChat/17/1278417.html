@@ -68,9 +68,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "MAjtMOkv6H8cPMm+bfnJdS/mN8fT0LfcEOJF0DBmQfI="></script>
+    "yX4PsCrqV0X/HzoRU8AOvG9Nn80VBJmiNb3lqWDShYo="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="MAjtMOkv6H8cPMm+bfnJdS/mN8fT0LfcEOJF0DBmQfI="></script>
+    nonce="yX4PsCrqV0X/HzoRU8AOvG9Nn80VBJmiNb3lqWDShYo="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -80,27 +80,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
     "https://asset.booth.pm/assets/e66cafde504e510335ed.js" defer=
     "defer" nonce=
-    "MAjtMOkv6H8cPMm+bfnJdS/mN8fT0LfcEOJF0DBmQfI="></script>
+    "yX4PsCrqV0X/HzoRU8AOvG9Nn80VBJmiNb3lqWDShYo="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"軽量軍刀「浮氷FLOATICE」－VRC向け3Dモデル","description":"VRC向けのモデル\n\n軽量軍刀　「浮氷FLOATICE」\n『只　氷山の一角』\n\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n\n ‐改変、改造　可\n ‐world public avatar 可\n\n -再配布　禁止\n -宗教、政治、他人中傷を目的の利用　禁止\n\nーーーーーーーーーーーーーーーーーーーーーーーーーーーー\n注意：\n\n    ·trailはDynamicBoneを使用しているので、本モデルを導入する前にDynamicBoneを導入してください\n    ·ARKtoonを使用します\n\n\n\n内容物：\n  FLOATICE.unitypackage\n  FLOATICE.fbx\n  textureフォルダー\n  readme.txt\n\n\n\n制作者　Iven遠洋\nTwitter　＠IvenEnnyou\n2019/3/18\n\n更新\n\n2019/5/19\ntail 未設定ことを修正した","url":"https://booth.pm/ja/items/1278417","offers":{"priceCurrency":"JPY","@type":"Offer","price":"350"},"image":"https://booth.pximg.net/c/620x620/c905a162-a49f-4411-90a6-10962a90af54/i/1278417/061e5d1f-b465-48c2-89ac-57e08f486dc5_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="MAjtMOkv6H8cPMm+bfnJdS/mN8fT0LfcEOJF0DBmQfI="></script>
+    nonce="yX4PsCrqV0X/HzoRU8AOvG9Nn80VBJmiNb3lqWDShYo="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
