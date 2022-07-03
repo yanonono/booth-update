@@ -68,9 +68,9 @@
     <script src=
     "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
     defer="defer" nonce=
-    "tVCpu2VgwXxrAqnR2b4FTDmQ6MrU7L4ry2zL6PriCl0="></script>
+    "KyzaBYgItk6vHnE3m6/yiVqFWBRlNhzbhGO5gWyfNu8="></script>
     <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="tVCpu2VgwXxrAqnR2b4FTDmQ6MrU7L4ry2zL6PriCl0="></script>
+    nonce="KyzaBYgItk6vHnE3m6/yiVqFWBRlNhzbhGO5gWyfNu8="></script>
     <script id="follow_btn" type="text/x-template">
     <div class="following-shop__action-box" v-if="shop"><template v-if="userSignedIn"><a @click="unfollow" class="btn small u-px-sp-600 unfollow-action" v-if="shop.following"><span class="cmd-label">フォロー中</span></a><a @click="follow" class="btn small u-px-sp-600 follow-action" v-else=""><span class="cmd-label">フォロー</span></a></template><template v-else=""><a :href="shop.follow_path" @click="sendAnalyticsEvent(&quot;follow&quot;)" class="btn small u-px-sp-600 follow-action" data-method="post"><span class="cmd-label">フォロー</span></a></template></div>
     </script>
@@ -80,49 +80,27 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
-  </head>
-  <body>
-    <div class="mini-player-controller" style="display: none;">
-      <a class="scroller" data-smooth-scroll="true"><img class=
-      "mini-player-controller__image" src=
-      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
-      data-smooth-scroll="true">
-      <div class="mini-player-information__item-name"></div>
-      <div class="mini-player-information__shop-name"></div>
-      <div class="mini-player-information__navigation">
-        試聴中の商品へスクロール
-      </div></a>
-      <div class="mini-player-controls">
-        <div class="mini-player-mode-ui">
-          <div class="mini-player-mode-ui__knob"></div>
-          <div class="mini-player-mode-ui__short">
-            15秒
-          </div>
-          <div class="mini-player-mode-ui__full">
-            フル
-          </div>
-        </div>
-        <div class="mini-player-play-ui"></div>
-      </div>
-    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
     "https://asset.booth.pm/assets/e66cafde504e510335ed.js" defer=
     "defer" nonce=
-    "tVCpu2VgwXxrAqnR2b4FTDmQ6MrU7L4ry2zL6PriCl0="></script>
+    "KyzaBYgItk6vHnE3m6/yiVqFWBRlNhzbhGO5gWyfNu8="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"MCF スタンピードマシンピストル","description":"【製品内容】\n・UnityPackage\n・利用規約\n\n【説明】\n標準的な口径のボルト式ハンドガンを、改造によりマシンピストルにしたもの。\n対人を想定した物となっており、重装化したサイボーグなどには効果が薄い。しかし対人ではすさまじい威力を発揮する。\n\n\nSSは #MCF_VRC をつけてツイートしてくれると私が喜びます。\n\nカラーバリエーション五色付属。\nシェイプキー付き。ボルトが後退します。\n\nポリ数\n合計:3065\nフレーム:2204\nマガジン:644\n弾丸:188\n\n\n\n【免責事項】\n当モデルを使用した際、使用者側にいかなる不利益が発生した場合でも当方は一切責任を負いません。\n\n【禁止事項】\n・再配布（ゲームに組み込む・VRCのペデスタル等は許可）\n・政治的、差別的な用途への利用、又は過去にそのような用途に扱われた経歴のあるキャラクターへの利用","url":"https://booth.pm/ja/items/1149097","offers":{"priceCurrency":"JPY","@type":"Offer","price":"500"},"image":"https://booth.pximg.net/c/620x620/41721053-8f32-4b87-9b48-5fda7552cf1a/i/1149097/d56016b7-acc1-4d2e-b355-4ef2cb986e69_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed"><noscript><iframe height="0"
-    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed">
+  </head>
+  <body>
+    <noscript><iframe height="0" src=
+    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="tVCpu2VgwXxrAqnR2b4FTDmQ6MrU7L4ry2zL6PriCl0="></script>
+    nonce="KyzaBYgItk6vHnE3m6/yiVqFWBRlNhzbhGO5gWyfNu8="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
