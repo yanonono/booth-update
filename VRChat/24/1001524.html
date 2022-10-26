@@ -64,12 +64,6 @@
     <meta content="60" name="js_const_max_length_overseas">
     <meta content="30" name=
     "js_const_stock_reservation_min_stock_amount">
-    <script src=
-    "https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"
-    defer="defer" nonce=
-    "7pERqE3HyAXmMsClD0TvUQMeHCzWSifdesyDmHTRFWE="></script>
-    <script src="https://asset.booth.pm/twitter.js" defer="defer"
-    nonce="7pERqE3HyAXmMsClD0TvUQMeHCzWSifdesyDmHTRFWE="></script>
     <script id="shop_with_items" type="text/x-template">
     <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><div :data-follow-path="shop.follow_path" :data-ga-from="gaParams.from" :data-ga-via="gaParams.via" :data-is-following="shop.following" :data-subdomain="shop.subdomain" class="js-follow-button-mount"></div></div></div></div></div></div>
     </script>
@@ -80,9 +74,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/05f6d680224e84b64c53.js" defer=
+    "https://asset.booth.pm/assets/3c5e269327040032026f.js" defer=
     "defer" nonce=
-    "7pERqE3HyAXmMsClD0TvUQMeHCzWSifdesyDmHTRFWE="></script>
+    "5IZ650c9hjcq3ujIvwLImXN/NAZDJ0inEvf2VSGbQA0="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"ローポリの丸底フラスコ（水平を保つ中身入り、三角面474くらい）v1\u0026v2","description":"中身入り丸底フラスコのモデル（Unity用）","url":"https://booth.pm/ja/items/1001524","offers":{"priceCurrency":"JPY","@type":"Offer","price":"238"},"image":"https://booth.pximg.net/c/620x620/35eda33f-5f5b-4dec-bda5-d25adcc391d1/i/1001524/c2566fba-6db4-4e75-bbd7-feb3e5f30292_base_resized.jpg"}
     </script>
@@ -96,7 +90,7 @@
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="7pERqE3HyAXmMsClD0TvUQMeHCzWSifdesyDmHTRFWE="></script>
+    nonce="5IZ650c9hjcq3ujIvwLImXN/NAZDJ0inEvf2VSGbQA0="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -112,28 +106,7 @@
         "items">
           <div class="market"></div>
           <div data-page-type="market" id="js-item"></div>
-          <nav>
-            <div class=
-            "market breadcrumbs u-bg-white u-border-b u-border-100">
-              <div class="container">
-                <div class="breadcrumb">
-                  <a class="label" data-tracking="click"
-                  data-product-list=
-                  "from market_show via breadcrumbs to category_index"
-                  href=
-                  "/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB">3Dモデル</a>
-                </div>
-                <div class="breadcrumb">
-                  <a class="label" data-tracking="click"
-                  data-product-list=
-                  "from market_show via breadcrumbs to category_index"
-                  href=
-                  "/ja/browse/3D%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89">
-                  3Dモデル（その他）</a>
-                </div>
-              </div>
-            </div>
-          </nav>
+          <div id="js-item-category-breadcrumbs"></div>
           <article>
             <div class=
             "market market-item-detail item-info-detail u-bg-white">
@@ -142,6 +115,8 @@
                 <div class="container">
                   <div class=
                   "market-item-detail__exhibition-banner"></div>
+                  <div class="desktop:mt-[26px] mobile:mt-[22px]"
+                  id="js-item-order"></div>
                   <div class="u-pt-600 u-d-flex">
                     <div class=
                     "summary u-order-1 l-col-2of5 u-pl-600">
@@ -224,34 +199,9 @@
                           </ul>
                         </div>
                       </div>
-                      <section>
-                        <div class=
-                        "share-btns u-d-flex u-flex-1 u-justify-content-start u-px-200 u-py-400">
-                          <div class="social-btn">
-                            <a data-url=
-                            "https://booth.pm/ja/items/1001524"
-                            data-lang="ja" data-hashtags="booth_pm"
-                            data-text=
-                            "ローポリの丸底フラスコ（水平を保つ中身入り、三角面474くらい）v1&amp;v2 | ぼたっくる商店"
-                            data-count="none" class=
-                            "twitter-share-button" href=
-                            "https://twitter.com/share">ツイート</a>
-                          </div>
-                          <div class="social-btn u-ml-300">
-                            <div class="fb-like" data-action="like"
-                            data-href=
-                            "https://booth.pm/ja/items/1001524"
-                            data-layout="button_count" data-share=
-                            "false" data-show-faces="false"></div>
-                          </div>
-                          <div class="mobile social-btn u-mx-200">
-                            <div class="line-it-button" data-lang=
-                            "ja" data-type="share-a" data-url=
-                            "https://booth.pm/ja/items/1001524"
-                            style="display: none;"></div>
-                          </div>
-                        </div>
-                      </section>
+                      <div class=
+                      "desktop:py-[20px] mobile:py-[16px]" id=
+                      "js-item-share-buttons"></div>
                     </div>
                     <div class="u-order-0 l-col-3of5 u-pr-500">
                       <div class="primary-image-area">
