@@ -75,9 +75,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/5364944dec927598882b.js" defer=
+    "https://asset.booth.pm/assets/3c5e269327040032026f.js" defer=
     "defer" nonce=
-    "Yhe5RibgDcqneHNRLrJ5vRp515A/JLIO3jinMnNSCjQ="></script>
+    "K525CW8j2zA118DbbjZ8K/E/DXSpGJkLEYZdXiuK4R8="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"Blenderでfbxのシェイプキーの順番が変わらないようにしたやつ","description":"Blenderでシェイプキーの順番が変えられてしまうやつの直し方が分からなかったから直接書き換えて変わらないようにしたやつです。\n動作が確認できたモデルは下の方に書いてあります。\n内容はこれです https://github.com/4hiziri/blender_io-scene-fbx_fix\n直接ファイルを置き換えるのでバージョンとか注意してください。\nBlender v2.79、\"Import-Export: FBX format\" Version 3.7.17で動作確認しました。\nライセンスはGPL2です。\n配布してるものは全部同じ内容です。\n\n巨大なファイルだとメモリ圧迫して落ちると思うので注意してください。\nあと適当な実装でロクにテストもしてないのでバックアップはしっかり取ってください。\n何があっても自己責任でお願いします。\n\nあと既存の設定で順番変更しないようにできるなら教えてください...\n\n追記\n-----------------------------------------------\n現在動作すると報告されているモデルは以下です。\nクレリック・カジュアル\nミーシェ\nキッシュ\nスノウエルフ\nアークトラス\nyell\nブレイダーちゃん\nジト目のジト\nNEAR7\n\n-----------------------------------------------\n現在動作しないと報告されているモデルは以下です。\n\nますきゃっと\nいちごうさぎ (通常のモデルは動作するが、着せ替え用のモデルを先に読み込むと動作しない?)\n-----------------------------------------------\n\n動作しなかった場合報告いただけると幸いです。ただし報告されても直る保証はないです。\n\n更新\n2019/03/10\n追記に動作確認されたモデルを記載\n\n2019/03/05\nもっと頭の良い方法で実装しました。\nインポート時に変更されることがより少なくなるはずです。","url":"https://booth.pm/ja/items/1260503","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"5000"}}
     </script>
@@ -91,7 +91,7 @@
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="Yhe5RibgDcqneHNRLrJ5vRp515A/JLIO3jinMnNSCjQ="></script>
+    nonce="K525CW8j2zA118DbbjZ8K/E/DXSpGJkLEYZdXiuK4R8="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -107,29 +107,7 @@
         "items">
           <div class="market"></div>
           <div data-page-type="market" id="js-item"></div>
-          <nav>
-            <div class=
-            "market breadcrumbs u-bg-white u-border-b u-border-100">
-              <div class="container">
-                <div class="breadcrumb">
-                  <a class="label" data-tracking="click"
-                  data-product-list=
-                  "from market_show via breadcrumbs to category_index"
-                  href=
-                  "/ja/browse/%E7%B4%A0%E6%9D%90%E3%83%87%E3%83%BC%E3%82%BF">
-                  素材データ</a>
-                </div>
-                <div class="breadcrumb">
-                  <a class="label" data-tracking="click"
-                  data-product-list=
-                  "from market_show via breadcrumbs to category_index"
-                  href=
-                  "/ja/browse/%E7%B4%A0%E6%9D%90%EF%BC%88%E3%81%9D%E3%81%AE%E4%BB%96%EF%BC%89">
-                  素材（その他）</a>
-                </div>
-              </div>
-            </div>
-          </nav>
+          <div id="js-item-category-breadcrumbs"></div>
           <article>
             <div class=
             "market market-item-detail item-info-detail u-bg-white">
@@ -138,6 +116,8 @@
                 <div class="container">
                   <div class=
                   "market-item-detail__exhibition-banner"></div>
+                  <div class="desktop:mt-[26px] mobile:mt-[22px]"
+                  id="js-item-order"></div>
                   <div class="u-pt-600 u-d-flex">
                     <div class=
                     "summary u-order-1 l-col-2of5 u-pl-600">
