@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
     <title>
-      502 Bad Gateway
+      BOOTH | お探しの商品が見つかりませんでした… (404)
     </title>
+    <meta http-equiv="refresh" content="5;URL=/">
+    <style>
+    body {     margin: 0;     color: #2E2F30;     text-align: center;     font-family: arial, sans-serif;   }    .not_found_girl {     display: block;     width: 160px;     height: 206px;     margin: 0 auto 10px auto;     background: url('/static-images/error/not_found_girl.png') no-repeat;     text-indent: -9999pt;   }    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {     .not_found_girl {       background: url('/static-images/error/not_found_girl@2x.png') no-repeat;       background-size: contain;     }   }    .not_found_logo {     display: block;     width: 400px;     height: 87px;     margin: 0 auto 24px auto;     background: url('/static-images/error/not_found_logo.png') no-repeat;     text-indent: -9999pt;   }    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {     .not_found_logo {       background: url('/static-images/error/not_found_logo@2x.png') no-repeat;       background-size: contain;     }   }    .dialog {       height: 300px;       padding: 10px 0 248px 0;       background: #FFF;   } 
+    </style>
   </head>
   <body>
-    <center>
+    <div class="dialog">
+      <a href="/" class="not_found_logo" title=
+      "Jump to BOOTH TOP">BOOTH</a>
       <h1>
-        502 Bad Gateway
+        お探しの商品が見つかりませんでした…
       </h1>
-    </center>
-    <hr>
-    <center>
-      cloudflare
-    </center>
+      <p>
+        誠に申し訳ございません。
+      </p>
+      <p>
+        お探しの商品は削除されたか、移動された可能性があります。
+      </p>
+      <p>
+        5秒後に<a href="/">BOOTH</a>に移動します。
+      </p>
+    </div>
   </body>
 </html>
