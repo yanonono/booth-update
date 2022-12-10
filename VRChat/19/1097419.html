@@ -71,27 +71,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
     "https://asset.booth.pm/assets/d2e94950d96d598db0fd.js" defer=
     "defer" nonce=
-    "v5ls8ZtiJUSFW5O2MXl9E77fylP7SolUvRzwj/QNG4A="></script>
+    "QdDQPQKYzhALAU/xmbbDA1SXUdkihzmkGZOMH5BNjBo="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"オリジナル3Dモデル「ロップ」","description":"うさみみの女の子です。\nVRChatのアバターの他、動画・ゲーム等の作成に利用することができます。\nフルトラッキング対応です。\nアバター単体はVRChat上でひみこさん（ https://bbbbbhimiko.booth.pm/ ）のアバターワールドでも配布しています→ vrchat://launch?id=wrld_5bd7517c-a87a-42ac-a7e5-02e25e37ae9d（VRChatが起動します）\nVRMはVRoid Hub https://hub.vroid.com/characters/4374468319518135289/models/8591153281189114694 で配布中です\n\n2018/12/21 ver1.1\n・顔の法線を修正\n・Unity 2017に対応\n2018/11/19 ver1.0\n------------------------------------------------------------------------------\n\nフォルダ内容一覧\nlop.blend\nlop.fbx\nlop.unitypackage\nlop_body.png\nlop_body.psd\nlop_cloth.png\nlop_cloth.psd\nReadme_ja.txt\nReadme_en.txt\nTermOfUse_ja.txt\nTermOfUse_en.txt\n\n------------------------------------------------------------------------------\n\n・Unitypackageの動作環境はUnity 2017.4.15f1、VRCSDKはVRCSDK-2018.12.04.10.25_Publicで動作を確認しております。\n・Unitypackageのインポートの際、先にVRCSDKをインポートしておく必要があります。\n・フルトラッキング対応です。\n・Unitypackageにはみに(https://twitter.com/Mini_9321_VR)様の「まんまるシェーダーver1.4」の一部を同梱しています。\n\n------------------------------------------------------------------------------\n------------------------------------------------------------------------------\n・利用について\nVRChatのアバターとしての使用の他、動画配信、ゲーム・アニメーション・イラスト等の製作に営利・非営利を問わず利用することができます。\n\n・改変について\nモデルデータ及びテクスチャデータの改変は自由に行うことができます。\n\n・R-18・R-18Gへの利用について\n特に規制はありません。\n\n・禁止事項\n配布データについては改変の有無を問わず再配布を禁止します。\nまた特定個人・団体への中傷を目的とした利用を禁止します。\n\n・著作権について\n配布データ及び改変データの著作権は配布データの製作者 みきしぃ に帰属するものとします。\n配布データを利用した著作物の公開は自由に行うことができます。\n\n・免責事項\n配布データを用いたことによるいかなる損害についても製作者 みきしぃ は一切の責任を負わないものとします。\nこの利用規約は予告なく変更される場合があります。ご了承ください。\n\n------------------------------------------------------------------------------\n不明点・質問等ありましたら以下にご連絡ください。\nTwitter: @3405691582\nMail: m.myxomatosis@gmail.com\n","url":"https://booth.pm/ja/items/1097419","offers":{"priceCurrency":"JPY","@type":"Offer","price":"0"},"image":"https://booth.pximg.net/c/620x620/3187e7f6-be5b-4358-9f5b-a4b381a4d53a/i/1097419/18156915-0e02-40b7-a2f0-490833e52dba_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="v5ls8ZtiJUSFW5O2MXl9E77fylP7SolUvRzwj/QNG4A="></script>
+    nonce="QdDQPQKYzhALAU/xmbbDA1SXUdkihzmkGZOMH5BNjBo="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
