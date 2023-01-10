@@ -75,9 +75,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/23586338c84e10d4269f.js" defer=
+    "https://asset.booth.pm/assets/53386a6b39110cc2f7b3.js" defer=
     "defer" nonce=
-    "25uY6AVclJlKWmzlPDJjl4DgM+/ORwts1hjeW7vBVec="></script>
+    "RhmH9I9zheujwKIRm/wl14I5ElnjzK5d0XMD++ZM7IA="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"【VRChat向け】紐を掴めるヨーヨー ","description":"VRChat向け・小物アイテム\nRigidBodyとJointでヨーヨーの動きを再現します。\nそれっぽく動かすには、多少の慣れが必要です。\n\nアバター用と、ワールド用の2種類があります。\n\nセットアップの手順はマニュアルをご参照ください。\nhttps://docs.google.com/document/d/1ek5VVFDzzuvm6s2lIl7EMX9V_B-pfwPxv_fLNseJEtA/edit?usp=sharing","url":"https://booth.pm/ja/items/1196299","offers":{"priceCurrency":"JPY","@type":"Offer","price":"500"},"image":"https://booth.pximg.net/c/620x620/6d345074-b966-46ea-ae5f-94ec39fe396d/i/1196299/f6f34473-3538-479c-98ce-a3f76ece9cef_base_resized.jpg"}
     </script>
@@ -91,7 +91,7 @@
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="25uY6AVclJlKWmzlPDJjl4DgM+/ORwts1hjeW7vBVec="></script>
+    nonce="RhmH9I9zheujwKIRm/wl14I5ElnjzK5d0XMD++ZM7IA="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -256,6 +256,16 @@
                       <div class=
                       "desktop:py-[20px] mobile:py-[16px]" id=
                       "js-item-share-buttons"></div>
+                      <h5 class=
+                      "u-tpg-caption1 pt-12 shop-theme-text--default flex items-center">
+                        <a target="_blank" class=
+                        "ml-4 nav-reverse shop-theme-text--default"
+                        rel="noopener" href=
+                        "https://booth.pixiv.help/hc/ja/sections/13288068355225">
+                        「ギフトとして贈る」とは</a>
+                      </h5>
+                      <div class="!p-0" id=
+                      "js-item-payment-and-shipping-terms"></div>
                     </div>
                     <div class="u-order-0 l-col-3of5 u-pr-500">
                       <div class="primary-image-area">
@@ -338,7 +348,8 @@
                       <section class="main-info-column">
                         <div class=
                         "js-market-item-detail-description description">
-                          <p class="autolink u-text-wrap">
+                          <p class=
+                          "autolink break-words font-noto-sans typography-16 whitespace-pre-line">
                             VRChat向け・小物アイテム
                             RigidBodyとJointでヨーヨーの動きを再現します。
                             それっぽく動かすには、多少の慣れが必要です。
@@ -348,8 +359,121 @@
                           </p>
                         </div>
                       </section>
-                      <section class="u-text-wrap page_design" id=
-                      "modules"></section>
+                      <div class="my-40">
+                        <section class=
+                        "grid desktop:gap-40 mobile:gap-24">
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              アバター用
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              ※他人視点では、ラグの影響で状態遷移のタイミングにおけるヨーヨーと手の位置関係がずれるため、ループザループのような動きは期待通りには見えないことがあります。ご了承ください。
+                              両手のハンドサインでAnimationStateを制御してヨーヨーの挙動を変化させます。
+                              デフォルトの設定は次の通りです。 右手 ・Open →ヨーヨーを投げた状態
+                              ・Peace →ヨーヨーを投げた状態(遷移時手元に向かって跳ねる)
+                              ・その他 →ヨーヨーを手に持った状態 左手 ・Gun →紐を掴んだ状態
+                              ・ThumbsUp →紐を掴んで左右の手で張った紐にヨーヨーを載せた状態
+                              ・その他 →紐を掴んでいない状態
+                              Oculusコントローラー準拠でハンドサインを設定しているので、異なるコントローラーでは操作感が想定と異なる場合があります。
+                              (割り当てるハンドサインを変更する方法についてはマニュアルをご参照ください。)
+                              RigidBodyを合計6つ使用します。
+                              その内、物理演算の影響を受けるRigidBodyは2つです。
+                              ExMenu対応で、ヨーヨーを非表示にしている間は、全てのRigidBodyが物理演算の影響を受けなくなります。
+                            </p>
+                          </section>
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              ワールド用
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              ※他人視点では、ヨーヨーの表示のみを同期させるため、ループザループのような動きも概ね期待通りに見えますが、ラグにより少し遅れて表示されます。ご了承ください。
+                              持ち手と、ヨーヨーを投げている最中の紐にPickUp判定があります。
+                              これらのPickUpとUse、ヨーヨーと紐との当たり判定でヨーヨーの挙動を変化させます。
+                              対応は次の通りです。 持ち手 ・PickUp →ヨーヨーを手に持つ
+                              ・Use →ヨーヨーを投げる 紐 ・PickUp →紐を掴む ・Use
+                              →左右の手で張った紐の中央付近に当たり判定が発生する
+                              ・紐の当たり判定にヨーヨーを当てる　→左右の手で張った紐にヨーヨーが載る
+                            </p>
+                          </section>
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              利用規約
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              本規約は「VN3 License」で作成しました。
+                              商品を購入した時点で規約に同意したとみなします。
+                              https://drive.google.com/file/d/1WLLLETiRRB3k2dDTbVv8BzfSL6bg29mZ/view?usp=sharing
+                              This agreement was created with "VN3
+                              License". We consider that you have
+                              agreed to the terms when you purchase
+                              the item.
+                              https://drive.google.com/file/d/1ie9JF_n1aIakqBEcZL8WfPwCaZkW2tSn/view?usp=sharing
+                            </p>
+                          </section>
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              動作環境
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              共通 ・Unity：2019.4.31f1 アバター用
+                              ・VRCSDK(Avatar)：VRCSDK3-AVATAR-2021.11.24.16.20_Public
+                              ワールド用
+                              ・VRCSDK(World)：VRCSDK3-WORLD-2021.11.24.16.19_Public
+                              ・UdonSharp：UdonSharp_v0.20
+                            </p>
+                          </section>
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              権利関連
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              推奨ツールとして同梱しているツール
+                              ・gatosyocora様作　VRCAvatars3Tools
+                              　https://booth.pm/ja/items/2207020
+                              説明に使用しているモデル
+                              ・長兎路こより様作　オリジナル3Dモデル『フィリナ』
+                              　https://nagatorokoyori.booth.pm/items/1577042
+                            </p>
+                          </section>
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              連絡先
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              いすぃ
+                              ・Twitter：https://twitter.com/isui31
+                            </p>
+                          </section>
+                          <section class=
+                          "[&amp;&gt;iframe]:w-full">
+                            <iframe width="560" height="315" src=
+                            "https://www.youtube.com/embed/GC0I2Ghlk8M"
+                            frameborder="0" allowfullscreen
+                            sandbox="allow-scripts allow-same-origin allow-popups allow-presentation">
+                            </iframe>
+                          </section>
+                          <section class=
+                          "[&amp;&gt;iframe]:w-full">
+                            <iframe width="560" height="315" src=
+                            "https://www.youtube.com/embed/AsLWxACNEyY"
+                            frameborder="0" allowfullscreen
+                            sandbox="allow-scripts allow-same-origin allow-popups allow-presentation">
+                            </iframe>
+                          </section>
+                        </section>
+                      </div>
                     </div>
                   </div>
                   <section class="container">
@@ -441,9 +565,6 @@
               "shops &amp;&amp; shops.length &gt; 0"></div>
             </div>
           </aside>
-          <script id="json_modules" type="application/json">
-          {"modules":[{"type":"text","title":"アバター用","content":"※他人視点では、ラグの影響で状態遷移のタイミングにおけるヨーヨーと手の位置関係がずれるため、ループザループのような動きは期待通りには見えないことがあります。ご了承ください。\n\n両手のハンドサインでAnimationStateを制御してヨーヨーの挙動を変化させます。\nデフォルトの設定は次の通りです。\n右手\n・Open\t →ヨーヨーを投げた状態\n・Peace\t →ヨーヨーを投げた状態(遷移時手元に向かって跳ねる)\n・その他\t →ヨーヨーを手に持った状態\n左手\n・Gun\t\t →紐を掴んだ状態\n・ThumbsUp\t →紐を掴んで左右の手で張った紐にヨーヨーを載せた状態\n・その他\t →紐を掴んでいない状態\nOculusコントローラー準拠でハンドサインを設定しているので、異なるコントローラーでは操作感が想定と異なる場合があります。\n(割り当てるハンドサインを変更する方法についてはマニュアルをご参照ください。)\n\nRigidBodyを合計6つ使用します。\nその内、物理演算の影響を受けるRigidBodyは2つです。\nExMenu対応で、ヨーヨーを非表示にしている間は、全てのRigidBodyが物理演算の影響を受けなくなります。"},{"type":"text","title":"ワールド用","content":"※他人視点では、ヨーヨーの表示のみを同期させるため、ループザループのような動きも概ね期待通りに見えますが、ラグにより少し遅れて表示されます。ご了承ください。\n\n持ち手と、ヨーヨーを投げている最中の紐にPickUp判定があります。\nこれらのPickUpとUse、ヨーヨーと紐との当たり判定でヨーヨーの挙動を変化させます。\n対応は次の通りです。\n持ち手\n・PickUp\t→ヨーヨーを手に持つ\n・Use\t\t→ヨーヨーを投げる\n紐\n・PickUp\t→紐を掴む\n・Use\t\t→左右の手で張った紐の中央付近に当たり判定が発生する\n・紐の当たり判定にヨーヨーを当てる　→左右の手で張った紐にヨーヨーが載る"},{"type":"text","title":"利用規約","content":"本規約は「VN3 License」で作成しました。\n商品を購入した時点で規約に同意したとみなします。\nhttps://drive.google.com/file/d/1WLLLETiRRB3k2dDTbVv8BzfSL6bg29mZ/view?usp=sharing\n\nThis agreement was created with \"VN3 License\".\nWe consider that you have agreed to the terms when you purchase the item.\nhttps://drive.google.com/file/d/1ie9JF_n1aIakqBEcZL8WfPwCaZkW2tSn/view?usp=sharing"},{"type":"text","title":"動作環境","content":"共通\n・Unity：2019.4.31f1\nアバター用\n・VRCSDK(Avatar)：VRCSDK3-AVATAR-2021.11.24.16.20_Public\nワールド用\n・VRCSDK(World)：VRCSDK3-WORLD-2021.11.24.16.19_Public\n・UdonSharp：UdonSharp_v0.20"},{"type":"text","title":"権利関連","content":"推奨ツールとして同梱しているツール\n・gatosyocora様作　VRCAvatars3Tools\n　https://booth.pm/ja/items/2207020\n\n説明に使用しているモデル\n・長兎路こより様作　オリジナル3Dモデル『フィリナ』\n　https://nagatorokoyori.booth.pm/items/1577042"},{"type":"text","title":"連絡先","content":"いすぃ\n・Twitter：https://twitter.com/isui31"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/GC0I2Ghlk8M\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/AsLWxACNEyY\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"}]}
-          </script>
         </div>
       </main>
     </div>
