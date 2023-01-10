@@ -71,27 +71,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/23586338c84e10d4269f.js" defer=
+    "https://asset.booth.pm/assets/53386a6b39110cc2f7b3.js" defer=
     "defer" nonce=
-    "5ye/jSZSuWA4nMgSKuHSxgY7x1s0DU3ljP0vS5nOvy4="></script>
+    "ISq5fhnwcMXjRJvyJADBWoyXbjXHtjLjtyvVHpBeAbU="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"[VRChat]ちょっと良さげな剣[BroadSword]","description":"なんか良さげな剣です\n剣△488\n鞘△242\n\n2048テクスチャ3枚（Albedo,Metal,Normal）とそれぞれのobjデータが入ってます\n\nスタンダードシェーダーにそれぞれテクスチャ放り込んでお使いください。\nスケールはキャラやシーンに合わせてください。\n\n--------------------------------------------------------\n更新\n2018/12/16\n持ち手細かったのでちょっと太くしました","url":"https://booth.pm/ja/items/1130227","offers":{"priceCurrency":"JPY","@type":"Offer","price":"300"},"image":"https://booth.pximg.net/c/620x620/29cbdbe7-d2fb-463e-9d1e-cb8f1e92083e/i/1130227/f6efa7bc-e0c3-47a3-aac7-c89c7dd3d9d5_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="5ye/jSZSuWA4nMgSKuHSxgY7x1s0DU3ljP0vS5nOvy4="></script>
+    nonce="ISq5fhnwcMXjRJvyJADBWoyXbjXHtjLjtyvVHpBeAbU="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -270,6 +292,16 @@
                       <div class=
                       "desktop:py-[20px] mobile:py-[16px]" id=
                       "js-item-share-buttons"></div>
+                      <h5 class=
+                      "u-tpg-caption1 pt-12 shop-theme-text--default flex items-center">
+                        <a target="_blank" class=
+                        "ml-4 nav-reverse shop-theme-text--default"
+                        rel="noopener" href=
+                        "https://booth.pixiv.help/hc/ja/sections/13288068355225">
+                        「ギフトとして贈る」とは</a>
+                      </h5>
+                      <div class="!p-0" id=
+                      "js-item-payment-and-shipping-terms"></div>
                     </div>
                     <div class="u-order-0 l-col-3of5 u-pr-500">
                       <div class="primary-image-area">
@@ -329,7 +361,8 @@
                       <section class="main-info-column">
                         <div class=
                         "js-market-item-detail-description description">
-                          <p class="autolink u-text-wrap">
+                          <p class=
+                          "autolink break-words font-noto-sans typography-16 whitespace-pre-line">
                             なんか良さげな剣です 剣△488 鞘△242
                             2048テクスチャ3枚（Albedo,Metal,Normal）とそれぞれのobjデータが入ってます
                             スタンダードシェーダーにそれぞれテクスチャ放り込んでお使いください。
@@ -339,8 +372,48 @@
                           </p>
                         </div>
                       </section>
-                      <section class="u-text-wrap page_design" id=
-                      "modules"></section>
+                      <div class="my-40">
+                        <section class=
+                        "grid desktop:gap-40 mobile:gap-24">
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              利用規約
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              【利用規約】 　本モデルを購入した時点で本利用規約に同意したものとします。
+                              　利用規約の内容は変更する場合があり、最新のものが適用されます。
+                              ・禁止行為 　以下のような使用を禁止致します。 　×公序良俗に反する利用
+                              　×政治的・宗教的主張に関する利用 　×製品の再配布・再販売
+                              　×自作発言等
+                              ・ゲームに組み込む、ワールドへの使用等は再配布とせず、許可致します。
+                              ・テクスチャ改変、モデル改変および商業への使用は、禁止行為に抵触しない限り制限致しません。
+                              ・本モデルを使用した動画・静止画の制作・公開可
+                              --------------------------------------------------------------------------------------------
+                              ■免責事項
+                              　本モデルを使用していかなる損害が発生したとしても、制作者は責任を負いません。
+                              　使用は自己責任でお願いします。 ■お問い合わせ
+                              　規約への不明点、本製品の不備等ございましたら、Twitter：@rockvrcmanまでご連絡ください。
+                            </p>
+                          </section>
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              スペシャルサンクス
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              ひのくさ 無月
+                              (使用モデルhttps://fantia.jp/fanclubs/6096)
+                              ちくわぶおでん
+                              (使用モデルhttps://booth.pm/ja/items/966122)
+                              orage
+                              （使用モデルhttps://ss-concept.booth.pm/items/1027707）
+                            </p>
+                          </section>
+                        </section>
+                      </div>
                     </div>
                   </div>
                   <section class="container">
@@ -468,9 +541,6 @@
               "shops &amp;&amp; shops.length &gt; 0"></div>
             </div>
           </aside>
-          <script id="json_modules" type="application/json">
-          {"modules":[{"type":"text","title":"利用規約","content":"【利用規約】\n　本モデルを購入した時点で本利用規約に同意したものとします。\n　利用規約の内容は変更する場合があり、最新のものが適用されます。\n\n\t・禁止行為\n\t　以下のような使用を禁止致します。\n\t　×公序良俗に反する利用\n\t　×政治的・宗教的主張に関する利用\n\t　×製品の再配布・再販売\n\t　×自作発言等\n\n\t・ゲームに組み込む、ワールドへの使用等は再配布とせず、許可致します。\n\n\t・テクスチャ改変、モデル改変および商業への使用は、禁止行為に抵触しない限り制限致しません。\n\n\t・本モデルを使用した動画・静止画の制作・公開可\n\n--------------------------------------------------------------------------------------------\n\n■免責事項\n　本モデルを使用していかなる損害が発生したとしても、制作者は責任を負いません。\n　使用は自己責任でお願いします。\n\n■お問い合わせ\n　規約への不明点、本製品の不備等ございましたら、Twitter：@rockvrcmanまでご連絡ください。\n"},{"type":"text","title":"スペシャルサンクス","content":"ひのくさ\n無月\n(使用モデルhttps://fantia.jp/fanclubs/6096)\nちくわぶおでん\n(使用モデルhttps://booth.pm/ja/items/966122)\norage\n（使用モデルhttps://ss-concept.booth.pm/items/1027707）"}]}
-          </script>
         </div>
       </main>
     </div>
