@@ -75,9 +75,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/23586338c84e10d4269f.js" defer=
+    "https://asset.booth.pm/assets/332b657446933c008a55.js" defer=
     "defer" nonce=
-    "nhFQxZVja9ldjqj75WHei1ipWOLfIoC1UIleGdozSIg="></script>
+    "xg1dOxhOe5zcf/tA1J1FtE7beBlayEK3xc8eFEnLszo="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"汎用ドローンv1.1","description":"［2019/04/08更新］\nPrefabに不具合があった為更新しました。\nまた、Prefab内容を変更しました。\n\nオニガワラ・インダストリの汎用ドローンです。\n白と黒緑の２パターンが入っています。まばたきアニメ付きです。\n\nSpringJointが入ったPrefabも付属されているので、アバターに遅れてついてこさせることが出来ます。\n※自分視点だとぴったりくっ付いて見えます。","url":"https://booth.pm/ja/items/1305687","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"320"},"image":"https://booth.pximg.net/c/620x620/ec467e09-9e3c-4fb6-8a6a-55f885c9820b/i/1305687/1b6db110-126b-45c8-9545-229afe2176ad_base_resized.jpg"}
     </script>
@@ -91,7 +91,7 @@
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="nhFQxZVja9ldjqj75WHei1ipWOLfIoC1UIleGdozSIg="></script>
+    nonce="xg1dOxhOe5zcf/tA1J1FtE7beBlayEK3xc8eFEnLszo="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -366,7 +366,8 @@
                       <section class="main-info-column">
                         <div class=
                         "js-market-item-detail-description description">
-                          <p class="autolink u-text-wrap">
+                          <p class=
+                          "autolink break-words font-noto-sans typography-16 whitespace-pre-line">
                             ［2019/04/08更新］ Prefabに不具合があった為更新しました。
                             また、Prefab内容を変更しました。
                             オニガワラ・インダストリの汎用ドローンです。
@@ -376,8 +377,82 @@
                           </p>
                         </div>
                       </section>
-                      <section class="u-text-wrap page_design" id=
-                      "modules"></section>
+                      <div class="my-40">
+                        <section class=
+                        "grid desktop:gap-40 mobile:gap-24">
+                          <section class=
+                          "[&amp;&gt;iframe]:w-full">
+                            <iframe width="640" height="480" src=
+                            "https://sketchfab.com/models/5d2ef8791c284fa39d348c16dcee94b4/embed"
+                            frameborder="0" sandbox=
+                            "allow-scripts allow-same-origin allow-popups allow-presentation">
+                            </iframe>
+                          </section>
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              内容
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              Fbxファイル、Texture、UnityPackageファイル
+                            </p>
+                          </section>
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              Prefabせつめい
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              Prefabとして、通常のドローンとJoint機構が付いたドローンの二種類があります。
+                              SpringJointDoroneのドローンの位置を調整する場合は、［JointTarget］と［Joint］を同時に動かしてください。（シーンを再生すると、JointがJointTargetの位置に引き寄せられます）
+                              ［2019/04/08追記］
+                              インポートする前に、以下のAssetをプロジェクト内にインポートしてください。
+                              ・VRCSDK
+                              ・DynamicBone(揺れ物用なので必須ではありません)
+                              ・ユニティちゃんトゥーンシェーダー 2.0 / UTS2
+                              v.2.0.7（必須ではありません） Prefab別せつめい
+                              ・Plane：ドローンのみです
+                              ・Joint_Rotation：JointTargetに対し遅れて追従し、かつJointTargetを向いて移動します
+                              ・Joint_NonRotation：JointTargetに対し遅れて追従します。回転しません
+                              【「Joint_Rotation」について】
+                              重心を指定するためのBoxColliderが入っています。
+                              このBoxColliderの中心がSpringJointの中心になり、「JointTarget」を向こうとするような挙動になります。
+                              オブジェクトが回転しなくてもよい場合、このColliderは必要ありません。
+                              また、アバターに仕込む場合、このColliderの存在によって(VRChat内で)SpringJointの挙動が不安定になります。
+                              なのでLayerを「UiMenu」に指定することで回避しています。Prefabを置く前に以下の手順を取ってください。
+                              １．アバターアップロード用とは異なるSceneを作成
+                              ２．「VRC_World」Prefabをシーンに置く ３．［VRChat
+                              SDK］タブ→［Show Build Control
+                              Panel］→［Setup Layers］ボタンを押す
+                              「Collider(CenterOfDesignation)」のLayerが「UiMenu」になっていればOKです。
+                            </p>
+                          </section>
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              License
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              このモデルは、VRSNSやその他アプリケーションででの使用を想定した「ONIGAWARA
+                              Industry Sardine
+                              License(O.I.S.License)」のもとで利用することができます。
+                              ※再配布/再販売を想定した別ライセンス「ONIGAWARA
+                              Industry Oil Sardine
+                              License(O.I.O.S.License)」ではありません。
+                              アバターとして使用でき、改変も可能です。
+                              映像/ゲーム制作、動画配信などへの利用も可能です。商業的/非商業的問わずお使い頂けます。
+                              ライセンス詳細は下記ライセンス一覧の「ONIGAWARA Industry
+                              Sardine
+                              License(O.I.S.License)」をご確認ください。
+                              ONIGAWARA Industry License
+                              https://gitlab.com/mr.pumpkin247/license
+                            </p>
+                          </section>
+                        </section>
+                      </div>
                     </div>
                   </div>
                   <section class="container">
@@ -469,9 +544,6 @@
               "shops &amp;&amp; shops.length &gt; 0"></div>
             </div>
           </aside>
-          <script id="json_modules" type="application/json">
-          {"modules":[{"type":"media","content":"\u003ciframe width=\"640\" height=\"480\" src=\"https://sketchfab.com/models/5d2ef8791c284fa39d348c16dcee94b4/embed\" frameborder=\"0\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"内容","content":"Fbxファイル、Texture、UnityPackageファイル"},{"type":"text","title":"Prefabせつめい","content":"Prefabとして、通常のドローンとJoint機構が付いたドローンの二種類があります。\nSpringJointDoroneのドローンの位置を調整する場合は、［JointTarget］と［Joint］を同時に動かしてください。（シーンを再生すると、JointがJointTargetの位置に引き寄せられます）\n\n［2019/04/08追記］\nインポートする前に、以下のAssetをプロジェクト内にインポートしてください。\n・VRCSDK\n・DynamicBone(揺れ物用なので必須ではありません)\n・ユニティちゃんトゥーンシェーダー 2.0 / UTS2 v.2.0.7（必須ではありません）\n\nPrefab別せつめい\n・Plane：ドローンのみです\n・Joint_Rotation：JointTargetに対し遅れて追従し、かつJointTargetを向いて移動します\n・Joint_NonRotation：JointTargetに対し遅れて追従します。回転しません\n\n【「Joint_Rotation」について】\n重心を指定するためのBoxColliderが入っています。\nこのBoxColliderの中心がSpringJointの中心になり、「JointTarget」を向こうとするような挙動になります。\nオブジェクトが回転しなくてもよい場合、このColliderは必要ありません。\n\nまた、アバターに仕込む場合、このColliderの存在によって(VRChat内で)SpringJointの挙動が不安定になります。\nなのでLayerを「UiMenu」に指定することで回避しています。Prefabを置く前に以下の手順を取ってください。\n\n１．アバターアップロード用とは異なるSceneを作成\n２．「VRC_World」Prefabをシーンに置く\n３．［VRChat SDK］タブ→［Show Build Control Panel］→［Setup Layers］ボタンを押す\n\n「Collider(CenterOfDesignation)」のLayerが「UiMenu」になっていればOKです。\n"},{"type":"text","title":"License","content":"このモデルは、VRSNSやその他アプリケーションででの使用を想定した「ONIGAWARA Industry Sardine License(O.I.S.License)」のもとで利用することができます。\n※再配布/再販売を想定した別ライセンス「ONIGAWARA Industry Oil Sardine License(O.I.O.S.License)」ではありません。\n\nアバターとして使用でき、改変も可能です。\n映像/ゲーム制作、動画配信などへの利用も可能です。商業的/非商業的問わずお使い頂けます。\nライセンス詳細は下記ライセンス一覧の「ONIGAWARA Industry Sardine License(O.I.S.License)」をご確認ください。\n\nONIGAWARA Industry License\nhttps://gitlab.com/mr.pumpkin247/license"}]}
-          </script>
         </div>
       </main>
     </div>
