@@ -75,9 +75,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/23586338c84e10d4269f.js" defer=
+    "https://asset.booth.pm/assets/332b657446933c008a55.js" defer=
     "defer" nonce=
-    "jDvwLdE3M4k+2e6aSLJijmivannYGaTpsP+oNp7okII="></script>
+    "PWGyMboV2fflRRInyL8soxq8rFoagik/i2sypN+yFZA="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"Raymarching 3DMap (VRChat/Unity)","description":"Unity2019まで動作確認してあります。Unityのバージョン更新によって動かなくなった場合にサポートはしかねます。対応した場合は告知します。\n\n---\n\nワールドの3Dマップを描画するためのシェーダとその機構です。  \n256*256のカメラ2つで、画像のような綺麗かつ軽量な3Dマップを描画できます。(プレイヤーの陰を表示する場合は追加で一つ)\nそれぞれ二枚目の画像では、高解像度な\nColor: 512 * 512\nDepth: 256 * 256\nMaxStep: 256\nという設定を使用しています。\n---\n使用した場合、READMEを読み全文に同意したものとみなします。\n----------\n\nA shader and its mechanism for drawing 3D maps of the world.\nYou can draw beautiful and lightweight 3D maps with a minimum of two 256 * 256 cameras. (If you want to show the player's shadow, you can add one camera additionaly)\n  \nEach second images, using high resolve settings:\nColor: 512 * 512\nDepth: 256 * 256\nMaxStep: 256\n\n---\nIf you use this, I consider you to read the README and agree to the full text.","url":"https://booth.pm/ja/items/1285300","offers":{"priceCurrency":"JPY","@type":"Offer","price":"1000"},"image":"https://booth.pximg.net/c/620x620/17196f09-c9fe-4c94-8cb2-5b76e97ce982/i/1285300/79e0ab89-8637-4b0a-9f22-41496ca1653a_base_resized.jpg"}
     </script>
@@ -91,7 +91,7 @@
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="jDvwLdE3M4k+2e6aSLJijmivannYGaTpsP+oNp7okII="></script>
+    nonce="PWGyMboV2fflRRInyL8soxq8rFoagik/i2sypN+yFZA="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -379,7 +379,8 @@
                       <section class="main-info-column">
                         <div class=
                         "js-market-item-detail-description description">
-                          <p class="autolink u-text-wrap">
+                          <p class=
+                          "autolink break-words font-noto-sans typography-16 whitespace-pre-line">
                             Unity2019まで動作確認してあります。Unityのバージョン更新によって動かなくなった場合にサポートはしかねます。対応した場合は告知します。
                             --- ワールドの3Dマップを描画するためのシェーダとその機構です。
                             256*256のカメラ2つで、画像のような綺麗かつ軽量な3Dマップを描画できます。(プレイヤーの陰を表示する場合は追加で一つ)
@@ -401,8 +402,125 @@
                           </p>
                         </div>
                       </section>
-                      <section class="u-text-wrap page_design" id=
-                      "modules"></section>
+                      <div class="my-40">
+                        <section class=
+                        "grid desktop:gap-40 mobile:gap-24">
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              README
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              # Ray-Marching 3DMap ## Author (c)
+                              2019 wraikny Twitter: @wraikny email:
+                              writtenknown@gmail.com --- ##
+                              Japanese ### Caution
+                              本配布物を作者に無断での再配布・公開を禁止します。
+                              解析・改変はご自由にどうぞ。 VRChatで使用可能です。
+                              ただしワールドギミックとして使用する場合は、クレジット表記(ex.
+                              Author:wraikny)を行ってください。 ###
+                              Descriiption
+                              ワールドの3Dマップを描画するためのシェーダとその機構です。
+                              256*256のカメラ最小2つで綺麗かつ軽量な3Dマップを描画できます。(プレイヤーの陰を表示する場合は追加で一つ)
+                              Env_Colorのテクスチャを512*512にすると、負荷を上げる代わりに見た目がかなり綺麗になります。
+                              更に綺麗にしたい場合は、MaxStepを256に設定すると良いかも。
+                              ### Installation 1. "RM3DMap_Camera"
+                              prefab をアバター直下に置きます。 2.
+                              "RM3DMap_Disaplay" prefab
+                              を手のボーンの下に置きます。 3.
+                              EmoteSwitchで上記２つのオブジェクトを収納すると扱いやすいです。
+                              4.
+                              アバターにてローカルオンリーの場合やワールドで使用する場合は、カメラコンポーネントをデフォルトでEnableにした上でAnimatorコンポーネントを削除してください。
+                              ### Properties #### Textures *
+                              _EnvColorTex:
+                              ワールドのColorを取得するRenderTextureをセットする。 *
+                              _EnvDepthTex:
+                              ワールドのDepthを取得するRenderTextureをセットする。 *
+                              _AvatarDepthTopTex:
+                              アバターのDepthを取得するRenderTextureをセットする。不必要の場合は、該当するカメラを削除した上でRenderTextureをマテリアルから外してください。
+                              #### RayMarching * _MaxStep:
+                              更新回数。256にすると高解像度かつ多少負荷が高い。 * Enough
+                              Distance: 更新を打ち切る距離。 * Draw Dist:
+                              描画判定を行う距離 * Hight Scale:
+                              高さ方向のスケール(多分使わない......) #### Colors *
+                              Un Hit Color: 衝突しなかった場合の色 * Player
+                              Color:
+                              _AvatarDepthTopTexに何かが写っている場合の色 *
+                              LineColor: 中央に表示する十字線の色 * LineWidth:
+                              中央に表示する十字線の幅 #### Others *
+                              _DisableWhenOrthographic:
+                              平行投影カメラで非表示にする。チェック推奨。 ## English ###
+                              Caution I prohibit redistribution /
+                              publication of this distribution
+                              without notice to me. Free to analyze
+                              / modify. You can use it in VRChat.
+                              When using it as a world gimmick,
+                              please do credit notation (ex.
+                              Author: wraikny). ### Descriiption A
+                              shader and its mechanism for drawing
+                              3D maps of the world. You can draw
+                              beautiful and lightweight 3D maps
+                              with a minimum of two 256 * 256
+                              cameras. (If you want to show the
+                              player's shadow, you can add one
+                              camera additionaly) If you set the
+                              texture of Env_Color to 512 * 512,
+                              the appearance will look pretty
+                              instead of heavyness. If you want to
+                              make it even cleaner, you mcan set
+                              MaxStep to 256. ### Installation 1.
+                              Place the "RM3DMap_Camera" prefab
+                              directly below your avatar. 2. Place
+                              the "RM3DMap_Disaplay" prefab under
+                              the hand bone. 3. Using EmoteSwitch
+                              is easy way to store the above two
+                              objects. 4. If you use local only in
+                              avatar, or in the world, delete the
+                              Animator component after enabling the
+                              camera component by default. ###
+                              Properties Textures * _EnvColorTex:
+                              Set RenderTexture to get the color of
+                              the world. * _EnvDepthTex: Set
+                              RenderTexture to get the depth of the
+                              world. * _AvatarDepthTopTex: Set
+                              RenderTexture to get Avatar Depth. If
+                              it is not necessary, remove the
+                              corresponding camera and then remove
+                              RenderTexture from the material. ####
+                              Ray marching * _MaxStep: Number of
+                              updates. If it is 256, high
+                              resolution and somewhat high load. *
+                              Enough Distance: The distance to
+                              break the update. * Draw Dist:
+                              Distance to judge drawing * Hight
+                              Scale: Scale in the height direction
+                              (may not be used ...) #### Colors *
+                              Un Hit Color: Color without collision
+                              * Player Color: The color when
+                              _AvatarDepthTopTex shows something *
+                              LineColor: Color of crosshair to be
+                              displayed in the center * LineWidth:
+                              Width of crosshair to be displayed in
+                              the center #### Others *
+                              _DisableWhenOrthographic: Hide with
+                              parallel projection camera. Check
+                              recommended.
+                            </p>
+                          </section>
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              CREDIT
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              イメージ画像使用ワールド 1619Hz CN Village Yae
+                              2.3 Fantasy Shukaijo
+                            </p>
+                          </section>
+                        </section>
+                      </div>
                     </div>
                   </div>
                   <section class="container">
@@ -506,9 +624,6 @@
               "shops &amp;&amp; shops.length &gt; 0"></div>
             </div>
           </aside>
-          <script id="json_modules" type="application/json">
-          {"modules":[{"type":"text","title":"README","content":"# Ray-Marching 3DMap\n\n## Author\n(c) 2019 wraikny\nTwitter: @wraikny\nemail: writtenknown@gmail.com\n\n---\n\n## Japanese\n\n### Caution\n本配布物を作者に無断での再配布・公開を禁止します。\n解析・改変はご自由にどうぞ。\nVRChatで使用可能です。\nただしワールドギミックとして使用する場合は、クレジット表記(ex. Author:wraikny)を行ってください。\n\n### Descriiption\nワールドの3Dマップを描画するためのシェーダとその機構です。  \n256*256のカメラ最小2つで綺麗かつ軽量な3Dマップを描画できます。(プレイヤーの陰を表示する場合は追加で一つ)\n\nEnv_Colorのテクスチャを512*512にすると、負荷を上げる代わりに見た目がかなり綺麗になります。\n更に綺麗にしたい場合は、MaxStepを256に設定すると良いかも。\n\n### Installation\n1. \"RM3DMap_Camera\" prefab をアバター直下に置きます。\n2. \"RM3DMap_Disaplay\" prefab を手のボーンの下に置きます。\n3. EmoteSwitchで上記２つのオブジェクトを収納すると扱いやすいです。\n4. アバターにてローカルオンリーの場合やワールドで使用する場合は、カメラコンポーネントをデフォルトでEnableにした上でAnimatorコンポーネントを削除してください。\n\n### Properties\n#### Textures\n* _EnvColorTex: ワールドのColorを取得するRenderTextureをセットする。\n* _EnvDepthTex: ワールドのDepthを取得するRenderTextureをセットする。\n* _AvatarDepthTopTex: アバターのDepthを取得するRenderTextureをセットする。不必要の場合は、該当するカメラを削除した上でRenderTextureをマテリアルから外してください。\n\n#### RayMarching\n* _MaxStep: 更新回数。256にすると高解像度かつ多少負荷が高い。\n* Enough Distance: 更新を打ち切る距離。\n* Draw Dist: 描画判定を行う距離\n* Hight Scale: 高さ方向のスケール(多分使わない......)\n\n#### Colors\n* Un Hit Color: 衝突しなかった場合の色\n* Player Color: _AvatarDepthTopTexに何かが写っている場合の色\n* LineColor: 中央に表示する十字線の色\n* LineWidth: 中央に表示する十字線の幅\n\n#### Others\n* _DisableWhenOrthographic: 平行投影カメラで非表示にする。チェック推奨。\n\n\n\n## English\n### Caution\nI prohibit redistribution / publication of this distribution without notice to me.  \nFree to analyze / modify.  \nYou can use it in VRChat.  \nWhen using it as a world gimmick, please do credit notation (ex. Author: wraikny).  \n\n### Descriiption\nA shader and its mechanism for drawing 3D maps of the world.\nYou can draw beautiful and lightweight 3D maps with a minimum of two 256 * 256 cameras. (If you want to show the player's shadow, you can add one camera additionaly)\n  \nIf you set the texture of Env_Color to 512 * 512, the appearance will look pretty instead of heavyness.\nIf you want to make it even cleaner, you mcan set MaxStep to 256.\n\n### Installation\n1. Place the \"RM3DMap_Camera\" prefab directly below your avatar.\n2. Place the \"RM3DMap_Disaplay\" prefab under the hand bone.\n3. Using EmoteSwitch is easy way to store the above two objects.\n4. If you use local only in avatar, or in the world, delete the Animator component after enabling the camera component by default.\n\n### Properties\nTextures\n* _EnvColorTex: Set RenderTexture to get the color of the world.\n* _EnvDepthTex: Set RenderTexture to get the depth of the world.\n* _AvatarDepthTopTex: Set RenderTexture to get Avatar Depth. If it is not necessary, remove the corresponding camera and then remove RenderTexture from the material.\n\n#### Ray marching\n* _MaxStep: Number of updates. If it is 256, high resolution and somewhat high load.\n* Enough Distance: The distance to break the update.\n* Draw Dist: Distance to judge drawing\n* Hight Scale: Scale in the height direction (may not be used ...)\n\n#### Colors\n* Un Hit Color: Color without collision\n* Player Color: The color when _AvatarDepthTopTex shows something\n* LineColor: Color of crosshair to be displayed in the center\n* LineWidth: Width of crosshair to be displayed in the center\n\n#### Others\n* _DisableWhenOrthographic: Hide with parallel projection camera. Check recommended."},{"type":"text","title":"CREDIT","content":"イメージ画像使用ワールド\n\n1619Hz\nCN Village Yae 2.3\nFantasy Shukaijo"}]}
-          </script>
         </div>
       </main>
     </div>
