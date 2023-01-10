@@ -71,49 +71,27 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
-  </head>
-  <body>
-    <div class="mini-player-controller" style="display: none;">
-      <a class="scroller" data-smooth-scroll="true"><img class=
-      "mini-player-controller__image" src=
-      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
-      data-smooth-scroll="true">
-      <div class="mini-player-information__item-name"></div>
-      <div class="mini-player-information__shop-name"></div>
-      <div class="mini-player-information__navigation">
-        試聴中の商品へスクロール
-      </div></a>
-      <div class="mini-player-controls">
-        <div class="mini-player-mode-ui">
-          <div class="mini-player-mode-ui__knob"></div>
-          <div class="mini-player-mode-ui__short">
-            15秒
-          </div>
-          <div class="mini-player-mode-ui__full">
-            フル
-          </div>
-        </div>
-        <div class="mini-player-play-ui"></div>
-      </div>
-    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/23586338c84e10d4269f.js" defer=
+    "https://asset.booth.pm/assets/53386a6b39110cc2f7b3.js" defer=
     "defer" nonce=
-    "bsBYcXjT6kwblVP9YuyWxJQM5wiMWOEPqxlmx1emVkE="></script>
+    "ItHQZrS7ZdM9vjPEd3UB69Mo9iDdGxv4IHgoacSrqeM="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"オリジナル3Dモデル『ノッケ族』","description":"(Terms of use in English is listed at the bottom.)\n\n【モデル説明】\nUnity上でモデルの頭に好きなものを乗せるだけで自分だけのオリジナルアバターができる！\n色替えカスタマイズも簡単、PSDファイル付き。\nモデルの使い方、頭に物を乗せる方法の簡単な解説画像も付いています。\n\nオブジェクトとして 肉、(+皿)、鳥、花冠のFBXファイルも。頭に乗せてよし、ワールド製作や他アバターにもよし！\n他アニメーションファイルも充実。\n\nどこかに遠くにあるという暖かい島で生活している、大きな垂れた耳と長いしっぽが特徴的な民族。\nその生態は、何故かやたらと頭の上に物を乗せたがるらしいということ以外ほとんど謎に包まれている。\nこの先は君の目で確かめてくれ！","url":"https://booth.pm/ja/items/1222313","offers":{"priceCurrency":"JPY","@type":"Offer","price":"5000"},"image":"https://booth.pximg.net/c/620x620/96ea4d9a-4469-4b7a-8662-22aee27c08e4/i/1222313/dea31cd7-0a4d-496f-8c2b-19837890d02b_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed"><noscript><iframe height="0"
-    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed">
+  </head>
+  <body>
+    <noscript><iframe height="0" src=
+    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="bsBYcXjT6kwblVP9YuyWxJQM5wiMWOEPqxlmx1emVkE="></script>
+    nonce="ItHQZrS7ZdM9vjPEd3UB69Mo9iDdGxv4IHgoacSrqeM="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -291,6 +269,16 @@
                       <div class=
                       "desktop:py-[20px] mobile:py-[16px]" id=
                       "js-item-share-buttons"></div>
+                      <h5 class=
+                      "u-tpg-caption1 pt-12 shop-theme-text--default flex items-center">
+                        <a target="_blank" class=
+                        "ml-4 nav-reverse shop-theme-text--default"
+                        rel="noopener" href=
+                        "https://booth.pixiv.help/hc/ja/sections/13288068355225">
+                        「ギフトとして贈る」とは</a>
+                      </h5>
+                      <div class="!p-0" id=
+                      "js-item-payment-and-shipping-terms"></div>
                     </div>
                     <div class="u-order-0 l-col-3of5 u-pr-500">
                       <div class="primary-image-area">
@@ -362,7 +350,8 @@
                       <section class="main-info-column">
                         <div class=
                         "js-market-item-detail-description description">
-                          <p class="autolink u-text-wrap">
+                          <p class=
+                          "autolink break-words font-noto-sans typography-16 whitespace-pre-line">
                             (Terms of use in English is listed at
                             the bottom.) 【モデル説明】
                             Unity上でモデルの頭に好きなものを乗せるだけで自分だけのオリジナルアバターができる！
@@ -377,8 +366,122 @@
                           </p>
                         </div>
                       </section>
-                      <section class="u-text-wrap page_design" id=
-                      "modules"></section>
+                      <div class="my-40">
+                        <section class=
+                        "grid desktop:gap-40 mobile:gap-24">
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              ■■■利用規約■■■
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              ・本データを購入、利用した時点で本規約に同意したものとします。
+                              ・本データは著作権法とその他の適用法令によって保護されており、改変データも含め著作権は作者
+                              代用うおのめ に帰属します。 【許諾事項】
+                              購入者自身による以下の行為を許諾します。ただし利用条件を順守してください。
+                              ・VRChatへのアップロード（アバター、ワールドのオブジェクト等として。）ただし利用条件としてペデスタルへの登録、アバターアップロード時のパブリック設定は不可です。
+                              ・本データの改変、他3Dモデルへの流用（本データのパーツや小物、モーションを他販売3Dモデルに使用することも可能です。ただし本データ由来の部分には変わらず本規約が適用されます。）
+                              ・R-18,R-18G への利用。 ・個人の商用、非商用での利用。
+                              ・法人の商用、非商用での利用。ただし利用条件としてクレジット表記が必要です。作者名
+                              代用うおのめ が分かるように記載してください。
+                              ・VRChat以外での利用（VRMでの書き出しや、ゲーム、アニメーション、動画への利用。Vtuberとしての利用等。）ただし著作者情報を記入する欄がある場合には、作者名
+                              代用うおのめ を記載してください。 【禁止事項】 以下の行為を禁止します。
+                              ・本データ及び改変データを販売すること。
+                              ・各種サービスで購入者以外が本データ及び改変データを利用可能な状態にすること。（VRChatにおいてはペデスタルへの登録、アバターアップロード時のパブリック設定も不可です。）
+                              ・本データ及び改変データを使用したゲームやアニメーション等において、再度使用できる状態の本データを含むデータの配布。
+                              ・政治、宗教活動、他者に対する誹謗中傷目的での利用。
+                              ・法令に反するものまたは違反する行為を助長するような利用。 【免責事項】
+                              ・本データの利用または利用不能に関連して発生した損害について、作者
+                              代用うおのめ は一切責任を負いません。
+                              ・本データのセットアップに関する個別サポートは行っておりません。
+                              ・この利用規約において他言語版間に不一致がある場合、日本語版が優先されるものとします。
+                              ・本規約の内容は変更される場合があります。ただし本規約の変更前に購入したデータについては、変更前の規約が適用されます。
+                              ・本データは予告なくアップデート、販売の停止をする場合があります。
+                              制定日：2019.03.07 制定者：代用うおのめ 連絡先
+                              Twitter：@dyuonm
+                              Email：esxcfrd@hotmail.co.jp
+                              Shop：うおのめ屋(https://dyuonm.booth.pm/)
+                            </p>
+                          </section>
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              ■■■ Terms of use ■■■
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              - By purchasing and using this data
+                              pack, you are deemed to have accepted
+                              the terms of use. - This data pack is
+                              protected under the copyright act and
+                              any applicable law. Including altered
+                              data, copyright shall belong to
+                              author Daiyou-uonome. 【Permissions】
+                              The following items by purchaser are
+                              permitted. However, observe the
+                              conditions. - Uploading these data to
+                              VRChat. (Such as your avatar, object
+                              of your world.) However, shall not
+                              make avatar pedestals of these data,
+                              and it's not permitted to set an
+                              avatar as 'public' on upload. -
+                              Altering these data, and this data
+                              pack can be used for other 3D models.
+                              (These parts, objects, motions can be
+                              used for other 3D models. However,
+                              the terms of use apply to part
+                              originates this data pack as ever.) -
+                              Using for R-18, R-18G. - Personal
+                              commercial use. - Entity's commercial
+                              use. However, crediting is required.
+                              Credit author-name: Daiyou-uonome. -
+                              Using for other than
+                              VRChat.(Exporting VRM, using for
+                              games, animations, videos, Virtual
+                              YouTuber, etc.) If there is an author
+                              entry field, credit author-name:
+                              Daiyou-uonome. 【Prohibitions】 The
+                              following items are prohibited. -
+                              Selling this data pack and edited
+                              data. - In various services, putting
+                              this data pack and altered data at
+                              available for others than purchaser.
+                              (In VRChat, shall not make avatar
+                              pedestals of these data, and it's not
+                              permitted to set an avatar as
+                              'public' on upload) - In games,
+                              animations, etc. using this data
+                              pack, distributing some data
+                              Including this data pack that can be
+                              applicable. - Using for any conduct
+                              that politics, religious activities,
+                              slanders. - Violating any law, and
+                              encourage an act that violates.
+                              【Disclaimer】 - Daiyou-uonome is not
+                              held responsible for any loss or
+                              damage due to the usage or inability
+                              to use. - I do not support setting up
+                              individually. - If this English
+                              version of the terms of use does not
+                              conform to other language versions,
+                              the Japanese version shall prevail. -
+                              The terms of use are subject to
+                              change. However, for this data pack
+                              purchased before amendment of the
+                              terms of use, the terms of use formed
+                              prior to amendment shall apply. -
+                              This data pack is subject to update,
+                              be discontinued without notice.
+                              Enactment date：2019.03.07
+                              Author：Daiyou-Uonome Contact Info.
+                              Twitter：@dyuonm
+                              Email：esxcfrd@hotmail.co.jp
+                              Shop：Uonomeya(https://dyuonm.booth.pm/)
+                            </p>
+                          </section>
+                        </section>
+                      </div>
                     </div>
                   </div>
                   <section class="container">
@@ -554,9 +657,6 @@
               "shops &amp;&amp; shops.length &gt; 0"></div>
             </div>
           </aside>
-          <script id="json_modules" type="application/json">
-          {"modules":[{"type":"text","title":"■■■利用規約■■■","content":"・本データを購入、利用した時点で本規約に同意したものとします。\n・本データは著作権法とその他の適用法令によって保護されており、改変データも含め著作権は作者 代用うおのめ に帰属します。\n\n【許諾事項】\n購入者自身による以下の行為を許諾します。ただし利用条件を順守してください。\n・VRChatへのアップロード（アバター、ワールドのオブジェクト等として。）ただし利用条件としてペデスタルへの登録、アバターアップロード時のパブリック設定は不可です。\n・本データの改変、他3Dモデルへの流用（本データのパーツや小物、モーションを他販売3Dモデルに使用することも可能です。ただし本データ由来の部分には変わらず本規約が適用されます。）\n・R-18,R-18G への利用。\n・個人の商用、非商用での利用。\n・法人の商用、非商用での利用。ただし利用条件としてクレジット表記が必要です。作者名 代用うおのめ が分かるように記載してください。\n・VRChat以外での利用（VRMでの書き出しや、ゲーム、アニメーション、動画への利用。Vtuberとしての利用等。）ただし著作者情報を記入する欄がある場合には、作者名 代用うおのめ を記載してください。\n\n【禁止事項】\n以下の行為を禁止します。\n・本データ及び改変データを販売すること。\n・各種サービスで購入者以外が本データ及び改変データを利用可能な状態にすること。（VRChatにおいてはペデスタルへの登録、アバターアップロード時のパブリック設定も不可です。）\n\n・本データ及び改変データを使用したゲームやアニメーション等において、再度使用できる状態の本データを含むデータの配布。\n・政治、宗教活動、他者に対する誹謗中傷目的での利用。\n・法令に反するものまたは違反する行為を助長するような利用。\n\n【免責事項】\n・本データの利用または利用不能に関連して発生した損害について、作者 代用うおのめ は一切責任を負いません。\n・本データのセットアップに関する個別サポートは行っておりません。\n・この利用規約において他言語版間に不一致がある場合、日本語版が優先されるものとします。\n・本規約の内容は変更される場合があります。ただし本規約の変更前に購入したデータについては、変更前の規約が適用されます。\n・本データは予告なくアップデート、販売の停止をする場合があります。\n\n制定日：2019.03.07\n制定者：代用うおのめ\n\n連絡先\nTwitter：@dyuonm\nEmail：esxcfrd@hotmail.co.jp\nShop：うおのめ屋(https://dyuonm.booth.pm/)\n"},{"type":"text","title":"■■■ Terms of use ■■■","content":" - By purchasing and using this data pack, you are deemed to have accepted the terms of use.\n - This data pack is protected under the copyright act and any applicable law. Including altered data, copyright shall belong to author Daiyou-uonome.\n\n【Permissions】\n The following items by purchaser are permitted. However, observe the conditions.\n - Uploading these data to VRChat. (Such as your avatar, object of your world.) However, shall not make avatar pedestals of these data, and it's not permitted to set an avatar as 'public' on upload.\n - Altering these data, and this data pack can be used for other 3D models. (These parts, objects, motions can be used for other 3D models. However, the terms of use apply to part originates this data pack as ever.)\n - Using for R-18, R-18G.\n - Personal commercial use.\n - Entity's commercial use. However, crediting is required. Credit author-name: Daiyou-uonome.\n - Using for other than VRChat.(Exporting VRM, using for games, animations, videos, Virtual YouTuber, etc.) If there is an author entry field, credit author-name: Daiyou-uonome.\n\n【Prohibitions】\n The following items are prohibited.\n - Selling this data pack and edited data.\n - In various services, putting this data pack and altered data at available for others than purchaser. (In VRChat, shall not make avatar pedestals of these data, and it's not permitted to set an avatar as 'public' on upload)\n - In games, animations, etc. using this data pack, distributing some data Including this data pack that can be applicable.\n - Using for any conduct that politics, religious activities, slanders.\n - Violating any law, and encourage an act that violates.\n\n【Disclaimer】\n - Daiyou-uonome is not held responsible for any loss or damage due to the usage or inability to use.\n - I do not support setting up individually.\n - If this English version of the terms of use does not conform to other language versions, the Japanese version shall prevail. \n - The terms of use are subject to change. However, for this data pack purchased before amendment of the terms of use, the terms of use formed prior to amendment shall apply. \n - This data pack is subject to update, be discontinued without notice. \n\nEnactment date：2019.03.07\nAuthor：Daiyou-Uonome\n\nContact Info.\nTwitter：@dyuonm\nEmail：esxcfrd@hotmail.co.jp\nShop：Uonomeya(https://dyuonm.booth.pm/)"}]}
-          </script>
         </div>
       </main>
     </div>
