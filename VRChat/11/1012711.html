@@ -71,27 +71,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/23586338c84e10d4269f.js" defer=
+    "https://asset.booth.pm/assets/332b657446933c008a55.js" defer=
     "defer" nonce=
-    "O9tYmksPMOehUSD1jvrqIS2XqDBlJcZh8mxnGXF//4I="></script>
+    "b8np4EDZLBUc78XN+Lhr1HSd3mnFl7fydJXANy9JWE4="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"閃銘剣（せんめいのつるぎ） v2.00","description":"オリジナル3Dモデル「閃銘剣」です。\nVRChatへの使用を前提としていますが、それ以外への利用も大丈夫です。\ntamaマテリアルにはGem Shaderの使用をおすすめします。\n\n・内容物\n　fbx　2種(剣本体、鞘)\n　2kサイズテクスチャ(剣)　3種（テクスチャ、ノーマル、メタリック）\n　1kサイズテクスチャ(鞘)　3種（テクスチャ、ノーマル、メタリック）\n　\n\nテクスチャはファイル名の最後尾が\nNはノーマル\nMはメタリック\n何もないものが通常テクスチャになります","url":"https://booth.pm/ja/items/1012711","offers":{"priceCurrency":"JPY","@type":"Offer","price":"200"},"image":"https://booth.pximg.net/c/620x620/34729524-be4f-4d18-959f-182804b8cf19/i/1012711/371ef62e-e4f8-4792-a9cf-e93181ecb1f3_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="O9tYmksPMOehUSD1jvrqIS2XqDBlJcZh8mxnGXF//4I="></script>
+    nonce="b8np4EDZLBUc78XN+Lhr1HSd3mnFl7fydJXANy9JWE4="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -328,7 +350,8 @@
                       <section class="main-info-column">
                         <div class=
                         "js-market-item-detail-description description">
-                          <p class="autolink u-text-wrap">
+                          <p class=
+                          "autolink break-words font-noto-sans typography-16 whitespace-pre-line">
                             オリジナル3Dモデル「閃銘剣」です。
                             VRChatへの使用を前提としていますが、それ以外への利用も大丈夫です。
                             tamaマテリアルにはGem Shaderの使用をおすすめします。 ・内容物
@@ -340,8 +363,57 @@
                           </p>
                         </div>
                       </section>
-                      <section class="u-text-wrap page_design" id=
-                      "modules"></section>
+                      <div class="my-40">
+                        <section class=
+                        "grid desktop:gap-40 mobile:gap-24">
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              利用規約
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              ・このモデルを使用する場合は規約に同意したものとみなします。
+                              ・このモデル、および改変モデルの著作権はアステリーに帰属とします。
+                              ・メッシュやテクスチャの改変自由です。
+                              ・VRChatにアップロードし、使用およびワールドオブジェクト、ペデスタルとしての配置は自由です。
+                              　強制ではないですが、ペデスタルで配置する場合は、一報ください。
+                              ・R-18、R-18Gともに使用自由です。 ・商用利用は自由です。
+                              　利用した際のクレジット表記は自由です。
+                              　強制ではありませんが、自分の作ったものがどう使われるのか知りたいので、もしよろしければ一報ください。
+                              ・このモデルを使用して起きたトラブルなどに対して、作者は一切責任を負いません。
+                            </p>
+                          </section>
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              禁止事項
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              ・二次配布は禁止とします。 　改変したものであっても禁止とします。
+                              ・このモデルを自分で作ったものかのような発言は禁止とします。
+                            </p>
+                          </section>
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              その他
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              ・このモデルに関する質問はTwitter:@asuterieまでDMまたはリプをお願いいたします。
+                              ・これらの規約などは予告なく変更されることがあります。
+                              2019/03/29　v1.00　公開
+                              2019/08/10　v1.10　テクスチャ統合verのみに変更
+                              　　　　　　　　　 鞘の追加
+                              2019/08/14　v2.00　鞘の追加に伴いバージョンを2.00に上げました
+                              unitypackageを追加しました 　　　　　　　　　
+                              readme.txtの更新忘れを更新しました
+                            </p>
+                          </section>
+                        </section>
+                      </div>
                     </div>
                   </div>
                   <section class="container">
@@ -469,9 +541,6 @@
               "shops &amp;&amp; shops.length &gt; 0"></div>
             </div>
           </aside>
-          <script id="json_modules" type="application/json">
-          {"modules":[{"type":"text","title":"利用規約","content":"・このモデルを使用する場合は規約に同意したものとみなします。\n\n・このモデル、および改変モデルの著作権はアステリーに帰属とします。\n\n・メッシュやテクスチャの改変自由です。\n\n・VRChatにアップロードし、使用およびワールドオブジェクト、ペデスタルとしての配置は自由です。\n　強制ではないですが、ペデスタルで配置する場合は、一報ください。\n\n・R-18、R-18Gともに使用自由です。\n\n・商用利用は自由です。\n　利用した際のクレジット表記は自由です。\n　強制ではありませんが、自分の作ったものがどう使われるのか知りたいので、もしよろしければ一報ください。\n\n・このモデルを使用して起きたトラブルなどに対して、作者は一切責任を負いません。\n"},{"type":"text","title":"禁止事項","content":"・二次配布は禁止とします。\n　改変したものであっても禁止とします。\n\n・このモデルを自分で作ったものかのような発言は禁止とします。\n"},{"type":"text","title":"その他","content":"・このモデルに関する質問はTwitter:@asuterieまでDMまたはリプをお願いいたします。\n\n・これらの規約などは予告なく変更されることがあります。\n\n\n2019/03/29　v1.00　公開\n2019/08/10　v1.10　テクスチャ統合verのみに変更\n　　　　　　　　　 鞘の追加\n2019/08/14　v2.00　鞘の追加に伴いバージョンを2.00に上げました\n                   unitypackageを追加しました\n　　　　　　　　　 readme.txtの更新忘れを更新しました"}]}
-          </script>
         </div>
       </main>
     </div>
