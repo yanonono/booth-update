@@ -75,9 +75,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/23586338c84e10d4269f.js" defer=
+    "https://asset.booth.pm/assets/53386a6b39110cc2f7b3.js" defer=
     "defer" nonce=
-    "ESmOc/I56uHsGNp+fURJhqtKR9BRQ/K1mqn1m65KgtQ="></script>
+    "YynnHwTflB4iRyZTj4lKnSLK36TYE6QfOEpQx+XE9s0="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"VRChat向けレイマーチング3Dスキャナー","description":"Unity2019まで動作確認してあります。Unityのバージョン更新によって動かなくなった場合にサポートはしかねます。対応した場合は告知します。\n\n---注意---\nレイマーチングの負荷はそこそこ重いです。特に、オブジェクトの画面専有率で大きく変わります。重いワールドでは使用しない等の配慮をお願いします。\n-------------\n\nレイマーチングを用いた3Dスキャナーです。\nVRChatに使用することを想定しています。\nそれ以外でも使用できます。\n詳しくは同梱のREADME.txtをおよみください。\n\n既存の3Dスキャナーの実装（vertexシェーダー、テッセレーション、geometryシェーダーを用いたもの)に比べると、比較的低負荷ではあります。（それでもそれなりには重いですが）低解像度のカメラで広い描画範囲でもそれなりにきれいに出ます。描画範囲が小さい方が軽くなります。\n\nDirectional Lightがないとおかしくなるようです。Occulusion Cullingを切ったら正常になりました。\n\n---2018/10/27 8:12---\nシェーダーを更新しました。\n---2022/08/04 10:18---\nシェーダーを軽量化・改良しました。\n保存機能を追加しました。\n---2022/08/05 04:49---\n修正したい。\n--------------------------","url":"https://booth.pm/ja/items/1066842","offers":{"priceCurrency":"JPY","@type":"Offer","price":"1000"},"image":"https://booth.pximg.net/c/620x620/17196f09-c9fe-4c94-8cb2-5b76e97ce982/i/1066842/08f855a2-2938-4bb9-9d20-b383e9cc39b4_base_resized.jpg"}
     </script>
@@ -91,7 +91,7 @@
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="ESmOc/I56uHsGNp+fURJhqtKR9BRQ/K1mqn1m65KgtQ="></script>
+    nonce="YynnHwTflB4iRyZTj4lKnSLK36TYE6QfOEpQx+XE9s0="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -272,6 +272,16 @@
                       <div class=
                       "desktop:py-[20px] mobile:py-[16px]" id=
                       "js-item-share-buttons"></div>
+                      <h5 class=
+                      "u-tpg-caption1 pt-12 shop-theme-text--default flex items-center">
+                        <a target="_blank" class=
+                        "ml-4 nav-reverse shop-theme-text--default"
+                        rel="noopener" href=
+                        "https://booth.pixiv.help/hc/ja/sections/13288068355225">
+                        「ギフトとして贈る」とは</a>
+                      </h5>
+                      <div class="!p-0" id=
+                      "js-item-payment-and-shipping-terms"></div>
                     </div>
                     <div class="u-order-0 l-col-3of5 u-pr-500">
                       <div class="primary-image-area">
@@ -373,7 +383,8 @@
                       <section class="main-info-column">
                         <div class=
                         "js-market-item-detail-description description">
-                          <p class="autolink u-text-wrap">
+                          <p class=
+                          "autolink break-words font-noto-sans typography-16 whitespace-pre-line">
                             Unity2019まで動作確認してあります。Unityのバージョン更新によって動かなくなった場合にサポートはしかねます。対応した場合は告知します。
                             ---注意---
                             レイマーチングの負荷はそこそこ重いです。特に、オブジェクトの画面専有率で大きく変わります。重いワールドでは使用しない等の配慮をお願いします。
@@ -391,8 +402,28 @@
                           </p>
                         </div>
                       </section>
-                      <section class="u-text-wrap page_design" id=
-                      "modules"></section>
+                      <div class="my-40">
+                        <section class=
+                        "grid desktop:gap-40 mobile:gap-24">
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              Q&amp;A
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              Q.もう少しきれいに描画するには？
+                              A.RenderTextureの解像度がそのまま取得する深度値と色の解像度になります。
+                              Q.フレンドに見えないと言われます。 A.VRChat で Camera
+                              Component を自分以外が機能させるには、アバターアップロード時に
+                              Camera Component
+                              を非アクティブにしておき、アニメーションによって後からアクティブにする必要があります。
+                              この実装を行った場合に、フレンドのみ Camera Component
+                              が有効になります。 これはVRChat自体の仕様です。
+                            </p>
+                          </section>
+                        </section>
+                      </div>
                     </div>
                   </div>
                   <section class="container">
@@ -484,9 +515,6 @@
               "shops &amp;&amp; shops.length &gt; 0"></div>
             </div>
           </aside>
-          <script id="json_modules" type="application/json">
-          {"modules":[{"type":"text","title":"Q\u0026A","content":"Q.もう少しきれいに描画するには？\nA.RenderTextureの解像度がそのまま取得する深度値と色の解像度になります。\n\nQ.フレンドに見えないと言われます。\nA.VRChat で Camera Component を自分以外が機能させるには、アバターアップロード時に Camera Component を非アクティブにしておき、アニメーションによって後からアクティブにする必要があります。\nこの実装を行った場合に、フレンドのみ Camera Component が有効になります。\nこれはVRChat自体の仕様です。 \n\n"}]}
-          </script>
         </div>
       </main>
     </div>
