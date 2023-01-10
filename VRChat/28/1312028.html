@@ -71,27 +71,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/23586338c84e10d4269f.js" defer=
+    "https://asset.booth.pm/assets/332b657446933c008a55.js" defer=
     "defer" nonce=
-    "eKhFoEcM2hrxEjgj9zkTwQi/+6Y13KDx5VEn9RtjQt4="></script>
+    "OvXCOHy1JozdOZJwvw5j+RRP8JoG//jwLNq+tBJUNGg="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"VRChatランチャーX","description":"完全に個人用でしたが、せっかく作ったので公開してみました。よかったら使ってみてください。（似たようなのありそうですが。。。）","url":"https://booth.pm/ja/items/1312028","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"100"},"image":"https://booth.pximg.net/c/620x620/d968db30-36d0-4a13-a2de-94520192e9d9/i/1312028/c0f2107e-1779-4a1d-82fc-8c358dd6a2cf_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="eKhFoEcM2hrxEjgj9zkTwQi/+6Y13KDx5VEn9RtjQt4="></script>
+    nonce="OvXCOHy1JozdOZJwvw5j+RRP8JoG//jwLNq+tBJUNGg="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -380,13 +402,111 @@
                       <section class="main-info-column">
                         <div class=
                         "js-market-item-detail-description description">
-                          <p class="autolink u-text-wrap">
+                          <p class=
+                          "autolink break-words font-noto-sans typography-16 whitespace-pre-line">
                             完全に個人用でしたが、せっかく作ったので公開してみました。よかったら使ってみてください。（似たようなのありそうですが。。。）
                           </p>
                         </div>
                       </section>
-                      <section class="u-text-wrap page_design" id=
-                      "modules"></section>
+                      <div class="my-40">
+                        <section class=
+                        "grid desktop:gap-40 mobile:gap-24">
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              ■VRChatランチャーXとは
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              VRChatを起動するときに、「デスクトップモード」と「VRモード」を指定して起動するツールです。
+                              また、ツール上から瞬時に終了させることもできます。
+                              たまにアバターやワールド確認などでデスクトップモードで起動したい場合などに使えるかもしれません。
+                            </p>
+                          </section>
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              ■使い方
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              ①設定タブをクリックし、VRChatの「launch.exe」のフルパスを入力してください。
+                              　（デフォルトのフルパスが始めから入っていますので変更なければそのままでOK）
+                              　（だいたい「C:\Program Files
+                              (x86)\Steam\steamapps\common\VRChat\launch.exe」のパスだと思います。）
+                              ②起動画面のタブをクリックし、ラジオボタンの「デスクトップ」か「VR」を選択する。
+                              ③「VRChat起動」ボタンをクリックする
+                              ④VRChat起動後は「VRChat起動」ボタンが、「VRChat停止」ボタンに切り替わるので、
+                              　クリックすると瞬時にVRChatが停止します。
+                            </p>
+                          </section>
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              ■動作確認環境
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              OS : Windows10 x64 VRプラットフォーム :
+                              SteamVR 1.16.10 HMD : HTC VIVE
+                            </p>
+                          </section>
+                          <section class=
+                          "[&amp;&gt;iframe]:w-full">
+                            <iframe width="560" height="315" src=
+                            "https://www.youtube.com/embed/md34kuOhZvg"
+                            frameborder="0" allowfullscreen
+                            sandbox="allow-scripts allow-same-origin allow-popups allow-presentation">
+                            </iframe>
+                          </section>
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              ■利用規約
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              CC BY-SA 4.0
+                              https://creativecommons.org/licenses/by-sa/4.0/legalcode.ja
+                            </p>
+                          </section>
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              ■免責事項
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              このデータを利用することで何らかの問題、損害が生じても作者は責任を負いません。
+                              利用規約等は予告なく変更する場合があります。
+                            </p>
+                          </section>
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              ■その他
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              不具合、要望等ありましたら、
+                              以下のTwitterのDMまたはURLの連絡フォームからご連絡お願いいたします。
+                              Twitter: @tarothethird URL:
+                              https://taroyan3rd.com/
+                            </p>
+                          </section>
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              ■更新履歴
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              21/5/10 v1.0.1 第2版 batをexeに変更 19/4/10
+                              v1.0.0 初版　BOOTHにて公開
+                            </p>
+                          </section>
+                        </section>
+                      </div>
                     </div>
                   </div>
                   <section class="container">
@@ -478,9 +598,6 @@
               "shops &amp;&amp; shops.length &gt; 0"></div>
             </div>
           </aside>
-          <script id="json_modules" type="application/json">
-          {"modules":[{"type":"text","title":"■VRChatランチャーXとは","content":"VRChatを起動するときに、「デスクトップモード」と「VRモード」を指定して起動するツールです。\nまた、ツール上から瞬時に終了させることもできます。\nたまにアバターやワールド確認などでデスクトップモードで起動したい場合などに使えるかもしれません。"},{"type":"text","title":"■使い方","content":"①設定タブをクリックし、VRChatの「launch.exe」のフルパスを入力してください。\n\t　（デフォルトのフルパスが始めから入っていますので変更なければそのままでOK）\n\t　（だいたい「C:\\Program Files (x86)\\Steam\\steamapps\\common\\VRChat\\launch.exe」のパスだと思います。）\n②起動画面のタブをクリックし、ラジオボタンの「デスクトップ」か「VR」を選択する。\n③「VRChat起動」ボタンをクリックする\n④VRChat起動後は「VRChat起動」ボタンが、「VRChat停止」ボタンに切り替わるので、\n\t　クリックすると瞬時にVRChatが停止します。"},{"type":"text","title":"■動作確認環境","content":"OS  : Windows10 x64\nVRプラットフォーム : SteamVR 1.16.10\nHMD : HTC VIVE"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/md34kuOhZvg\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"},{"type":"text","title":"■利用規約","content":"CC BY-SA 4.0\nhttps://creativecommons.org/licenses/by-sa/4.0/legalcode.ja"},{"type":"text","title":"■免責事項","content":"このデータを利用することで何らかの問題、損害が生じても作者は責任を負いません。\n利用規約等は予告なく変更する場合があります。"},{"type":"text","title":"■その他","content":"不具合、要望等ありましたら、\n以下のTwitterのDMまたはURLの連絡フォームからご連絡お願いいたします。\nTwitter: @tarothethird\nURL: https://taroyan3rd.com/"},{"type":"text","title":"■更新履歴","content":"21/5/10 v1.0.1 第2版 batをexeに変更\n19/4/10 v1.0.0 初版　BOOTHにて公開"}]}
-          </script>
         </div>
       </main>
     </div>
