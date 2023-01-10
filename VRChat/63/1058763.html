@@ -71,27 +71,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/23586338c84e10d4269f.js" defer=
+    "https://asset.booth.pm/assets/53386a6b39110cc2f7b3.js" defer=
     "defer" nonce=
-    "gn9NX9UM/G9BBggRcxpP5avbTP2vILVnBjuGpx/9egw="></script>
+    "e+CwOELmg45UBseoHmdezZiTqJ9gtXOCXgMkd3Yanm0="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"Fragod(大盾統合特大剣)","description":"\u003c概要\u003e\n白と金を基調とした盾と大剣です。盾単体での展開アニメーション、盾と大剣が統合され特大剣になるアニメーション、があります。本物が見たい方はshop概要欄からお店に飛べるので、そちらからどうぞ。\n\n\u003c中身\u003e\n・unitypackage(prefab,fbx,texture,material,animation,animatorなど)\n・read me\n\n\u003cアニメーションの使い方(VRchat向け)\u003e\nanimatorで管理されているので、同封されているprefab自体をenabledするとanimationが勝手に再生されます。つまり、animation overrideで直接親をenabledさせてください。\n\n\u003cアニメーション\u003e\n＊動画ではパーティクルがでていますが、付属しておりません。また、テクスチャが一部違います。アニメーション確認としてご覧ください。\n\n\n\u003c規約の目安\u003e\n規約は同封のread meに書いてあります。これは目安としてください。これは規約ではありません。\n・商業利用可\n・二次配布、3Dモデルとしての販売の禁止\n・著作権はすべてAcysShiaruReusに帰属する","url":"https://booth.pm/ja/items/1058763","offers":{"priceCurrency":"JPY","@type":"Offer","price":"800"},"image":"https://booth.pximg.net/c/620x620/2d13a0c0-2756-4fa9-b3b6-77f3f8714856/i/1058763/ca033343-cc56-4745-8304-7024b7c75133_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="gn9NX9UM/G9BBggRcxpP5avbTP2vILVnBjuGpx/9egw="></script>
+    nonce="e+CwOELmg45UBseoHmdezZiTqJ9gtXOCXgMkd3Yanm0="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -258,6 +280,16 @@
                       <div class=
                       "desktop:py-[20px] mobile:py-[16px]" id=
                       "js-item-share-buttons"></div>
+                      <h5 class=
+                      "u-tpg-caption1 pt-12 shop-theme-text--default flex items-center">
+                        <a target="_blank" class=
+                        "ml-4 nav-reverse shop-theme-text--default"
+                        rel="noopener" href=
+                        "https://booth.pixiv.help/hc/ja/sections/13288068355225">
+                        「ギフトとして贈る」とは</a>
+                      </h5>
+                      <div class="!p-0" id=
+                      "js-item-payment-and-shipping-terms"></div>
                     </div>
                     <div class="u-order-0 l-col-3of5 u-pr-500">
                       <div class="primary-image-area">
@@ -329,7 +361,8 @@
                       <section class="main-info-column">
                         <div class=
                         "js-market-item-detail-description description">
-                          <p class="autolink u-text-wrap">
+                          <p class=
+                          "autolink break-words font-noto-sans typography-16 whitespace-pre-line">
                             &lt;概要&gt;
                             白と金を基調とした盾と大剣です。盾単体での展開アニメーション、盾と大剣が統合され特大剣になるアニメーション、があります。本物が見たい方はshop概要欄からお店に飛べるので、そちらからどうぞ。
                             &lt;中身&gt;
@@ -346,8 +379,7 @@
                           </p>
                         </div>
                       </section>
-                      <section class="u-text-wrap page_design" id=
-                      "modules"></section>
+                      <div class="my-40"></div>
                     </div>
                   </div>
                   <section class="container">
@@ -463,9 +495,6 @@
               "shops &amp;&amp; shops.length &gt; 0"></div>
             </div>
           </aside>
-          <script id="json_modules" type="application/json">
-          {"modules":[]}
-          </script>
         </div>
       </main>
     </div>
