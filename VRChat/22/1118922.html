@@ -75,9 +75,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/23586338c84e10d4269f.js" defer=
+    "https://asset.booth.pm/assets/53386a6b39110cc2f7b3.js" defer=
     "defer" nonce=
-    "W5ZxPOqLG99pyJLh4TItlM5lpWDN8jteY8SrjbEU8mw="></script>
+    "OBSodzsA0a8wwmZPFSnL3PbTWaPheLsYM0+yjSrBDZY="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"ガラス球向けガラスシェーダー Ver2.1","description":"球体などに適用することでガラス球のような見た目にできるシェーダーです。\n●ゆがみや反射の度合いを調節可能\n●球面へのテクスチャやノーマルマップを適用可能\n●ワールドのライティングにある程度追従するMatcapを使用可能\n\nVRChatでの使用を想定し、2019.4.31f1で動作確認しています。\n\n【V2.1での変更】\nVRChatのアップデート(リリース時点ではOpen Beta)に対応し、シングルパスインスタンシングレンダリングをサポートするようになりました。\nUnity 2020.3.30f1でも動作確認を行いました。\nこのバージョンより、Shader Forgeでの再編集は非対応となります。\n\n【V2.0Aでの変更】\nVRChatで使用する際、Safety設定によるシェーダフォールバックを受けた際に非表示となるよう変更しました。\n従来のバージョンが必要な場合は旧バージョンも引き続きダウンロードできます。","url":"https://booth.pm/ja/items/1118922","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"100"},"image":"https://booth.pximg.net/c/620x620/64255878-1532-4d6c-abdb-a9cf35ee4a39/i/1118922/de3880f9-b83b-4f7a-9207-ba54bf0401ae_base_resized.jpg"}
     </script>
@@ -91,7 +91,7 @@
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="W5ZxPOqLG99pyJLh4TItlM5lpWDN8jteY8SrjbEU8mw="></script>
+    nonce="OBSodzsA0a8wwmZPFSnL3PbTWaPheLsYM0+yjSrBDZY="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -411,6 +411,16 @@
                       <div class=
                       "desktop:py-[20px] mobile:py-[16px]" id=
                       "js-item-share-buttons"></div>
+                      <h5 class=
+                      "u-tpg-caption1 pt-12 shop-theme-text--default flex items-center">
+                        <a target="_blank" class=
+                        "ml-4 nav-reverse shop-theme-text--default"
+                        rel="noopener" href=
+                        "https://booth.pixiv.help/hc/ja/sections/13288068355225">
+                        「ギフトとして贈る」とは</a>
+                      </h5>
+                      <div class="!p-0" id=
+                      "js-item-payment-and-shipping-terms"></div>
                     </div>
                     <div class="u-order-0 l-col-3of5 u-pr-500">
                       <div class="primary-image-area">
@@ -467,7 +477,8 @@
                       <section class="main-info-column">
                         <div class=
                         "js-market-item-detail-description description">
-                          <p class="autolink u-text-wrap">
+                          <p class=
+                          "autolink break-words font-noto-sans typography-16 whitespace-pre-line">
                             球体などに適用することでガラス球のような見た目にできるシェーダーです。
                             ●ゆがみや反射の度合いを調節可能
                             ●球面へのテクスチャやノーマルマップを適用可能
@@ -483,8 +494,201 @@
                           </p>
                         </div>
                       </section>
-                      <section class="u-text-wrap page_design" id=
-                      "modules"></section>
+                      <div class="my-40">
+                        <section class=
+                        "grid desktop:gap-40 mobile:gap-24">
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              インストール
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              ＜インストール＞
+                              Unityプロジェクトを開き、Oyasumisan_GlassSphere.unitypackageをインポートしてください。
+                            </p>
+                          </section>
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              使い方
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              まず任意のマテリアルにて、「Shader
+                              Forge/oy_GlassSphere」で始まるいずれかのシェーダを選択してください。
+                              シェーダごとの違いは以下の通りです。
+                              「oy_GlassSphere_2.0」：標準となるガラス球シェーダです。別途販売しているハーバリウムなカメラに同梱しているものと同じ内容のものになります。
+                              「oy_GlassSphere_Forward_2.0」：表面描画としたバージョンです。「Forward」の有無による違いは後述する＜おまけ1＞を参照ください。
+                              「oy_GlassSphere_2.0(ZWrite)」
+                              「oy_GlassSphere_Forward_2.0(ZWrite)」：ZWriteをオン(デプスマップ書き込み有り)にしたバージョンです。ZWriteの有無による違いは後述する＜おまけ3＞を参照ください。
+                              「oy_GlassSphere」
+                              「oy_GlassSphere_Forward」：2021年2月9日まで配布していた旧バージョンです。従来通りの見た目にしたい場合に使用ください。
+                              次にMatcapのテクスチャ欄に、Texturesフォルダ内に同梱している「matcap_horizon_gradation.png」をセットします。
+                              他のパラメータはデフォルトの設定でまずは試してみてください。
+                              また、Oyasumisan/GlassSphereShader/内にサンプルプレハブを、
+                              Oyasumisan/GlassSphereShader/Materials内にサンプルマテリアルを同梱しています。
+                              ◆ShaderForgeで作成していましたが、Ver
+                              2.1にてシングルパスインスタンシングレンダリングに対応する都合でShader
+                              Forgeでの再編集には非対応となりました。
+                              なお、VRChatにてこのシェーダを使用した際、他プレイヤーのセーフティ設定によりシェーダを無効化された場合には、表示しないもの(Hidden)としてふるまいます。
+                            </p>
+                          </section>
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              設定項目
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              以下のパラメータを調整して、好みのガラス感を出してみてください。 Use
+                              Distortion:
+                              Distortion（縁のゆがみ）の使用をオンオフできます。
+                              Distortion:
+                              ガラスを通して見えるもののゆがみ度合いを調整できます。
+                              小さな値にするとゆがみ効果が大きくなり、大きな値にするとゆがみ効果はなくなります。
+                              実際のガラスとは違う効果ですが、適度な値にすることでガラスらしさを表現できるかもしれません。
+                              設定したら、モデルを斜めや横から見てみてください。 Specular:
+                              表面での反射度合いを調整できます。
+                              リアルタイムライト及びReflection
+                              Probeによる反射度合いになります。 Gloss:
+                              こちらも表面での反射度合いですが、Specularと効果のかかり方が違います。
+                              大きな値にすると、映り込みが鏡面のようにくっきりします。
+                              こちらもリアルタイムライト及びReflection
+                              Probeによる反射度合いになります。 【NEW】Exposure:
+                              明るさ補正機能です。
+                              Exposureスライダを調整することで、ガラスを通した景色の明るさを調整できます。ガラスに集光する様子をイメージした明るさの調整などに使用ください。1が補正無しです。
+                              Albedo_Base_Color: ガラスのベースの色味を変更します。
+                              Glass_Color:
+                              ガラスのベースの色味を変更します。(Albedo_Base_Colorでも変更できますが、こちらを変えると少し暗くもできます)
+                              Incident_Color:
+                              ガラス自体とは別に、入射光に対しての色味付けや明るさの強弱を調整できます。
+                              Reflection_Color:
+                              反射光全体(Specular,Matcap)に対しての色味付けや明るさの強弱を調整できます。
+                              Emission_Base_Color:
+                              暗いワールドなどで、周囲の明るさや傾きによらず常に一定の色で光らせたい場合に設定します。
+                              通常は黒のままで良いです。 Matcap:
+                              Matcapとして使用する画像をセットします。
+                              Matcapにより、ワールドのライトやReflection
+                              Probeによらず、光を反射しているように見せることができます。
+                              Matcap Style: Matcap効果の現れ方を切り替えます。
+                              オフの場合:Matcapテクスチャの反映がワールド基準になり、疑似的なReflection
+                              Probeのような感じになります。
+                              添付している「matcap_horizon_gradation.png」ではオフ推奨です。
+                              オンの場合:Matcapテクスチャの反映がビュー基準になり、一般的なMatcapっぽい挙動になります。
+                              Matcap_Scale:
+                              Matcapによる反射光のサイズを変更します。小さくすると広範囲にわたって反射しているように見えます。
+                              大きなオブジェクトに適用する場合にこの値を小さくするなど試してみてください。
+                              Matcap_Strength:
+                              Matcapによる反射の強さを設定します。
+                              反射光全体の明るさはReflection_Colorで変更できますが、こちらはそれに加えてMatcapのみを調整するものです。
+                              (Matcapによる反射はEmissionで実現しているため、好みに応じて強弱をつけられるようにしました。)
+                              Matcap_Hue_Range:
+                              Matcapによる反射に対する、色相変化効果の強弱を調整できます。
+                              Matcapにはメガネレンズのコーティングをイメージして、視点からの位置関係で色相が変化する効果を追加してあります。0にすると色相は変化しません。
+                              Matcap_Emission_Bottom:
+                              Matcapによる反射では、ワールドの明るさに応じたMatcapの明るさ調整を行っています。
+                              この明るさ調整の下限値を調整できます。 Normal Map:
+                              必要であればノーマルマップを指定できます。例えば型ガラス風にしたり、表面に水滴がついているかのような効果を付加したりができるかもしれません。
+                              【NEW】Normal Intensity:
+                              ノーマルマップ影響強さの調整です。
+                              ノーマルマップを指定した場合にのみ有効です。指定したノーマルマップの影響を弱めることでガラスの風合いをお好みで調整できます。
+                              Texture: ガラスに適用するテクスチャを指定します。
+                              アルファ値に対応しています。
+                              また、テクスチャの描画はDistortionの影響を受けます。
+                              Texture Opacity: テクスチャ全体の透過率を指定します。
+                              0で不透明、1で完全に透明となります。 ※ダミーパラメータ Color
+                              このパラメータはVRChatにてセーフティ設定によりシェーダを無効化された際、半透明のシェーダとしてふるまうために必要なパラメータであり、変更不要です。
+                              このパラメータを変更することによる見た目の変化はないようです。
+                            </p>
+                          </section>
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              おまけ1
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              このシェーダー「oy_GlassSphere」はFrontface
+                              Culling（メッシュの裏面に描画し、表面は非表示）ですが、
+                              逆のBackface
+                              Culling（メッシュの表面に描画し、裏面は非表示）に設定しただけのシェーダー「oy_GlassSphere_Forward」も同梱してあります。
+                              特徴は以下のような感じです。 「oy_GlassSphere」
+                              ・内側に入った物に球の反射光が被らない
+                              ・内側に入った物がゆがまない(ゆがむ場合は、その物の背面側に描画される)
+                              ・Distortion値をある程度大きくしてもガラス玉っぽさがある ※私見
+                              ・(多分)大きなものを入れるには向かない ※私見
+                              ・アバターなど歪ませたくないものを入れる場合向き
+                              「oy_GlassSphere_Forward」
+                              ・内側に入った物に球の反射光が被る ・内側に入った物がゆがむ
+                              ・Distortionを小さくするととてもガラス玉っぽい ※私見
+                              ・無機物などゆがませても問題ないものを入れる場合向き
+                              好みや用途に応じて好きなほうをお使いください。
+                            </p>
+                          </section>
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              おまけ2
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              「oy_GlassSphere」を使用する際には球の表面にあたる部分の反射は再現できないため、
+                              同じ形のメッシュ(オブジェクト)を同じ位置、サイズでもう一つ重ねて使用することを想定した透明のMatcapシェーダーを2種類同梱しています。
+                              いずれも背景を透過し、Matcapのテクスチャだけを重ねるシェーダーです。
+                              各パラメータは「oy_GlassSphere」に準じます。
+                              「oy_Matcap.shader」
+                              こちらはワールドの明るさに応じたMatcapの明るさ調整が可能になっています。
+                              「oy_MatcapSimple.shader」
+                              こちらはMatcapの明るさは周囲によらず固定で、Matcap_Strengthのみ調整可能です。
+                              明るさ調整が不要であればこちらのほうが軽量です。
+                              設定例は「Matcapシェーダー設定例.PNG」にあります。
+                              また、Matcapテクスチャの例としてTexturesフォルダ内に「Matcap_01.png」を同梱しています。
+                            </p>
+                          </section>
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              おまけ3
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              バージョン2.0のシェーダについて、ZWriteをオン(デプスマップ書き込み有り)にしたバージョンを同梱しています。
+                              このバージョンは通常の見た目にはZWrite無しと変わりありませんが、このシェーダを適用したメッシュの距離情報がデプスマップに書き込まれます。
+                              これにより、例えばカメラの被写界深度効果を適用した際、このシェーダを適用したメッシュにピントを合わせられるようになります。
+                              ただし、ガラス球シェーダを透過した向こう側の景色にもピントが合うことになるため、このバージョンはテクスチャ等で向こう側が透けない使い方をする場合や、歪みを強く効かせる場合での使用をお勧めします。
+                              ※ZWriteを有効とするには、マテリアル設定のRender
+                              Queueを2500以下に変更する必要があります。
+                            </p>
+                          </section>
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              更新履歴
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              Ver 2.1 2022.03.11
+                              VRChatのアップデート(リリース時点ではOpen
+                              Beta)に対応し、シングルパスインスタンシングレンダリング(Single
+                              Pass Instancing)をサポートするようシェーダのコードを変更
+                              また、Unity 2020.3.30f1にて動作確認
+                              この対応により、Shader Forgeでの再編集は非対応となります
+                              Ver 2.0A 2022.02.23
+                              VRChatの現時点のシェーダフォールバックの仕組みに対応し、フォールバック先を非表示(Hidden)に変更
+                              これに伴い各シェーダの名称を変更 Ver 2.0 2021.02.09
+                              unitypackageを同梱 シェーダの歪み計算値を最適化
+                              明るさ補正機能の追加 ノーマルマップ影響強さの調整機能の追加
+                              ZWrite版(デプスマップ書き込み有り版)の追加 Ver 1.1
+                              2019.06.15
+                              oy_GlassSphere_Forward.shaderについて、シェーダの名称がoy_GlassSphere.shaderと同じになっていたため、Unity上で共存できなかったのを修正
+                              (シェーダ名を"Shader
+                              Forge/oy_GlassSphere_Forward(VRCSafety:Particle)"に変更)
+                              Ver 1.0 2018.12.01 公開
+                            </p>
+                          </section>
+                        </section>
+                      </div>
                     </div>
                   </div>
                   <section class="container">
@@ -576,9 +780,6 @@
               "shops &amp;&amp; shops.length &gt; 0"></div>
             </div>
           </aside>
-          <script id="json_modules" type="application/json">
-          {"modules":[{"type":"text","title":"インストール","content":"＜インストール＞\nUnityプロジェクトを開き、Oyasumisan_GlassSphere.unitypackageをインポートしてください。\n"},{"type":"text","title":"使い方","content":"まず任意のマテリアルにて、「Shader Forge/oy_GlassSphere」で始まるいずれかのシェーダを選択してください。\nシェーダごとの違いは以下の通りです。\n\n「oy_GlassSphere_2.0」：標準となるガラス球シェーダです。別途販売しているハーバリウムなカメラに同梱しているものと同じ内容のものになります。\n\n「oy_GlassSphere_Forward_2.0」：表面描画としたバージョンです。「Forward」の有無による違いは後述する＜おまけ1＞を参照ください。\n\n「oy_GlassSphere_2.0(ZWrite)」\n「oy_GlassSphere_Forward_2.0(ZWrite)」：ZWriteをオン(デプスマップ書き込み有り)にしたバージョンです。ZWriteの有無による違いは後述する＜おまけ3＞を参照ください。\n\n「oy_GlassSphere」\n「oy_GlassSphere_Forward」：2021年2月9日まで配布していた旧バージョンです。従来通りの見た目にしたい場合に使用ください。\n\n次にMatcapのテクスチャ欄に、Texturesフォルダ内に同梱している「matcap_horizon_gradation.png」をセットします。\n他のパラメータはデフォルトの設定でまずは試してみてください。\nまた、Oyasumisan/GlassSphereShader/内にサンプルプレハブを、\nOyasumisan/GlassSphereShader/Materials内にサンプルマテリアルを同梱しています。\n\n\n◆ShaderForgeで作成していましたが、Ver 2.1にてシングルパスインスタンシングレンダリングに対応する都合でShader Forgeでの再編集には非対応となりました。\n\nなお、VRChatにてこのシェーダを使用した際、他プレイヤーのセーフティ設定によりシェーダを無効化された場合には、表示しないもの(Hidden)としてふるまいます。"},{"type":"text","title":"設定項目","content":"以下のパラメータを調整して、好みのガラス感を出してみてください。\n\nUse Distortion:\nDistortion（縁のゆがみ）の使用をオンオフできます。\n\nDistortion:\nガラスを通して見えるもののゆがみ度合いを調整できます。\n小さな値にするとゆがみ効果が大きくなり、大きな値にするとゆがみ効果はなくなります。\n実際のガラスとは違う効果ですが、適度な値にすることでガラスらしさを表現できるかもしれません。\n設定したら、モデルを斜めや横から見てみてください。\n\nSpecular:\n表面での反射度合いを調整できます。\nリアルタイムライト及びReflection Probeによる反射度合いになります。\n\nGloss:\nこちらも表面での反射度合いですが、Specularと効果のかかり方が違います。\n大きな値にすると、映り込みが鏡面のようにくっきりします。\nこちらもリアルタイムライト及びReflection Probeによる反射度合いになります。\n\n【NEW】Exposure:\n明るさ補正機能です。\nExposureスライダを調整することで、ガラスを通した景色の明るさを調整できます。ガラスに集光する様子をイメージした明るさの調整などに使用ください。1が補正無しです。\n\nAlbedo_Base_Color:\nガラスのベースの色味を変更します。\n\nGlass_Color:\nガラスのベースの色味を変更します。(Albedo_Base_Colorでも変更できますが、こちらを変えると少し暗くもできます)\n\nIncident_Color:\nガラス自体とは別に、入射光に対しての色味付けや明るさの強弱を調整できます。\n\nReflection_Color:\n反射光全体(Specular,Matcap)に対しての色味付けや明るさの強弱を調整できます。\n\nEmission_Base_Color:\n暗いワールドなどで、周囲の明るさや傾きによらず常に一定の色で光らせたい場合に設定します。\n通常は黒のままで良いです。\n\nMatcap:\nMatcapとして使用する画像をセットします。\nMatcapにより、ワールドのライトやReflection Probeによらず、光を反射しているように見せることができます。\n\nMatcap Style:\nMatcap効果の現れ方を切り替えます。\nオフの場合:Matcapテクスチャの反映がワールド基準になり、疑似的なReflection Probeのような感じになります。\n添付している「matcap_horizon_gradation.png」ではオフ推奨です。\nオンの場合:Matcapテクスチャの反映がビュー基準になり、一般的なMatcapっぽい挙動になります。\n\nMatcap_Scale:\nMatcapによる反射光のサイズを変更します。小さくすると広範囲にわたって反射しているように見えます。\n大きなオブジェクトに適用する場合にこの値を小さくするなど試してみてください。\n\nMatcap_Strength:\nMatcapによる反射の強さを設定します。\n反射光全体の明るさはReflection_Colorで変更できますが、こちらはそれに加えてMatcapのみを調整するものです。\n(Matcapによる反射はEmissionで実現しているため、好みに応じて強弱をつけられるようにしました。)\n\nMatcap_Hue_Range:\nMatcapによる反射に対する、色相変化効果の強弱を調整できます。\nMatcapにはメガネレンズのコーティングをイメージして、視点からの位置関係で色相が変化する効果を追加してあります。0にすると色相は変化しません。\n\nMatcap_Emission_Bottom: \nMatcapによる反射では、ワールドの明るさに応じたMatcapの明るさ調整を行っています。\nこの明るさ調整の下限値を調整できます。\n\nNormal Map:\n必要であればノーマルマップを指定できます。例えば型ガラス風にしたり、表面に水滴がついているかのような効果を付加したりができるかもしれません。\n\n【NEW】Normal Intensity:\nノーマルマップ影響強さの調整です。\nノーマルマップを指定した場合にのみ有効です。指定したノーマルマップの影響を弱めることでガラスの風合いをお好みで調整できます。\n\nTexture:\nガラスに適用するテクスチャを指定します。\nアルファ値に対応しています。\nまた、テクスチャの描画はDistortionの影響を受けます。\n\nTexture Opacity:\nテクスチャ全体の透過率を指定します。\n0で不透明、1で完全に透明となります。\n\n※ダミーパラメータ\nColor\nこのパラメータはVRChatにてセーフティ設定によりシェーダを無効化された際、半透明のシェーダとしてふるまうために必要なパラメータであり、変更不要です。\nこのパラメータを変更することによる見た目の変化はないようです。"},{"type":"text","title":"おまけ1","content":"このシェーダー「oy_GlassSphere」はFrontface Culling（メッシュの裏面に描画し、表面は非表示）ですが、\n逆のBackface Culling（メッシュの表面に描画し、裏面は非表示）に設定しただけのシェーダー「oy_GlassSphere_Forward」も同梱してあります。\n特徴は以下のような感じです。\n\n「oy_GlassSphere」\n・内側に入った物に球の反射光が被らない\n・内側に入った物がゆがまない(ゆがむ場合は、その物の背面側に描画される)\n・Distortion値をある程度大きくしてもガラス玉っぽさがある ※私見\n・(多分)大きなものを入れるには向かない ※私見\n・アバターなど歪ませたくないものを入れる場合向き\n\n「oy_GlassSphere_Forward」\n・内側に入った物に球の反射光が被る\n・内側に入った物がゆがむ\n・Distortionを小さくするととてもガラス玉っぽい ※私見\n・無機物などゆがませても問題ないものを入れる場合向き\n\n好みや用途に応じて好きなほうをお使いください。"},{"type":"text","title":"おまけ2","content":"「oy_GlassSphere」を使用する際には球の表面にあたる部分の反射は再現できないため、\n同じ形のメッシュ(オブジェクト)を同じ位置、サイズでもう一つ重ねて使用することを想定した透明のMatcapシェーダーを2種類同梱しています。\nいずれも背景を透過し、Matcapのテクスチャだけを重ねるシェーダーです。\n各パラメータは「oy_GlassSphere」に準じます。\n\n「oy_Matcap.shader」\nこちらはワールドの明るさに応じたMatcapの明るさ調整が可能になっています。\n\n「oy_MatcapSimple.shader」\nこちらはMatcapの明るさは周囲によらず固定で、Matcap_Strengthのみ調整可能です。\n明るさ調整が不要であればこちらのほうが軽量です。\n設定例は「Matcapシェーダー設定例.PNG」にあります。\nまた、Matcapテクスチャの例としてTexturesフォルダ内に「Matcap_01.png」を同梱しています。"},{"type":"text","title":"おまけ3","content":"バージョン2.0のシェーダについて、ZWriteをオン(デプスマップ書き込み有り)にしたバージョンを同梱しています。\nこのバージョンは通常の見た目にはZWrite無しと変わりありませんが、このシェーダを適用したメッシュの距離情報がデプスマップに書き込まれます。\nこれにより、例えばカメラの被写界深度効果を適用した際、このシェーダを適用したメッシュにピントを合わせられるようになります。\nただし、ガラス球シェーダを透過した向こう側の景色にもピントが合うことになるため、このバージョンはテクスチャ等で向こう側が透けない使い方をする場合や、歪みを強く効かせる場合での使用をお勧めします。\n※ZWriteを有効とするには、マテリアル設定のRender Queueを2500以下に変更する必要があります。"},{"type":"text","title":"更新履歴","content":"Ver 2.1 2022.03.11\nVRChatのアップデート(リリース時点ではOpen Beta)に対応し、シングルパスインスタンシングレンダリング(Single Pass Instancing)をサポートするようシェーダのコードを変更\nまた、Unity 2020.3.30f1にて動作確認\nこの対応により、Shader Forgeでの再編集は非対応となります\n\nVer 2.0A 2022.02.23\nVRChatの現時点のシェーダフォールバックの仕組みに対応し、フォールバック先を非表示(Hidden)に変更\nこれに伴い各シェーダの名称を変更\n\nVer 2.0 2021.02.09\nunitypackageを同梱\nシェーダの歪み計算値を最適化\n明るさ補正機能の追加\nノーマルマップ影響強さの調整機能の追加\nZWrite版(デプスマップ書き込み有り版)の追加\n\nVer 1.1 2019.06.15\noy_GlassSphere_Forward.shaderについて、シェーダの名称がoy_GlassSphere.shaderと同じになっていたため、Unity上で共存できなかったのを修正\n(シェーダ名を\"Shader Forge/oy_GlassSphere_Forward(VRCSafety:Particle)\"に変更)\n\nVer 1.0 2018.12.01\n公開"}]}
-          </script>
         </div>
       </main>
     </div>
