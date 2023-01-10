@@ -75,9 +75,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/23586338c84e10d4269f.js" defer=
+    "https://asset.booth.pm/assets/332b657446933c008a55.js" defer=
     "defer" nonce=
-    "JuYagkGiSgxJxKOygEKXTpqIBpHPTK8hgPhQ7RftoHs="></script>
+    "q3L+o5lfRL2aDzmz7I6uFwFlrOuCZrK5GwaOHwBpqiI="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"VKラインストーン","description":"キラキラ輝くのが特徴の宝石（ラインストーン）の3Dモデルパッケージ（unitypackage）です。\n主にVRChatでの利用を想定しています。アバターやワールドの装飾に使って頂ければと思います。\n\n実物を展示しているVRChatワールド「VK Rhinestone demo」を作りましたので、見た目の確認をしたい場合は行ってみてください。\nhttps://www.vrchat.net/home/launch?worldId=wrld_221738a6-59f2-4de5-80f2-668f55731050\n","url":"https://booth.pm/ja/items/1329623","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"1000","highPrice":"1000"},"image":"https://booth.pximg.net/c/620x620/aadf057d-75a6-4934-a7d2-701141567595/i/1329623/97bbe8d7-5434-416b-b18f-4a2e7f137101_base_resized.jpg"}
     </script>
@@ -91,7 +91,7 @@
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="JuYagkGiSgxJxKOygEKXTpqIBpHPTK8hgPhQ7RftoHs="></script>
+    nonce="q3L+o5lfRL2aDzmz7I6uFwFlrOuCZrK5GwaOHwBpqiI="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -615,7 +615,8 @@
                       <section class="main-info-column">
                         <div class=
                         "js-market-item-detail-description description">
-                          <p class="autolink u-text-wrap">
+                          <p class=
+                          "autolink break-words font-noto-sans typography-16 whitespace-pre-line">
                             キラキラ輝くのが特徴の宝石（ラインストーン）の3Dモデルパッケージ（unitypackage）です。
                             主にVRChatでの利用を想定しています。アバターやワールドの装飾に使って頂ければと思います。
                             実物を展示しているVRChatワールド「VK Rhinestone
@@ -624,8 +625,107 @@
                           </p>
                         </div>
                       </section>
-                      <section class="u-text-wrap page_design" id=
-                      "modules"></section>
+                      <div class="my-40">
+                        <section class=
+                        "grid desktop:gap-40 mobile:gap-24">
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              内容物・ファイルの説明
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              unitypackageの中に下記のデータが入っています。
+                              ・Rhinestone-round.FBX（メッシュデータ、248ポリゴン）
+                              ・Ring01.FBX（指輪のメッシュデータ、384ポリゴン）
+                              ・VKRhinestone.shader（宝石用シェーダー）
+                              ・RefractFake_HDR.exr（疑似屈折用マップ）
+                              ・VKRhinestone.mat（クリスタルカラー用マテリアル）
+                              ・VKRhinestone.prefab（クリスタルカラー適用済みプレハブ）
+                              ・Ring01.prefab（サンプルの指輪プレハブ）
+                              ・その他、アクアマリンやルビーなどのカラー設定済みマテリアルおよびプレハブ（10色分）
+                            </p>
+                          </section>
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              使い方
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              unitypackageインポート後、プレハブを任意のシーンに追加してください。
+                              仕組み上、ストーンを大きなサイズにすると正しく見えませんのでご注意ください。
+                            </p>
+                          </section>
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              シェーダーの説明
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              ・2パスで描画しています。 ・Reflection
+                              Probeの影響を受けます。 ・GPUインスタンシング対応。 ・パラメータ
+                              「RefractFakeMap」あらかじめ用意した疑似屈折マップ
+                              「RefractBright」屈折の煌めきの強さ
+                              「RefractColor」ベースとなるストーンのカラー
+                              「ReflectColor」反射成分のカラー
+                              「Smoothness」ストーン表面の滑らかさ（StandardShaderと同様）
+                              「Metallic」反射成分のカラーとReflectionProbeから受けるカラーのバランス（StandardShaderと同様）
+                              ・シーンによってストーンが眩しすぎるもしくは暗すぎるような場合は、「RefractBright」パラメータを調整してください。
+                              ・好きな色に改変する場合は、「RefractColor」「ReflectColor」パラメータを調整してください。
+                            </p>
+                          </section>
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              利用規約
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              対象コンテンツの利用権利の販売となります。コンテンツを改変および任意メディアで利用することができます。
+                              ただし下記を禁止します。
+                              他人が利用できるようにし、著作者の販売を阻害すること。
+                              コンテンツ自体に政治的または宗教的もしくは反社会的なメッセージを持たせること。
+                              法人利用をすること。 その他
+                              コンテンツあるいは発生した不利益に対して著作者はなんら責任を負いません。
+                              利用権利は他人に譲渡することができません。
+                              このライセンスにおける解説情報は下記になります。
+                              https://gitlab.com/towelfunnelvrc/towel-license/wikis/
+                              （タオルライセンス 販売用 version0.9）
+                              ＜例外＞　VRChat内でプレゼントとして誰かに贈る（結婚指輪、婚約指輪、その他）目的での購入の場合、贈る相手にライセンス購入してというのも野暮なので、例外的に第三者への譲渡を認めたいと思います。
+                              その場合、使用する予定の人数分（結婚指輪として2人で使うなら2人分とか）をBoostしてくれると嬉しいなっ
+                              ＜2021.6.8追記＞
+                              第三者へのプレゼント用のダウンロードバリエーションを作りましたので、そちらを購入＆ご利用ください。
+                              また第三者へのプレゼントは3人までとさせて頂きます。
+                              ＜2021.6.8追記ここまで＞
+                            </p>
+                          </section>
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              2次配布について
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              再配布・販売は改変の有無を問わず禁止しますが、VKラインストーンを組み込んだアクセサリー等を配布・販売したいというクリエイターの方はご連絡ください。
+                              https://twitter.com/VoxelKei
+                              将来的にいろんな方の作品を展示したアクセサリー専門店のようなワールドが作れたらいいななんて思っています。
+                              「VKラインストーン」およびパッケージに含まれているメッシュデータ、シェーダー、テクスチャの著作権はVoxelKeiに帰属します。
+                              Copyright © 2019 VoxelKei All rights
+                              reserved.
+                            </p>
+                          </section>
+                          <section class=
+                          "[&amp;&gt;iframe]:w-full">
+                            <iframe width="560" height="315" src=
+                            "https://www.youtube.com/embed/uaXpmiQ1SeM"
+                            frameborder="0" allowfullscreen
+                            sandbox="allow-scripts allow-same-origin allow-popups allow-presentation">
+                            </iframe>
+                          </section>
+                        </section>
+                      </div>
                     </div>
                   </div>
                   <section class="container">
@@ -729,9 +829,6 @@
               "shops &amp;&amp; shops.length &gt; 0"></div>
             </div>
           </aside>
-          <script id="json_modules" type="application/json">
-          {"modules":[{"type":"text","title":"内容物・ファイルの説明","content":"unitypackageの中に下記のデータが入っています。\n\n・Rhinestone-round.FBX（メッシュデータ、248ポリゴン）\n・Ring01.FBX（指輪のメッシュデータ、384ポリゴン）\n\n・VKRhinestone.shader（宝石用シェーダー）\n\n・RefractFake_HDR.exr（疑似屈折用マップ）\n\n・VKRhinestone.mat（クリスタルカラー用マテリアル）\n・VKRhinestone.prefab（クリスタルカラー適用済みプレハブ）\n\n・Ring01.prefab（サンプルの指輪プレハブ）\n\n・その他、アクアマリンやルビーなどのカラー設定済みマテリアルおよびプレハブ（10色分）\n\n"},{"type":"text","title":"使い方","content":"unitypackageインポート後、プレハブを任意のシーンに追加してください。\n\n仕組み上、ストーンを大きなサイズにすると正しく見えませんのでご注意ください。\n"},{"type":"text","title":"シェーダーの説明","content":"・2パスで描画しています。\n・Reflection Probeの影響を受けます。\n・GPUインスタンシング対応。\n\n・パラメータ\n「RefractFakeMap」あらかじめ用意した疑似屈折マップ\n「RefractBright」屈折の煌めきの強さ\n「RefractColor」ベースとなるストーンのカラー\n「ReflectColor」反射成分のカラー\n「Smoothness」ストーン表面の滑らかさ（StandardShaderと同様）\n「Metallic」反射成分のカラーとReflectionProbeから受けるカラーのバランス（StandardShaderと同様）\n\n・シーンによってストーンが眩しすぎるもしくは暗すぎるような場合は、「RefractBright」パラメータを調整してください。\n\n・好きな色に改変する場合は、「RefractColor」「ReflectColor」パラメータを調整してください。\n\n"},{"type":"text","title":"利用規約","content":"対象コンテンツの利用権利の販売となります。コンテンツを改変および任意メディアで利用することができます。\n\nただし下記を禁止します。\n\n他人が利用できるようにし、著作者の販売を阻害すること。\nコンテンツ自体に政治的または宗教的もしくは反社会的なメッセージを持たせること。\n法人利用をすること。\n\nその他\n\nコンテンツあるいは発生した不利益に対して著作者はなんら責任を負いません。\n利用権利は他人に譲渡することができません。\n\nこのライセンスにおける解説情報は下記になります。\nhttps://gitlab.com/towelfunnelvrc/towel-license/wikis/\n（タオルライセンス 販売用 version0.9）\n\n\n＜例外＞　VRChat内でプレゼントとして誰かに贈る（結婚指輪、婚約指輪、その他）目的での購入の場合、贈る相手にライセンス購入してというのも野暮なので、例外的に第三者への譲渡を認めたいと思います。\nその場合、使用する予定の人数分（結婚指輪として2人で使うなら2人分とか）をBoostしてくれると嬉しいなっ\n＜2021.6.8追記＞\n第三者へのプレゼント用のダウンロードバリエーションを作りましたので、そちらを購入＆ご利用ください。\nまた第三者へのプレゼントは3人までとさせて頂きます。\n＜2021.6.8追記ここまで＞"},{"type":"text","title":"2次配布について","content":"再配布・販売は改変の有無を問わず禁止しますが、VKラインストーンを組み込んだアクセサリー等を配布・販売したいというクリエイターの方はご連絡ください。\nhttps://twitter.com/VoxelKei\n\n将来的にいろんな方の作品を展示したアクセサリー専門店のようなワールドが作れたらいいななんて思っています。\n\n\n「VKラインストーン」およびパッケージに含まれているメッシュデータ、シェーダー、テクスチャの著作権はVoxelKeiに帰属します。\nCopyright © 2019 VoxelKei All rights reserved.\n"},{"type":"media","content":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/uaXpmiQ1SeM\" frameborder=\"0\" allowfullscreen sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation\"\u003e\u003c/iframe\u003e"}]}
-          </script>
         </div>
       </main>
     </div>
