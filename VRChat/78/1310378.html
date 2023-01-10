@@ -75,9 +75,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/23586338c84e10d4269f.js" defer=
+    "https://asset.booth.pm/assets/332b657446933c008a55.js" defer=
     "defer" nonce=
-    "r5uIQGvtkucfhIeFqBKi5osWPFPN6V7rYHcTE3ev5uA="></script>
+    "x4+DOa4fr60hkQKc5v3YwhsQP4bbkglj2mmz7zmsW1A="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"ピックアップお片付けボタンprefab ","description":"2021/08/13：Unity2019(SDK2)で動くことを確認\n2020/09/14：位置をリセットできない場合の補足を追記\n2020/04/21：Unity2018(VRCSDK2)で使えることを確認\n\nピックアップをつけたオブジェクトが遊んでいるうちにちらかっちゃって片付けるのが大変……\nそんなときにワールドに組み込むことで初期位置に戻す事ができるボタンのセットです\n\nVRCHATでのworld(SDK2)で使うことを想定しています\nワールド制作がちょっとでもわかる人向け\n\n改変や改変しての再配布等自由ですが\nひとに迷惑がかかる使い方はやめてね","url":"https://booth.pm/ja/items/1310378","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"300"},"image":"https://booth.pximg.net/c/620x620/0140b1d9-1e9d-4ac5-82b2-80cb66005de0/i/1310378/90428f5b-5703-41ea-949c-c4255e8fb448_base_resized.jpg"}
     </script>
@@ -91,7 +91,7 @@
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="r5uIQGvtkucfhIeFqBKi5osWPFPN6V7rYHcTE3ev5uA="></script>
+    nonce="x4+DOa4fr60hkQKc5v3YwhsQP4bbkglj2mmz7zmsW1A="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -351,7 +351,8 @@
                       <section class="main-info-column">
                         <div class=
                         "js-market-item-detail-description description">
-                          <p class="autolink u-text-wrap">
+                          <p class=
+                          "autolink break-words font-noto-sans typography-16 whitespace-pre-line">
                             2021/08/13：Unity2019(SDK2)で動くことを確認
                             2020/09/14：位置をリセットできない場合の補足を追記
                             2020/04/21：Unity2018(VRCSDK2)で使えることを確認
@@ -363,8 +364,50 @@
                           </p>
                         </div>
                       </section>
-                      <section class="u-text-wrap page_design" id=
-                      "modules"></section>
+                      <div class="my-40">
+                        <section class=
+                        "grid desktop:gap-40 mobile:gap-24">
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              設定方法・使い方
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              1. UnitypackageをProjectへimportします 2.
+                              EClareYa&gt;prefab&gt;katadukeフォルダにあるprefabファイル"Kataduke
+                              System"をHierarchyへドラッグ＆ドロップ 3. Pick
+                              upのコンポーネントを入れたオブジェクトに"VRC_Scene reset
+                              position"コンポーネントを追加します 4.
+                              Hierarchyに置いたkataduke
+                              System&gt;Kataduke System
+                              base&gt;menu&gt;yes&gt;Button(yes)
+                              を選択。 5. Inspectorの下部にあるOn
+                              Click()の項目を編集します
+                              わかりにくいのでわからなかったら２枚目の画像を見ながらやってね
+                              (a)+を押して入れられる項目を増やします
+                              (b)左側のnone(Object)の部分に"VRC_Scene
+                              reset position"をつけたオブジェクトを入れます
+                              (c)右側のno functionの部分をクリックして
+                              VRC_SceneResetPosition&gt;ResetPosition
+                              を選択 完成。 (中にあるcubeはサンプルなので必要なければ消します)
+                              ・ワールド上での使い方 片付けボタンにトリガーを引く(クリック)します
+                              はい／いいえの選択肢が出てくるので はいを押すと元の位置に戻ります
+                              いいえを押すと選択肢が消えます ・注意
+                              片付ける対象のどれか一つでも誰かが持っている状態だと位置が戻らなくなるようです
+                              この場合、片付けるものを動かし直して(座標を変える)もう一度位置リセットボタンを押すと片付きます
+                              また、上記の関係ですべてを一つのボタンに入れるときちんと戻らないことがあるので
+                              いくつかの分類で小分けすると使いやすいと思います
+                              ※場所を戻すときに間にあるメッシュに引っかかって元の場所にきちんと戻らないケースがあるようです
+                              その場合、オブジェクトを開けた場所に移動させてやってください
+                              ※オブジェクトを最後に持った人(オブジェクトに対するマスター権がある人？)でないとリセットできないパターンがあるようです
+                              その場合１回触ればリセットできると思うので１回持って(ピックアップして)ください
+                              よくわからなかったら Twitter：EClareChan
+                              へ気楽に声をかけてくださいね 分かる範囲で対応します
+                            </p>
+                          </section>
+                        </section>
+                      </div>
                     </div>
                   </div>
                   <section class="container">
@@ -432,9 +475,6 @@
               "shops &amp;&amp; shops.length &gt; 0"></div>
             </div>
           </aside>
-          <script id="json_modules" type="application/json">
-          {"modules":[{"type":"text","title":"設定方法・使い方","content":"1.\nUnitypackageをProjectへimportします\n2.\nEClareYa\u003eprefab\u003ekatadukeフォルダにあるprefabファイル\"Kataduke System\"をHierarchyへドラッグ＆ドロップ\n3.\nPick upのコンポーネントを入れたオブジェクトに\"VRC_Scene reset position\"コンポーネントを追加します\n4.\nHierarchyに置いたkataduke System\u003eKataduke System base\u003emenu\u003eyes\u003eButton(yes)\nを選択。\n5.\nInspectorの下部にあるOn Click()の項目を編集します\nわかりにくいのでわからなかったら２枚目の画像を見ながらやってね\n\n(a)+を押して入れられる項目を増やします\n\n(b)左側のnone(Object)の部分に\"VRC_Scene reset position\"をつけたオブジェクトを入れます\n\n(c)右側のno functionの部分をクリックして\nVRC_SceneResetPosition\u003eResetPosition\nを選択\n\n完成。\n\n(中にあるcubeはサンプルなので必要なければ消します)\n\n・ワールド上での使い方\n片付けボタンにトリガーを引く(クリック)します\nはい／いいえの選択肢が出てくるので\nはいを押すと元の位置に戻ります\nいいえを押すと選択肢が消えます\n\n・注意\n片付ける対象のどれか一つでも誰かが持っている状態だと位置が戻らなくなるようです\nこの場合、片付けるものを動かし直して(座標を変える)もう一度位置リセットボタンを押すと片付きます\n\nまた、上記の関係ですべてを一つのボタンに入れるときちんと戻らないことがあるので\nいくつかの分類で小分けすると使いやすいと思います\n\n※場所を戻すときに間にあるメッシュに引っかかって元の場所にきちんと戻らないケースがあるようです\nその場合、オブジェクトを開けた場所に移動させてやってください\n\n※オブジェクトを最後に持った人(オブジェクトに対するマスター権がある人？)でないとリセットできないパターンがあるようです\nその場合１回触ればリセットできると思うので１回持って(ピックアップして)ください\n\nよくわからなかったら\nTwitter：EClareChan\nへ気楽に声をかけてくださいね\n分かる範囲で対応します"}]}
-          </script>
         </div>
       </main>
     </div>
