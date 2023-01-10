@@ -71,27 +71,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/23586338c84e10d4269f.js" defer=
+    "https://asset.booth.pm/assets/53386a6b39110cc2f7b3.js" defer=
     "defer" nonce=
-    "NgV/zWvvAUfFOQ46+RNNOr03koVyd7PGVvPtg3RhnBE="></script>
+    "QzuwkQmPjUbvNv/t4ShHWVBlWl0zrmFGzPyiovA90Zk="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"ローポリU10mk2【VRChat想定アバター】","description":"VRChatアバター利用想定の人型アバター、ローポリU10mk2です。\n火事屋さんのオリジナルキャラクターU10mk2(ユト)を元に、90年代後半・次世代ゲーム機の雰囲気あるローポリモデルにしました。\n超軽量の爆速アバターロードを求める方、Quest制限を一桁ぐらい勘違いしたい方におすすめ！\n\n\nオリジナルである火事屋さんのU10mk2はこちらで販売中。いっしょにどうぞ。\nhttps://booth.pm/ja/items/1215303\n\nこのモデルではArktoonShaderを利用しています。\nhttps://booth.pm/ja/items/1027997\nこのモデルではBehaviour-Enabledアニメーションを利用しています\nhttps://jellyfish-qrage.booth.pm/items/1034257\n\n\n問い合わせは、私おめが(VRChat Omegamega / Twitter:@Omegamega)までどうぞ。","url":"https://booth.pm/ja/items/1342020","offers":{"priceCurrency":"JPY","@type":"Offer","price":"500"},"image":"https://booth.pximg.net/c/620x620/b6fb72cc-17a7-478b-975f-20cb8ced9702/i/1342020/753af25a-ec6b-4c0e-b982-09b530eeb7e4_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="NgV/zWvvAUfFOQ46+RNNOr03koVyd7PGVvPtg3RhnBE="></script>
+    nonce="QzuwkQmPjUbvNv/t4ShHWVBlWl0zrmFGzPyiovA90Zk="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -271,6 +293,16 @@
                       <div class=
                       "desktop:py-[20px] mobile:py-[16px]" id=
                       "js-item-share-buttons"></div>
+                      <h5 class=
+                      "u-tpg-caption1 pt-12 shop-theme-text--default flex items-center">
+                        <a target="_blank" class=
+                        "ml-4 nav-reverse shop-theme-text--default"
+                        rel="noopener" href=
+                        "https://booth.pixiv.help/hc/ja/sections/13288068355225">
+                        「ギフトとして贈る」とは</a>
+                      </h5>
+                      <div class="!p-0" id=
+                      "js-item-payment-and-shipping-terms"></div>
                     </div>
                     <div class="u-order-0 l-col-3of5 u-pr-500">
                       <div class="primary-image-area">
@@ -327,7 +359,8 @@
                       <section class="main-info-column">
                         <div class=
                         "js-market-item-detail-description description">
-                          <p class="autolink u-text-wrap">
+                          <p class=
+                          "autolink break-words font-noto-sans typography-16 whitespace-pre-line">
                             VRChatアバター利用想定の人型アバター、ローポリU10mk2です。
                             火事屋さんのオリジナルキャラクターU10mk2(ユト)を元に、90年代後半・次世代ゲーム機の雰囲気あるローポリモデルにしました。
                             超軽量の爆速アバターロードを求める方、Quest制限を一桁ぐらい勘違いしたい方におすすめ！
@@ -342,8 +375,112 @@
                           </p>
                         </div>
                       </section>
-                      <section class="u-text-wrap page_design" id=
-                      "modules"></section>
+                      <div class="my-40">
+                        <section class=
+                        "grid desktop:gap-40 mobile:gap-24">
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              性能諸元
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              ・646△　ボーン26　64x64pxテクスチャ1枚
+                              ・アニメーションオーバーライドによる表情6種を設定済み
+                              　※指がないためジェスチャーは出来ません
+                              ・フルトラ/リップシンク/目パチアニメ対応
+                              ・アイトラッキングなし//DynamicBone非対応/特殊エモートなし
+                              ・ArktoonShaderを利用 ・VRC Avatar
+                              OverallPerformance : Good/Excellent
+                              　頭リングと目パチアニメを外すとExcellentになります
+                              ・現時点ではQuest未検証ですが、↑同様に加えてシェーダーを変更することでアップロードまでは確認しています。
+                              ・SDK2でセットアップ済み
+                            </p>
+                          </section>
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              ファイル構成
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              lowpolyU10mk2_vx.x.unitypackage
+                              　VRC向けセットアップ済みパッケージになります。ArktoonShader同梱。
+                              　セットアップ済みPrefab及びアップロード用Scene入り。
+                              　事前にVRC
+                              SDKをインポートしたプロジェクトにD&amp;Dすれば、そのままVRCへアップロードできる構成です。
+                              　基本的にはこのパッケージにほぼすべてが入ってるはずです。
+                              　u10_lowpolyは標準アバターです。AvatarPerformance
+                              Goodになっています。
+                              　末尾_excellentがついてる方は、軽量版でAvatarPerformace
+                              Excellentになっています。
+                              　Questアップロードする場合はこちらからMaterial/Shaderを変更がオススメです
+                              u10_lowpoly.fbx 　(結合された方の)モデルデータです。
+                              u10_lowpoly_separated.fbx
+                              　未結合のモデルデータです tex.png 　メインテクスチャ。
+                              tex_em.png 　Emissionテクスチャ。発光演出用。
+                              tex.psd 　メインテクスチャの編集用。
+                              　部位ごとにレイヤー分けしてあります。 tex_em.psd
+                              　Emissionテクスチャの編集用。
+                              　マスクレイヤーがあるので、メインテクスチャを統合したコピーをその下に入れると手っ取り早く作れるはず。
+                            </p>
+                          </section>
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              更新履歴
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              2019/05/02 V0.9 試験公開版 2019/05/12
+                              Ver1.0 　モデルfbx、構造変更
+                              　　シェーダーで片面レンダリングに対応しました。その結果90△ほど増えています。
+                              　　頭リング、武器リング、髪の毛を統合しました。武器と頭リングについてはblendshapeで非表示にできます。
+                              　モデルfbx、UVの修正 　　顔とおなかに縦線が出なくなりました。
+                              　　膝、肘などの関節部のUVが、それぞれ足、腕のUVと重複していたのを、別UV領域に割り当てました。
+                              　　(色変更で関節部の色も併せて変わってしまうのを防ぎます) 　表情追加
+                              　　ウインクを追加しました。 　目パチアニメ追加 　　調べてがんばった。
+                              　改変用psdの追加
+                              　　普段UV展開している人にはギチギチ構成だけどレイヤー名でなんとなくわかってほしい(願望)
+                              2019/05/13 Ver1.0.1 　モデルfbx、バランス修正
+                              　　ウエポンリング周辺を調整 2019/05/13 Ver1.0.2
+                              　モデルfbx、ミス修正
+                              　　口のブレンドシェイプが膝に影響していたのを修正
+                            </p>
+                          </section>
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              規約
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              本モデルを購入した時点で規約に同意したものとします。規約は随時変更される可能性があり、最新のものが適用されます。
+                              2019/05/02 初版 ・モデル変換、改変、パーツ転用:許可
+                              Modification: Allow 　制限しません 　 ・再配布:禁止
+                              Redistribution Prohibited
+                              　データの再配布は改造モデル含め禁止です。 ・アバター利用:許可 Use
+                              for Online Avator: Allow(Personal Use
+                              only)
+                              　VRChat、TSO、ニコニ立体等、3Dモデルデータの共有サイトについてはモデルDL不可/閲覧のみ可能/ユーザ本人のみ利用可な形態での利用を許可します。
+                              　アバターペデスタル等、購入していないユーザが利用できる形態を禁止します
+                              ・法人利用:原則問い合わせ Corporate use: Ask me
+                              　お問い合わせください(twitter@omegamega)
+                              ・営利利用:許可(条件付き) Commercial Use:
+                              Allow(Allow conditionally)
+                              　動画、スクリーンショット、ゲーム組み込み(モデルを取り出しづらい形)の利用を許可します
+                              　Vtuber等キャラクタ人格を独自に付ける利用の場合は、「名前の変更」「外見の変更」をし、オリジナルと区別できるようにしてください。個人での収益化利用を許可します
+                              ・R18/R18Gコンテンツへの利用は許可します R18/R18G:
+                              Allow 　ほどほどにね
+                              ・政治、宗教活動、誹謗中傷目的での使用を禁止します。 Use for
+                              Politics, religion and defamation:
+                              Diallow ・モデル著作権はおめがに帰属します
+                              ・免責事項。当データを使用して発生したすべての問題や損害について、作者おめがは何らの責任を負うものではありません
+                              Use at your own risk
+                            </p>
+                          </section>
+                        </section>
+                      </div>
                     </div>
                   </div>
                   <section class="container">
@@ -435,9 +572,6 @@
               "shops &amp;&amp; shops.length &gt; 0"></div>
             </div>
           </aside>
-          <script id="json_modules" type="application/json">
-          {"modules":[{"type":"text","title":"性能諸元","content":"・646△　ボーン26　64x64pxテクスチャ1枚\n・アニメーションオーバーライドによる表情6種を設定済み\n　※指がないためジェスチャーは出来ません\n・フルトラ/リップシンク/目パチアニメ対応\n・アイトラッキングなし//DynamicBone非対応/特殊エモートなし\n・ArktoonShaderを利用\n・VRC Avatar OverallPerformance : Good/Excellent\n　頭リングと目パチアニメを外すとExcellentになります\n・現時点ではQuest未検証ですが、↑同様に加えてシェーダーを変更することでアップロードまでは確認しています。\n・SDK2でセットアップ済み"},{"type":"text","title":"ファイル構成","content":"lowpolyU10mk2_vx.x.unitypackage\n　VRC向けセットアップ済みパッケージになります。ArktoonShader同梱。\n　セットアップ済みPrefab及びアップロード用Scene入り。\n　事前にVRC SDKをインポートしたプロジェクトにD\u0026Dすれば、そのままVRCへアップロードできる構成です。\n　基本的にはこのパッケージにほぼすべてが入ってるはずです。\n\n　u10_lowpolyは標準アバターです。AvatarPerformance Goodになっています。\n　末尾_excellentがついてる方は、軽量版でAvatarPerformace Excellentになっています。\n　Questアップロードする場合はこちらからMaterial/Shaderを変更がオススメです\n\nu10_lowpoly.fbx\n　(結合された方の)モデルデータです。\nu10_lowpoly_separated.fbx\n　未結合のモデルデータです\n\ntex.png\n　メインテクスチャ。\ntex_em.png\n　Emissionテクスチャ。発光演出用。\n\ntex.psd\n　メインテクスチャの編集用。\n　部位ごとにレイヤー分けしてあります。\ntex_em.psd\n　Emissionテクスチャの編集用。\n　マスクレイヤーがあるので、メインテクスチャを統合したコピーをその下に入れると手っ取り早く作れるはず。"},{"type":"text","title":"更新履歴","content":"2019/05/02 V0.9 試験公開版\n\n2019/05/12 Ver1.0\n　モデルfbx、構造変更\n　　シェーダーで片面レンダリングに対応しました。その結果90△ほど増えています。\n　　頭リング、武器リング、髪の毛を統合しました。武器と頭リングについてはblendshapeで非表示にできます。\n　モデルfbx、UVの修正\n　　顔とおなかに縦線が出なくなりました。\n　　膝、肘などの関節部のUVが、それぞれ足、腕のUVと重複していたのを、別UV領域に割り当てました。\n　　(色変更で関節部の色も併せて変わってしまうのを防ぎます)\n　表情追加\n　　ウインクを追加しました。\n　目パチアニメ追加\n　　調べてがんばった。\n　改変用psdの追加\n　　普段UV展開している人にはギチギチ構成だけどレイヤー名でなんとなくわかってほしい(願望)\n\n2019/05/13 Ver1.0.1\n　モデルfbx、バランス修正\n　　ウエポンリング周辺を調整\n\n2019/05/13 Ver1.0.2\n　モデルfbx、ミス修正\n　　口のブレンドシェイプが膝に影響していたのを修正"},{"type":"text","title":"規約","content":"本モデルを購入した時点で規約に同意したものとします。規約は随時変更される可能性があり、最新のものが適用されます。\n\n2019/05/02 初版\n\n・モデル変換、改変、パーツ転用:許可 Modification: Allow\n　制限しません\n　\n・再配布:禁止 Redistribution Prohibited\n　データの再配布は改造モデル含め禁止です。\n\n・アバター利用:許可 Use for Online Avator: Allow(Personal Use only)\n　VRChat、TSO、ニコニ立体等、3Dモデルデータの共有サイトについてはモデルDL不可/閲覧のみ可能/ユーザ本人のみ利用可な形態での利用を許可します。\n　アバターペデスタル等、購入していないユーザが利用できる形態を禁止します\n\n・法人利用:原則問い合わせ Corporate use: Ask me\n　お問い合わせください(twitter@omegamega)\n\n・営利利用:許可(条件付き) Commercial Use: Allow(Allow conditionally)\n　動画、スクリーンショット、ゲーム組み込み(モデルを取り出しづらい形)の利用を許可します\n　Vtuber等キャラクタ人格を独自に付ける利用の場合は、「名前の変更」「外見の変更」をし、オリジナルと区別できるようにしてください。個人での収益化利用を許可します\n\n・R18/R18Gコンテンツへの利用は許可します R18/R18G: Allow\n　ほどほどにね\n\n・政治、宗教活動、誹謗中傷目的での使用を禁止します。 Use for Politics, religion and defamation: Diallow\n\n・モデル著作権はおめがに帰属します\n\n・免責事項。当データを使用して発生したすべての問題や損害について、作者おめがは何らの責任を負うものではありません Use at your own risk"}]}
-          </script>
         </div>
       </main>
     </div>
