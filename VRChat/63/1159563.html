@@ -75,9 +75,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/23586338c84e10d4269f.js" defer=
+    "https://asset.booth.pm/assets/53386a6b39110cc2f7b3.js" defer=
     "defer" nonce=
-    "/0icwfBhr/wDu7OM6Zxt3DhdtGFBLqj9XUgqYv6oP7w="></script>
+    "oGFfhWmGaALzcWYCwlmMamQ94nfbKagsYt77e+sT/JA="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"[VRChat] 紙吹雪／ビラ配りパーティクル","description":"大量の紙をばらまくパーティクル(+ 動きをつけるShader)です。デフォルトで床や壁との衝突判定がついています。基本的には、魔法の演出等での利用を想定していますが、それ以外でもご自由にお使いいただいてかまいません。\n一例ですが、ご自身でビラ配り用画像を作れば、VRChatでのバーチャルマーケット出展の宣伝やイベントの告知などにもご利用いただけると思います。\n\nLookingGlassでの使用例\nhttps://twitter.com/sunafukin_vrc/status/1091555709160906752\n\n年賀状を配る例\nhttps://twitter.com/sunafukin_vrc/status/1079998418041266176\n\n※2019/01/06 動きを調整しやすいように時間経過で揺れ方のパターンを変えないように修正","url":"https://booth.pm/ja/items/1159563","offers":{"priceCurrency":"JPY","@type":"Offer","price":"0"},"image":"https://booth.pximg.net/c/620x620/6bb945b6-60a3-4e57-9454-44e6bfd4032b/i/1159563/b7ced36e-2c66-44f9-8c92-4932b5762a90_base_resized.jpg"}
     </script>
@@ -91,7 +91,7 @@
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="/0icwfBhr/wDu7OM6Zxt3DhdtGFBLqj9XUgqYv6oP7w="></script>
+    nonce="oGFfhWmGaALzcWYCwlmMamQ94nfbKagsYt77e+sT/JA="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -221,6 +221,16 @@
                       <div class=
                       "desktop:py-[20px] mobile:py-[16px]" id=
                       "js-item-share-buttons"></div>
+                      <h5 class=
+                      "u-tpg-caption1 pt-12 shop-theme-text--default flex items-center">
+                        <a target="_blank" class=
+                        "ml-4 nav-reverse shop-theme-text--default"
+                        rel="noopener" href=
+                        "https://booth.pixiv.help/hc/ja/sections/13288068355225">
+                        「ギフトとして贈る」とは</a>
+                      </h5>
+                      <div class="!p-0" id=
+                      "js-item-payment-and-shipping-terms"></div>
                     </div>
                     <div class="u-order-0 l-col-3of5 u-pr-500">
                       <div class="primary-image-area">
@@ -262,7 +272,8 @@
                       <section class="main-info-column">
                         <div class=
                         "js-market-item-detail-description description">
-                          <p class="autolink u-text-wrap">
+                          <p class=
+                          "autolink break-words font-noto-sans typography-16 whitespace-pre-line">
                             大量の紙をばらまくパーティクル(+
                             動きをつけるShader)です。デフォルトで床や壁との衝突判定がついています。基本的には、魔法の演出等での利用を想定していますが、それ以外でもご自由にお使いいただいてかまいません。
                             一例ですが、ご自身でビラ配り用画像を作れば、VRChatでのバーチャルマーケット出展の宣伝やイベントの告知などにもご利用いただけると思います。
@@ -275,8 +286,47 @@
                           </p>
                         </div>
                       </section>
-                      <section class="u-text-wrap page_design" id=
-                      "modules"></section>
+                      <div class="my-40">
+                        <section class=
+                        "grid desktop:gap-40 mobile:gap-24">
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              利用方法
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              ・Unityへの取り込み
+                              unity.package形式で配布しております。ご自身のProjectにインポートしてお使いください。
+                              ・テクスチャの変更 Particle
+                              Systemに設定しているテクスチャを、お好きな画像（例えば、呪文の描かれた本の一ページなど）に変更してみてください。
+                              ・Particle Systemの調整 アバターに仕込む際は”Start
+                              Speed”や”Start
+                              Size”を調整した方がいいかもしれません。また、現状ではMax
+                              Particlesを多め(Max Particles =
+                              1000)に設定しています。必要に応じて調整してください。
+                              なお、他のオブジェクトとの衝突判定が不要な場合はCollisionのチェックを外してください。
+                              ・応用：Shaderの調整 Particle Systemの”Start
+                              Size”などを変更後、紙吹雪の動きがおかしくなる場合があるかもしれません。その場合はWave
+                              Paper MaterialのInspectorから"Wave Paper
+                              Shader"の調整を行ってください。 具体的には、Wave
+                              IntensityとWave Frequency
+                              Offsetの2つのパラメータを調整して、お好みの動きを追求してみてください。
+                            </p>
+                          </section>
+                          <section class="shop__text-color">
+                            <h2 class=
+                            "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
+                              商用利用・改変・解析・再配布など
+                            </h2>
+                            <p class=
+                            "break-words font-noto-sans js-autolink !m-0 !p-0 whitespace-pre-line typography-14 desktop:typography-16">
+                              どうぞお好きに行ってください。
+                              利用した旨をご記載いただけると嬉しいですが、ご面倒だと感じる場合は不要です。テクスチャのみ変更したものを利用・再配布する際も、（この商品に限っては）記載や報告の義務はありません。
+                            </p>
+                          </section>
+                        </section>
+                      </div>
                     </div>
                   </div>
                   <section class="container">
@@ -368,9 +418,6 @@
               "shops &amp;&amp; shops.length &gt; 0"></div>
             </div>
           </aside>
-          <script id="json_modules" type="application/json">
-          {"modules":[{"type":"text","title":"利用方法","content":"・Unityへの取り込み\nunity.package形式で配布しております。ご自身のProjectにインポートしてお使いください。\n\n・テクスチャの変更\nParticle Systemに設定しているテクスチャを、お好きな画像（例えば、呪文の描かれた本の一ページなど）に変更してみてください。\n\n・Particle Systemの調整\nアバターに仕込む際は”Start Speed”や”Start Size”を調整した方がいいかもしれません。また、現状ではMax Particlesを多め(Max Particles = 1000)に設定しています。必要に応じて調整してください。\nなお、他のオブジェクトとの衝突判定が不要な場合はCollisionのチェックを外してください。\n\n・応用：Shaderの調整\nParticle Systemの”Start Size”などを変更後、紙吹雪の動きがおかしくなる場合があるかもしれません。その場合はWave Paper MaterialのInspectorから\"Wave Paper Shader\"の調整を行ってください。\n具体的には、Wave IntensityとWave Frequency Offsetの2つのパラメータを調整して、お好みの動きを追求してみてください。\n"},{"type":"text","title":"商用利用・改変・解析・再配布など","content":"どうぞお好きに行ってください。\n利用した旨をご記載いただけると嬉しいですが、ご面倒だと感じる場合は不要です。テクスチャのみ変更したものを利用・再配布する際も、（この商品に限っては）記載や報告の義務はありません。"}]}
-          </script>
         </div>
       </main>
     </div>
