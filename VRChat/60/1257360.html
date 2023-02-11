@@ -70,27 +70,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
     "https://asset.booth.pm/assets/1da82f9ce65e58aefc74.js" defer=
     "defer" nonce=
-    "asnqr5LRiSaU77wC1gYcXSpSBF0ABIWhSZkLIEx7/64="></script>
+    "9UuOM9TqbThfl1vNjf99uhSXTAfPEgSgCvL5Q0BmqA0="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"ウォードの根石箱","description":"1. モデル概要\n3Dモデル【ウォードの根石箱】\n\n根石と呼ばれる大地のエネルギーを蓄えた魔石を中心に据え、治癒の効果を持つルーンが刻まれた指輪にはめ込んだガラスの箱。\n植物の根を石に\"抱かせる\"ことで、長期間生育することができる。\n本来はプラントハンターが貴重な魔法植物を持ち帰るのに使用されていたが、現在では一般市民の園芸としても広まりつつある。\n根石・植物・指輪の最小限の構成で詫び寂びを表現するのが粋とされるようだ。\n\n\n2. 使用方法\nunityに導入する場合はunitypackageファイルを使用してください。\n\n\nAssetes\u003ematerial\u003emagic_circle配下のシェーダーmagic_circleのmapsを変更することで魔法陣の絵柄を変えられます。\nまた、上記はshaderforgeを使用して作成していますので、導入していれば改変が可能です。\n\n3. 3Dモデル　ウォードの根石箱　利用規約\n\n【はじめに】\n この利用規約(以下「本規約」といいます。)は本データ使用者(以下「ユーザー」といいます。)が本データを利用する場合の一切の行為に適用されます。\n 本規約は本データの利用条件を定めるものです。\n ユーザーは本データを利用することにより、本規約の全ての記載内容について同意したものとみなします。\n\n\n【本規約の変更】\n 本規約は製作者の判断によりいつでも任意に変更できることとします。\n 変更後の本規約は、製作者がその内容を公表した時点より効力を生じるものとします。\n\n\n【利用環境の整備】\n 本データを利用するために必要なあらゆるハード・ソフトウェア等の整備はユーザーの負担と責任において行うものとします。\n\n\n【利用許可範囲】\n VRChat、VirtualCast、ゲーム、映像等のコンテンツへの利用を許可します。\n 本データを加工しての利用を許可します。\n\n\n【本データの知的財産権】\n ユーザーは製作者の知的財産権を侵害しない義務を負います。\n 本データの知的財産権及びそれらに含まれる全ての権利は製作者に帰属するものとします。\n 本データを加工しても著作権は製作者に帰属するものとします。\n\n\n【禁止事項】\n 本データ、加工データ、データの一部を配布や販売する行為を禁止します。\n 個人や団体への誹謗中傷、反社会的行為に利用する行為を禁止します。\n 第三者の権利を侵害する行為を禁止します。\n その他、作者が不適切と判断する行為を禁止します。\n\n\n【免責事項】\n 製作者は本データについて技術的不正確さがないこと、不具合が生じないことを一切保証しません。\n ユーザーまたは第三者が本データを利用して生じたいかなる不利益も作者は一切責任を負いません。\n\n\n【問い合わせ先】\nhttps://twitter.com/Akatuki_aya\n\n\n更新履歴\nVer1.0 新規作成","url":"https://booth.pm/ja/items/1257360","offers":{"priceCurrency":"JPY","@type":"Offer","price":"300"},"image":"https://booth.pximg.net/c/620x620/a9382ad0-0431-4829-85ba-4973233e956b/i/1257360/b1d3b5e5-ad6b-4937-a423-12250979dfea_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="asnqr5LRiSaU77wC1gYcXSpSBF0ABIWhSZkLIEx7/64="></script>
+    nonce="9UuOM9TqbThfl1vNjf99uhSXTAfPEgSgCvL5Q0BmqA0="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
