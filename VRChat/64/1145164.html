@@ -77,7 +77,7 @@
     <script src=
     "https://asset.booth.pm/assets/1da82f9ce65e58aefc74.js" defer=
     "defer" nonce=
-    "XysB8409dmfdCn0h+NZs1EkaO3PMS484c/IlqUTNVrU="></script>
+    "Cd3UcqZP9cQzVSRlaJzU9N0JBfD/kSQrkpOBUf2jlms="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"【VRC想定】EasyColorChangeシェーダー","description":"簡単な色改変がUnity内で完結してできるシェーダーです。\nUnlit版とFlatLitToon版がありますが、どんなシェーダーでも比較的簡単に対応させることができると思います。\n\n\nなにかあればこちらまで\nTwitter : @HhotateA\nDiscord : hhotatea#0333\n\n【追加プロパティ】\n\n通常版-テクスチャをモノクロに戻してから色を付けなおす処理をしています。\n①BlackColor\t:テクスチャの濃いところの色です。\n②WhiteColor\t:テクスチャの薄いところの色です。\n\nAdvance版\n①RedColor0\t:赤色成分の高いところの色です。\n②RedColor1\t:赤色成分の低いところの色です。\n③GreenColor0\t:緑色成分の高いところの色です。\n④GreenColor1\t:緑色成分の低いところの色です。\n⑤BlueColor0\t:青色成分の高いところの色です。\n⑥BlueColor1\t:青色成分の低いところの色です。\n⑦明るさの補正\t:まんまです。任意に調節してください。\n\n\n【他のシェーダーに機能を追加する場合】\n\n通常版\n①機能を追加したいシェーダーファイルをEasyColorChangeフォルダに入れる。\n②シェーダーを開きプロパティ内に\n\n\t\t_color1 (\"BlackColor\",color) = (0.0,0.0,0.0,1.0)\n\t\t_color2 (\"WhiteColor\",color) = (1.0,1.0,1.0,1.0)\n\n　と追加する\n③CGPROGRAMと書いてある行をすべて探して、改行した次の行に\n\n\t\t#include \"ColorChange.cginc\"\n\n　と追加する。\n④tex2D(_MainTex　みたいなことが書いてある行をすべて探して、改行した次の行で\n\n\t\t_MainTex_var = colchange1(_MainTex_var);\n\n　と追加する。(変数名は変える)\n\nAdvance版\n①機能を追加したいシェーダーファイルをEasyColorChangeフォルダに入れる。\n②シェーダーを開きプロパティ内に\n\n\t\t_colorR1 (\"RedColor0\",color) = (0.0,0.0,0.0,1.0)\n\t\t_colorR2 (\"RedColor1\",color) = (1.0,0.0,0.0,1.0)\n\t\t_colorG1 (\"GreenColor0\",color) = (0.0,0.0,0.0,1.0)\n\t\t_colorG2 (\"GreenColor1\",color) = (0.0,1.0,0.0,1.0)\n\t\t_colorB1 (\"BlueColor0\",color) = (0.0,0.0,0.0,1.0)\n\t\t_colorB2 (\"BlueColor1\",color) = (0.0,0.0,1.0,1.0)\n\t\t_emis (\"明るさ補正\",Range(1,3)) = 1\n\n　と追加する\n③CGPROGRAMと書いてある行をすべて探して、改行した次の行に\n\n\t\t#include \"ColorChange.cginc\"\n\n　と追加する。\n④tex2D(_MainTex　みたいなことが書いてある行をすべて探して、改行した次の行で\n\n\t\t_MainTex_var = colchange2(_MainTex_var);\n\n　と追加する。(変数名は変える)\n","url":"https://booth.pm/ja/items/1145164","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"100"},"image":"https://booth.pximg.net/c/620x620/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1145164/f4107560-2b5f-4a76-a491-b0ceefb71be0_base_resized.jpg"}
     </script>
@@ -91,7 +91,7 @@
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="XysB8409dmfdCn0h+NZs1EkaO3PMS484c/IlqUTNVrU="></script>
+    nonce="Cd3UcqZP9cQzVSRlaJzU9N0JBfD/kSQrkpOBUf2jlms="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
