@@ -71,27 +71,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
     "https://asset.booth.pm/assets/1da82f9ce65e58aefc74.js" defer=
     "defer" nonce=
-    "hq7Bxx5CUV5pggkzHZvP4i6JNvoqcGFX4M/omGrbUhk="></script>
+    "ogtjnZTxUZCufobgmbQ8IDSyWSbc8ZgEVedOHFsj8/o="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"(無料版あり)VRChat in Here[インスタンス移動時にワールド名を自動ツイート]","description":"■VRChat in Here\n\n■概要\nインスタンスを移動したとき、移動先のワールド名をTwitterへ投稿します。\nインスタンスがPublicまたはFriends+、Friends Onlyの場合はJoin用URLを投稿することもできます。\nJoin用URLを使用して他の人がインスタンスへ直接Joinできます。\n\n■動作確認環境\n  - Windows 10(64bit)\n  - VRChat(Steam版)\n    - デスクトップモード\n    - VRモード\n※Oculus Store版VRChatは動作未確認です。\n※Oculus Questは非対応です。\n\n使い方の説明は以下のURLから確認ください。\nhttps://docs.google.com/document/d/1JfuzEuna63hocOA4Hk_Yp_XX_0LZMwn1OSVLsVzAlho/edit?usp=sharing\n\n■その他\n作者：NyaHo( https://twitter.com/NyaHo_vrc )\n\nご意見や感想、不具合の報告などのご連絡は上記のTwitterアカウントへお願いします。\n\n配布場所：https://nyaho.booth.pm/\n\n■免責事項\n本アプリケーションを使用したことにより発生したいかなるトラブルについて、作者は責任を負わないものとします。\n\n■更新履歴\n2019/4/3 v1 初版リリース\n2019/4/5 v1.1 不具合修正\n同じワールドへ入り直すとアプリがエラー終了する不具合を修正\n2019/4/8 v1.2 ワールド名指定ミュート機能を追加\n2019/4/15 v1.21 ワールド名指定ミュート機能のバグによりアプリがエラー終了する不具合を修正\n2019/4/16 v1.22 アプリ起動時にエラー終了する不具合を修正\n2019/7/5 v1.23 Twitterログイン手順を改善、ドキュメントを整理\n2020/3/22 v1.24 Twitterログインの処理を改善、Join用URL機能を使用する際に説明文を表示\n2021/2/14 v1.25 VRChatログファイルの文字化けにより本アプリが正常に動作しない不具合へ対応。Join用URLをVRChat公式サイトのものへ変更。\n2022/4/3 v1.26 ワールド名にアットマークが含まれる場合、意図せずリプライが送信される不具合を修正。Join用URLが不完全となる不具合の修正。\n2022/11/3 v1.27 アプリの設定ファイルを直接編集するとリプライが送信できる事象を修正。\n2023/1/7 v1.28 グループインスタンスに対応","url":"https://booth.pm/ja/items/1301616","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"100"},"image":"https://booth.pximg.net/c/620x620/030f9ffc-6c5f-4905-a203-71e35f0d118a/i/1301616/20e3a32d-1565-466c-af2e-e42d62042d1a_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="hq7Bxx5CUV5pggkzHZvP4i6JNvoqcGFX4M/omGrbUhk="></script>
+    nonce="ogtjnZTxUZCufobgmbQ8IDSyWSbc8ZgEVedOHFsj8/o="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
