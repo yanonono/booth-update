@@ -71,27 +71,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/c75632db58dfcffbf4f1.js" defer=
+    "https://asset.booth.pm/assets/bceb30d98852c65ad177.js" defer=
     "defer" nonce=
-    "kW6i7L8laqSWNMqR9FfzP3rVbb22YghglEXca1SofPA="></script>
+    "irj5yfZdCNUfFsAutEOASllin+1XXgZQYdG8wbIkTi8="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"VRChat用ボクセルアバターを作ろう","description":"形式　　　：PDF\nボリューム：243ページ、約47000字\n※説明用の図を多用しているため、ページ数が多くなっています。\n\nVRChatで自分だけのアバターが欲しいという方へ\nボクセルを使うという選択肢を紹介したくて作成しました。\nMagicaVoxelの使い方、モデリングにはじまって、\nBlenderで一からボーン作成、ウェイト設定、\nUnityによるアバターアップロードまでを\n実際に自分が作業した画像記録とともに説明します。\n初めての方にもわかりやすいように、次にどこを触るか等は\n赤枠・赤字で明示しました。\n\n更新履歴\n2018/06/07 Ver.1.0 初版作成・公開\n2018/06/09 Ver.1.1 Appendix、一度作成したアーマチュアを使いまわすを追加\n2018/06/19 Ver.1.2 Appendix、MagicaVoxel:Editの詳細を追加\n2018/06/28 Ver.1.3 Appendix、アバターにまばたきをさせるを追加\n2018/08/07 Ver.1.4 購入された方からのフィードバックを反映\n                   ・Blenderはzip版ではなくインストーラ版を使用してPCにインストールすること\n                   ・「モデルをUnityに取り込む」にて、UnityがD\u0026Dを受け付けない場合の注意書きを追加\n                   ・誤字の修正\n2018/12/20 Ver.1.5 VRChatがUnity2017.4.15f1に移行したことにより全体を見直し\n                   VRChatの仕様変更によりAppendix アバターにまばたきをさせるを削除\n2019/04/14 Ver.1.6 ポリゴンの上限の記述を70000に修正\n                   Appendix、Blenderでボクセルモデルを作ってみるを追加\n2019/10/18 Ver.1.7 VRChatがUnity 2017.4.28f1に移行したことにより全体を見直し\n                   MagicaVoxelのUI変更、エクスポート仕様変更による作業工程の変更に対応\n2020/04/12 Ver.1.8 Blender2.8移行に伴い、関連する部分の記述を見直し\n2021/07/21 Ver.1.9 MagicaVoxel 0.99.6.2、VRChat SDK3に対応するため全体を見直し\n\n※購入いただいた方は過去バージョンもDLできるので、削除したコンテンツも閲覧は可能です","url":"https://booth.pm/ja/items/893612","offers":{"priceCurrency":"JPY","@type":"Offer","price":"800"},"image":"https://booth.pximg.net/c/620x620/46ced292-d0fc-402a-bc59-ac3d2f44e6b7/i/893612/b96d08f7-25eb-4164-bca9-1dfa24f2871f_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="kW6i7L8laqSWNMqR9FfzP3rVbb22YghglEXca1SofPA="></script>
+    nonce="irj5yfZdCNUfFsAutEOASllin+1XXgZQYdG8wbIkTi8="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
