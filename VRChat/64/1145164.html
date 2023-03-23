@@ -75,9 +75,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/b5d6ffc2795437615bc8.js" defer=
+    "https://asset.booth.pm/assets/9b28fd26c0de07a62038.js" defer=
     "defer" nonce=
-    "rExTwARjpPDzJXP2i1qwrDU1Ue/YM3D42C9M1F6A9qM="></script>
+    "gvegHtbv6OLzwuMRtkjUIhoLI8O0OoFKlm+WtoLvo88="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"【VRC想定】EasyColorChangeシェーダー","description":"簡単な色改変がUnity内で完結してできるシェーダーです。\nUnlit版とFlatLitToon版がありますが、どんなシェーダーでも比較的簡単に対応させることができると思います。\n\n\nなにかあればこちらまで\nTwitter : @HhotateA\nDiscord : hhotatea#0333\n\n【追加プロパティ】\n\n通常版-テクスチャをモノクロに戻してから色を付けなおす処理をしています。\n①BlackColor\t:テクスチャの濃いところの色です。\n②WhiteColor\t:テクスチャの薄いところの色です。\n\nAdvance版\n①RedColor0\t:赤色成分の高いところの色です。\n②RedColor1\t:赤色成分の低いところの色です。\n③GreenColor0\t:緑色成分の高いところの色です。\n④GreenColor1\t:緑色成分の低いところの色です。\n⑤BlueColor0\t:青色成分の高いところの色です。\n⑥BlueColor1\t:青色成分の低いところの色です。\n⑦明るさの補正\t:まんまです。任意に調節してください。\n\n\n【他のシェーダーに機能を追加する場合】\n\n通常版\n①機能を追加したいシェーダーファイルをEasyColorChangeフォルダに入れる。\n②シェーダーを開きプロパティ内に\n\n\t\t_color1 (\"BlackColor\",color) = (0.0,0.0,0.0,1.0)\n\t\t_color2 (\"WhiteColor\",color) = (1.0,1.0,1.0,1.0)\n\n　と追加する\n③CGPROGRAMと書いてある行をすべて探して、改行した次の行に\n\n\t\t#include \"ColorChange.cginc\"\n\n　と追加する。\n④tex2D(_MainTex　みたいなことが書いてある行をすべて探して、改行した次の行で\n\n\t\t_MainTex_var = colchange1(_MainTex_var);\n\n　と追加する。(変数名は変える)\n\nAdvance版\n①機能を追加したいシェーダーファイルをEasyColorChangeフォルダに入れる。\n②シェーダーを開きプロパティ内に\n\n\t\t_colorR1 (\"RedColor0\",color) = (0.0,0.0,0.0,1.0)\n\t\t_colorR2 (\"RedColor1\",color) = (1.0,0.0,0.0,1.0)\n\t\t_colorG1 (\"GreenColor0\",color) = (0.0,0.0,0.0,1.0)\n\t\t_colorG2 (\"GreenColor1\",color) = (0.0,1.0,0.0,1.0)\n\t\t_colorB1 (\"BlueColor0\",color) = (0.0,0.0,0.0,1.0)\n\t\t_colorB2 (\"BlueColor1\",color) = (0.0,0.0,1.0,1.0)\n\t\t_emis (\"明るさ補正\",Range(1,3)) = 1\n\n　と追加する\n③CGPROGRAMと書いてある行をすべて探して、改行した次の行に\n\n\t\t#include \"ColorChange.cginc\"\n\n　と追加する。\n④tex2D(_MainTex　みたいなことが書いてある行をすべて探して、改行した次の行で\n\n\t\t_MainTex_var = colchange2(_MainTex_var);\n\n　と追加する。(変数名は変える)\n","url":"https://booth.pm/ja/items/1145164","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"100"},"image":"https://booth.pximg.net/c/620x620/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1145164/f4107560-2b5f-4a76-a491-b0ceefb71be0_base_resized.jpg"}
     </script>
@@ -91,7 +91,7 @@
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="rExTwARjpPDzJXP2i1qwrDU1Ue/YM3D42C9M1F6A9qM="></script>
+    nonce="gvegHtbv6OLzwuMRtkjUIhoLI8O0OoFKlm+WtoLvo88="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -113,7 +113,6 @@
         "detail_item" id="items">
           <div class="market"></div>
           <div data-page-type="market" id="js-item"></div>
-          <div id="js-item-category-breadcrumbs"></div>
           <article>
             <div class=
             "market market-item-detail item-info-detail u-bg-white">
@@ -127,53 +126,63 @@
                     <div class=
                     "summary u-order-1 l-col-2of5 u-pl-600">
                       <div class="mobile-section">
-                        <header>
+                        <header class=
+                        "gap-8 grid my-16 text-text-gray600 desktop:mt-0">
+                          <div id="js-item-category-breadcrumbs">
+                          </div>
                           <div class=
-                          "flex items-start gap-4 mb-[9px] mobile:mb-[5.5px]">
-                            <a href=
+                          "empty:hidden flex gap-4 items-center">
+                            <a class="h-[20px]" href=
                             "https://booth.pm/ja/items?tags%5B%5D=VRChat">
-                            <img alt="VRChat" width="48px" src=
+                            <img alt="VRChat" height="20px" width=
+                            "48px" src=
                             "https://asset.booth.pm/static-images/shops/badges/vrchat.png"></a>
-                          </div>
-                          <div class="u-my-200 u-tpg-title3">
-                            <a class="nav" target="_blank"
-                            data-product-list=
-                            "from market_show via market_item_detail to shop_index"
-                            data-tracking="click" rel="noopener"
-                            href="https://hhotatea.booth.pm/">
-                            <div class=
-                            "u-d-flex u-align-items-center">
-                              <img alt="ほたての貝殻" class=
-                              "user-avatar at-item-summary" src=
-                              "https://booth.pximg.net/c/48x48/users/4467863/icon_image/0c82eb30-34d5-4419-bc94-954a41bbbd63_base_resized.jpg">
-                              <div class="u-text-ellipsis">
-                                ほたての貝殻
-                              </div>
-                            </div></a>
-                          </div>
+                          </div><a class=
+                          "flex gap-4 items-center no-underline preserve-half-leading !text-current typography-16 w-fit"
+                          data-product-list=
+                          "from market_show via market_item_detail to shop_index"
+                          data-tracking="click" target="_blank"
+                          rel="noopener" href=
+                          "https://hhotatea.booth.pm/"><img alt=
+                          "ほたての貝殻" class=
+                          "h-[24px] rounded-oval w-[24px]" src=
+                          "https://booth.pximg.net/c/48x48/users/4467863/icon_image/0c82eb30-34d5-4419-bc94-954a41bbbd63_base_resized.jpg">ほたての貝殻</a>
                           <h2 class=
-                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                          "font-bold leading-[32px] m-0 text-[24px]">
                             【VRC想定】EasyColorChangeシェーダー
                           </h2>
-                          <div class=
-                          "u-text-assertive u-tpg-caption1"></div>
                         </header>
-                        <div class="wish-list-link">
-                          <a class="add-to-wish-list"
+                        <div class="flex wish-list-link">
+                          <a class=
+                          "add-to-wish-list no-underline !text-current"
                           data-tracking="add_to_wishlist"
                           data-product-id="1145164"
                           data-product-list=
                           "from market_show via market_item_detail to add_to_wish_list"
                           rel="nofollow" data-method="post" href=
                           "https://booth.pm/items/1145164/wish_list">
-                          </a><a class="remove-from-wish-list"
+                          <div class=
+                          "border-2 border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
+                            <div class=
+                            "typography-14 preserve-half-leading wishlists_count">
+                              221
+                            </div>
+                          </div></a><a class=
+                          "remove-from-wish-list no-underline !text-current"
                           data-tracking="remove_from_wishlist"
                           data-product-id="1145164"
                           data-product-list=
                           "from market_show via market_item_detail to remove_from_wish_list"
                           data-remote="true" rel="nofollow"
                           data-method="delete" href=
-                          "https://booth.pm/items/1145164/wish_list"></a>
+                          "https://booth.pm/items/1145164/wish_list">
+                          <div class=
+                          "border-2 border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
+                            <div class=
+                            "typography-14 preserve-half-leading wishlists_count">
+                              221
+                            </div>
+                          </div></a>
                         </div>
                         <div>
                           <ul class=
