@@ -74,9 +74,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/b5d6ffc2795437615bc8.js" defer=
+    "https://asset.booth.pm/assets/9b28fd26c0de07a62038.js" defer=
     "defer" nonce=
-    "yc6AD2UuupAntmoAlGiSms00/yRkaYFhrkmlbJn98qk="></script>
+    "34SkGIxSAeCLPGALACyeWLESa3MmP3io+kdBudbLfwE="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"BoxShader","description":"ポリゴンをBoxに置き換えるシェーダーです。\nいろいろ出来ます(無駄機能も多々)。\n\n通常版とテッセレーション可能版があります。特別な理由がない限りは通常版で十分です。\n\n①Texture:メインのテクスチャです。普通に指定してください。\n②BoXSize:BOXのサイズの補正です。\n　BOXSizeChange:BOXサイズの補正です。0であれば一定、0より大きければポリゴンサイズによって補正されます。\n\nここから下は指定しなくても問題ありません。\n\n③RimEffect:Rimの強度を指定します。\n④RimColor:Rimの色を指定できます。\n\n⑤LegasyPoly:Box化前のメッシュを表示します。数値で大きさを変えられます。\n\n⑥NormalExtrusion:Boxを元ポリゴンの法線方向に爆発させられます。\n⑦Gravity:⑥で飛ばした後に受ける重力の方向を指定できます。\n⑧FloorHight:⑥で飛ばした後の床の高さを指定できます。(たいていY=-1くらいでいい感じになります。)\n\n⑨RotationMap:Boxを回転させる場合の回転軸をテクスチャで指定できます。赤成分がX軸,緑成分がY軸,青成分がZ軸です。\n⑩RotationUSpeed:⑨を時間でスクロールさせます。\n⑪RotationAxis:Boxを回転させる回転軸を指定できます。\n⑫RotationSpeed:回転速度を指定できます。\n\n⑬VoxelSizeMap:Boxのサイズをテクスチャで指定できます。より白い部分のBoxが大きくなります。\n⑭VoxelSizeUV:⑬を時間でスクロールさせます。\n⑮VoxSizePower:大きさの変化の強さを指定できます。\n\n⑯PolygonExtrusion:ここにマップを指定するとBoxの面を法線方向に飛ばせます。より白い部分がより遠くに飛びます。\n⑰PolyUVSpeed:⑯を時間でスクロールさせます。\n⑱ExtrusionPower:法線方向に飛ばす力を指定できます。\n\n⑲ShadowMap:ここにBOXの影側の色のマップを指定できます。\n⑳ShadowUVSpeed：⑲を時間でをスクロールさせます。\n㉑ShadowColor:ここで影の色を指定できます。\n㉒ShadowPower:影の強さを指定します。\n\n㉓SubTexture:個々のVoxの面に貼るテクスチャを指定できます。\n㉔SubTexturePower:㉓の濃度に補正をかけます。\n\n㉕:AutoMaticTessellation:わからない人はさわらないこと！かなり重くなる設定です。\n\tポリゴンの面積に応じてテッセレーションをかけてVoxを増やします。上限はtess_factor=InsideTessFactor=2ですが、[HideInInspector] _TessFactorで上限を増やせます。\n\n\nhttps://twitter.com/HHOTATEA_VRC/status/1039893839924752385\nhttps://twitter.com/HHOTATEA_VRC/status/1040318333319430145\n\n\n*\n* Date: 2018-09-12 開始\n* Date: 2018-09-14 更新\n* Date: 2018-09-15 更新\n* Date: 2018-09-16 バグ修正\n* Date: 2018-09-18 バグ修正\n* Date: 2018-10-13 機能改善:ボックスの中心がポリゴンの中心になるように\n* Date: 2019/01/29 大幅変更、ライティングが設定できるようになりました。","url":"https://booth.pm/ja/items/1010367","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"500"},"image":"https://booth.pximg.net/c/620x620/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1010367/4d84ff6c-b7f6-4bcc-9d86-f8dc6cc1994f_base_resized.jpg"}
     </script>
@@ -90,7 +90,7 @@
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="yc6AD2UuupAntmoAlGiSms00/yRkaYFhrkmlbJn98qk="></script>
+    nonce="34SkGIxSAeCLPGALACyeWLESa3MmP3io+kdBudbLfwE="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -112,7 +112,6 @@
         "detail_item" id="items">
           <div class="market"></div>
           <div data-page-type="market" id="js-item"></div>
-          <div id="js-item-category-breadcrumbs"></div>
           <article>
             <div class=
             "market market-item-detail item-info-detail u-bg-white">
@@ -126,53 +125,63 @@
                     <div class=
                     "summary u-order-1 l-col-2of5 u-pl-600">
                       <div class="mobile-section">
-                        <header>
+                        <header class=
+                        "gap-8 grid my-16 text-text-gray600 desktop:mt-0">
+                          <div id="js-item-category-breadcrumbs">
+                          </div>
                           <div class=
-                          "flex items-start gap-4 mb-[9px] mobile:mb-[5.5px]">
-                            <a href=
+                          "empty:hidden flex gap-4 items-center">
+                            <a class="h-[20px]" href=
                             "https://booth.pm/ja/items?tags%5B%5D=VRChat">
-                            <img alt="VRChat" width="48px" src=
+                            <img alt="VRChat" height="20px" width=
+                            "48px" src=
                             "https://asset.booth.pm/static-images/shops/badges/vrchat.png"></a>
-                          </div>
-                          <div class="u-my-200 u-tpg-title3">
-                            <a class="nav" target="_blank"
-                            data-product-list=
-                            "from market_show via market_item_detail to shop_index"
-                            data-tracking="click" rel="noopener"
-                            href="https://hhotatea.booth.pm/">
-                            <div class=
-                            "u-d-flex u-align-items-center">
-                              <img alt="ほたての貝殻" class=
-                              "user-avatar at-item-summary" src=
-                              "https://booth.pximg.net/c/48x48/users/4467863/icon_image/0c82eb30-34d5-4419-bc94-954a41bbbd63_base_resized.jpg">
-                              <div class="u-text-ellipsis">
-                                ほたての貝殻
-                              </div>
-                            </div></a>
-                          </div>
+                          </div><a class=
+                          "flex gap-4 items-center no-underline preserve-half-leading !text-current typography-16 w-fit"
+                          data-product-list=
+                          "from market_show via market_item_detail to shop_index"
+                          data-tracking="click" target="_blank"
+                          rel="noopener" href=
+                          "https://hhotatea.booth.pm/"><img alt=
+                          "ほたての貝殻" class=
+                          "h-[24px] rounded-oval w-[24px]" src=
+                          "https://booth.pximg.net/c/48x48/users/4467863/icon_image/0c82eb30-34d5-4419-bc94-954a41bbbd63_base_resized.jpg">ほたての貝殻</a>
                           <h2 class=
-                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                          "font-bold leading-[32px] m-0 text-[24px]">
                             BoxShader
                           </h2>
-                          <div class=
-                          "u-text-assertive u-tpg-caption1"></div>
                         </header>
-                        <div class="wish-list-link">
-                          <a class="add-to-wish-list"
+                        <div class="flex wish-list-link">
+                          <a class=
+                          "add-to-wish-list no-underline !text-current"
                           data-tracking="add_to_wishlist"
                           data-product-id="1010367"
                           data-product-list=
                           "from market_show via market_item_detail to add_to_wish_list"
                           rel="nofollow" data-method="post" href=
                           "https://booth.pm/items/1010367/wish_list">
-                          </a><a class="remove-from-wish-list"
+                          <div class=
+                          "border-2 border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
+                            <div class=
+                            "typography-14 preserve-half-leading wishlists_count">
+                              521
+                            </div>
+                          </div></a><a class=
+                          "remove-from-wish-list no-underline !text-current"
                           data-tracking="remove_from_wishlist"
                           data-product-id="1010367"
                           data-product-list=
                           "from market_show via market_item_detail to remove_from_wish_list"
                           data-remote="true" rel="nofollow"
                           data-method="delete" href=
-                          "https://booth.pm/items/1010367/wish_list"></a>
+                          "https://booth.pm/items/1010367/wish_list">
+                          <div class=
+                          "border-2 border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
+                            <div class=
+                            "typography-14 preserve-half-leading wishlists_count">
+                              521
+                            </div>
+                          </div></a>
                         </div>
                         <div>
                           <ul class=
