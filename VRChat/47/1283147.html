@@ -75,9 +75,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/b5d6ffc2795437615bc8.js" defer=
+    "https://asset.booth.pm/assets/9b28fd26c0de07a62038.js" defer=
     "defer" nonce=
-    "WnYU78wp4p/LG1xYDNYiUJ3ykvQnF95zbd7QRUjIAQI="></script>
+    "FVPSCI9M67VJGiT4kwmozXBePkd1twiSpCo5pHpgapQ="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"VRChat向けジュエリーボックス付きオルゴール","description":"--- ver 2021.08.02.0\n* VRCSDK3（UDON）サポート\n\n--- ver 2020.4.02.0\n* VRC_SpatialAudioSourceに対応しました\n* ドキュメントにVRC_SpatialAudioSourceの利用方法を追記しました\n* Unity2018LTS対応版VRChat SDK（VRChat 2020.1.1）に対応しました\n\n--- ver 2019.3.28.0\n* 新たにガラスケースタイプのオルゴールを追加（FBX, prefab）\n* 駆動機構のFBX、prefabを追加\n* 途中停止の実装（曲の変更方法が変わり、簡単になりました！）\n---\n\nVRChat専用アニメーション、VRC_Trigger設定済みジュエリーボックス付きオルゴールです。\n現実のオルゴールの動作を \"大体\" 再現しており、歯車の数や速度も噛み合うように設計されています（シリンダは30秒で1回転するようになっています）。\n再現されていない部分として、ゼンマイを巻く部分、蓋が閉じられる際のウィンドカッターを止めるためのピン、ギアボックスの中身がありますのでそこはご了承くださいませ。\nアニメーションは、開閉および駆動の3種類あります。\n\nサンプル曲として\n* G線上のアリア\n* オリジナル曲 1曲\n\nのオーディオソースをパッケージに含めています（わたしが弾いたものを録音してクォンタイズかけたものです）。\n曲はこのページの下部にてSoundCloudを通して聴くことができます。\n\nまた、ゼンマイを巻く際の駆動音も同梱されており、これもまたトリガーを設定済みのため、\n自分の好きな曲に入れ替えたい場合はオーディオソースの取り替えとパラメータ2箇所の変更で済みます。\nオーディオソースの用意や軽量化、トリガーパラメータの変更については別途資料をパッケージ内に含めていますので、そちらをご覧ください。\n\nそのままprefabをHierarchyに置くだけで使えるようになる※ので、ワールドの片隅にでも置いてあげてください。\n（トリガーに関してはVRChat SDKに依存する仕様上、完璧な状態遷移が行われると保証できないため、できるだけ慎重にお扱いくださいませ）\n\n各コンポーネントが設定されている都合上VRChat専用ではありますが、規約にありますように、\nモデル、テクスチャ、アニメーションデータは他コンテンツでもご利用頂けます（…がコンポーネントが設定されているのでそのまま扱うことを推奨致します）\n\n※事前にVRChat SDKのインポートを行う必要があります（インポート前に導入するとコンポーネントが壊れる可能性があります）","url":"https://booth.pm/ja/items/1283147","offers":{"priceCurrency":"JPY","@type":"Offer","price":"300"},"image":"https://booth.pximg.net/c/620x620/6bdf2df7-47d0-4756-8dfe-1337da79c2a3/i/1283147/c0848392-911b-47b5-8eb6-19e03600874d_base_resized.jpg"}
     </script>
@@ -85,13 +85,16 @@
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
     "apple-touch-icon-precomposed">
+    <style type="text/css">
+    .eventname-flag--inner {   margin-right: 6px; }  .eventname-flag--inner.eventname-flag--exhibition-open {   margin-right: 0px; }
+    </style>
   </head>
   <body>
     <noscript><iframe height="0" src=
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="WnYU78wp4p/LG1xYDNYiUJ3ykvQnF95zbd7QRUjIAQI="></script>
+    nonce="FVPSCI9M67VJGiT4kwmozXBePkd1twiSpCo5pHpgapQ="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -113,7 +116,6 @@
         "detail_item" id="items">
           <div class="market"></div>
           <div data-page-type="market" id="js-item"></div>
-          <div id="js-item-category-breadcrumbs"></div>
           <article>
             <div class=
             "market market-item-detail item-info-detail u-bg-white">
@@ -127,66 +129,74 @@
                     <div class=
                     "summary u-order-1 l-col-2of5 u-pl-600">
                       <div class="mobile-section">
-                        <header>
-                          <div class="u-mb-200">
-                            <div class="eventname-flag">
-                              <a class="eventname-flag--inner"
-                              data-tracking="click"
-                              data-product-list=
-                              "from market_show via eventname_flag to event_index"
-                              href=
-                              "https://booth.pm/ja/events/v-market2">
-                              <div class="eventname-flag__name">
-                                Vケット2
-                              </div></a>
-                            </div>
+                        <header class=
+                        "gap-8 grid my-16 text-text-gray600 desktop:mt-0">
+                          <div id="js-item-category-breadcrumbs">
                           </div>
                           <div class=
-                          "flex items-start gap-4 mb-[9px] mobile:mb-[5.5px]">
-                            <a href=
-                            "https://booth.pm/ja/items?tags%5B%5D=VRChat">
-                            <img alt="VRChat" width="48px" src=
-                            "https://asset.booth.pm/static-images/shops/badges/vrchat.png"></a>
-                          </div>
-                          <div class="u-my-200 u-tpg-title3">
-                            <a class="nav" target="_blank"
-                            data-product-list=
-                            "from market_show via market_item_detail to shop_index"
-                            data-tracking="click" rel="noopener"
-                            href="https://atl.booth.pm/">
-                            <div class=
-                            "u-d-flex u-align-items-center">
-                              <img alt="藍銅鉱技研" class=
-                              "user-avatar at-item-summary" src=
-                              "https://booth.pximg.net/c/48x48/users/5634763/icon_image/fc5a82a6-13e8-4aff-bc38-830611f10117_base_resized.jpg">
-                              <div class="u-text-ellipsis">
-                                藍銅鉱技研
+                          "empty:hidden flex gap-4 items-center">
+                            <div class="flex">
+                              <div class="eventname-flag">
+                                <a class="eventname-flag--inner"
+                                data-tracking="click"
+                                data-product-list=
+                                "from market_show via eventname_flag to event_index"
+                                href=
+                                "https://booth.pm/ja/events/v-market2">
+                                <div class="eventname-flag__name">
+                                  Vケット2
+                                </div></a>
                               </div>
-                            </div></a>
-                          </div>
+                            </div><a class="h-[20px]" href=
+                            "https://booth.pm/ja/items?tags%5B%5D=VRChat"><img alt="VRChat"
+                            height="20px" width="48px" src=
+                            "https://asset.booth.pm/static-images/shops/badges/vrchat.png"></a>
+                          </div><a class=
+                          "flex gap-4 items-center no-underline preserve-half-leading !text-current typography-16 w-fit"
+                          data-product-list=
+                          "from market_show via market_item_detail to shop_index"
+                          data-tracking="click" target="_blank"
+                          rel="noopener" href=
+                          "https://atl.booth.pm/"><img alt="藍銅鉱技研"
+                          class="h-[24px] rounded-oval w-[24px]"
+                          src=
+                          "https://booth.pximg.net/c/48x48/users/5634763/icon_image/fc5a82a6-13e8-4aff-bc38-830611f10117_base_resized.jpg">藍銅鉱技研</a>
                           <h2 class=
-                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                          "font-bold leading-[32px] m-0 text-[24px]">
                             VRChat向けジュエリーボックス付きオルゴール
                           </h2>
-                          <div class=
-                          "u-text-assertive u-tpg-caption1"></div>
                         </header>
-                        <div class="wish-list-link">
-                          <a class="add-to-wish-list"
+                        <div class="flex wish-list-link">
+                          <a class=
+                          "add-to-wish-list no-underline !text-current"
                           data-tracking="add_to_wishlist"
                           data-product-id="1283147"
                           data-product-list=
                           "from market_show via market_item_detail to add_to_wish_list"
                           rel="nofollow" data-method="post" href=
                           "https://booth.pm/items/1283147/wish_list">
-                          </a><a class="remove-from-wish-list"
+                          <div class=
+                          "border-2 border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
+                            <div class=
+                            "typography-14 preserve-half-leading wishlists_count">
+                              243
+                            </div>
+                          </div></a><a class=
+                          "remove-from-wish-list no-underline !text-current"
                           data-tracking="remove_from_wishlist"
                           data-product-id="1283147"
                           data-product-list=
                           "from market_show via market_item_detail to remove_from_wish_list"
                           data-remote="true" rel="nofollow"
                           data-method="delete" href=
-                          "https://booth.pm/items/1283147/wish_list"></a>
+                          "https://booth.pm/items/1283147/wish_list">
+                          <div class=
+                          "border-2 border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
+                            <div class=
+                            "typography-14 preserve-half-leading wishlists_count">
+                              243
+                            </div>
+                          </div></a>
                         </div>
                         <div>
                           <ul class=
