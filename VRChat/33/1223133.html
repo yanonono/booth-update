@@ -71,6 +71,9 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+    <style type="text/css">
+    .eventname-flag--inner {   margin-right: 6px; }  .eventname-flag--inner.eventname-flag--exhibition-open {   margin-right: 0px; }
+    </style>
   </head>
   <body>
     <div class="mini-player-controller" style="display: none;">
@@ -100,9 +103,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/b5d6ffc2795437615bc8.js" defer=
+    "https://asset.booth.pm/assets/9b28fd26c0de07a62038.js" defer=
     "defer" nonce=
-    "hnD6VNaEvkNT6xVmUrejsGyAypIq7r4LSBWf7ph0xsU="></script>
+    "ga2wb4kjK0aCq9lYRIyjkMYWPPfEiK+AhP3S+tTi8DY="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"オリジナル3Dモデル「ララノア」","description":"制作者 現世すてみ\n\n下記利用規約が記載されておりますので\nご購入前にお読みいただき、了承の上購入お願いします。\n\n\n\n● 営利利用: 可能\nゲーム, 映像作品, 動画配信等にご利用いただけます\n※ VRChat、Unity等ソフトウェア問わずご利用いただけます\n※ VTuber活動等にご利用いただけます\n※ 企業様が利用する場合はご一報頂けると幸いです\n\n● 改変: 可能\n個人利用について当モデルデータに付属しているデータの改変は自由です\nまた、当モデルの他アバターと組み合わせての使用は自由ですが相手方の規約を確認してください。\n\n● R-18, R-18Gコンテンツでの利用: 可能\nR-18, R-18Gコンテンツでの使用を許可します\n※ 利用媒体の規約を参照してください\n\n● 再配布: 禁止\n当モデルデータに付属しているデータの再配布, 販売は改変の有無を問わず禁止します\nまた、当モデルデータの一部を使用した再配布についても禁止します。\n\n● 改変依頼: 個人間に限り可能\n改変依頼の発注者と受注者の両者が当モデルデータを購入している場合かつ個人間の依頼に限り、改変した当モデルデータの両者間でのやり取りを許可します\nまた、テクスチャ及びpsdについては受注者が購入していない場合においても許可します\n※ いかなる理由を持っても不特定多数に向けたデータの再配布, 販売は禁止します\n\n● VRChatのアバターペデスタルでの利用: 禁止\n\n● 公序良俗に反する行為や目的、政治, 宗教活動、他者に対する誹謗中傷目的での利用: 禁止\n\n\n\n問題がありましたら下記メールアドレスもしくはtwitterDMにてお願いします\nabandonment.of.life☆gmail.com","url":"https://booth.pm/ja/items/1223133","offers":{"priceCurrency":"JPY","@type":"Offer","price":"2500"},"image":"https://booth.pximg.net/c/620x620/9df96392-5a14-4ad7-867b-0b582c88cad2/i/1223133/88fc39e5-9bfc-43e3-a6f2-a6ed529497f2_base_resized.jpg"}
     </script>
@@ -113,7 +116,7 @@
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="hnD6VNaEvkNT6xVmUrejsGyAypIq7r4LSBWf7ph0xsU="></script>
+    nonce="ga2wb4kjK0aCq9lYRIyjkMYWPPfEiK+AhP3S+tTi8DY="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -131,7 +134,6 @@
         "items">
           <div class="market"></div>
           <div data-page-type="market" id="js-item"></div>
-          <div id="js-item-category-breadcrumbs"></div>
           <article>
             <div class=
             "market market-item-detail item-info-detail u-bg-white">
@@ -145,66 +147,74 @@
                     <div class=
                     "summary u-order-1 l-col-2of5 u-pl-600">
                       <div class="mobile-section">
-                        <header>
-                          <div class="u-mb-200">
-                            <div class="eventname-flag">
-                              <a class="eventname-flag--inner"
-                              data-tracking="click"
-                              data-product-list=
-                              "from market_show via eventname_flag to event_index"
-                              href=
-                              "https://booth.pm/ja/events/v-market2">
-                              <div class="eventname-flag__name">
-                                Vケット2
-                              </div></a>
-                            </div>
+                        <header class=
+                        "gap-8 grid my-16 text-text-gray600 desktop:mt-0">
+                          <div id="js-item-category-breadcrumbs">
                           </div>
                           <div class=
-                          "flex items-start gap-4 mb-[9px] mobile:mb-[5.5px]">
-                            <a href=
-                            "https://booth.pm/ja/items?tags%5B%5D=VRChat">
-                            <img alt="VRChat" width="48px" src=
-                            "https://asset.booth.pm/static-images/shops/badges/vrchat.png"></a>
-                          </div>
-                          <div class="u-my-200 u-tpg-title3">
-                            <a class="nav" target="_blank"
-                            data-product-list=
-                            "from market_show via market_item_detail to shop_index"
-                            data-tracking="click" rel="noopener"
-                            href="https://daw.booth.pm/">
-                            <div class=
-                            "u-d-flex u-align-items-center">
-                              <img alt="daw" class=
-                              "user-avatar at-item-summary" src=
-                              "https://asset.booth.pm/assets/thumbnail_placeholder_f_150x150-73e650fbec3b150090cbda36377f1a3402c01e36ff9fa96158de6016fa067d01.png">
-                              <div class="u-text-ellipsis">
-                                daw
+                          "empty:hidden flex gap-4 items-center">
+                            <div class="flex">
+                              <div class="eventname-flag">
+                                <a class="eventname-flag--inner"
+                                data-tracking="click"
+                                data-product-list=
+                                "from market_show via eventname_flag to event_index"
+                                href=
+                                "https://booth.pm/ja/events/v-market2">
+                                <div class="eventname-flag__name">
+                                  Vケット2
+                                </div></a>
                               </div>
-                            </div></a>
-                          </div>
+                            </div><a class="h-[20px]" href=
+                            "https://booth.pm/ja/items?tags%5B%5D=VRChat"><img alt="VRChat"
+                            height="20px" width="48px" src=
+                            "https://asset.booth.pm/static-images/shops/badges/vrchat.png"></a>
+                          </div><a class=
+                          "flex gap-4 items-center no-underline preserve-half-leading !text-current typography-16 w-fit"
+                          data-product-list=
+                          "from market_show via market_item_detail to shop_index"
+                          data-tracking="click" target="_blank"
+                          rel="noopener" href=
+                          "https://daw.booth.pm/"><img alt="daw"
+                          class="h-[24px] rounded-oval w-[24px]"
+                          src=
+                          "https://asset.booth.pm/assets/thumbnail_placeholder_f_150x150-73e650fbec3b150090cbda36377f1a3402c01e36ff9fa96158de6016fa067d01.png">daw</a>
                           <h2 class=
-                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                          "font-bold leading-[32px] m-0 text-[24px]">
                             オリジナル3Dモデル「ララノア」
                           </h2>
-                          <div class=
-                          "u-text-assertive u-tpg-caption1"></div>
                         </header>
-                        <div class="wish-list-link">
-                          <a class="add-to-wish-list"
+                        <div class="flex wish-list-link">
+                          <a class=
+                          "add-to-wish-list no-underline !text-current"
                           data-tracking="add_to_wishlist"
                           data-product-id="1223133"
                           data-product-list=
                           "from market_show via market_item_detail to add_to_wish_list"
                           rel="nofollow" data-method="post" href=
                           "https://booth.pm/items/1223133/wish_list">
-                          </a><a class="remove-from-wish-list"
+                          <div class=
+                          "border-2 border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
+                            <div class=
+                            "typography-14 preserve-half-leading wishlists_count">
+                              46
+                            </div>
+                          </div></a><a class=
+                          "remove-from-wish-list no-underline !text-current"
                           data-tracking="remove_from_wishlist"
                           data-product-id="1223133"
                           data-product-list=
                           "from market_show via market_item_detail to remove_from_wish_list"
                           data-remote="true" rel="nofollow"
                           data-method="delete" href=
-                          "https://booth.pm/items/1223133/wish_list"></a>
+                          "https://booth.pm/items/1223133/wish_list">
+                          <div class=
+                          "border-2 border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
+                            <div class=
+                            "typography-14 preserve-half-leading wishlists_count">
+                              46
+                            </div>
+                          </div></a>
                         </div>
                         <div>
                           <ul class=
