@@ -71,6 +71,9 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+    <style type="text/css">
+    .eventname-flag--inner {   margin-right: 6px; }  .eventname-flag--inner.eventname-flag--exhibition-open {   margin-right: 0px; }
+    </style>
   </head>
   <body>
     <div class="mini-player-controller" style="display: none;">
@@ -100,9 +103,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/b5d6ffc2795437615bc8.js" defer=
+    "https://asset.booth.pm/assets/9b28fd26c0de07a62038.js" defer=
     "defer" nonce=
-    "wwQIo5EC47Q6nVjckaiOu7y1h1oC544Xxyhc0wlGh44="></script>
+    "D5/HE67d/hK4G8jKkj7Gb/3ACyYGQzNEPfc5lYx+/Ko="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"VRChat【3Dmodel】さくら ~試作Armorバージョン~","description":"2019/03/11　追記\nダウンロードし、パスワードを入れないと解凍ができないというご指摘を頂きました。\n再度ロックを外したものをＵＰ致しましたので、大変お手数では御座いますが、再ダウンロード頂けると幸いです\n何卒、宜しくお願い致します\n\n\n本モデルはUnityのHumanoid形式に対応したオリジナルモデル　『　さくら　』　です。\n主にVRChatでの使用を想定しています。\n\nVRCSDKを事前にインポートして下さい。\n\n・シェーダーは、ユニティちゃんトゥーンシェーダーを使用しております。（2.0 / UTS2 v.2.0.5）\nhttp://unity-chan.com/download/releaseNote.php?id=UTS2_0\n(c)Unity Technologies Japan/UCL\n・リアル質感のシェーダーは設定してありますが、顔についてはリアルテイストなテクスチャは用意しておりません。\nルックが気になる方は、ヘルメット着用したままの状態でご利用下さい。\n・３Dソフトはmayaを使用しております。他ソフトで編集する際の完全な互換は保障いたしかねます。\n・VRChatにアップロードする手順等は各自ご確認いただけると幸いです。\n\n■■■内容■■■\n・ポリゴン数　フルセット　45342\n・瞬きの仕込あり（アイトラッキングは未対応です）\n・フルトラッキング確認済み\n・リップシンクターゲットあり\n\n■■■同梱データ■■■\nUnityパッケージファイル\n\n\n■■■禁止事項■■■\n・本モデルの著作権は、本モデル製作者　AJISAI　に帰属するものとします。\n\n・利用者は本データの改造、改変は自由に行うことができますが、作成者は本データの改変物について、著作権を専有し、改変物にも本規約は適用されます。\n\n・本データの再配布、販売は改変の有無を問わず禁止します。\n\n・公序良俗に反する行為や目的、政治・宗教活動、他者に対する誹謗中傷目的での使用は禁止です\n\n・他人が不快に感じる表現や用途への使用\n\n・過度なR18/R18G表現への使用\n\n・モデルの再配布は厳禁です。VRChatでパブリック化するのもお控えください。\n\n・本モデルデータを使用することによって何らかのトラブル・損失及び損害等が発生した場合でも当方は一切の責任を負いません。\n\n・営利/非営利問わずご利用いただけます。(要クレジット記載)\n\n本モデルの使用は使用者の責任において行ってください。\nご不明な点や曖昧な点などございましたらお気軽にお尋ねください。","url":"https://booth.pm/ja/items/1214581","offers":{"priceCurrency":"JPY","@type":"Offer","price":"1000"},"image":"https://booth.pximg.net/c/620x620/c0219cf5-8754-4097-a016-0ddf2341fc76/i/1214581/e1705308-01c4-4552-a8f0-893c0ae87ca6_base_resized.jpg"}
     </script>
@@ -113,7 +116,7 @@
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="wwQIo5EC47Q6nVjckaiOu7y1h1oC544Xxyhc0wlGh44="></script>
+    nonce="D5/HE67d/hK4G8jKkj7Gb/3ACyYGQzNEPfc5lYx+/Ko="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -135,7 +138,6 @@
         "detail_item" id="items">
           <div class="market"></div>
           <div data-page-type="market" id="js-item"></div>
-          <div id="js-item-category-breadcrumbs"></div>
           <article>
             <div class=
             "market market-item-detail item-info-detail u-bg-white">
@@ -149,66 +151,74 @@
                     <div class=
                     "summary u-order-1 l-col-2of5 u-pl-600">
                       <div class="mobile-section">
-                        <header>
-                          <div class="u-mb-200">
-                            <div class="eventname-flag">
-                              <a class="eventname-flag--inner"
-                              data-tracking="click"
-                              data-product-list=
-                              "from market_show via eventname_flag to event_index"
-                              href=
-                              "https://booth.pm/ja/events/v-market2">
-                              <div class="eventname-flag__name">
-                                Vケット2
-                              </div></a>
-                            </div>
+                        <header class=
+                        "gap-8 grid my-16 text-text-gray600 desktop:mt-0">
+                          <div id="js-item-category-breadcrumbs">
                           </div>
                           <div class=
-                          "flex items-start gap-4 mb-[9px] mobile:mb-[5.5px]">
-                            <a href=
-                            "https://booth.pm/ja/items?tags%5B%5D=VRChat">
-                            <img alt="VRChat" width="48px" src=
-                            "https://asset.booth.pm/static-images/shops/badges/vrchat.png"></a>
-                          </div>
-                          <div class="u-my-200 u-tpg-title3">
-                            <a class="nav" target="_blank"
-                            data-product-list=
-                            "from market_show via market_item_detail to shop_index"
-                            data-tracking="click" rel="noopener"
-                            href="https://ajisaigw.booth.pm/">
-                            <div class=
-                            "u-d-flex u-align-items-center">
-                              <img alt="AJISAI" class=
-                              "user-avatar at-item-summary" src=
-                              "https://booth.pximg.net/c/48x48/users/5762397/icon_image/0d3eb012-7fe0-4040-a352-ee0fb1d6020e_base_resized.jpg">
-                              <div class="u-text-ellipsis">
-                                AJISAI
+                          "empty:hidden flex gap-4 items-center">
+                            <div class="flex">
+                              <div class="eventname-flag">
+                                <a class="eventname-flag--inner"
+                                data-tracking="click"
+                                data-product-list=
+                                "from market_show via eventname_flag to event_index"
+                                href=
+                                "https://booth.pm/ja/events/v-market2">
+                                <div class="eventname-flag__name">
+                                  Vケット2
+                                </div></a>
                               </div>
-                            </div></a>
-                          </div>
+                            </div><a class="h-[20px]" href=
+                            "https://booth.pm/ja/items?tags%5B%5D=VRChat"><img alt="VRChat"
+                            height="20px" width="48px" src=
+                            "https://asset.booth.pm/static-images/shops/badges/vrchat.png"></a>
+                          </div><a class=
+                          "flex gap-4 items-center no-underline preserve-half-leading !text-current typography-16 w-fit"
+                          data-product-list=
+                          "from market_show via market_item_detail to shop_index"
+                          data-tracking="click" target="_blank"
+                          rel="noopener" href=
+                          "https://ajisaigw.booth.pm/"><img alt=
+                          "AJISAI" class=
+                          "h-[24px] rounded-oval w-[24px]" src=
+                          "https://booth.pximg.net/c/48x48/users/5762397/icon_image/0d3eb012-7fe0-4040-a352-ee0fb1d6020e_base_resized.jpg">AJISAI</a>
                           <h2 class=
-                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                          "font-bold leading-[32px] m-0 text-[24px]">
                             VRChat【3Dmodel】さくら ~試作Armorバージョン~
                           </h2>
-                          <div class=
-                          "u-text-assertive u-tpg-caption1"></div>
                         </header>
-                        <div class="wish-list-link">
-                          <a class="add-to-wish-list"
+                        <div class="flex wish-list-link">
+                          <a class=
+                          "add-to-wish-list no-underline !text-current"
                           data-tracking="add_to_wishlist"
                           data-product-id="1214581"
                           data-product-list=
                           "from market_show via market_item_detail to add_to_wish_list"
                           rel="nofollow" data-method="post" href=
                           "https://booth.pm/items/1214581/wish_list">
-                          </a><a class="remove-from-wish-list"
+                          <div class=
+                          "border-2 border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
+                            <div class=
+                            "typography-14 preserve-half-leading wishlists_count">
+                              152
+                            </div>
+                          </div></a><a class=
+                          "remove-from-wish-list no-underline !text-current"
                           data-tracking="remove_from_wishlist"
                           data-product-id="1214581"
                           data-product-list=
                           "from market_show via market_item_detail to remove_from_wish_list"
                           data-remote="true" rel="nofollow"
                           data-method="delete" href=
-                          "https://booth.pm/items/1214581/wish_list"></a>
+                          "https://booth.pm/items/1214581/wish_list">
+                          <div class=
+                          "border-2 border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
+                            <div class=
+                            "typography-14 preserve-half-leading wishlists_count">
+                              152
+                            </div>
+                          </div></a>
                         </div>
                         <div>
                           <ul class=
