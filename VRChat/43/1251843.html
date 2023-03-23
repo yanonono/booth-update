@@ -71,6 +71,9 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+    <style type="text/css">
+    .eventname-flag--inner {   margin-right: 6px; }  .eventname-flag--inner.eventname-flag--exhibition-open {   margin-right: 0px; }
+    </style>
   </head>
   <body>
     <div class="mini-player-controller" style="display: none;">
@@ -100,9 +103,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/b5d6ffc2795437615bc8.js" defer=
+    "https://asset.booth.pm/assets/9b28fd26c0de07a62038.js" defer=
     "defer" nonce=
-    "NZOlxkhQO8+E8WNV0JkWYiqJJgj9JeCwSahDEhltSkE="></script>
+    "l98wYodtPhgdmG27cBvqvivKNof+Nr+yd21BTL2RZ/8="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"おきゅたんバーチャル抱き枕セット","description":"おきゅたんモチーフのバーチャル抱き枕が２種類入ったお得なセット！　キミの安眠をバーチャルにサポートするよ。\n\nタイプA：おやすみおきゅたん\nタイプB：おきゅたん＆おきゅたんbot\n\n※VRChat用のワールド用データとしての抱き枕です。サンプルワールドデータ付き。\n\n※DynamicBoneをお持ちの方にはボーン入りで少し揺れるバージョンも同梱されているので、お好みで使ってみてね。\n\n※商品写真にあるパジャマおきゅたんアバターは付属しないよっ\n\n\n★スペシャルサンクス\n\n抱き枕イラスト：まいてぃ999さん\nhttps://twitter.com/mighty999\n\n現実世界用はこちら！ バーチャルと現実と両方あるとプレゼンスがアップ！？\nおきゅたん＆おきゅたんbot 抱き枕カバー\nhttps://mighty.booth.pm/items/1164749\n\n枕のボーンとウェイト：オノッチ / 鹿さん\nhttps://twitter.com/onotchi_\n\n\n--------------------\n\n● 規約／ご注意\n\n　・VRChatのワールドの一部に含んだり、ご自身のアバターのアクセサリーに使用可（ペデスタルも可）\n\n　・SNSへのシェアについては、VRChat内の写真などの形でのシェア（元の画像データそのまま配布でとかではない）なら歓迎です。\n\n　・改変について、オリジナルの絵柄に変えて自分で使ったり、一部の友人に渡すなどは可。\n\n　・モデルを含んだ改変データをネット上で広く無償配布したり、販売したりするのは不可（相談してね）。\n\n\n　・動画の配信時の使用、出演、映り込み、収益化配信など可。その際のクレジット表記も不要。\n\n　※クレジット表記は基本不要ですが、おきゅたんやおきゅまーとの名前やリンクを表記してもらえるのはもちろんうれしいです。\n\n　・おきゅたんのキャラクターをもとにした二次創作についてのQ\u0026Aは下記URLをご参照ください。\n\nhttps://ocutanbot.wixsite.com/ocutan/faq","url":"https://booth.pm/ja/items/1251843","offers":{"priceCurrency":"JPY","@type":"Offer","price":"480"},"image":"https://booth.pximg.net/c/620x620/00e145f9-56bb-4d61-a781-aec554e36161/i/1251843/b4b27a39-7443-45fc-878d-568ce48aae39_base_resized.jpg"}
     </script>
@@ -113,7 +116,7 @@
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="NZOlxkhQO8+E8WNV0JkWYiqJJgj9JeCwSahDEhltSkE="></script>
+    nonce="l98wYodtPhgdmG27cBvqvivKNof+Nr+yd21BTL2RZ/8="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -131,7 +134,6 @@
         "items">
           <div class="market"></div>
           <div data-page-type="market" id="js-item"></div>
-          <div id="js-item-category-breadcrumbs"></div>
           <article>
             <div class=
             "market market-item-detail item-info-detail u-bg-white">
@@ -145,66 +147,74 @@
                     <div class=
                     "summary u-order-1 l-col-2of5 u-pl-600">
                       <div class="mobile-section">
-                        <header>
-                          <div class="u-mb-200">
-                            <div class="eventname-flag">
-                              <a class="eventname-flag--inner"
-                              data-tracking="click"
-                              data-product-list=
-                              "from market_show via eventname_flag to event_index"
-                              href=
-                              "https://booth.pm/ja/events/v-market2">
-                              <div class="eventname-flag__name">
-                                Vケット2
-                              </div></a>
-                            </div>
+                        <header class=
+                        "gap-8 grid my-16 text-text-gray600 desktop:mt-0">
+                          <div id="js-item-category-breadcrumbs">
                           </div>
                           <div class=
-                          "flex items-start gap-4 mb-[9px] mobile:mb-[5.5px]">
-                            <a href=
-                            "https://booth.pm/ja/items?tags%5B%5D=VRChat">
-                            <img alt="VRChat" width="48px" src=
-                            "https://asset.booth.pm/static-images/shops/badges/vrchat.png"></a>
-                          </div>
-                          <div class="u-my-200 u-tpg-title3">
-                            <a class="nav" target="_blank"
-                            data-product-list=
-                            "from market_show via market_item_detail to shop_index"
-                            data-tracking="click" rel="noopener"
-                            href="https://ocutanbot.booth.pm/">
-                            <div class=
-                            "u-d-flex u-align-items-center">
-                              <img alt="おきゅまーと" class=
-                              "user-avatar at-item-summary" src=
-                              "https://booth.pximg.net/c/48x48/users/4702640/icon_image/13ba9cd6-5009-493b-ba6d-96efa3f10f4c_base_resized.jpg">
-                              <div class="u-text-ellipsis">
-                                おきゅまーと
+                          "empty:hidden flex gap-4 items-center">
+                            <div class="flex">
+                              <div class="eventname-flag">
+                                <a class="eventname-flag--inner"
+                                data-tracking="click"
+                                data-product-list=
+                                "from market_show via eventname_flag to event_index"
+                                href=
+                                "https://booth.pm/ja/events/v-market2">
+                                <div class="eventname-flag__name">
+                                  Vケット2
+                                </div></a>
                               </div>
-                            </div></a>
-                          </div>
+                            </div><a class="h-[20px]" href=
+                            "https://booth.pm/ja/items?tags%5B%5D=VRChat"><img alt="VRChat"
+                            height="20px" width="48px" src=
+                            "https://asset.booth.pm/static-images/shops/badges/vrchat.png"></a>
+                          </div><a class=
+                          "flex gap-4 items-center no-underline preserve-half-leading !text-current typography-16 w-fit"
+                          data-product-list=
+                          "from market_show via market_item_detail to shop_index"
+                          data-tracking="click" target="_blank"
+                          rel="noopener" href=
+                          "https://ocutanbot.booth.pm/"><img alt=
+                          "おきゅまーと" class=
+                          "h-[24px] rounded-oval w-[24px]" src=
+                          "https://booth.pximg.net/c/48x48/users/4702640/icon_image/13ba9cd6-5009-493b-ba6d-96efa3f10f4c_base_resized.jpg">おきゅまーと</a>
                           <h2 class=
-                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                          "font-bold leading-[32px] m-0 text-[24px]">
                             おきゅたんバーチャル抱き枕セット
                           </h2>
-                          <div class=
-                          "u-text-assertive u-tpg-caption1"></div>
                         </header>
-                        <div class="wish-list-link">
-                          <a class="add-to-wish-list"
+                        <div class="flex wish-list-link">
+                          <a class=
+                          "add-to-wish-list no-underline !text-current"
                           data-tracking="add_to_wishlist"
                           data-product-id="1251843"
                           data-product-list=
                           "from market_show via market_item_detail to add_to_wish_list"
                           rel="nofollow" data-method="post" href=
                           "https://booth.pm/items/1251843/wish_list">
-                          </a><a class="remove-from-wish-list"
+                          <div class=
+                          "border-2 border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
+                            <div class=
+                            "typography-14 preserve-half-leading wishlists_count">
+                              21
+                            </div>
+                          </div></a><a class=
+                          "remove-from-wish-list no-underline !text-current"
                           data-tracking="remove_from_wishlist"
                           data-product-id="1251843"
                           data-product-list=
                           "from market_show via market_item_detail to remove_from_wish_list"
                           data-remote="true" rel="nofollow"
                           data-method="delete" href=
-                          "https://booth.pm/items/1251843/wish_list"></a>
+                          "https://booth.pm/items/1251843/wish_list">
+                          <div class=
+                          "border-2 border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
+                            <div class=
+                            "typography-14 preserve-half-leading wishlists_count">
+                              21
+                            </div>
+                          </div></a>
                         </div>
                         <div>
                           <ul class=
