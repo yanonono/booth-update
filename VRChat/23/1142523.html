@@ -75,9 +75,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/b5d6ffc2795437615bc8.js" defer=
+    "https://asset.booth.pm/assets/9b28fd26c0de07a62038.js" defer=
     "defer" nonce=
-    "Eqr/ihAuzRhynOXqa6NYsB3DzQQNOFv/lPY+V6MlnsA="></script>
+    "F7WGKtqfAGwEncgFL5+s7O3Zzq0XpH+H1yIns+CxA3s="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"Unity Mesh Utility V0.2","description":"2019/01/29 注記\n本ライブラリはUniGLTFに依存しているため、UniGLTFがUnityプロジェクト内に存在しない場合エラーが発生します。その場合、こちらからUniGLTFのパッケージを別途追加してください。\nhttps://github.com/ousttrue/UniGLTF/releases\n\nBlendShapeのリネームツールに加えMesh Bakerでアバターを軽量化するのに必要なツールを別途加えました。\n\n2019/01/10 V0.2 アップデート\nMesh BakerのTexture Bakerの「Custom Shader Property Names」を自動で設定するエディタ拡張を同梱しました。Source Material To Combined Mappingの設定を済ませたうえで、コンポーネント右上の歯車のメニューからAuto Assign Prop Namesをクリックしてください。(isBumpの設定はガバなので要チェック)\n\nMesh Bakerを使った軽量化のやりかた(ざっくり)\n1. Mesh Bakerを使ってアバターのマテリアルとメッシュを統合します\n参考: http://kouhakuishi.blog.fc2.com/blog-entry-5.html\n(顔メッシュの名前はBody等元と同じにすると捗ります)\n2. RenameBlendShapesをアタッチしてうしろの余計な数字を取ります\n3. 上部メニューのHALBY→Save Mesh As Assetsを開き、結合したメッシュオブジェクトをAssetとして保存します\nPathの部分は\"Assets/ﾅﾝﾄｶｶﾝﾄｶ/mesh.asset\"みたいな感じにしてください\n4. RenameBlendShapesをデタッチしてアップロードします\n\n\n↓旧BlendShape Renameツールの説明文(同梱されています)\nUnity上でBlendShapeの名前を簡単に変更できるツールです\n\nRegexに変更したい名前、Replaceに置き換えたいワードを入力して、Rename!ボタンを押してください\n\n正規表現が利用できます(仕様はC#準拠)\n\n※事前にデータのバックアップは取っておいてください、モデルデータやシェイプキーが吹き飛んでも当方責任は取りません。","url":"https://booth.pm/ja/items/1142523","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"300"},"image":"https://booth.pximg.net/c/620x620/64d6cf4e-7b03-4338-9fdc-ca5b8647d504/i/1142523/c274c9c7-6dc0-4d3a-bca4-569042aa8420_base_resized.jpg"}
     </script>
@@ -91,7 +91,7 @@
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="Eqr/ihAuzRhynOXqa6NYsB3DzQQNOFv/lPY+V6MlnsA="></script>
+    nonce="F7WGKtqfAGwEncgFL5+s7O3Zzq0XpH+H1yIns+CxA3s="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -109,7 +109,6 @@
         "items">
           <div class="market"></div>
           <div data-page-type="market" id="js-item"></div>
-          <div id="js-item-category-breadcrumbs"></div>
           <article>
             <div class=
             "market market-item-detail item-info-detail u-bg-white">
@@ -123,53 +122,64 @@
                     <div class=
                     "summary u-order-1 l-col-2of5 u-pl-600">
                       <div class="mobile-section">
-                        <header>
+                        <header class=
+                        "gap-8 grid my-16 text-text-gray600 desktop:mt-0">
+                          <div id="js-item-category-breadcrumbs">
+                          </div>
                           <div class=
-                          "flex items-start gap-4 mb-[9px] mobile:mb-[5.5px]">
-                            <a href=
+                          "empty:hidden flex gap-4 items-center">
+                            <a class="h-[20px]" href=
                             "https://booth.pm/ja/items?tags%5B%5D=VRChat">
-                            <img alt="VRChat" width="48px" src=
+                            <img alt="VRChat" height="20px" width=
+                            "48px" src=
                             "https://asset.booth.pm/static-images/shops/badges/vrchat.png"></a>
-                          </div>
-                          <div class="u-my-200 u-tpg-title3">
-                            <a class="nav" target="_blank"
-                            data-product-list=
-                            "from market_show via market_item_detail to shop_index"
-                            data-tracking="click" rel="noopener"
-                            href="https://halby.booth.pm/">
-                            <div class=
-                            "u-d-flex u-align-items-center">
-                              <img alt="HALBY Laboratories" class=
-                              "user-avatar at-item-summary" src=
-                              "https://booth.pximg.net/c/48x48/users/1978079/icon_image/0be7003f-5bc7-4575-bd80-70306177f363_base_resized.jpg">
-                              <div class="u-text-ellipsis">
-                                HALBY Laboratories
-                              </div>
-                            </div></a>
-                          </div>
+                          </div><a class=
+                          "flex gap-4 items-center no-underline preserve-half-leading !text-current typography-16 w-fit"
+                          data-product-list=
+                          "from market_show via market_item_detail to shop_index"
+                          data-tracking="click" target="_blank"
+                          rel="noopener" href=
+                          "https://halby.booth.pm/"><img alt=
+                          "HALBY Laboratories" class=
+                          "h-[24px] rounded-oval w-[24px]" src=
+                          "https://booth.pximg.net/c/48x48/users/1978079/icon_image/0be7003f-5bc7-4575-bd80-70306177f363_base_resized.jpg">HALBY
+                          Laboratories</a>
                           <h2 class=
-                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                          "font-bold leading-[32px] m-0 text-[24px]">
                             Unity Mesh Utility V0.2
                           </h2>
-                          <div class=
-                          "u-text-assertive u-tpg-caption1"></div>
                         </header>
-                        <div class="wish-list-link">
-                          <a class="add-to-wish-list"
+                        <div class="flex wish-list-link">
+                          <a class=
+                          "add-to-wish-list no-underline !text-current"
                           data-tracking="add_to_wishlist"
                           data-product-id="1142523"
                           data-product-list=
                           "from market_show via market_item_detail to add_to_wish_list"
                           rel="nofollow" data-method="post" href=
                           "https://booth.pm/items/1142523/wish_list">
-                          </a><a class="remove-from-wish-list"
+                          <div class=
+                          "border-2 border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
+                            <div class=
+                            "typography-14 preserve-half-leading wishlists_count">
+                              164
+                            </div>
+                          </div></a><a class=
+                          "remove-from-wish-list no-underline !text-current"
                           data-tracking="remove_from_wishlist"
                           data-product-id="1142523"
                           data-product-list=
                           "from market_show via market_item_detail to remove_from_wish_list"
                           data-remote="true" rel="nofollow"
                           data-method="delete" href=
-                          "https://booth.pm/items/1142523/wish_list"></a>
+                          "https://booth.pm/items/1142523/wish_list">
+                          <div class=
+                          "border-2 border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
+                            <div class=
+                            "typography-14 preserve-half-leading wishlists_count">
+                              164
+                            </div>
+                          </div></a>
                         </div>
                         <div>
                           <ul class=
