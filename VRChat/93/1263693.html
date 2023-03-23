@@ -71,6 +71,9 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+    <style type="text/css">
+    .eventname-flag--inner {   margin-right: 6px; }  .eventname-flag--inner.eventname-flag--exhibition-open {   margin-right: 0px; }
+    </style>
   </head>
   <body>
     <div class="mini-player-controller" style="display: none;">
@@ -100,9 +103,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/b5d6ffc2795437615bc8.js" defer=
+    "https://asset.booth.pm/assets/9b28fd26c0de07a62038.js" defer=
     "defer" nonce=
-    "2Ui7WZ6kui8yTFshEn+TOeeqsE2hWu91tqKu1fHty/A="></script>
+    "LgElbjxnmoTd+07q6M+PVzfPtrJwxU/pGU5zNvQkGvM="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"【オリジナル3Dモデル】RB-26","description":"RB-26(ラクーンボット\"二郎\")はアライグマ博士の作ったお手伝いロボット！\n自分好みにカスタマイズしてお楽しみ下さい！\n\nVRChat向けに設定済みのPrefabを同梱していますので購入後すぐにアバターとして使用することができます。\nこのモデルのマテリアルにはCubeds Unity Shadersを使用しています。\n\nCubeds Unity Shaders\nhttps://vrchatjp.playing.wiki/d/Cubeds-Unity-Shaders\n\n【アバター導入方法】\n1. VRCSDKとCubeds Unity Shadersをインポートしておいてください。\n2. RB-26.unitypackageをインポートしてください。\n3. RB-26フォルダ内にある”RB-26prefab\"をHierarchyへ投入してください。\n4. VRCSDKを使用しアバターのアップロードを行ってください。\n\n\n【利用規約】\n\n・モデル改変OK\n・商用利用可\n・データの再配布(アバターペデスタルの配置及びPublicアバター化も含む)は禁止します。\n・本データを政治的パフォーマンス、宗教活動、ヘイトスピーチ、他者への嫌がらせ行為、その他公序良俗に反する目的で使用することを禁止します。\n・本データの利用において、何らかの不都合が生じたとしても当方は責任を負いかねますのでご了承ください。\n・条件についての内容は予告なく変更する場合があります。\n\n\n\n【内容物】\n・RB-26FBX\nFBXファイル版モデルデータです。\n\n・Zenmai.fbx\n背中のゼンマイモデルデータです。\n\n・texturフォルダ\nテクスチャファイルとUV\n\n・RB-26.unitypackage\nVRChatのSDKがインポートされたUnityプロジェクトにインポートすると、そのままアバターとして使用できる状態にセットアップしたパッケージです。\nCubeds Unity Shadersを使用しています。\n\n\n【連絡先】\n何かありましたらアライグマ博士TwitterのDMまでご連絡ください。\nhttps://twitter.com/Dr_Raccoon4626\n\n","url":"https://booth.pm/ja/items/1263693","offers":{"priceCurrency":"JPY","@type":"Offer","price":"500"},"image":"https://booth.pximg.net/c/620x620/828735d0-f852-4dd6-abc2-9616ee6d696a/i/1263693/cd15c2ce-c233-47c5-b30e-af4c8821609b_base_resized.jpg"}
     </script>
@@ -113,7 +116,7 @@
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="2Ui7WZ6kui8yTFshEn+TOeeqsE2hWu91tqKu1fHty/A="></script>
+    nonce="LgElbjxnmoTd+07q6M+PVzfPtrJwxU/pGU5zNvQkGvM="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -131,7 +134,6 @@
         "items">
           <div class="market"></div>
           <div data-page-type="market" id="js-item"></div>
-          <div id="js-item-category-breadcrumbs"></div>
           <article>
             <div class=
             "market market-item-detail item-info-detail u-bg-white">
@@ -145,62 +147,71 @@
                     <div class=
                     "summary u-order-1 l-col-2of5 u-pl-600">
                       <div class="mobile-section">
-                        <header>
-                          <div class="u-mb-200">
-                            <div class="eventname-flag">
-                              <a class="eventname-flag--inner"
-                              data-tracking="click"
-                              data-product-list=
-                              "from market_show via eventname_flag to event_index"
-                              href=
-                              "https://booth.pm/ja/events/v-market2">
-                              <div class="eventname-flag__name">
-                                Vケット2
-                              </div></a>
-                            </div>
+                        <header class=
+                        "gap-8 grid my-16 text-text-gray600 desktop:mt-0">
+                          <div id="js-item-category-breadcrumbs">
                           </div>
                           <div class=
-                          "flex items-start gap-4 mb-[9px] mobile:mb-[5.5px]">
-                          </div>
-                          <div class="u-my-200 u-tpg-title3">
-                            <a class="nav" target="_blank"
-                            data-product-list=
-                            "from market_show via market_item_detail to shop_index"
-                            data-tracking="click" rel="noopener"
-                            href="https://shirojiro.booth.pm/">
-                            <div class=
-                            "u-d-flex u-align-items-center">
-                              <img alt="白二郎の家" class=
-                              "user-avatar at-item-summary" src=
-                              "https://booth.pximg.net/c/48x48/users/1822584/icon_image/fdaa79f7-0503-42c9-bf09-7b923e93f51a_base_resized.jpg">
-                              <div class="u-text-ellipsis">
-                                白二郎の家
+                          "empty:hidden flex gap-4 items-center">
+                            <div class="flex">
+                              <div class="eventname-flag">
+                                <a class="eventname-flag--inner"
+                                data-tracking="click"
+                                data-product-list=
+                                "from market_show via eventname_flag to event_index"
+                                href=
+                                "https://booth.pm/ja/events/v-market2">
+                                <div class="eventname-flag__name">
+                                  Vケット2
+                                </div></a>
                               </div>
-                            </div></a>
-                          </div>
+                            </div>
+                          </div><a class=
+                          "flex gap-4 items-center no-underline preserve-half-leading !text-current typography-16 w-fit"
+                          data-product-list=
+                          "from market_show via market_item_detail to shop_index"
+                          data-tracking="click" target="_blank"
+                          rel="noopener" href=
+                          "https://shirojiro.booth.pm/"><img alt=
+                          "白二郎の家" class=
+                          "h-[24px] rounded-oval w-[24px]" src=
+                          "https://booth.pximg.net/c/48x48/users/1822584/icon_image/fdaa79f7-0503-42c9-bf09-7b923e93f51a_base_resized.jpg">白二郎の家</a>
                           <h2 class=
-                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                          "font-bold leading-[32px] m-0 text-[24px]">
                             【オリジナル3Dモデル】RB-26
                           </h2>
-                          <div class=
-                          "u-text-assertive u-tpg-caption1"></div>
                         </header>
-                        <div class="wish-list-link">
-                          <a class="add-to-wish-list"
+                        <div class="flex wish-list-link">
+                          <a class=
+                          "add-to-wish-list no-underline !text-current"
                           data-tracking="add_to_wishlist"
                           data-product-id="1263693"
                           data-product-list=
                           "from market_show via market_item_detail to add_to_wish_list"
                           rel="nofollow" data-method="post" href=
                           "https://booth.pm/items/1263693/wish_list">
-                          </a><a class="remove-from-wish-list"
+                          <div class=
+                          "border-2 border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
+                            <div class=
+                            "typography-14 preserve-half-leading wishlists_count">
+                              157
+                            </div>
+                          </div></a><a class=
+                          "remove-from-wish-list no-underline !text-current"
                           data-tracking="remove_from_wishlist"
                           data-product-id="1263693"
                           data-product-list=
                           "from market_show via market_item_detail to remove_from_wish_list"
                           data-remote="true" rel="nofollow"
                           data-method="delete" href=
-                          "https://booth.pm/items/1263693/wish_list"></a>
+                          "https://booth.pm/items/1263693/wish_list">
+                          <div class=
+                          "border-2 border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
+                            <div class=
+                            "typography-14 preserve-half-leading wishlists_count">
+                              157
+                            </div>
+                          </div></a>
                         </div>
                         <div>
                           <ul class=
