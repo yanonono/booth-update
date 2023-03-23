@@ -71,27 +71,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/b5d6ffc2795437615bc8.js" defer=
+    "https://asset.booth.pm/assets/9b28fd26c0de07a62038.js" defer=
     "defer" nonce=
-    "Fu3TagTa0E5J7+psg6dYUCOfUfwz1Y2yxx2r3yaTrI0="></script>
+    "JyRN6eRimMTtazn2+JrvL3TlpqSMKvqNRp5iz7B92k0="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"日本列島360　全天球静止画９枚セット","description":"日本列島上空視点の360度全天球画像（CG）です。\nOculus GoなどのHMDで閲覧することを想定しています。\n\n（2018.6.10  7～9枚目を追加しました）\n\n\n＜Oculus Goで閲覧するおススメの方法＞\n1. OculusGoの内蔵ブラウザでこのページを表示する。内蔵ブラウザ上で「voxelkei.booth」で検索すると出てきます。\n2. ページ上のダウンロードボタンでダウンロードする。\n3. OculusGoの「ギャラリー」→「内部ストレージ」を開くとダウンロードした画像が出てきます。\n4. 「360度画像モード」で見てください。\n\n\n画像詳細\n解像度：3840x1920ピクセルもしくは4096x2048ピクセル（equirectangular形式）\n\n\n＜ライセンス＞\nクリエイティブ・コモンズ　表示-非営利 4.0 国際 (CC BY-NC 4.0)\n表記例：\n(© VoxelKei (Licensed under CC BY-NC 4.0))\n・映像の一部をそのままもしくは背景として加工してSNSへアップするなど個人利用の範囲であればご自由に使って頂いて構いません。\n・個人ユーザーによるVRChatのpublicワールドでの利用はOKです。\n\nThe star field is based on the Milky Way panorama by European Southern Observatory(ESO).　https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB:ESO_-_Milky_Way.jpg\n作成に当たっては、国土地理院長の承認を得て、同院発行の基盤地図情報を使用しました（承認番号　平28情使第555号）","url":"https://booth.pm/ja/items/886799","offers":{"priceCurrency":"JPY","@type":"Offer","price":"0"},"image":"https://booth.pximg.net/c/620x620/aadf057d-75a6-4934-a7d2-701141567595/i/886799/c818274d-34a5-4c70-8270-1449bf8153f4_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="Fu3TagTa0E5J7+psg6dYUCOfUfwz1Y2yxx2r3yaTrI0="></script>
+    nonce="JyRN6eRimMTtazn2+JrvL3TlpqSMKvqNRp5iz7B92k0="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -113,7 +135,6 @@
         "detail_item" id="items">
           <div class="market"></div>
           <div data-page-type="market" id="js-item"></div>
-          <div id="js-item-category-breadcrumbs"></div>
           <article>
             <div class=
             "market market-item-detail item-info-detail u-bg-white">
@@ -127,49 +148,58 @@
                     <div class=
                     "summary u-order-1 l-col-2of5 u-pl-600">
                       <div class="mobile-section">
-                        <header>
+                        <header class=
+                        "gap-8 grid my-16 text-text-gray600 desktop:mt-0">
+                          <div id="js-item-category-breadcrumbs">
+                          </div>
                           <div class=
-                          "flex items-start gap-4 mb-[9px] mobile:mb-[5.5px]">
-                          </div>
-                          <div class="u-my-200 u-tpg-title3">
-                            <a class="nav" target="_blank"
-                            data-product-list=
-                            "from market_show via market_item_detail to shop_index"
-                            data-tracking="click" rel="noopener"
-                            href="https://voxelkei.booth.pm/">
-                            <div class=
-                            "u-d-flex u-align-items-center">
-                              <img alt="ボクスケショップ" class=
-                              "user-avatar at-item-summary" src=
-                              "https://booth.pximg.net/c/48x48/users/4803791/icon_image/d339dac5-1328-4176-bf2c-49148338a978_base_resized.jpg">
-                              <div class="u-text-ellipsis">
-                                ボクスケショップ
-                              </div>
-                            </div></a>
-                          </div>
+                          "empty:hidden flex gap-4 items-center">
+                          </div><a class=
+                          "flex gap-4 items-center no-underline preserve-half-leading !text-current typography-16 w-fit"
+                          data-product-list=
+                          "from market_show via market_item_detail to shop_index"
+                          data-tracking="click" target="_blank"
+                          rel="noopener" href=
+                          "https://voxelkei.booth.pm/"><img alt=
+                          "ボクスケショップ" class=
+                          "h-[24px] rounded-oval w-[24px]" src=
+                          "https://booth.pximg.net/c/48x48/users/4803791/icon_image/d339dac5-1328-4176-bf2c-49148338a978_base_resized.jpg">ボクスケショップ</a>
                           <h2 class=
-                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                          "font-bold leading-[32px] m-0 text-[24px]">
                             日本列島360　全天球静止画９枚セット
                           </h2>
-                          <div class=
-                          "u-text-assertive u-tpg-caption1"></div>
                         </header>
-                        <div class="wish-list-link">
-                          <a class="add-to-wish-list"
+                        <div class="flex wish-list-link">
+                          <a class=
+                          "add-to-wish-list no-underline !text-current"
                           data-tracking="add_to_wishlist"
                           data-product-id="886799"
                           data-product-list=
                           "from market_show via market_item_detail to add_to_wish_list"
                           rel="nofollow" data-method="post" href=
                           "https://booth.pm/items/886799/wish_list">
-                          </a><a class="remove-from-wish-list"
+                          <div class=
+                          "border-2 border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
+                            <div class=
+                            "typography-14 preserve-half-leading wishlists_count">
+                              258
+                            </div>
+                          </div></a><a class=
+                          "remove-from-wish-list no-underline !text-current"
                           data-tracking="remove_from_wishlist"
                           data-product-id="886799"
                           data-product-list=
                           "from market_show via market_item_detail to remove_from_wish_list"
                           data-remote="true" rel="nofollow"
                           data-method="delete" href=
-                          "https://booth.pm/items/886799/wish_list"></a>
+                          "https://booth.pm/items/886799/wish_list">
+                          <div class=
+                          "border-2 border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
+                            <div class=
+                            "typography-14 preserve-half-leading wishlists_count">
+                              258
+                            </div>
+                          </div></a>
                         </div>
                         <div>
                           <ul class=
