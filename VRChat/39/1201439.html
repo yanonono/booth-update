@@ -71,6 +71,9 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+    <style type="text/css">
+    .eventname-flag--inner {   margin-right: 6px; }  .eventname-flag--inner.eventname-flag--exhibition-open {   margin-right: 0px; }
+    </style>
   </head>
   <body>
     <div class="mini-player-controller" style="display: none;">
@@ -100,9 +103,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/b5d6ffc2795437615bc8.js" defer=
+    "https://asset.booth.pm/assets/9b28fd26c0de07a62038.js" defer=
     "defer" nonce=
-    "lOywN6q9/SHXQDzK4LsHdkl/ic6uGl1PYO/Hb6mXeAg="></script>
+    "rmPYV62GxA5Jb06dM9Pm/GxKCXpaa50EM3nEmv1dvPk="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"【Particle Music Player】Esc/八月二雪","description":"VR音楽メディア\n「Particle Music Player」\n\n楽曲「Esc/八月二雪」\n\n歌:Qキキ\n作詞・作編曲:john=hive\n演出:なみた(@namita0819)\n\n再生すると楽曲とともに歌詞や演出が浮かび上がるVR音楽メディアです。\nVR空間上に配置して鑑賞することができます。\n\nVRCワールド用に使用する場合はParticle_Music_Player_ESC_for_VRCworld(※2022/03/30追記 こちらVRCSDK3には対応しておりません)\nVRCアバター用に使用する場合はParticle Music Player ESC for Avater\nVRC以外等その他で使用する場合はParticle Music Player Escをお使いください。\n\n■改変自由、商用・非商用問わずご利用いただけます。\n(例:VRChatのワールドへ設置、自作VRゲームでの使用、動画の背景等)\n■禁止事項\n　公序良俗に反する行為\n　政治・宗教活動、誹謗中傷目的での使用\n　無改変元データのみの配布、転売行為\n　自作発言\n■当データを使用したことによる如何なる損害も当方は責任を負わないものとします。\n■この作品には光の点滅等が含まれています。視聴中に気分が優れない等の症状が出た場合は視聴を中止し休息をとるようにお願いいたします。\n\n本作品はMITライセンスに基づき配布されているReflex Shader 2と\nAudio Spectrum Analyzer for Shaderを使用しています。\nhttps://opensource.org/licenses/MIT\n\nCopyright (c) 2018 Reflex\nCopyright (c) 2018 @Feyris77\n\n※楽曲単体をお求めの方は下記アドレスから商品ページに飛べます\nhttps://hachigatsu2yuki.booth.pm/items/1263175\n\n\n▼追記\n2019/03/14\nVRChatのワールドに設置する際、Unity Packageをインポートするだけで、\nCDを表示したままアニメーションON/OFFができるトリガーを付けました。\nまた、Unity Package内の音源の音量を調整しました。\nVRChat SDKをインポート後にParticle_Music_Player_Esc_VRC_Ver.1.2.1をインポートしてください。\nVRChat以外で使用される場合や、ON/OFFトリガーが不要な場合はParticle Music Player Esc Ver.1.1をご利用ください。\n\n2019/03/10\n同梱物にCDケースのFBXとUVマップPNG、音源単体のmp3データを追加しました\n\n2019/09/04\n同梱物にVRC Avatar用パッケージを追加しました。\nそれに伴い各パッケージをリネームしました。","url":"https://booth.pm/ja/items/1201439","offers":{"priceCurrency":"JPY","@type":"Offer","price":"1000"},"image":"https://booth.pximg.net/c/620x620/4e6ac74b-2d4a-4b5d-bc76-8cc39bf34871/i/1201439/8e06cd86-cf4e-46ad-a7bc-5511510ef21d_base_resized.jpg"}
     </script>
@@ -113,7 +116,7 @@
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="lOywN6q9/SHXQDzK4LsHdkl/ic6uGl1PYO/Hb6mXeAg="></script>
+    nonce="rmPYV62GxA5Jb06dM9Pm/GxKCXpaa50EM3nEmv1dvPk="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -131,7 +134,6 @@
         "detail_item" id="items">
           <div class="market"></div>
           <div data-page-type="market" id="js-item"></div>
-          <div id="js-item-category-breadcrumbs"></div>
           <article>
             <div class=
             "market market-item-detail item-info-detail u-bg-white">
@@ -145,67 +147,74 @@
                     <div class=
                     "summary u-order-1 l-col-2of5 u-pl-600">
                       <div class="mobile-section">
-                        <header>
-                          <div class="u-mb-200">
-                            <div class="eventname-flag">
-                              <a class="eventname-flag--inner"
-                              data-tracking="click"
-                              data-product-list=
-                              "from market_show via eventname_flag to event_index"
-                              href=
-                              "https://booth.pm/ja/events/v-market2">
-                              <div class="eventname-flag__name">
-                                Vケット2
-                              </div></a>
-                            </div>
+                        <header class=
+                        "gap-8 grid my-16 text-text-gray600 desktop:mt-0">
+                          <div id="js-item-category-breadcrumbs">
                           </div>
                           <div class=
-                          "flex items-start gap-4 mb-[9px] mobile:mb-[5.5px]">
-                            <a href=
-                            "https://booth.pm/ja/items?tags%5B%5D=VRChat">
-                            <img alt="VRChat" width="48px" src=
-                            "https://asset.booth.pm/static-images/shops/badges/vrchat.png"></a>
-                          </div>
-                          <div class="u-my-200 u-tpg-title3">
-                            <a class="nav" target="_blank"
-                            data-product-list=
-                            "from market_show via market_item_detail to shop_index"
-                            data-tracking="click" rel="noopener"
-                            href=
-                            "https://hachigatsu2yuki.booth.pm/">
-                            <div class=
-                            "u-d-flex u-align-items-center">
-                              <img alt="八月二雪" class=
-                              "user-avatar at-item-summary" src=
-                              "https://booth.pximg.net/c/48x48/users/2175821/icon_image/5b6ed24a-a737-4e92-87c6-9731052e34a5_base_resized.jpg">
-                              <div class="u-text-ellipsis">
-                                八月二雪
+                          "empty:hidden flex gap-4 items-center">
+                            <div class="flex">
+                              <div class="eventname-flag">
+                                <a class="eventname-flag--inner"
+                                data-tracking="click"
+                                data-product-list=
+                                "from market_show via eventname_flag to event_index"
+                                href=
+                                "https://booth.pm/ja/events/v-market2">
+                                <div class="eventname-flag__name">
+                                  Vケット2
+                                </div></a>
                               </div>
-                            </div></a>
-                          </div>
+                            </div><a class="h-[20px]" href=
+                            "https://booth.pm/ja/items?tags%5B%5D=VRChat"><img alt="VRChat"
+                            height="20px" width="48px" src=
+                            "https://asset.booth.pm/static-images/shops/badges/vrchat.png"></a>
+                          </div><a class=
+                          "flex gap-4 items-center no-underline preserve-half-leading !text-current typography-16 w-fit"
+                          data-product-list=
+                          "from market_show via market_item_detail to shop_index"
+                          data-tracking="click" target="_blank"
+                          rel="noopener" href=
+                          "https://hachigatsu2yuki.booth.pm/"><img alt="八月二雪"
+                          class="h-[24px] rounded-oval w-[24px]"
+                          src=
+                          "https://booth.pximg.net/c/48x48/users/2175821/icon_image/5b6ed24a-a737-4e92-87c6-9731052e34a5_base_resized.jpg">八月二雪</a>
                           <h2 class=
-                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                          "font-bold leading-[32px] m-0 text-[24px]">
                             【Particle Music Player】Esc/八月二雪
                           </h2>
-                          <div class=
-                          "u-text-assertive u-tpg-caption1"></div>
                         </header>
-                        <div class="wish-list-link">
-                          <a class="add-to-wish-list"
+                        <div class="flex wish-list-link">
+                          <a class=
+                          "add-to-wish-list no-underline !text-current"
                           data-tracking="add_to_wishlist"
                           data-product-id="1201439"
                           data-product-list=
                           "from market_show via market_item_detail to add_to_wish_list"
                           rel="nofollow" data-method="post" href=
                           "https://booth.pm/items/1201439/wish_list">
-                          </a><a class="remove-from-wish-list"
+                          <div class=
+                          "border-2 border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
+                            <div class=
+                            "typography-14 preserve-half-leading wishlists_count">
+                              642
+                            </div>
+                          </div></a><a class=
+                          "remove-from-wish-list no-underline !text-current"
                           data-tracking="remove_from_wishlist"
                           data-product-id="1201439"
                           data-product-list=
                           "from market_show via market_item_detail to remove_from_wish_list"
                           data-remote="true" rel="nofollow"
                           data-method="delete" href=
-                          "https://booth.pm/items/1201439/wish_list"></a>
+                          "https://booth.pm/items/1201439/wish_list">
+                          <div class=
+                          "border-2 border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
+                            <div class=
+                            "typography-14 preserve-half-leading wishlists_count">
+                              642
+                            </div>
+                          </div></a>
                         </div>
                         <div>
                           <ul class=
