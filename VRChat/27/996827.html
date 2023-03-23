@@ -75,9 +75,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/b5d6ffc2795437615bc8.js" defer=
+    "https://asset.booth.pm/assets/9b28fd26c0de07a62038.js" defer=
     "defer" nonce=
-    "cUO4dpbf1ZC2rS35ww1nlS6KaTKxCjacb2CACBL5OSQ="></script>
+    "TUt25TnFHO7tmyzwIvw/YAAdK5ObGDXtTCoQ/Ca8D+g="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"Position Shader","description":"VRChatでの利用を想定した、現在位置(※)をメートル単位で表示す\nるシェーダーです。\n商品にはシェーダー、マテリアル、テクスチャ、マテリアルをセットしたQuadのプレハブが含まれます。\n\n※マテリアルがセットされたメッシュのローカル原点座標をワールド座標に変換して表示します。\n視覚的に見えるメッシュより原点がかけ離れた位置にあると、見た目の場所よりずれた座標が表示されます。\nまたuvが0～1ではない、限定的な範囲のメッシュの場合は、座標がキレイに表示されない場合があります。\n基本的にはQuadやPlaneで利用してください。\n\n開発中動画\nhttps://twitter.com/onotchi_/status/1034930068059906049\n\n背景テクスチャ、数値テクスチャは変更可能です。\n全体の透過度、表示数字桁数も変更可能です。\n数字の桁数は3-5桁で、原点から100kmの範囲内のワールドであれば問題なく表示できると思います。\nただし元々のワールドの位置が原点から100km以上離れた場所に作られていたりした場合は、表示しきれません。\nシェーダーを書き換えれば桁数上限は増やせるため、必要に応じて改造してください。\n\nパラメータ\n・Texture：背景用テクスチャ\n・Digit Texture：数値テクスチャ\n・Alpha：全体透過度\n・Digit Length：数値桁数\n・Font Width：数値1文字の幅(ドット数)\n・Offset：数字テクスチャのオフセット\n\n差し替え用の数字テクスチャを作る場合は、等幅フォントで作成してください。\nまた文字の順は必ず「0123456789 -」としてください。\n9と-の間のスペースは正の値の符号用なので、スペースではなく+でもOKです。\n\n腕時計のように腕部分に仕込んで常に確認できるようにするもよし、アニメーションオーバーライドで必要に応じて目の前に表示されるようにしてもよし、自由な用途でお使いください。\n\n※性質上、複数のオブジェクトに同一マテリアルを設定することが出来ません。複数オブジェクトを使う場合は、それぞれ別のマテリアルを設定してください。\n\n\nシェーダーやテクスチャは自由に改造して構いませんが、データの再配布、販売は不可とします。\nまた利用は自己責任とし、トラブルが発生した場合でも一切の責任は負いかねますので、予めご了承ください。\n\nシェーダーを伴わない、差し替え用のテクスチャ、マテリアルの配布は問題ありません。\n","url":"https://booth.pm/ja/items/996827","offers":{"priceCurrency":"JPY","@type":"Offer","price":"100"},"image":"https://booth.pximg.net/c/620x620/a5ee2955-f931-4ee1-9f8c-8ffe0ada05e8/i/996827/1db6b963-bcc9-4d02-9623-f82ac254acd3_base_resized.jpg"}
     </script>
@@ -91,7 +91,7 @@
     "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="cUO4dpbf1ZC2rS35ww1nlS6KaTKxCjacb2CACBL5OSQ="></script>
+    nonce="TUt25TnFHO7tmyzwIvw/YAAdK5ObGDXtTCoQ/Ca8D+g="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -109,7 +109,6 @@
         "items">
           <div class="market"></div>
           <div data-page-type="market" id="js-item"></div>
-          <div id="js-item-category-breadcrumbs"></div>
           <article>
             <div class=
             "market market-item-detail item-info-detail u-bg-white">
@@ -123,53 +122,63 @@
                     <div class=
                     "summary u-order-1 l-col-2of5 u-pl-600">
                       <div class="mobile-section">
-                        <header>
+                        <header class=
+                        "gap-8 grid my-16 text-text-gray600 desktop:mt-0">
+                          <div id="js-item-category-breadcrumbs">
+                          </div>
                           <div class=
-                          "flex items-start gap-4 mb-[9px] mobile:mb-[5.5px]">
-                            <a href=
+                          "empty:hidden flex gap-4 items-center">
+                            <a class="h-[20px]" href=
                             "https://booth.pm/ja/items?tags%5B%5D=VRChat">
-                            <img alt="VRChat" width="48px" src=
+                            <img alt="VRChat" height="20px" width=
+                            "48px" src=
                             "https://asset.booth.pm/static-images/shops/badges/vrchat.png"></a>
-                          </div>
-                          <div class="u-my-200 u-tpg-title3">
-                            <a class="nav" target="_blank"
-                            data-product-list=
-                            "from market_show via market_item_detail to shop_index"
-                            data-tracking="click" rel="noopener"
-                            href="https://onotchi.booth.pm/">
-                            <div class=
-                            "u-d-flex u-align-items-center">
-                              <img alt="オノップ" class=
-                              "user-avatar at-item-summary" src=
-                              "https://booth.pximg.net/c/48x48/users/3396244/icon_image/dd23b5e3-7f36-40f4-a7e1-fdd4385f8f39_base_resized.jpg">
-                              <div class="u-text-ellipsis">
-                                オノップ
-                              </div>
-                            </div></a>
-                          </div>
+                          </div><a class=
+                          "flex gap-4 items-center no-underline preserve-half-leading !text-current typography-16 w-fit"
+                          data-product-list=
+                          "from market_show via market_item_detail to shop_index"
+                          data-tracking="click" target="_blank"
+                          rel="noopener" href=
+                          "https://onotchi.booth.pm/"><img alt=
+                          "オノップ" class=
+                          "h-[24px] rounded-oval w-[24px]" src=
+                          "https://booth.pximg.net/c/48x48/users/3396244/icon_image/dd23b5e3-7f36-40f4-a7e1-fdd4385f8f39_base_resized.jpg">オノップ</a>
                           <h2 class=
-                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                          "font-bold leading-[32px] m-0 text-[24px]">
                             Position Shader
                           </h2>
-                          <div class=
-                          "u-text-assertive u-tpg-caption1"></div>
                         </header>
-                        <div class="wish-list-link">
-                          <a class="add-to-wish-list"
+                        <div class="flex wish-list-link">
+                          <a class=
+                          "add-to-wish-list no-underline !text-current"
                           data-tracking="add_to_wishlist"
                           data-product-id="996827"
                           data-product-list=
                           "from market_show via market_item_detail to add_to_wish_list"
                           rel="nofollow" data-method="post" href=
                           "https://booth.pm/items/996827/wish_list">
-                          </a><a class="remove-from-wish-list"
+                          <div class=
+                          "border-2 border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
+                            <div class=
+                            "typography-14 preserve-half-leading wishlists_count">
+                              92
+                            </div>
+                          </div></a><a class=
+                          "remove-from-wish-list no-underline !text-current"
                           data-tracking="remove_from_wishlist"
                           data-product-id="996827"
                           data-product-list=
                           "from market_show via market_item_detail to remove_from_wish_list"
                           data-remote="true" rel="nofollow"
                           data-method="delete" href=
-                          "https://booth.pm/items/996827/wish_list"></a>
+                          "https://booth.pm/items/996827/wish_list">
+                          <div class=
+                          "border-2 border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
+                            <div class=
+                            "typography-14 preserve-half-leading wishlists_count">
+                              92
+                            </div>
+                          </div></a>
                         </div>
                         <div>
                           <ul class=
