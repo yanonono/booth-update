@@ -69,27 +69,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/b5d6ffc2795437615bc8.js" defer=
+    "https://asset.booth.pm/assets/9b28fd26c0de07a62038.js" defer=
     "defer" nonce=
-    "CaL91EFPlwMcNAvOrP98l5/hzxLylP5RiRjSp774Vo0="></script>
+    "e01o6ecYjmS3zSYuHEDh+F38+QW4VJWankY04dVJPTQ="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"ミニハット","description":"モデルへの装飾として想定したミニハットになります！\n\n禁止事項　 \n二次配布やペデスタル化など購入者以外が利用可能にする行為。\n","url":"https://booth.pm/ja/items/1282790","offers":{"priceCurrency":"JPY","@type":"Offer","price":"100"},"image":"https://booth.pximg.net/c/620x620/fd6037f2-588d-4af9-81b9-0e0038fd39e3/i/1282790/4795bd5d-9d9c-46d4-b1a3-62ccba8cef3d_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="CaL91EFPlwMcNAvOrP98l5/hzxLylP5RiRjSp774Vo0="></script>
+    nonce="e01o6ecYjmS3zSYuHEDh+F38+QW4VJWankY04dVJPTQ="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -111,7 +133,6 @@
         "detail_item" id="items">
           <div class="market"></div>
           <div data-page-type="market" id="js-item"></div>
-          <div id="js-item-category-breadcrumbs"></div>
           <article>
             <div class=
             "market market-item-detail item-info-detail u-bg-white">
@@ -125,49 +146,58 @@
                     <div class=
                     "summary u-order-1 l-col-2of5 u-pl-600">
                       <div class="mobile-section">
-                        <header>
+                        <header class=
+                        "gap-8 grid my-16 text-text-gray600 desktop:mt-0">
+                          <div id="js-item-category-breadcrumbs">
+                          </div>
                           <div class=
-                          "flex items-start gap-4 mb-[9px] mobile:mb-[5.5px]">
-                          </div>
-                          <div class="u-my-200 u-tpg-title3">
-                            <a class="nav" target="_blank"
-                            data-product-list=
-                            "from market_show via market_item_detail to shop_index"
-                            data-tracking="click" rel="noopener"
-                            href="https://kasoujuukou.booth.pm/">
-                            <div class=
-                            "u-d-flex u-align-items-center">
-                              <img alt="仮想重工" class=
-                              "user-avatar at-item-summary" src=
-                              "https://booth.pximg.net/c/48x48/users/5724410/icon_image/11bc255f-5e89-47df-a5e3-955e943c9c67_base_resized.jpg">
-                              <div class="u-text-ellipsis">
-                                仮想重工
-                              </div>
-                            </div></a>
-                          </div>
+                          "empty:hidden flex gap-4 items-center">
+                          </div><a class=
+                          "flex gap-4 items-center no-underline preserve-half-leading !text-current typography-16 w-fit"
+                          data-product-list=
+                          "from market_show via market_item_detail to shop_index"
+                          data-tracking="click" target="_blank"
+                          rel="noopener" href=
+                          "https://kasoujuukou.booth.pm/"><img alt=
+                          "仮想重工" class=
+                          "h-[24px] rounded-oval w-[24px]" src=
+                          "https://booth.pximg.net/c/48x48/users/5724410/icon_image/11bc255f-5e89-47df-a5e3-955e943c9c67_base_resized.jpg">仮想重工</a>
                           <h2 class=
-                          "u-tpg-title1 u-mt-0 u-text-wrap u-mb-400">
+                          "font-bold leading-[32px] m-0 text-[24px]">
                             ミニハット
                           </h2>
-                          <div class=
-                          "u-text-assertive u-tpg-caption1"></div>
                         </header>
-                        <div class="wish-list-link">
-                          <a class="add-to-wish-list"
+                        <div class="flex wish-list-link">
+                          <a class=
+                          "add-to-wish-list no-underline !text-current"
                           data-tracking="add_to_wishlist"
                           data-product-id="1282790"
                           data-product-list=
                           "from market_show via market_item_detail to add_to_wish_list"
                           rel="nofollow" data-method="post" href=
                           "https://booth.pm/items/1282790/wish_list">
-                          </a><a class="remove-from-wish-list"
+                          <div class=
+                          "border-2 border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
+                            <div class=
+                            "typography-14 preserve-half-leading wishlists_count">
+                              7
+                            </div>
+                          </div></a><a class=
+                          "remove-from-wish-list no-underline !text-current"
                           data-tracking="remove_from_wishlist"
                           data-product-id="1282790"
                           data-product-list=
                           "from market_show via market_item_detail to remove_from_wish_list"
                           data-remote="true" rel="nofollow"
                           data-method="delete" href=
-                          "https://booth.pm/items/1282790/wish_list"></a>
+                          "https://booth.pm/items/1282790/wish_list">
+                          <div class=
+                          "border-2 border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
+                            <div class=
+                            "typography-14 preserve-half-leading wishlists_count">
+                              7
+                            </div>
+                          </div></a>
                         </div>
                         <div>
                           <ul class=
