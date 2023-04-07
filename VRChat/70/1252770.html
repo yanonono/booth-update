@@ -70,27 +70,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/27bbfb4fa6c0766d0c49.js" defer=
+    "https://asset.booth.pm/assets/af21a2d40f1af0a8250f.js" defer=
     "defer" nonce=
-    "2Bpc2tBnN7zE60T+A1eVNacPgXj4DtCqWu1H+t9nlcI="></script>
+    "/iy/aI/4oZbv/fz9nwMTlMpsI6TRWN/EOiKiTCd3BK4="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"【3Dモデル】儀礼軍刀","description":"ポリゴン数、約15000\n内容はFBXとテクスチャー画像になります。\n\n※OKなこと。許可項目。\n・モデル及びデータの改変。\n（他のモデルと組み合わせる場合はこちらからはOKです。組み合わせ先の規約をよくご確認ください。）\n・個人、サークル等によるゲームでの利用や動画などでの利用。及びそれらによる収益化。\n（法人の方は要相談）（また可能であれば動画等での利用の際クレジット表記してくれるとありがたいです）\n\n※ダメなこと。不可項目。\n・再配布、二次配布の禁止。改変後も不可。\n・元のモデルの自作発言を禁止します。\n・VRChatのアバターペデスタルでの利用は禁止します。\n・政治的活動、宗教活動、特定個人や団体への中傷を目的とした利用を禁止します。\n\n不明なこと、不具合、質問等ございましたら気軽にツイッターへご連絡ください。\nただ、Unity、Blender等の技術的な質問にはお答えしかねます。\n@analognihonnhei","url":"https://booth.pm/ja/items/1252770","offers":{"priceCurrency":"JPY","@type":"Offer","price":"200"},"image":"https://booth.pximg.net/c/620x620/173e5138-c18a-442d-a811-70459b0503fd/i/1252770/a42eab41-bf28-49a1-8d36-78311abc1a31_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="2Bpc2tBnN7zE60T+A1eVNacPgXj4DtCqWu1H+t9nlcI="></script>
+    nonce="/iy/aI/4oZbv/fz9nwMTlMpsI6TRWN/EOiKiTCd3BK4="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -114,39 +136,39 @@
               <div class=
               "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class=
-                  "market-item-detail__exhibition-banner"></div>
                   <div id="js-item-order"></div>
                   <div class="u-pt-600 u-d-flex">
                     <div class=
                     "summary u-order-1 l-col-2of5 u-pl-600">
                       <div class="mobile-section">
-                        <header class=
-                        "gap-8 grid my-16 text-text-gray600 desktop:mt-0">
-                          <div id="js-item-category-breadcrumbs">
-                          </div>
-                          <div class=
-                          "empty:hidden flex gap-4 items-center">
-                            <a class="h-[20px]" href=
-                            "https://booth.pm/ja/items?tags%5B%5D=VRChat">
-                            <img alt="VRChat" height="20px" width=
-                            "48px" src=
-                            "https://asset.booth.pm/static-images/shops/badges/vrchat.png"></a>
-                          </div><a class=
-                          "flex gap-4 items-center no-underline preserve-half-leading !text-current typography-16 w-fit"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" target="_blank"
-                          rel="noopener" href=
-                          "https://oozoramizuka.booth.pm/"><img alt="帝国工廠"
-                          class="h-[24px] rounded-oval w-[24px]"
-                          src=
-                          "https://booth.pximg.net/c/48x48/users/243456/icon_image/977ad30d-c741-47a2-b5fb-e3d3382a9897_base_resized.jpg">帝国工廠</a>
-                          <h2 class=
-                          "font-bold leading-[32px] m-0 text-[24px]">
-                            【3Dモデル】儀礼軍刀
-                          </h2>
-                        </header>
+                        <div class="my-16 desktop:mt-0">
+                          <header class=
+                          "auto-cols-[100%] gap-8 grid text-text-gray600 shop__text">
+                            <div id="js-item-category-breadcrumbs">
+                            </div>
+                            <div class=
+                            "empty:hidden flex gap-4 items-center">
+                              <a class="h-[20px]" href=
+                              "https://booth.pm/ja/items?tags%5B%5D=VRChat">
+                              <img alt="VRChat" height="20px"
+                              width="48px" src=
+                              "https://asset.booth.pm/static-images/shops/badges/vrchat.png"></a>
+                            </div><a class=
+                            "flex gap-4 items-center no-underline preserve-half-leading !text-current typography-16 w-fit"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" target="_blank"
+                            rel="noopener" href=
+                            "https://oozoramizuka.booth.pm/"><img alt="帝国工廠"
+                            class="h-[24px] rounded-oval w-[24px]"
+                            src=
+                            "https://booth.pximg.net/c/48x48/users/243456/icon_image/977ad30d-c741-47a2-b5fb-e3d3382a9897_base_resized.jpg">帝国工廠</a>
+                            <h2 class=
+                            "font-bold leading-[32px] m-0 text-[24px]">
+                              【3Dモデル】儀礼軍刀
+                            </h2>
+                          </header>
+                        </div>
                         <div class="flex wish-list-link">
                           <a class=
                           "add-to-wish-list no-underline !text-current"
@@ -160,7 +182,7 @@
                           "border-2 border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
                             <div class=
                             "typography-14 preserve-half-leading wishlists_count">
-                              83
+                              84
                             </div>
                           </div></a><a class=
                           "remove-from-wish-list no-underline !text-current"
@@ -175,10 +197,11 @@
                           "border-2 border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
                             <div class=
                             "typography-14 preserve-half-leading wishlists_count">
-                              83
+                              84
                             </div>
                           </div></a>
                         </div>
+                        <div class="empty:hidden my-16"></div>
                         <div>
                           <ul class=
                           "variations u-mt-300 u-border-b" id=
@@ -267,18 +290,23 @@
                         </div>
                       </div>
                       <div class=
-                      "desktop:py-[20px] mobile:py-[16px]" id=
+                      "desktop:pt-[20px] mobile:py-[16px]" id=
                       "js-item-share-buttons"></div>
-                      <h5 class=
-                      "u-tpg-caption1 pt-12 shop-theme-text--default flex items-center">
-                        <a target="_blank" class=
-                        "ml-4 nav-reverse shop-theme-text--default"
-                        rel="noopener" href=
-                        "https://booth.pixiv.help/hc/ja/sections/13288068355225">
-                        「ギフトとして贈る」とは</a>
-                      </h5>
-                      <div class="!p-0" id=
-                      "js-item-payment-and-shipping-terms"></div>
+                      <div class=
+                      "flex flex-col gap-24 pt-40 pb-24">
+                        <h4 class=
+                        "typography-14 shop-theme-text--default flex items-center !m-0"
+                        style=
+                        "font-feature-settings: &quot;palt&quot;;">
+                          <a target="_blank" class=
+                          "ml-4 no-underline hover:underline shop-theme-text--default"
+                          rel="noopener" href=
+                          "https://booth.pixiv.help/hc/ja/sections/13288068355225">
+                          「ギフトとして贈る」とは</a>
+                        </h4>
+                        <div class="!p-0" id=
+                        "js-item-payment-and-shipping-terms"></div>
+                      </div>
                     </div>
                     <div class="u-order-0 l-col-3of5 u-pr-500">
                       <div class="primary-image-area">
