@@ -71,27 +71,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/27bbfb4fa6c0766d0c49.js" defer=
+    "https://asset.booth.pm/assets/af21a2d40f1af0a8250f.js" defer=
     "defer" nonce=
-    "fEC6+dZZNfSi/SfEjP2iDLX8li1CBC+CD9dGkuaD96M="></script>
+    "407IHHAGlI3rYaaTzbWPnmoWZOuXHaTF8zV4t0pOhuE="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"【無料】ファンタジーな剣","description":"・ファンタジーっぽい剣のモデルとテクスチャのセットです。\n・設定など全く考えず作りましたので自由に設定を付加してお使いいただくのがおすすめです。\n\n///利用規約///\n・このモデルには以下の規約を適用します\n\n黒蟻サンダー制作モデル共通小物無料配布作品用利用規約\n日本語版\nhttps://drive.google.com/file/d/1KCeZKRLp019ILPgKPtsbDIEzDexCW15m/view?usp=sharing\n英語版\nhttps://drive.google.com/file/d/1I9nzOoMEpWupRggxGYC6B_OCpi2X-fhk/view?usp=sharing\n\n\nモデル仕様\n本体：(SwordM1.FBX)\n△4896\nマテリアル数：1\nテクスチャサイズ：2048ピクセル平方\n\t\n作成者：Kuroari_Thunder(黒蟻サンダー)\nTwitter：@Kuroari_Thunder\n\n説明書等：Ver1.1\n最終更新：2021/4/12\n\nリリースノート\nVer1.1(2021/4/12)\n・規約改定、古い情報の修正\nVer1.0(2019/2/8)\n・公開","url":"https://booth.pm/ja/items/1176429","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"100"},"image":"https://booth.pximg.net/c/620x620/ffd38964-fc99-43c6-b020-a76e2e47c238/i/1176429/2208b259-1145-45ee-829f-0983789963f0_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="fEC6+dZZNfSi/SfEjP2iDLX8li1CBC+CD9dGkuaD96M="></script>
+    nonce="407IHHAGlI3rYaaTzbWPnmoWZOuXHaTF8zV4t0pOhuE="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -119,39 +141,39 @@
               <div class=
               "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
-                  <div class=
-                  "market-item-detail__exhibition-banner"></div>
                   <div id="js-item-order"></div>
                   <div class="u-pt-600 u-d-flex">
                     <div class=
                     "summary u-order-1 l-col-2of5 u-pl-600">
                       <div class="mobile-section">
-                        <header class=
-                        "gap-8 grid my-16 text-text-gray600 desktop:mt-0">
-                          <div id="js-item-category-breadcrumbs">
-                          </div>
-                          <div class=
-                          "empty:hidden flex gap-4 items-center">
-                            <a class="h-[20px]" href=
-                            "https://booth.pm/ja/items?tags%5B%5D=VRChat">
-                            <img alt="VRChat" height="20px" width=
-                            "48px" src=
-                            "https://asset.booth.pm/static-images/shops/badges/vrchat.png"></a>
-                          </div><a class=
-                          "flex gap-4 items-center no-underline preserve-half-leading !text-current typography-16 w-fit"
-                          data-product-list=
-                          "from market_show via market_item_detail to shop_index"
-                          data-tracking="click" target="_blank"
-                          rel="noopener" href=
-                          "https://atk-industry.booth.pm/"><img alt="ATK工業"
-                          class="h-[24px] rounded-oval w-[24px]"
-                          src=
-                          "https://booth.pximg.net/c/48x48/users/1383163/icon_image/d7081259-7802-430c-94cd-eeddf6295001_base_resized.jpg">ATK工業</a>
-                          <h2 class=
-                          "font-bold leading-[32px] m-0 text-[24px]">
-                            【無料】ファンタジーな剣
-                          </h2>
-                        </header>
+                        <div class="my-16 desktop:mt-0">
+                          <header class=
+                          "auto-cols-[100%] gap-8 grid text-text-gray600 shop__text">
+                            <div id="js-item-category-breadcrumbs">
+                            </div>
+                            <div class=
+                            "empty:hidden flex gap-4 items-center">
+                              <a class="h-[20px]" href=
+                              "https://booth.pm/ja/items?tags%5B%5D=VRChat">
+                              <img alt="VRChat" height="20px"
+                              width="48px" src=
+                              "https://asset.booth.pm/static-images/shops/badges/vrchat.png"></a>
+                            </div><a class=
+                            "flex gap-4 items-center no-underline preserve-half-leading !text-current typography-16 w-fit"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" target="_blank"
+                            rel="noopener" href=
+                            "https://atk-industry.booth.pm/"><img alt="ATK工業"
+                            class="h-[24px] rounded-oval w-[24px]"
+                            src=
+                            "https://booth.pximg.net/c/48x48/users/1383163/icon_image/d7081259-7802-430c-94cd-eeddf6295001_base_resized.jpg">ATK工業</a>
+                            <h2 class=
+                            "font-bold leading-[32px] m-0 text-[24px]">
+                              【無料】ファンタジーな剣
+                            </h2>
+                          </header>
+                        </div>
                         <div class="flex wish-list-link">
                           <a class=
                           "add-to-wish-list no-underline !text-current"
@@ -184,6 +206,7 @@
                             </div>
                           </div></a>
                         </div>
+                        <div class="empty:hidden my-16"></div>
                         <div>
                           <ul class=
                           "variations u-mt-300 u-border-b" id=
@@ -337,18 +360,23 @@
                         </div>
                       </div>
                       <div class=
-                      "desktop:py-[20px] mobile:py-[16px]" id=
+                      "desktop:pt-[20px] mobile:py-[16px]" id=
                       "js-item-share-buttons"></div>
-                      <h5 class=
-                      "u-tpg-caption1 pt-12 shop-theme-text--default flex items-center">
-                        <a target="_blank" class=
-                        "ml-4 nav-reverse shop-theme-text--default"
-                        rel="noopener" href=
-                        "https://booth.pixiv.help/hc/ja/sections/13288068355225">
-                        「ギフトとして贈る」とは</a>
-                      </h5>
-                      <div class="!p-0" id=
-                      "js-item-payment-and-shipping-terms"></div>
+                      <div class=
+                      "flex flex-col gap-24 pt-40 pb-24">
+                        <h4 class=
+                        "typography-14 shop-theme-text--default flex items-center !m-0"
+                        style=
+                        "font-feature-settings: &quot;palt&quot;;">
+                          <a target="_blank" class=
+                          "ml-4 no-underline hover:underline shop-theme-text--default"
+                          rel="noopener" href=
+                          "https://booth.pixiv.help/hc/ja/sections/13288068355225">
+                          「ギフトとして贈る」とは</a>
+                        </h4>
+                        <div class="!p-0" id=
+                        "js-item-payment-and-shipping-terms"></div>
+                      </div>
                     </div>
                     <div class="u-order-0 l-col-3of5 u-pr-500">
                       <div class="primary-image-area">
