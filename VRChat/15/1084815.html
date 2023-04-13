@@ -71,27 +71,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/af21a2d40f1af0a8250f.js" defer=
+    "https://asset.booth.pm/assets/1240ab0230849480535c.js" defer=
     "defer" nonce=
-    "iGRgz31un4b1nWn0MwdsYp/tB4cRQvASC8cAJUzhpR4="></script>
+    "RIIirt6gOZJbuzVe9t+E9GhPgrLcvTC291MKbb4yyl8="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"fbxモデル 片手剣/両刃剣「Slicer」","description":"English explanation is at the bottom of this page.\n\n本製品は、fbx形式の3D武器モデルです。\nUnityでの利用を想定しておりますが、Blender等にインポートすることで別形式に変換することも可能です。\n\nテクスチャを2種類同梱しています。お好みで使い分けてください。\n動画の動きは、アニメーションオーバーライド(ハンドサイン)による表示状態の切り替えで行っています。","url":"https://booth.pm/ja/items/1084815","offers":{"priceCurrency":"JPY","@type":"Offer","price":"500"},"image":"https://booth.pximg.net/c/620x620/bb487ead-0245-44f1-9e26-22a99b59aed0/i/1084815/daab2743-b93d-4e98-a74b-d2f3f230ed07_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="iGRgz31un4b1nWn0MwdsYp/tB4cRQvASC8cAJUzhpR4="></script>
+    nonce="RIIirt6gOZJbuzVe9t+E9GhPgrLcvTC291MKbb4yyl8="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -406,7 +428,7 @@
                             sandbox="allow-scripts allow-same-origin allow-popups allow-presentation">
                             </iframe>
                           </section>
-                          <section class="shop__text-color">
+                          <section class="shop__text">
                             <h2 class=
                             "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
                               製品内容
@@ -418,7 +440,7 @@
                               ・readme(利用規約)
                             </p>
                           </section>
-                          <section class="shop__text-color">
+                          <section class="shop__text">
                             <h2 class=
                             "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
                               利用規約
@@ -434,7 +456,7 @@
                               ・本モデルデータ、および改変したモデルを使用したことにより発生したトラブルや損失に関して、作者とその関係者、およびその所属するいかなる団体も、一切の責任を負わないものとします。
                             </p>
                           </section>
-                          <section class="shop__text-color">
+                          <section class="shop__text">
                             <h2 class=
                             "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
                               本体説明
@@ -448,7 +470,7 @@
                               VRChatの仕様において、AnimationOverrideを用いて一時的に出現させる場合は(少なくとも2018/11/08の時点では)ポリゴン数の制限を無視できます。
                             </p>
                           </section>
-                          <section class="shop__text-color">
+                          <section class="shop__text">
                             <h2 class=
                             "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
                               その他
@@ -460,7 +482,7 @@
                               〇バージョン 2018/11/08 ver1.0 販売開始
                             </p>
                           </section>
-                          <section class="shop__text-color">
+                          <section class="shop__text">
                             <h2 class=
                             "break-words font-bold leading-[32px] !m-0 pb-16 text-[24px] desktop:pb-8">
                               English explanation
