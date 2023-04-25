@@ -71,9 +71,6 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
-    <style type="text/css">
-    .eventname-flag--inner {   margin-right: 6px; }  .eventname-flag--inner.eventname-flag--exhibition-open {   margin-right: 0px; }
-    </style>
   </head>
   <body>
     <div class="mini-player-controller" style="display: none;">
@@ -103,9 +100,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/fb659a8225f82fcde9b8.js" defer=
+    "https://asset.booth.pm/assets/39c7779328e45f19f660.js" defer=
     "defer" nonce=
-    "H4N3V3oMLwU7iZL1mOOUeyalWN544f58TMWswe4V0k0="></script>
+    "Uu0H5wLtpt161h1RMDGP1Xn7RStuLgKd2Y0LU2qc260="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"オリジナル３Dモデル「リリア」","description":"オリジナル3Dモデル『リリア』\n制作者：ちゅばき\n\n本モデルはVRchatでの利用を想定したunityのHumanoid形式に対応した\n3Dモデルデータです。商用利用や改変が可能で、ゲームや配信等にも\n使うことができます。\n\n※ver2.00以降のバージョンアップデートは行いません。あらかじめご了承ください","url":"https://booth.pm/ja/items/1216509","offers":{"priceCurrency":"JPY","@type":"Offer","price":"3000"},"image":"https://booth.pximg.net/c/620x620/8691a6f9-9d2a-4225-8f87-0460ab5c5187/i/1216509/8610c535-e147-464d-a3d7-e3b591acead3_base_resized.jpg"}
     </script>
@@ -116,7 +113,7 @@
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="H4N3V3oMLwU7iZL1mOOUeyalWN544f58TMWswe4V0k0="></script>
+    nonce="Uu0H5wLtpt161h1RMDGP1Xn7RStuLgKd2Y0LU2qc260="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -144,6 +141,8 @@
               <div class=
               "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
                   <div id="js-item-order"></div>
                   <div class="u-pt-600 u-d-flex">
                     <div class=
@@ -158,7 +157,8 @@
                             "empty:hidden flex gap-4 items-center">
                               <div class="flex min-w-0">
                                 <div class="eventname-flag">
-                                  <a class="eventname-flag--inner"
+                                  <a class=
+                                  "eventname-flag--inner mr-[6px]"
                                   data-tracking="click"
                                   data-product-list=
                                   "from market_show via eventname_flag to event_index"
@@ -199,7 +199,7 @@
                           rel="nofollow" data-method="post" href=
                           "https://booth.pm/items/1216509/wish_list">
                           <div class=
-                          "border-2 border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
+                          "border border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
                             <div class=
                             "typography-14 preserve-half-leading wishlists_count">
                               471
@@ -214,14 +214,13 @@
                           data-method="delete" href=
                           "https://booth.pm/items/1216509/wish_list">
                           <div class=
-                          "border-2 border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
+                          "border border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
                             <div class=
                             "typography-14 preserve-half-leading wishlists_count">
                               471
                             </div>
                           </div></a>
                         </div>
-                        <div class="empty:hidden my-16"></div>
                         <div>
                           <ul class=
                           "variations u-mt-300 u-border-b" id=
