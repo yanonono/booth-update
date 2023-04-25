@@ -71,9 +71,6 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
-    <style type="text/css">
-    .eventname-flag--inner {   margin-right: 6px; }  .eventname-flag--inner.eventname-flag--exhibition-open {   margin-right: 0px; }
-    </style>
   </head>
   <body>
     <div class="mini-player-controller" style="display: none;">
@@ -103,9 +100,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/fb659a8225f82fcde9b8.js" defer=
+    "https://asset.booth.pm/assets/39c7779328e45f19f660.js" defer=
     "defer" nonce=
-    "AomREFmy9EZ6UuOIQFj1TXzgLradoF8U7AvpMKxBv0Q="></script>
+    "ZGl4vZpFGv6hIjjkdc5GFX467XTOIqeeQ1gWm6ykzhE="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"竹流式オリジナル3Dモデル「ジョンスミス」","description":"カスタマイズパーツが沢山付属している爽やかな男性アバターです。\n衣装の色変え＋パーツチョイスで自分だけのアバターを簡単に作ることが出来ます！\n\n　●　同梱物一覧　●\n\n・FBXデータ1個\n・テクスチャ8枚（body、body_mask、hair、innner、Outer_enbi、panz_shoes、panz_shoes_mask、shoes_NormalMap）\n・改変用psdファイル5個（同種のclipファイルも同梱しています）\n・Blendファイル\n・Unitypackage\n・利用規約txt（本文）\n・参照画像\n\n\n　●　仕様　●\n\nボーン構成：UnityのHumanoid規則に沿っています。\nフルトラッキング：対応しています。\nアイトラッキング：対応しています。Animatorによる自動瞬きが設定済みです。\n\n\n　★　テクスチャ改変・カスタマイズについて　★\n\n本モデルはユーザー側でお好みのパーツをチョイスし、カスタマイズした上でご利用いただけます。（同梱の説明書画像を参照ください）\nなお、オブジェクト数がかなり多い為、ヒエラルキーからの表示・非表示を切り替えてパーツチョイスをした後は不要パーツを削除してご利用ください。（そのままでもご利用いただけますが、VRC上でVeryPoorとなってしまいます。）\n\nまた、テクスチャのPSDファイル、clipファイルを同梱しているので、お好みの色調への変更・お好みの柄を貼り付けてのご利用が可能です。レイヤー名に従って基本色・影色を設定してあげて下さい。\n肌色に関してはグラデーションマップレイヤーで制御しています。お好みのグラデーション設定を行うことで肌色を変更できます。\n\n\n\n　★　シェーダーについて　★\n\n「liltoon」にてセットアップされています\nDLもと： https://booth.pm/ja/items/3087170\n\n\n　★　Unitypackageインポート前の準備　★\n\n本モデル同梱のUnitypackageをインポートする前に、以下のアセットやシェーダーをインポートしてください。\n・VRCSDK3.0最新版\n・liltoon最新版\n\n2022/8/6　シェーダーをliltoonに変更、PhysBoneに対応 \n\t　アニメーターのWrite defaultをすべてOFFに設定、それに伴いアニメーションを一部修正\n2021/11/27　ケモミミ、しっぽを追加\n　　　　　　首元の法線を修正\n2021/11/26　バージョン２リリース（旧モデル一式も同梱してあります）\n2018/10/27　FBXトランスフォームのサイズ調整\n2018/9/13　アイテム6点追加\n2018/7/8　太ももボーンの位置と角度を微修正\n2018/7/7　リリース","url":"https://booth.pm/ja/items/926517","offers":{"priceCurrency":"JPY","@type":"Offer","price":"4000"},"image":"https://booth.pximg.net/c/620x620/7dbcb1ac-257b-4189-ab1a-4aa38dcc29f7/i/926517/a6e59ae1-c454-4b3c-ac74-73e70d485d44_base_resized.jpg"}
     </script>
@@ -116,7 +113,7 @@
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="AomREFmy9EZ6UuOIQFj1TXzgLradoF8U7AvpMKxBv0Q="></script>
+    nonce="ZGl4vZpFGv6hIjjkdc5GFX467XTOIqeeQ1gWm6ykzhE="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -140,6 +137,8 @@
               <div class=
               "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
                   <div id="js-item-order"></div>
                   <div class="u-pt-600 u-d-flex">
                     <div class=
@@ -154,7 +153,8 @@
                             "empty:hidden flex gap-4 items-center">
                               <div class="flex min-w-0">
                                 <div class="eventname-flag">
-                                  <a class="eventname-flag--inner"
+                                  <a class=
+                                  "eventname-flag--inner mr-[6px]"
                                   data-tracking="click"
                                   data-product-list=
                                   "from market_show via eventname_flag to event_index"
@@ -195,7 +195,7 @@
                           rel="nofollow" data-method="post" href=
                           "https://booth.pm/items/926517/wish_list">
                           <div class=
-                          "border-2 border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
+                          "border border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
                             <div class=
                             "typography-14 preserve-half-leading wishlists_count">
                               52
@@ -210,14 +210,13 @@
                           data-method="delete" href=
                           "https://booth.pm/items/926517/wish_list">
                           <div class=
-                          "border-2 border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
+                          "border border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
                             <div class=
                             "typography-14 preserve-half-leading wishlists_count">
                               52
                             </div>
                           </div></a>
                         </div>
-                        <div class="empty:hidden my-16"></div>
                         <div>
                           <ul class=
                           "variations u-mt-300 u-border-b" id=
