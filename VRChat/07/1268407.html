@@ -71,9 +71,6 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
-    <style type="text/css">
-    .eventname-flag--inner {   margin-right: 6px; }  .eventname-flag--inner.eventname-flag--exhibition-open {   margin-right: 0px; }
-    </style>
   </head>
   <body>
     <div class="mini-player-controller" style="display: none;">
@@ -103,9 +100,9 @@
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/fb659a8225f82fcde9b8.js" defer=
+    "https://asset.booth.pm/assets/39c7779328e45f19f660.js" defer=
     "defer" nonce=
-    "nbwOJqPJ2z7ZFEpzUV5/IUSVPRj4FErqaF6v4fuO4OU="></script>
+    "4uA2FvNWASGXEtA5sSNgH1ixrTKY12Q2X/Kt4wfrmOQ="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"終わりの手術室","description":"オリジナル3Dモデル 『終わりの手術室』\n制作者 末期\n\n・商品概要\n\nVケット2にて提出するブース用に作ったものに、少々変更を加えたものになります。\n謎の機械や手術用のベッド、血液パック、ディスプレイ、ライト、周囲の壁などが用意されております（ノコギリ、ハサミ、注射器は付属しておりません）。\n\nお医者さんごっこで使用するもよし、怪しげな人体実験の場として利用するもよし、アバター用のアクセサリとして使用するもよし、ご自由に想像力を発揮してみてくださいませ。\n\n機能1：「Blood Pack.004」のチューブは、「Armature」のボーンで変形させることができます。\n\n機能2：「Machine」の「つまみ用」及び「ケーブル用」のボーンでつまみとケーブルを、「BlendShapes」の数値を変更することで、つまみを上下に動かすことができます。\n※つまみのボーンを動かす際は、Local座標にして動かすことを推奨いたします（Bone 2は動かさないでください）。\n\n機能3：ベッドの脚部を「BlendShapes」の数値を変更することで、伸縮させることができます。","url":"https://booth.pm/ja/items/1268407","offers":{"priceCurrency":"JPY","@type":"Offer","price":"500"},"image":"https://booth.pximg.net/c/620x620/4d555ecf-162f-432b-aeff-9bd1995cb0c8/i/1268407/7c8c8f6f-4c9a-4c2b-90c7-ebebcf8eadf5_base_resized.jpg"}
     </script>
@@ -116,7 +113,7 @@
     src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="nbwOJqPJ2z7ZFEpzUV5/IUSVPRj4FErqaF6v4fuO4OU="></script>
+    nonce="4uA2FvNWASGXEtA5sSNgH1ixrTKY12Q2X/Kt4wfrmOQ="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -140,6 +137,8 @@
               <div class=
               "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
                   <div id="js-item-order"></div>
                   <div class="u-pt-600 u-d-flex">
                     <div class=
@@ -154,7 +153,8 @@
                             "empty:hidden flex gap-4 items-center">
                               <div class="flex min-w-0">
                                 <div class="eventname-flag">
-                                  <a class="eventname-flag--inner"
+                                  <a class=
+                                  "eventname-flag--inner mr-[6px]"
                                   data-tracking="click"
                                   data-product-list=
                                   "from market_show via eventname_flag to event_index"
@@ -195,7 +195,7 @@
                           rel="nofollow" data-method="post" href=
                           "https://booth.pm/items/1268407/wish_list">
                           <div class=
-                          "border-2 border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
+                          "border border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
                             <div class=
                             "typography-14 preserve-half-leading wishlists_count">
                               122
@@ -210,14 +210,13 @@
                           data-method="delete" href=
                           "https://booth.pm/items/1268407/wish_list">
                           <div class=
-                          "border-2 border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
+                          "border border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
                             <div class=
                             "typography-14 preserve-half-leading wishlists_count">
                               122
                             </div>
                           </div></a>
                         </div>
-                        <div class="empty:hidden my-16"></div>
                         <div>
                           <ul class=
                           "variations u-mt-300 u-border-b" id=
