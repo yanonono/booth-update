@@ -71,27 +71,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/fb659a8225f82fcde9b8.js" defer=
+    "https://asset.booth.pm/assets/39c7779328e45f19f660.js" defer=
     "defer" nonce=
-    "8covGjRYOf78sCnLxQAQf/QLiL+T8Me+i0KWtBswImw="></script>
+    "V5IsxitsCLR5qzeO2x/VWcqT7wCvbar26ELno4eIXH4="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"【VRChat向け】ろぼさーバッジ","description":"🤖概要🤖\nホロライブ所属ロボ子さん（ https://twitter.com/robocosan ）のファンをバッジにしたVRChat向けアクセサリーです。\n電気、ハート、手錠の有無で計4種類です。\n\n🤖同梱内容🤖\n1.モデルデータ（FBX） \n2.Texture \n3.UnityPackage \n\n\n🤖注意事項🤖\n ・関係各所より配布停止通知を受けた場合、他自己都合により突如配布を停止場合がございますがご了承ください。 \n・モデルの改造、改変等は自由に行っていただいて構いませんが自作発言等はおやめください。 \n・本データを使用したモデルをアップロードすることで「VRChat EULA（ https://store.steampowered.com/eula/438100_eula_0 ）」に同意とみなさせていただきます。 \n・本データをVRCアバターペデスタルやデータ共有、販売サイトなどにアップロードして不特定多数が本データを使える状態にすることは禁止とさせていただきます。 ","url":"https://booth.pm/ja/items/1152880","offers":{"priceCurrency":"JPY","@type":"Offer","price":"0"},"image":"https://booth.pximg.net/c/620x620/fcf0d975-c982-4865-beba-1cd6e5c30f4a/i/1152880/44724e6a-7a4a-4fd8-bb36-7b0925257f77_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="8covGjRYOf78sCnLxQAQf/QLiL+T8Me+i0KWtBswImw="></script>
+    nonce="V5IsxitsCLR5qzeO2x/VWcqT7wCvbar26ELno4eIXH4="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -115,6 +137,8 @@
               <div class=
               "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
                 <div class="container">
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
                   <div id="js-item-order"></div>
                   <div class="u-pt-600 u-d-flex">
                     <div class=
@@ -158,7 +182,7 @@
                           rel="nofollow" data-method="post" href=
                           "https://booth.pm/items/1152880/wish_list">
                           <div class=
-                          "border-2 border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
+                          "border border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
                             <div class=
                             "typography-14 preserve-half-leading wishlists_count">
                               68
@@ -173,14 +197,13 @@
                           data-method="delete" href=
                           "https://booth.pm/items/1152880/wish_list">
                           <div class=
-                          "border-2 border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
+                          "border border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
                             <div class=
                             "typography-14 preserve-half-leading wishlists_count">
                               68
                             </div>
                           </div></a>
                         </div>
-                        <div class="empty:hidden my-16"></div>
                         <div>
                           <ul class=
                           "variations u-mt-300 u-border-b" id=
