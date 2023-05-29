@@ -72,27 +72,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
     "https://asset.booth.pm/assets/caabce76a16a06cb0535.js" defer=
     "defer" nonce=
-    "e54tg1d1eB+HcklqxFdcSU9ze+EjCXssA+7mJ4UnB5E="></script>
+    "gIBJJQ1IoVwXkjGH6t8WaokY/3LWhryyBS1MnoPtT5Q="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"リノールに投げ銭する","description":"リノールに投げ銭すると、\nVRChatで撮影したお礼の動画（１５秒程度）が見れます🎬\nmp4ファイルです。\n\nよろしくお願いします🙏","url":"https://booth.pm/ja/items/1153664","offers":{"priceCurrency":"JPY","@type":"Offer","price":"100"},"image":"https://booth.pximg.net/c/620x620/860474d4-d153-4e66-a594-a4e3e5e77c4e/i/1153664/a8951c22-a658-416d-b3e9-d6bff17ccc57_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="e54tg1d1eB+HcklqxFdcSU9ze+EjCXssA+7mJ4UnB5E="></script>
+    nonce="gIBJJQ1IoVwXkjGH6t8WaokY/3LWhryyBS1MnoPtT5Q="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -528,7 +550,7 @@
       </div>
     </div>
     <div data-event-options=
-    "[{&quot;label&quot;:&quot;第八回技術書同人誌博覧会&quot;,&quot;value&quot;:&quot;gishohaku8&quot;},{&quot;label&quot;:&quot;#エアブー230528&quot;,&quot;value&quot;:&quot;air-boo-0528&quot;},{&quot;label&quot;:&quot;COMIC CITY 大阪124&quot;,&quot;value&quot;:&quot;comiccity-osaka124&quot;},{&quot;label&quot;:&quot;関西コミティア67&quot;,&quot;value&quot;:&quot;k-comitia67&quot;},{&quot;label&quot;:&quot;デザインフェスタ vol.57&quot;,&quot;value&quot;:&quot;designfesta57&quot;},{&quot;label&quot;:&quot;技術書典14&quot;,&quot;value&quot;:&quot;techbookfest-14&quot;},{&quot;label&quot;:&quot;となりのモケイフェスティバル3&quot;,&quot;value&quot;:&quot;bf-tonamo3&quot;},{&quot;label&quot;:&quot;ゲームマーケット2023春&quot;,&quot;value&quot;:&quot;gamemarket-2023s&quot;},{&quot;label&quot;:&quot;COMIC1☆22&quot;,&quot;value&quot;:&quot;comic1-22&quot;},{&quot;label&quot;:&quot;第二十回 博麗神社例大祭&quot;,&quot;value&quot;:&quot;reitaisai-20&quot;}]"
+    "[{&quot;label&quot;:&quot;ドールショウ69夏&quot;,&quot;value&quot;:&quot;dollshow69&quot;},{&quot;label&quot;:&quot;第八回技術書同人誌博覧会&quot;,&quot;value&quot;:&quot;gishohaku8&quot;},{&quot;label&quot;:&quot;#エアブー230528&quot;,&quot;value&quot;:&quot;air-boo-0528&quot;},{&quot;label&quot;:&quot;COMIC CITY 大阪124&quot;,&quot;value&quot;:&quot;comiccity-osaka124&quot;},{&quot;label&quot;:&quot;関西コミティア67&quot;,&quot;value&quot;:&quot;k-comitia67&quot;},{&quot;label&quot;:&quot;デザインフェスタ vol.57&quot;,&quot;value&quot;:&quot;designfesta57&quot;},{&quot;label&quot;:&quot;技術書典14&quot;,&quot;value&quot;:&quot;techbookfest-14&quot;},{&quot;label&quot;:&quot;となりのモケイフェスティバル3&quot;,&quot;value&quot;:&quot;bf-tonamo3&quot;},{&quot;label&quot;:&quot;ゲームマーケット2023春&quot;,&quot;value&quot;:&quot;gamemarket-2023s&quot;},{&quot;label&quot;:&quot;COMIC1☆22&quot;,&quot;value&quot;:&quot;comic1-22&quot;}]"
     data-ga-from="market_show" data-parent-category-options=
     "[{&quot;label&quot;:&quot;漫画&quot;,&quot;value&quot;:&quot;漫画&quot;},{&quot;label&quot;:&quot;イラスト&quot;,&quot;value&quot;:&quot;イラスト&quot;},{&quot;label&quot;:&quot;小説・その他書籍&quot;,&quot;value&quot;:&quot;小説・その他書籍&quot;},{&quot;label&quot;:&quot;グッズ&quot;,&quot;value&quot;:&quot;グッズ&quot;},{&quot;label&quot;:&quot;ファッション&quot;,&quot;value&quot;:&quot;ファッション&quot;},{&quot;label&quot;:&quot;アクセサリー&quot;,&quot;value&quot;:&quot;アクセサリー&quot;},{&quot;label&quot;:&quot;フィギュア・ぬいぐるみ・ドール&quot;,&quot;value&quot;:&quot;フィギュア・ぬいぐるみ・ドール&quot;},{&quot;label&quot;:&quot;3Dモデル&quot;,&quot;value&quot;:&quot;3Dモデル&quot;},{&quot;label&quot;:&quot;音楽&quot;,&quot;value&quot;:&quot;音楽&quot;},{&quot;label&quot;:&quot;音声作品&quot;,&quot;value&quot;:&quot;音声作品&quot;},{&quot;label&quot;:&quot;ゲーム&quot;,&quot;value&quot;:&quot;ゲーム&quot;},{&quot;label&quot;:&quot;ソフトウェア・ハードウェア&quot;,&quot;value&quot;:&quot;ソフトウェア・ハードウェア&quot;},{&quot;label&quot;:&quot;素材データ&quot;,&quot;value&quot;:&quot;素材データ&quot;},{&quot;label&quot;:&quot;映像作品&quot;,&quot;value&quot;:&quot;映像作品&quot;},{&quot;label&quot;:&quot;写真作品&quot;,&quot;value&quot;:&quot;写真作品&quot;},{&quot;label&quot;:&quot;コスプレ&quot;,&quot;value&quot;:&quot;コスプレ&quot;},{&quot;label&quot;:&quot;絵画・アート作品&quot;,&quot;value&quot;:&quot;絵画・アート作品&quot;}]"
     data-portal-url="https://booth.pm/ja" data-search-params=
