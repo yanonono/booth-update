@@ -76,49 +76,27 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
-  </head>
-  <body>
-    <div class="mini-player-controller" style="display: none;">
-      <a class="scroller" data-smooth-scroll="true"><img class=
-      "mini-player-controller__image" src=
-      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
-      data-smooth-scroll="true">
-      <div class="mini-player-information__item-name"></div>
-      <div class="mini-player-information__shop-name"></div>
-      <div class="mini-player-information__navigation">
-        試聴中の商品へスクロール
-      </div></a>
-      <div class="mini-player-controls">
-        <div class="mini-player-mode-ui">
-          <div class="mini-player-mode-ui__knob"></div>
-          <div class="mini-player-mode-ui__short">
-            15秒
-          </div>
-          <div class="mini-player-mode-ui__full">
-            フル
-          </div>
-        </div>
-        <div class="mini-player-play-ui"></div>
-      </div>
-    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/f62cf99d015b05ac3219.js" defer=
+    "https://asset.booth.pm/assets/2a1766490e5602c25f84.js" defer=
     "defer" nonce=
-    "HakBz5btS6POsFqpVTva5FokzY09Afdcjgi02GVmn4o="></script>
+    "kHqULMm4qvkeIeT1mRGs2gHrORxcpp0A/IqX8z7p28o="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"Yasufusa's HolySword Type.1 （前提アセット必須）","description":"◆概要\n\nボクセルをベースに作られた「聖剣」になります。\n\n基本型、全ての原型になる剣たちです。\n\nVRChat及びUnity向けのモデルです。\nこちらのワールドで試し振りが出来ます。（VRChatが起動します）\nvrchat://launch?ref=vrchat.com\u0026id=wrld_d8b29d86-7365-40bc-8f47-1d2842242b4b:50433~private(usr_f084bc2a-5dcd-4047-b0e0-e5e9fb8315ff)~nonce(6a8c1f64-1e91-4d78-957b-0c4bdf425f08)\n\nファイル内容\n\nS-Model - .fbxの3DObjectファイル 4種\nS-Material - マテリアルとテクスチャファイル\nUnitypakagefileファイル\nreadme(こちらと同じ内容です)\n利用規約\n\n◆導入方法\nunityに導入する手順\n\n※※※※　必須　※※※※\n下記のURLよりunityAsesetStoreから「unity particle pack 5.x」をunityにインポートしてください。\n【https://assetstore.unity.com/packages/essentials/asset-packs/unity-particle-pack-73777】\nこちらの手順を踏まないと同梱されているパーティクルが正しく表示されない場合があります。既に導入済みの場合は不要です。\n\nこのファイル内の「HolySwords-SwordType1」という名前のUnitypakagefileをunityにインポートしてください。\n\nAssetsフォルダ内に「HolySwords」というフォルダが出来ていれば導入完了です。\n\n◆使用方法\n\nPrefabを使用していただくと、マテリアル・エフェクトがセットアップされているためすぐにお使いいただけます。\n\nHolySwords \u003e S-prefab \u003e Prefab-XXXX のフォルダ内のprefabをSceneのHierarchyに入れてください。\n\n爆発・炎・軌跡のトレイルのエフェクトは「EFFECT-icon」のオブジェクトもしくはその下のオブジェクトを非アクティブにすれば消えます。\n\nアニメーションが設定されている物は、animaterのコンポーネント内のControllerに設定されているControllerを外してもらえれば止まります。\n\n武器をアバターに実装及び変形の際、こちらの方法を参考にするとオーバーライドの表情の枠を埋めずにつくることができます。\n「VRChatのアニメーションオーバーライドで21種類のオブジェクトを出す方法」\n【https://docs.google.com/document/d/1-3nNUh1wLqXuv1TMLvyTdrVYBTnoWpYcqzk8ZWOlyrs/edit】\nしかし、現在VRChatの不具合で自分の視点からはオーバーライドで呼び出したオブジェクトがカメラ及びミラーに写るアニメーション・パーティクル・トレイルがうまく動かない場合があるので、注意してください。自分の主観・他人の視点・カメラには正しく写ります。\nエモートスイッチを使うとうまく動く場合があるようなのでお試しください。\n\n●prefab及びunity sceneの内容\n\n〇HolySword-pack\n\nHolySword-Type1 - 剣の基本。アニメーション・トレイル・パーティクル入り。約10,300ポリゴン。スキニング済み。\nHolySword-Type1-saya - 基本に鞘に入ったバージョン\nHolySword-Type1-off - 基本のトレイル・パーティクル無し\nHolySword-Type1-def - 基本のアニメーション無し\n icon-s-fr-high - 旧配布版・配布用のオリジナルモデル　約3000ポリゴン\n icon-s-fr-low - 旧配布版・最初期の聖剣のボクセルモデル　約1300ポリゴン\n icon-s-fr-low-off - ↑のトレイル・パーティクル無し\n\n◆利用規約\n\n本モデルの著作権はyasufusaに帰属します。\n\n本モデルは商用利用・映像制作・配信活動等に利用できます。\n\n特定個人や団体等、他人を不快にさせる用途・目的等での使用はご遠慮ください。\n\n本モデルの改変・改造は自由です。\n\n改変・改造の有無に関わらず、本モデルデータの再配布及び再販売を禁止します。\n\nVRChatでの利用の場合、アバターでの利用やワールドのオブジェクトとして利用できます。\nアバターペデスタルやクローン可能なアバターに使用することはご遠慮ください。\n\n本モデルを使用し損失やトラブルが生じた際、yasufusaは一切の責任を負いません。\n\n利用規約の内容に変更があった場合、最新の規約が適用されます。\n\n本モデルを使用することで本規約に同意したものとします。\n\n本規約を他の言語に翻訳した際、日本語の規約での解釈を優先するものとします。\n\n2019/02/17\n\n◆制作者：yasufusa\n\n連絡先\nTwitter: @yasufusaMC\nDiscord: yasufusa#6021\n\n◆\n*\nかつてある地から多くの人々が旅に出た。\n旅に出る彼らにそれぞれ一振りの聖剣を与えられた。\n時が経ち、旅人の姿はいつしか消えたが、剣たちはそれぞれ世界の果てに残った。\nそして、あなたが手に取った。あなたの望む形を。\n*\nその「剣」は世界の隙間でひっそりと待っていた。\n再び彼らに物語を見出し、手にする者が現れる時を。\nかくして時は再び刻まれる。\n*","url":"https://booth.pm/ja/items/1234132","offers":{"priceCurrency":"JPY","@type":"Offer","price":"500"},"image":"https://booth.pximg.net/c/620x620/aeb476c8-84c8-45cd-a45c-4d9eb058a72e/i/1234132/a10b702b-e3ce-4378-af65-575fc587db5d_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed"><noscript><iframe height="0"
-    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed">
+  </head>
+  <body>
+    <noscript><iframe height="0" src=
+    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="HakBz5btS6POsFqpVTva5FokzY09Afdcjgi02GVmn4o="></script>
+    nonce="kHqULMm4qvkeIeT1mRGs2gHrORxcpp0A/IqX8z7p28o="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -193,7 +171,7 @@
                                   "border border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
                                     <div class=
                                     "typography-14 preserve-half-leading wishlists_count">
-                                      405
+                                      406
                                     </div>
                                   </div></a><a class=
                                   "remove-from-wish-list no-underline !text-current"
@@ -209,7 +187,7 @@
                                   "border border-border300 box-border flex gap-4 h-[48px] items-center px-16 rounded-24 text-subtext-gray600 shop__border shop__text">
                                     <div class=
                                     "typography-14 preserve-half-leading wishlists_count">
-                                      405
+                                      406
                                     </div>
                                   </div></a>
                                 </div>
