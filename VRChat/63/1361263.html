@@ -76,27 +76,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
     "https://asset.booth.pm/assets/23738a784829eea36de7.js" defer=
     "defer" nonce=
-    "kfoOi1m9Ogzku3Ov38JgZPRF6Lp3+sOdGgtZc2gB/Gw="></script>
+    "vsKEUjacuAdaGmJaCfPRQ9AIwIA45Q2GdEnBxDH8vsQ="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"VRアバター用オリジナルモデルBattle Barista Xihifan「シーフェン 」[Quest対応][Ambr対応]Version2.2","description":"■■■■注意■■■■\nBattle Barista Xihifan[KAI]とは別Modelになりますのでご注意ください。\n\n「Battle Barista Xihifan標準セット」と「高解像度テクスチャ＋裸素体」と「Battle Barista Xihifan [Questのみ]」の三種類があります。\n\n改造をせずVRChatで使うだけでしたら。\n【　Battle Barista Xihifan標準セット　】\n\nQuestのみで使う場合には\n【　Battle Barista Xihifan [Questのみ]　】\n\nそれぞれお買い求めください。\n\n■■■■■■■■■■■\n\n■このモデルは？■\nVRchatやバーチャルキャスト等で使えるオリジナルアバターモデルです。\nVRChatはセットアップ済みなのでアップロードするだけで揺れものもリップシンクもアイトラッキングも機能しま。\nその他アバターとしての使用フォーマットは用意はしていませんがご自分でコンバートできるのであれば使用可能です。\n\n\n■シーフェンとは？■\n身長119cm　体重25kg\n現在作成中のゲーム内に出てくる学園内寄宿舎の喫茶店でいつもニコニコ対応してくれる狐耳幼女、主人公たち含めほとんどの人が抹茶クリームフラペチーノしか頼まないのでバリスタとは何か？常に問答してる幼き求道者。\n性格は真面目で社交的、他の獣耳少女達と歳は同じだが一番小さく見えるため妹に徹している、が、小さいくせに説教臭くだらしない人は1時間は説教を食らう、実は1000歳とか？。\n\n心優しき坊主の獣耳シリーズ中で最も若い（幼女）娘でバリスタ業の傍ら非常時は絶大な戦闘力で喫茶店（及び寄宿舎）を警護します、環境闘争術をマイスタークラスで習得しているので武器を選ばずコンビニでもらえるプリンスプーンでも人間なら数十人は殺害可能。\n\n■この服は？■\nワークマソとイマムラの共同開発による防刃防弾ナノメッシュ近接戦闘用バリスタ服です。\n\n●特殊効果\nY染色体ヒューマノイドに対し常に＋40%のクリティカル率上昇。\n敵対者でロリ耐性の低い者は視線を合わせるたびにセービングロールが必要、失敗のたびに次回の攻撃が無効化される。\nスク水時：スク水耐性が50％以下の者は半径５ｍ以内で視線を合わせただけで死ぬ、射程に入られた（もしくは入った）場合如何なる無効果スキルも受け付けない、ただし、場の効果や即死攻撃前に発動していた永続効果の影響は受ける。\n\n●特殊機能\n近接に特化しているため返り血対策が施されておりサッと水を浴びるだけで綺麗サッパリ落ちる。\nまた他の服より隠された収納が豊富で通常の三倍スタック出来る、現地でクラフト時には移動回数が少くて済む。\n別売りの端末とBluetooth7.2で接続ができ非常時でもニャマゾンでの注文がでたりアプリから光学迷彩の設定がリアルタイムで行える※別売り端末の開発は遅れています。\n\n●デメリット\nVRChat内では全ての機能効果はOFFになる\n\n\n■心優しき坊主とは？■\n作者です。\nツイッターでこの作品も含めたローポリ講座を不定期で開いてます、ぜひフォローしてくださいね。\nhttps://twitter.com/KoKoRoBoUZu","url":"https://booth.pm/ja/items/1361263","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"2000","highPrice":"4000"},"image":"https://booth.pximg.net/c/620x620/e3df372d-7b3e-4861-9106-df71df45ccc4/i/1361263/437d73a7-feec-4537-b0dd-f38f1752a5fd_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="kfoOi1m9Ogzku3Ov38JgZPRF6Lp3+sOdGgtZc2gB/Gw="></script>
+    nonce="vsKEUjacuAdaGmJaCfPRQ9AIwIA45Q2GdEnBxDH8vsQ="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -1026,9 +1048,10 @@
     <footer class="footer__menu bg-white">
       <div class=
       "desktop:flex desktop:justify-between desktop:mx-auto desktop:text-center desktop:max-w-[1224px] desktop:my-24 desktop:px-16 mobile:gap-16 mobile:grid mobile:grid-cols-2 mobile:m-16">
-        <a href=
-        "https://booth.pm/anshin_booth_pack_guides"><img srcset=
-        "https://asset.booth.pm/assets/banner-anshin_booth_pack@2x-fcabcd0e43382f4dc4a297dd15a695c9a7041541c945b15d5d8da6315952095a.png 2x"
+        <a href="https://booth.fanbox.cc/posts/6374573"><img alt=
+        "ピクシブかんたん決済のご利用方法" class="align-bottom w-full" width="176"
+        height="72" src=
+        "https://asset.booth.pm/assets/banner-minna_no_ginko_footer-558af5dbd3da52c330c9263a270923d2f773e612606d9c248942b779c9ed541a.jpg"></a><a href="https://booth.pm/anshin_booth_pack_guides"><img srcset="https://asset.booth.pm/assets/banner-anshin_booth_pack@2x-fcabcd0e43382f4dc4a297dd15a695c9a7041541c945b15d5d8da6315952095a.png 2x"
         alt="匿名配送であんしん！あんしんBOOTH便" class="align-bottom w-full"
         width="176" height="72" src=
         "https://asset.booth.pm/assets/banner-anshin_booth_pack-14540be4805dc22307b8c1341662093cca5d0f3d885daf80a896ca7c32e0596f.png"></a><a target="_blank"
