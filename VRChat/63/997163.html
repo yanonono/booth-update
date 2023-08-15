@@ -75,27 +75,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/0fb07844ee4ffb02bf7a.js" defer=
+    "https://asset.booth.pm/assets/a91627ba0a3e959d2f04.js" defer=
     "defer" nonce=
-    "7pHW2SPlvmBTFX9Da4imdvA+tNvcwPwCSfty1lfbM1Q="></script>
+    "gruMfNXwayKN1k0VXuyNfHaP7/25IZSQVUXqdt2a9fo="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"【YK's Atelier】反省首掛け","description":"前日にお酒に酔ってやらかしてしまった、申し訳ないことをしてしまったななどの時におすすめです。（実際私も使いました。）\n文字の変更はペイントツールなどでPSDファイルを開くことで可能です。\n\nVRChatアバターへの装飾を想定して作られております。\n\n収益化された動画への出演、映り込みなどOKです。\n\n色の変更は可能です。ご自分のお好きな色にカスタムしてください。\nテクスチャはPSDファイルで保存されております。\nレイヤーが分けられているので、色変更はやりやすいと思います。\n\n主にVRChatでの利用を想定しておりますが、他用途での利用も可能です。\n\n内容物：反省首掛け.fbx\n　　　　反省首掛け.psd\n\nモデルポリゴン数：38△\n\nマテリアル：1つ\n\n禁止事項：再配布、転売、自作発言","url":"https://booth.pm/ja/items/997163","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"100"},"image":"https://booth.pximg.net/c/620x620/20fcfc8e-a688-49a2-95b4-807f9553d59d/i/997163/ae8df437-9822-456e-a5b0-daab363b7bb7_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="7pHW2SPlvmBTFX9Da4imdvA+tNvcwPwCSfty1lfbM1Q="></script>
+    nonce="gruMfNXwayKN1k0VXuyNfHaP7/25IZSQVUXqdt2a9fo="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -468,7 +490,7 @@
         width="176" height="72" src=
         "https://asset.booth.pm/assets/banner-anshin_booth_pack-14540be4805dc22307b8c1341662093cca5d0f3d885daf80a896ca7c32e0596f.png"></a><a target="_blank"
         title="海外発送/国際配送サービスの転送コム" rel="noopener" href=
-        "http://www.tenso.com/static/lp_shop_booth"><img srcset=
+        "https://www.tenso.com/static/lp_shop_booth"><img srcset=
         "https://asset.booth.pm/assets/tensocom@2x-4073873635733bd7f3da50195afb03a30110f50417eb0083f7d990aa6af00612.png 2x"
         alt="海外発送/国際配送サービスの転送コム" class="align-bottom w-full" width=
         "176" height="72" src=
@@ -569,13 +591,13 @@
             <a class=
             "flex hover:text-text-default items-center mobile:p-16 no-underline py-16 text-text-default typography-14 visited:text-text-default w-full"
             target="_blank" rel="noopener" href=
-            "http://twitter.com/booth_pm">
+            "https://twitter.com/booth_pm">
             <div class="font-bold mr-auto whitespace-pre">
               Twitter(@booth_pm)
             </div></a><a class=
             "flex hover:text-text-default items-center mobile:p-16 no-underline py-16 text-text-default typography-14 visited:text-text-default w-full"
             target="_blank" rel="noopener" href=
-            "http://www.pixiv.net">
+            "https://www.pixiv.net">
             <div class="font-bold mr-auto whitespace-pre">
               pixiv
             </div></a>
