@@ -74,27 +74,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/0fb07844ee4ffb02bf7a.js" defer=
+    "https://asset.booth.pm/assets/a91627ba0a3e959d2f04.js" defer=
     "defer" nonce=
-    "4tPPfGXU3odBfqPebc7TSYywP8zK/LLv4GyqZ/2GrnE="></script>
+    "5dPdM5IOoR7ZLalBOWUQ1RLO+OUh2XiKRim0IvwrNf0="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"BoxShader","description":"ポリゴンをBoxに置き換えるシェーダーです。\nいろいろ出来ます(無駄機能も多々)。\n\n通常版とテッセレーション可能版があります。特別な理由がない限りは通常版で十分です。\n\n①Texture:メインのテクスチャです。普通に指定してください。\n②BoXSize:BOXのサイズの補正です。\n　BOXSizeChange:BOXサイズの補正です。0であれば一定、0より大きければポリゴンサイズによって補正されます。\n\nここから下は指定しなくても問題ありません。\n\n③RimEffect:Rimの強度を指定します。\n④RimColor:Rimの色を指定できます。\n\n⑤LegasyPoly:Box化前のメッシュを表示します。数値で大きさを変えられます。\n\n⑥NormalExtrusion:Boxを元ポリゴンの法線方向に爆発させられます。\n⑦Gravity:⑥で飛ばした後に受ける重力の方向を指定できます。\n⑧FloorHight:⑥で飛ばした後の床の高さを指定できます。(たいていY=-1くらいでいい感じになります。)\n\n⑨RotationMap:Boxを回転させる場合の回転軸をテクスチャで指定できます。赤成分がX軸,緑成分がY軸,青成分がZ軸です。\n⑩RotationUSpeed:⑨を時間でスクロールさせます。\n⑪RotationAxis:Boxを回転させる回転軸を指定できます。\n⑫RotationSpeed:回転速度を指定できます。\n\n⑬VoxelSizeMap:Boxのサイズをテクスチャで指定できます。より白い部分のBoxが大きくなります。\n⑭VoxelSizeUV:⑬を時間でスクロールさせます。\n⑮VoxSizePower:大きさの変化の強さを指定できます。\n\n⑯PolygonExtrusion:ここにマップを指定するとBoxの面を法線方向に飛ばせます。より白い部分がより遠くに飛びます。\n⑰PolyUVSpeed:⑯を時間でスクロールさせます。\n⑱ExtrusionPower:法線方向に飛ばす力を指定できます。\n\n⑲ShadowMap:ここにBOXの影側の色のマップを指定できます。\n⑳ShadowUVSpeed：⑲を時間でをスクロールさせます。\n㉑ShadowColor:ここで影の色を指定できます。\n㉒ShadowPower:影の強さを指定します。\n\n㉓SubTexture:個々のVoxの面に貼るテクスチャを指定できます。\n㉔SubTexturePower:㉓の濃度に補正をかけます。\n\n㉕:AutoMaticTessellation:わからない人はさわらないこと！かなり重くなる設定です。\n\tポリゴンの面積に応じてテッセレーションをかけてVoxを増やします。上限はtess_factor=InsideTessFactor=2ですが、[HideInInspector] _TessFactorで上限を増やせます。\n\n\nhttps://twitter.com/HHOTATEA_VRC/status/1039893839924752385\nhttps://twitter.com/HHOTATEA_VRC/status/1040318333319430145\n\n\n*\n* Date: 2018-09-12 開始\n* Date: 2018-09-14 更新\n* Date: 2018-09-15 更新\n* Date: 2018-09-16 バグ修正\n* Date: 2018-09-18 バグ修正\n* Date: 2018-10-13 機能改善:ボックスの中心がポリゴンの中心になるように\n* Date: 2019/01/29 大幅変更、ライティングが設定できるようになりました。","url":"https://booth.pm/ja/items/1010367","offers":{"priceCurrency":"JPY","@type":"AggregateOffer","lowPrice":"0","highPrice":"500"},"image":"https://booth.pximg.net/c/620x620/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1010367/4d84ff6c-b7f6-4bcc-9d86-f8dc6cc1994f_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="4tPPfGXU3odBfqPebc7TSYywP8zK/LLv4GyqZ/2GrnE="></script>
+    nonce="5dPdM5IOoR7ZLalBOWUQ1RLO+OUh2XiKRim0IvwrNf0="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -528,7 +550,7 @@
         width="176" height="72" src=
         "https://asset.booth.pm/assets/banner-anshin_booth_pack-14540be4805dc22307b8c1341662093cca5d0f3d885daf80a896ca7c32e0596f.png"></a><a target="_blank"
         title="海外発送/国際配送サービスの転送コム" rel="noopener" href=
-        "http://www.tenso.com/static/lp_shop_booth"><img srcset=
+        "https://www.tenso.com/static/lp_shop_booth"><img srcset=
         "https://asset.booth.pm/assets/tensocom@2x-4073873635733bd7f3da50195afb03a30110f50417eb0083f7d990aa6af00612.png 2x"
         alt="海外発送/国際配送サービスの転送コム" class="align-bottom w-full" width=
         "176" height="72" src=
@@ -629,13 +651,13 @@
             <a class=
             "flex hover:text-text-default items-center mobile:p-16 no-underline py-16 text-text-default typography-14 visited:text-text-default w-full"
             target="_blank" rel="noopener" href=
-            "http://twitter.com/booth_pm">
+            "https://twitter.com/booth_pm">
             <div class="font-bold mr-auto whitespace-pre">
               Twitter(@booth_pm)
             </div></a><a class=
             "flex hover:text-text-default items-center mobile:p-16 no-underline py-16 text-text-default typography-14 visited:text-text-default w-full"
             target="_blank" rel="noopener" href=
-            "http://www.pixiv.net">
+            "https://www.pixiv.net">
             <div class="font-bold mr-auto whitespace-pre">
               pixiv
             </div></a>
