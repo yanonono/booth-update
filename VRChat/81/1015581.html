@@ -75,27 +75,49 @@
     <script id="shoplist_with_items" type="text/x-template">
     <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
     </script>
+  </head>
+  <body>
+    <div class="mini-player-controller" style="display: none;">
+      <a class="scroller" data-smooth-scroll="true"><img class=
+      "mini-player-controller__image" src=
+      "https://asset.booth.pm/assets/thumbnail_placeholder_c_300-09027647543d43ee525b2a7fe28d5ed5a3b6069d0c596c89b21776543ed1c0fe.png"></a><a class="scroller mini-player-information"
+      data-smooth-scroll="true">
+      <div class="mini-player-information__item-name"></div>
+      <div class="mini-player-information__shop-name"></div>
+      <div class="mini-player-information__navigation">
+        試聴中の商品へスクロール
+      </div></a>
+      <div class="mini-player-controls">
+        <div class="mini-player-mode-ui">
+          <div class="mini-player-mode-ui__knob"></div>
+          <div class="mini-player-mode-ui__short">
+            15秒
+          </div>
+          <div class="mini-player-mode-ui__full">
+            フル
+          </div>
+        </div>
+        <div class="mini-player-play-ui"></div>
+      </div>
+    </div>
     <meta content="initial-scale=1.0" id="viewport" name=
     "viewport">
     <meta name="csrf-param" content="authenticity_token">
     <script src=
-    "https://asset.booth.pm/assets/0fb07844ee4ffb02bf7a.js" defer=
+    "https://asset.booth.pm/assets/a91627ba0a3e959d2f04.js" defer=
     "defer" nonce=
-    "yHcLxlMjb60W3iNg6czsMVQ77jzcoEciJOY7aCDODdM="></script>
+    "I2FxN/L9+rjGt8bzAxDnMpdEVrOpRp0STRjlK87XJHw="></script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Product","name":"VRChat向け3Dモデル「モブ子」","description":"2018 年 9 月 17 日\n■更新情報■\n9月18日　説明書に不備があったので修正しました。\n\n■モデルの説明■\nくずくま作のフルスクラッチ３Dモデル「Mobuko」です。\nモブっぽい女子高生です。Unityでのアップロードがうまくいかないという方のためのUnityPackageと説明書を同封しました！！\n\n■内容物■\n・fbxモデル・・・Mobuko_v1.0.fbx\n・UnityPackage・・・Mobuko_v1.0.unitypackage\n・アップロード説明書    ・・・VRC向けモデルかんたんアップロード説明書.pdf\n・テクスチャ（画像5枚　PSD1枚）\n・仕様書\n・表情アニメーション６つ\nangry.anim\nkyu.anim\nsleep.anim\nsmile.anim\nsurprise.anim\nwink.anim\n\n■注意■\n　本モデルはUnityのHumanoid対応モデルです。UnityPackageを使わないで購入者様で設定を１から行う場合には、Chestボーンのアサインがされないのでこれの設定を忘れないようご注意ください。\nUnityPackageにおいてアニメーション５つおよびリップシンクは設定済みです。\nDyamicBone用のボーンは設定していますが、設定は各自で行ってください。\nテクスチャについて、調整する場合はMobuko_head_texはtga形式で保存してください。これは、チークのパーツが透過である必要があるからです。Materialを調整する場合もその点にご注意ください。\n　\n\n■利用規約■\n本商品を購入した時点で利用規約に同意したものとみなします。\n本モデルおよび改造モデルの著作権は「くずくま」に帰属します。\nいかなる形であれ、他者を人種・宗教その他の点で誹謗中傷したりするような公序良俗に反する形での使用を禁止します。\n同封の「VRCモデル向け簡単アップロード説明書」の配布、公開など第三者に閲覧させる行為は禁止します。\n本モデルそのもの、または本モデルの一部を含むモデル、あるいは改変可能な形での配布・販売を禁止します。※簡単にはモデルデータを抽出できない形でのゲームや動画等での使用は許可します。\nエロ・グロ目的の利用を許可します。\n商用利用・営利目的の利用を許可します。収益化等の制限、許諾、クレジット表記は不要ですが、クレジットを記載していたけると嬉しいです。\nこの規約は予告なく変更する場合があります。\n\n■連絡先■\nなにか不具合、要望、質問等ございましたら、ささいなことでも遠慮なく下記のツイッターアカウント宛にリプかDMで連絡してください。\n\nTwitter　くずくま(@ccbmccbm) : https://twitter.com/ccbmccbm\n\n以上\n","url":"https://booth.pm/ja/items/1015581","offers":{"priceCurrency":"JPY","@type":"Offer","price":"2000"},"image":"https://booth.pximg.net/c/620x620/67805be5-d4ad-49cb-a865-0b639883ebab/i/1015581/82bc9f10-cf86-459c-ad86-a35dd9efec4b_base_resized.jpg"}
     </script>
     <link rel="shortcut icon" type="image/x-icon" href=
     "https://asset.booth.pm/favicon.ico">
     <link href="/static-images/pwa/icon_size_180.png" rel=
-    "apple-touch-icon-precomposed">
-  </head>
-  <body>
-    <noscript><iframe height="0" src=
-    "//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
+    "apple-touch-icon-precomposed"><noscript><iframe height="0"
+    src="//www.googletagmanager.com/ns.html?id=GTM-WLLNDM" style=
     "display:none;visibility:hidden" width="0"></iframe></noscript>
     <script src="https://asset.booth.pm/google_tag_manager_ad.js"
-    nonce="yHcLxlMjb60W3iNg6czsMVQ77jzcoEciJOY7aCDODdM="></script>
+    nonce="I2FxN/L9+rjGt8bzAxDnMpdEVrOpRp0STRjlK87XJHw="></script>
     <div class="service-informations">
       <div class="promotion-banner"></div>
     </div>
@@ -412,7 +434,7 @@
         width="176" height="72" src=
         "https://asset.booth.pm/assets/banner-anshin_booth_pack-14540be4805dc22307b8c1341662093cca5d0f3d885daf80a896ca7c32e0596f.png"></a><a target="_blank"
         title="海外発送/国際配送サービスの転送コム" rel="noopener" href=
-        "http://www.tenso.com/static/lp_shop_booth"><img srcset=
+        "https://www.tenso.com/static/lp_shop_booth"><img srcset=
         "https://asset.booth.pm/assets/tensocom@2x-4073873635733bd7f3da50195afb03a30110f50417eb0083f7d990aa6af00612.png 2x"
         alt="海外発送/国際配送サービスの転送コム" class="align-bottom w-full" width=
         "176" height="72" src=
@@ -513,13 +535,13 @@
             <a class=
             "flex hover:text-text-default items-center mobile:p-16 no-underline py-16 text-text-default typography-14 visited:text-text-default w-full"
             target="_blank" rel="noopener" href=
-            "http://twitter.com/booth_pm">
+            "https://twitter.com/booth_pm">
             <div class="font-bold mr-auto whitespace-pre">
               Twitter(@booth_pm)
             </div></a><a class=
             "flex hover:text-text-default items-center mobile:p-16 no-underline py-16 text-text-default typography-14 visited:text-text-default w-full"
             target="_blank" rel="noopener" href=
-            "http://www.pixiv.net">
+            "https://www.pixiv.net">
             <div class="font-bold mr-auto whitespace-pre">
               pixiv
             </div></a>
