@@ -1,38 +1,922 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
-    <meta charset="UTF-8">
+    <link href="/manifest.json" rel="manifest">
+    <meta charset="utf-8">
     <title>
-      BOOTH | メンテナンス中です (503)
+      ごった煮シェーダー - HOTATE's VIRTUALAB - BOOTH
     </title>
-    <style type="text/css">
-     body {         margin: 0;         color: #2E2F30;         text-align: center;         font-family: arial, sans-serif;     }      .not_found_girl {         display: block;         width: 160px;         height: 206px;         margin: 0 auto 10px auto;         background: url('/static-images/error/not_found_girl.png') no-repeat;         text-indent: -9999pt;     }      @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {         .not_found_girl {             background: url('/static-images/error/not_found_girl@2x.png') no-repeat;             background-size: contain;         }     }      .not_found_logo {         display: block;         width: 400px;         height: 87px;         margin: 0 auto 24px auto;         background: url('/static-images/error/not_found_logo.png') no-repeat;         text-indent: -9999pt;     }      @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {         .not_found_logo {             background: url('/static-images/error/not_found_logo@2x.png') no-repeat;             background-size: contain;         }     }      .dialog {         height: 250px;         padding: 10px 0 248px 0;         background: #FFF;     }     .footer {       padding-bottom: 50px;       display: inline-block;     } 
-    </style>
+    <meta name="description" content=
+    "思いつく限りの機能を追加して1日で書いたごった煮シェーダーです。とにかく多機能で使い方によっては迷惑行為もできてしまうので注意してください。 ライティング関係は今までやったことがなかったので、結構適当です。。。(改善出来たら改善します) 基本的には迷惑行為にさえならなければ、アバターでもワールドでもアクセサリでも自由に使ってもらって構いません。 問題等あれば製作者まで連絡ください。 細かい設定はサンプルを参考にして下さい！ ・製作者 HhotateA 　Twitter:@HhotateA 　Discord:hhotatea#0333 　 2018/11/26　販売開始">
+    <meta name="keywords" content=
+    "booth, ブース, pixiv, ピクシブ, イラスト, マンガ, 創作, オンラインストア, オンラインショップ, ネットショップ, ec, ネット通販">
+    <link rel="canonical" href="https://booth.pm/ja/items/1112177">
+    <meta name="twitter:site" content="booth_pm">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content=
+    "ごった煮シェーダー - HOTATE's VIRTUALAB - BOOTH">
+    <meta name="twitter:description" content=
+    "思いつく限りの機能を追加して1日で書いたごった煮シェーダーです。とにかく多機能で使い方によっては迷惑行為もできてしまうので注意してください。 ライティング関係は今までやったことがなかったので、結構適当です。。。(改善出来たら改善します) 基本的には迷惑行為にさえならなければ、アバターでもワールドでもアクセサリでも自由に使ってもらって構いません。 問題等あれば製作者まで連絡ください。 細かい設定はサンプルを参考にして下さい！ ・製作者 HhotateA 　Twitter:@HhotateA 　Discord:hhotatea#0333 　 2018/11/26　販売開始">
+    <meta name="twitter:image" content=
+    "https://booth.pximg.net/c/620x620/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/1cef902e-5005-4421-bc52-fde2675a8ee3_base_resized.jpg">
+    <meta property="og:type" content="product">
+    <meta property="og:title" content=
+    "ごった煮シェーダー - HOTATE's VIRTUALAB - BOOTH">
+    <meta property="og:description" content=
+    "思いつく限りの機能を追加して1日で書いたごった煮シェーダーです。とにかく多機能で使い方によっては迷惑行為もできてしまうので注意してください。 ライティング関係は今までやったことがなかったので、結構適当です。。。(改善出来たら改善します) 基本的には迷惑行為にさえならなければ、アバターでもワールドでもアクセサリでも自由に使ってもらって構いません。 問題等あれば製作者まで連絡ください。 細かい設定はサンプルを参考にして下さい！ ・製作者 HhotateA 　Twitter:@HhotateA 　Discord:hhotatea#0333 　 2018/11/26　販売開始">
+    <meta property="og:image" content=
+    "https://booth.pximg.net/c/620x620/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/1cef902e-5005-4421-bc52-fde2675a8ee3_base_resized.jpg">
+    <meta property="og:url" content=
+    "https://booth.pm/ja/items/1112177">
+    <meta name="robots" content="max-image-preview:large">
+    <meta name="ga:shop" content="UA-145200201-1">
+    <meta name="ga_dimension1" content="customer">
+    <meta name="ga_dimension2" content="no">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="UA-1830249-20" name="ga">
+    <meta content="G-RWT2QKJLDC" name="ga">
+    <meta content="&quot;production&quot;" name="js_const_env">
+    <meta content="&quot;booth.pm&quot;" name=
+    "js_const_base_domain">
+    <meta content="false" name="js_const_user_signed_in">
+    <meta content="&quot;ja&quot;" name="js_const_user_locale">
+    <meta content="false" name=
+    "js_const_user_locale_redirect_confirm">
+    <meta content=
+    "{&quot;ja&quot;:&quot;https://booth.pm/locale?locale=ja\u0026return_to=https%3A%2F%2Fbooth.pm%2Fja%2Fitems%2F1112177&quot;,&quot;en&quot;:&quot;https://booth.pm/locale?locale=en\u0026return_to=https%3A%2F%2Fbooth.pm%2Fen%2Fitems%2F1112177&quot;,&quot;ko&quot;:&quot;https://booth.pm/locale?locale=ko\u0026return_to=https%3A%2F%2Fbooth.pm%2Fko%2Fitems%2F1112177&quot;,&quot;zh-cn&quot;:&quot;https://booth.pm/locale?locale=zh-cn\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-cn%2Fitems%2F1112177&quot;,&quot;zh-tw&quot;:&quot;https://booth.pm/locale?locale=zh-tw\u0026return_to=https%3A%2F%2Fbooth.pm%2Fzh-tw%2Fitems%2F1112177&quot;}"
+    name="js_const_user_locale_redirect_urls">
+    <meta content="false" name="js_const_user_adult">
+    <meta content=
+    "&quot;https://accounts.booth.pm/wish_lists.json&quot;" name=
+    "js_const_wish_lists_url">
+    <meta content="191" name="js_const_item_name_max_length">
+    <meta content="6000" name="js_const_description_max_length">
+    <meta content="1024" name=
+    "js_const_downloadable_max_file_size">
+    <meta content=
+    "[&quot;.psd&quot;,&quot;.ai&quot;,&quot;.lip&quot;,&quot;.pdf&quot;,&quot;.mp3&quot;,&quot;.m4a&quot;,&quot;.wav&quot;,&quot;.aiff&quot;,&quot;.flac&quot;,&quot;.epub&quot;,&quot;.vroid&quot;,&quot;.vroidcustomitem&quot;,&quot;.vrm&quot;,&quot;.vrma&quot;,&quot;.jpg&quot;,&quot;.jpeg&quot;,&quot;.gif&quot;,&quot;.png&quot;,&quot;.mp4&quot;,&quot;.mov&quot;,&quot;.avi&quot;,&quot;.zip&quot;,&quot;.rar&quot;]"
+    name="js_const_downloadable_acceptable_file_types">
+    <meta content=
+    "[&quot;.jpg&quot;,&quot;.jpeg&quot;,&quot;.gif&quot;,&quot;.png&quot;]"
+    name="js_const_image_acceptable_file_types">
+    <meta content="&quot;https://creator-status.fanbox.cc&quot;"
+    name="js_const_pixiv_fanbox_creator_endpoint">
+    <meta content="22" name="js_const_max_length_japanese">
+    <meta content="60" name="js_const_max_length_overseas">
+    <meta content="30" name=
+    "js_const_stock_reservation_min_stock_amount">
+    <meta content=
+    "&quot;71bad9c7-587e-4583-93f7-40873c573ffa&quot;" name=
+    "js_const_one_signal_app_id">
+    <meta content="&quot;market_show&quot;" name=
+    "js_const_ga_from">
+    <script id="shop_with_items" type="text/x-template">
+    <div class="shop-card l-card" v-if="shop"><div class="shop-card__box-wrap"><div class="shop-card__box"><div class="shop-card-box-body"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><div class="shop-card__thumbnails"><div class="shop-card__thumbnails--at-left on-white-bg"><img :alt="largeThumbItem.name" :data-original="hideThumbnail(largeThumbItem) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : largeThumbItem.image_url" class="lazyload u-w-100" /></div><div class="shop-card__thumbnails--at-right"><div class="shop-card__thumbnail-wrap on-white-bg" v-for="item in smallThumbItems"><div class="shop-card__thumbnail"><img :alt="item.name" :data-original="hideThumbnail(item) ? &quot;https://asset.booth.pm/assets/thumbnail-alert-312-ede42745738fe1172fe21985c735ae1acab66f179bca53964b73af31cd0e07e3.png&quot; : item.image_url" class="lazyload u-w-100" /></div></div></div></div></a></div><div class="shop-card__box-footer"><div class="shop-card__owner-info"><div class="shop-card__avatar"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" target="_blank"><img :alt="shop.user.nickname" :data-original="shop.user.thumbnail_url" class="lazyload user_avatar-48 mobile-user_avatar-38" height="42" width="42" /></a></div><div class="shop-card__shop-name"><a :href="shop.base_url" @click="sendAnalyticsEvent(&quot;shop_index&quot;, &quot;click&quot;)" class="text-ui" target="_blank">{{ shop.name }}</a></div></div><div class="shop-card__actions"><div :data-follow-path="shop.follow_path" :data-ga-from="gaParams.from" :data-ga-via="gaParams.via" :data-is-following="shop.following" :data-subdomain="shop.subdomain" class="js-follow-button-mount"></div></div></div></div></div></div>
+    </script>
+    <script id="shoplist_with_items" type="text/x-template">
+    <div><div class="l-cards-4cols l-cards-sp-2cols"><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" v-for="shop in visibleShops"></shop-with-items><shop-with-items :ga-params="gaParams" :key="shop.subdomain" :shop="shop" closed="" v-for="shop in moreShops" v-if="moreShops &amp;&amp; moreShopsVisible"></shop-with-items></div><div @click="moreShopsVisible = true" class="ellip-btn" v-if="moreShops &amp;&amp; !moreShopsVisible">もっと見る<i class="icon-arrow-open-down s-2x no-margin"></i></div></div>
+    </script>
+    <meta content="initial-scale=1.0" id="viewport" name=
+    "viewport">
+    <meta name="csrf-param" content="authenticity_token">
+    <script src=
+    "https://asset.booth.pm/assets/c1d7bb15af07ce884cfa.js" defer=
+    "defer" nonce=
+    "l9JWYrgpnd1REI/LrqZ6VLzoh3Y4g8BAIO1Tk5CY/Zk="></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"ごった煮シェーダー","description":"思いつく限りの機能を追加して1日で書いたごった煮シェーダーです。とにかく多機能で使い方によっては迷惑行為もできてしまうので注意してください。\nライティング関係は今までやったことがなかったので、結構適当です。。。(改善出来たら改善します)\n基本的には迷惑行為にさえならなければ、アバターでもワールドでもアクセサリでも自由に使ってもらって構いません。\n問題等あれば製作者まで連絡ください。\n\n細かい設定はサンプルを参考にして下さい！\n\n・製作者 HhotateA\n　Twitter:@HhotateA\n　Discord:hhotatea#0333\n　\n 2018/11/26　販売開始\n 2018/11/27　おまけをつけました\n 2018/12/1 　機能追加\n 2018/12/4 　機能改善・追加\n 2018/12/20  slow版追加\n\n\n## 規約\n\n・本シェーダーはUnity及びVRChatでの利用を想定しています。\n・著作権は製作者に帰属します。\n・本製品を使って発生した問題に対しては製作者は一切の責任を負いません。\n\n許可事項\n・商用を含む、配布物に付属する形での2次配布(連絡はください)\n・解析・改変\n禁止事項\n・シェーダー単体での2次配布\n・迷惑行為等\n\n\n\nプロパティ中のチェックボックスはアニメーションでのONOFFができないことがあるので、使う場合は注意してください。\nslow版はアニメーションでの項目のONOFFができます。\n\n\nプロパティー\n・項目名\t:初期値\t:説明\n【TAG】\n・ScrBland\t:One\t:Blendです。詳しくは公式リファレンスを見てください。\n・DstBland\t:Zero\t:Blendです。詳しくは公式リファレンスを見てください。透過処理をするならレンダーキューもいじったほうがいいかもしれません。\n・ZWrite\t:ON\t:デプスを書き込むか指定できます。\n・ZTest\t\t:Less\t:ZTestです詳しくは公式リファレンスを見てください。\n・CullMode\t：Back\t：カリングモードです。\n【Stencill】\n・Stencil\t:0\t:ステンシルのReference値を入れてください。\n・ReadMask\t:255\t:ReadMaskです。詳しくは公式リファレンスを見てください。\n・WriteMask\t:255\t:WriteMaskです。詳しくは公式リファレンスを見てください。\n・StencilComp\t:Disable:ステンシルテストの内容です。詳しくは公式リファレンスを見てください。\n・StencilPass\t:keep\t:ステンシルテスト合格時にステンシルバッファの内容をどうするか決めます。詳しくは公式リファレンスを見てください。\n・StencilFail\t:keep\t:ステンシルテスト不合格時にステンシルバッファの内容をどうするか決めます。詳しくは公式リファレンスを見てください。\n・StencilZFail\t:keep\t:ステンシルテストに合格し、デプステストを失敗した場合、バッファの内容をどうするか決めます。詳しくは公式リファレンスを見てください。\n\n【Texture】\n・パノラマ\t：off\t:メインテクスチャのパノラマモードを有効にします。\n・ステレオパノラマ:off\t:パノラマのテクスチャがステレオかどうか選択します。\n・MainTexture\t:white\t:メインのテクスチャです。\n・MainColor\t:white\t:テクスチャカラーです。\n・UVスクロール\t:0,0\t:テクスチャを時間ごとにスクロールさせます。\n・UV回転\t:0\t:テクスチャを時間ごとに回転させます。\n\n・ステレオテクスチャ\t:off\t:ステレオテクスチャを有効にします。\n・右目用テクスチャ\t:white\t:右目用のテクスチャです。左目にはメインテクスチャのみが見えます。\n\n・近づいた時のテクスチャ\t:white\t:カメラが近づいた時にテクスチャを切り替えます。\n・テクスチャ切り替え(m)\t\t:0\t:テクスチャを切り替える距離です。0以下で機能を無効化します。\n\n・ワールド座標テクスチャ\t:white\t:ワールド座標に対するテクスチャです。\n\n・裏面テクスチャ\t:off\t:裏面テクスチャを切り替えます。\n・裏面テクスチャ\t:white\t:CUllOffを指定したときの裏面のテクスチャを指定できます。\n\n【Lithing】\n・Flat\t:off\t:ポリゴンの目立つFlatな状態にします。(法線を平均化します)\n\n・リムライトの色:\t:リムライトの色を設定できます。\n・リムパワー\t:0\t:リムの強さです。\n・リム調節用\t:\t:リムのフェードの調節ができます。\n\n・Matcap\t:off\t:マットキャップを有効にします。\n・Matcap\t:white\t:マットキャップのテクスチャを指定してください。\n\n・Unli\t:on\t:すべてのライティングを無効化します。\n\n・Ambient\t:0.1\t:環境光です。\n・AmbiColor\t:white\t:環境光の色です。\n\n・Diffuse\t:1\t:拡散光です。\n・DiffuseColor\t:white\t:拡散光の色補正です。\n\n・Specular\t:off\t:光沢を設定できます。\n・Shininess\t:1\t:光沢を設定できます。\n・Specular color:white\t:光沢の色補正。\n\n・Emission Texture:gray\t:エミッションテクスチャを指定できます。\n・Intensity\t:0\t:エミッションの強さです。\n\n・NormalMap\t:off\t:ノーマルマップを有効にします。\n・Normalmap\t:bump\t:ノーマルマップを指定してください。\n・強さ\t\t:1\t:ノーマルマップ影の強さです。\n\n\n【DistanceFade】\n・DistanceFade\t:off\t:有効にするとカメラからの距離によってのオブジェクトの透明度が変化します。\n・FadeIn\t:100000\t:オブジェクトが完全に見えるになる最遠距離です。\n・FadeOut\t:-1\t:オブジェクトが完全に見える最短距離です。\n・Fadew \t:0,1\t:フェードイン、フェードアウトする幅です。\n\n【Wave】\n・WaveMap\t:black\t:テクスチャのr成分によって頂点を法線方向に動かします。適当なノイズを入れてください。\n・WavePower\t:1\t:頂点の移動を補正します。\n\n【Geometry】\n・Distance\t:off\t:有効にすると、ポリゴン爆発・ポリゴンサイズ変更・ポリゴン回転などの処理がカメラからの距離で行われるようになります。\n・処理開始距離\t:2\t:処理を開始する距離です。\n・処理終了距離\t:1\t:処理を終了する距離です。\n・処理\t\t:1\t:様々な処理の倍率です。\n\n・法線爆発マップ:white\t:テクスチャのr成分によってポリゴンを法線方向に飛ばします。\n・爆発力\t:0\t:ポリゴン爆発の爆発力です。\n・重力\t\t:0,0,0\t:ポリゴンが爆発後に受ける重力です。\n\n・ポリゴンサイズ変更:0\t:ポリゴンのサイズを変更できます。\n\n・ポリゴン回転マップ:white\t:テクスチャの色を軸にポリゴンを回転させます。\n・ポリゴン回転\t:0\t:ポリゴンを回転させます。\n\n【WireFrame】\n・ワイヤーフレーム表示\t:off\t:ワイヤーフレームを表示します。\n・ワイヤーフレームの色\t:white\t:ワイヤーの色を設定できます。\n・ワイヤーフレームの太さ:0.1\t:ワイヤーの太さを設定できます。\n\n【ShadowAvater】　オブジェクトの分身を作ります。\n・分身の間隔\t:0.6\t:分身同士の間隔です。\n・本体表示\t:off\t:無効だと本来の位置にオブジェクトがない場合があります。\n・分身\t:\t:0,0,0\t:XYZの軸ごとに分身の人数を設定できます。ただしシェーダーの制限で28体程度しか分身できません。\n\n\n【Mask】\n・Background\t:white\t:マスクの下のテクスチャです。\n・BGColor1\t:black\t:ベースの色です。\n・BGColor2\t:0,1,1\t:オーバーレイ後の色です。\n・MaskTexture\t:black\t:αの高いところがBackgroundになります。\n・MovementMap\t:white\t:テクスチャのr成分でBackgroundをオーバーレイします。適当なノイズを入れてください。\n・スピード\t:0.6\t:オーバーレイのしきい値の上昇速度です。\n・周期\t\t:1.5\t:オーバーレイ上昇の周期です。\n・フェードアウト:1\t:オーバーレイしきい値の上昇に伴ってオーバーレイをベースの色に戻します。\n\n【Dissolve】\nDissolveNoise\t:gray\t:テクスチャのr成分によって描写を破棄します。適当なノイズを入れてください。\nDissolve\t:-1\t:ディゾルブのしきい値です。\nDistance係数\t:0\t:距離によるディゾルブを行いたい時に数字を入力してください。\nEndTex\t\t:white\t:テクスチャが破棄される末端のテクスチャです。\nEndWidth\t:0.01\t:EndTexの幅です。\n\n【Transformation matrix】4つのチェック項目がありますが、1つのみ有効にしてください。\n・BillBoard\t:off\t:オブジェクトがビルボード化します。\n・ForceTransform:off\t:オブジェクトが通常のTransformを無視します。\n・ワールド固定\t:off\t:オブジェクトを任意のワールド座標に固定します。\n・視点固定\t:off\t:オブジェクトのカメラからの位置を固定します。\n\n・位置\t:0,0,0,0\t:オブジェクトのPositionを指定します。\n・回転\t:0，0，0，0\t:オブジェクトのRotationを指定します。\n・拡大\t:1，1，1，1\t:オブジェクトのScaleを指定します。\n\n【Hide】\n・カリング\t:\t:下二つの項目を有効にします。\n・ミラーカリング:CullOff:CUllOff→常に描写する。MirrorOnly→ミラーにだけ写す(プレイヤーから直接見えない)。MirrorCulling→ミラーにだけ写らない(プレイヤーから直接は見える)。\n・カメラカリング:CullOff:CUllOff→常に描写する。CmaraOnly→デスクトップ、VRカメラからは見える(VRの人にから見えない)。CameraCulling→デスクトップ、VRカメラから見えない(VRの人には見える)。\n\n【Pixel】\n・ピクセル化\t:off\t:有効にするとテクスチャがピクセル化(モザイク処理)されます。\n・Xピクセル数\t:500\t:X方向のピクセル数です。\n・Yピクセル数\t:500\t:Y方向のピクセル数です。\n・Distance係数\t:0\t:距離によるピクセル処理がしたい時に数字を入れてください。\n\n【Voxel(fake)】\n・ボクセル化\t:off\t:頂点をボクセルごとに移動するようにします。\n・ボクセル係数\t:0.1\t:ボクセルの単位を指定します。\n・Distance係数\t:0\t:距離によるボクセル処理がしたい時に数字を入れてください。\n\n【Tessellation】\n・Tess Factor\t:1,1,1,1:わからなかったら初期値のままにしてください。ポリゴンを増やします。","url":"https://booth.pm/ja/items/1112177","offers":{"priceCurrency":"JPY","@type":"Offer","price":"1015"},"image":"https://booth.pximg.net/c/620x620/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/1cef902e-5005-4421-bc52-fde2675a8ee3_base_resized.jpg"}
+    </script>
+    <link rel="shortcut icon" type="image/x-icon" href=
+    "https://asset.booth.pm/favicon.ico">
+    <link href="/static-images/pwa/icon_size_180.png" rel=
+    "apple-touch-icon-precomposed">
   </head>
   <body>
-    <div class="dialog">
-      <span class="not_found_logo" title=
-      "Jump to BOOTH TOP">BOOTH</span>
-      <h1>
-        メンテナンス中です
-      </h1>
-      <p>
-        システム更新のためメンテナンス中です。
-      </p>
-      <p>
-        ご迷惑をおかけしますが、何卒よろしくお願い致します。
-      </p>
+    <div class="service-informations">
+      <div class="promotion-banner"></div>
     </div>
-    <div class="footer">
-      <a class="twitter-timeline" data-dnt="true" href=
-      "https://twitter.com/booth_pm" data-widget-id=
-      "623438718154575872">最新情報は@booth_pmをご確認ください</a> 
-      <script>
-      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-      </script>
+    <header role="banner">
+      <div class="sticky-wrapper">
+        <div class=
+        "header-nav js-smooth-scroll-header js-sticky-header">
+          <nav role="navigation">
+            <div class="global-nav shrink">
+              <a class="l-header-logo u-d-block shrink-0" href=
+              "https://booth.pm/"><img alt="BOOTH" class=
+              "booth-logo u-align-top" width="146" height="52" src=
+              "https://asset.booth.pm/assets/booth_logo-cd38e1da31e93676b081bd8f0aca2805f758f514c8e95dc3f1a8aac5e58dffec.svg"></a>
+              <div class="w-full shrink" data-ga-from="market_show"
+              data-portal-url="https://booth.pm/ja"
+              data-search-params=
+              "{&quot;portal_domain&quot;:&quot;ja&quot;}"
+              data-search-url="https://booth.pm/ja/items" id=
+              "js-item-search-box"></div>
+            </div>
+            <div class="ctrl-nav shrink-0">
+              <div class="ctrl-nav-box before-signin">
+                <a class="nav-item" aria-label="ログイン" href=
+                "/users/sign_in">ログイン</a>
+              </div>
+              <div class="ctrl-nav-box before-signin">
+                <a class="nav-item" aria-label="BOOTHとは"
+                data-tracking="click" data-product-list=
+                "from market_show via global_nav to about" href=
+                "https://booth.pm/about">BOOTHとは</a>
+              </div>
+              <div class="ctrl-nav-box before-signin">
+                <a class="nav-item" data-product-list=
+                "from market_show via nav to booth_guide"
+                data-tracking="click" aria-label="作品を出品しよう" href=
+                "https://booth.pm/guide">作品を出品しよう</a>
+              </div><a class="ctrl-nav-box trigger show-cart"
+              aria-label="ショッピングカート" href=
+              "https://booth.pm/carts"></a>
+              <div class="flex items-center u-ml-300">
+                <div class="js-locale-switcher"></div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="fixed top-0 w-full z-[2000]" id="js-flash-message">
     </div>
+    <div id="js-toast-message"></div>
+    <div class="page-wrap">
+      <main role="main">
+        <div class="recaptcha-tag" data-action=
+        "booth/checkout_order" data-site-key=
+        "6LfF1dcZAAAAAOHQX8v16MX5SktDwmQINVD_6mBF"></div>
+        <div class="market" data-ga-tracking-id="UA-145200201-1"
+        data-product-brand="hhotatea" data-product-category="134"
+        data-product-id="1112177" data-product-list="market_show"
+        data-product-price="1015"
+        data-shop-tracking-product-category="Materials (Other)"
+        data-shop-tracking-product-id="1112177"
+        data-shop-tracking-product-name="ごった煮シェーダー"
+        data-shop-tracking-product-price="1015" data-tracking=
+        "detail_item" id="items">
+          <div class="market"></div>
+          <div data-page-type="market" id="js-item"></div>
+          <article>
+            <div class=
+            "market market-item-detail item-info-detail u-bg-white">
+              <div class=
+              "market-item-detail-article u-d-flex u-flex-column u-pb-400 u-align-items-center">
+                <div class="container">
+                  <div class=
+                  "market-item-detail__exhibition-banner"></div>
+                  <div id="js-item-order"></div>
+                  <div id="js-item-gift"></div>
+                  <div class="u-pt-600 u-d-flex">
+                    <div class=
+                    "summary u-order-1 l-col-2of5 u-pl-600">
+                      <div class="mobile-section">
+                        <div class="my-16 desktop:mt-0">
+                          <header class=
+                          "auto-cols-[100%] gap-8 grid text-text-gray600 shop__text">
+                            <div id="js-item-category-breadcrumbs">
+                            </div>
+                            <div class=
+                            "empty:hidden flex gap-4 items-center">
+                              <a class="h-[20px]" href=
+                              "https://booth.pm/ja/items?tags%5B%5D=VRChat">
+                              <img alt="VRChat" height="20px"
+                              width="48px" src=
+                              "https://asset.booth.pm/static-images/shops/badges/vrchat.png"></a>
+                            </div><a class=
+                            "flex gap-4 items-center no-underline preserve-half-leading !text-current typography-16 w-fit"
+                            data-product-list=
+                            "from market_show via market_item_detail to shop_index"
+                            data-tracking="click" target="_blank"
+                            rel="noopener" href=
+                            "https://hhotatea.booth.pm/"><img alt=
+                            "HOTATE's VIRTUALAB" class=
+                            "h-[24px] rounded-oval w-[24px]" src=
+                            "https://booth.pximg.net/c/48x48/users/4467863/icon_image/3e6bc3b2-751a-40d5-ab2e-8b9f0bc2a90f_base_resized.jpg">HOTATE's
+                            VIRTUALAB</a>
+                            <h2 class=
+                            "font-bold leading-[32px] m-0 text-[24px]">
+                              ごった煮シェーダー
+                            </h2>
+                            <div class="flex items-start mt-8">
+                              <div class="mr-auto">
+                                <div id="js-item-wishlist-button">
+                                </div>
+                              </div>
+                              <div class="mt-[11px]" id=
+                              "js-item-share-buttons"></div>
+                              <div class="mt-[6px]" id=
+                              "js-item-menu-buttons"></div>
+                            </div>
+                          </header>
+                        </div>
+                        <div>
+                          <ul class=
+                          "variations u-mt-300 u-border-b" id=
+                          "variations">
+                            <li class="variation-item u-border-t">
+                              <div class="u-d-flex">
+                                <div class="u-flex-1 u-min-w-0">
+                                  <div class="u-d-flex">
+                                    <div class=
+                                    "u-flex-1 u-min-w-0 u-d-flex u-flex-column u-mr-500">
+                                      <div class=
+                                      "u-tpg-caption1 u-text-gray-300">
+                                        ダウンロード商品
+                                      </div>
+                                    </div>
+                                    <div class=
+                                    "variation-price u-text-right">
+                                      ¥ 1,015
+                                    </div>
+                                  </div>
+                                  <div class="variation-cart">
+                                    <div class="cart-button-wrap">
+                                      <form class="button_to"
+                                      method="post" action=
+                                      "https://hhotatea.booth.pm/cart?added_to_cart=true&amp;via=market">
+                                        <input type="hidden" name=
+                                        "_method" value="patch"
+                                        autocomplete="off">
+                                      </form>
+                                      <form class="button_to"
+                                      method="post" action=
+                                      "https://hhotatea.booth.pm/cart?added_to_cart=true&amp;via=market">
+                                        <input type="hidden" name=
+                                        "_method" value="patch"
+                                        autocomplete=
+                                        "off"><button class=
+                                        "add-gift flex justify-center box-border items-center cursor-pointer text-text-default shop-theme-text-text border border-border600 shop-theme-border-text bg-white shop-theme-bg-contents w-full mt-8 py-16 text-center"
+                                        data-product-id="1112177"
+                                        data-product-price="1015"
+                                        data-product-brand=
+                                        "hhotatea"
+                                        data-product-category="134"
+                                        data-product-variant=
+                                        "1727409"
+                                        data-shop-tracking-product-id="1112177"
+                                        data-shop-tracking-product-name="ごった煮シェーダー"
+                                        data-shop-tracking-product-price="1015"
+                                        data-shop-tracking-product-category="Materials (Other)"
+                                        data-shop-tracking-product-variant="default"
+                                        data-tracking="add_item"
+                                        data-product-list=
+                                        "from market_show via market as gift to add_item"
+                                        data-ga-tracking-id=
+                                        "UA-145200201-1" type=
+                                        "submit"><input type=
+                                        "hidden" name=
+                                        "cart_item[variation_id]"
+                                        id="cart_item_variation_id"
+                                        value="1727409"
+                                        autocomplete=
+                                        "off"><input type="hidden"
+                                        name="cart_item[is_gift]"
+                                        id="cart_item_is_gift"
+                                        value="true" autocomplete=
+                                        "off"></button>
+                                        <div class=
+                                        "typography-16 pl-8">
+                                          <button class=
+                                          "add-gift flex justify-center box-border items-center cursor-pointer text-text-default shop-theme-text-text border border-border600 shop-theme-border-text bg-white shop-theme-bg-contents w-full mt-8 py-16 text-center"
+                                          data-product-id="1112177"
+                                          data-product-price="1015"
+                                          data-product-brand=
+                                          "hhotatea"
+                                          data-product-category=
+                                          "134"
+                                          data-product-variant=
+                                          "1727409"
+                                          data-shop-tracking-product-id="1112177"
+                                          data-shop-tracking-product-name="ごった煮シェーダー"
+                                          data-shop-tracking-product-price="1015"
+                                          data-shop-tracking-product-category="Materials (Other)"
+                                          data-shop-tracking-product-variant="default"
+                                          data-tracking="add_item"
+                                          data-product-list=
+                                          "from market_show via market as gift to add_item"
+                                          data-ga-tracking-id=
+                                          "UA-145200201-1" type=
+                                          "submit">ギフトとして贈る</button>
+                                        </div>
+                                      </form>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class=
+                      "flex flex-col gap-24 pt-40 pb-24">
+                        <h4 class=
+                        "typography-14 shop-theme-text--default flex items-center !m-0"
+                        style=
+                        "font-feature-settings: &quot;palt&quot;;">
+                          <a target="_blank" class=
+                          "ml-4 no-underline hover:underline shop-theme-text--default"
+                          rel="noopener" href=
+                          "https://booth.pixiv.help/hc/ja/sections/13288068355225">
+                          「ギフトとして贈る」とは</a>
+                        </h4>
+                        <div class="!p-0" data-has-privacy-policy=
+                        "true" id=
+                        "js-item-payment-and-shipping-terms"></div>
+                      </div>
+                    </div>
+                    <div class="u-order-0 l-col-3of5 u-pr-500">
+                      <div class="primary-image-area">
+                        <div>
+                          <div class=
+                          "market-item-detail-item-image-wrapper">
+                            <img alt="ごった煮シェーダー" class=
+                            "market-item-detail-item-image"
+                            data-origin=
+                            "https://booth.pximg.net/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/1cef902e-5005-4421-bc52-fde2675a8ee3.png"
+                            src=
+                            "https://booth.pximg.net/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/1cef902e-5005-4421-bc52-fde2675a8ee3_base_resized.jpg">
+                          </div>
+                        </div>
+                        <div>
+                          <div class=
+                          "market-item-detail-item-image-wrapper">
+                            <img alt="ごった煮シェーダー" class=
+                            "market-item-detail-item-image"
+                            data-lazy=
+                            "https://booth.pximg.net/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/2ba39694-77b7-4011-88e4-901f0fce8ec6_base_resized.jpg"
+                            data-origin=
+                            "https://booth.pximg.net/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/2ba39694-77b7-4011-88e4-901f0fce8ec6.png">
+                          </div>
+                        </div>
+                        <div>
+                          <div class=
+                          "market-item-detail-item-image-wrapper">
+                            <img alt="ごった煮シェーダー" class=
+                            "market-item-detail-item-image"
+                            data-lazy=
+                            "https://booth.pximg.net/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/8a0bfc6c-0e39-4253-b570-4930ed00d453_base_resized.jpg"
+                            data-origin=
+                            "https://booth.pximg.net/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/8a0bfc6c-0e39-4253-b570-4930ed00d453.png">
+                          </div>
+                        </div>
+                        <div>
+                          <div class=
+                          "market-item-detail-item-image-wrapper">
+                            <img alt="ごった煮シェーダー" class=
+                            "market-item-detail-item-image"
+                            data-lazy=
+                            "https://booth.pximg.net/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/e69e91c5-e09f-4359-9e87-126d6470d751_base_resized.jpg"
+                            data-origin=
+                            "https://booth.pximg.net/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/e69e91c5-e09f-4359-9e87-126d6470d751.png">
+                          </div>
+                        </div>
+                        <div>
+                          <div class=
+                          "market-item-detail-item-image-wrapper">
+                            <img alt="ごった煮シェーダー" class=
+                            "market-item-detail-item-image"
+                            data-lazy=
+                            "https://booth.pximg.net/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/fac9bc38-a61c-4f99-8028-cbca2ad79bbb_base_resized.jpg"
+                            data-origin=
+                            "https://booth.pximg.net/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/fac9bc38-a61c-4f99-8028-cbca2ad79bbb.png">
+                          </div>
+                        </div>
+                        <div>
+                          <div class=
+                          "market-item-detail-item-image-wrapper">
+                            <img alt="ごった煮シェーダー" class=
+                            "market-item-detail-item-image"
+                            data-lazy=
+                            "https://booth.pximg.net/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/b34e74a6-73e4-45f9-babd-71b0516c01b7_base_resized.jpg"
+                            data-origin=
+                            "https://booth.pximg.net/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/b34e74a6-73e4-45f9-babd-71b0516c01b7.png">
+                          </div>
+                        </div>
+                        <div>
+                          <div class=
+                          "market-item-detail-item-image-wrapper">
+                            <img alt="ごった煮シェーダー" class=
+                            "market-item-detail-item-image"
+                            data-lazy=
+                            "https://booth.pximg.net/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/7a54fb42-7da3-4b68-a9ed-300c92efdca7_base_resized.jpg"
+                            data-origin=
+                            "https://booth.pximg.net/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/7a54fb42-7da3-4b68-a9ed-300c92efdca7.png">
+                          </div>
+                        </div>
+                        <div>
+                          <div class=
+                          "market-item-detail-item-image-wrapper">
+                            <img alt="ごった煮シェーダー" class=
+                            "market-item-detail-item-image"
+                            data-lazy=
+                            "https://booth.pximg.net/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/64b59857-9864-4e81-a47e-52cdb5c3d221_base_resized.jpg"
+                            data-origin=
+                            "https://booth.pximg.net/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/64b59857-9864-4e81-a47e-52cdb5c3d221.png">
+                          </div>
+                        </div>
+                        <div>
+                          <div class=
+                          "market-item-detail-item-image-wrapper">
+                            <img alt="ごった煮シェーダー" class=
+                            "market-item-detail-item-image"
+                            data-lazy=
+                            "https://booth.pximg.net/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/94202878-3f7e-4cff-83d4-8d852bef798f_base_resized.jpg"
+                            data-origin=
+                            "https://booth.pximg.net/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/94202878-3f7e-4cff-83d4-8d852bef798f.png">
+                          </div>
+                        </div>
+                        <div>
+                          <div class=
+                          "market-item-detail-item-image-wrapper">
+                            <img alt="ごった煮シェーダー" class=
+                            "market-item-detail-item-image"
+                            data-lazy=
+                            "https://booth.pximg.net/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/50685c03-95de-4856-83ac-649ec6512f36_base_resized.jpg"
+                            data-origin=
+                            "https://booth.pximg.net/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/50685c03-95de-4856-83ac-649ec6512f36.png">
+                          </div>
+                        </div>
+                        <div>
+                          <div class=
+                          "market-item-detail-item-image-wrapper">
+                            <img alt="ごった煮シェーダー" class=
+                            "market-item-detail-item-image"
+                            data-lazy=
+                            "https://booth.pximg.net/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/0a06afae-5eec-4a1d-8ff1-ee4388aefd12_base_resized.jpg"
+                            data-origin=
+                            "https://booth.pximg.net/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/0a06afae-5eec-4a1d-8ff1-ee4388aefd12.png">
+                          </div>
+                        </div>
+                        <div>
+                          <div class=
+                          "market-item-detail-item-image-wrapper">
+                            <img alt="ごった煮シェーダー" class=
+                            "market-item-detail-item-image"
+                            data-lazy=
+                            "https://booth.pximg.net/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/26c901db-18ce-486f-9033-dd8f39d88d0b_base_resized.jpg"
+                            data-origin=
+                            "https://booth.pximg.net/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/26c901db-18ce-486f-9033-dd8f39d88d0b.png">
+                          </div>
+                        </div>
+                        <div>
+                          <div class=
+                          "market-item-detail-item-image-wrapper">
+                            <img alt="ごった煮シェーダー" class=
+                            "market-item-detail-item-image"
+                            data-lazy=
+                            "https://booth.pximg.net/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/8ccb39b6-3a1f-4bd4-87c2-4dfa3b270f4b_base_resized.jpg"
+                            data-origin=
+                            "https://booth.pximg.net/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/8ccb39b6-3a1f-4bd4-87c2-4dfa3b270f4b.png">
+                          </div>
+                        </div>
+                        <div>
+                          <div class=
+                          "market-item-detail-item-image-wrapper">
+                            <img alt="ごった煮シェーダー" class=
+                            "market-item-detail-item-image"
+                            data-lazy=
+                            "https://booth.pximg.net/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/3dda9d0a-5692-40d8-b9fd-da5044d215a7_base_resized.jpg"
+                            data-origin=
+                            "https://booth.pximg.net/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/3dda9d0a-5692-40d8-b9fd-da5044d215a7.png">
+                          </div>
+                        </div>
+                        <div>
+                          <div class=
+                          "market-item-detail-item-image-wrapper">
+                            <img alt="ごった煮シェーダー" class=
+                            "market-item-detail-item-image"
+                            data-lazy=
+                            "https://booth.pximg.net/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/7649c29a-f777-46bc-bdeb-c0c08d251d41_base_resized.jpg"
+                            data-origin=
+                            "https://booth.pximg.net/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/7649c29a-f777-46bc-bdeb-c0c08d251d41.png">
+                          </div>
+                        </div>
+                      </div>
+                      <div class=
+                      "primary-image-thumbnails u-d-sp-none image-list">
+                        <a class="pointer">
+                        <div class="slick-thumbnail-border">
+                          <img src=
+                          "https://booth.pximg.net/c/72x72_a2_g5/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/1cef902e-5005-4421-bc52-fde2675a8ee3_base_resized.jpg">
+                        </div></a><a class="pointer">
+                        <div class="slick-thumbnail-border">
+                          <img src=
+                          "https://booth.pximg.net/c/72x72_a2_g5/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/2ba39694-77b7-4011-88e4-901f0fce8ec6_base_resized.jpg">
+                        </div></a><a class="pointer">
+                        <div class="slick-thumbnail-border">
+                          <img src=
+                          "https://booth.pximg.net/c/72x72_a2_g5/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/8a0bfc6c-0e39-4253-b570-4930ed00d453_base_resized.jpg">
+                        </div></a><a class="pointer">
+                        <div class="slick-thumbnail-border">
+                          <img src=
+                          "https://booth.pximg.net/c/72x72_a2_g5/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/e69e91c5-e09f-4359-9e87-126d6470d751_base_resized.jpg">
+                        </div></a><a class="pointer">
+                        <div class="slick-thumbnail-border">
+                          <img src=
+                          "https://booth.pximg.net/c/72x72_a2_g5/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/fac9bc38-a61c-4f99-8028-cbca2ad79bbb_base_resized.jpg">
+                        </div></a><a class="pointer">
+                        <div class="slick-thumbnail-border">
+                          <img src=
+                          "https://booth.pximg.net/c/72x72_a2_g5/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/b34e74a6-73e4-45f9-babd-71b0516c01b7_base_resized.jpg">
+                        </div></a><a class="pointer">
+                        <div class="slick-thumbnail-border">
+                          <img src=
+                          "https://booth.pximg.net/c/72x72_a2_g5/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/7a54fb42-7da3-4b68-a9ed-300c92efdca7_base_resized.jpg">
+                        </div></a><a class="pointer">
+                        <div class="slick-thumbnail-border">
+                          <img src=
+                          "https://booth.pximg.net/c/72x72_a2_g5/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/64b59857-9864-4e81-a47e-52cdb5c3d221_base_resized.jpg">
+                        </div></a><a class="pointer">
+                        <div class="slick-thumbnail-border">
+                          <img src=
+                          "https://booth.pximg.net/c/72x72_a2_g5/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/94202878-3f7e-4cff-83d4-8d852bef798f_base_resized.jpg">
+                        </div></a><a class="pointer">
+                        <div class="slick-thumbnail-border">
+                          <img src=
+                          "https://booth.pximg.net/c/72x72_a2_g5/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/50685c03-95de-4856-83ac-649ec6512f36_base_resized.jpg">
+                        </div></a><a class="pointer">
+                        <div class="slick-thumbnail-border">
+                          <img src=
+                          "https://booth.pximg.net/c/72x72_a2_g5/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/0a06afae-5eec-4a1d-8ff1-ee4388aefd12_base_resized.jpg">
+                        </div></a><a class="pointer">
+                        <div class="slick-thumbnail-border">
+                          <img src=
+                          "https://booth.pximg.net/c/72x72_a2_g5/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/26c901db-18ce-486f-9033-dd8f39d88d0b_base_resized.jpg">
+                        </div></a><a class="pointer">
+                        <div class="slick-thumbnail-border">
+                          <img src=
+                          "https://booth.pximg.net/c/72x72_a2_g5/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/8ccb39b6-3a1f-4bd4-87c2-4dfa3b270f4b_base_resized.jpg">
+                        </div></a><a class="pointer">
+                        <div class="slick-thumbnail-border">
+                          <img src=
+                          "https://booth.pximg.net/c/72x72_a2_g5/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/3dda9d0a-5692-40d8-b9fd-da5044d215a7_base_resized.jpg">
+                        </div></a><a class="pointer">
+                        <div class="slick-thumbnail-border">
+                          <img src=
+                          "https://booth.pximg.net/c/72x72_a2_g5/4fb745c3-074a-4dd3-a297-3f01ee3312c7/i/1112177/7649c29a-f777-46bc-bdeb-c0c08d251d41_base_resized.jpg">
+                        </div></a>
+                      </div>
+                      <section class="main-info-column">
+                        <div class=
+                        "js-market-item-detail-description description">
+                          <p class=
+                          "autolink break-words font-noto-sans typography-16 whitespace-pre-line">
+                            思いつく限りの機能を追加して1日で書いたごった煮シェーダーです。とにかく多機能で使い方によっては迷惑行為もできてしまうので注意してください。
+                            ライティング関係は今までやったことがなかったので、結構適当です。。。(改善出来たら改善します)
+                            基本的には迷惑行為にさえならなければ、アバターでもワールドでもアクセサリでも自由に使ってもらって構いません。
+                            問題等あれば製作者まで連絡ください。 細かい設定はサンプルを参考にして下さい！
+                            ・製作者 HhotateA 　Twitter:@HhotateA
+                            　Discord:hhotatea#0333 　
+                            2018/11/26　販売開始 2018/11/27　おまけをつけました
+                            2018/12/1 　機能追加 2018/12/4 　機能改善・追加
+                            2018/12/20 slow版追加 ## 規約
+                            ・本シェーダーはUnity及びVRChatでの利用を想定しています。
+                            ・著作権は製作者に帰属します。
+                            ・本製品を使って発生した問題に対しては製作者は一切の責任を負いません。
+                            許可事項 ・商用を含む、配布物に付属する形での2次配布(連絡はください)
+                            ・解析・改変 禁止事項 ・シェーダー単体での2次配布 ・迷惑行為等
+                            プロパティ中のチェックボックスはアニメーションでのONOFFができないことがあるので、使う場合は注意してください。
+                            slow版はアニメーションでの項目のONOFFができます。 プロパティー
+                            ・項目名 :初期値 :説明 【TAG】 ・ScrBland :One
+                            :Blendです。詳しくは公式リファレンスを見てください。 ・DstBland
+                            :Zero
+                            :Blendです。詳しくは公式リファレンスを見てください。透過処理をするならレンダーキューもいじったほうがいいかもしれません。
+                            ・ZWrite :ON :デプスを書き込むか指定できます。 ・ZTest
+                            :Less :ZTestです詳しくは公式リファレンスを見てください。
+                            ・CullMode ：Back ：カリングモードです。 【Stencill】
+                            ・Stencil :0 :ステンシルのReference値を入れてください。
+                            ・ReadMask :255
+                            :ReadMaskです。詳しくは公式リファレンスを見てください。
+                            ・WriteMask :255
+                            :WriteMaskです。詳しくは公式リファレンスを見てください。
+                            ・StencilComp
+                            :Disable:ステンシルテストの内容です。詳しくは公式リファレンスを見てください。
+                            ・StencilPass :keep
+                            :ステンシルテスト合格時にステンシルバッファの内容をどうするか決めます。詳しくは公式リファレンスを見てください。
+                            ・StencilFail :keep
+                            :ステンシルテスト不合格時にステンシルバッファの内容をどうするか決めます。詳しくは公式リファレンスを見てください。
+                            ・StencilZFail :keep
+                            :ステンシルテストに合格し、デプステストを失敗した場合、バッファの内容をどうするか決めます。詳しくは公式リファレンスを見てください。
+                            【Texture】 ・パノラマ ：off
+                            :メインテクスチャのパノラマモードを有効にします。 ・ステレオパノラマ:off
+                            :パノラマのテクスチャがステレオかどうか選択します。 ・MainTexture
+                            :white :メインのテクスチャです。 ・MainColor :white
+                            :テクスチャカラーです。 ・UVスクロール :0,0
+                            :テクスチャを時間ごとにスクロールさせます。 ・UV回転 :0
+                            :テクスチャを時間ごとに回転させます。 ・ステレオテクスチャ :off
+                            :ステレオテクスチャを有効にします。 ・右目用テクスチャ :white
+                            :右目用のテクスチャです。左目にはメインテクスチャのみが見えます。
+                            ・近づいた時のテクスチャ :white
+                            :カメラが近づいた時にテクスチャを切り替えます。 ・テクスチャ切り替え(m)
+                            :0 :テクスチャを切り替える距離です。0以下で機能を無効化します。
+                            ・ワールド座標テクスチャ :white :ワールド座標に対するテクスチャです。
+                            ・裏面テクスチャ :off :裏面テクスチャを切り替えます。 ・裏面テクスチャ
+                            :white :CUllOffを指定したときの裏面のテクスチャを指定できます。
+                            【Lithing】 ・Flat :off
+                            :ポリゴンの目立つFlatな状態にします。(法線を平均化します)
+                            ・リムライトの色: :リムライトの色を設定できます。 ・リムパワー :0
+                            :リムの強さです。 ・リム調節用 : :リムのフェードの調節ができます。
+                            ・Matcap :off :マットキャップを有効にします。 ・Matcap
+                            :white :マットキャップのテクスチャを指定してください。 ・Unli
+                            :on :すべてのライティングを無効化します。 ・Ambient :0.1
+                            :環境光です。 ・AmbiColor :white :環境光の色です。
+                            ・Diffuse :1 :拡散光です。 ・DiffuseColor
+                            :white :拡散光の色補正です。 ・Specular :off
+                            :光沢を設定できます。 ・Shininess :1 :光沢を設定できます。
+                            ・Specular color:white :光沢の色補正。
+                            ・Emission Texture:gray
+                            :エミッションテクスチャを指定できます。 ・Intensity :0
+                            :エミッションの強さです。 ・NormalMap :off
+                            :ノーマルマップを有効にします。 ・Normalmap :bump
+                            :ノーマルマップを指定してください。 ・強さ :1
+                            :ノーマルマップ影の強さです。 【DistanceFade】
+                            ・DistanceFade :off
+                            :有効にするとカメラからの距離によってのオブジェクトの透明度が変化します。
+                            ・FadeIn :100000
+                            :オブジェクトが完全に見えるになる最遠距離です。 ・FadeOut :-1
+                            :オブジェクトが完全に見える最短距離です。 ・Fadew :0,1
+                            :フェードイン、フェードアウトする幅です。 【Wave】 ・WaveMap
+                            :black
+                            :テクスチャのr成分によって頂点を法線方向に動かします。適当なノイズを入れてください。
+                            ・WavePower :1 :頂点の移動を補正します。 【Geometry】
+                            ・Distance :off
+                            :有効にすると、ポリゴン爆発・ポリゴンサイズ変更・ポリゴン回転などの処理がカメラからの距離で行われるようになります。
+                            ・処理開始距離 :2 :処理を開始する距離です。 ・処理終了距離 :1
+                            :処理を終了する距離です。 ・処理 :1 :様々な処理の倍率です。
+                            ・法線爆発マップ:white
+                            :テクスチャのr成分によってポリゴンを法線方向に飛ばします。 ・爆発力 :0
+                            :ポリゴン爆発の爆発力です。 ・重力 :0,0,0
+                            :ポリゴンが爆発後に受ける重力です。 ・ポリゴンサイズ変更:0
+                            :ポリゴンのサイズを変更できます。 ・ポリゴン回転マップ:white
+                            :テクスチャの色を軸にポリゴンを回転させます。 ・ポリゴン回転 :0
+                            :ポリゴンを回転させます。 【WireFrame】 ・ワイヤーフレーム表示
+                            :off :ワイヤーフレームを表示します。 ・ワイヤーフレームの色
+                            :white :ワイヤーの色を設定できます。 ・ワイヤーフレームの太さ:0.1
+                            :ワイヤーの太さを設定できます。
+                            【ShadowAvater】　オブジェクトの分身を作ります。 ・分身の間隔
+                            :0.6 :分身同士の間隔です。 ・本体表示 :off
+                            :無効だと本来の位置にオブジェクトがない場合があります。 ・分身 :
+                            :0,0,0
+                            :XYZの軸ごとに分身の人数を設定できます。ただしシェーダーの制限で28体程度しか分身できません。
+                            【Mask】 ・Background :white
+                            :マスクの下のテクスチャです。 ・BGColor1 :black
+                            :ベースの色です。 ・BGColor2 :0,1,1
+                            :オーバーレイ後の色です。 ・MaskTexture :black
+                            :αの高いところがBackgroundになります。 ・MovementMap
+                            :white
+                            :テクスチャのr成分でBackgroundをオーバーレイします。適当なノイズを入れてください。
+                            ・スピード :0.6 :オーバーレイのしきい値の上昇速度です。 ・周期
+                            :1.5 :オーバーレイ上昇の周期です。 ・フェードアウト:1
+                            :オーバーレイしきい値の上昇に伴ってオーバーレイをベースの色に戻します。
+                            【Dissolve】 DissolveNoise :gray
+                            :テクスチャのr成分によって描写を破棄します。適当なノイズを入れてください。
+                            Dissolve :-1 :ディゾルブのしきい値です。 Distance係数
+                            :0 :距離によるディゾルブを行いたい時に数字を入力してください。
+                            EndTex :white :テクスチャが破棄される末端のテクスチャです。
+                            EndWidth :0.01 :EndTexの幅です。
+                            【Transformation
+                            matrix】4つのチェック項目がありますが、1つのみ有効にしてください。
+                            ・BillBoard :off :オブジェクトがビルボード化します。
+                            ・ForceTransform:off
+                            :オブジェクトが通常のTransformを無視します。 ・ワールド固定
+                            :off :オブジェクトを任意のワールド座標に固定します。 ・視点固定
+                            :off :オブジェクトのカメラからの位置を固定します。 ・位置
+                            :0,0,0,0 :オブジェクトのPositionを指定します。 ・回転
+                            :0，0，0，0 :オブジェクトのRotationを指定します。 ・拡大
+                            :1，1，1，1 :オブジェクトのScaleを指定します。 【Hide】
+                            ・カリング : :下二つの項目を有効にします。
+                            ・ミラーカリング:CullOff:CUllOff→常に描写する。MirrorOnly→ミラーにだけ写す(プレイヤーから直接見えない)。MirrorCulling→ミラーにだけ写らない(プレイヤーから直接は見える)。
+                            ・カメラカリング:CullOff:CUllOff→常に描写する。CmaraOnly→デスクトップ、VRカメラからは見える(VRの人にから見えない)。CameraCulling→デスクトップ、VRカメラから見えない(VRの人には見える)。
+                            【Pixel】 ・ピクセル化 :off
+                            :有効にするとテクスチャがピクセル化(モザイク処理)されます。 ・Xピクセル数
+                            :500 :X方向のピクセル数です。 ・Yピクセル数 :500
+                            :Y方向のピクセル数です。 ・Distance係数 :0
+                            :距離によるピクセル処理がしたい時に数字を入れてください。
+                            【Voxel(fake)】 ・ボクセル化 :off
+                            :頂点をボクセルごとに移動するようにします。 ・ボクセル係数 :0.1
+                            :ボクセルの単位を指定します。 ・Distance係数 :0
+                            :距離によるボクセル処理がしたい時に数字を入れてください。
+                            【Tessellation】 ・Tess Factor
+                            :1,1,1,1:わからなかったら初期値のままにしてください。ポリゴンを増やします。
+                          </p>
+                        </div>
+                      </section>
+                      <div class="my-40"></div>
+                    </div>
+                  </div>
+                  <div class="pt-8 pb-40 desktop:pt-40">
+                    <div id="js-item-tag-list"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <aside class=
+          "bg-page-background500 disable-shop-theme empty:hidden grid [&amp;&gt;div]:border-b [&amp;&gt;div]:border-b-border300 [&amp;&gt;div:last-child]:border-b-0 desktop:py-24 desktop:min-w-[970px]">
+            <div class="shoplist-with-items" v-if=
+            "shops &amp;&amp; shops.length &gt; 0"></div>
+          </aside>
+        </div>
+      </main>
+    </div>
+    <footer class="footer__menu bg-white">
+      <div class=
+      "desktop:flex desktop:justify-between desktop:mx-auto desktop:text-center desktop:max-w-[1224px] desktop:my-24 desktop:px-16 mobile:gap-16 mobile:grid mobile:grid-cols-2 mobile:m-16">
+        <a href="https://booth.fanbox.cc/posts/6374573"><img alt=
+        "ピクシブかんたん決済のご利用方法" class="align-bottom w-full" width="176"
+        height="72" src=
+        "https://asset.booth.pm/assets/banner-minna_no_ginko_footer-558af5dbd3da52c330c9263a270923d2f773e612606d9c248942b779c9ed541a.jpg"></a><a href="https://booth.pm/anshin_booth_pack_guides"><img srcset="https://asset.booth.pm/assets/banner-anshin_booth_pack@2x-fcabcd0e43382f4dc4a297dd15a695c9a7041541c945b15d5d8da6315952095a.png 2x"
+        alt="匿名配送であんしん！あんしんBOOTH便" class="align-bottom w-full"
+        width="176" height="72" src=
+        "https://asset.booth.pm/assets/banner-anshin_booth_pack-14540be4805dc22307b8c1341662093cca5d0f3d885daf80a896ca7c32e0596f.png"></a><a target="_blank"
+        title="海外発送/国際配送サービスの転送コム" rel="noopener" href=
+        "https://www.tenso.com/static/lp_shop_booth"><img srcset=
+        "https://asset.booth.pm/assets/tensocom@2x-4073873635733bd7f3da50195afb03a30110f50417eb0083f7d990aa6af00612.png 2x"
+        alt="海外発送/国際配送サービスの転送コム" class="align-bottom w-full" width=
+        "176" height="72" src=
+        "https://asset.booth.pm/assets/tensocom-b2e4b4e63f91016062893f4d3402770043b49d1b9dd6e18b9ccb33db36aa8567.png"></a><a target="_blank"
+        title="最短2分でグッズ販売開始「pixivFACTORY」" rel="noopener" href=
+        "https://factory.pixiv.net/lp/goods_start?utm_source=booth&amp;utm_medium=banner&amp;utm_campaign=booth_footer_banner"><img srcset="https://asset.booth.pm/assets/banner-pixivfactory@2x-feb203981da465104440e7bd70edefe22001942d65d2eac24d6319dc23d19514.png 2x"
+        alt="最短2分でグッズ販売開始「pixivFACTORY」" class=
+        "align-bottom w-full" width="176" height="72" src=
+        "https://asset.booth.pm/assets/banner-pixivfactory-b023063726ec8cb4995b34f1d102bc864d2b999df28e76ca8d45231b2b961d3b.png"></a>
+      </div>
+      <div class="border-b border-border300"></div>
+      <div class=
+      "desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
+        <div class=
+        "desktop:gap-fixed desktop:grid desktop:grid-cols-4 desktop:my-40 mobile:border-b mobile:border-border300 mobile:divide-y mobile:divide-border300">
+          <nav class=
+          "js-accordion-content js-accordion-only-mobile">
+            <h3 class=
+            "js-accordion-handle flex font-bold m-0 my-16 py-4 typography-14 mobile:mx-16">
+              BOOTHで「売りたい」
+            </h3>
+            <div class="js-accordion-body mobile:p-16">
+              <div class=
+              "grid desktop:gap-16 mobile:gap-[32px] pb-8">
+                <a class=
+                "no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
+                href="https://booth.pm/guide">作品を出品しよう</a><a class=
+                "no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
+                href="https://booth.pm/booth_apps">BOOTH
+                Apps(拡張機能)</a><a class=
+                "no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
+                href=
+                "https://booth.pm/anshin_booth_pack_guides">あんしんBOOTHパック</a><a class="no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
+                href=
+                "https://booth.pm/warehouse_guide">発送代行・倉庫サービス</a><a class="no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
+                href=
+                "https://booth.fanbox.cc/posts/264407">梱包発送ガイド</a><a class="no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
+                href=
+                "https://booth.pm/consignment_sale">委託販売とは</a><a class="no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
+                href=
+                "https://booth.pm/rights_clearance">二次創作の著作権に関する取り組み</a><a class="no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
+                href="https://booth.fanbox.cc">BOOTH Camp</a>
+              </div>
+            </div>
+          </nav>
+          <nav class=
+          "js-accordion-content js-accordion-only-mobile">
+            <h3 class=
+            "js-accordion-handle flex font-bold m-0 my-16 py-4 typography-14 mobile:mx-16">
+              BOOTHで「買いたい」
+            </h3>
+            <div class="js-accordion-body mobile:p-16">
+              <div class=
+              "grid desktop:gap-16 mobile:gap-[32px] pb-8">
+                <a class=
+                "no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
+                href="https://booth.pm/about">BOOTHとは</a><a class=
+                "no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
+                href=
+                "https://booth.pm/customer_guide">お買い物ガイド</a><a class="no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
+                href="https://booth.pm/payment">お支払い方法</a><a class=
+                "no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
+                href=
+                "https://booth.pm/trading_flowchart">取引の流れ</a><a class="no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
+                href=
+                "https://booth.pm/warehouse_group_shipments">倉庫おまとめ発送</a><a class="no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
+                href=
+                "https://booth.pm/ja/exhibitions">BOOTH主催のWeb即売会</a>
+              </div>
+            </div>
+          </nav>
+          <nav class=
+          "js-accordion-content js-accordion-only-mobile">
+            <h3 class=
+            "js-accordion-handle flex font-bold m-0 my-16 py-4 typography-14 mobile:mx-16">
+              サポート・お問い合わせ
+            </h3>
+            <div class="js-accordion-body mobile:p-16">
+              <div class=
+              "grid desktop:gap-16 mobile:gap-[32px] pb-8">
+                <a class=
+                "no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
+                href=
+                "https://booth.pm/announcements">お知らせ</a><a class=
+                "no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
+                href=
+                "https://booth.pixiv.help/hc/">よくある質問</a><a class=
+                "no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
+                href=
+                "https://booth.karakuri.ai/embed/">チャットで質問（24時間対応）</a><a class="no-underline py-4 text-text-default typography-14 hover:text-text-default hover:underline visited:text-text-default"
+                href=
+                "https://booth.pm/support">BOOTH事務局へのお問い合わせ</a>
+              </div>
+            </div>
+          </nav>
+          <nav class=
+          "desktop:divide-y divide-border300 mobile:flex mobile:divide-x">
+            <a class=
+            "flex hover:text-text-default items-center mobile:p-16 no-underline py-16 text-text-default typography-14 visited:text-text-default w-full"
+            target="_blank" rel="noopener" href=
+            "https://x.com/booth_pm">
+            <div class="font-bold mr-auto whitespace-pre">
+              X(Twitter) @booth_pm
+            </div>
+            <div class=
+            "bg-black flex items-center justify-center h-24 rounded-oval text-white w-[24px]">
+            </div></a><a class=
+            "flex hover:text-text-default items-center mobile:p-16 no-underline py-16 text-text-default typography-14 visited:text-text-default w-full"
+            target="_blank" rel="noopener" href=
+            "https://www.pixiv.net">
+            <div class="font-bold mr-auto whitespace-pre">
+              pixiv
+            </div></a>
+          </nav>
+        </div>
+      </div>
+      <div class=
+      "flex desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
+        <div class=
+        "js-locale-switcher mr-auto desktop:mb-24 mobile:m-16">
+        </div>
+      </div>
+      <div class="border-b border-border300"></div>
+      <div class=
+      "desktop:mx-auto desktop:max-w-[1224px] desktop:px-16">
+        <div class=
+        "my-24 desktop:flex desktop:items-center mobile:mx-16">
+          <a data-tracking="click" data-product-list=
+          "from market_show via footer_logo to market_top" href=
+          "https://booth.pm/"><img alt="BOOTH" class="align-bottom"
+          height="42" width="120" src=
+          "https://asset.booth.pm/assets/booth_logo-cd38e1da31e93676b081bd8f0aca2805f758f514c8e95dc3f1a8aac5e58dffec.svg"></a>
+          <nav class=
+          "flex desktop:ml-auto gap-16 mobile:flex-wrap mobile:max-w-[256px] mobile:mt-24">
+            <a class=
+            "no-underline text-text-default typography-12 hover:text-text-default hover:underline visited:text-text-default"
+            target="_self" href=
+            "https://booth.pm/company">会社概要</a><a class=
+            "no-underline text-text-default typography-12 hover:text-text-default hover:underline visited:text-text-default"
+            target="_blank" rel="noopener" href=
+            "https://policies.pixiv.net/#booth">利用規約</a><a class=
+            "no-underline text-text-default typography-12 hover:text-text-default hover:underline visited:text-text-default"
+            target="_blank" rel="noopener" href=
+            "https://policies.pixiv.net/#warehouse">倉庫サービス利用規約</a><a class="no-underline text-text-default typography-12 hover:text-text-default hover:underline visited:text-text-default"
+            target="_self" href=
+            "https://booth.pm/guidelines">ガイドライン</a><a class=
+            "no-underline text-text-default typography-12 hover:text-text-default hover:underline visited:text-text-default"
+            target="_blank" rel="noopener" href=
+            "https://policies.pixiv.net/#privacy">プライバシーポリシー</a><a class="no-underline text-text-default typography-12 hover:text-text-default hover:underline visited:text-text-default"
+            target="_blank" rel="noopener" href=
+            "https://policies.pixiv.net/#privacy-policy-14">外部送信規律について</a><a class="no-underline text-text-default typography-12 hover:text-text-default hover:underline visited:text-text-default"
+            target="_self" href=
+            "https://booth.pm/legal">特定商取引法に基づく表記</a>
+          </nav>
+          <div class=
+          "text-text-default typography-12 desktop:ml-16 mobile:mt-16">
+            © pixiv
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="booth-overlay"></div>
+    <div class="booth-modal">
+      <div class="booth-modal-viewer">
+        <div class="booth-modal-viewer-inner">
+          <div class="booth-modal-content-wrapper">
+            <div class="booth-modal-head u-text-right"></div>
+            <div class="booth-modal-content"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-event-options=
+    "[{&quot;label&quot;:&quot;I・Doll VOL.70&quot;,&quot;value&quot;:&quot;i-doll70&quot;},{&quot;label&quot;:&quot;J.GARDEN55&quot;,&quot;value&quot;:&quot;j-garden55&quot;},{&quot;label&quot;:&quot;SC2024 Spring&quot;,&quot;value&quot;:&quot;sc2024spring&quot;},{&quot;label&quot;:&quot;COMITIA147&quot;,&quot;value&quot;:&quot;comitia147&quot;},{&quot;label&quot;:&quot;TOKYO FES Feb.2024&quot;,&quot;value&quot;:&quot;tokyofes-feb2024&quot;},{&quot;label&quot;:&quot;ワンダーフェスティバル 2024冬&quot;,&quot;value&quot;:&quot;wonfes2024winter&quot;},{&quot;label&quot;:&quot;COMIC CITY ONLINE-240209-&quot;,&quot;value&quot;:&quot;comiccity-online-240209&quot;},{&quot;label&quot;:&quot;COMIC CITY 東京150&quot;,&quot;value&quot;:&quot;comiccity-tokyo150&quot;},{&quot;label&quot;:&quot;関西コミティア69&quot;,&quot;value&quot;:&quot;k-comitia69&quot;},{&quot;label&quot;:&quot;こみっくトレジャー43&quot;,&quot;value&quot;:&quot;comic-treasure-43&quot;}]"
+    data-ga-from="market_show" data-parent-category-options=
+    "[{&quot;label&quot;:&quot;漫画&quot;,&quot;value&quot;:&quot;漫画&quot;},{&quot;label&quot;:&quot;イラスト&quot;,&quot;value&quot;:&quot;イラスト&quot;},{&quot;label&quot;:&quot;小説・その他書籍&quot;,&quot;value&quot;:&quot;小説・その他書籍&quot;},{&quot;label&quot;:&quot;グッズ&quot;,&quot;value&quot;:&quot;グッズ&quot;},{&quot;label&quot;:&quot;ファッション&quot;,&quot;value&quot;:&quot;ファッション&quot;},{&quot;label&quot;:&quot;アクセサリー&quot;,&quot;value&quot;:&quot;アクセサリー&quot;},{&quot;label&quot;:&quot;フィギュア・ぬいぐるみ・ドール&quot;,&quot;value&quot;:&quot;フィギュア・ぬいぐるみ・ドール&quot;},{&quot;label&quot;:&quot;3Dモデル&quot;,&quot;value&quot;:&quot;3Dモデル&quot;},{&quot;label&quot;:&quot;音楽&quot;,&quot;value&quot;:&quot;音楽&quot;},{&quot;label&quot;:&quot;音声作品&quot;,&quot;value&quot;:&quot;音声作品&quot;},{&quot;label&quot;:&quot;ゲーム&quot;,&quot;value&quot;:&quot;ゲーム&quot;},{&quot;label&quot;:&quot;ソフトウェア・ハードウェア&quot;,&quot;value&quot;:&quot;ソフトウェア・ハードウェア&quot;},{&quot;label&quot;:&quot;素材データ&quot;,&quot;value&quot;:&quot;素材データ&quot;},{&quot;label&quot;:&quot;映像作品&quot;,&quot;value&quot;:&quot;映像作品&quot;},{&quot;label&quot;:&quot;写真作品&quot;,&quot;value&quot;:&quot;写真作品&quot;},{&quot;label&quot;:&quot;コスプレ&quot;,&quot;value&quot;:&quot;コスプレ&quot;},{&quot;label&quot;:&quot;絵画・アート作品&quot;,&quot;value&quot;:&quot;絵画・アート作品&quot;}]"
+    data-portal-url="https://booth.pm/ja" data-search-params=
+    "{&quot;portal_domain&quot;:&quot;ja&quot;,&quot;parent_category&quot;:null}"
+    data-search-url="https://booth.pm/ja/items"
+    data-sub-category-options=
+    "[{&quot;pc&quot;:&quot;漫画&quot;,&quot;children&quot;:[{&quot;label&quot;:&quot;漫画・マンガ&quot;,&quot;value&quot;:&quot;漫画・マンガ&quot;},{&quot;label&quot;:&quot;4コマ漫画&quot;,&quot;value&quot;:&quot;4コマ漫画&quot;}]},{&quot;pc&quot;:&quot;イラスト&quot;,&quot;children&quot;:[{&quot;label&quot;:&quot;イラスト集・CG集&quot;,&quot;value&quot;:&quot;イラスト集・CG集&quot;},{&quot;label&quot;:&quot;イラスト作品&quot;,&quot;value&quot;:&quot;イラスト作品&quot;},{&quot;label&quot;:&quot;メイキング・講座&quot;,&quot;value&quot;:&quot;メイキング・講座&quot;},{&quot;label&quot;:&quot;壁紙&quot;,&quot;value&quot;:&quot;壁紙&quot;},{&quot;label&quot;:&quot;3DCG・3DCG集&quot;,&quot;value&quot;:&quot;3DCG・3DCG集&quot;},{&quot;label&quot;:&quot;イラスト（その他）&quot;,&quot;value&quot;:&quot;イラスト（その他）&quot;}]},{&quot;pc&quot;:&quot;小説・その他書籍&quot;,&quot;children&quot;:[{&quot;label&quot;:&quot;小説・ライトノベル&quot;,&quot;value&quot;:&quot;小説・ライトノベル&quot;},{&quot;label&quot;:&quot;絵本&quot;,&quot;value&quot;:&quot;絵本&quot;},{&quot;label&quot;:&quot;技術書&quot;,&quot;value&quot;:&quot;技術書&quot;},{&quot;label&quot;:&quot;その他書籍&quot;,&quot;value&quot;:&quot;その他書籍&quot;}]},{&quot;pc&quot;:&quot;グッズ&quot;,&quot;children&quot;:[{&quot;label&quot;:&quot;アクリルキーホルダー&quot;,&quot;value&quot;:&quot;アクリルキーホルダー&quot;},{&quot;label&quot;:&quot;キーホルダー・ストラップ&quot;,&quot;value&quot;:&quot;キーホルダー・ストラップ&quot;},{&quot;label&quot;:&quot;缶バッジ&quot;,&quot;value&quot;:&quot;缶バッジ&quot;},{&quot;label&quot;:&quot;バッジ&quot;,&quot;value&quot;:&quot;バッジ&quot;},{&quot;label&quot;:&quot;シール・ステッカー&quot;,&quot;value&quot;:&quot;シール・ステッカー&quot;},{&quot;label&quot;:&quot;ポストカード&quot;,&quot;value&quot;:&quot;ポストカード&quot;},{&quot;label&quot;:&quot;アクリルフィギュア&quot;,&quot;value&quot;:&quot;アクリルフィギュア&quot;},{&quot;label&quot;:&quot;iPhoneケース・カバー&quot;,&quot;value&quot;:&quot;iPhoneケース・カバー&quot;},{&quot;label&quot;:&quot;スマホケース・カバー&quot;,&quot;value&quot;:&quot;スマホケース・カバー&quot;},{&quot;label&quot;:&quot;抱き枕カバー&quot;,&quot;value&quot;:&quot;抱き枕カバー&quot;},{&quot;label&quot;:&quot;ステーショナリー&quot;,&quot;value&quot;:&quot;ステーショナリー&quot;},{&quot;label&quot;:&quot;タペストリー&quot;,&quot;value&quot;:&quot;タペストリー&quot;},{&quot;label&quot;:&quot;ポーチ&quot;,&quot;value&quot;:&quot;ポーチ&quot;},{&quot;label&quot;:&quot;マスキングテープ&quot;,&quot;value&quot;:&quot;マスキングテープ&quot;},{&quot;label&quot;:&quot;グラス・タンブラー・マグカップ&quot;,&quot;value&quot;:&quot;グラス・タンブラー・マグカップ&quot;},{&quot;label&quot;:&quot;メガネ拭き&quot;,&quot;value&quot;:&quot;メガネ拭き&quot;},{&quot;label&quot;:&quot;パスケース&quot;,&quot;value&quot;:&quot;パスケース&quot;},{&quot;label&quot;:&quot;タオル&quot;,&quot;value&quot;:&quot;タオル&quot;},{&quot;label&quot;:&quot;モバイルバッテリー&quot;,&quot;value&quot;:&quot;モバイルバッテリー&quot;},{&quot;label&quot;:&quot;クリアファイル&quot;,&quot;value&quot;:&quot;クリアファイル&quot;},{&quot;label&quot;:&quot;ピンバッジ&quot;,&quot;value&quot;:&quot;ピンバッジ&quot;},{&quot;label&quot;:&quot;ポスター&quot;,&quot;value&quot;:&quot;ポスター&quot;},{&quot;label&quot;:&quot;ブランケット&quot;,&quot;value&quot;:&quot;ブランケット&quot;},{&quot;label&quot;:&quot;スマホリング&quot;,&quot;value&quot;:&quot;スマホリング&quot;},{&quot;label&quot;:&quot;アクリルブロック&quot;,&quot;value&quot;:&quot;アクリルブロック&quot;},{&quot;label&quot;:&quot;アクリルバッジ&quot;,&quot;value&quot;:&quot;アクリルバッジ&quot;},{&quot;label&quot;:&quot;カレンダー&quot;,&quot;value&quot;:&quot;カレンダー&quot;},{&quot;label&quot;:&quot;ミラー&quot;,&quot;value&quot;:&quot;ミラー&quot;},{&quot;label&quot;:&quot;クッション・クッションカバー&quot;,&quot;value&quot;:&quot;クッション・クッションカバー&quot;},{&quot;label&quot;:&quot;名刺入れ&quot;,&quot;value&quot;:&quot;名刺入れ&quot;},{&quot;label&quot;:&quot;コースター&quot;,&quot;value&quot;:&quot;コースター&quot;},{&quot;label&quot;:&quot;ラミネートカード&quot;,&quot;value&quot;:&quot;ラミネートカード&quot;},{&quot;label&quot;:&quot;ペンケース&quot;,&quot;value&quot;:&quot;ペンケース&quot;},{&quot;label&quot;:&quot;スマホスタンド&quot;,&quot;value&quot;:&quot;スマホスタンド&quot;},{&quot;label&quot;:&quot;マウスパッド&quot;,&quot;value&quot;:&quot;マウスパッド&quot;},{&quot;label&quot;:&quot;パズル&quot;,&quot;value&quot;:&quot;パズル&quot;},{&quot;label&quot;:&quot;時計&quot;,&quot;value&quot;:&quot;時計&quot;},{&quot;label&quot;:&quot;枕カバー&quot;,&quot;value&quot;:&quot;枕カバー&quot;},{&quot;label&quot;:&quot;印鑑ケース&quot;,&quot;value&quot;:&quot;印鑑ケース&quot;},{&quot;label&quot;:&quot;捺印マット&quot;,&quot;value&quot;:&quot;捺印マット&quot;},{&quot;label&quot;:&quot;下敷き&quot;,&quot;value&quot;:&quot;下敷き&quot;},{&quot;label&quot;:&quot;長傘&quot;,&quot;value&quot;:&quot;長傘&quot;},{&quot;label&quot;:&quot;卓上ミニ傘&quot;,&quot;value&quot;:&quot;卓上ミニ傘&quot;},{&quot;label&quot;:&quot;グッズ（その他）&quot;,&quot;value&quot;:&quot;グッズ（その他）&quot;}]},{&quot;pc&quot;:&quot;ファッション&quot;,&quot;children&quot;:[{&quot;label&quot;:&quot;Tシャツ&quot;,&quot;value&quot;:&quot;Tシャツ&quot;},{&quot;label&quot;:&quot;パーカー&quot;,&quot;value&quot;:&quot;パーカー&quot;},{&quot;label&quot;:&quot;スウェット&quot;,&quot;value&quot;:&quot;スウェット&quot;},{&quot;label&quot;:&quot;トートバッグ&quot;,&quot;value&quot;:&quot;トートバッグ&quot;},{&quot;label&quot;:&quot;バッグ&quot;,&quot;value&quot;:&quot;バッグ&quot;},{&quot;label&quot;:&quot;サコッシュ&quot;,&quot;value&quot;:&quot;サコッシュ&quot;},{&quot;label&quot;:&quot;帽子&quot;,&quot;value&quot;:&quot;帽子&quot;},{&quot;label&quot;:&quot;タイツ&quot;,&quot;value&quot;:&quot;タイツ&quot;},{&quot;label&quot;:&quot;ファッション（その他）&quot;,&quot;value&quot;:&quot;ファッション（その他）&quot;}]},{&quot;pc&quot;:&quot;アクセサリー&quot;,&quot;children&quot;:[{&quot;label&quot;:&quot;イヤリング・ピアス&quot;,&quot;value&quot;:&quot;イヤリング・ピアス&quot;},{&quot;label&quot;:&quot;ネックレス&quot;,&quot;value&quot;:&quot;ネックレス&quot;},{&quot;label&quot;:&quot;ブレスレット&quot;,&quot;value&quot;:&quot;ブレスレット&quot;},{&quot;label&quot;:&quot;ヘアアクセサリー&quot;,&quot;value&quot;:&quot;ヘアアクセサリー&quot;},{&quot;label&quot;:&quot;ブローチ&quot;,&quot;value&quot;:&quot;ブローチ&quot;},{&quot;label&quot;:&quot;ペンダント&quot;,&quot;value&quot;:&quot;ペンダント&quot;},{&quot;label&quot;:&quot;アクセサリー（その他）&quot;,&quot;value&quot;:&quot;アクセサリー（その他）&quot;}]},{&quot;pc&quot;:&quot;フィギュア・ぬいぐるみ・ドール&quot;,&quot;children&quot;:[{&quot;label&quot;:&quot;フィギュア&quot;,&quot;value&quot;:&quot;フィギュア&quot;},{&quot;label&quot;:&quot;ぬいぐるみ&quot;,&quot;value&quot;:&quot;ぬいぐるみ&quot;},{&quot;label&quot;:&quot;ドール&quot;,&quot;value&quot;:&quot;ドール&quot;}]},{&quot;pc&quot;:&quot;3Dモデル&quot;,&quot;children&quot;:[{&quot;label&quot;:&quot;3Dキャラクター&quot;,&quot;value&quot;:&quot;3Dキャラクター&quot;},{&quot;label&quot;:&quot;3D衣装&quot;,&quot;value&quot;:&quot;3D衣装&quot;},{&quot;label&quot;:&quot;3D装飾品&quot;,&quot;value&quot;:&quot;3D装飾品&quot;},{&quot;label&quot;:&quot;3D小道具&quot;,&quot;value&quot;:&quot;3D小道具&quot;},{&quot;label&quot;:&quot;3Dテクスチャ&quot;,&quot;value&quot;:&quot;3Dテクスチャ&quot;},{&quot;label&quot;:&quot;3Dツール・システム&quot;,&quot;value&quot;:&quot;3Dツール・システム&quot;},{&quot;label&quot;:&quot;3Dモーション・アニメーション&quot;,&quot;value&quot;:&quot;3Dモーション・アニメーション&quot;},{&quot;label&quot;:&quot;3D環境・ワールド&quot;,&quot;value&quot;:&quot;3D環境・ワールド&quot;},{&quot;label&quot;:&quot;VRoid&quot;,&quot;value&quot;:&quot;VRoid&quot;},{&quot;label&quot;:&quot;3Dモデル（その他）&quot;,&quot;value&quot;:&quot;3Dモデル（その他）&quot;}]},{&quot;pc&quot;:&quot;音楽&quot;,&quot;children&quot;:[{&quot;label&quot;:&quot;音楽一般&quot;,&quot;value&quot;:&quot;音楽一般&quot;},{&quot;label&quot;:&quot;ボカロ&quot;,&quot;value&quot;:&quot;ボカロ&quot;},{&quot;label&quot;:&quot;ゲーム音楽&quot;,&quot;value&quot;:&quot;ゲーム音楽&quot;},{&quot;label&quot;:&quot;音楽（その他）&quot;,&quot;value&quot;:&quot;音楽（その他）&quot;}]},{&quot;pc&quot;:&quot;音声作品&quot;,&quot;children&quot;:[{&quot;label&quot;:&quot;ボイス&quot;,&quot;value&quot;:&quot;ボイス&quot;},{&quot;label&quot;:&quot;ボイスドラマ・ドラマCD&quot;,&quot;value&quot;:&quot;ボイスドラマ・ドラマCD&quot;},{&quot;label&quot;:&quot;ささやき・癒し系&quot;,&quot;value&quot;:&quot;ささやき・癒し系&quot;},{&quot;label&quot;:&quot;音声作品（その他）&quot;,&quot;value&quot;:&quot;音声作品（その他）&quot;}]},{&quot;pc&quot;:&quot;ゲーム&quot;,&quot;children&quot;:[{&quot;label&quot;:&quot;PCゲーム&quot;,&quot;value&quot;:&quot;PCゲーム&quot;},{&quot;label&quot;:&quot;テーブルゲーム&quot;,&quot;value&quot;:&quot;テーブルゲーム&quot;},{&quot;label&quot;:&quot;TRPG&quot;,&quot;value&quot;:&quot;TRPG&quot;},{&quot;label&quot;:&quot;ゲーム関連商品&quot;,&quot;value&quot;:&quot;ゲーム関連商品&quot;}]},{&quot;pc&quot;:&quot;ソフトウェア・ハードウェア&quot;,&quot;children&quot;:[{&quot;label&quot;:&quot;ソフトウェア&quot;,&quot;value&quot;:&quot;ソフトウェア&quot;},{&quot;label&quot;:&quot;ハードウェア・ガジェット&quot;,&quot;value&quot;:&quot;ハードウェア・ガジェット&quot;}]},{&quot;pc&quot;:&quot;素材データ&quot;,&quot;children&quot;:[{&quot;label&quot;:&quot;イラスト素材&quot;,&quot;value&quot;:&quot;イラスト素材&quot;},{&quot;label&quot;:&quot;イラスト3D素材&quot;,&quot;value&quot;:&quot;イラスト3D素材&quot;},{&quot;label&quot;:&quot;背景画像&quot;,&quot;value&quot;:&quot;背景画像&quot;},{&quot;label&quot;:&quot;フォント・書体&quot;,&quot;value&quot;:&quot;フォント・書体&quot;},{&quot;label&quot;:&quot;アイコン&quot;,&quot;value&quot;:&quot;アイコン&quot;},{&quot;label&quot;:&quot;ロゴ&quot;,&quot;value&quot;:&quot;ロゴ&quot;},{&quot;label&quot;:&quot;BGM素材&quot;,&quot;value&quot;:&quot;BGM素材&quot;},{&quot;label&quot;:&quot;効果音&quot;,&quot;value&quot;:&quot;効果音&quot;},{&quot;label&quot;:&quot;素材（その他）&quot;,&quot;value&quot;:&quot;素材（その他）&quot;}]},{&quot;pc&quot;:&quot;映像作品&quot;,&quot;children&quot;:[{&quot;label&quot;:&quot;アニメーション&quot;,&quot;value&quot;:&quot;アニメーション&quot;},{&quot;label&quot;:&quot;実写作品&quot;,&quot;value&quot;:&quot;実写作品&quot;}]},{&quot;pc&quot;:&quot;写真作品&quot;,&quot;children&quot;:[{&quot;label&quot;:&quot;写真&quot;,&quot;value&quot;:&quot;写真&quot;},{&quot;label&quot;:&quot;写真集&quot;,&quot;value&quot;:&quot;写真集&quot;}]},{&quot;pc&quot;:&quot;コスプレ&quot;,&quot;children&quot;:[{&quot;label&quot;:&quot;コスプレ写真集&quot;,&quot;value&quot;:&quot;コスプレ写真集&quot;},{&quot;label&quot;:&quot;コスプレROM&quot;,&quot;value&quot;:&quot;コスプレROM&quot;},{&quot;label&quot;:&quot;コスプレ衣装&quot;,&quot;value&quot;:&quot;コスプレ衣装&quot;},{&quot;label&quot;:&quot;コスプレ小道具&quot;,&quot;value&quot;:&quot;コスプレ小道具&quot;},{&quot;label&quot;:&quot;コスプレ動画&quot;,&quot;value&quot;:&quot;コスプレ動画&quot;},{&quot;label&quot;:&quot;コスプレ（その他）&quot;,&quot;value&quot;:&quot;コスプレ（その他）&quot;}]},{&quot;pc&quot;:&quot;絵画・アート作品&quot;,&quot;children&quot;:[{&quot;label&quot;:&quot;絵画&quot;,&quot;value&quot;:&quot;絵画&quot;},{&quot;label&quot;:&quot;複製画&quot;,&quot;value&quot;:&quot;複製画&quot;},{&quot;label&quot;:&quot;工芸品&quot;,&quot;value&quot;:&quot;工芸品&quot;},{&quot;label&quot;:&quot;彫刻・オブジェ&quot;,&quot;value&quot;:&quot;彫刻・オブジェ&quot;},{&quot;label&quot;:&quot;版画&quot;,&quot;value&quot;:&quot;版画&quot;},{&quot;label&quot;:&quot;屏風&quot;,&quot;value&quot;:&quot;屏風&quot;},{&quot;label&quot;:&quot;絵画・アート作品（その他）&quot;,&quot;value&quot;:&quot;絵画・アート作品（その他）&quot;}]}]"
+    id="js-detail-search-modal"></div>
     <script>
-    (function(){var js = "window['__CF$cv$params']={r:'85be5abd9fd6685d',t:'MTcwOTAxNTE2Ny42NTEwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();
+    (function(){var js = "window['__CF$cv$params']={r:'85d0aca27a40e005',t:'MTcwOTIwNzI2Ni4xODMwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();
     </script>
   </body>
 </html>
